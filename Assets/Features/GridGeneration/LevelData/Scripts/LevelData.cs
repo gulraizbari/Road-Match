@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.Utilities;
 using Sirenix.OdinInspector;
@@ -17,6 +18,9 @@ public sealed class CellData
      [SerializeField] public TileType  tileType;
      [SerializeField] public TilePlacements tilePlacement;
      [SerializeField] public TypesOfHurdle typeOfHurdle;
+     [SerializeField] public ItemType typeOfItem;
+     [SerializeField] public Fruits typeOfFruit;
+     [SerializeField] public Vegetables typeOfVegetables;
      [SerializeField] public bool      IsPlayer    = false;
     // [SerializeField] public IngredientsProcess ingredientsProcess;
     // [SerializeField] public IngredientType ingredientType;
@@ -44,10 +48,10 @@ public sealed class CellData
         tileType = TileType.None;
         tilePlacement = TilePlacements.None;
         typeOfHurdle = TypesOfHurdle.NonBreakable;
+        typeOfItem = ItemType.None;
+        typeOfFruit = Fruits.WaterMellon;
+        typeOfVegetables = Vegetables.Carrot;
         IsPlayer = false;
-        // ingredientType = IngredientType.Potato;
-        // ingredientsProcess = IngredientsProcess.Chopable;
-        // hybridStationType = HybridStationType.SimpleContainer;
     }//Constructor() end
 
 }//class end
@@ -59,6 +63,7 @@ public sealed class LevelData : SerializedScriptableObject
     //===================================================
     // FIELDS
     //===================================================
+    
     [TitleGroup("LEVEL DATA", boldTitle: true)]
     [HorizontalGroup("LEVEL DATA/Split")]
     [VerticalGroup("LEVEL DATA/Split/Left"), LabelWidth(60)]
@@ -66,6 +71,8 @@ public sealed class LevelData : SerializedScriptableObject
     [InlineButton(nameof(MakeGrid))]
     [VerticalGroup("LEVEL DATA/Split/Right"), LabelWidth(60)]
     [SerializeField] int _height = 16;
+    [Space]
+    public List<ItemContainer> Containers;
     [Space]
     [TitleGroup("GRID", boldTitle: true)]
     [TableMatrix(SquareCells = true, HideRowIndices = false, HideColumnIndices = true, RespectIndentLevel = true, ResizableColumns = false, DrawElementMethod = nameof(DrawCells))]
@@ -144,8 +151,20 @@ public sealed class LevelData : SerializedScriptableObject
             value.tilePlacement = (TilePlacements)EditorGUILayout.EnumPopup("Type", value.tilePlacement);
             if (value.tilePlacement == TilePlacements.Hurdle)
             {
-                
                 value.typeOfHurdle=(TypesOfHurdle)EditorGUILayout.EnumPopup("Type", value.typeOfHurdle);
+            }
+            else if (value.tilePlacement == TilePlacements.Item)
+            {
+                value.typeOfItem=(ItemType)EditorGUILayout.EnumPopup("Type", value.typeOfItem);
+                if (value.typeOfItem== ItemType.Fruits)
+                {
+                    value.typeOfFruit=(Fruits)EditorGUILayout.EnumPopup("Type", value.typeOfFruit);
+                }
+                else if (value.typeOfItem== ItemType.Vegetables)
+                {
+                    value.typeOfVegetables=(Vegetables)EditorGUILayout.EnumPopup("Type", value.typeOfVegetables);
+                }
+                
             }
             
            

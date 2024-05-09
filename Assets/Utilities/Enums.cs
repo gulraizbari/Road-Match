@@ -11,13 +11,32 @@ public enum TilePlacements
 {
     None,
     Hurdle,
-    Apple,
-    Coin,
-    Orange,
-    Key,
-    Bridge
+   Item
 }
 
+public enum Fruits
+{
+    WaterMellon,
+    BlueBerry,
+    Orange,
+    Guava
+}
+
+public enum Vegetables
+{
+    Carrot,
+    Tomato,
+    Lemon
+}
+public enum ItemType
+{
+    None,
+    Fruits,
+    Vegetables,
+    Animals,
+    Objects,
+    
+}
 public enum TypesOfHurdle
 {
     NonBreakable,

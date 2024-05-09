@@ -18,11 +18,21 @@ namespace Features.GridGeneration.Scripts
         Material _disable;
         [BoxGroup("References"), SerializeField]
         Material _enable;
-        
+        [BoxGroup("References"), ShowInInspector]
+        Dictionary<ItemType, List<Item>> _itemDictionary = new ();
+
         Tile tile;
         public void Init(IGridGenerator generator)
         {
             _gridGenerator = generator;
+        }
+
+        public void AssignItemContainer(LevelData data)
+        {
+            foreach (var container in data.Containers)
+            {
+                _itemDictionary.Add(container.itemType,container.spawnItemContainer);
+            }
         }
         public void SpawnGrid(Cell[,] grid, LevelData levelData)
         {
@@ -39,6 +49,7 @@ namespace Features.GridGeneration.Scripts
                             tile.Init(_disable,grid[row,col],this);
                             tile.SetTransform(tilePosition,0);
                             tile.SetID(row,col);
+                            DisableTile(levelData.Matrix[row, col],tile);
                             _tiles.Add($"{row}{col}",tile);
                             break;
                         }
@@ -87,6 +98,35 @@ namespace Features.GridGeneration.Scripts
             else
             {
                 renderer.material = _disable;
+            }
+        }
+
+        private void DisableTile(CellData data,Tile tile)
+        {
+            Item item = new Item();
+            if (data.typeOfItem == ItemType.Fruits)
+            {
+                item = Instantiate(FindItem(data.typeOfItem, data.typeOfFruit));
+            }
+            else  if (data.typeOfItem == ItemType.Vegetables)
+            { 
+                item = Instantiate(FindItem(data.typeOfItem, data.typeOfVegetables));
+            }
+            tile.AssignPlacement(item);
+        }
+        public Item FindItem(ItemType type, object item)
+        {
+            if (_itemDictionary.ContainsKey(type))
+            {
+                // Retrieve the list of items for the specified type
+                List<Item> itemsOfType = _itemDictionary[type];
+
+                // Use Find method on the list to find the specific item
+                return itemsOfType.Find(x => x.fruits == (Fruits)item || x.vegetables == (Vegetables)item);
+            }
+            else
+            {
+                return null; // Handle case when type is not found
             }
         }
     }

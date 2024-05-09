@@ -42,6 +42,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -58,6 +67,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -78,6 +96,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -94,6 +121,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -114,6 +150,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -132,6 +177,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -146,10 +200,19 @@ MonoBehaviour:
       Data: 2
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 2
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 1
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -166,6 +229,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -186,6 +258,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -202,6 +283,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -222,6 +312,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -238,6 +337,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -258,6 +366,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -272,8 +389,17 @@ MonoBehaviour:
       Data: 2
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 1
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 1
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -290,8 +416,17 @@ MonoBehaviour:
       Data: 2
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 1
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 3
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -308,10 +443,19 @@ MonoBehaviour:
       Data: 2
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 2
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 2
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -326,8 +470,17 @@ MonoBehaviour:
       Data: 2
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 1
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 3
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -344,10 +497,19 @@ MonoBehaviour:
       Data: 2
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 2
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 2
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -362,10 +524,19 @@ MonoBehaviour:
       Data: 2
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 2
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 1
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -380,8 +551,17 @@ MonoBehaviour:
       Data: 2
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 1
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 1
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -402,6 +582,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -418,6 +607,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -438,6 +636,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -454,6 +661,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -474,6 +690,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -490,6 +715,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -510,6 +744,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -526,6 +769,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -546,6 +798,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -562,6 +823,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -582,6 +852,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -598,6 +877,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -618,6 +906,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -634,6 +931,15 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -654,6 +960,15 @@ MonoBehaviour:
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -668,3 +983,6 @@ MonoBehaviour:
       Data: 
   _width: 5
   _height: 7
+  Containers:
+  - {fileID: 11400000, guid: 4230d39f4bdc641a98f6162d1f1b0be1, type: 2}
+  - {fileID: 11400000, guid: f5f258b570a4e4a29ae7ac16100a2be3, type: 2}
