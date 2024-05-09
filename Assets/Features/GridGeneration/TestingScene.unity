@@ -184,7 +184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211055d9257ac4e9b82c9eeb6c53ea36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedTile: {fileID: 0}
 --- !u!4 &558879243
 Transform:
   m_ObjectHideFlags: 0
@@ -410,7 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd332068abde14a609e38b58557d8d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelData: {fileID: 11400000, guid: 5a1c8783441c04f59b1913d176246a8f, type: 2}
+  _levelData: {fileID: 11400000, guid: bc01b934da49d4b2ca26d342bf89c7d3, type: 2}
   _gridView: {fileID: 867856164}
   _spacingZ: 2
   _spacingX: 3

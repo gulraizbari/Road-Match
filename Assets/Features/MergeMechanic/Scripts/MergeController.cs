@@ -90,8 +90,8 @@ public class MergeController : MonoBehaviour,IMergeController
 
     private void UnSelectTiles()
     {
-        selectedTile.UnSelect(false,1);
-        secondTile.UnSelect(false,1);
+        selectedTile.UnSelect(false,.2f);
+        secondTile.UnSelect(false,.2f);
         selectedTile = null;
         secondTile = null;
     }
