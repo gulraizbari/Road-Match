@@ -212,7 +212,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -536,7 +536,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: IsPlayer
       Entry: 5
       Data: false

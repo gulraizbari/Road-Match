@@ -49,8 +49,8 @@ public sealed class CellData
         tilePlacement = TilePlacements.None;
         typeOfHurdle = TypesOfHurdle.NonBreakable;
         typeOfItem = ItemType.None;
-        typeOfFruit = Fruits.WaterMellon;
-        typeOfVegetables = Vegetables.Carrot;
+        typeOfFruit = Fruits.None;
+        typeOfVegetables = Vegetables.None;
         IsPlayer = false;
     }//Constructor() end
 

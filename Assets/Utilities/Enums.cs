@@ -4,6 +4,7 @@ public enum TileType
     Empty,
     Disable,
     Walkable,
+    Concrete,
     Gift,
 }
 
@@ -11,11 +12,12 @@ public enum TilePlacements
 {
     None,
     Hurdle,
-   Item
+    Item
 }
 
 public enum Fruits
 {
+    None,
     WaterMellon,
     BlueBerry,
     Orange,
@@ -24,6 +26,7 @@ public enum Fruits
 
 public enum Vegetables
 {
+    None,
     Carrot,
     Tomato,
     Lemon
@@ -41,4 +44,10 @@ public enum TypesOfHurdle
 {
     NonBreakable,
     Breakable,
+}
+public enum TileStates
+{
+     Available,
+     IsPlayer,
+     NotAvailable
 }

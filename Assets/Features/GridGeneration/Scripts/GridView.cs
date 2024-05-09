@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Features.MergeMechanic.Scripts.Interface;
 using GridGeneration.Scripts.interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -21,6 +22,7 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("References"), ShowInInspector]
         Dictionary<ItemType, List<Item>> _itemDictionary = new ();
 
+       
         Tile tile;
         public void Init(IGridGenerator generator)
         {
@@ -70,16 +72,13 @@ namespace Features.GridGeneration.Scripts
                             break;
                    
                     }
-                    // var id = $"{row}-{col}";
-                    // prefabNew.Init(hexPosition, col, row);
-                    // prefabNew.name = id;
-                    // grid[row, col] = prefabNew;
-                    // grid[row, col].transform.parent = transform;
                 }
             }
         }
 
-        
+        public IMergeController MergeController { get; set; }
+
+
         public Tile GetFoundTile(string id)
         {
             if (_tiles.TryGetValue(id,out Tile _tile))
@@ -116,13 +115,10 @@ namespace Features.GridGeneration.Scripts
         }
         public Item FindItem(ItemType type, object item)
         {
-            if (_itemDictionary.ContainsKey(type))
+            if (_itemDictionary.TryGetValue(type,out List<Item> data))
             {
-                // Retrieve the list of items for the specified type
-                List<Item> itemsOfType = _itemDictionary[type];
-
-                // Use Find method on the list to find the specific item
-                return itemsOfType.Find(x => x.fruits == (Fruits)item || x.vegetables == (Vegetables)item);
+               //var itemsOfType = _itemDictionary[type];
+                return data.Find(x => x.Fruit == (Fruits)item || x.Vegetable == (Vegetables)item);
             }
             else
             {

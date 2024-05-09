@@ -53,16 +53,18 @@ namespace Features.GridGeneration.Scripts
         {
             foreach (var VARIABLE in _adjacents)
             {
-                VARIABLE.Flip(true);
+                VARIABLE.Flip(true,false);
             }
         }
         public override void OnMouseDown()
         {
             base.OnMouseDown();
-            if (isPlayer)
+            if (_tileStates == TileStates.IsPlayer)
             {
                 CollectAdjacent();
             }
         }
+
+        
     }
 }

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  fruits: 0
+  fruits: 1
   vegetables: 0
 --- !u!1001 &5302163063474437336
 PrefabInstance:

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using DG.Tweening;
@@ -9,7 +10,7 @@ using UnityEngine;
 
 namespace Features.GridGeneration.Scripts
 {
-    public class TileBase:MonoBehaviour
+    public class TileBase:MonoBehaviour,ITile
     {
         [BoxGroup("Reference"), SerializeField] 
        protected string _id;
@@ -19,17 +20,19 @@ namespace Features.GridGeneration.Scripts
         Transform _itemPlacement;
         [BoxGroup("Reference"), SerializeField]
         TextMeshProUGUI _text;
-        [SerializeField] bool _isFlipped;
-        [SerializeField] bool _canTouch;
-        [SerializeField]
-        protected bool isPlayer;
+
+        [SerializeField] protected TileStates _tileStates;
+        //protected bool isPlayer;
         [BoxGroup("Reference"), SerializeField]
         protected List<Tile> _adjacents;
-
         [BoxGroup("Reference"), SerializeField,ReadOnly]
         protected Item _item;
         protected IGridView iGridView;
         protected ICell iCell;
+        bool _isFlipped; 
+        bool _canTouch;
+       
+
         public void SetID(int row, int col)
         {
             _id = $"{row}{col}";
@@ -53,20 +56,12 @@ namespace Features.GridGeneration.Scripts
         }
        
         
-        public void Flip(bool isAutoFlip)
+        public void Flip(bool isAutoFlip,bool canSelect)
         {
-            if (isPlayer)   return;
+            //if (isPlayer)   return;
             if (_isFlipped)
             {
-                transform.DOLocalMoveY(6f, .25f).SetEase(Ease.Linear).OnComplete((() =>
-                {
-                    transform.DOLocalMoveY(0f, .25f).SetEase(Ease.Linear).OnComplete((() =>
-                    {
-                        _isFlipped = false;
-                        _canTouch = false;
-                    }));;;
-                }));
-                TileRotateLogic(false,0);
+               UnSelect(canSelect,0);
             }
             else
             {
@@ -82,6 +77,10 @@ namespace Features.GridGeneration.Scripts
                         else
                         {
                             _canTouch = false;
+                            if (canSelect)
+                            {
+                                SelectTile(this);
+                            }
                         }
                        
                     }));
@@ -97,20 +96,20 @@ namespace Features.GridGeneration.Scripts
                 iGridView.ChangeTileMaterial(isGreen,_renderer);
                 if (!isGreen)
                 {
-                    ShowPlacement(false);
+                    ShowPlacement(false,0);
                 }
             })).OnComplete((() =>
             {
                 if (isGreen)
                 {
-                    ShowPlacement(true);
+                    ShowPlacement(true,0);
                 }
             } ));
         }
 
-        private void ShowPlacement(bool show)
+        private void ShowPlacement(bool show,float startDelay)
         {
-            _itemPlacement.DOScale(show?1:0, .01f).SetEase(Ease.Linear).OnComplete((() =>
+            _itemPlacement.DOScale(show?1:0, .01f).SetDelay(startDelay).SetEase(Ease.Linear).OnComplete((() =>
             {
                 _item.transform.DOScale(show ? 1 : 0, .01f).SetEase(Ease.Linear);
             }));
@@ -118,20 +117,80 @@ namespace Features.GridGeneration.Scripts
         private async void FlipWithDelay()
         {
             await Task.Delay(TimeSpan.FromSeconds(1));
-            Flip(true);
+            Flip(true,false);
            
         }
        
       public virtual void OnMouseDown()
         {
-
-           
+            if (_tileStates != TileStates.Available)return;
             if (!_canTouch)
             {
                 _canTouch = true;
                 
-                Flip(false);
+                Flip(false,true);
             }   
+        }
+
+        public Transform Transform { get=>_itemPlacement.transform; }
+
+        public void SelectTile(ITile tile)
+        {
+            iGridView.MergeController.SelectTile(this);
+        }
+
+        public async void UnSelect(bool canSelect,float delay)
+        {
+            await Task.Delay(TimeSpan.FromSeconds(delay));
+            transform.DOLocalMoveY(6f, .25f).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                transform.DOLocalMoveY(0f, .25f).SetEase(Ease.Linear).OnComplete((() =>
+                {
+                    if (canSelect)
+                    {
+                        SelectTile(this);
+                    }
+                    _isFlipped = false;
+                    _canTouch = false;
+                }));;;
+            }));
+            TileRotateLogic(false,0);
+        }
+
+        public void OnMerge(ITile tile)
+        {
+           _tileStates = TileStates.NotAvailable;
+           _item.transform.SetParent(null);
+           tile.Transform.SetParent(null);
+           Vector3 centerPoint = (tile.Transform.localPosition + _item.transform.localPosition) / 2;
+
+          
+           // Move each object towards its respective target position
+           _item.transform.DOLocalMove(centerPoint, .5f).SetEase(Ease.Linear).OnComplete((() =>
+           {
+               ShowPlacement(false,0);
+               tile.Transform.transform.DOScale(0, .1f).SetEase(Ease.Linear);
+           }));
+           tile.Transform.DOLocalMove(centerPoint, .5f);
+        }
+
+        
+        public void OnMerge()
+        {
+            _tileStates = TileStates.NotAvailable;
+           // ShowPlacement(false,0);
+        }
+
+        Item ITile.CurrentItem
+        {
+            get => _item;
+          
+        }
+
+        public string ID
+        {
+            get => _id;
+             
         }
     }
 }
