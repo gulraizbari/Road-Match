@@ -3,9 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using DG.Tweening;
+using Features.Haptics.Interfaces;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
 using Sirenix.OdinInspector;
+using TapticPlugin;
 using TMPro;
 using UnityEngine;
 
@@ -30,6 +32,7 @@ namespace Features.GridGeneration.Scripts
         protected Item _item;
         protected IGridView iGridView;
         protected ICell iCell;
+        protected IHapticController hapticController;
         bool _isFlipped; 
         bool _canTouch;
        
@@ -131,11 +134,12 @@ namespace Features.GridGeneration.Scripts
             if (!_canTouch)
             {
                 _canTouch = true;
+                hapticController.PlayHaptic(ImpactFeedback.Heavy);
                 Flip(false,true);
             }   
         }
 
-        public Transform Transform { get=>_itemPlacement.transform; }
+        public Transform PlacementTransform { get=>_itemPlacement.transform; }
         public TileStates TileState { get=>_tileStates; set=>_tileStates=value; }
 
         public void SelectTile(ITile tile)
@@ -159,9 +163,13 @@ namespace Features.GridGeneration.Scripts
             TileRotateLogic(false,0);
         }
         
-        public void OnMerge()
+        public void OnMerge(Vector3 target,float duration)
         {
             _tileStates = TileStates.Walkable;
+            PlacementTransform.DOLocalMove(target, duration).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                PlacementTransform.DOScale(0, .1f).SetEase(Ease.Linear);
+            }));
         }
 
         Item ITile.CurrentItem

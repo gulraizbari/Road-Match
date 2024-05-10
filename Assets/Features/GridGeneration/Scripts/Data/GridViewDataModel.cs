@@ -1,3 +1,4 @@
+using Features.Haptics.Interfaces;
 using GridGeneration.Scripts.interfaces;
 
 namespace Features.GridGeneration.Scripts
@@ -7,5 +8,6 @@ namespace Features.GridGeneration.Scripts
         public IGridGenerator GridHandler;
         public Cell[,] CellGrid;
         public LevelData LevelData;
+        
     }
 }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Features.Haptics.Interfaces;
 using Features.MergeMechanic.Scripts.Interface;
 using GridGeneration.Scripts.interfaces;
 using Sirenix.OdinInspector;
@@ -32,6 +33,7 @@ namespace Features.GridGeneration.Scripts
         public Dictionary<string, Tile> PathData { get=>_tiles; }
         
         public IMergeController MergeController { get; set; }
+        public IHapticController HapticHandler { get; set; }
 
 
         public Tile GetFoundTile(string id)

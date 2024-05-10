@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Features.GridGeneration.Scripts;
+using Features.Haptics.Interfaces;
 using Features.MergeMechanic.Scripts.Interface;
 using UnityEngine;
 
@@ -16,6 +17,8 @@ namespace GridGeneration.Scripts.interfaces
             get;
             set;
         }
+
+        public IHapticController HapticHandler { get; set; }
         Tile GetFoundTile(string  id);
         void ChangeTileMaterial(bool isGreen,Renderer renderer);
     }

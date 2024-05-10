@@ -8,9 +8,11 @@ namespace Sablo.Core
     {
         public MergeController mergeController;
         public GridView gridView;
+        public HapticsController hapticsController;
         public override void InjectDependencies()
         {
             gridView.MergeController = mergeController;
+            gridView.HapticHandler = hapticsController;
         }
     }
 }

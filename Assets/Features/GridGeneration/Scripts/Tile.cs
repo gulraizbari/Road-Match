@@ -11,6 +11,7 @@ namespace Features.GridGeneration.Scripts
         {
             iCell = cell;
             iGridView = gridView;
+            hapticController = gridView.HapticHandler;
             _renderer.material = material;
         }
 

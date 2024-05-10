@@ -21,6 +21,7 @@ namespace Features.GridGeneration.Scripts
         public int Row => _row;
         public int Col => _col;
         public Vector3 Position => _position;
+        
    
         public void Init(Vector3 pos,int col,int row,IGridGenerator generator)
         {
