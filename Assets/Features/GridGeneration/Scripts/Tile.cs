@@ -7,9 +7,9 @@ namespace Features.GridGeneration.Scripts
 {
     public class Tile:TileBase
     {
-        public void Init( Material material,ICell icell,IGridView gridView)
+        public void Init( Material material,ICell cell,IGridView gridView)
         {
-            iCell = icell;
+            iCell = cell;
             iGridView = gridView;
             _renderer.material = material;
         }
@@ -59,7 +59,7 @@ namespace Features.GridGeneration.Scripts
         public override void OnMouseDown()
         {
             base.OnMouseDown();
-            if (_tileStates == TileStates.IsPlayer)
+            if (_tileStates == TileStates.Player)
             {
                 CollectAdjacent();
             }

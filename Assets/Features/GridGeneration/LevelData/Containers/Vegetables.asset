@@ -16,3 +16,5 @@ MonoBehaviour:
   spawnItemContainer:
   - {fileID: 3718034703970555980, guid: aac5b75a97ea54edeb1eb10925c15ce7, type: 3}
   - {fileID: 7805378595329371458, guid: a7e45278a4cba4dd39e093bc1ada756d, type: 3}
+  - {fileID: 3802483655660928667, guid: 5aad71da82f4746708b0503af9fc370c, type: 3}
+  - {fileID: 3802483655660928667, guid: 764e4cf06bb0942808ac3275250be058, type: 3}

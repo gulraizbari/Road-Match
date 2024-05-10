@@ -1,10 +1,10 @@
 public enum TileType
 {
-    None,
+   
     Empty,
     Disable,
     Walkable,
-    Concrete,
+    Gate,
     Gift,
 }
 
@@ -21,15 +21,27 @@ public enum Fruits
     WaterMellon,
     BlueBerry,
     Orange,
-    Guava
+    Guava,
+    Juice3D,
+    Banana3D,
+    IceCream3D,
+    
 }
 
+public enum Animals
+{
+    None,
+    Duck
+}
 public enum Vegetables
 {
     None,
     Carrot,
     Tomato,
-    Lemon
+    Lemon,
+    Corn3D,
+    Garlic3D
+    
 }
 public enum ItemType
 {
@@ -37,17 +49,23 @@ public enum ItemType
     Fruits,
     Vegetables,
     Animals,
-    Objects,
-    
 }
 public enum TypesOfHurdle
 {
     NonBreakable,
     Breakable,
 }
+
 public enum TileStates
 {
-     Available,
-     IsPlayer,
-     NotAvailable
+    NotFlipAble,
+    Select,
+    UnSelect,
+    CanMerge,
+    AutoFlip,
+    FlipAble,
+    Walkable,
+    Player,
+    Breakable,
+    NotBreakable
 }

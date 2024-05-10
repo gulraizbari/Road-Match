@@ -21,6 +21,7 @@ public sealed class CellData
      [SerializeField] public ItemType typeOfItem;
      [SerializeField] public Fruits typeOfFruit;
      [SerializeField] public Vegetables typeOfVegetables;
+     [SerializeField] public Animals typeOfAnimals;
      [SerializeField] public bool      IsPlayer    = false;
     // [SerializeField] public IngredientsProcess ingredientsProcess;
     // [SerializeField] public IngredientType ingredientType;
@@ -45,12 +46,13 @@ public sealed class CellData
     /// </summary>
     public CellData()
     {
-        tileType = TileType.None;
+        tileType = TileType.Empty;
         tilePlacement = TilePlacements.None;
         typeOfHurdle = TypesOfHurdle.NonBreakable;
         typeOfItem = ItemType.None;
         typeOfFruit = Fruits.None;
         typeOfVegetables = Vegetables.None;
+        typeOfAnimals = Animals.None;
         IsPlayer = false;
     }//Constructor() end
 
@@ -146,7 +148,6 @@ public sealed class LevelData : SerializedScriptableObject
 
         if (value.tileType.Equals(TileType.Disable))
         {
-            
             EditorGUIUtility.labelWidth = 50;
             value.tilePlacement = (TilePlacements)EditorGUILayout.EnumPopup("Type", value.tilePlacement);
             if (value.tilePlacement == TilePlacements.Hurdle)
@@ -163,6 +164,10 @@ public sealed class LevelData : SerializedScriptableObject
                 else if (value.typeOfItem== ItemType.Vegetables)
                 {
                     value.typeOfVegetables=(Vegetables)EditorGUILayout.EnumPopup("Type", value.typeOfVegetables);
+                } 
+                else if (value.typeOfItem== ItemType.Animals)
+                {
+                    value.typeOfAnimals=(Animals)EditorGUILayout.EnumPopup("Type", value.typeOfAnimals);
                 }
                 
             }

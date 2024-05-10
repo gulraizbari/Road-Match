@@ -1,9 +1,10 @@
 using System;
-using System.Collections;
+
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using DG.Tweening;
 using GridGeneration.Scripts.interfaces;
+using Sablo.Core;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -48,6 +49,7 @@ namespace Features.GridGeneration.Scripts
         public void SetTransform(Vector3 pos, float z)
         {
             transform.position = pos;
+            TileState = TileStates.FlipAble;
             _renderer.transform.localRotation = Quaternion.Euler(0, 0, z);
             if (z!=0)
             {
@@ -58,17 +60,19 @@ namespace Features.GridGeneration.Scripts
         
         public void Flip(bool isAutoFlip,bool canSelect)
         {
-            //if (isPlayer)   return;
             if (_isFlipped)
             {
                UnSelect(canSelect,0);
             }
             else
             {
+              var configs= Configs.GameConfig;
+                TileState = isAutoFlip ? TileStates.AutoFlip : TileStates.CanMerge;
+               
                 _isFlipped = true;
-                transform.DOLocalMoveY(6, .25f).SetEase(Ease.Linear).OnComplete((() =>
+                transform.DOLocalMoveY(configs.tileJumpHeight, configs.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
                 {
-                    transform.DOLocalMoveY(0, .25f).SetEase(Ease.Linear).OnComplete((() =>
+                    transform.DOLocalMoveY(0, configs.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
                     {
                         if (isAutoFlip)
                         {
@@ -82,7 +86,6 @@ namespace Features.GridGeneration.Scripts
                                 SelectTile(this);
                             }
                         }
-                       
                     }));
                 }));
                 TileRotateLogic(true,-180);
@@ -91,7 +94,7 @@ namespace Features.GridGeneration.Scripts
 
         private void TileRotateLogic(bool isGreen,float Z)
         {
-            _renderer.transform.DOLocalRotate(new Vector3(0, 0, Z), .25f).SetDelay(.05f).SetEase(Ease.Linear).OnStart((() =>
+            _renderer.transform.DOLocalRotate(new Vector3(0, 0, Z), Configs.GameConfig.tileJumpDuration).SetDelay(.05f).SetEase(Ease.Linear).OnStart((() =>
             {
                 iGridView.ChangeTileMaterial(isGreen,_renderer);
                 if (!isGreen)
@@ -109,9 +112,10 @@ namespace Features.GridGeneration.Scripts
 
         private void ShowPlacement(bool show,float startDelay)
         {
-            _itemPlacement.DOScale(show?1:0, .01f).SetDelay(startDelay).SetEase(Ease.Linear).OnComplete((() =>
+            var config = Configs.GameConfig;
+            _itemPlacement.DOScale(show?config.placementMaxScale:config.placementMinScale, config.placementDuration).SetDelay(startDelay).SetEase(Ease.Linear).OnComplete((() =>
             {
-                _item.transform.DOScale(show ? 1 : 0, .01f).SetEase(Ease.Linear);
+                _item.transform.DOScale(show?config.placementMaxScale:config.placementMinScale, config.placementDuration).SetEase(Ease.Linear);
             }));
         }
         private async void FlipWithDelay()
@@ -123,62 +127,41 @@ namespace Features.GridGeneration.Scripts
        
       public virtual void OnMouseDown()
         {
-            if (_tileStates != TileStates.Available)return;
+            if (_tileStates != TileStates.FlipAble)return;
             if (!_canTouch)
             {
                 _canTouch = true;
-                
                 Flip(false,true);
             }   
         }
 
         public Transform Transform { get=>_itemPlacement.transform; }
+        public TileStates TileState { get=>_tileStates; set=>_tileStates=value; }
 
         public void SelectTile(ITile tile)
         {
             iGridView.MergeController.SelectTile(this);
         }
 
-        public async void UnSelect(bool canSelect,float delay)
+        public  async void UnSelect(bool canSelect,float delay)
         {
             await Task.Delay(TimeSpan.FromSeconds(delay));
-            transform.DOLocalMoveY(6f, .25f).SetEase(Ease.Linear).OnComplete((() =>
+            var config = Configs.GameConfig;
+            transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
             {
-                transform.DOLocalMoveY(0f, .25f).SetEase(Ease.Linear).OnComplete((() =>
+                transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
                 {
-                    if (canSelect)
-                    {
-                        SelectTile(this);
-                    }
+                    TileState = TileStates.FlipAble;
                     _isFlipped = false;
                     _canTouch = false;
                 }));;;
             }));
             TileRotateLogic(false,0);
         }
-
-        public void OnMerge(ITile tile)
-        {
-           _tileStates = TileStates.NotAvailable;
-           _item.transform.SetParent(null);
-           tile.Transform.SetParent(null);
-           Vector3 centerPoint = (tile.Transform.localPosition + _item.transform.localPosition) / 2;
-
-          
-           // Move each object towards its respective target position
-           _item.transform.DOLocalMove(centerPoint, .5f).SetEase(Ease.Linear).OnComplete((() =>
-           {
-               ShowPlacement(false,0);
-               tile.Transform.transform.DOScale(0, .1f).SetEase(Ease.Linear);
-           }));
-           tile.Transform.DOLocalMove(centerPoint, .5f);
-        }
-
         
         public void OnMerge()
         {
-            _tileStates = TileStates.NotAvailable;
-           // ShowPlacement(false,0);
+            _tileStates = TileStates.Walkable;
         }
 
         Item ITile.CurrentItem
@@ -190,7 +173,6 @@ namespace Features.GridGeneration.Scripts
         public string ID
         {
             get => _id;
-             
         }
     }
 }
