@@ -1,5 +1,5 @@
 using System;
-
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using DG.Tweening;
@@ -10,6 +10,7 @@ using Sirenix.OdinInspector;
 using TapticPlugin;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Features.GridGeneration.Scripts
 {
@@ -69,7 +70,7 @@ namespace Features.GridGeneration.Scripts
         {
             if (_isFlipped)
             {
-               UnSelect(canSelect,0);
+               UnSelect(canSelect,0,.05f,null);
             }
             else
             {
@@ -95,13 +96,14 @@ namespace Features.GridGeneration.Scripts
                         }
                     }));
                 }));
+                
                 TileRotateLogic(true,-180);
             }
         }
 
         private void TileRotateLogic(bool isGreen,float Z)
         {
-            _renderer.transform.DOLocalRotate(new Vector3(0, 0, Z), Configs.GameConfig.tileJumpDuration).SetDelay(.05f).SetEase(Ease.Linear).OnStart((() =>
+            _renderer.transform.DOLocalRotate(new Vector3(0, 0, Z), Configs.GameConfig.tileJumpDuration).SetEase(Ease.Linear).OnStart((() =>
             {
                 iGridView.ChangeTileMaterial(isGreen,_renderer);
                 if (!isGreen)
@@ -151,22 +153,53 @@ namespace Features.GridGeneration.Scripts
             iGridView.MergeController.SelectTile(this);
         }
 
-        public  async void UnSelect(bool canSelect,float delay)
+        IEnumerator coroutine;
+
+        public   void UnSelect(bool canSelect,float delay,float rotationDelay,UnityEvent action)
         {
-            await Task.Delay(TimeSpan.FromSeconds(delay));
+            if (coroutine != null)StopCoroutine(coroutine);
+            coroutine = unselect(delay, rotationDelay, action);
+            StartCoroutine(coroutine);
+            //   await Task.Delay(TimeSpan.FromSeconds(delay));
+            //   var config = Configs.GameConfig;
+            // _outerTween  =  transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+            //   {
+            //     _innerTween =   transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+            //       {
+            //           TileState = TileStates.FlipAble;
+            //           _isFlipped = false;
+            //           _canTouch = false;
+            //       }));;;
+            //   }));
+            //   TileRotateLogic(false,0);
+        }
+
+        IEnumerator unselect(float delay,float rotationDelay,UnityEvent action)
+        {
+            yield return new WaitForSeconds(delay);
+            action?.Invoke();
+            print("lol");
             var config = Configs.GameConfig;
-          _outerTween  =  transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+            if (_outerTween.IsActive())
             {
-              _innerTween =   transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+                _outerTween.Kill();
+            } 
+            if (_innerTween.IsActive())
+            {
+                _innerTween.Kill();
+            }
+            _outerTween  =  transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                _innerTween =   transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
                 {
                     TileState = TileStates.FlipAble;
                     _isFlipped = false;
                     _canTouch = false;
                 }));;;
             }));
+            yield return new WaitForSeconds(rotationDelay);
             TileRotateLogic(false,0);
         }
-        
         public void OnMerge(Vector3 target,float duration)
         {
             var configs = Configs.GameConfig;

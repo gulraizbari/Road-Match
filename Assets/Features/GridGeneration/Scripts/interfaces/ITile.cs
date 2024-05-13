@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace GridGeneration.Scripts.interfaces
 {
@@ -7,7 +9,7 @@ namespace GridGeneration.Scripts.interfaces
         public Transform PlacementTransform { get; }
         public TileStates TileState { get; set; }
         void SelectTile(ITile tile);
-        void UnSelect(bool canSelect,float delay);
+        void UnSelect(bool canSelect,float delay,float rotationDelay,UnityEvent action);
         void OnMerge(Vector3 target, float duration);
         public Item CurrentItem { get; }
         public string ID { get; }

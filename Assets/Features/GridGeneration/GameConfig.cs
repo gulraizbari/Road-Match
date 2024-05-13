@@ -13,6 +13,7 @@ public partial class GameConfig
   public float placementMoveDownValue;
   public float placementMaxScale;
   public float placementMinScale;
-//public float 
-  
+  public float tileRotateDelay;
+  public float tileFlipDelay;
+
 }
