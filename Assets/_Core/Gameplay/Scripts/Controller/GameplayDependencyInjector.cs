@@ -1,20 +1,18 @@
-using Sablo.Gameplay.Movement;
-using Sablo.Gameplay.Pathfinding;
-using UnityEngine;
+using Features.GridGeneration.Scripts;
+using Features.MergeMechanic.Scripts.Interface;
+using GridGeneration.Scripts.interfaces;
 
 namespace Sablo.Core
 {
     public class GameplayDependencyInjector : BaseDependencyInjector
     {
-        [SerializeField] private Pathfinding _pathfinding;
-        [SerializeField] private InputController _inputController;
-        [SerializeField] private GridGenerator _gridGenerator;
-        
+        public MergeController mergeController;
+        public GridView gridView;
+        public HapticsController hapticsController;
         public override void InjectDependencies()
         {
-            _inputController.PathfindingHandler = _pathfinding;
-            _inputController.GridGeneratorHandler = _gridGenerator;
-            _gridGenerator.InputControllerHandler = _inputController;
+            gridView.MergeController = mergeController;
+            gridView.HapticHandler = hapticsController;
         }
     }
 }

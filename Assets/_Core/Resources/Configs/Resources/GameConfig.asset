@@ -12,3 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a711066e546e84d7aa77376c1f15bd73, type: 3}
   m_Name: GameConfig
   m_EditorClassIdentifier: 
+  tileJumpHeight: 3
+  tileJumpDuration: 0.125
+  tileRotateDuration: 0.125
+  placementDuration: 0.1
+  placementMoveUpDuration: 0.2
+  placementMoveUpValue: 5
+  placementMoveDownValue: 2
+  placementMaxScale: 1
+  placementMinScale: 0
