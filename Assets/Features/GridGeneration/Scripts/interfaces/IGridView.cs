@@ -8,8 +8,8 @@ namespace GridGeneration.Scripts.interfaces
 {
     public interface IGridView
     {
-        void SpawnGrid(Cell[,] grid, LevelData levelData);
-        Dictionary<string, Tile> PathData {
+        public void SpawnGrid(Cell[,] grid, LevelData levelData);
+        public Dictionary<string, Tile> PathData {
             get;
         }
 
@@ -19,7 +19,7 @@ namespace GridGeneration.Scripts.interfaces
         }
 
         public IHapticController HapticHandler { get; set; }
-        Tile GetFoundTile(string  id);
-        void ChangeTileMaterial(bool isGreen,Renderer renderer);
+        public Tile GetFoundTile(string  id);
+        public void ChangeTileMaterial(bool isGreen,Renderer renderer);
     }
 }
