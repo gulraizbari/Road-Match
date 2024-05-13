@@ -9,8 +9,9 @@ namespace Features.GridGeneration.Scripts
     public class Tile : TileBase
     {
         public int r, c;
+        private PlayerController _playerController;
 
-        public void Init(Material material, ICell cell, IGridView gridView, IPlayer player)
+        public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController)
         {
             iCell = cell;
             r = cell.Row;
@@ -18,6 +19,7 @@ namespace Features.GridGeneration.Scripts
             gameObject.name = $"{r},{c}";
             iGridView = gridView;
             hapticController = gridView.HapticHandler;
+            _playerController = playerController;
             _renderer.material = material;
             _player = player;
             gameObject.SetActive(true);
@@ -83,14 +85,14 @@ namespace Features.GridGeneration.Scripts
         public override void OnMouseDown()
         {
             base.OnMouseDown();
-            // if (_player != null)
-            // {
-            //     PlayerController.instance.SelectedPlayer = _player;
-            // }
-            // else
-            // {
-            //     PlayerController.instance.AssignPath(this);
-            // }
+            if (_player != null)
+            {
+                _playerController.SelectedPlayer = _player;
+            }
+            else
+            {
+                _playerController.AssignPath(this);
+            }
 
             if (_tileStates == TileStates.Player)
             {

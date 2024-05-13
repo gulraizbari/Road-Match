@@ -25,6 +25,9 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("References"), SerializeField]
         Material _enable;
 
+        [BoxGroup("References"), SerializeField]
+        private PlayerController _playerController;
+
         [BoxGroup("References"), ShowInInspector]
         Dictionary<ItemType, List<Item>> _itemDictionary = new();
 
@@ -88,7 +91,7 @@ namespace Features.GridGeneration.Scripts
                         {
                             //grid[row, col].IsWalkable = true;
                             // var _tile = Instantiate(_prefab, transform);
-                            _tile.Init(_disable, grid[row, col], this, null);
+                            _tile.Init(_disable, grid[row, col], this, null, _playerController);
                             _tile.SetTransform(tilePosition, 0);
                             _tile.SetID(row, col, grid[row, col]);
                             if (levelData.Matrix[row, col].tilePlacement == TilePlacements.Item)
@@ -115,11 +118,11 @@ namespace Features.GridGeneration.Scripts
                                 PlayerTile = tilesGrid[row, col];
                                 _tile.TileState = TileStates.Walkable;
                                 _player.Init(new Vector3(tilePosition.x, 1, tilePosition.z), PlayerTile);
-                                _tile.Init(_enable, grid[row, col], this, _player);
+                                _tile.Init(_enable, grid[row, col], this, _player, _playerController);
                             }
                             else
                             {
-                                _tile.Init(_enable, grid[row, col], this, null);
+                                _tile.Init(_enable, grid[row, col], this, null, _playerController);
                             }
 
                             break;
@@ -127,7 +130,7 @@ namespace Features.GridGeneration.Scripts
 
                         case TileType.Gate:
                         {
-                            _tile.Init(_disable, grid[row, col], this, null);
+                            _tile.Init(_disable, grid[row, col], this, null, _playerController);
                             _tile.SetTransform(tilePosition, 0);
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
@@ -145,7 +148,7 @@ namespace Features.GridGeneration.Scripts
         private Tile SpawnTile(Cell cell, Vector3 tilePosition, float zRot)
         {
             var _tile = Instantiate(_prefab, transform);
-            tile.Init(_enable, cell, this, null);
+            tile.Init(_enable, cell, this, null, _playerController);
             tile.SetTransform(tilePosition, zRot);
             //  tile.SetID(cell.Row, cell.Col);
             _tiles.Add($"{cell.Row}{cell.Col}", tile);

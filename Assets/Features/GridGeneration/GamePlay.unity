@@ -1689,9 +1689,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85717dc8290d54bee84df873670276f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mergeController: {fileID: 1957587253}
-  gridView: {fileID: 2045547669}
-  hapticsController: {fileID: 1202539670}
+  _mergeController: {fileID: 1957587253}
+  _gridView: {fileID: 2045547669}
+  _hapticsController: {fileID: 1202539670}
+  _playerController: {fileID: 1457352167}
+  _pathFinding: {fileID: 1767689964}
 --- !u!4 &1228550221
 Transform:
   m_ObjectHideFlags: 0
@@ -2806,7 +2808,7 @@ PrefabInstance:
     - target: {fileID: 1094389920240604684, guid: 703ce5bbc424ac947a039312c8c18b01,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1094389920240604684, guid: 703ce5bbc424ac947a039312c8c18b01,
         type: 3}
@@ -3350,7 +3352,8 @@ MonoBehaviour:
   _prefab: {fileID: 7114899668956242623, guid: b3659c585cc7543c6bb1898dc9529f18, type: 3}
   _disable: {fileID: 2100000, guid: 5ef4b99f0a2832d449f2532a64971fad, type: 2}
   _enable: {fileID: 2100000, guid: 5bd5f82cccc3b41f59844038be9bdddd, type: 2}
-  _player: {fileID: 0}
+  _playerController: {fileID: 1457352167}
+  _player: {fileID: 2090353442}
   Gate: {fileID: 1232607686}
 --- !u!4 &2045547670
 Transform:
@@ -3562,7 +3565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090353440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3583,7 +3586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentTile: {fileID: 0}
-  _moveSpeed: 5
+  _moveSpeed: 5.5
   pathToMove: []
 --- !u!4 &1332151566266312819
 Transform:

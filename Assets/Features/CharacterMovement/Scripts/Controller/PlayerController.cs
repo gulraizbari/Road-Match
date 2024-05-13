@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.Pathfinding;
 using UnityEngine;
 
 namespace Sablo.Gameplay.Movement
 {
-    public class PlayerController: MonoBehaviour, IPlayerController
+    public class PlayerController : MonoBehaviour, IPlayerController
     {
         public IPathFinding PathFinding;
         public Player Player;
@@ -21,6 +19,5 @@ namespace Sablo.Gameplay.Movement
 
             SelectedPlayer = null;
         }
-        
     }
 }

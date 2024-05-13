@@ -81,12 +81,23 @@ namespace Sablo.Gameplay.Movement
 
         private IEnumerator FollowOnTarget(Transform target)
         {
-            while (transform.position != target.position)
+            Vector3 targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
+            LookAt(targetPosition);
+    
+            while (transform.position != targetPosition)
             {
-                transform.position =
-                    Vector3.MoveTowards(transform.position, target.position, _moveSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, _moveSpeed * Time.deltaTime);
                 yield return null;
             }
+        }
+
+        public void LookAt(Vector3 target)
+        {
+            Vector3 lookPos = target - transform.position;
+            Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
+            float eulerY = lookRot.eulerAngles.y;
+            Quaternion rotation = Quaternion.Euler(0, eulerY, 0);
+            transform.rotation = rotation;
         }
     }
 }

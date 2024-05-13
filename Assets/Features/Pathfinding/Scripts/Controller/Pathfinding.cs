@@ -9,7 +9,7 @@ namespace Sablo.Gameplay.Pathfinding
     public class PathFinding : MonoBehaviour, IPathFinding
     {
         [SerializeField] private GridGenerator _gridGenerator;
-        private IPlayer _player;
+        public IPlayer player;
         private List<Tile> _foundPaths = new List<Tile>();
 
         [Button]
@@ -20,7 +20,7 @@ namespace Sablo.Gameplay.Pathfinding
             if (FindPath(start, target) != null)
             {
                 _foundPaths = FindPath(start, target);
-                _player.MoveOnPath(_foundPaths);
+                player.MoveOnPath(_foundPaths);
             }
             else
             {
