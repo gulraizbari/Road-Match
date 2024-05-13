@@ -1,67 +1,75 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Sablo.Gameplay.Pathfinding
 {
     public class Pathfinding : MonoBehaviour, IPathfinding
     {
-        private Graph _graph;
-
-        public List<Node> FindPath(Node[,] grid, Node start, Node target)
+        public List<Node> FindShortestPath(Node start, Node target)
         {
-            var currentPath = new PriorityQueue<Node>();
-            var costSoFar = new Dictionary<Node, int>();
-            var visitedPath = new Dictionary<Node, Node>();
-            currentPath.Enqueue(start, 0);
-            costSoFar[start] = 0;
-            visitedPath[start] = null;
+            var toSearch = new List<Node>() { start };
+            var processed = new List<Node>();
 
-            while (currentPath.Count > 0)
+            while (toSearch.Any())
             {
-                var current = currentPath.Dequeue();
+                var current = toSearch[0];
+                foreach (var node in toSearch)
+                {
+                    if (node.F < current.F || node.F == current.F && node.H < current.H)
+                    {
+                        current = node;
+                    }
+                }
+
+                processed.Add(current);
+                toSearch.Remove(current);
+
                 if (current == target)
                 {
                     break;
                 }
 
-                foreach (var nextNode in _graph.GetNeighbors(grid, current))
+                foreach (var neighbor in current.Neighbors.Where(t => !t.IsHurdle && !processed.Contains(t)))
                 {
-                    var newCost = costSoFar[current] + _graph.GetCost(current, nextNode);
-                    if (!costSoFar.ContainsKey(nextNode) || newCost < costSoFar[nextNode])
+                    var inSearch = toSearch.Contains(neighbor);
+                    var costToNeighbor = current.G + current.GetDistance(neighbor);
+
+                    if (!inSearch || costToNeighbor < neighbor.G)
                     {
-                        costSoFar[nextNode] = newCost;
-                        var priority = newCost + GetHeuristic(target, nextNode);
-                        currentPath.Enqueue(nextNode, priority);
-                        visitedPath[nextNode] = current;
+                        neighbor.SetG(costToNeighbor);
+                        neighbor.SetConnection(current);
+                        if (!inSearch)
+                        {
+                            neighbor.SetH(neighbor.GetDistance(target));
+                            toSearch.Add(neighbor);
+                        }
                     }
                 }
             }
 
-            var path = TracePath(target, visitedPath);
+            var path = TraceShortestPath(start, target);
             return path;
         }
 
-        private List<Node> TracePath(Node target, Dictionary<Node, Node> visitedPath)
+        private List<Node> TraceShortestPath(Node start, Node target)
         {
+            var currentPathTile = target;
             var path = new List<Node>();
-            var currentPathNode = target;
-            while (currentPathNode != null)
+            var count = 100;
+            while (currentPathTile != start)
             {
-                path.Add(currentPathNode);
-                currentPathNode = visitedPath[currentPathNode];
+                path.Add(currentPathTile);
+                currentPathTile = currentPathTile.Connection;
+                count--;
+                if (count < 0)
+                {
+                    throw new Exception();
+                }
             }
 
-            path.Reverse();
             return path;
-        }
-
-        private int GetHeuristic(Node currentNode, Node neighborNode)
-        {
-            // Manhattan Distance
-            var distanceX = (int)Mathf.Abs(currentNode.Position.x - neighborNode.Position.x);
-            var distanceY = (int)Mathf.Abs(currentNode.Position.y - neighborNode.Position.y);
-            var distance = distanceX + distanceY;
-            return distance;
         }
     }
 }
