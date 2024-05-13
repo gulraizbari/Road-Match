@@ -10,6 +10,7 @@ namespace Features.GridGeneration.Scripts
     {
         public int r, c;
         private PlayerController _playerController;
+        private Color _originalColor;
 
         public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController)
         {
@@ -70,6 +71,21 @@ namespace Features.GridGeneration.Scripts
             {
                 VARIABLE.Flip(true, false);
             }
+        }
+
+        public void ChangeColor(Color color)
+        {
+            _renderer.material.color = color;
+        }
+        
+        public void SaveOriginalColor()
+        {
+            _originalColor = _renderer.material.color;
+        }
+
+        public void RevertToOriginalColor()
+        {
+            _renderer.material.color = _originalColor;
         }
 
         public void RemovePlayer()

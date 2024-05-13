@@ -70,8 +70,7 @@ namespace Features.GridGeneration.Scripts
                 _isFlipped = true;
             }
         }
-
-
+        
         public void Flip(bool isAutoFlip, bool canSelect)
         {
             if (_isFlipped)
