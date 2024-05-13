@@ -28,6 +28,7 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("References"), SerializeField]
         List<string> ad;
 
+        public Cell cell;
        public LevelData _levelData;
         private void Start()
         {

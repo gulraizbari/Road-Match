@@ -2,6 +2,7 @@ using DG.Tweening;
 using Features.GridGeneration.Scripts;
 using Features.MergeMechanic.Scripts.Interface;
 using GridGeneration.Scripts.interfaces;
+using Sablo.Core;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -9,12 +10,15 @@ public class MergeController : MonoBehaviour, IMergeController
 {
     [ShowInInspector] ITile selectedTile1 = null;
     [ShowInInspector] ITile selectedTile2 = null;
+    [ShowInInspector] ITile OldSelectedTile1 = null;
+    [ShowInInspector] ITile OldSelectedTile2 = null;
 
     public bool isMerging;
 
     public void SelectTile(ITile tile)
     {
         //if (isMerging)return;
+        
         if (selectedTile1 == null)
         {
             selectedTile1 = tile;
@@ -51,8 +55,8 @@ public class MergeController : MonoBehaviour, IMergeController
                     _newSelectedTransform.SetParent(null);
                     Vector3 centerPoint = (_newSelectedTransform.localPosition + _selectedTransform.localPosition) / 2;
                     float distance = Vector3.Distance(_selectedTransform.position, _newSelectedTransform.position);
-                    float delayTime = Mathf.Clamp(distance * 0.1f, 0.0f, .5f);
-                    centerPoint.y += 4;
+                    float delayTime = Mathf.Clamp(distance * 0.1f, 0.0f, .1f);
+                 //   centerPoint.y += Configs.GameConfig.placementMoveDownValue;
                     print($"Delay {delayTime}");
                     selectedTile1.OnMerge(centerPoint,delayTime);
                     selectedTile2.OnMerge(centerPoint,delayTime);
@@ -66,13 +70,9 @@ public class MergeController : MonoBehaviour, IMergeController
             }
             else
             {
+                print("Ithe ywa");
                 UnSelectTiles();
             }
-
-            // selectedTile2.UnSelect(false,.2f);
-            // selectedTile1.UnSelect(false,0.2f);
-            // selectedTile1 = null;
-            // selectedTile2 = null;
         }
         else
         {
@@ -83,55 +83,13 @@ public class MergeController : MonoBehaviour, IMergeController
         }
     }
 
-    // private void Merge(ITile newTile)
-    // {
-    //     if (selectedTile1.TileState == TileStates.CanMerge && newTile.TileState == TileStates.CanMerge)
-    //     {
-    //         if (selectedTile1.CurrentItem.TypeItem == newTile.CurrentItem.TypeItem)
-    //         {
-    //             if (selectedTile1.CurrentItem.GetItemObject().ToString() ==
-    //                 newTile.CurrentItem.GetItemObject().ToString())
-    //             {
-    //                 isMerging = true;
-    //                 print("Merge");
-    //                 var _selectedTransform = selectedTile1.Transform;
-    //                 var _newSelectedTransform = newTile.Transform;
-    //                 _selectedTransform.SetParent(null);
-    //                 _newSelectedTransform.SetParent(null);
-    //                 Vector3 centerPoint = (_newSelectedTransform.localPosition + _selectedTransform.localPosition) / 2;
-    //
-    //
-    //                 // Move each object towards its respective target position
-    //                 _newSelectedTransform.DOLocalMove(centerPoint, .5f).SetEase(Ease.Linear).OnComplete((() =>
-    //                 {
-    //                     isMerging = false;
-    //                     _newSelectedTransform.DOScale(0, .1f).SetEase(Ease.Linear);
-    //                 }));
-    //                 _selectedTransform.DOLocalMove(centerPoint, .5f).OnComplete((() =>
-    //                 {
-    //                     _selectedTransform.DOScale(0, .1f).SetEase(Ease.Linear);
-    //                 }));
-    //                 selectedTile1. TileState = TileStates.Walkable;
-    //                 newTile. TileState = TileStates.Walkable;
-    //                 newTile.OnMerge();
-    //                 selectedTile1 = null;
-    //             }
-    //             else
-    //             {
-    //                 print("diff sub Type");
-    //                 UnSelectTiles();
-    //             }
-    //         }
-    //         else
-    //         {
-    //             UnSelectTiles();
-    //         }
-    //     }
-    //     else
-    //     {
-    //         UnSelectTiles();
-    //     }
-    // }
+    private float GetMergeDurationTime(Vector3 tile2,Vector3 tile1)
+    {
+        var centerPoint = (tile2 + tile1) / 2;
+        var distance = Vector3.Distance(tile1, tile2);
+        var delayTime = Mathf.Clamp(distance * 0.1f, 0.0f, .5f);
+        return delayTime;
+    }
 
     private void UnSelectTiles()
     {

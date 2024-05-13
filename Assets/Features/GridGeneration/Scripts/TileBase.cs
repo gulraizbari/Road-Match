@@ -35,12 +35,15 @@ namespace Features.GridGeneration.Scripts
         protected IHapticController hapticController;
         bool _isFlipped; 
         bool _canTouch;
-       
-
-        public void SetID(int row, int col)
+        public Cell CellBase;
+        Tween _outerTween;
+        Tween _innerTween;
+        //Tween _innerTween;
+        public void SetID(int row, int col,Cell cell)
         {
             _id = $"{row}{col}";
             _text.SetText($"{row},{col}");
+            CellBase = cell;
         }
 
         public void AssignPlacement(Item item)
@@ -48,6 +51,7 @@ namespace Features.GridGeneration.Scripts
             _item = item;
             _item.transform.SetParent(_itemPlacement);
             item.transform.localPosition=Vector3.zero;
+            
         }
         public void SetTransform(Vector3 pos, float z)
         {
@@ -151,9 +155,9 @@ namespace Features.GridGeneration.Scripts
         {
             await Task.Delay(TimeSpan.FromSeconds(delay));
             var config = Configs.GameConfig;
-            transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+          _outerTween  =  transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
             {
-                transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+              _innerTween =   transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
                 {
                     TileState = TileStates.FlipAble;
                     _isFlipped = false;
@@ -165,10 +169,16 @@ namespace Features.GridGeneration.Scripts
         
         public void OnMerge(Vector3 target,float duration)
         {
+            var configs = Configs.GameConfig;
             _tileStates = TileStates.Walkable;
-            PlacementTransform.DOLocalMove(target, duration).SetEase(Ease.Linear).OnComplete((() =>
+            CellBase.IsWalkable = true;
+            PlacementTransform.DOLocalMoveY(configs.placementMoveUpValue, configs.placementMoveUpDuration).SetEase(Ease.Linear).OnComplete((() =>
             {
-                PlacementTransform.DOScale(0, .1f).SetEase(Ease.Linear);
+                target.y = PlacementTransform.position.y;
+                PlacementTransform.DOLocalMove(target, duration).SetEase(Ease.InQuint).OnComplete((() =>
+                {
+                    PlacementTransform.DOScale(configs.placementMinScale, .1f).SetEase(Ease.Linear);
+                }));
             }));
         }
 

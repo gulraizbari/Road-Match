@@ -3,6 +3,7 @@ using Features.Haptics.Interfaces;
 using Features.MergeMechanic.Scripts.Interface;
 using GridGeneration.Scripts.interfaces;
 using Sirenix.OdinInspector;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Features.GridGeneration.Scripts
@@ -14,6 +15,8 @@ namespace Features.GridGeneration.Scripts
 
         [BoxGroup("References"), SerializeField]
         Tile _prefab;
+        [BoxGroup("References"), SerializeField]
+        GameObject _stonePrefab;
 
         [BoxGroup("References"), ShowInInspector]
         Dictionary<string, Tile> _tiles = new();
@@ -66,6 +69,7 @@ namespace Features.GridGeneration.Scripts
             {
                 for (var col = 0; col < levelData.Height; col++)
                 {
+                   
                     var tilePosition = grid[row, col].Position;
                     switch (levelData.Matrix[row, col].tileType)
                     {
@@ -74,7 +78,7 @@ namespace Features.GridGeneration.Scripts
                             var _tile = Instantiate(_prefab, transform);
                             _tile.Init(_disable, grid[row, col], this);
                             _tile.SetTransform(tilePosition, 0);
-                            _tile.SetID(row, col);
+                            _tile.SetID(row, col,grid[row, col]);
                             if (levelData.Matrix[row, col].tilePlacement == TilePlacements.Item)
                             {
                                 DisableTile(levelData.Matrix[row, col], _tile);
@@ -82,6 +86,7 @@ namespace Features.GridGeneration.Scripts
                             else if (levelData.Matrix[row, col].tilePlacement == TilePlacements.Hurdle)
                             {
                                 _tile.TileState =TileStates.NotBreakable;
+                                Instantiate(_stonePrefab, tilePosition, quaternion.identity);
                             }
                             
                             _tiles.Add($"{row}{col}", tile);
@@ -89,30 +94,34 @@ namespace Features.GridGeneration.Scripts
                         }
                         case TileType.Walkable:
                         {
-                            var tile = Instantiate(_prefab, transform);
-                            tile.Init(_enable, grid[row, col], this);
-                            tile.SetTransform(tilePosition, 180);
-                            tile.SetID(row, col);
-                            _tiles.Add($"{row}{col}", tile);
+                            
+                            var _tile = Instantiate(_prefab, transform);
+                            _tile.Init(_enable, grid[row, col], this);
+                            _tile.SetTransform(tilePosition, 180);
+                            _tile.SetID(row, col,grid[row, col]);
+                            _tiles.Add($"{row}{col}", _tile);
                             if (levelData.Matrix[row, col].IsPlayer)
                             {
-                                tile.TileState = TileStates.Walkable;
+                                grid[row, col].IsWalkable = true;
+                                _tile.TileState = TileStates.Walkable;
                                 player.position = new Vector3(tilePosition.x, 1, tilePosition.z);
                             }
+                         
                             break;
                         }
                        
                         case TileType.Gate:
                         {
-                            var tile = Instantiate(_prefab, transform);
-                            tile.Init(_disable, grid[row, col], this);
-                            tile.SetTransform(tilePosition, 0);
-                            tile.SetID(row, col);
-                            _tiles.Add($"{row}{col}", tile);
-                            tile.TileState = TileStates.Walkable;
+                            var _tile = Instantiate(_prefab, transform);
+                            _tile.Init(_disable, grid[row, col], this);
+                            _tile.SetTransform(tilePosition, 0);
+                            _tile.SetID(row, col,grid[row, col]);
+                            _tiles.Add($"{row}{col}", _tile);
+                            _tile.TileState = TileStates.Walkable;
                             Gate.position = new Vector3(tilePosition.x, .6f, tilePosition.z);
                             break;
                         }
+                        
                         case TileType.Gift:
                             break;
                     }
@@ -125,7 +134,7 @@ namespace Features.GridGeneration.Scripts
             var _tile = Instantiate(_prefab, transform);
             tile.Init(_enable, cell, this);
             tile.SetTransform(tilePosition, zRot);
-            tile.SetID(cell.Row, cell.Col);
+          //  tile.SetID(cell.Row, cell.Col);
             _tiles.Add($"{cell.Row}{cell.Col}", tile);
             return _tile;
         }

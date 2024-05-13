@@ -16,5 +16,8 @@ MonoBehaviour:
   tileJumpDuration: 0.125
   tileRotateDuration: 0.125
   placementDuration: 0.1
+  placementMoveUpDuration: 0.2
+  placementMoveUpValue: 5
+  placementMoveDownValue: 2
   placementMaxScale: 1
   placementMinScale: 0

@@ -8,7 +8,11 @@ public partial class GameConfig
   public float tileJumpDuration;
   public float tileRotateDuration;
   public float placementDuration;
+  public float placementMoveUpDuration;
+  public float placementMoveUpValue;
+  public float placementMoveDownValue;
   public float placementMaxScale;
   public float placementMinScale;
-
+//public float 
+  
 }
