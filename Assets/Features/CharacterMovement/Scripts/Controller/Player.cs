@@ -9,7 +9,8 @@ namespace Sablo.Gameplay.Movement
     public class Player : MonoBehaviour, IPlayer
     {
         [SerializeField, ReadOnly] Tile _currentTile;
-        [SerializeField] float _moveSpeed = 5;
+        [SerializeField] private float _moveSpeed = 5f;
+        private float _rotationSpeed = 10f;
         public List<Tile> pathToMove;
 
         public Tile CurrentTile
@@ -82,14 +83,21 @@ namespace Sablo.Gameplay.Movement
         private IEnumerator FollowOnTarget(Transform target)
         {
             Vector3 targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
-            LookAt(targetPosition);
-    
-            while (transform.position != targetPosition)
+            Vector3 lookDir = targetPosition - transform.position;
+            // Smoothly rotate towards the target direction
+            Quaternion targetRotation = Quaternion.LookRotation(lookDir, Vector3.up);
+            while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
             {
+                // Move towards the target position
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, _moveSpeed * Time.deltaTime);
+                // Smoothly rotate towards the target direction
+                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * _rotationSpeed);
+
                 yield return null;
             }
         }
+
+
 
         public void LookAt(Vector3 target)
         {
