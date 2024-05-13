@@ -28,7 +28,7 @@ namespace Sablo.Gameplay.Pathfinding
             }
         }
 
-        public List<Tile> FindPath(Tile startCell, Tile targetCell)
+        private List<Tile> FindPath(Tile startCell, Tile targetCell)
         {
             var closedSet = new HashSet<Tile>();
             var openSet = new HashSet<Tile> { startCell };
@@ -95,22 +95,22 @@ namespace Sablo.Gameplay.Pathfinding
                 }
             }
 
-            return null; // No path found
+            return null;
         }
 
-        float Heuristic(Tile a, Tile b)
+        private float Heuristic(Tile a, Tile b)
         {
             // Example heuristic function (Euclidean distance)
             return Vector3.Distance(a.transform.position, b.transform.position);
         }
 
-        float DistanceBetween(Tile a, Tile b)
+        private float DistanceBetween(Tile a, Tile b)
         {
             // Example function to calculate distance between cells
             return Vector3.Distance(a.transform.position, b.transform.position);
         }
 
-        List<Tile> ReconstructPath(Dictionary<Tile, Tile> cameFrom, Tile current)
+        private List<Tile> ReconstructPath(Dictionary<Tile, Tile> cameFrom, Tile current)
         {
             var path = new List<Tile>();
             path.Add(current);
