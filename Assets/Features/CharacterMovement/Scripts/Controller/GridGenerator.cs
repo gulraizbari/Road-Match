@@ -50,7 +50,7 @@ namespace Sablo.Gameplay.Movement
                             gridCell.transform.parent = _gridParent.transform;
                             gridCell.Position = cellPosition;
                             SquareNode node = new SquareNode(cellPosition, this);
-                             gridCell.Init(new SquarseCoordinates() { Position = cellPosition });
+                             gridCell.Init(new SquareCoordinates() { Position = cellPosition });
                             node.IsPlayerStanding = _levelData.Matrix[i, j].IsPlayer;
                             grid[i, j] = node;
                             if (node.IsPlayerStanding && !playerInstance)
