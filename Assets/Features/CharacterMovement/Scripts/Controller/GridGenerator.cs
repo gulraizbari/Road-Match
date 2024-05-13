@@ -50,7 +50,7 @@ namespace Sablo.Gameplay.Movement
                             gridCell.transform.parent = _gridParent.transform;
                             gridCell.Position = cellPosition;
                             SquareNode node = new SquareNode(cellPosition, this);
-                             gridCell.Init(new SquareCoordinates() { Position = cellPosition });
+                            gridCell.Init(new SquareCoordinates() { Position = cellPosition });
                             node.IsPlayerStanding = _levelData.Matrix[i, j].IsPlayer;
                             grid[i, j] = node;
                             if (node.IsPlayerStanding && !playerInstance)
@@ -63,15 +63,15 @@ namespace Sablo.Gameplay.Movement
                         }
                         case TileType.Disable:
                         {
-                            // Vector3 cellPosition = new Vector3(i, 0, j);
-                            // var gridCell = Instantiate(_cellPrefab, cellPosition, Quaternion.identity);
-                            // gridCell.IsHurdle = true;
-                            // gridCell.name = $"Cell_{i}x{j}";
-                            // gridCell.transform.parent = _gridParent.transform;
-                            // gridCell.Position = cellPosition;
-                            // gridCell.Init(new SquareCoords{Position = new Vector3(i, 0, j)});
-                            // SquareNode node = new SquareNode(cellPosition, this);
-                            // grid[i, j] = node;
+                            Vector3 cellPosition = new Vector3(i, 0, j);
+                            var gridCell = Instantiate(_cellPrefab, cellPosition, Quaternion.identity);
+                            gridCell.IsHurdle = true;
+                            gridCell.name = $"Cell_{i}x{j}";
+                            gridCell.transform.parent = _gridParent.transform;
+                            gridCell.Position = cellPosition;
+                            SquareNode node = new SquareNode(cellPosition, this);
+                            gridCell.Init(new SquareCoordinates() { Position = cellPosition });
+                            grid[i, j] = node;
                             break;
                             // continue;
                         }
