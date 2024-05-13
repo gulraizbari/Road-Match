@@ -1,75 +1,132 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
+using Features.GridGeneration.Scripts;
+using Sablo.Gameplay.Movement;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Sablo.Gameplay.Pathfinding
 {
-    public class Pathfinding : MonoBehaviour, IPathfinding
+    public class PathFinding : MonoBehaviour, IPathFinding
     {
-        public List<Node> FindShortestPath(Node start, Node target)
-        {
-            var toSearch = new List<Node>() { start };
-            var processed = new List<Node>();
+        [SerializeField] private GridGenerator _gridGenerator;
+        private IPlayer _player;
+        private List<Tile> _foundPaths = new List<Tile>();
 
-            while (toSearch.Any())
+        [Button]
+        public void Find(Tile start, Tile target)
+        {
+            _foundPaths.Clear();
+
+            if (FindPath(start, target) != null)
             {
-                var current = toSearch[0];
-                foreach (var node in toSearch)
+                _foundPaths = FindPath(start, target);
+                _player.MoveOnPath(_foundPaths);
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        public List<Tile> FindPath(Tile startCell, Tile targetCell)
+        {
+            var closedSet = new HashSet<Tile>();
+            var openSet = new HashSet<Tile> { startCell };
+            var cameFrom = new Dictionary<Tile, Tile>();
+
+            var gScore = new Dictionary<Tile, float>();
+            foreach (Tile cell in _gridGenerator._gridView.tilesGrid)
+            {
+                gScore[cell] = Mathf.Infinity;
+            }
+
+            gScore[startCell] = 0;
+
+            var fScore = new Dictionary<Tile, float>();
+            foreach (Tile cell in _gridGenerator._gridView.tilesGrid)
+            {
+                fScore[cell] = Mathf.Infinity;
+            }
+
+            fScore[startCell] = Heuristic(startCell, targetCell);
+
+            while (openSet.Count > 0)
+            {
+                Tile current = null;
+                var lowestFScore = Mathf.Infinity;
+                foreach (Tile cell in openSet)
                 {
-                    if (node.F < current.F || node.F == current.F && node.H < current.H)
+                    if (fScore[cell] < lowestFScore)
                     {
-                        current = node;
+                        current = cell;
+                        lowestFScore = fScore[cell];
                     }
                 }
 
-                processed.Add(current);
-                toSearch.Remove(current);
-
-                if (current == target)
+                if (current == targetCell)
                 {
-                    break;
+                    var path = ReconstructPath(cameFrom, current);
+                    _foundPaths = path;
+                    return path;
                 }
 
-                foreach (var neighbor in current.Neighbors.Where(t => !t.IsHurdle && !processed.Contains(t)))
-                {
-                    var inSearch = toSearch.Contains(neighbor);
-                    var costToNeighbor = current.G + current.GetDistance(neighbor);
+                openSet.Remove(current);
+                closedSet.Add(current);
 
-                    if (!inSearch || costToNeighbor < neighbor.G)
+                foreach (Tile neighbor in _gridGenerator.FindAdjacentCells(current))
+                {
+                    if (closedSet.Contains(neighbor) || (neighbor.TileState != TileStates.Walkable))
                     {
-                        neighbor.SetG(costToNeighbor);
-                        neighbor.SetConnection(current);
-                        if (!inSearch)
+                        continue; // Skip this neighbor if it's already in the closed set or it's not walkable
+                    }
+
+                    float tentativeGScore = gScore[current] + DistanceBetween(current, neighbor);
+
+                    if (!openSet.Contains(neighbor) || tentativeGScore < gScore[neighbor])
+                    {
+                        cameFrom[neighbor] = current;
+                        gScore[neighbor] = tentativeGScore;
+                        fScore[neighbor] = gScore[neighbor] + Heuristic(neighbor, targetCell);
+                        if (!openSet.Contains(neighbor))
                         {
-                            neighbor.SetH(neighbor.GetDistance(target));
-                            toSearch.Add(neighbor);
+                            openSet.Add(neighbor);
                         }
                     }
                 }
             }
 
-            var path = TraceShortestPath(start, target);
+            return null; // No path found
+        }
+
+        float Heuristic(Tile a, Tile b)
+        {
+            // Example heuristic function (Euclidean distance)
+            return Vector3.Distance(a.transform.position, b.transform.position);
+        }
+
+        float DistanceBetween(Tile a, Tile b)
+        {
+            // Example function to calculate distance between cells
+            return Vector3.Distance(a.transform.position, b.transform.position);
+        }
+
+        List<Tile> ReconstructPath(Dictionary<Tile, Tile> cameFrom, Tile current)
+        {
+            var path = new List<Tile>();
+            path.Add(current);
+            while (cameFrom.ContainsKey(current))
+            {
+                current = cameFrom[current];
+                path.Add(current);
+            }
+
+            path.Reverse();
             return path;
         }
 
-        private List<Node> TraceShortestPath(Node start, Node target)
+        public List<Tile> GetFoundPaths()
         {
-            var currentPathTile = target;
-            var path = new List<Node>();
-            var count = 100;
-            while (currentPathTile != start)
-            {
-                path.Add(currentPathTile);
-                currentPathTile = currentPathTile.Connection;
-                count--;
-                if (count < 0)
-                {
-                    throw new Exception();
-                }
-            }
-
-            return path;
+            return _foundPaths;
         }
     }
 }

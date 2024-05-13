@@ -1,9 +1,9 @@
-using System.Collections.Generic;
+using Features.GridGeneration.Scripts;
 
 namespace Sablo.Gameplay.Pathfinding
 {
-    public interface IPathfinding
+    public interface IPathFinding
     {
-        public List<Node> FindShortestPath(Node start, Node target);
+        public void Find(Tile start, Tile target);
     }
 }
