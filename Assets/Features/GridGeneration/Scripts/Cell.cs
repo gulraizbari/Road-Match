@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using Features.GridGeneration.Scripts.interfaces;
 using GridGeneration.Scripts.interfaces;
 using UnityEngine;
 

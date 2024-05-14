@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using Features.GridGeneration.Scripts;
 
-namespace GridGeneration.Scripts.interfaces
+namespace Features.GridGeneration.Scripts.interfaces
 {
     public interface ICell
     {
@@ -9,4 +8,5 @@ namespace GridGeneration.Scripts.interfaces
         public int Row { get; }
         public int Col { get; }
     }
-}
+} 
+    

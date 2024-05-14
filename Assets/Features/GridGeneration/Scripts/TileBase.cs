@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using DG.Tweening;
+using Features.GridGeneration.Scripts.interfaces;
 using Features.Haptics.Interfaces;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
@@ -242,10 +243,15 @@ namespace Features.GridGeneration.Scripts
 
 
             _tileStates = TileStates.Walkable;
-            PlacementTransform.DOLocalMove(target, duration).SetEase(Ease.Linear).OnComplete((() =>
+            PlacementTransform.DOLocalMoveY(configs.placementMoveUpValue, configs.placementMoveUpDuration).SetEase(Ease.Linear).OnComplete((() =>
             {
-                PlacementTransform.DOScale(0, .1f).SetEase(Ease.Linear);
+                target.y = PlacementTransform.transform.position.y;
+                PlacementTransform.DOLocalMove(target, duration).SetEase(Ease.OutQuint).OnComplete((() =>
+                {
+                    PlacementTransform.DOScale(0, .1f).SetEase(Ease.Linear);
+                }));
             }));
+           
         }
 
         Item ITile.CurrentItem
