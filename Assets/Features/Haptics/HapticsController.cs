@@ -1,8 +1,6 @@
-using System;
-using System.Collections;
+
 using Features.Haptics.Interfaces;
 using Lofelt.NiceVibrations;
-using TapticPlugin;
 using UnityEngine;
 
 public class HapticsController : MonoBehaviour,IHapticController
@@ -22,12 +20,12 @@ public class HapticsController : MonoBehaviour,IHapticController
 
     public void TriggerHapticFeedback(float amplitude, float frequency, float duration)
     {
-        HapticController.fallbackPreset = HapticPatterns.PresetType.MediumImpact;
+        HapticController.fallbackPreset = HapticPatterns.PresetType.HeavyImpact;
         HapticPatterns.PlayConstant(amplitude, frequency, duration);
     }
 
     
-    public void PlayHaptic(ImpactFeedback feedback)
+    public void PlayHaptic()
     {
         // TapticManager.Impact(feedback);
         TriggerHapticFeedback(.6f,1,Duration);
