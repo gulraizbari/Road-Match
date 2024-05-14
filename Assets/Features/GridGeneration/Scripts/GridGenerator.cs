@@ -101,8 +101,8 @@ namespace Features.GridGeneration.Scripts
 
         public List<Tile> FindAdjacentCells(Tile cell)
         {
-            int row = cell.r;
-            int col = cell.c;
+            int row = cell.row;
+            int col = cell.column;
             var neighbors = new List<Tile>();
 
             int parity = row % 2;

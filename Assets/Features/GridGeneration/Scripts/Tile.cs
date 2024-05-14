@@ -8,16 +8,17 @@ namespace Features.GridGeneration.Scripts
 {
     public class Tile : TileBase
     {
-        public int r, c;
+        public int row;
+        public int column;
         private PlayerController _playerController;
         private Color _originalColor;
 
         public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController)
         {
             iCell = cell;
-            r = cell.Row;
-            c = cell.Col;
-            gameObject.name = $"{r},{c}";
+            row = cell.Row;
+            column = cell.Col;
+            gameObject.name = $"{row},{column}";
             iGridView = gridView;
             hapticController = gridView.HapticHandler;
             _playerController = playerController;
