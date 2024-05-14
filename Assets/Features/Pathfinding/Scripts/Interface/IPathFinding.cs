@@ -1,6 +1,6 @@
 using Features.GridGeneration.Scripts;
 
-namespace Sablo.Gameplay.Pathfinding
+namespace Sablo.Gameplay.PathFinding
 {
     public interface IPathFinding
     {
