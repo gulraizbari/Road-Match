@@ -47,6 +47,8 @@ namespace Features.GridGeneration.Scripts
         bool _isFlipped;
         bool _canTouch;
         public Cell CellBase;
+        Tween _outerTween;
+        Tween _innerTween;
 
         public void SetID(int row, int col, Cell cell)
         {
