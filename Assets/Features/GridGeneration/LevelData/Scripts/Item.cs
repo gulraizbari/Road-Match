@@ -13,7 +13,8 @@ public class Item : MonoBehaviour
     Vegetables vegetables;
     [ShowIf("type", ItemType.Animals)] [BoxGroup("Item"), SerializeField]
     Animals animals;
-
+    public bool Is2D;
+    
     public ItemType TypeItem => type;
     public Fruits Fruit => fruits;
     public Vegetables Vegetable => vegetables;

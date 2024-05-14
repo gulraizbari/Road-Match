@@ -7,7 +7,6 @@ using Features.Haptics.Interfaces;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
 using Sirenix.OdinInspector;
-using TapticPlugin;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -25,6 +24,8 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("Reference"), SerializeField]
         TextMeshProUGUI _text;
 
+        [BoxGroup("Reference"), SerializeField]
+        GameObject _shadow;
         [SerializeField] protected TileStates _tileStates;
         //protected bool isPlayer;
         [BoxGroup("Reference"), SerializeField]
@@ -51,7 +52,18 @@ namespace Features.GridGeneration.Scripts
         {
             _item = item;
             _item.transform.SetParent(_itemPlacement);
-            item.transform.localPosition=Vector3.zero;
+            if (_item.Is2D)
+            {
+              
+                item.transform.localRotation=Quaternion.Euler(new Vector3(-55,0,0));
+                item.transform.localPosition=Vector3.zero;
+                item.transform.localPosition=new Vector3(0,.9f,-.7f);
+            }
+            else
+            {
+                item.transform.localPosition=Vector3.zero;
+            }
+           
             
         }
         public void SetTransform(Vector3 pos, float z)
@@ -122,6 +134,7 @@ namespace Features.GridGeneration.Scripts
         private void ShowPlacement(bool show,float startDelay)
         {
             var config = Configs.GameConfig;
+            _shadow.SetActive(show);
             _itemPlacement.DOScale(show?config.placementMaxScale:config.placementMinScale, config.placementDuration).SetDelay(startDelay).SetEase(Ease.Linear).OnComplete((() =>
             {
                 _item.transform.DOScale(show?config.placementMaxScale:config.placementMinScale, config.placementDuration).SetEase(Ease.Linear);
@@ -140,7 +153,7 @@ namespace Features.GridGeneration.Scripts
             if (!_canTouch)
             {
                 _canTouch = true;
-                hapticController.PlayHaptic(ImpactFeedback.Heavy);
+                hapticController.PlayHaptic();
                 Flip(false,true);
             }   
         }
@@ -202,6 +215,7 @@ namespace Features.GridGeneration.Scripts
         }
         public void OnMerge(Vector3 target,float duration)
         {
+            _shadow.SetActive(false);
             var configs = Configs.GameConfig;
             _tileStates = TileStates.Walkable;
             CellBase.IsWalkable = true;
