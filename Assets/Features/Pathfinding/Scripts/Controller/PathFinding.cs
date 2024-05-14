@@ -1,38 +1,26 @@
 using System.Collections.Generic;
 using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.Movement;
+using Sablo.Gameplay.Pathfinding;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Sablo.Gameplay.Pathfinding
+namespace Sablo.Gameplay.PathFinding
 {
     public class PathFinding : MonoBehaviour, IPathFinding
     {
         [SerializeField] private GridGenerator _gridGenerator;
         public IPlayer player;
         private List<Tile> _foundPaths = new List<Tile>();
-        private List<Color> _originalColors = new List<Color>();
 
         [Button]
         public void Find(Tile start, Tile target)
         {
             _foundPaths.Clear();
-            _originalColors.Clear();
-
             if (FindPath(start, target) != null)
             {
                 _foundPaths = FindPath(start, target);
                 player.MoveOnPath(_foundPaths);
-                foreach (var tile in _foundPaths)
-                {
-                    _originalColors.Add(tile.GetComponentInChildren<Renderer>().material.color);
-                    tile.SaveOriginalColor();
-                    tile.ChangeColor(Color.yellow);
-                }
-                foreach (var tile in _foundPaths)
-                {
-                    tile.RevertToOriginalColor();
-                }
             }
             else
             {

@@ -1,6 +1,6 @@
 using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.Movement;
-using Sablo.Gameplay.Pathfinding;
+using Sablo.Gameplay.PathFinding;
 using UnityEngine;
 
 namespace Sablo.Core
