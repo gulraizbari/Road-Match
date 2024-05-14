@@ -33,7 +33,7 @@ namespace Features.GridGeneration.Scripts
         GameObject _shadow;
         protected IPlayer _player;
         [SerializeField] protected TileStates _tileStates;
-
+       
         //protected bool isPlayer;
         [BoxGroup("Reference"), SerializeField]
         protected List<Tile> _adjacents;
@@ -248,11 +248,21 @@ namespace Features.GridGeneration.Scripts
                 target.y = PlacementTransform.transform.position.y;
                 PlacementTransform.DOLocalMove(target, duration).SetEase(Ease.OutQuint).OnComplete((() =>
                 {
+                    ///hapticController.PlayHaptic();
+                    if (MergeParticle)
+                    {
+                        var particle = Instantiate(MergeParticle);
+                        particle.transform.position = PlacementTransform.position;
+                        particle.Play();
+                    }
+                    
                     PlacementTransform.DOScale(0, .1f).SetEase(Ease.Linear);
                 }));
             }));
            
         }
+
+        public ParticleSystem MergeParticle { get; set; }
 
         Item ITile.CurrentItem
         {
