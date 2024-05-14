@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Gameplay.Movement;
@@ -95,16 +94,16 @@ namespace Features.GridGeneration.Scripts
         {
             _player = player;
         }
-        
+
         public void StartBlinking()
         {
-            _colorEffect.ShowColorEffect(this);
+            _colorEffect.StartBlinking(this, 0.25f);
         }
 
         public void StopBlinking()
         {
-            _colorEffect.StopAllCoroutines();
-            _renderer.material.color = GetRenderer().material.color; 
+            _colorEffect.StopBlinking();
+            _renderer.material.color = GetRenderer().material.color;
         }
         
         public override void OnMouseDown()
@@ -118,6 +117,7 @@ namespace Features.GridGeneration.Scripts
             else
             {
                 _playerController.AssignPath(this);
+                _gridTraversal.OnTargetTileSelected(); 
                 if (_tileStates == TileStates.Player)
                 {
                     CollectAdjacent();
