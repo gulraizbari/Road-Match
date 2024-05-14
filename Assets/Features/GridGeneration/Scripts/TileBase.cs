@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using DG.Tweening;
@@ -7,9 +8,9 @@ using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
 using Sablo.Gameplay.Movement;
 using Sirenix.OdinInspector;
-using TapticPlugin;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Features.GridGeneration.Scripts
 {
@@ -28,8 +29,8 @@ namespace Features.GridGeneration.Scripts
         TextMeshProUGUI _text;
 
         [BoxGroup("Reference"), SerializeField]
+        GameObject _shadow;
         protected IPlayer _player;
-
         [SerializeField] protected TileStates _tileStates;
 
         //protected bool isPlayer;
@@ -45,6 +46,8 @@ namespace Features.GridGeneration.Scripts
         bool _isFlipped;
         bool _canTouch;
         public Cell CellBase;
+        Tween _outerTween;
+        Tween _innerTween;
 
         public void SetID(int row, int col, Cell cell)
         {
@@ -57,7 +60,19 @@ namespace Features.GridGeneration.Scripts
         {
             _item = item;
             _item.transform.SetParent(_itemPlacement);
-            item.transform.localPosition = Vector3.zero;
+            if (_item.Is2D)
+            {
+              
+                item.transform.localRotation=Quaternion.Euler(new Vector3(-55,0,0));
+                item.transform.localPosition=Vector3.zero;
+                item.transform.localPosition=new Vector3(0,.9f,-.7f);
+            }
+            else
+            {
+                item.transform.localPosition=Vector3.zero;
+            }
+           
+            
         }
 
         public void SetTransform(Vector3 pos, float z)
@@ -75,7 +90,7 @@ namespace Features.GridGeneration.Scripts
         {
             if (_isFlipped)
             {
-                UnSelect(canSelect, 0);
+               UnSelect(canSelect,0,.05f,null);
             }
             else
             {
@@ -83,57 +98,56 @@ namespace Features.GridGeneration.Scripts
                 TileState = isAutoFlip ? TileStates.AutoFlip : TileStates.CanMerge;
 
                 _isFlipped = true;
-                transform.DOLocalMoveY(configs.tileJumpHeight, configs.tileJumpDuration).SetEase(Ease.Linear)
-                    .OnComplete((() =>
+                transform.DOLocalMoveY(configs.tileJumpHeight, configs.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+                {
+                    transform.DOLocalMoveY(0, configs.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
                     {
-                        transform.DOLocalMoveY(0, configs.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+                        if (isAutoFlip)
                         {
-                            if (isAutoFlip)
+                            FlipWithDelay();
+                        }
+                        else
+                        {
+                            _canTouch = false;
+                            if (canSelect)
                             {
-                                FlipWithDelay();
+                                SelectTile(this);
                             }
-                            else
-                            {
-                                _canTouch = false;
-                                if (canSelect)
-                                {
-                                    SelectTile(this);
-                                }
-                            }
-                        }));
+                        }
                     }));
-                TileRotateLogic(true, -180);
+                }));
+                
+                TileRotateLogic(true,-180);
             }
         }
 
         private void TileRotateLogic(bool isGreen, float Z)
         {
-            _renderer.transform.DOLocalRotate(new Vector3(0, 0, Z), Configs.GameConfig.tileJumpDuration).SetDelay(.05f)
-                .SetEase(Ease.Linear).OnStart((() =>
+            _renderer.transform.DOLocalRotate(new Vector3(0, 0, Z), Configs.GameConfig.tileJumpDuration).SetEase(Ease.Linear).OnStart((() =>
+            {
+                iGridView.ChangeTileMaterial(isGreen,_renderer);
+                if (!isGreen)
                 {
-                    iGridView.ChangeTileMaterial(isGreen, _renderer);
-                    if (!isGreen)
-                    {
-                        ShowPlacement(false, 0);
-                    }
-                })).OnComplete((() =>
+                    ShowPlacement(false,0);
+                }
+            })).OnComplete((() =>
+            {
+                if (isGreen)
                 {
-                    if (isGreen)
-                    {
-                        ShowPlacement(true, 0);
-                    }
-                }));
+                    ShowPlacement(true,0);
+                }
+            } ));
         }
 
         private void ShowPlacement(bool show, float startDelay)
         {
             var config = Configs.GameConfig;
-            _itemPlacement.DOScale(show ? config.placementMaxScale : config.placementMinScale, config.placementDuration)
-                .SetDelay(startDelay).SetEase(Ease.Linear).OnComplete((() =>
-                {
-                    _item.transform.DOScale(show ? config.placementMaxScale : config.placementMinScale,
-                        config.placementDuration).SetEase(Ease.Linear);
-                }));
+            _shadow.SetActive(show);
+            _itemPlacement.DOScale(show?config.placementMaxScale:config.placementMinScale, config.placementDuration).SetDelay(startDelay).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                _item.transform.DOScale(show?config.placementMaxScale:config.placementMinScale, config.placementDuration).SetEase(Ease.Linear);
+            }));
+
         }
 
         private async void FlipWithDelay()
@@ -148,10 +162,14 @@ namespace Features.GridGeneration.Scripts
             if (!_canTouch)
             {
                 _canTouch = true;
-                hapticController.PlayHaptic(ImpactFeedback.Heavy);
-                Flip(false, true);
+                hapticController.PlayHaptic();
+                Flip(false,true);
+            }   
+
+               
             }
-        }
+
+   
 
         public Transform PlacementTransform
         {
@@ -169,25 +187,60 @@ namespace Features.GridGeneration.Scripts
             iGridView.MergeController.SelectTile(this);
         }
 
-        public async void UnSelect(bool canSelect, float delay)
+        IEnumerator coroutine;
+
+        public   void UnSelect(bool canSelect,float delay,float rotationDelay,UnityEvent action)
         {
-            await Task.Delay(TimeSpan.FromSeconds(delay));
-            var config = Configs.GameConfig;
-            transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete(
-                (() =>
-                {
-                    transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
-                    {
-                        TileState = TileStates.FlipAble;
-                        _isFlipped = false;
-                        _canTouch = false;
-                    }));
-                }));
-            TileRotateLogic(false, 0);
+            if (coroutine != null)StopCoroutine(coroutine);
+            coroutine = unselect(delay, rotationDelay, action);
+            StartCoroutine(coroutine);
+            //   await Task.Delay(TimeSpan.FromSeconds(delay));
+            //   var config = Configs.GameConfig;
+            // _outerTween  =  transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+            //   {
+            //     _innerTween =   transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+            //       {
+            //           TileState = TileStates.FlipAble;
+            //           _isFlipped = false;
+            //           _canTouch = false;
+            //       }));;;
+            //   }));
+            //   TileRotateLogic(false,0);
         }
 
-        public void OnMerge(Vector3 target, float duration)
+        IEnumerator unselect(float delay,float rotationDelay,UnityEvent action)
         {
+            yield return new WaitForSeconds(delay);
+            action?.Invoke();
+            print("lol");
+            var config = Configs.GameConfig;
+            if (_outerTween.IsActive())
+            {
+                _outerTween.Kill();
+            } 
+            if (_innerTween.IsActive())
+            {
+                _innerTween.Kill();
+            }
+            _outerTween  =  transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                _innerTween =   transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+                {
+                    TileState = TileStates.FlipAble;
+                    _isFlipped = false;
+                    _canTouch = false;
+                }));;;
+            }));
+            yield return new WaitForSeconds(rotationDelay);
+            TileRotateLogic(false,0);
+        }
+        public void OnMerge(Vector3 target,float duration)
+        {
+
+            _shadow.SetActive(false);
+            var configs = Configs.GameConfig;
+
+
             _tileStates = TileStates.Walkable;
             PlacementTransform.DOLocalMove(target, duration).SetEase(Ease.Linear).OnComplete((() =>
             {

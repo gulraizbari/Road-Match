@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using DG.Tweening;
 using Features.GridGeneration.Scripts;
 using Features.MergeMechanic.Scripts.Interface;
@@ -5,20 +6,31 @@ using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MergeController : MonoBehaviour, IMergeController
 {
     [ShowInInspector] ITile selectedTile1 = null;
     [ShowInInspector] ITile selectedTile2 = null;
-    [ShowInInspector] ITile OldSelectedTile1 = null;
-    [ShowInInspector] ITile OldSelectedTile2 = null;
+    [ShowInInspector]   public List<ITile> oldData=new List<ITile>();
 
     public bool isMerging;
 
     public void SelectTile(ITile tile)
     {
         //if (isMerging)return;
-        
+        if (oldData.Count>0)
+        {
+
+            UnityEvent action = new UnityEvent();
+            action.AddListener(CheckCompletion);
+            foreach (var data in oldData)
+            {
+                data.UnSelect(false,0,0,action);
+            }
+            oldData.Clear();
+            
+        }
         if (selectedTile1 == null)
         {
             selectedTile1 = tile;
@@ -27,22 +39,33 @@ public class MergeController : MonoBehaviour, IMergeController
         {
             if (selectedTile1.ID == tile.ID)
             {
-                selectedTile1.UnSelect(false, 0.2f);
+                selectedTile1.UnSelect(false, 0.2f,.05f,null);
                 selectedTile1 = null;
             }
             else
             {
                 selectedTile2 = tile;
-                Invoke(nameof(MergeThem),.15f);//MergeThem();
-                //Merge(tile);
+              //  Invoke(nameof(MergeThem),.15f);//MergeThem();
+              MergeThem();
             }
         }
     }
 
     private void MergeThem()
     {
-        if (selectedTile1.TileState == TileStates.CanMerge && selectedTile2.TileState == TileStates.CanMerge)
+        if (selectedTile1 is null)
         {
+            print("Kanjr1");
+        } if (selectedTile2 is null)
+        {
+            print("Kanjr2");
+        }
+        if (selectedTile1!=null && selectedTile2!=null)
+        {
+            
+       
+         if (selectedTile1.TileState == TileStates.CanMerge && selectedTile2.TileState == TileStates.CanMerge)
+         {
             if (selectedTile1.CurrentItem.TypeItem == selectedTile2.CurrentItem.TypeItem)
             {
                 var id1 = selectedTile1.CurrentItem.GetItemObject().ToString();
@@ -70,16 +93,21 @@ public class MergeController : MonoBehaviour, IMergeController
             }
             else
             {
-                print("Ithe ywa");
+                
                 UnSelectTiles();
             }
-        }
-        else
-        {
+         }
+         else
+         {
             print(selectedTile1);
             print(selectedTile2);
             print("Masla");
             print($"s1 {selectedTile1.TileState} , s2 {selectedTile2.TileState}");
+         }
+        }
+        else
+        {
+            print("Masla2");
         }
     }
 
@@ -93,8 +121,25 @@ public class MergeController : MonoBehaviour, IMergeController
 
     private void UnSelectTiles()
     {
-        selectedTile1.UnSelect(false, .5f);
-        selectedTile2.UnSelect(false, .5f);
+        UnityEvent action = new UnityEvent();
+        action.AddListener(CheckCompletion);
+        selectedTile1.UnSelect(false, Configs.GameConfig.tileFlipDelay,Configs.GameConfig.tileRotateDelay,action);
+        selectedTile2.UnSelect(false,  Configs.GameConfig.tileFlipDelay,Configs.GameConfig.tileRotateDelay,action);
+        if (oldData.Count>0)
+        {
+            oldData.Clear();
+        }
+       
+        oldData.Add(selectedTile1);
+        oldData.Add(selectedTile2);
         selectedTile2 = selectedTile1 = null;
+    }
+
+    public void CheckCompletion()
+    {
+        if (oldData.Count>0)
+        {
+            oldData.Clear();
+        }
     }
 }

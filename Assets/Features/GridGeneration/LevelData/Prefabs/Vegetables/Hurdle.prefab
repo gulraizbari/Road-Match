@@ -245,6 +245,7 @@ MonoBehaviour:
   fruits: 7
   vegetables: 5
   animals: 0
+  Is2D: 1
 --- !u!1 &7047371438536824141
 GameObject:
   m_ObjectHideFlags: 0
