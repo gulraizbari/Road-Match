@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using GridGeneration.Scripts.interfaces;
 using Sirenix.OdinInspector;
@@ -8,13 +7,11 @@ namespace Features.GridGeneration.Scripts
 {
     public class GridGenerator : MonoBehaviour, IGridGenerator
     {
-        // [BoxGroup("References"), SerializeField]
-        // private LevelData _levelData;
-
         [BoxGroup("References"), SerializeField]
         DumyLevelManager _levelManager;
+
         [BoxGroup("References"), SerializeField]
-        private GridView _gridView;
+        public GridView _gridView;
 
         [BoxGroup("References"), ShowInInspector]
         private Cell[,] grid;
@@ -29,7 +26,8 @@ namespace Features.GridGeneration.Scripts
         List<string> ad;
 
         public Cell cell;
-       public LevelData _levelData;
+        [SerializeField] LevelData _levelData;
+
         private void Start()
         {
             _levelData = _levelManager.GetCurrentLevel;
@@ -95,6 +93,30 @@ namespace Features.GridGeneration.Scripts
                     neighborCol >= 0 && neighborCol < _levelData.Height)
                 {
                     neighbors.Add(grid[neighborRow, neighborCol]);
+                }
+            }
+
+            return neighbors;
+        }
+
+        public List<Tile> FindAdjacentCells(Tile cell)
+        {
+            int row = cell.row;
+            int col = cell.column;
+            var neighbors = new List<Tile>();
+
+            int parity = row % 2;
+
+            for (int direction = 0; direction < OddQDirectionDifferences[parity].Length; direction++)
+            {
+                OffsetCoord neighborCoord = OddQOffsetNeighbor(new OffsetCoord(col, row), direction);
+                int neighborRow = neighborCoord.row;
+                int neighborCol = neighborCoord.col;
+
+                if (neighborRow >= 0 && neighborRow < _levelData.Width &&
+                    neighborCol >= 0 && neighborCol < _levelData.Height)
+                {
+                    neighbors.Add(_gridView.tilesGrid[neighborRow, neighborCol]);
                 }
             }
 

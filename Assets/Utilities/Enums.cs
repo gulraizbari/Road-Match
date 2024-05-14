@@ -1,6 +1,5 @@
 public enum TileType
 {
-   
     Empty,
     Disable,
     Walkable,
@@ -25,7 +24,6 @@ public enum Fruits
     Juice3D,
     Banana3D,
     IceCream3D,
-    
 }
 
 public enum Animals
@@ -33,6 +31,7 @@ public enum Animals
     None,
     Duck
 }
+
 public enum Vegetables
 {
     None,
@@ -41,8 +40,8 @@ public enum Vegetables
     Lemon,
     Corn3D,
     Garlic3D
-    
 }
+
 public enum ItemType
 {
     None,
@@ -50,6 +49,7 @@ public enum ItemType
     Vegetables,
     Animals,
 }
+
 public enum TypesOfHurdle
 {
     NonBreakable,
@@ -67,5 +67,6 @@ public enum TileStates
     Walkable,
     Player,
     Breakable,
-    NotBreakable
+    NotBreakable,
+    NotWalkable
 }
