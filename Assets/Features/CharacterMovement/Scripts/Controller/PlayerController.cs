@@ -1,11 +1,12 @@
 using Features.GridGeneration.Scripts;
-using Sablo.Gameplay.Pathfinding;
+using Sablo.Gameplay.PathFinding;
 using UnityEngine;
 
 namespace Sablo.Gameplay.Movement
 {
     public class PlayerController : MonoBehaviour, IPlayerController
     {
+        [SerializeField] private GridTraversal _gridTraversal;
         public IPathFinding PathFinding;
         public Player Player;
         public IPlayer SelectedPlayer { get; set; }
@@ -15,6 +16,7 @@ namespace Sablo.Gameplay.Movement
             if (SelectedPlayer != null)
             {
                 PathFinding.Find(SelectedPlayer.CurrentTile, target);
+                _gridTraversal.StopBlinkingOnTraversableTiles();
             }
 
             SelectedPlayer = null;
