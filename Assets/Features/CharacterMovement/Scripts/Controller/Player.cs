@@ -96,9 +96,7 @@ namespace Sablo.Gameplay.Movement
                 yield return null;
             }
         }
-
-
-
+        
         public void LookAt(Vector3 target)
         {
             Vector3 lookPos = target - transform.position;

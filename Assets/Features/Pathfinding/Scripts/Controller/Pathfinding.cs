@@ -11,28 +11,15 @@ namespace Sablo.Gameplay.Pathfinding
         [SerializeField] private GridGenerator _gridGenerator;
         public IPlayer player;
         private List<Tile> _foundPaths = new List<Tile>();
-        private List<Color> _originalColors = new List<Color>();
 
         [Button]
         public void Find(Tile start, Tile target)
         {
             _foundPaths.Clear();
-            _originalColors.Clear();
-
             if (FindPath(start, target) != null)
             {
                 _foundPaths = FindPath(start, target);
                 player.MoveOnPath(_foundPaths);
-                foreach (var tile in _foundPaths)
-                {
-                    _originalColors.Add(tile.GetComponentInChildren<Renderer>().material.color);
-                    tile.SaveOriginalColor();
-                    tile.ChangeColor(Color.yellow);
-                }
-                foreach (var tile in _foundPaths)
-                {
-                    tile.RevertToOriginalColor();
-                }
             }
             else
             {
