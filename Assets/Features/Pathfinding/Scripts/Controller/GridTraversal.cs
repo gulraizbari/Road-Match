@@ -18,14 +18,13 @@ namespace Sablo.Gameplay.PathFinding
         {
             var visited = new HashSet<Tile>();
             _connectedComponents.Clear();
-            foreach (Tile tile in _gridGenerator._gridView.tilesGrid)
+            var playerTile = _gridGenerator._gridView.PlayerTile;
+
+            if (playerTile.TileState == TileStates.Walkable)
             {
-                if (!visited.Contains(tile) && tile.TileState == TileStates.Walkable)
-                {
-                    var connectedComponent = new List<Tile>();
-                    DFS(tile, visited, connectedComponent);
-                    _connectedComponents.Add(connectedComponent);
-                }
+                var connectedComponent = new List<Tile>();
+                DFS(playerTile, visited, connectedComponent);
+                _connectedComponents.Add(connectedComponent);
             }
 
             _continueBlinking = true;
