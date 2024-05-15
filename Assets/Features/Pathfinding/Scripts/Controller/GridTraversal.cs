@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using Features.GridGeneration.Scripts;
 using Sirenix.OdinInspector;
@@ -9,11 +10,14 @@ namespace Sablo.Gameplay.PathFinding
     {
         [SerializeField] private GridGenerator _gridGenerator;
         [ShowInInspector] private List<List<Tile>> _connectedComponents = new List<List<Tile>>();
-        private List<Tile> _traversableTiles = new List<Tile>();
+        [ShowInInspector] private List<Tile> _traversableTiles = new List<Tile>();
+
+        private bool _continueBlinking = true;
 
         public void TraverseGrid()
         {
             var visited = new HashSet<Tile>();
+            _connectedComponents.Clear();
             foreach (Tile tile in _gridGenerator._gridView.tilesGrid)
             {
                 if (!visited.Contains(tile) && tile.TileState == TileStates.Walkable)
@@ -23,6 +27,8 @@ namespace Sablo.Gameplay.PathFinding
                     _connectedComponents.Add(connectedComponent);
                 }
             }
+
+            _continueBlinking = true;
             StartBlinkingOnTraversableTiles();
         }
 
@@ -38,25 +44,48 @@ namespace Sablo.Gameplay.PathFinding
                 }
             }
         }
-        
+
         private void StartBlinkingOnTraversableTiles()
         {
+            _traversableTiles.Clear();
             foreach (var component in _connectedComponents)
             {
                 foreach (var tile in component)
                 {
                     _traversableTiles.Add(tile);
+                }
+            }
+
+            StartCoroutine(BlinkTraversableTiles());
+        }
+
+        private IEnumerator BlinkTraversableTiles()
+        {
+            while (_continueBlinking)
+            {
+                foreach (var tile in _traversableTiles)
+                {
                     tile.StartBlinking();
                 }
+
+                yield return new WaitForSeconds(0.25f);
+                foreach (var tile in _traversableTiles)
+                {
+                    tile.StopBlinking();
+                }
+
+                yield return new WaitForSeconds(0.25f);
             }
         }
 
         public void StopBlinkingOnTraversableTiles()
         {
+            _continueBlinking = false;
             foreach (var tile in _traversableTiles)
             {
                 tile.StopBlinking();
             }
+
             _traversableTiles.Clear();
         }
 

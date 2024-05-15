@@ -23,7 +23,7 @@ namespace Sablo.Gameplay.Utilities
 
         private void EnableGlowEffect(Material material, float delay)
         {
-            var targetEmissionColor = Color.white * 1.1f;
+            var targetEmissionColor = Color.white * 0.6f;
             material.DOColor(targetEmissionColor, "_EmissionColor", delay)
                 .SetEase(Ease.Flash)
                 .OnStart(() => EnableEmission(material)).OnComplete(() => { DisableGlowEffect(material, .125f); });
