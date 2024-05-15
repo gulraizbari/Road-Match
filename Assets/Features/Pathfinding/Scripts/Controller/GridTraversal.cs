@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Sablo.Gameplay.PathFinding
 {
-    public class GridTraversal : MonoBehaviour
+    public class GridTraversal : MonoBehaviour, IGridTraversal
     {
         [SerializeField] private GridGenerator _gridGenerator;
         [ShowInInspector] private List<List<Tile>> _connectedComponents = new List<List<Tile>>();
@@ -32,7 +32,7 @@ namespace Sablo.Gameplay.PathFinding
             StartBlinkingOnTraversableTiles();
         }
 
-        private void DFS(Tile current, HashSet<Tile> visited, List<Tile> connectedComponent)
+        public void DFS(Tile current, HashSet<Tile> visited, List<Tile> connectedComponent)
         {
             visited.Add(current);
             connectedComponent.Add(current);
