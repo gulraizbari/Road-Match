@@ -67,13 +67,13 @@ namespace Sablo.Gameplay.PathFinding
                     tile.StartBlinking();
                 }
 
-                yield return new WaitForSeconds(0.25f);
+                yield return new WaitForSeconds(0.75f);
                 foreach (var tile in _traversableTiles)
                 {
                     tile.StopBlinking();
                 }
 
-                yield return new WaitForSeconds(0.25f);
+                yield return new WaitForSeconds(0.75f);
             }
         }
 

@@ -98,7 +98,7 @@ namespace Features.GridGeneration.Scripts
 
         public void StartBlinking()
         {
-            _colorEffect.StartBlinking(this, 0.25f);
+            _colorEffect.StartBlinking(this, 0.75f);
         }
 
         public void StopBlinking()
@@ -112,8 +112,12 @@ namespace Features.GridGeneration.Scripts
             base.OnMouseDown();
             if (_player != null)
             {
-                _playerController.SelectedPlayer = _player;
-                _gridTraversal.TraverseGrid();
+                if (_playerController.SelectedPlayer is null)
+                {
+                    _playerController.SelectedPlayer = _player;
+                    _gridTraversal.TraverseGrid();
+                }
+               
             }
             else
             {
