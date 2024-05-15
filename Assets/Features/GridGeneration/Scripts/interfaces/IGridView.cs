@@ -21,5 +21,6 @@ namespace GridGeneration.Scripts.interfaces
         public IHapticController HapticHandler { get; set; }
         public Tile GetFoundTile(string  id);
         public void ChangeTileMaterial(bool isGreen,Renderer renderer);
+        public IGridGenerator GridHandler { get; }
     }
 }

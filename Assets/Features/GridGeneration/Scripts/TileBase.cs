@@ -35,9 +35,10 @@ namespace Features.GridGeneration.Scripts
         protected IPlayer _player;
         [SerializeField] protected TileStates _tileStates;
 
-        [BoxGroup("Reference"), SerializeField]
-        protected List<Tile> _adjacents;
+        [BoxGroup("Reference"), ShowInInspector]
+        protected HashSet<Tile> _adjacents=new HashSet<Tile>();
 
+        public List<string> adjacentIDs;
         [BoxGroup("Reference"), SerializeField, ReadOnly]
         protected Item _item;
 
@@ -49,6 +50,7 @@ namespace Features.GridGeneration.Scripts
         public Cell CellBase;
         Tween _outerTween;
         Tween _innerTween;
+        protected Tile MyTile;
 
         public ParticleSystem MergeParticle { get; set; }
 
@@ -56,6 +58,7 @@ namespace Features.GridGeneration.Scripts
 
 
         public string ID => _id;
+       
 
         public Transform PlacementTransform => _itemPlacement.transform;
 
@@ -119,7 +122,7 @@ namespace Features.GridGeneration.Scripts
                         {
                             if (isAutoFlip)
                             {
-                                FlipWithDelay();
+                                Invoke(nameof(FlipWithDelay),configs.AutoFlipDelay);// FlipWithDelay();
                             }
                             else
                             {
@@ -167,9 +170,9 @@ namespace Features.GridGeneration.Scripts
                 }));
         }
 
-        private async void FlipWithDelay()
+        private  void FlipWithDelay()
         {
-            await Task.Delay(TimeSpan.FromSeconds(1));
+            //await Task.Delay(TimeSpan.FromSeconds(.4f));
             Flip(true, false);
         }
 
@@ -259,6 +262,69 @@ namespace Features.GridGeneration.Scripts
                         PlacementTransform.DOScale(0, .1f).SetEase(Ease.Linear);
                     }));
                 }));
+        }
+        
+        
+        [Button]
+        public void CollectAdjacent()
+        {
+          
+            foreach (var cellID in iGridView.GridHandler.FindAdjacentCells(CellBase))
+            {
+                var id = $"{cellID.Row}{cellID.Col}";
+                print(id);
+                adjacentIDs.Add(id);
+            }
+            // foreach (var cellID in iCell.GetAdjacent(MyTile))
+            // {
+            //     var id = $"{cellID.Row}{cellID.Col}";
+            //     adjacentIDs.Add(id);
+            // }
+
+           // FetchAdjacent(adjacentIDs);
+            FetchFromDictionary();
+        }
+
+        private void FetchFromDictionary()
+        {
+            foreach (var id in adjacentIDs)
+            {
+                var adjacentsCell = iGridView.GetFoundTile(id);
+                if (adjacentsCell._id==id)
+                {
+                    print($" string id {id},{adjacentsCell._id}");
+                    _adjacents.Add(adjacentsCell);
+                }
+                // if (_adjacents.Contains(adjacentsCell) && adjacentsCell != null)
+                // {
+                //     _adjacents.Add(adjacentsCell);
+                // }
+            }
+
+            FlipAllAdjacent();
+            //_adjacents.Clear();
+        }
+
+        private void FlipAllAdjacent()
+        {
+            foreach (var VARIABLE in _adjacents)
+            {
+                if (VARIABLE.TileState == TileStates.FlipAble)
+                {
+                    VARIABLE.Flip(true, false);
+                }
+            }
+            _adjacents.Clear();
+            adjacentIDs.Clear();
+        }
+        private void FetchAdjacent(List<string> adjacentCells)
+        {
+            foreach (var cell in adjacentCells)
+            {
+                //if (cell == _id) 
+                var adjacentCell = iGridView.GetFoundTile(cell);
+                _adjacents.Add(adjacentCell);
+            }
         }
     }
 }

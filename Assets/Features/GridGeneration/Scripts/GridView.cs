@@ -10,7 +10,7 @@ namespace Features.GridGeneration.Scripts
 {
     public class GridView : MonoBehaviour, IGridView
     {
-        private IGridGenerator _gridGenerator;
+        public IGridGenerator _gridGenerator;
         GridViewDataModel _dataModel;
 
         [BoxGroup("References"), SerializeField]
@@ -91,7 +91,7 @@ namespace Features.GridGeneration.Scripts
                                 hurdle.transform.position = tilePosition;
                             }
 
-                            _tiles.Add($"{row}{col}", tile);
+                            _tiles.Add($"{row}{col}", _tile);
                             break;
                         }
                         case TileType.Walkable:
@@ -150,6 +150,8 @@ namespace Features.GridGeneration.Scripts
                 renderer.material = _gridViewReferences.disable;
             }
         }
+
+        public IGridGenerator GridHandler => _gridGenerator;
 
         private void DisableTile(CellData data, Tile tile)
         {
