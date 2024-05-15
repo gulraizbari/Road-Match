@@ -75,8 +75,6 @@ namespace Features.GridGeneration.Scripts
                     {
                         case TileType.Disable:
                         {
-                            //grid[row, col].IsWalkable = true;
-                            // var _tile = Instantiate(_prefab, transform);
                             _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
                                 _gridViewReferences.playerController);
                             _tile.SetTransform(tilePosition, 0);
@@ -97,8 +95,6 @@ namespace Features.GridGeneration.Scripts
                         }
                         case TileType.Walkable:
                         {
-                            //var _tile = Instantiate(_prefab, transform);
-
                             _tile.SetTransform(tilePosition, 180);
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
