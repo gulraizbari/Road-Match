@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class HapticsController : MonoBehaviour,IHapticController
 {
+
+    public AudioSource audioSource;
+    public AudioClip clip;
     void Start()
     {
         HapticController.Init();
@@ -27,8 +30,8 @@ public class HapticsController : MonoBehaviour,IHapticController
     
     public void PlayHaptic()
     {
-        // TapticManager.Impact(feedback);
-        TriggerHapticFeedback(.6f,1,Duration);
+        audioSource.PlayOneShot(clip,.75f);
+        TriggerHapticFeedback(3f,1,Duration);
        
     }
 }

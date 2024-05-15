@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using DG.Tweening;
+using Features.GridGeneration.Scripts.interfaces;
 using Features.Haptics.Interfaces;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
@@ -34,7 +35,6 @@ namespace Features.GridGeneration.Scripts
         protected IPlayer _player;
         [SerializeField] protected TileStates _tileStates;
 
-        //protected bool isPlayer;
         [BoxGroup("Reference"), SerializeField]
         protected List<Tile> _adjacents;
 
@@ -49,6 +49,22 @@ namespace Features.GridGeneration.Scripts
         public Cell CellBase;
         Tween _outerTween;
         Tween _innerTween;
+
+        public ParticleSystem MergeParticle { get; set; }
+
+        Item ITile.CurrentItem => _item;
+
+
+        public string ID => _id;
+
+        public Transform PlacementTransform => _itemPlacement.transform;
+
+
+        public TileStates TileState
+        {
+            get => _tileStates;
+            set => _tileStates = value;
+        }
 
         public void SetID(int row, int col, Cell cell)
         {
@@ -166,19 +182,10 @@ namespace Features.GridGeneration.Scripts
                 hapticController.PlayHaptic();
                 Flip(false, true);
             }
+
         }
 
 
-        public Transform PlacementTransform
-        {
-            get => _itemPlacement.transform;
-        }
-
-        public TileStates TileState
-        {
-            get => _tileStates;
-            set => _tileStates = value;
-        }
 
         public void SelectTile(ITile tile)
         {
@@ -192,25 +199,12 @@ namespace Features.GridGeneration.Scripts
             if (coroutine != null) StopCoroutine(coroutine);
             coroutine = unselect(delay, rotationDelay, action);
             StartCoroutine(coroutine);
-            //   await Task.Delay(TimeSpan.FromSeconds(delay));
-            //   var config = Configs.GameConfig;
-            // _outerTween  =  transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
-            //   {
-            //     _innerTween =   transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
-            //       {
-            //           TileState = TileStates.FlipAble;
-            //           _isFlipped = false;
-            //           _canTouch = false;
-            //       }));;;
-            //   }));
-            //   TileRotateLogic(false,0);
         }
 
         IEnumerator unselect(float delay, float rotationDelay, UnityEvent action)
         {
             yield return new WaitForSeconds(delay);
             action?.Invoke();
-            print("lol");
             var config = Configs.GameConfig;
             if (_outerTween.IsActive())
             {
@@ -223,16 +217,22 @@ namespace Features.GridGeneration.Scripts
             }
 
             _outerTween = transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear)
-                .OnComplete(() =>
+
+                .OnComplete((() =>
                 {
                     _innerTween = transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete(
-                        () =>
+                        (() =>
                         {
                             TileState = TileStates.FlipAble;
                             _isFlipped = false;
                             _canTouch = false;
-                        });
-                });
+
+                        }));
+                
+                    
+                }));
+
+                      
             yield return new WaitForSeconds(rotationDelay);
             TileRotateLogic(false, 0);
         }
@@ -241,23 +241,24 @@ namespace Features.GridGeneration.Scripts
         {
             _shadow.SetActive(false);
             var configs = Configs.GameConfig;
-
-
             _tileStates = TileStates.Walkable;
-            PlacementTransform.DOLocalMove(target, duration).SetEase(Ease.Linear).OnComplete((() =>
-            {
-                PlacementTransform.DOScale(0, .1f).SetEase(Ease.Linear);
-            }));
-        }
+            PlacementTransform.DOLocalMoveY(configs.placementMoveUpValue, configs.placementMoveUpDuration)
+                .SetEase(Ease.Linear).OnComplete((() =>
+                {
+                    target.y = PlacementTransform.transform.position.y;
+                    PlacementTransform.DOLocalMove(target, duration).SetEase(Ease.OutQuint).OnComplete((() =>
+                    {
+                        ///hapticController.PlayHaptic();
+                        if (MergeParticle)
+                        {
+                            var particle = Instantiate(MergeParticle);
+                            particle.transform.position = PlacementTransform.position;
+                            particle.Play();
+                        }
 
-        Item ITile.CurrentItem
-        {
-            get => _item;
-        }
-
-        public string ID
-        {
-            get => _id;
+                        PlacementTransform.DOScale(0, .1f).SetEase(Ease.Linear);
+                    }));
+                }));
         }
     }
 }

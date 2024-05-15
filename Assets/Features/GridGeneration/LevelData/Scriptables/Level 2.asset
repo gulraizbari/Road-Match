@@ -51,6 +51,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -76,6 +79,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -105,6 +111,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -130,6 +139,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -159,6 +171,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -184,6 +199,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -213,6 +231,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 3
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -238,6 +259,9 @@ MonoBehaviour:
       Entry: 3
       Data: 2
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -267,6 +291,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -292,6 +319,9 @@ MonoBehaviour:
       Entry: 3
       Data: 2
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -321,6 +351,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -346,6 +379,9 @@ MonoBehaviour:
       Entry: 3
       Data: 4
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -375,6 +411,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -400,6 +439,9 @@ MonoBehaviour:
       Entry: 3
       Data: 1
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -429,6 +471,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -456,6 +501,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 2
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -481,6 +529,9 @@ MonoBehaviour:
       Entry: 3
       Data: 3
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -510,6 +561,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 2
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -537,6 +591,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 3
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -562,6 +619,9 @@ MonoBehaviour:
       Entry: 3
       Data: 1
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -591,6 +651,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: true
@@ -616,6 +679,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -645,6 +711,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 3
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -670,6 +739,9 @@ MonoBehaviour:
       Entry: 3
       Data: 3
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -699,6 +771,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 3
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -713,7 +788,7 @@ MonoBehaviour:
       Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -724,6 +799,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -737,10 +815,10 @@ MonoBehaviour:
       Data: 27|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -751,6 +829,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -780,6 +861,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -805,6 +889,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -834,6 +921,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -859,6 +949,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -888,6 +981,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -913,6 +1009,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -942,6 +1041,9 @@ MonoBehaviour:
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -967,6 +1069,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
       Entry: 3
       Data: 0
     - Name: IsPlayer

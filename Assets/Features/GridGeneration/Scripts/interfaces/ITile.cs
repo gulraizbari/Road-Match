@@ -11,6 +11,7 @@ namespace GridGeneration.Scripts.interfaces
         void SelectTile(ITile tile);
         void UnSelect(bool canSelect,float delay,float rotationDelay,UnityEvent action);
         void OnMerge(Vector3 target, float duration);
+        public ParticleSystem MergeParticle { get; set; }
         public Item CurrentItem { get; }
         public string ID { get; }
         
