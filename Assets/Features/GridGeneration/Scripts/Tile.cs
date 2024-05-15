@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using Features.GridGeneration.Scripts.interfaces;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Gameplay.Movement;
+using Sablo.Gameplay.PathFinding;
+using Sablo.Gameplay.Utilities;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -9,17 +11,22 @@ namespace Features.GridGeneration.Scripts
 {
     public class Tile : TileBase
     {
+        private GridTraversal _gridTraversal;
+        private PlayerController _playerController;
+        private ColorEffect _colorEffect;
+        private Coroutine _blinkingCoroutine;
         public int row;
         public int column;
-        private PlayerController _playerController;
 
-        public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController)
+        public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController, GridTraversal gridTraversal, ColorEffect colorEffect)
         {
             iCell = cell;
             row = cell.Row;
             column = cell.Col;
             gameObject.name = $"{row},{column}";
             iGridView = gridView;
+            _gridTraversal = gridTraversal;
+            _colorEffect = colorEffect;
             hapticController = gridView.HapticHandler;
             _playerController = playerController;
             _renderer.material = material;
@@ -35,6 +42,11 @@ namespace Features.GridGeneration.Scripts
                 var adjacentCell = iGridView.GetFoundTile(cell);
                 _adjacents.Add(adjacentCell);
             }
+        }
+
+        public Renderer GetRenderer()
+        {
+            return _renderer;
         }
 
         [Button]
@@ -84,21 +96,33 @@ namespace Features.GridGeneration.Scripts
             _player = player;
         }
 
+        public void StartBlinking()
+        {
+            _colorEffect.StartBlinking(this, 0.25f);
+        }
+
+        public void StopBlinking()
+        {
+            _colorEffect.StopBlinking();
+            _renderer.material.color = GetRenderer().material.color;
+        }
+        
         public override void OnMouseDown()
         {
             base.OnMouseDown();
             if (_player != null)
             {
                 _playerController.SelectedPlayer = _player;
+                _gridTraversal.TraverseGrid();
             }
             else
             {
                 _playerController.AssignPath(this);
-            }
-
-            if (_tileStates == TileStates.Player)
-            {
-                CollectAdjacent();
+                _gridTraversal.OnTargetTileSelected(); 
+                if (_tileStates == TileStates.Player)
+                {
+                    CollectAdjacent();
+                }
             }
         }
     }

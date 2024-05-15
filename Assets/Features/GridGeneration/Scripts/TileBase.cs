@@ -182,7 +182,9 @@ namespace Features.GridGeneration.Scripts
                 hapticController.PlayHaptic();
                 Flip(false, true);
             }
+
         }
+
 
 
         public void SelectTile(ITile tile)
@@ -215,6 +217,7 @@ namespace Features.GridGeneration.Scripts
             }
 
             _outerTween = transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear)
+
                 .OnComplete((() =>
                 {
                     _innerTween = transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete(
@@ -223,10 +226,13 @@ namespace Features.GridGeneration.Scripts
                             TileState = TileStates.FlipAble;
                             _isFlipped = false;
                             _canTouch = false;
+
                         }));
-                    ;
-                    ;
+                
+                    
                 }));
+
+                      
             yield return new WaitForSeconds(rotationDelay);
             TileRotateLogic(false, 0);
         }

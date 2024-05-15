@@ -14,30 +14,29 @@ public sealed class CellData
     //===================================================
     // FIELDS
     //===================================================
-   
-     [SerializeField] public TileType  tileType;
-     [SerializeField] public TilePlacements tilePlacement;
-     [SerializeField] public TypesOfHurdle typeOfHurdle;
-     [SerializeField] public ItemType typeOfItem;
-     [SerializeField] public Fruits typeOfFruit;
-     [SerializeField] public Vegetables typeOfVegetables;
-     [SerializeField] public Animals typeOfAnimals;
-     [SerializeField] public bool      IsPlayer    = false;
+
+    [SerializeField] public TileType tileType;
+    [SerializeField] public TilePlacements tilePlacement;
+    [SerializeField] public TypesOfHurdle typeOfHurdle;
+    [SerializeField] public ItemType typeOfItem;
+    [SerializeField] public Fruits typeOfFruit;
+    [SerializeField] public Vegetables typeOfVegetables;
+    [SerializeField] public Animals typeOfAnimals;
+    [SerializeField] public bool IsPlayer;
     // [SerializeField] public IngredientsProcess ingredientsProcess;
     // [SerializeField] public IngredientType ingredientType;
     // [SerializeField] public HybridStationType hybridStationType;
     // [SerializeField] public RecipeFormulas recipeFormulas;
-   // [SerializeField] public int       Level        = 1;
-  //  [SerializeField] public Currency  RewardType   = Currency.Gold;
+    // [SerializeField] public int       Level        = 1;
+    // [SerializeField] public Currency  RewardType   = Currency.Gold;
     // [SerializeField] public double    RewardAmount = 10d;
     // [SerializeField] public ShaftType Shaft        = ShaftType.Forge;
     // [SerializeField] public ChestData Chest        = null;
     // [SerializeField] public bool      FinalGate    = false;
-    
     // [SerializeField] public CardType  CardType     = CardType.Common;
     // [SerializeField] public int       CardLevel    = 2;
+    // [FormerlySerializedAs("_unBreakableTiles")] [SerializeField] public UnBreakableRocks _unBreakableRocks;
 
-  //  [FormerlySerializedAs("_unBreakableTiles")] [SerializeField] public UnBreakableRocks _unBreakableRocks;
     //===================================================
     // METHODS
     //===================================================
@@ -54,9 +53,8 @@ public sealed class CellData
         typeOfVegetables = Vegetables.None;
         typeOfAnimals = Animals.None;
         IsPlayer = false;
-    }//Constructor() end
-
-}//class end
+    }
+}
 
 [HideMonoScript]
 [CreateAssetMenu(fileName = "Level Data", menuName = "RoadMap/Level Data", order = 0)]
@@ -65,26 +63,30 @@ public sealed class LevelData : SerializedScriptableObject
     //===================================================
     // FIELDS
     //===================================================
-    
+
     [TitleGroup("LEVEL DATA", boldTitle: true)]
     [HorizontalGroup("LEVEL DATA/Split")]
     [VerticalGroup("LEVEL DATA/Split/Left"), LabelWidth(60)]
-    [SerializeField] int _width = 9;
-    [InlineButton(nameof(MakeGrid))]
-    [VerticalGroup("LEVEL DATA/Split/Right"), LabelWidth(60)]
-    [SerializeField] int _height = 16;
-    [Space]
-    public List<ItemContainer> Containers;
+    [SerializeField]
+    int _width = 9;
+
+    [InlineButton(nameof(MakeGrid))] [VerticalGroup("LEVEL DATA/Split/Right"), LabelWidth(60)] [SerializeField]
+    int _height = 16;
+
+    [Space] public List<ItemContainer> Containers;
+
     [Space]
     [TitleGroup("GRID", boldTitle: true)]
-    [TableMatrix(SquareCells = true, HideRowIndices = false, HideColumnIndices = true, RespectIndentLevel = true, ResizableColumns = false, DrawElementMethod = nameof(DrawCells))]
-    [SerializeField] public CellData[,] Matrix = new CellData[5,5];
-    
+    [TableMatrix(SquareCells = true, HideRowIndices = false, HideColumnIndices = true, RespectIndentLevel = true,
+        ResizableColumns = false, DrawElementMethod = nameof(DrawCells))]
+    [SerializeField]
+    public CellData[,] Matrix = new CellData[5, 5];
+
 
     //===================================================
     // PROPERTIES
     //===================================================
-    public int Width  => Matrix?.GetLength(0) ?? 0;
+    public int Width => Matrix?.GetLength(0) ?? 0;
     public int Height => Matrix?.GetLength(1) ?? 0;
 
     //===================================================
@@ -92,30 +94,32 @@ public sealed class LevelData : SerializedScriptableObject
     //===================================================
     private void MakeGrid()
     {
-        #if UNITY_EDITOR
-        if(UnityEditor.EditorUtility.DisplayDialog("LEVEL DATA", "Are you sure you want generate a new grid?\n\nWARNING\nGenerating a new grid will reset all current cells.", "Yes", "No"))
+#if UNITY_EDITOR
+        if (UnityEditor.EditorUtility.DisplayDialog("LEVEL DATA",
+                "Are you sure you want generate a new grid?\n\nWARNING\nGenerating a new grid will reset all current cells.",
+                "Yes", "No"))
         {
             Matrix = new CellData[_width, _height];
-            for(int x = 0; x < _width; x++)
+            for (int x = 0; x < _width; x++)
             {
-                for(int y = 0; y < _height; y++)
+                for (int y = 0; y < _height; y++)
                     Matrix[x, y] = new CellData();
             }
         }
-        #endif
+#endif
     }
 
     public static Color GetColor(TileType tileType) => tileType switch
     {
-        TileType.Empty                => new Color(1f, .3f, .1f, .6f),
-        TileType.Disable             => Color.gray,
-        TileType.Walkable       => new Color(0.3f, 0.5f, 0f, 1f),
-        TileType.Gift      => new Color(0.7f, 0.5f, 0f, 1f),
+        TileType.Empty => new Color(1f, .3f, .1f, .6f),
+        TileType.Disable => Color.gray,
+        TileType.Walkable => new Color(0.3f, 0.5f, 0f, 1f),
+        TileType.Gift => new Color(0.7f, 0.5f, 0f, 1f),
         // TileType.ChoppingBoardStation      => new Color(0.8f, 0.3f, .5f, 1f),
         // TileType.OrderTable      => new Color(0.8f, 0.3f, .2f, 1f),
         // TileType.Stove      => new Color(0.6f, 0.4f, .5f, .5f),
-        _              => Color.clear
-    };//SetColor() end
+        _ => Color.clear
+    }; //SetColor() end
 
     private static CellData DrawCells(Rect rect, CellData value)
     {
@@ -141,7 +145,8 @@ public sealed class LevelData : SerializedScriptableObject
                 value.tileType = 0;
 
             GUI.changed = true;
-        } 
+        }
+
         EditorGUILayout.BeginHorizontal();
         EditorGUIUtility.labelWidth = 30;
         EditorGUILayout.EndHorizontal();
@@ -152,36 +157,34 @@ public sealed class LevelData : SerializedScriptableObject
             value.tilePlacement = (TilePlacements)EditorGUILayout.EnumPopup("Type", value.tilePlacement);
             if (value.tilePlacement == TilePlacements.Hurdle)
             {
-                value.typeOfHurdle=(TypesOfHurdle)EditorGUILayout.EnumPopup("Type", value.typeOfHurdle);
+                value.typeOfHurdle = (TypesOfHurdle)EditorGUILayout.EnumPopup("Type", value.typeOfHurdle);
             }
             else if (value.tilePlacement == TilePlacements.Item)
             {
-                value.typeOfItem=(ItemType)EditorGUILayout.EnumPopup("Type", value.typeOfItem);
-                if (value.typeOfItem== ItemType.Fruits)
+                value.typeOfItem = (ItemType)EditorGUILayout.EnumPopup("Type", value.typeOfItem);
+                if (value.typeOfItem == ItemType.Fruits)
                 {
-                    value.typeOfFruit=(Fruits)EditorGUILayout.EnumPopup("Type", value.typeOfFruit);
+                    value.typeOfFruit = (Fruits)EditorGUILayout.EnumPopup("Type", value.typeOfFruit);
                 }
-                else if (value.typeOfItem== ItemType.Vegetables)
+                else if (value.typeOfItem == ItemType.Vegetables)
                 {
-                    value.typeOfVegetables=(Vegetables)EditorGUILayout.EnumPopup("Type", value.typeOfVegetables);
-                } 
-                else if (value.typeOfItem== ItemType.Animals)
-                {
-                    value.typeOfAnimals=(Animals)EditorGUILayout.EnumPopup("Type", value.typeOfAnimals);
+                    value.typeOfVegetables = (Vegetables)EditorGUILayout.EnumPopup("Type", value.typeOfVegetables);
                 }
-                
+                else if (value.typeOfItem == ItemType.Animals)
+                {
+                    value.typeOfAnimals = (Animals)EditorGUILayout.EnumPopup("Type", value.typeOfAnimals);
+                }
             }
-            
-           
-        } //if end
+        }
         else if (value.tileType.Equals(TileType.Walkable))
         {
             EditorGUIUtility.labelWidth = 50;
             value.IsPlayer = EditorGUILayout.Toggle("Player", value.IsPlayer);
-           // value.ingredientType =(IngredientType)EditorGUILayout.EnumPopup("Type", value.ingredientType);
-           //value.stationFace    = (StationFace)EditorGUILayout.EnumPopup("Type", value.stationFace);
+            // value.ingredientType =(IngredientType)EditorGUILayout.EnumPopup("Type", value.ingredientType);
+            //value.stationFace    = (StationFace)EditorGUILayout.EnumPopup("Type", value.stationFace);
             //value.ingredientsProcess= (IngredientsProcess)EditorGUILayout.EnumPopup("Type", value.ingredientsProcess);
         }
+
         // else if (value.tileType.Equals(TileType.ChoppingBoardStation))
         // {
         //     EditorGUIUtility.labelWidth = 50;
@@ -198,7 +201,7 @@ public sealed class LevelData : SerializedScriptableObject
         //     value.stationFace    = (StationFace)EditorGUILayout.EnumPopup("Type", value.stationFace);
         //     
         // }
-    // {
+        // {
         //     value.Shaft = (ShaftType)EditorGUILayout.EnumPopup(value.Shaft);
         //     
         //     if(value.Shaft != ShaftType.Forge)
@@ -234,7 +237,7 @@ public sealed class LevelData : SerializedScriptableObject
         // }
         GUILayout.EndArea();
 
-        #endif
+#endif
 
         return value;
     }
