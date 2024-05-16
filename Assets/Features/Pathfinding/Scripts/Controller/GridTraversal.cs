@@ -13,17 +13,18 @@ namespace Sablo.Gameplay.PathFinding
         [ShowInInspector] private List<Tile> _traversableTiles = new List<Tile>();
 
         private bool _continueBlinking = true;
+        private Tile _playerTile;
 
         public void TraverseGrid()
         {
             var visited = new HashSet<Tile>();
             _connectedComponents.Clear();
-            var playerTile = _gridGenerator._gridView.PlayerTile;
+           _playerTile = _gridGenerator._gridView.PlayerTile;
 
-            if (playerTile.TileState == TileStates.Walkable)
+            if (_playerTile.TileState == TileStates.Walkable)
             {
                 var connectedComponent = new List<Tile>();
-                DFS(playerTile, visited, connectedComponent);
+                DFS(_playerTile, visited, connectedComponent);
                 _connectedComponents.Add(connectedComponent);
             }
 
@@ -46,13 +47,13 @@ namespace Sablo.Gameplay.PathFinding
 
         private void StartBlinkingOnTraversableTiles()
         {
-            var playerTile = _gridGenerator._gridView.PlayerTile;
+            _playerTile = _gridGenerator._gridView._gridViewReferences.playerController.Player.lastTile;
             _traversableTiles.Clear();
             foreach (var component in _connectedComponents)
             {
                 foreach (var tile in component)
                 {
-                    if (tile != playerTile)
+                    if (tile != _playerTile)
                     {
                         _traversableTiles.Add(tile);
                     }
