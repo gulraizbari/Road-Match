@@ -290,11 +290,15 @@ namespace Features.GridGeneration.Scripts
             foreach (var id in adjacentIDs)
             {
                 var adjacentsCell = iGridView.GetFoundTile(id);
-                if (adjacentsCell._id==id)
+                if (adjacentsCell)
                 {
-                    print($" string id {id},{adjacentsCell._id}");
-                    _adjacents.Add(adjacentsCell);
+                     if ( adjacentsCell._id==id )
+                    {
+                        print($" string id {id},{adjacentsCell._id}");
+                        _adjacents.Add(adjacentsCell);
+                    }
                 }
+               
                 // if (_adjacents.Contains(adjacentsCell) && adjacentsCell != null)
                 // {
                 //     _adjacents.Add(adjacentsCell);
