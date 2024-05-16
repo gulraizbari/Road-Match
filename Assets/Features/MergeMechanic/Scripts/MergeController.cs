@@ -84,6 +84,7 @@ public class MergeController : MonoBehaviour, IMergeController
                     if (WithSameSubType)
                     {
                         PerformMerge();
+
                     }
                     else
                     {
@@ -98,6 +99,8 @@ public class MergeController : MonoBehaviour, IMergeController
             else
             {
                 print($" Masla s1 {selectedTile1.TileState} , s2 {selectedTile2.TileState}");
+                //tutorial
+                PerformMerge();
             }
         }
         else

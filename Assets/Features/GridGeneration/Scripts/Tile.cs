@@ -112,12 +112,17 @@ namespace Features.GridGeneration.Scripts
         public override void OnMouseDown()
         {
             base.OnMouseDown();
+            if (ignore)return;
             if (_player != null)
             {
                 if (_playerController.SelectedPlayer is null)
                 {
                     _playerController.SelectedPlayer = _player;
                     _gridTraversal.TraverseGrid();
+                    if (istutorial)
+                    {
+                        TutorialManager.OnTutorialAction();
+                    }
                 }
                
             }
@@ -125,6 +130,10 @@ namespace Features.GridGeneration.Scripts
             {
                 _playerController.AssignPath(this);
                 _gridTraversal.OnTargetTileSelected(); 
+                if (istutorial)
+                {
+                    TutorialManager.OnTutorialAction();
+                }
                 // if (_tileStates == TileStates.Player)
                 // {
                 //     CollectAdjacent();

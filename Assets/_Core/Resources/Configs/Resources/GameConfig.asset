@@ -23,4 +23,4 @@ MonoBehaviour:
   placementMinScale: 0
   tileRotateDelay: 0.05
   tileFlipDelay: 0.5
-  AutoFlipDelay: 0.3
+  AutoFlipDelay: 0.5

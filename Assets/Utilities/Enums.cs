@@ -68,5 +68,13 @@ public enum TileStates
     Player,
     Breakable,
     NotBreakable,
-    NotWalkable
+    NotWalkable,
+    
+}
+
+public enum Tutorials
+{
+    TileClick,
+    PlayerToTarget1,
+    PlayerToGate
 }

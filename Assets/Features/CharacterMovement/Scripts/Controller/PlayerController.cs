@@ -1,5 +1,6 @@
 using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.PathFinding;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Sablo.Gameplay.Movement
@@ -9,7 +10,7 @@ namespace Sablo.Gameplay.Movement
         [SerializeField] private GridTraversal _gridTraversal;
         public IPathFinding PathFinding;
         public Player Player;
-        public IPlayer SelectedPlayer { get; set; }
+       [ShowInInspector] public IPlayer SelectedPlayer { get; set; }
 
         public void AssignPath(Tile target)
         {

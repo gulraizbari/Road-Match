@@ -32,7 +32,7 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("Reference"), SerializeField]
         GameObject _shadow;
 
-        protected IPlayer _player;
+       [ShowInInspector] protected IPlayer _player;
         [SerializeField] protected TileStates _tileStates;
 
         [BoxGroup("Reference"), ShowInInspector]
@@ -51,12 +51,11 @@ namespace Features.GridGeneration.Scripts
         Tween _outerTween;
         Tween _innerTween;
         protected Tile MyTile;
-
+        public bool istutorial;
+        public bool ignore;
         public ParticleSystem MergeParticle { get; set; }
 
         Item ITile.CurrentItem => _item;
-
-
         public string ID => _id;
        
 
@@ -178,14 +177,19 @@ namespace Features.GridGeneration.Scripts
 
         public virtual void OnMouseDown()
         {
-            if (_tileStates != TileStates.FlipAble) return;
+            
+            if (_tileStates != TileStates.FlipAble  ) return;
+          
             if (!_canTouch)
             {
                 _canTouch = true;
                 hapticController.PlayHaptic();
                 Flip(false, true);
             }
-
+            if (istutorial)
+            {
+                TutorialManager.OnTutorialAction();
+            }
         }
 
 
