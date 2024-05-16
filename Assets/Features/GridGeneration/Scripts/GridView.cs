@@ -13,7 +13,7 @@ namespace Features.GridGeneration.Scripts
         GridViewDataModel _dataModel;
 
         [BoxGroup("References"), SerializeField]
-        GridViewReferences _gridViewReferences;
+        public GridViewReferences _gridViewReferences;
 
         [BoxGroup("References"), ShowInInspector]
         Dictionary<string, Tile> _tiles = new();
@@ -100,7 +100,8 @@ namespace Features.GridGeneration.Scripts
                             _tiles.Add($"{row}{col}", _tile);
                             if (levelData.Matrix[row, col].IsPlayer)
                             {
-                                PlayerTile = tilesGrid[row, col];
+                                _gridViewReferences.playerController.Player.lastTile = tilesGrid[row, col];
+                                PlayerTile = _gridViewReferences.playerController.Player.lastTile;
                                 _tile.TileState = TileStates.Walkable;
                                 _gridViewReferences.player.Init(new Vector3(tilePosition.x, 1, tilePosition.z), PlayerTile);
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this, _gridViewReferences.player,
@@ -123,7 +124,7 @@ namespace Features.GridGeneration.Scripts
                             _tile.SetTransform(tilePosition, 0);
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
-                            _tile.TileState = TileStates.Walkable;
+                            _tile.TileState = TileStates.Gate;
                             _gridViewReferences.Gate.position = new Vector3(tilePosition.x, .6f, tilePosition.z);
                             break;
                         }

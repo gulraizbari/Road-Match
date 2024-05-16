@@ -115,6 +115,7 @@ public sealed class LevelData : SerializedScriptableObject
         TileType.Disable => Color.gray,
         TileType.Walkable => new Color(0.3f, 0.5f, 0f, 1f),
         TileType.Gift => new Color(0.7f, 0.5f, 0f, 1f),
+        TileType.Gate => new Color(0.25f, 0.7f, 1f, 1f),
         // TileType.ChoppingBoardStation      => new Color(0.8f, 0.3f, .5f, 1f),
         // TileType.OrderTable      => new Color(0.8f, 0.3f, .2f, 1f),
         // TileType.Stove      => new Color(0.6f, 0.4f, .5f, .5f),

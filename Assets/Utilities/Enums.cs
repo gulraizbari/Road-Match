@@ -84,4 +84,6 @@ public enum RandomObjects
     Egg3,
     Cake,
     Diamond,
+    NotWalkable,
+    Gate
 }
