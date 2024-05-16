@@ -15,5 +15,5 @@ public partial class GameConfig
   public float placementMinScale;
   public float tileRotateDelay;
   public float tileFlipDelay;
-
+  public float AutoFlipDelay;
 }
