@@ -1,7 +1,6 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Linq;
 using DG.Tweening;
 using Features.GridGeneration.Scripts.interfaces;
 using Features.Haptics.Interfaces;
@@ -36,9 +35,10 @@ namespace Features.GridGeneration.Scripts
         [SerializeField] protected TileStates _tileStates;
 
         [BoxGroup("Reference"), ShowInInspector]
-        protected HashSet<Tile> _adjacents=new HashSet<Tile>();
+        protected HashSet<Tile> _adjacents = new HashSet<Tile>();
 
         public List<string> adjacentIDs;
+
         [BoxGroup("Reference"), SerializeField, ReadOnly]
         protected Item _item;
 
@@ -53,13 +53,8 @@ namespace Features.GridGeneration.Scripts
         protected Tile MyTile;
 
         public ParticleSystem MergeParticle { get; set; }
-
         Item ITile.CurrentItem => _item;
-
-
         public string ID => _id;
-       
-
         public Transform PlacementTransform => _itemPlacement.transform;
 
 
@@ -116,13 +111,13 @@ namespace Features.GridGeneration.Scripts
 
                 _isFlipped = true;
                 transform.DOLocalMoveY(configs.tileJumpHeight, configs.tileJumpDuration).SetEase(Ease.Linear)
-                    .OnComplete((() =>
+                    .OnComplete(() =>
                     {
-                        transform.DOLocalMoveY(0, configs.tileJumpDuration).SetEase(Ease.Linear).OnComplete((() =>
+                        transform.DOLocalMoveY(0, configs.tileJumpDuration).SetEase(Ease.Linear).OnComplete(() =>
                         {
                             if (isAutoFlip)
                             {
-                                Invoke(nameof(FlipWithDelay),configs.AutoFlipDelay);// FlipWithDelay();
+                                Invoke(nameof(FlipWithDelay), configs.AutoFlipDelay);
                             }
                             else
                             {
@@ -132,8 +127,8 @@ namespace Features.GridGeneration.Scripts
                                     SelectTile(this);
                                 }
                             }
-                        }));
-                    }));
+                        });
+                    });
 
                 TileRotateLogic(true, -180);
             }
@@ -142,14 +137,14 @@ namespace Features.GridGeneration.Scripts
         private void TileRotateLogic(bool isGreen, float Z)
         {
             _renderer.transform.DOLocalRotate(new Vector3(0, 0, Z), Configs.GameConfig.tileJumpDuration)
-                .SetEase(Ease.Linear).OnStart((() =>
+                .SetEase(Ease.Linear).OnStart(() =>
                 {
                     iGridView.ChangeTileMaterial(isGreen, _renderer);
                     if (!isGreen)
                     {
                         ShowPlacement(false, 0);
                     }
-                })).OnComplete((() =>
+                }).OnComplete((() =>
                 {
                     if (isGreen)
                     {
@@ -163,14 +158,14 @@ namespace Features.GridGeneration.Scripts
             var config = Configs.GameConfig;
             _shadow.SetActive(show);
             _itemPlacement.DOScale(show ? config.placementMaxScale : config.placementMinScale, config.placementDuration)
-                .SetDelay(startDelay).SetEase(Ease.Linear).OnComplete((() =>
+                .SetDelay(startDelay).SetEase(Ease.Linear).OnComplete(() =>
                 {
                     _item.transform.DOScale(show ? config.placementMaxScale : config.placementMinScale,
                         config.placementDuration).SetEase(Ease.Linear);
-                }));
+                });
         }
 
-        private  void FlipWithDelay()
+        private void FlipWithDelay()
         {
             //await Task.Delay(TimeSpan.FromSeconds(.4f));
             Flip(true, false);
@@ -185,10 +180,7 @@ namespace Features.GridGeneration.Scripts
                 hapticController.PlayHaptic();
                 Flip(false, true);
             }
-
         }
-
-
 
         public void SelectTile(ITile tile)
         {
@@ -220,22 +212,17 @@ namespace Features.GridGeneration.Scripts
             }
 
             _outerTween = transform.DOLocalMoveY(config.tileJumpHeight, config.tileJumpDuration).SetEase(Ease.Linear)
-
-                .OnComplete((() =>
+                .OnComplete(() =>
                 {
                     _innerTween = transform.DOLocalMoveY(0f, config.tileJumpDuration).SetEase(Ease.Linear).OnComplete(
-                        (() =>
+                        () =>
                         {
                             TileState = TileStates.FlipAble;
                             _isFlipped = false;
                             _canTouch = false;
+                        });
+                });
 
-                        }));
-                
-                    
-                }));
-
-                      
             yield return new WaitForSeconds(rotationDelay);
             TileRotateLogic(false, 0);
         }
@@ -246,12 +233,11 @@ namespace Features.GridGeneration.Scripts
             var configs = Configs.GameConfig;
             _tileStates = TileStates.Walkable;
             PlacementTransform.DOLocalMoveY(configs.placementMoveUpValue, configs.placementMoveUpDuration)
-                .SetEase(Ease.Linear).OnComplete((() =>
+                .SetEase(Ease.Linear).OnComplete(() =>
                 {
                     target.y = PlacementTransform.transform.position.y;
-                    PlacementTransform.DOLocalMove(target, duration).SetEase(Ease.OutQuint).OnComplete((() =>
+                    PlacementTransform.DOLocalMove(target, duration).SetEase(Ease.OutQuint).OnComplete(() =>
                     {
-                        ///hapticController.PlayHaptic();
                         if (MergeParticle)
                         {
                             var particle = Instantiate(MergeParticle);
@@ -260,28 +246,21 @@ namespace Features.GridGeneration.Scripts
                         }
 
                         PlacementTransform.DOScale(0, .1f).SetEase(Ease.Linear);
-                    }));
-                }));
+                    });
+                });
         }
-        
-        
+
+
         [Button]
         public void CollectAdjacent()
         {
-          
             foreach (var cellID in iGridView.GridHandler.FindAdjacentCells(CellBase))
             {
                 var id = $"{cellID.Row}{cellID.Col}";
-                print(id);
+                // print(id);
                 adjacentIDs.Add(id);
             }
-            // foreach (var cellID in iCell.GetAdjacent(MyTile))
-            // {
-            //     var id = $"{cellID.Row}{cellID.Col}";
-            //     adjacentIDs.Add(id);
-            // }
 
-           // FetchAdjacent(adjacentIDs);
             FetchFromDictionary();
         }
 
@@ -292,40 +271,44 @@ namespace Features.GridGeneration.Scripts
                 var adjacentsCell = iGridView.GetFoundTile(id);
                 if (adjacentsCell)
                 {
-                     if ( adjacentsCell._id==id )
+                    if (adjacentsCell._id == id)
                     {
-                        print($" string id {id},{adjacentsCell._id}");
+                        // print($" string id {id},{adjacentsCell._id}");
                         _adjacents.Add(adjacentsCell);
                     }
                 }
-               
-                // if (_adjacents.Contains(adjacentsCell) && adjacentsCell != null)
-                // {
-                //     _adjacents.Add(adjacentsCell);
-                // }
             }
 
-            FlipAllAdjacent();
-            //_adjacents.Clear();
+            var data = _adjacents.ToList();
+            var gate = data.Find(tile => tile._tileStates == TileStates.Gate);
+            if (gate)
+            {
+                print("Gate action" + _player.CurrentTile.name);
+            }
+            else
+            {
+                FlipAllAdjacent();
+            }
         }
 
         private void FlipAllAdjacent()
         {
-            foreach (var VARIABLE in _adjacents)
+            foreach (var adjancent in _adjacents)
             {
-                if (VARIABLE.TileState == TileStates.FlipAble)
+                if (adjancent.TileState == TileStates.FlipAble)
                 {
-                    VARIABLE.Flip(true, false);
+                    adjancent.Flip(true, false);
                 }
             }
+
             _adjacents.Clear();
             adjacentIDs.Clear();
         }
+
         private void FetchAdjacent(List<string> adjacentCells)
         {
             foreach (var cell in adjacentCells)
             {
-                //if (cell == _id) 
                 var adjacentCell = iGridView.GetFoundTile(cell);
                 _adjacents.Add(adjacentCell);
             }
