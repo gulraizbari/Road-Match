@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -13,6 +12,8 @@ public class Item : MonoBehaviour
     Vegetables vegetables;
     [ShowIf("type", ItemType.Animals)] [BoxGroup("Item"), SerializeField]
     Animals animals;
+    [ShowIf("type", ItemType.Random)] [BoxGroup("Item"), SerializeField]
+    RandomObjects randomObjects;
     public bool Is2D;
     
     public ItemType TypeItem => type;
