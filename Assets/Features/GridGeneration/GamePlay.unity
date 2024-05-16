@@ -1459,7 +1459,6 @@ MonoBehaviour:
   levels:
   - {fileID: 11400000, guid: 5a1c8783441c04f59b1913d176246a8f, type: 2}
   - {fileID: 11400000, guid: bc01b934da49d4b2ca26d342bf89c7d3, type: 2}
-  - {fileID: 11400000, guid: bee4b826fbfb94be083238d22257b68e, type: 2}
   nextButton: {fileID: 1572043216}
   resetButton: {fileID: 399078811}
 --- !u!4 &1639253927
