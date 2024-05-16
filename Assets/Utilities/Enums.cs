@@ -72,7 +72,8 @@ public enum TileStates
     Player,
     Breakable,
     NotBreakable,
-    NotWalkable
+    NotWalkable,
+    Gate
 }
 
 public enum RandomObjects
