@@ -117,6 +117,7 @@ namespace Features.GridGeneration.Scripts
 
                         case TileType.Gate:
                         {
+                            _tile.TileState = TileStates.Gate;
                             _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
                                 _gridViewReferences.playerController, _gridViewReferences._gridTraversal,
                                 _gridViewReferences._colorEffect);
