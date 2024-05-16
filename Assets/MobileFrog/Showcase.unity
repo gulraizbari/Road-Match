@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18027112, g: 0.22569141, b: 0.306913, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -583,80 +583,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c57416b25e3ac1e4f9103c11d7eec00d, type: 3}
---- !u!1001 &3286506574130700266
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5061210657842047918, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_Name
-      value: MobileFrog_Skin2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5061210657842047918, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581887295099302164, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581887295099302164, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.1758242
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581887295099302164, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.9737206
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581887295099302164, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.792
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581887295099302164, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.6876846
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581887295099302164, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581887295099302164, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7260096
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581887295099302164, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581887295099302164, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581887295099302164, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 93.106
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581887295099302164, guid: 8216da8491f7c024bb1e016e6d82be70,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8216da8491f7c024bb1e016e6d82be70, type: 3}
 --- !u!1001 &4555359183901287916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -864,3 +790,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 545e53d7bc79d10429776789f70ac6c8, type: 3}
+--- !u!1001 &7481529593245754202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 520560739507719588, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 520560739507719588, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1758242
+      objectReference: {fileID: 0}
+    - target: {fileID: 520560739507719588, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.9737206
+      objectReference: {fileID: 0}
+    - target: {fileID: 520560739507719588, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.792
+      objectReference: {fileID: 0}
+    - target: {fileID: 520560739507719588, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6876846
+      objectReference: {fileID: 0}
+    - target: {fileID: 520560739507719588, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520560739507719588, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7260096
+      objectReference: {fileID: 0}
+    - target: {fileID: 520560739507719588, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520560739507719588, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520560739507719588, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 93.106
+      objectReference: {fileID: 0}
+    - target: {fileID: 520560739507719588, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 896981107334911774, guid: 485955aa467bf45efb89f6d9fa7b8ca6,
+        type: 3}
+      propertyPath: m_Name
+      value: MobileFrog_Skin2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 485955aa467bf45efb89f6d9fa7b8ca6, type: 3}
