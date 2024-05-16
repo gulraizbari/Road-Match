@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using DG.Tweening;
 using Features.GridGeneration.Scripts.interfaces;
 using Features.Haptics.Interfaces;
@@ -31,7 +33,7 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("Reference"), SerializeField]
         GameObject _shadow;
 
-        protected IPlayer _player;
+        [ShowInInspector] protected IPlayer _player;
         [SerializeField] protected TileStates _tileStates;
 
         [BoxGroup("Reference"), ShowInInspector]
@@ -45,6 +47,7 @@ namespace Features.GridGeneration.Scripts
         protected IGridView iGridView;
         protected ICell iCell;
         protected IHapticController hapticController;
+        private IEnumerator coroutine;
         bool _isFlipped;
         bool _canTouch;
         public Cell CellBase;
@@ -187,8 +190,6 @@ namespace Features.GridGeneration.Scripts
             iGridView.MergeController.SelectTile(this);
         }
 
-        IEnumerator coroutine;
-
         public void UnSelect(bool canSelect, float delay, float rotationDelay, UnityEvent action)
         {
             if (coroutine != null) StopCoroutine(coroutine);
@@ -257,14 +258,13 @@ namespace Features.GridGeneration.Scripts
             foreach (var cellID in iGridView.GridHandler.FindAdjacentCells(CellBase))
             {
                 var id = $"{cellID.Row}{cellID.Col}";
-                // print(id);
                 adjacentIDs.Add(id);
             }
 
             FetchFromDictionary();
         }
 
-        private void FetchFromDictionary()
+        private async void FetchFromDictionary()
         {
             foreach (var id in adjacentIDs)
             {
@@ -273,17 +273,24 @@ namespace Features.GridGeneration.Scripts
                 {
                     if (adjacentsCell._id == id)
                     {
-                        // print($" string id {id},{adjacentsCell._id}");
                         _adjacents.Add(adjacentsCell);
                     }
                 }
             }
 
-            var data = _adjacents.ToList();
-            var gate = data.Find(tile => tile._tileStates == TileStates.Gate);
-            if (gate)
+            var adjacentsList = _adjacents.ToList();
+            var gateTile = adjacentsList.Find(tile => tile._tileStates == TileStates.Gate);
+            await Task.Delay(TimeSpan.FromSeconds(0.01f));
+            if (gateTile)
             {
-                print("Gate action" + _player.CurrentTile.name);
+                if (_player is null)
+                {
+                    print("Player missing");
+                }
+                else
+                {
+                    _player.Jump(gateTile.transform.position);
+                }
             }
             else
             {
