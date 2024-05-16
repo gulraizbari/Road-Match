@@ -11,7 +11,7 @@ namespace Sablo.Gameplay.Utilities
 
         public void ShowColorEffect(Tile tile)
         {
-            EnableGlowEffect(tile.GetRenderer().material, .125f);
+            EnableGlowEffect(tile.GetRenderer().material, 0.375f);
         }
 
         private void DisableGlowEffect(Material material, float delay)
@@ -23,10 +23,10 @@ namespace Sablo.Gameplay.Utilities
 
         private void EnableGlowEffect(Material material, float delay)
         {
-            var targetEmissionColor = Color.white * 0.6f;
-            material.DOColor(targetEmissionColor, "_EmissionColor", delay)
+            var targetEmissionColor = Color.gray * 0.6f;
+            material.DOColor(targetEmissionColor, "_EmissionColor", 0.15f)
                 .SetEase(Ease.Flash)
-                .OnStart(() => EnableEmission(material)).OnComplete(() => { DisableGlowEffect(material, .125f); });
+                .OnStart(() => EnableEmission(material)).OnComplete(() => { DisableGlowEffect(material, delay); });
         }
 
         private void EnableEmission(Material material)
