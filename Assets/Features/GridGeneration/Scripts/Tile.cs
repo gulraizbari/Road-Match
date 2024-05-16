@@ -20,6 +20,7 @@ namespace Features.GridGeneration.Scripts
 
         public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController, GridTraversal gridTraversal, ColorEffect colorEffect)
         {
+            MyTile = this;
             iCell = cell;
             row = cell.Row;
             column = cell.Col;
@@ -32,59 +33,60 @@ namespace Features.GridGeneration.Scripts
             _renderer.material = material;
             _player = player;
             gameObject.SetActive(true);
+            if (_player!=null)
+            {
+                Invoke(nameof(CollectAdjacent),.5f);
+            }
+            
         }
 
-        private void FetchAdjacent(List<string> adjacentCells)
-        {
-            foreach (var cell in adjacentCells)
-            {
-                if (cell != _id) continue;
-                var adjacentCell = iGridView.GetFoundTile(cell);
-                _adjacents.Add(adjacentCell);
-            }
-        }
+       
 
         public Renderer GetRenderer()
         {
             return _renderer;
         }
 
-        [Button]
-        public void CollectAdjacent()
-        {
-            var adjacentIDs = new List<string>();
-            foreach (var cellID in iCell.GetAdjacent(this))
-            {
-                var id = $"{cellID.Row}{cellID.Col}";
-                adjacentIDs.Add(id);
-            }
-
-            FetchAdjacent(adjacentIDs);
-            FetchFromDictionary(adjacentIDs);
-        }
-
-        private void FetchFromDictionary(List<string> IdsData)
-        {
-            foreach (var id in IdsData)
-            {
-                var adjacentsCell = iGridView.GetFoundTile(id);
-                if (!_adjacents.Contains(adjacentsCell) && adjacentsCell != null)
-                {
-                    _adjacents.Add(adjacentsCell);
-                }
-            }
-
-            FlipAllAdjacent();
-            _adjacents.Clear();
-        }
-
-        private void FlipAllAdjacent()
-        {
-            foreach (var VARIABLE in _adjacents)
-            {
-                VARIABLE.Flip(true, false);
-            }
-        }
+        // [Button]
+        // public void CollectAdjacent()
+        // {
+        //     var adjacentIDs = new List<string>();
+        //     foreach (var cellID in iCell.GetAdjacent(this))
+        //     {
+        //         var id = $"{cellID.Row}{cellID.Col}";
+        //         adjacentIDs.Add(id);
+        //     }
+        //
+        //     FetchAdjacent(adjacentIDs);
+        //     FetchFromDictionary(adjacentIDs);
+        // }
+        //
+        // private void FetchFromDictionary(List<string> IdsData)
+        // {
+        //     foreach (var id in IdsData)
+        //     {
+        //         var adjacentsCell = iGridView.GetFoundTile(id);
+        //         if (!_adjacents.Contains(adjacentsCell) && adjacentsCell != null)
+        //         {
+        //             _adjacents.Add(adjacentsCell);
+        //         }
+        //     }
+        //
+        //     FlipAllAdjacent();
+        //     _adjacents.Clear();
+        // }
+        //
+        // private void FlipAllAdjacent()
+        // {
+        //     foreach (var VARIABLE in _adjacents)
+        //     {
+        //         if (VARIABLE.TileState == TileStates.FlipAble)
+        //         {
+        //             VARIABLE.Flip(true, false);
+        //         }
+        //         
+        //     }
+        // }
 
         public void RemovePlayer()
         {
@@ -123,10 +125,10 @@ namespace Features.GridGeneration.Scripts
             {
                 _playerController.AssignPath(this);
                 _gridTraversal.OnTargetTileSelected(); 
-                if (_tileStates == TileStates.Player)
-                {
-                    CollectAdjacent();
-                }
+                // if (_tileStates == TileStates.Player)
+                // {
+                //     CollectAdjacent();
+                // }
             }
         }
     }
