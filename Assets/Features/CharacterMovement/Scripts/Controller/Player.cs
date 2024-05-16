@@ -12,7 +12,7 @@ namespace Sablo.Gameplay.Movement
         [SerializeField] private float _moveSpeed = 5f;
         private float _rotationSpeed = 10f;
         public List<Tile> pathToMove;
-
+        public Tile lastTile;
         public Tile CurrentTile
         {
             get => _currentTile;
@@ -69,9 +69,15 @@ namespace Sablo.Gameplay.Movement
         {
             for (int i = 0; i < path.Count; i++)
             {
+                bool last = false;
                 path[i].RemovePlayer();
                 CurrentTile = path[i];
-                yield return FollowOnTarget(path[i].transform);
+                if (i >= path.Count - 1)
+                {
+                    last = true;
+                    lastTile = CurrentTile;
+                }
+                yield return FollowOnTarget(path[i].transform,last);
 
                 if (i >= path.Count - 1)
                 {
@@ -80,7 +86,7 @@ namespace Sablo.Gameplay.Movement
             }
         }
 
-        private IEnumerator FollowOnTarget(Transform target)
+        private IEnumerator FollowOnTarget(Transform target,bool lastIndex)
         {
             Vector3 targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
             Vector3 lookDir = targetPosition - transform.position;
@@ -94,6 +100,14 @@ namespace Sablo.Gameplay.Movement
                 transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * _rotationSpeed);
 
                 yield return null;
+            }
+
+            
+            if (lastIndex)
+            {
+                yield return new WaitForSeconds(.5f);
+                lastTile.CollectAdjacent();
+              //  lastTile = null;
             }
         }
         
