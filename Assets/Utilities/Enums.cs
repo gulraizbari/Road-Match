@@ -19,27 +19,30 @@ public enum Fruits
     None,
     WaterMellon,
     BlueBerry,
-    Orange,
-    Guava,
-    Juice3D,
-    Banana3D,
-    IceCream3D,
+    Peach,
+    Pineapple, 
+    Apple,
+    Banana,
+    Grapes,
+    Coconut,
+    DragonFruit
 }
 
 public enum Animals
 {
     None,
-    Duck
+    Duck,
+    Tweety,
+    Rat
 }
 
 public enum Vegetables
 {
     None,
     Carrot,
-    Tomato,
-    Lemon,
-    Corn3D,
-    Garlic3D
+    Bringel,
+    Qado,
+   
 }
 
 public enum ItemType
@@ -48,6 +51,7 @@ public enum ItemType
     Fruits,
     Vegetables,
     Animals,
+    Random
 }
 
 public enum TypesOfHurdle
@@ -68,6 +72,19 @@ public enum TileStates
     Player,
     Breakable,
     NotBreakable,
+    NotWalkable,
+    Gate
+}
+
+public enum RandomObjects
+{
+    
+    Candy,
+    Egg1,
+    Egg2,
+    Egg3,
+    Cake,
+    Diamond,
     NotWalkable,
     Gate
 }
