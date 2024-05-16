@@ -46,12 +46,16 @@ namespace Sablo.Gameplay.PathFinding
 
         private void StartBlinkingOnTraversableTiles()
         {
+            var playerTile = _gridGenerator._gridView.PlayerTile;
             _traversableTiles.Clear();
             foreach (var component in _connectedComponents)
             {
                 foreach (var tile in component)
                 {
-                    _traversableTiles.Add(tile);
+                    if (tile != playerTile)
+                    {
+                        _traversableTiles.Add(tile);
+                    }
                 }
             }
 
