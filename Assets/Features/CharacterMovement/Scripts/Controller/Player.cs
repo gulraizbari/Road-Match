@@ -20,7 +20,7 @@ namespace Sablo.Gameplay.Movement
         public List<Tile> pathToMove;
         public Tile lastTile;
         public UnityEvent finalAction;
-
+        public float walkDelay;
         public Tile CurrentTile
         {
             get => _currentTile;
@@ -72,10 +72,11 @@ namespace Sablo.Gameplay.Movement
 
         private IEnumerator FollowPath(List<Tile> path)
         {
-            _playerAnimator.WalkAnimation(true);
-            for (int i = 0; i < path.Count; i++)
+            
+            for (int i = 1; i < path.Count; i++)
             {
                 var last = false;
+                path[i-1].RemovePlayer();
                 path[i].RemovePlayer();
                 CurrentTile = path[i];
                 if (i >= path.Count - 1)
@@ -83,7 +84,10 @@ namespace Sablo.Gameplay.Movement
                     last = true;
                     lastTile = CurrentTile;
                 }
+
                 yield return FollowOnTarget(path[i].transform, last);
+                ///yield return FollowOnTarget(path[i].transform, last);
+                
                 if (i >= path.Count - 1)
                 {
                     path[i].AssignPlayer(this);
@@ -93,6 +97,8 @@ namespace Sablo.Gameplay.Movement
 
         private IEnumerator FollowOnTarget(Transform target, bool lastIndex)
         {
+           
+            _playerAnimator.WalkAnimation(true);
             var targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
             var lookDir = targetPosition - transform.position;
             // Smoothly rotate towards the target direction
@@ -105,6 +111,15 @@ namespace Sablo.Gameplay.Movement
                 transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * _rotationSpeed);
                 yield return null;
             }
+            _playerAnimator.WalkAnimation(false);
+            transform.DOLocalMoveY(-.5f, .1f).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                transform.DOLocalMoveY(.5f, .1f).SetRelative(true).SetEase(Ease.Linear);
+            }));
+            target.DOLocalMoveY(-.5f, .1f).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                target.DOLocalMoveY(.5f, .1f).SetRelative(true).SetEase(Ease.Linear);
+            }));
 
             if (lastIndex)
             {
@@ -112,6 +127,11 @@ namespace Sablo.Gameplay.Movement
                 yield return new WaitForSeconds(.5f);
                 lastTile.CollectAdjacent();
             }
+            else
+            {
+                yield return new WaitForSeconds(walkDelay);
+            }
+           
         }
 
         public void LookAt(Vector3 target)
@@ -126,7 +146,7 @@ namespace Sablo.Gameplay.Movement
         public void Jump(Vector3 position)
         {
             _playerAnimator.JumpAnimation();
-            position.y = 3.2f;
+            position.y = 1f;
             LookAt(position);
             transform.DOJump(position, 4, 1, 0.5f).SetEase(Ease.Linear).OnComplete((() =>
             {
