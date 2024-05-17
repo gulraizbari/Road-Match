@@ -91,20 +91,34 @@ public class TutorialManager : MonoBehaviour
 
     public void NextTutorial()
     {
-        if (PlayerPrefs.GetInt("Lvl")>0)return;
-        id++;
-        if (id<TutorialsData.Count)
+        if ( PlayerPrefs.GetInt("Tutorial")==0)
         {
-            StartCoroutine(TutorialAction(TutorialsData[id].delay,TutorialsData[id].startDelay));    
+            id++;
+            if (id<TutorialsData.Count)
+            {
+                StartCoroutine(TutorialAction(TutorialsData[id].delay,TutorialsData[id].startDelay));    
+            }
+            else
+            {
+                PlayerPrefs.SetInt("Tutorial",1);
+            }
         }
+       
         
     }
    
 
     public void PlayTutorial()
     {
-        if (PlayerPrefs.GetInt("Lvl")>0)return;
-       StartCoroutine(TutorialAction(TutorialsData[id].delay,TutorialsData[id].startDelay)) ;
+        if (PlayerPrefs.GetInt("Tutorial") == 0)
+        {
+            StartCoroutine(TutorialAction(TutorialsData[id].delay,TutorialsData[id].startDelay)) ;
+        }
+        else
+        {
+            //gameObject.SetActive(false);
+        }
+       
     }
 
     // Update is called once per frame
