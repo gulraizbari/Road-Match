@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Features;
 using Features.GridGeneration.Scripts;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -14,12 +15,13 @@ namespace Sablo.Gameplay.Movement
         [SerializeField] private float _moveSpeed = 5f;
 
         [BoxGroup("Reference")] [SerializeField]
+        GameObject _crown;
+        [BoxGroup("Reference")] [SerializeField]
         PlayerAnimator _playerAnimator;
         private IEnumerator currentCoroutine;
         private float _rotationSpeed = 10f;
         public List<Tile> pathToMove;
         public Tile lastTile;
-        public UnityEvent finalAction;
         public float walkDelay;
         public Tile CurrentTile
         {
@@ -27,6 +29,12 @@ namespace Sablo.Gameplay.Movement
             set => _currentTile = value;
         }
 
+        public IUIController UIController { get; private set; }
+
+        public void AssignUIController(UIController uiController)
+        {
+            UIController = uiController;
+        }
         public void Init(Vector3 position, Tile tile)
         {
             transform.position = position;
@@ -150,9 +158,9 @@ namespace Sablo.Gameplay.Movement
             LookAt(position);
             transform.DOJump(position, 4, 1, 0.5f).SetEase(Ease.Linear).OnComplete((() =>
             {
-                finalAction?.Invoke();
+                _crown.SetActive(true);
                 transform.DORotate(new Vector3(0, 180, 1), 0.1f).SetEase(Ease.Linear);
-
+                 UIController.LevelComplete(2);
             }));
            }
         
