@@ -101,7 +101,12 @@ public class TutorialManager : MonoBehaviour
             else
             {
                 PlayerPrefs.SetInt("Tutorial",1);
+                hand.gameObject.SetActive(false);
             }
+        }
+        else
+        {
+            hand.gameObject.SetActive(false);
         }
        
         
@@ -116,7 +121,7 @@ public class TutorialManager : MonoBehaviour
         }
         else
         {
-            //gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
        
     }
