@@ -1,10 +1,8 @@
-using System.Collections.Generic;
 using Features.GridGeneration.Scripts.interfaces;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Gameplay.Movement;
 using Sablo.Gameplay.PathFinding;
 using Sablo.Gameplay.Utilities;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Features.GridGeneration.Scripts
@@ -35,58 +33,15 @@ namespace Features.GridGeneration.Scripts
             gameObject.SetActive(true);
             if (_player!=null)
             {
-                Invoke(nameof(CollectAdjacent),.5f);
+                Invoke(nameof(CollectAdjacent),0.5f);
             }
             
         }
-
-       
 
         public Renderer GetRenderer()
         {
             return _renderer;
         }
-
-        // [Button]
-        // public void CollectAdjacent()
-        // {
-        //     var adjacentIDs = new List<string>();
-        //     foreach (var cellID in iCell.GetAdjacent(this))
-        //     {
-        //         var id = $"{cellID.Row}{cellID.Col}";
-        //         adjacentIDs.Add(id);
-        //     }
-        //
-        //     FetchAdjacent(adjacentIDs);
-        //     FetchFromDictionary(adjacentIDs);
-        // }
-        //
-        // private void FetchFromDictionary(List<string> IdsData)
-        // {
-        //     foreach (var id in IdsData)
-        //     {
-        //         var adjacentsCell = iGridView.GetFoundTile(id);
-        //         if (!_adjacents.Contains(adjacentsCell) && adjacentsCell != null)
-        //         {
-        //             _adjacents.Add(adjacentsCell);
-        //         }
-        //     }
-        //
-        //     FlipAllAdjacent();
-        //     _adjacents.Clear();
-        // }
-        //
-        // private void FlipAllAdjacent()
-        // {
-        //     foreach (var VARIABLE in _adjacents)
-        //     {
-        //         if (VARIABLE.TileState == TileStates.FlipAble)
-        //         {
-        //             VARIABLE.Flip(true, false);
-        //         }
-        //         
-        //     }
-        // }
 
         public void RemovePlayer()
         {
@@ -124,7 +79,6 @@ namespace Features.GridGeneration.Scripts
                         TutorialManager.OnTutorialAction();
                     }
                 }
-               
             }
             else
             {

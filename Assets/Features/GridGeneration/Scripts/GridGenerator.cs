@@ -40,6 +40,7 @@ namespace Features.GridGeneration.Scripts
             });
             _gridView.AssignItemContainer(_levelData);
             _gridView.SpawnGrid(grid, _levelData);
+            
         }
 
         void GenerateGrid()

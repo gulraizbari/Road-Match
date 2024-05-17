@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.Movement;
-using Sablo.Gameplay.Pathfinding;
 using Sirenix.OdinInspector;
 using UnityEngine;
 

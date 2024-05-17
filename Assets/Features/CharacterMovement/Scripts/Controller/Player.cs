@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using Features.GridGeneration.Scripts;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Sablo.Gameplay.Movement
 {
@@ -10,16 +12,20 @@ namespace Sablo.Gameplay.Movement
     {
         [SerializeField, ReadOnly] Tile _currentTile;
         [SerializeField] private float _moveSpeed = 5f;
+
+        [BoxGroup("Reference")] [SerializeField]
+        PlayerAnimator _playerAnimator;
+        private IEnumerator currentCoroutine;
         private float _rotationSpeed = 10f;
         public List<Tile> pathToMove;
         public Tile lastTile;
+        public UnityEvent finalAction;
+        public float walkDelay;
         public Tile CurrentTile
         {
             get => _currentTile;
             set => _currentTile = value;
         }
-
-        IEnumerator currentCoroutine;
 
         public void Init(Vector3 position, Tile tile)
         {
@@ -36,13 +42,13 @@ namespace Sablo.Gameplay.Movement
             }
 
             // Find the nearest waypoint on the new path and start moving from there
-            Tile nearestWaypoint = FindNearestWaypoint(path);
+            var nearestWaypoint = FindNearestWaypoint(path);
             if (nearestWaypoint != null)
             {
                 // Get the index of the nearest waypoint in the path
-                int nearestIndex = path.IndexOf(nearestWaypoint);
+                var nearestIndex = path.IndexOf(nearestWaypoint);
                 // Trim the path to start from the nearest waypoint
-                List<Tile> trimmedPath = path.GetRange(nearestIndex, path.Count - nearestIndex);
+                var trimmedPath = path.GetRange(nearestIndex, path.Count - nearestIndex);
                 currentCoroutine = FollowPath(trimmedPath);
                 StartCoroutine(currentCoroutine);
             }
@@ -50,7 +56,7 @@ namespace Sablo.Gameplay.Movement
 
         private Tile FindNearestWaypoint(List<Tile> path)
         {
-            float minDistance = Mathf.Infinity;
+            var minDistance = Mathf.Infinity;
             Tile nearestWaypoint = null;
             foreach (var waypoint in path)
             {
@@ -61,15 +67,16 @@ namespace Sablo.Gameplay.Movement
                     nearestWaypoint = waypoint;
                 }
             }
-
             return nearestWaypoint;
         }
 
         private IEnumerator FollowPath(List<Tile> path)
         {
-            for (int i = 0; i < path.Count; i++)
+            
+            for (int i = 1; i < path.Count; i++)
             {
-                bool last = false;
+                var last = false;
+                path[i-1].RemovePlayer();
                 path[i].RemovePlayer();
                 CurrentTile = path[i];
                 if (i >= path.Count - 1)
@@ -77,8 +84,10 @@ namespace Sablo.Gameplay.Movement
                     last = true;
                     lastTile = CurrentTile;
                 }
-                yield return FollowOnTarget(path[i].transform,last);
 
+                yield return FollowOnTarget(path[i].transform, last);
+                ///yield return FollowOnTarget(path[i].transform, last);
+                
                 if (i >= path.Count - 1)
                 {
                     path[i].AssignPlayer(this);
@@ -86,38 +95,66 @@ namespace Sablo.Gameplay.Movement
             }
         }
 
-        private IEnumerator FollowOnTarget(Transform target,bool lastIndex)
+        private IEnumerator FollowOnTarget(Transform target, bool lastIndex)
         {
-            Vector3 targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
-            Vector3 lookDir = targetPosition - transform.position;
+           
+            _playerAnimator.WalkAnimation(true);
+            var targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
+            var lookDir = targetPosition - transform.position;
             // Smoothly rotate towards the target direction
-            Quaternion targetRotation = Quaternion.LookRotation(lookDir, Vector3.up);
+            var targetRotation = Quaternion.LookRotation(lookDir, Vector3.up);
             while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
             {
                 // Move towards the target position
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, _moveSpeed * Time.deltaTime);
                 // Smoothly rotate towards the target direction
                 transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * _rotationSpeed);
-
                 yield return null;
             }
+            _playerAnimator.WalkAnimation(false);
+            transform.DOLocalMoveY(-.5f, .1f).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                transform.DOLocalMoveY(.5f, .1f).SetRelative(true).SetEase(Ease.Linear);
+            }));
+            target.DOLocalMoveY(-.5f, .1f).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                target.DOLocalMoveY(.5f, .1f).SetRelative(true).SetEase(Ease.Linear);
+            }));
 
-            
             if (lastIndex)
             {
+                _playerAnimator.WalkAnimation(false);
                 yield return new WaitForSeconds(.5f);
                 lastTile.CollectAdjacent();
-              //  lastTile = null;
             }
+            else
+            {
+                yield return new WaitForSeconds(walkDelay);
+            }
+           
         }
-        
+
         public void LookAt(Vector3 target)
         {
-            Vector3 lookPos = target - transform.position;
-            Quaternion lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
-            float eulerY = lookRot.eulerAngles.y;
-            Quaternion rotation = Quaternion.Euler(0, eulerY, 0);
+            var lookPos = target - transform.position;
+            var lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
+            var eulerY = lookRot.eulerAngles.y;
+            var rotation = Quaternion.Euler(0, eulerY, 0);
             transform.rotation = rotation;
         }
+
+        public void Jump(Vector3 position)
+        {
+            _playerAnimator.JumpAnimation();
+            position.y = 1f;
+            LookAt(position);
+            transform.DOJump(position, 4, 1, 0.5f).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                finalAction?.Invoke();
+                transform.DORotate(new Vector3(0, 180, 1), 0.1f).SetEase(Ease.Linear);
+
+            }));
+           }
+        
     }
 }
