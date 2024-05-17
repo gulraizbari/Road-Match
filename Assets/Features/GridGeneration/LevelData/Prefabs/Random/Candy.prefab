@@ -133,4 +133,5 @@ MonoBehaviour:
   fruits: 1
   vegetables: 0
   animals: 0
+  randomObjects: 1
   Is2D: 1

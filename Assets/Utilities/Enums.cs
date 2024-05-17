@@ -87,7 +87,7 @@ public enum Tutorials
 
 public enum RandomObjects
 {
-    
+    None,
     Candy,
     Egg1,
     Egg2,

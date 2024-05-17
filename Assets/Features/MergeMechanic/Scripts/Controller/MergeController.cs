@@ -69,6 +69,7 @@ public class MergeController : MonoBehaviour, IMergeController
         selectedTile2.OnMerge(centerPoint, delayTime);
         selectedTile1 = null;
         selectedTile2 = null;
+        SoundManager.Instance.PlayTileMerge(1);
     }
 
     private void MergeThem()

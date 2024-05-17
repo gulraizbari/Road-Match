@@ -80,7 +80,7 @@ namespace Sablo.Gameplay.Movement
 
         private IEnumerator FollowPath(List<Tile> path)
         {
-            
+            _playerAnimator.WalkAnimation(true);
             for (int i = 1; i < path.Count; i++)
             {
                 var last = false;
@@ -106,7 +106,7 @@ namespace Sablo.Gameplay.Movement
         private IEnumerator FollowOnTarget(Transform target, bool lastIndex)
         {
            
-            _playerAnimator.WalkAnimation(true);
+           
             var targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
             var lookDir = targetPosition - transform.position;
             // Smoothly rotate towards the target direction
@@ -119,7 +119,7 @@ namespace Sablo.Gameplay.Movement
                 transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * _rotationSpeed);
                 yield return null;
             }
-            _playerAnimator.WalkAnimation(false);
+           // _playerAnimator.WalkAnimation(false);
             transform.DOLocalMoveY(-.5f, .1f).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
             {
                 transform.DOLocalMoveY(.5f, .1f).SetRelative(true).SetEase(Ease.Linear);
@@ -131,12 +131,14 @@ namespace Sablo.Gameplay.Movement
 
             if (lastIndex)
             {
+                transform.DOLocalRotate(new Vector3(0, 0,0 ), 0.1f).SetEase(Ease.Linear);
                 _playerAnimator.WalkAnimation(false);
                 yield return new WaitForSeconds(.5f);
                 lastTile.CollectAdjacent();
             }
             else
             {
+                
                 yield return new WaitForSeconds(walkDelay);
             }
            
@@ -159,8 +161,11 @@ namespace Sablo.Gameplay.Movement
             transform.DOJump(position, 4, 1, 0.5f).SetEase(Ease.Linear).OnComplete((() =>
             {
                 _crown.SetActive(true);
-                transform.DORotate(new Vector3(0, 180, 1), 0.1f).SetEase(Ease.Linear);
-                 UIController.LevelComplete(2);
+                transform.DORotate(new Vector3(0, 180, 0), 0.1f).SetEase(Ease.Linear).OnComplete(() =>
+                {
+                     _playerAnimator.WinAnimation();
+                });
+                 UIController.LevelComplete(4);
             }));
            }
         

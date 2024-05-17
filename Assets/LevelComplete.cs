@@ -13,6 +13,7 @@ public class LevelComplete : MonoBehaviour
  public void LevelWinUI(float delay)
  {
   _onCompleteAction?.Invoke();
+  SoundManager.Instance.LevelComplete(1);
   StartCoroutine(ShowObjectWithDelay(delay));
  }
 
