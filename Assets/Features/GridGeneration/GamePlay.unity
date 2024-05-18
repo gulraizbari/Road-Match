@@ -1327,7 +1327,6 @@ GameObject:
   - component: {fileID: 1145726626}
   - component: {fileID: 1145726625}
   - component: {fileID: 1145726624}
-  - component: {fileID: 1145726628}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1434,18 +1433,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 55, y: 0, z: 0}
---- !u!114 &1145726628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145726623}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4ceebe77518b4024930d79bad129eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1150429822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2156,10 +2143,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 11400000, guid: 84f795d8e2ebc483082483b03260f2b9, type: 2}
   - {fileID: 11400000, guid: 255dfb2d13c92405eb1961e494b25149, type: 2}
   - {fileID: 11400000, guid: 5a1c8783441c04f59b1913d176246a8f, type: 2}
   - {fileID: 11400000, guid: bc01b934da49d4b2ca26d342bf89c7d3, type: 2}
+  - {fileID: 11400000, guid: 84f795d8e2ebc483082483b03260f2b9, type: 2}
   nextButton: {fileID: 162144980}
   resetButton: {fileID: 399078811}
 --- !u!4 &1639253927
