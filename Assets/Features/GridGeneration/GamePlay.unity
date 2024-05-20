@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.6981132, g: 0.60920256, b: 0.6192925, a: 1}
   m_AmbientGroundColor: {r: 0.3671235, g: 0.3810646, b: 0.4716981, a: 1}
   m_AmbientIntensity: 1
@@ -883,7 +883,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.1
+  m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1402,7 +1402,7 @@ Camera:
   far clip plane: 1000
   field of view: 28
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 22
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2147,6 +2147,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5a1c8783441c04f59b1913d176246a8f, type: 2}
   - {fileID: 11400000, guid: bc01b934da49d4b2ca26d342bf89c7d3, type: 2}
   - {fileID: 11400000, guid: 84f795d8e2ebc483082483b03260f2b9, type: 2}
+  - {fileID: 11400000, guid: a6d69e85575b74bcdad98d135f83c5dc, type: 2}
+  - {fileID: 11400000, guid: 28733ad7867f3451dacd951c50433828, type: 2}
+  - {fileID: 11400000, guid: d7dbf74a7cf0d42959fcb77dd55cbcf9, type: 2}
+  - {fileID: 11400000, guid: 33db7320cc6654df4a6cd70f88b8e193, type: 2}
+  - {fileID: 11400000, guid: d45c3fb67e2134dbebdd823c1c79b19e, type: 2}
+  - {fileID: 11400000, guid: 126e533493b0641e68070b3f5f265647, type: 2}
+  - {fileID: 11400000, guid: c11a8c36b9b674424a5b6e89bf0c5645, type: 2}
   nextButton: {fileID: 162144980}
   resetButton: {fileID: 399078811}
 --- !u!4 &1639253927
