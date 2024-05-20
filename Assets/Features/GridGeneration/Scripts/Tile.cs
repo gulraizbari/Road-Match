@@ -9,14 +9,22 @@ namespace Features.GridGeneration.Scripts
 {
     public class Tile : TileBase
     {
-        private GridTraversal _gridTraversal;
+       // private GridTraversal _gridTraversal;
         private PlayerController _playerController;
-        private ColorEffect _colorEffect;
-        private Coroutine _blinkingCoroutine;
+        
         public int row;
         public int column;
 
-        public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController, GridTraversal gridTraversal, ColorEffect colorEffect)
+
+        public void SetCollectable(Collectable collectable)
+        {
+            _collectable = collectable;
+            PlacementTransform.localScale=Vector3.one;
+            collectable.transform.SetParent(PlacementTransform);
+            collectable.transform.localPosition=Vector3.zero;
+            
+        }
+        public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController)
         {
             MyTile = this;
             iCell = cell;
@@ -24,8 +32,7 @@ namespace Features.GridGeneration.Scripts
             column = cell.Col;
             gameObject.name = $"{row},{column}";
             iGridView = gridView;
-            _gridTraversal = gridTraversal;
-            _colorEffect = colorEffect;
+           
             hapticController = gridView.HapticHandler;
             _playerController = playerController;
             _renderer.material = material;
@@ -33,7 +40,7 @@ namespace Features.GridGeneration.Scripts
             gameObject.SetActive(true);
             if (_player!=null)
             {
-                Invoke(nameof(CollectAdjacent),0.5f);
+                Invoke(nameof(CheckAdjacents),0.5f);
             }
             
         }

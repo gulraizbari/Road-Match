@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a711066e546e84d7aa77376c1f15bd73, type: 3}
   m_Name: GameConfig
   m_EditorClassIdentifier: 
+  playerMoveSpeed: 5.5
+  playerRotationSpeed: 10
+  JumpHeight: 5
+  JumpDuration: 0.5
+  playerYTargetOnTileMoving: 0.8
+  playerYTargetOnTileMovingDuration: 0.05
+  playerRotationOnJumpComplete: {x: 0, y: 180, z: 0}
+  playerRotationOnJumpCompleteDuration: 0.1
   tileJumpHeight: 3
   tileJumpDuration: 0.125
   tileRotateDuration: 0.125
@@ -24,3 +32,4 @@ MonoBehaviour:
   tileRotateDelay: 0.05
   tileFlipDelay: 0.5
   AutoFlipDelay: 0.5
+  levelCompleteDelay: 3

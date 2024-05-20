@@ -4,7 +4,7 @@ public enum TileType
     Disable,
     Walkable,
     Gate,
-    Gift,
+    Boosters,
 }
 
 public enum TilePlacements
@@ -25,7 +25,8 @@ public enum Fruits
     Banana,
     Grapes,
     Coconut,
-    DragonFruit
+    DragonFruit,
+    Avacado
 }
 
 public enum Animals
@@ -33,7 +34,8 @@ public enum Animals
     None,
     Duck,
     Tweety,
-    Rat
+    Rat,
+    Snail
 }
 
 public enum Vegetables
@@ -42,6 +44,8 @@ public enum Vegetables
     Carrot,
     Bringel,
     Qado,
+    GreenBean,
+    GreenLeaf,
    
 }
 
@@ -73,8 +77,8 @@ public enum TileStates
     Breakable,
     NotBreakable,
     NotWalkable,
-    Gate
-
+    Gate,
+    OpenGate,
     
 }
 
@@ -94,4 +98,40 @@ public enum RandomObjects
     Egg3,
     Cake,
     Diamond,
+    Tent1,
+    Tent2,
+    Torch,
+    Bag1,
+    Bag2,
+    Bag3,
+    Bag4,
+    Sofa,
+    Stool,
+    Stem,
+    Compass1,
+    Compass2,
+    Table,
+    House,
+    Cup,
+    Mug,
+    Locker,
+    Clock,
+    Fire,
+    Envelop,
+    Buiscut,
+    Button,
+    Bed,
+    Telescope,
+    Plant,
+    Poison,
+    HoneySpoon
 }
+
+public enum CollectableItems
+{
+    Key,
+    Hint,
+    Weapon,
+    Upgrade
+}
+
