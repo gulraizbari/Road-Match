@@ -184,6 +184,7 @@ namespace Features.GridGeneration.Scripts
             if (!_canTouch)
             {
                 _canTouch = true;
+                SoundManager.Instance.PlayTileSelect(1);
                 hapticController.PlayHaptic();
                 Flip(false, true);
             }
@@ -302,7 +303,8 @@ namespace Features.GridGeneration.Scripts
             }
             else
             {
-             //   FlipAllAdjacent(); auto fliping close
+               // auto flipping close
+             //   FlipAllAdjacent(); 
             }
         }
 

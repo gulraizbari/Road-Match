@@ -25,23 +25,16 @@ namespace Features.GridGeneration.Scripts
         public Tile[,] tilesGrid;
 
         Tile tile;
-
-        public Dictionary<string, Tile> PathData
-        {
-            get => _tiles;
-        }
-
+        public Dictionary<string, Tile> PathData => _tiles;
         public IMergeController MergeController { get; set; }
         public IHapticController HapticHandler { get; set; }
         public Tile PlayerTile { get; set; }
-
         public Tile GetFoundTile(string id)
         {
             if (_tiles.TryGetValue(id, out Tile _tile))
             {
                 tile = _tile;
             }
-
             return tile;
         }
 
@@ -76,7 +69,7 @@ namespace Features.GridGeneration.Scripts
                         case TileType.Disable:
                         {
                             _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
-                                _gridViewReferences.playerController, _gridViewReferences._gridTraversal, _gridViewReferences._colorEffect);
+                                _gridViewReferences.playerController);
                             _tile.SetTransform(tilePosition, 0);
                             _tile.SetID(row, col, grid[row, col]);
                             if (levelData.Matrix[row, col].tilePlacement == TilePlacements.Item)
@@ -105,12 +98,12 @@ namespace Features.GridGeneration.Scripts
                                 _tile.TileState = TileStates.Walkable;
                                 _gridViewReferences.player.Init(new Vector3(tilePosition.x, 1, tilePosition.z), PlayerTile);
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this, _gridViewReferences.player,
-                                    _gridViewReferences.playerController, _gridViewReferences._gridTraversal, _gridViewReferences._colorEffect);
+                                    _gridViewReferences.playerController);
                             }
                             else
                             {
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this, null,
-                                    _gridViewReferences.playerController, _gridViewReferences._gridTraversal, _gridViewReferences._colorEffect);
+                                    _gridViewReferences.playerController);
                             }
 
                             break;
@@ -119,8 +112,7 @@ namespace Features.GridGeneration.Scripts
                         case TileType.Gate:
                         {
                             _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
-                                _gridViewReferences.playerController, _gridViewReferences._gridTraversal,
-                                _gridViewReferences._colorEffect);
+                                _gridViewReferences.playerController);
                             _tile.SetTransform(tilePosition, 0);
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);

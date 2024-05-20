@@ -206,6 +206,8 @@ MonoBehaviour:
   _item: {fileID: 0}
   CellBase:
     IsWalkable: 0
+  istutorial: 0
+  ignore: 0
   row: 0
   column: 0
 --- !u!64 &7487327511503041388

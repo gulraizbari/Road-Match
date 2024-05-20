@@ -9,14 +9,14 @@ namespace Features.GridGeneration.Scripts
 {
     public class Tile : TileBase
     {
-        private GridTraversal _gridTraversal;
+       // private GridTraversal _gridTraversal;
         private PlayerController _playerController;
-        private ColorEffect _colorEffect;
-        private Coroutine _blinkingCoroutine;
+       // private ColorEffect _colorEffect;
+        //private Coroutine _blinkingCoroutine;
         public int row;
         public int column;
 
-        public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController, GridTraversal gridTraversal, ColorEffect colorEffect)
+        public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController)
         {
             MyTile = this;
             iCell = cell;
@@ -24,8 +24,8 @@ namespace Features.GridGeneration.Scripts
             column = cell.Col;
             gameObject.name = $"{row},{column}";
             iGridView = gridView;
-            _gridTraversal = gridTraversal;
-            _colorEffect = colorEffect;
+            //_gridTraversal = gridTraversal;
+            //_colorEffect = colorEffect;
             hapticController = gridView.HapticHandler;
             _playerController = playerController;
             _renderer.material = material;
