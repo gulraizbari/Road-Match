@@ -15,6 +15,5 @@ public class GridViewReferences : MonoBehaviour
     [BoxGroup("References")] public Transform Gate;
     [BoxGroup("References")] public Material disable;
     [BoxGroup("References")] public Material enable;
-    //[BoxGroup("References")] public ColorEffect _colorEffect;
     [BoxGroup("References")] public TutorialManager tutorialManager;
 }

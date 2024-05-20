@@ -17,7 +17,7 @@ namespace Sablo.Gameplay.Movement
         [BoxGroup("Reference")] [SerializeField]
         PlayerAnimator _playerAnimator;
         private IEnumerator currentCoroutine;
-     
+        public bool Haskey;
         public List<Tile> pathToMove;
         public Tile lastTile;
        
@@ -132,8 +132,7 @@ namespace Sablo.Gameplay.Movement
             {
                 transform.DOLocalRotate(new Vector3(0, 0,0 ), 0.1f).SetEase(Ease.Linear);
                 _playerAnimator.WalkAnimation(false);
-                 yield return new WaitForSeconds(.5f);
-                 lastTile.CollectAdjacent();  //auto fliping on player stop
+                 lastTile.CheckAdjacents();  //auto fliping on player stop
             }
         }
 
@@ -146,7 +145,36 @@ namespace Sablo.Gameplay.Movement
             transform.rotation = rotation;
         }
 
-        public void Jump(Vector3 position)
+        public void CheckCollectable(Collectable collectable)
+        {
+            collectable.gameObject.SetActive(false);
+            Haskey = true;
+         print("Collectable : "+collectable.collectableType);   
+        }
+
+        public void Jump(Vector3 position,bool keyReq)
+        {
+            if (keyReq)
+            {
+                if (Haskey)
+                {
+                    JumpEffect(position);
+                }
+                else
+                {
+                    Debug.LogError("Key Missing");
+                    return;
+                }
+            }
+            else
+            {
+                JumpEffect(position);
+            }
+            //if (!Haskey)return;
+            
+        }
+
+        private void JumpEffect(Vector3 position)
         {
             var configs = Configs.GameConfig;
             _playerAnimator.JumpAnimation();
@@ -157,10 +185,12 @@ namespace Sablo.Gameplay.Movement
                 _crown.SetActive(true);
                 transform.DORotate(configs.playerRotationOnJumpComplete, configs.playerRotationOnJumpCompleteDuration).SetEase(Ease.Linear).OnComplete(() =>
                 {
-                     _playerAnimator.WinAnimation();
+                    _playerAnimator.WinAnimation();
                 });
-                 UIController.LevelComplete();
+                UIController.LevelComplete();
             }));
-           }
+        }
+        
+      
     }
 }

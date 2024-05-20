@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.Utilities;
 using Sirenix.OdinInspector;
+using UnityEngine.Serialization;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -23,19 +24,11 @@ public sealed class CellData
     [SerializeField] public Vegetables typeOfVegetables;
     [SerializeField] public Animals typeOfAnimals;
     [SerializeField] public RandomObjects typeOfRandomObjects;
+    [SerializeField] public CollectableItems typeOfCollectableItems;
     [SerializeField] public bool IsPlayer;
-    // [SerializeField] public IngredientsProcess ingredientsProcess;
-    // [SerializeField] public IngredientType ingredientType;
-    // [SerializeField] public HybridStationType hybridStationType;
-    // [SerializeField] public RecipeFormulas recipeFormulas;
-    // [SerializeField] public int       Level        = 1;
-    // [SerializeField] public Currency  RewardType   = Currency.Gold;
-    // [SerializeField] public double    RewardAmount = 10d;
-    // [SerializeField] public ShaftType Shaft        = ShaftType.Forge;
-    // [SerializeField] public ChestData Chest        = null;
-    // [SerializeField] public bool      FinalGate    = false;
-    // [SerializeField] public CardType  CardType     = CardType.Common;
-    // [SerializeField] public int       CardLevel    = 2;
+    [SerializeField] public bool CanOpen;
+    [SerializeField] public bool KeyRequired=false;
+   
     // [FormerlySerializedAs("_unBreakableTiles")] [SerializeField] public UnBreakableRocks _unBreakableRocks;
 
     //===================================================
@@ -54,8 +47,10 @@ public sealed class CellData
         typeOfVegetables = Vegetables.None;
         typeOfAnimals = Animals.None;
         typeOfRandomObjects = RandomObjects.None;
-        
+        typeOfCollectableItems = CollectableItems.Key;
         IsPlayer = false;
+        CanOpen = false;
+        KeyRequired = false;
     }
 }
 
@@ -76,7 +71,8 @@ public sealed class LevelData : SerializedScriptableObject
     [InlineButton(nameof(MakeGrid))] [VerticalGroup("LEVEL DATA/Split/Right"), LabelWidth(60)] [SerializeField]
     int _height = 16;
 
-    [Space] public List<ItemContainer> Containers;
+       [Space] public List<ItemContainer> Containers;
+       [Space] public CollectableContainer collectableContainer;
 
     [Space]
     [TitleGroup("GRID", boldTitle: true)]
@@ -117,7 +113,7 @@ public sealed class LevelData : SerializedScriptableObject
         TileType.Empty => new Color(1f, .3f, .1f, .6f),
         TileType.Disable => Color.gray,
         TileType.Walkable => new Color(0.3f, 0.5f, 0f, 1f),
-        TileType.Gift => new Color(0.7f, 0.5f, 0f, 1f),
+        TileType.Boosters => new Color(0.7f, 0.5f, 0f, 1f),
         TileType.Gate => new Color(0.25f, 0.7f, 1f, 1f),
         // TileType.ChoppingBoardStation      => new Color(0.8f, 0.3f, .5f, 1f),
         // TileType.OrderTable      => new Color(0.8f, 0.3f, .2f, 1f),
@@ -188,9 +184,16 @@ public sealed class LevelData : SerializedScriptableObject
         {
             EditorGUIUtility.labelWidth = 50;
             value.IsPlayer = EditorGUILayout.Toggle("Player", value.IsPlayer);
-            // value.ingredientType =(IngredientType)EditorGUILayout.EnumPopup("Type", value.ingredientType);
-            //value.stationFace    = (StationFace)EditorGUILayout.EnumPopup("Type", value.stationFace);
-            //value.ingredientsProcess= (IngredientsProcess)EditorGUILayout.EnumPopup("Type", value.ingredientsProcess);
+        }
+        else if (value.tileType.Equals(TileType.Boosters))
+        {
+            EditorGUIUtility.labelWidth = 50;
+            value.typeOfCollectableItems = (CollectableItems)EditorGUILayout.EnumPopup("Type", value.typeOfCollectableItems);
+        }
+        else if (value.tileType.Equals(TileType.Gate))
+        {
+            value.CanOpen = EditorGUILayout.Toggle("CanOpen", value.CanOpen);
+            value.KeyRequired = EditorGUILayout.Toggle("Req", value.KeyRequired);
         }
 
         // else if (value.tileType.Equals(TileType.ChoppingBoardStation))
