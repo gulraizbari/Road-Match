@@ -159,7 +159,7 @@ namespace Sablo.Gameplay.Movement
                 {
                      _playerAnimator.WinAnimation();
                 });
-                 UIController.LevelComplete(4);
+                 UIController.LevelComplete();
             }));
            }
     }

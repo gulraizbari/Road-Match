@@ -4,7 +4,7 @@ using UnityEngine;
 
 public partial class GameConfig
 {
-  [FoldoutGroup("GridRelated")]
+  
   [FoldoutGroup("GridRelated")]public float tileJumpHeight;
   [FoldoutGroup("GridRelated")]public float tileJumpDuration;
   [FoldoutGroup("GridRelated")]public float tileRotateDuration;

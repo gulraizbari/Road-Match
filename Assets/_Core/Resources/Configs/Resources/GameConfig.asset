@@ -32,3 +32,4 @@ MonoBehaviour:
   tileRotateDelay: 0.05
   tileFlipDelay: 0.5
   AutoFlipDelay: 0.5
+  levelCompleteDelay: 3
