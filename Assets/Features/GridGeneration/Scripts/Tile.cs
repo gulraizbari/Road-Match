@@ -53,33 +53,55 @@ namespace Features.GridGeneration.Scripts
             _player = player;
         }
 
-        public void StartBlinking()
-        {
-            _colorEffect.StartBlinking(this, 0.75f);
-        }
-
-        public void StopBlinking()
-        {
-            _colorEffect.StopBlinking();
-            _renderer.material.color = GetRenderer().material.color;
-        }
+        // public void StartBlinking()
+        // {
+        //     _colorEffect.StartBlinking(this, 0.75f);
+        // }
+        //
+        // public void StopBlinking()
+        // {
+        //     _colorEffect.StopBlinking();
+        //     _renderer.material.color = GetRenderer().material.color;
+        // }
         
         public override void OnMouseDown()
         {
             base.OnMouseDown();
-            if (_player != null)
-            {
-                if (_playerController.SelectedPlayer is null)
-                {
-                    _playerController.SelectedPlayer = _player;
-                    _gridTraversal.TraverseGrid();
-                }
-            }
-            else
+            if (ignore)return;
+            if (_player is null)
             {
                 _playerController.AssignPath(this);
-                _gridTraversal.OnTargetTileSelected(); 
+               // _gridTraversal.OnTargetTileSelected(); 
+                if (istutorial)
+                {
+                    TutorialManager.OnTutorialAction();
+                }
             }
+            // if (_player != null)
+            // {
+            //     if (_playerController.SelectedPlayer is null)
+            //     {
+            //         _playerController.SelectedPlayer = _player;
+            //         _gridTraversal.TraverseGrid();
+            //         if (istutorial)
+            //         {
+            //             TutorialManager.OnTutorialAction();
+            //         }
+            //     }
+            // }
+            // else
+            // {
+            //     _playerController.AssignPath(this);
+            //     _gridTraversal.OnTargetTileSelected(); 
+            //     if (istutorial)
+            //     {
+            //         TutorialManager.OnTutorialAction();
+            //     }
+            //     // if (_tileStates == TileStates.Player)
+            //     // {
+            //     //     CollectAdjacent();
+            //     // }
+            // }
         }
     }
 }

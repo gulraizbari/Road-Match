@@ -69,6 +69,7 @@ public class MergeController : MonoBehaviour, IMergeController
         selectedTile2.OnMerge(centerPoint, delayTime);
         selectedTile1 = null;
         selectedTile2 = null;
+        SoundManager.Instance.PlayTileMerge(1);
     }
 
     private void MergeThem()
@@ -84,6 +85,7 @@ public class MergeController : MonoBehaviour, IMergeController
                     if (WithSameSubType)
                     {
                         PerformMerge();
+
                     }
                     else
                     {
@@ -98,6 +100,8 @@ public class MergeController : MonoBehaviour, IMergeController
             else
             {
                 print($" Masla s1 {selectedTile1.TileState} , s2 {selectedTile2.TileState}");
+                //tutorial
+                PerformMerge();
             }
         }
         else

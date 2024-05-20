@@ -74,17 +74,24 @@ public enum TileStates
     NotBreakable,
     NotWalkable,
     Gate
+
+    
+}
+
+public enum Tutorials
+{
+    TileClick,
+    PlayerToTarget1,
+    PlayerToGate
 }
 
 public enum RandomObjects
 {
-    
+    None,
     Candy,
     Egg1,
     Egg2,
     Egg3,
     Cake,
     Diamond,
-    NotWalkable,
-    Gate
 }

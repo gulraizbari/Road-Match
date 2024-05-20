@@ -13,6 +13,12 @@ public class PlayerAnimator : MonoBehaviour
     public void JumpAnimation()
     {
         WalkAnimation(false);
-        _animator.SetBool("Jump",true);
+       // _animator.SetBool("Jump",true);
+       
+    }
+
+    public void WinAnimation()
+    {
+        _animator.SetTrigger("Win");
     }
 }

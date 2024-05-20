@@ -133,6 +133,7 @@ namespace Features.GridGeneration.Scripts
                     }
                 }
             }
+            _gridViewReferences.tutorialManager.PlayTutorial();
         }
 
         public void ChangeTileMaterial(bool isGreen, Renderer renderer)
@@ -164,6 +165,10 @@ namespace Features.GridGeneration.Scripts
             {
                 item = Instantiate(FindItem(data.typeOfItem, data.typeOfAnimals));
             }
+            else if (data.typeOfItem == ItemType.Random)
+            {
+                item = Instantiate(FindItem(data.typeOfItem, data.typeOfRandomObjects));
+            }
 
 
             tile.AssignPlacement(item);
@@ -174,7 +179,7 @@ namespace Features.GridGeneration.Scripts
             if (_itemDictionary.TryGetValue(type, out List<Item> data))
             {
                 return data.Find(x =>
-                    x.Fruit == (Fruits)item || x.Vegetable == (Vegetables)item || x.Animal == (Animals)item);
+                    x.Fruit == (Fruits)item || x.Vegetable == (Vegetables)item || x.Animal == (Animals)item  || x.RandomObject == (RandomObjects)item);
             }
             else
             {

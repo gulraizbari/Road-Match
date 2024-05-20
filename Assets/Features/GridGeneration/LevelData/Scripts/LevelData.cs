@@ -22,6 +22,7 @@ public sealed class CellData
     [SerializeField] public Fruits typeOfFruit;
     [SerializeField] public Vegetables typeOfVegetables;
     [SerializeField] public Animals typeOfAnimals;
+    [SerializeField] public RandomObjects typeOfRandomObjects;
     [SerializeField] public bool IsPlayer;
     // [SerializeField] public IngredientsProcess ingredientsProcess;
     // [SerializeField] public IngredientType ingredientType;
@@ -52,6 +53,8 @@ public sealed class CellData
         typeOfFruit = Fruits.None;
         typeOfVegetables = Vegetables.None;
         typeOfAnimals = Animals.None;
+        typeOfRandomObjects = RandomObjects.None;
+        
         IsPlayer = false;
     }
 }
@@ -174,6 +177,10 @@ public sealed class LevelData : SerializedScriptableObject
                 else if (value.typeOfItem == ItemType.Animals)
                 {
                     value.typeOfAnimals = (Animals)EditorGUILayout.EnumPopup("Type", value.typeOfAnimals);
+                }
+                else if (value.typeOfItem == ItemType.Random)
+                {
+                    value.typeOfRandomObjects = (RandomObjects)EditorGUILayout.EnumPopup("Type", value.typeOfRandomObjects);
                 }
             }
         }

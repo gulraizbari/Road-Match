@@ -54,6 +54,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -65,23 +68,26 @@ MonoBehaviour:
       Data: 2|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 6
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -95,23 +101,26 @@ MonoBehaviour:
       Data: 3|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 8
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 3
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -125,16 +134,16 @@ MonoBehaviour:
       Data: 4|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfFruit
       Entry: 3
       Data: 0
@@ -142,6 +151,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 2
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -174,6 +186,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -202,6 +217,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -234,6 +252,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -262,6 +283,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -294,6 +318,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -305,16 +332,16 @@ MonoBehaviour:
       Data: 10|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfFruit
       Entry: 3
       Data: 0
@@ -322,6 +349,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 2
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -354,6 +384,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -365,7 +398,7 @@ MonoBehaviour:
       Data: 12|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 1
@@ -382,6 +415,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -414,6 +450,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -425,23 +464,26 @@ MonoBehaviour:
       Data: 14|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -455,23 +497,26 @@ MonoBehaviour:
       Data: 15|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 3
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -485,16 +530,16 @@ MonoBehaviour:
       Data: 16|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfFruit
       Entry: 3
       Data: 0
@@ -502,6 +547,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 1
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -534,6 +582,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -564,6 +615,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -575,23 +629,26 @@ MonoBehaviour:
       Data: 19|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -605,7 +662,7 @@ MonoBehaviour:
       Data: 20|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -622,6 +679,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -638,13 +698,13 @@ MonoBehaviour:
       Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfFruit
       Entry: 3
       Data: 0
@@ -652,6 +712,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 3
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -668,20 +731,23 @@ MonoBehaviour:
       Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -695,23 +761,26 @@ MonoBehaviour:
       Data: 23|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -725,23 +794,26 @@ MonoBehaviour:
       Data: 24|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -755,23 +827,26 @@ MonoBehaviour:
       Data: 25|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -785,23 +860,26 @@ MonoBehaviour:
       Data: 26|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -834,6 +912,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -845,23 +926,26 @@ MonoBehaviour:
       Data: 28|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 6
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -894,6 +978,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -924,6 +1011,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -944,14 +1034,17 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 8
     - Name: typeOfVegetables
       Entry: 3
       Data: 3
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -984,6 +1077,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1014,6 +1110,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1025,23 +1124,26 @@ MonoBehaviour:
       Data: 34|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -1074,6 +1176,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: true
@@ -1102,6 +1207,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -1134,6 +1242,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1162,6 +1273,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -1194,6 +1308,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1205,10 +1322,10 @@ MonoBehaviour:
       Data: 40|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -1222,6 +1339,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -1254,6 +1374,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1282,6 +1405,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -1314,6 +1440,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1325,23 +1454,26 @@ MonoBehaviour:
       Data: 44|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -1355,16 +1487,16 @@ MonoBehaviour:
       Data: 45|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfFruit
       Entry: 3
       Data: 0
@@ -1372,6 +1504,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 1
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -1404,6 +1539,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1432,6 +1570,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -1464,6 +1605,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1492,6 +1636,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -1524,6 +1671,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1552,6 +1702,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -1584,6 +1737,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1612,6 +1768,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
     - Name: IsPlayer
@@ -1644,6 +1803,9 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1661,3 +1823,4 @@ MonoBehaviour:
   Containers:
   - {fileID: 11400000, guid: 4230d39f4bdc641a98f6162d1f1b0be1, type: 2}
   - {fileID: 11400000, guid: f5f258b570a4e4a29ae7ac16100a2be3, type: 2}
+  - {fileID: 11400000, guid: 5c6e82b5008f14a4ea54efc820841572, type: 2}
