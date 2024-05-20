@@ -5,7 +5,6 @@ using Features;
 using Features.GridGeneration.Scripts;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Sablo.Gameplay.Movement
 {
@@ -120,21 +119,22 @@ namespace Sablo.Gameplay.Movement
                 yield return null;
             }
            // _playerAnimator.WalkAnimation(false);
-            transform.DOLocalMoveY(-.5f, .1f).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
+           transform.DOLocalMoveY(.8f, .05f).SetEase(Ease.Linear).OnComplete((() =>
+           {
+               transform.DOLocalMoveY(1, .05f).SetEase(Ease.Linear);
+           }));
+
+            target.DOLocalMoveY(-.2f, .1f).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
             {
-                transform.DOLocalMoveY(.5f, .1f).SetRelative(true).SetEase(Ease.Linear);
-            }));
-            target.DOLocalMoveY(-.5f, .1f).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
-            {
-                target.DOLocalMoveY(.5f, .1f).SetRelative(true).SetEase(Ease.Linear);
+                target.DOLocalMoveY(.2f, .1f).SetRelative(true).SetEase(Ease.Linear);
             }));
 
             if (lastIndex)
             {
                 transform.DOLocalRotate(new Vector3(0, 0,0 ), 0.1f).SetEase(Ease.Linear);
                 _playerAnimator.WalkAnimation(false);
-                yield return new WaitForSeconds(.5f);
-                lastTile.CollectAdjacent();
+                 yield return new WaitForSeconds(.5f);
+                 lastTile.CollectAdjacent();  //auto fliping on player stop
             }
             else
             {

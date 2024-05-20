@@ -302,10 +302,11 @@ namespace Features.GridGeneration.Scripts
             }
             else
             {
-                FlipAllAdjacent();
+             //   FlipAllAdjacent(); auto fliping close
             }
         }
 
+        private void ActionOnFindingDesiredTile(){}
         private void FlipAllAdjacent()
         {
             foreach (var adjancent in _adjacents)

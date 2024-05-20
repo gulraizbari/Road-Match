@@ -618,7 +618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ed258d9b0347e2a71b3ef797e99c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gridGenerator: {fileID: 2012773269}
 --- !u!4 &529528998
 Transform:
   m_ObjectHideFlags: 0
@@ -1368,10 +1367,6 @@ MonoBehaviour:
     delay: 0
     startDelay: 1
   - currentTutorial: 1
-    touchableID: 25
-    delay: 1
-    startDelay: 0
-  - currentTutorial: 1
     touchableID: 24
     delay: 0.75
     startDelay: 0
@@ -1381,10 +1376,6 @@ MonoBehaviour:
     startDelay: 0
   - currentTutorial: 0
     touchableID: 22
-    delay: 1
-    startDelay: 0
-  - currentTutorial: 1
-    touchableID: 24
     delay: 1
     startDelay: 0
   - currentTutorial: 2

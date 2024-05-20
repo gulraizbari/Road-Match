@@ -20,6 +20,7 @@ namespace Sablo.Core
             _gridView.MergeController = _mergeController;
             _gridView.HapticHandler = _hapticsController;
             _pathFinding.player = _playerController.Player;
+            _playerController.SelectedPlayer = _player;
             _playerController.PathFinding = _pathFinding;
             _player.AssignUIController(_uiController);
         }

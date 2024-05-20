@@ -17,10 +17,9 @@ namespace Sablo.Gameplay.Movement
             if (SelectedPlayer != null)
             {
                 PathFinding.Find(SelectedPlayer.CurrentTile, target);
-                _gridTraversal.StopBlinkingOnTraversableTiles();
+               // _gridTraversal.StopBlinkingOnTraversableTiles();
             }
-
-            SelectedPlayer = null;
+            
         }
     }
 }
