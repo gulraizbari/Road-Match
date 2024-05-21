@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 850defe3f8ebf4ba39a8747ee23721be, type: 3}
-  m_Name: Level 13
+  m_Name: Level 15
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -26,10 +26,10 @@ MonoBehaviour:
       Data: 0|CellData[,], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 63
+      Data: 70
     - Name: ranks
       Entry: 1
-      Data: 7|9
+      Data: 7|10
     - Name: 
       Entry: 7
       Data: 1|CellData, Assembly-CSharp
@@ -95,10 +95,10 @@ MonoBehaviour:
       Data: 3|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -125,10 +125,10 @@ MonoBehaviour:
       Data: 4|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -155,10 +155,10 @@ MonoBehaviour:
       Data: 5|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -185,10 +185,10 @@ MonoBehaviour:
       Data: 6|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -215,10 +215,10 @@ MonoBehaviour:
       Data: 7|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -335,22 +335,22 @@ MonoBehaviour:
       Data: 11|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -365,19 +365,19 @@ MonoBehaviour:
       Data: 12|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 7
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -395,19 +395,19 @@ MonoBehaviour:
       Data: 13|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -425,10 +425,10 @@ MonoBehaviour:
       Data: 14|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -455,19 +455,19 @@ MonoBehaviour:
       Data: 15|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 6
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -485,19 +485,19 @@ MonoBehaviour:
       Data: 16|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 7
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -515,19 +515,19 @@ MonoBehaviour:
       Data: 17|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -575,19 +575,19 @@ MonoBehaviour:
       Data: 19|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 6
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -605,22 +605,22 @@ MonoBehaviour:
       Data: 20|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -635,19 +635,19 @@ MonoBehaviour:
       Data: 21|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 5
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -665,22 +665,22 @@ MonoBehaviour:
       Data: 22|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -695,10 +695,10 @@ MonoBehaviour:
       Data: 23|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -725,22 +725,22 @@ MonoBehaviour:
       Data: 24|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -755,19 +755,19 @@ MonoBehaviour:
       Data: 25|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 8
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -785,19 +785,19 @@ MonoBehaviour:
       Data: 26|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -815,19 +815,19 @@ MonoBehaviour:
       Data: 27|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 5
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -845,7 +845,7 @@ MonoBehaviour:
       Data: 28|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -875,19 +875,19 @@ MonoBehaviour:
       Data: 29|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 6
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -905,7 +905,7 @@ MonoBehaviour:
       Data: 30|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -914,10 +914,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 6
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -935,19 +935,19 @@ MonoBehaviour:
       Data: 31|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -965,7 +965,7 @@ MonoBehaviour:
       Data: 32|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -995,19 +995,19 @@ MonoBehaviour:
       Data: 33|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 9
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1025,19 +1025,19 @@ MonoBehaviour:
       Data: 34|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 4
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1055,22 +1055,22 @@ MonoBehaviour:
       Data: 35|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -1085,7 +1085,7 @@ MonoBehaviour:
       Data: 36|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -1106,7 +1106,7 @@ MonoBehaviour:
       Data: 0
     - Name: IsPlayer
       Entry: 5
-      Data: true
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -1115,19 +1115,19 @@ MonoBehaviour:
       Data: 37|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 5
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1145,19 +1145,19 @@ MonoBehaviour:
       Data: 38|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 9
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1175,19 +1175,19 @@ MonoBehaviour:
       Data: 39|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1205,19 +1205,19 @@ MonoBehaviour:
       Data: 40|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 7
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1235,10 +1235,10 @@ MonoBehaviour:
       Data: 41|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -1265,22 +1265,22 @@ MonoBehaviour:
       Data: 42|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -1295,19 +1295,19 @@ MonoBehaviour:
       Data: 43|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1325,22 +1325,22 @@ MonoBehaviour:
       Data: 44|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -1355,19 +1355,19 @@ MonoBehaviour:
       Data: 45|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 4
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1415,19 +1415,19 @@ MonoBehaviour:
       Data: 47|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1445,22 +1445,22 @@ MonoBehaviour:
       Data: 48|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -1475,19 +1475,19 @@ MonoBehaviour:
       Data: 49|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 6
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1505,10 +1505,10 @@ MonoBehaviour:
       Data: 50|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -1535,19 +1535,19 @@ MonoBehaviour:
       Data: 51|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 7
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1565,19 +1565,19 @@ MonoBehaviour:
       Data: 52|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 8
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1595,19 +1595,19 @@ MonoBehaviour:
       Data: 53|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 5
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1715,10 +1715,10 @@ MonoBehaviour:
       Data: 57|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -1745,10 +1745,10 @@ MonoBehaviour:
       Data: 58|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -1775,10 +1775,10 @@ MonoBehaviour:
       Data: 59|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -1805,10 +1805,10 @@ MonoBehaviour:
       Data: 60|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -1835,10 +1835,10 @@ MonoBehaviour:
       Data: 61|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -1921,13 +1921,221 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 64|CellData, Assembly-CSharp
+    - Name: tileType
+      Entry: 3
+      Data: 0
+    - Name: tilePlacement
+      Entry: 3
+      Data: 0
+    - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 65|CellData, Assembly-CSharp
+    - Name: tileType
+      Entry: 3
+      Data: 0
+    - Name: tilePlacement
+      Entry: 3
+      Data: 0
+    - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 66|CellData, Assembly-CSharp
+    - Name: tileType
+      Entry: 3
+      Data: 0
+    - Name: tilePlacement
+      Entry: 3
+      Data: 0
+    - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 67|CellData, Assembly-CSharp
+    - Name: tileType
+      Entry: 3
+      Data: 0
+    - Name: tilePlacement
+      Entry: 3
+      Data: 0
+    - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 68|CellData, Assembly-CSharp
+    - Name: tileType
+      Entry: 3
+      Data: 0
+    - Name: tilePlacement
+      Entry: 3
+      Data: 0
+    - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 69|CellData, Assembly-CSharp
+    - Name: tileType
+      Entry: 3
+      Data: 0
+    - Name: tilePlacement
+      Entry: 3
+      Data: 0
+    - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 70|CellData, Assembly-CSharp
+    - Name: tileType
+      Entry: 3
+      Data: 0
+    - Name: tilePlacement
+      Entry: 3
+      Data: 0
+    - Name: typeOfHurdle
+      Entry: 3
+      Data: 0
+    - Name: typeOfItem
+      Entry: 3
+      Data: 0
+    - Name: typeOfFruit
+      Entry: 3
+      Data: 0
+    - Name: typeOfVegetables
+      Entry: 3
+      Data: 0
+    - Name: typeOfAnimals
+      Entry: 3
+      Data: 0
+    - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
   _width: 7
-  _height: 9
-  Containers:
-  - {fileID: 11400000, guid: f5f258b570a4e4a29ae7ac16100a2be3, type: 2}
-  - {fileID: 11400000, guid: 4230d39f4bdc641a98f6162d1f1b0be1, type: 2}
+  _height: 10
+  Containers: []
