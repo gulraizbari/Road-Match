@@ -9,14 +9,22 @@ namespace Features.GridGeneration.Scripts
 {
     public class Tile : TileBase
     {
-        private GridTraversal _gridTraversal;
+       // private GridTraversal _gridTraversal;
         private PlayerController _playerController;
-        private ColorEffect _colorEffect;
-        private Coroutine _blinkingCoroutine;
+        
         public int row;
         public int column;
 
-        public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController, GridTraversal gridTraversal, ColorEffect colorEffect)
+
+        public void SetCollectable(Collectable collectable)
+        {
+            _collectable = collectable;
+            PlacementTransform.localScale=Vector3.one;
+            collectable.transform.SetParent(PlacementTransform);
+            collectable.transform.localPosition=Vector3.zero;
+            
+        }
+        public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController)
         {
             MyTile = this;
             iCell = cell;
@@ -24,8 +32,7 @@ namespace Features.GridGeneration.Scripts
             column = cell.Col;
             gameObject.name = $"{row},{column}";
             iGridView = gridView;
-            _gridTraversal = gridTraversal;
-            _colorEffect = colorEffect;
+           
             hapticController = gridView.HapticHandler;
             _playerController = playerController;
             _renderer.material = material;
@@ -33,7 +40,7 @@ namespace Features.GridGeneration.Scripts
             gameObject.SetActive(true);
             if (_player!=null)
             {
-                Invoke(nameof(CollectAdjacent),0.5f);
+                Invoke(nameof(CheckAdjacents),0.5f);
             }
             
         }
@@ -53,33 +60,55 @@ namespace Features.GridGeneration.Scripts
             _player = player;
         }
 
-        public void StartBlinking()
-        {
-            _colorEffect.StartBlinking(this, 0.75f);
-        }
-
-        public void StopBlinking()
-        {
-            _colorEffect.StopBlinking();
-            _renderer.material.color = GetRenderer().material.color;
-        }
+        // public void StartBlinking()
+        // {
+        //     _colorEffect.StartBlinking(this, 0.75f);
+        // }
+        //
+        // public void StopBlinking()
+        // {
+        //     _colorEffect.StopBlinking();
+        //     _renderer.material.color = GetRenderer().material.color;
+        // }
         
         public override void OnMouseDown()
         {
             base.OnMouseDown();
-            if (_player != null)
-            {
-                if (_playerController.SelectedPlayer is null)
-                {
-                    _playerController.SelectedPlayer = _player;
-                    _gridTraversal.TraverseGrid();
-                }
-            }
-            else
+            if (ignore)return;
+            if (_player is null)
             {
                 _playerController.AssignPath(this);
-                _gridTraversal.OnTargetTileSelected(); 
+               // _gridTraversal.OnTargetTileSelected(); 
+                if (istutorial)
+                {
+                    TutorialManager.OnTutorialAction();
+                }
             }
+            // if (_player != null)
+            // {
+            //     if (_playerController.SelectedPlayer is null)
+            //     {
+            //         _playerController.SelectedPlayer = _player;
+            //         _gridTraversal.TraverseGrid();
+            //         if (istutorial)
+            //         {
+            //             TutorialManager.OnTutorialAction();
+            //         }
+            //     }
+            // }
+            // else
+            // {
+            //     _playerController.AssignPath(this);
+            //     _gridTraversal.OnTargetTileSelected(); 
+            //     if (istutorial)
+            //     {
+            //         TutorialManager.OnTutorialAction();
+            //     }
+            //     // if (_tileStates == TileStates.Player)
+            //     // {
+            //     //     CollectAdjacent();
+            //     // }
+            // }
         }
     }
 }

@@ -22,26 +22,22 @@ namespace Features.GridGeneration.Scripts
         Dictionary<ItemType, List<Item>> _itemDictionary = new();
 
         [BoxGroup("References"), ShowInInspector]
+        Dictionary<CollectableItems, Collectable> _collectables = new(); 
+
+        [BoxGroup("References"), ShowInInspector]
         public Tile[,] tilesGrid;
 
         Tile tile;
-
-        public Dictionary<string, Tile> PathData
-        {
-            get => _tiles;
-        }
-
+        public Dictionary<string, Tile> PathData => _tiles;
         public IMergeController MergeController { get; set; }
         public IHapticController HapticHandler { get; set; }
         public Tile PlayerTile { get; set; }
-
         public Tile GetFoundTile(string id)
         {
             if (_tiles.TryGetValue(id, out Tile _tile))
             {
                 tile = _tile;
             }
-
             return tile;
         }
 
@@ -57,6 +53,12 @@ namespace Features.GridGeneration.Scripts
             {
                 _itemDictionary.Add(container.itemType, container.spawnItemContainer);
             }
+
+            foreach (var collectable in data.collectableContainer.collectables)
+            {
+                _collectables.Add(collectable.collectableType,collectable);
+            }
+           
         }
 
         public void SpawnGrid(Cell[,] grid, LevelData levelData)
@@ -70,20 +72,21 @@ namespace Features.GridGeneration.Scripts
                     _tile.gameObject.SetActive(false);
                     _tile.TileState = TileStates.NotWalkable;
                     tilesGrid[row, col] = _tile;
+                    var cellData = levelData.Matrix[row, col];
                     var tilePosition = grid[row, col].Position;
-                    switch (levelData.Matrix[row, col].tileType)
+                    switch (cellData.tileType)
                     {
                         case TileType.Disable:
                         {
                             _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
-                                _gridViewReferences.playerController, _gridViewReferences._gridTraversal, _gridViewReferences._colorEffect);
+                                _gridViewReferences.playerController);
                             _tile.SetTransform(tilePosition, 0);
                             _tile.SetID(row, col, grid[row, col]);
-                            if (levelData.Matrix[row, col].tilePlacement == TilePlacements.Item)
+                            if (cellData.tilePlacement == TilePlacements.Item)
                             {
                                 DisableTile(levelData.Matrix[row, col], _tile);
                             }
-                            else if (levelData.Matrix[row, col].tilePlacement == TilePlacements.Hurdle)
+                            else if (cellData.tilePlacement == TilePlacements.Hurdle)
                             {
                                 _tile.TileState = TileStates.NotBreakable;
                                 var hurdle = Instantiate(_gridViewReferences._prefabTileStone);
@@ -98,19 +101,19 @@ namespace Features.GridGeneration.Scripts
                             _tile.SetTransform(tilePosition, 180);
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
-                            if (levelData.Matrix[row, col].IsPlayer)
+                            if (cellData.IsPlayer)
                             {
                                 _gridViewReferences.playerController.Player.lastTile = tilesGrid[row, col];
                                 PlayerTile = _gridViewReferences.playerController.Player.lastTile;
                                 _tile.TileState = TileStates.Walkable;
                                 _gridViewReferences.player.Init(new Vector3(tilePosition.x, 1, tilePosition.z), PlayerTile);
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this, _gridViewReferences.player,
-                                    _gridViewReferences.playerController, _gridViewReferences._gridTraversal, _gridViewReferences._colorEffect);
+                                    _gridViewReferences.playerController);
                             }
                             else
                             {
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this, null,
-                                    _gridViewReferences.playerController, _gridViewReferences._gridTraversal, _gridViewReferences._colorEffect);
+                                    _gridViewReferences.playerController);
                             }
 
                             break;
@@ -119,20 +122,43 @@ namespace Features.GridGeneration.Scripts
                         case TileType.Gate:
                         {
                             _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
-                                _gridViewReferences.playerController, _gridViewReferences._gridTraversal,
-                                _gridViewReferences._colorEffect);
+                                _gridViewReferences.playerController);
                             _tile.SetTransform(tilePosition, 0);
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
-                            _tile.TileState = TileStates.Gate;
-                            _gridViewReferences.Gate.position = new Vector3(tilePosition.x, .6f, tilePosition.z);
+                            _tile.keyReq = cellData.KeyRequired;
+                            if (cellData.CanOpen)
+                            {
+                                _tile.TileState = TileStates.OpenGate;
+                            }
+                            else
+                            {
+                                _gridViewReferences.Gate.position = new Vector3(tilePosition.x, .6f, tilePosition.z);
+                                _tile.TileState = TileStates.Gate;
+                            }
                             break;
                         }
-                        case TileType.Gift:
+                        case TileType.Boosters:
+                            _tile.SetTransform(tilePosition, 180);
+                            _tile.SetID(row, col, grid[row, col]);
+                            _tiles.Add($"{row}{col}", _tile);
+                            _tile.TileState = TileStates.Walkable;
+                            _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
+                            if (cellData.typeOfCollectableItems == CollectableItems.Key)
+                            {
+                                tilePosition.y = .6f;
+                                if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems, out Collectable collectable))
+                                {
+                                    var collectablePrefab = Instantiate(collectable);
+                                    _tile.SetCollectable(collectablePrefab);
+                                }
+                            }
+                          
                             break;
                     }
                 }
             }
+            _gridViewReferences.tutorialManager.PlayTutorial();
         }
 
         public void ChangeTileMaterial(bool isGreen, Renderer renderer)
@@ -164,22 +190,28 @@ namespace Features.GridGeneration.Scripts
             {
                 item = Instantiate(FindItem(data.typeOfItem, data.typeOfAnimals));
             }
+            else if (data.typeOfItem == ItemType.Random)
+            {
+                item = Instantiate(FindItem(data.typeOfItem, data.typeOfRandomObjects));
+            }
 
 
             tile.AssignPlacement(item);
         }
 
+      
         public Item FindItem(ItemType type, object item)
         {
             if (_itemDictionary.TryGetValue(type, out List<Item> data))
             {
                 return data.Find(x =>
-                    x.Fruit == (Fruits)item || x.Vegetable == (Vegetables)item || x.Animal == (Animals)item);
+                    x.Fruit == (Fruits)item || x.Vegetable == (Vegetables)item || x.Animal == (Animals)item  || x.RandomObject == (RandomObjects)item);
             }
             else
             {
                 return null; // Handle case when type is not found
             }
         }
+        
     }
 }

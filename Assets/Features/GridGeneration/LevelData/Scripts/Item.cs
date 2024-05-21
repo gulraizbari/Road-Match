@@ -20,7 +20,7 @@ public class Item : MonoBehaviour
     public Fruits Fruit => fruits;
     public Vegetables Vegetable => vegetables;
     public Animals Animal => animals;
-
+    public RandomObjects RandomObject=>randomObjects;
     public object GetItemObject()
     {
         switch (type)
@@ -42,6 +42,12 @@ public class Item : MonoBehaviour
                 if (animals != Animals.None)
                 {
                     return animals;
+                }
+                break;
+            case ItemType.Random:
+                if (randomObjects != RandomObjects.None)
+                {
+                    return randomObjects;
                 }
                 break;
             // Add more cases for other item types as needed

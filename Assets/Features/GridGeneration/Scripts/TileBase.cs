@@ -24,6 +24,8 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("Reference"), SerializeField]
         protected Renderer _renderer;
 
+        [BoxGroup("Reference"), SerializeField,ReadOnly]
+       protected Collectable _collectable;
         [BoxGroup("Reference"), SerializeField]
         Transform _itemPlacement;
 
@@ -33,17 +35,17 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("Reference"), SerializeField]
         GameObject _shadow;
 
-        [ShowInInspector] protected IPlayer _player;
+       
+
         [SerializeField] protected TileStates _tileStates;
 
         [BoxGroup("Reference"), ShowInInspector]
         protected HashSet<Tile> _adjacents = new HashSet<Tile>();
 
         public List<string> adjacentIDs;
-
+        public bool keyReq;
         [BoxGroup("Reference"), SerializeField, ReadOnly]
         protected Item _item;
-
         protected IGridView iGridView;
         protected ICell iCell;
         protected IHapticController hapticController;
@@ -54,7 +56,9 @@ namespace Features.GridGeneration.Scripts
         Tween _outerTween;
         Tween _innerTween;
         protected Tile MyTile;
-
+        public bool istutorial;
+        public bool ignore;
+        protected IPlayer _player;
         public ParticleSystem MergeParticle { get; set; }
         Item ITile.CurrentItem => _item;
         public string ID => _id;
@@ -176,12 +180,19 @@ namespace Features.GridGeneration.Scripts
 
         public virtual void OnMouseDown()
         {
-            if (_tileStates != TileStates.FlipAble) return;
+            
+            if (_tileStates != TileStates.FlipAble  ) return;
+          
             if (!_canTouch)
             {
                 _canTouch = true;
+                SoundManager.Instance.PlayTileSelect(1);
                 hapticController.PlayHaptic();
                 Flip(false, true);
+            }
+            if (istutorial)
+            {
+                TutorialManager.OnTutorialAction();
             }
         }
 
@@ -253,7 +264,7 @@ namespace Features.GridGeneration.Scripts
 
 
         [Button]
-        public void CollectAdjacent()
+        public void CheckAdjacents()
         {
             foreach (var cellID in iGridView.GridHandler.FindAdjacentCells(CellBase))
             {
@@ -289,15 +300,21 @@ namespace Features.GridGeneration.Scripts
                 }
                 else
                 {
-                    _player.Jump(gateTile.transform.position);
+                    _player.Jump(gateTile.transform.position,gateTile.keyReq);
                 }
             }
             else
             {
-                FlipAllAdjacent();
+                if (_collectable)
+                {
+                    _player.CheckCollectable(_collectable);
+                }
+               // auto flipping close
+             //   FlipAllAdjacent(); 
             }
         }
 
+        private void ActionOnFindingDesiredTile(){}
         private void FlipAllAdjacent()
         {
             foreach (var adjancent in _adjacents)

@@ -1,32 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Features;
 using Features.GridGeneration.Scripts;
+using Sablo.Core;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Sablo.Gameplay.Movement
 {
     public class Player : MonoBehaviour, IPlayer
     {
         [SerializeField, ReadOnly] Tile _currentTile;
-        [SerializeField] private float _moveSpeed = 5f;
-
+        [BoxGroup("Reference")] [SerializeField]
+        GameObject _crown;
         [BoxGroup("Reference")] [SerializeField]
         PlayerAnimator _playerAnimator;
         private IEnumerator currentCoroutine;
-        private float _rotationSpeed = 10f;
+        public bool Haskey;
         public List<Tile> pathToMove;
         public Tile lastTile;
-        public UnityEvent finalAction;
-        public float walkDelay;
+       
         public Tile CurrentTile
         {
             get => _currentTile;
             set => _currentTile = value;
         }
 
+        public IUIController UIController { get; private set; }
+
+        public void AssignUIController(UIController uiController)
+        {
+            UIController = uiController;
+        }
         public void Init(Vector3 position, Tile tile)
         {
             transform.position = position;
@@ -72,7 +78,7 @@ namespace Sablo.Gameplay.Movement
 
         private IEnumerator FollowPath(List<Tile> path)
         {
-            
+            _playerAnimator.WalkAnimation(true);
             for (int i = 1; i < path.Count; i++)
             {
                 var last = false;
@@ -97,8 +103,8 @@ namespace Sablo.Gameplay.Movement
 
         private IEnumerator FollowOnTarget(Transform target, bool lastIndex)
         {
+            var configs = Configs.GameConfig;
            
-            _playerAnimator.WalkAnimation(true);
             var targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
             var lookDir = targetPosition - transform.position;
             // Smoothly rotate towards the target direction
@@ -106,32 +112,28 @@ namespace Sablo.Gameplay.Movement
             while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
             {
                 // Move towards the target position
-                transform.position = Vector3.MoveTowards(transform.position, targetPosition, _moveSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, configs.playerMoveSpeed * Time.deltaTime);
                 // Smoothly rotate towards the target direction
-                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * _rotationSpeed);
+                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * configs.playerRotationSpeed);
                 yield return null;
             }
-            _playerAnimator.WalkAnimation(false);
-            transform.DOLocalMoveY(-.5f, .1f).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
+           // _playerAnimator.WalkAnimation(false);
+           transform.DOLocalMoveY(configs.playerYTargetOnTileMoving, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear).OnComplete((() =>
+           {
+               transform.DOLocalMoveY(1, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear);
+           }));
+
+            target.DOLocalMoveY(-.2f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
             {
-                transform.DOLocalMoveY(.5f, .1f).SetRelative(true).SetEase(Ease.Linear);
-            }));
-            target.DOLocalMoveY(-.5f, .1f).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
-            {
-                target.DOLocalMoveY(.5f, .1f).SetRelative(true).SetEase(Ease.Linear);
+                target.DOLocalMoveY(.2f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear);
             }));
 
             if (lastIndex)
             {
+                transform.DOLocalRotate(new Vector3(0, 0,0 ), 0.1f).SetEase(Ease.Linear);
                 _playerAnimator.WalkAnimation(false);
-                yield return new WaitForSeconds(.5f);
-                lastTile.CollectAdjacent();
+                 lastTile.CheckAdjacents();  //auto fliping on player stop
             }
-            else
-            {
-                yield return new WaitForSeconds(walkDelay);
-            }
-           
         }
 
         public void LookAt(Vector3 target)
@@ -143,18 +145,52 @@ namespace Sablo.Gameplay.Movement
             transform.rotation = rotation;
         }
 
-        public void Jump(Vector3 position)
+        public void CheckCollectable(Collectable collectable)
         {
+            collectable.gameObject.SetActive(false);
+            Haskey = true;
+         print("Collectable : "+collectable.collectableType);   
+        }
+
+        public void Jump(Vector3 position,bool keyReq)
+        {
+            if (keyReq)
+            {
+                if (Haskey)
+                {
+                    JumpEffect(position);
+                }
+                else
+                {
+                    Debug.LogError("Key Missing");
+                    return;
+                }
+            }
+            else
+            {
+                JumpEffect(position);
+            }
+            //if (!Haskey)return;
+            
+        }
+
+        private void JumpEffect(Vector3 position)
+        {
+            var configs = Configs.GameConfig;
             _playerAnimator.JumpAnimation();
             position.y = 1f;
             LookAt(position);
-            transform.DOJump(position, 4, 1, 0.5f).SetEase(Ease.Linear).OnComplete((() =>
+            transform.DOJump(position, configs.JumpHeight, 1, configs.JumpDuration).SetEase(Ease.Linear).OnComplete((() =>
             {
-                finalAction?.Invoke();
-                transform.DORotate(new Vector3(0, 180, 1), 0.1f).SetEase(Ease.Linear);
-
+                _crown.SetActive(true);
+                transform.DORotate(configs.playerRotationOnJumpComplete, configs.playerRotationOnJumpCompleteDuration).SetEase(Ease.Linear).OnComplete(() =>
+                {
+                    _playerAnimator.WinAnimation();
+                });
+                UIController.LevelComplete();
             }));
-           }
+        }
         
+      
     }
 }
