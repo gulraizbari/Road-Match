@@ -4,6 +4,7 @@ using Features.MergeMechanic.Scripts.Interface;
 using GridGeneration.Scripts.interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Features.GridGeneration.Scripts
 {
@@ -29,8 +30,23 @@ namespace Features.GridGeneration.Scripts
 
         Tile tile;
         public Dictionary<string, Tile> PathData => _tiles;
+        public Tile GetTile(string id)
+        {
+           
+            if (PathData.TryGetValue(id,out Tile _tile))
+            {
+                tile = _tile;
+            }
+            else
+            {
+                tile = null;
+            }
+            return tile;
+        }
+
         public IMergeController MergeController { get; set; }
         public IHapticController HapticHandler { get; set; }
+        [FormerlySerializedAs("playerCollectible")] public PlayerGoals playerGoal;
         public Tile PlayerTile { get; set; }
         public Tile GetFoundTile(string id)
         {
@@ -69,6 +85,7 @@ namespace Features.GridGeneration.Scripts
                 for (var col = 0; col < levelData.Height; col++)
                 {
                     var _tile = Instantiate(_gridViewReferences._prefabTile, transform);
+                   
                     _tile.gameObject.SetActive(false);
                     _tile.TileState = TileStates.NotWalkable;
                     tilesGrid[row, col] = _tile;
@@ -127,6 +144,8 @@ namespace Features.GridGeneration.Scripts
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
                             _tile.keyReq = cellData.KeyRequired;
+                            _tile.requiredCollectableItems = cellData.typeOfCollectableItems;
+                            
                             if (cellData.CanOpen)
                             {
                                 _tile.TileState = TileStates.OpenGate;
@@ -139,20 +158,37 @@ namespace Features.GridGeneration.Scripts
                             break;
                         }
                         case TileType.Boosters:
-                            _tile.SetTransform(tilePosition, 180);
+                          
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
-                            _tile.TileState = TileStates.Walkable;
-                            _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
+                            
+                          
                             if (cellData.typeOfCollectableItems == CollectableItems.Key)
                             {
+                                _tile.SetTransform(tilePosition, 180);
+                                _tile.TileState = TileStates.Walkable;
+                                _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
                                 tilePosition.y = .6f;
+                                
                                 if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems, out Collectable collectable))
                                 {
                                     var collectablePrefab = Instantiate(collectable);
+                                    collectablePrefab.Init(cellData.linkedID);
                                     _tile.SetCollectable(collectablePrefab);
                                 }
                             }
+                            else if (cellData.typeOfCollectableItems == CollectableItems.ChestBox)
+                           {
+                               _tile.SetTransform(tilePosition, 0);
+                               _tile.TileState = TileStates.ChestBox;
+                               _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
+                               if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems, out Collectable collectable))
+                               {
+                                   var collectablePrefab = Instantiate(collectable);
+                                   _tile.SetCollectable(collectablePrefab);
+                               }
+                           }
+                            
                           
                             break;
                     }
@@ -171,6 +207,11 @@ namespace Features.GridGeneration.Scripts
             {
                 renderer.material = _gridViewReferences.disable;
             }
+        }
+
+        public void ChangeTileMaterial(Tile _tile)
+        {
+            _tile.ChangeColor(_gridViewReferences.enableWithOutRotation);
         }
 
         public IGridGenerator GridHandler => _gridGenerator;

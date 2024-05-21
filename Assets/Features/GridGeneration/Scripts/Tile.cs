@@ -24,6 +24,11 @@ namespace Features.GridGeneration.Scripts
             collectable.transform.localPosition=Vector3.zero;
             
         }
+
+        public void ChangeColor(Material mat)
+        {
+            _renderer.material = mat;
+        }
         public void Init(Material material, ICell cell, IGridView gridView, IPlayer player, PlayerController playerController)
         {
             MyTile = this;

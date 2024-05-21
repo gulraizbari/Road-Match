@@ -35,7 +35,8 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("Reference"), SerializeField]
         GameObject _shadow;
 
-       
+        [BoxGroup("Reference")]
+        public CollectableItems requiredCollectableItems=CollectableItems.None;
 
         [SerializeField] protected TileStates _tileStates;
 
@@ -288,7 +289,6 @@ namespace Features.GridGeneration.Scripts
                     }
                 }
             }
-
             var adjacentsList = _adjacents.ToList();
             var gateTile = adjacentsList.Find(tile => tile._tileStates == TileStates.Gate);
             await Task.Delay(TimeSpan.FromSeconds(0.01f));
@@ -300,17 +300,16 @@ namespace Features.GridGeneration.Scripts
                 }
                 else
                 {
-                    _player.Jump(gateTile.transform.position,gateTile.keyReq);
+                    
+                    _player.Jump(gateTile.transform.position,gateTile.requiredCollectableItems);
                 }
             }
             else
             {
                 if (_collectable)
                 {
-                    _player.CheckCollectable(_collectable);
+                    _player.OnFoundingCollectible(_collectable);
                 }
-               // auto flipping close
-             //   FlipAllAdjacent(); 
             }
         }
 

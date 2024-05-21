@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using Features;
+using Features.CharacterMovement.Scripts;
 using Features.GridGeneration.Scripts;
 using Sablo.Core;
 using Sirenix.OdinInspector;
@@ -9,26 +10,29 @@ using UnityEngine;
 
 namespace Sablo.Gameplay.Movement
 {
-    public class Player : MonoBehaviour, IPlayer
+    public class Player : PlayerBaseClass,IPlayer
     {
-        [SerializeField, ReadOnly] Tile _currentTile;
-        [BoxGroup("Reference")] [SerializeField]
-        GameObject _crown;
-        [BoxGroup("Reference")] [SerializeField]
-        PlayerAnimator _playerAnimator;
-        private IEnumerator currentCoroutine;
-        public bool Haskey;
-        public List<Tile> pathToMove;
-        public Tile lastTile;
        
-        public Tile CurrentTile
+        
+
+       
+        public void OnFoundingCollectible(Collectable collectable)
         {
-            get => _currentTile;
-            set => _currentTile = value;
+           
+            if (collectable.levelDependent)
+            {
+                switch (collectable.collectableType)
+                {
+                    case CollectableItems.ChestBox:
+                        ChestBoxCase(collectable);
+                        break;
+                    case CollectableItems.Key:
+                        KeyCase(collectable);
+                        break;
+                }
+            }
         }
-
-        public IUIController UIController { get; private set; }
-
+        
         public void AssignUIController(UIController uiController)
         {
             UIController = uiController;
@@ -46,14 +50,10 @@ namespace Sablo.Gameplay.Movement
             {
                 StopCoroutine(currentCoroutine);
             }
-
-            // Find the nearest waypoint on the new path and start moving from there
             var nearestWaypoint = FindNearestWaypoint(path);
             if (nearestWaypoint != null)
             {
-                // Get the index of the nearest waypoint in the path
                 var nearestIndex = path.IndexOf(nearestWaypoint);
-                // Trim the path to start from the nearest waypoint
                 var trimmedPath = path.GetRange(nearestIndex, path.Count - nearestIndex);
                 currentCoroutine = FollowPath(trimmedPath);
                 StartCoroutine(currentCoroutine);
@@ -90,10 +90,7 @@ namespace Sablo.Gameplay.Movement
                     last = true;
                     lastTile = CurrentTile;
                 }
-
                 yield return FollowOnTarget(path[i].transform, last);
-                ///yield return FollowOnTarget(path[i].transform, last);
-                
                 if (i >= path.Count - 1)
                 {
                     path[i].AssignPlayer(this);
@@ -136,28 +133,16 @@ namespace Sablo.Gameplay.Movement
             }
         }
 
-        public void LookAt(Vector3 target)
+       
+        
+        public void Jump(Vector3 position,CollectableItems requiredItem)
         {
-            var lookPos = target - transform.position;
-            var lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
-            var eulerY = lookRot.eulerAngles.y;
-            var rotation = Quaternion.Euler(0, eulerY, 0);
-            transform.rotation = rotation;
-        }
-
-        public void CheckCollectable(Collectable collectable)
-        {
-            collectable.gameObject.SetActive(false);
-            Haskey = true;
-         print("Collectable : "+collectable.collectableType);   
-        }
-
-        public void Jump(Vector3 position,bool keyReq)
-        {
-            if (keyReq)
+            if (requiredItem!=CollectableItems.None)
             {
-                if (Haskey)
+                
+                if (playerGoalHandler.FetchCollectible(requiredItem)>0)
                 {
+                    playerGoalHandler.DeleteCollectible(requiredItem,1);
                     JumpEffect(position);
                 }
                 else
@@ -174,23 +159,7 @@ namespace Sablo.Gameplay.Movement
             
         }
 
-        private void JumpEffect(Vector3 position)
-        {
-            var configs = Configs.GameConfig;
-            _playerAnimator.JumpAnimation();
-            position.y = 1f;
-            LookAt(position);
-            transform.DOJump(position, configs.JumpHeight, 1, configs.JumpDuration).SetEase(Ease.Linear).OnComplete((() =>
-            {
-                _crown.SetActive(true);
-                transform.DORotate(configs.playerRotationOnJumpComplete, configs.playerRotationOnJumpCompleteDuration).SetEase(Ease.Linear).OnComplete(() =>
-                {
-                    _playerAnimator.WinAnimation();
-                });
-                UIController.LevelComplete();
-            }));
-        }
-        
+       
       
     }
 }
