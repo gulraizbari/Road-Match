@@ -1644,7 +1644,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145726623}
   m_LocalRotation: {x: 0.46174863, y: 0, z: 0, w: 0.8870109}
-  m_LocalPosition: {x: 0.2, y: 62, z: -45}
+  m_LocalPosition: {x: 0, y: 62, z: -45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2558,7 +2558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 11400000, guid: 11d27759f52284e0f99c4ad3fa7b2713, type: 2}
+  - {fileID: 11400000, guid: 255dfb2d13c92405eb1961e494b25149, type: 2}
   - {fileID: 11400000, guid: 5a1c8783441c04f59b1913d176246a8f, type: 2}
   - {fileID: 11400000, guid: bc01b934da49d4b2ca26d342bf89c7d3, type: 2}
   - {fileID: 11400000, guid: f8867f5bbdf1b72418e4402141918c63, type: 2}
@@ -3281,6 +3281,7 @@ MonoBehaviour:
   _currentTile: {fileID: 0}
   _crown: {fileID: 919132148691420770}
   _playerAnimator: {fileID: 745143095}
+  Haskey: 0
   pathToMove: []
   lastTile: {fileID: 0}
 --- !u!1 &2127438001
