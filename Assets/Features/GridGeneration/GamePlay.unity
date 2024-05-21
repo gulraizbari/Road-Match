@@ -2332,6 +2332,9 @@ MonoBehaviour:
   enableWithOutRotation: {fileID: 2100000, guid: 822629843470342ff94cb6408683776f,
     type: 2}
   tutorialManager: {fileID: 1096717854}
+  movesText: {fileID: 1613254681}
+  moves: 0
+  movesMultiplier: 2
 --- !u!4 &1150429824
 Transform:
   m_ObjectHideFlags: 0
@@ -4306,7 +4309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gridViewReferences: {fileID: 1150429823}
-  playerGoal: {fileID: 0}
+  playerGoal: {fileID: 762620189}
 --- !u!4 &2045547670
 Transform:
   m_ObjectHideFlags: 0

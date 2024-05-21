@@ -189,6 +189,7 @@ namespace Features.GridGeneration.Scripts
                 _canTouch = true;
                 SoundManager.Instance.PlayTileSelect(1);
                 hapticController.PlayHaptic();
+                iGridView.UpdateMoves(-1);
                 Flip(false, true);
             }
             if (istutorial)

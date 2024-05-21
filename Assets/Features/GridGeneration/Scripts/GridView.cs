@@ -23,8 +23,9 @@ namespace Features.GridGeneration.Scripts
         Dictionary<ItemType, List<Item>> _itemDictionary = new();
 
         [BoxGroup("References"), ShowInInspector]
-        Dictionary<CollectableItems, Collectable> _collectables = new(); 
+        Dictionary<CollectableItems, Collectable> _collectables = new();
 
+       
         [BoxGroup("References"), ShowInInspector]
         public Tile[,] tilesGrid;
 
@@ -95,12 +96,14 @@ namespace Features.GridGeneration.Scripts
                     {
                         case TileType.Disable:
                         {
+                            
                             _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
                                 _gridViewReferences.playerController);
                             _tile.SetTransform(tilePosition, 0);
                             _tile.SetID(row, col, grid[row, col]);
                             if (cellData.tilePlacement == TilePlacements.Item)
                             {
+                                _gridViewReferences.moves++;
                                 DisableTile(levelData.Matrix[row, col], _tile);
                             }
                             else if (cellData.tilePlacement == TilePlacements.Hurdle)
@@ -194,6 +197,8 @@ namespace Features.GridGeneration.Scripts
                     }
                 }
             }
+
+            _gridViewReferences.CalculateMoves();
             _gridViewReferences.tutorialManager.PlayTutorial();
         }
 
@@ -215,6 +220,10 @@ namespace Features.GridGeneration.Scripts
         }
 
         public IGridGenerator GridHandler => _gridGenerator;
+        public void UpdateMoves(int value)
+        {
+            _gridViewReferences.UpdateMoves(value);
+        }
 
         private void DisableTile(CellData data, Tile tile)
         {

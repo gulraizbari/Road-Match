@@ -24,5 +24,6 @@ namespace GridGeneration.Scripts.interfaces
         public void ChangeTileMaterial(bool isGreen,Renderer renderer);
         public void ChangeTileMaterial(Tile tile);
         public IGridGenerator GridHandler { get; }
+        void UpdateMoves(int value);
     }
 }
