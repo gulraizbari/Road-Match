@@ -54,7 +54,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -84,7 +96,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -114,7 +138,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -144,7 +180,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -174,7 +222,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -204,7 +264,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -234,7 +306,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -264,7 +348,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -294,7 +390,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -324,7 +432,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -354,7 +474,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -384,7 +516,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -414,7 +558,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -444,7 +600,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -455,7 +623,7 @@ MonoBehaviour:
       Data: 15|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -474,7 +642,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -504,7 +684,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -534,7 +726,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -564,7 +768,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -594,7 +810,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -624,7 +852,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -654,7 +894,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -684,7 +936,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -714,7 +978,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -744,7 +1020,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -774,7 +1062,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -804,7 +1104,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -834,7 +1146,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -864,7 +1188,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -894,7 +1230,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -924,7 +1272,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -954,7 +1314,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -984,7 +1356,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1014,7 +1398,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1044,7 +1440,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1074,7 +1482,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1104,9 +1524,21 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
       Entry: 5
       Data: true
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -1134,7 +1566,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1164,7 +1608,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1194,7 +1650,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1224,7 +1692,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1254,7 +1734,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1284,7 +1776,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1314,7 +1818,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1344,7 +1860,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1374,7 +1902,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1404,7 +1944,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1434,7 +1986,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1445,7 +2009,7 @@ MonoBehaviour:
       Data: 48|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -1464,7 +2028,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1494,7 +2070,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1524,7 +2112,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1554,7 +2154,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1584,7 +2196,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1614,7 +2238,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1644,7 +2280,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1674,7 +2322,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1704,7 +2364,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1734,7 +2406,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1764,7 +2448,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1794,7 +2490,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1824,7 +2532,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1854,7 +2574,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1884,7 +2616,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1914,7 +2658,19 @@ MonoBehaviour:
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
+    - Name: typeOfRandomObjects
+      Entry: 3
+      Data: 0
+    - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: CanOpen
+      Entry: 5
+      Data: false
+    - Name: KeyRequired
       Entry: 5
       Data: false
     - Name: 
@@ -1931,3 +2687,5 @@ MonoBehaviour:
   Containers:
   - {fileID: 11400000, guid: f5f258b570a4e4a29ae7ac16100a2be3, type: 2}
   - {fileID: 11400000, guid: 4230d39f4bdc641a98f6162d1f1b0be1, type: 2}
+  collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
+    type: 2}
