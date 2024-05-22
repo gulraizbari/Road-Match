@@ -10,6 +10,7 @@ public class DumyLevelManager : MonoBehaviour
    public List<LevelData> levels;
    public Button nextButton;
    public Button resetButton;
+   public Button reloadButton;
 
    
    public LevelData GetCurrentLevel => levels[Level];
@@ -18,6 +19,7 @@ public class DumyLevelManager : MonoBehaviour
    {
       nextButton.onClick.AddListener((NextLevel));
       resetButton.onClick.AddListener((ResetLevel));
+      reloadButton.onClick.AddListener((ResetLevel));
    }
 
    public void NextLevel()

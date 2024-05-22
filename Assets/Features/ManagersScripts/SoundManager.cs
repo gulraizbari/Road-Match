@@ -28,6 +28,10 @@ public class SoundManager : MonoBehaviour
     {
         PlayShot(2,volume);
     }
+    public void LevelFail(float volume)
+    {
+        PlayShot(3,volume);
+    }
     public void PlayTileMerge(float volume)
     {
         PlayShot(1,volume);

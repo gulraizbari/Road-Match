@@ -31,6 +31,7 @@ namespace Features.GridGeneration.Scripts
 
         Tile tile;
         public Dictionary<string, Tile> PathData => _tiles;
+        public IGridGenerator GridHandler => _gridGenerator;
         public Tile GetTile(string id)
         {
            
@@ -62,6 +63,7 @@ namespace Features.GridGeneration.Scripts
         public void Init(GridViewDataModel model)
         {
             _gridGenerator = model.GridHandler;
+            GameController.SetState(GameStates.Play);
         }
 
         public void AssignItemContainer(LevelData data)
@@ -200,6 +202,7 @@ namespace Features.GridGeneration.Scripts
 
             _gridViewReferences.CalculateMoves();
             _gridViewReferences.tutorialManager.PlayTutorial();
+            _gridViewReferences.SetUIHandler(UIHandler);
         }
 
         public void ChangeTileMaterial(bool isGreen, Renderer renderer)
@@ -219,11 +222,13 @@ namespace Features.GridGeneration.Scripts
             _tile.ChangeColor(_gridViewReferences.enableWithOutRotation);
         }
 
-        public IGridGenerator GridHandler => _gridGenerator;
+        
         public void UpdateMoves(int value)
         {
             _gridViewReferences.UpdateMoves(value);
         }
+
+        public UIController UIHandler { get; set; }
 
         private void DisableTile(CellData data, Tile tile)
         {

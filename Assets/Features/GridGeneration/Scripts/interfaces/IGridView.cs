@@ -25,5 +25,6 @@ namespace GridGeneration.Scripts.interfaces
         public void ChangeTileMaterial(Tile tile);
         public IGridGenerator GridHandler { get; }
         void UpdateMoves(int value);
+        public UIController UIHandler { get; set; }
     }
 }

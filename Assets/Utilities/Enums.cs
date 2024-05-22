@@ -139,5 +139,13 @@ public enum CollectableItems
     ChestBox
 }
 
-
+public enum GameStates
+{
+    None,
+    Ready,
+    Play,
+    Pause,
+    Win,
+    Lose
+}
 

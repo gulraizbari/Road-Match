@@ -181,7 +181,7 @@ namespace Features.GridGeneration.Scripts
 
         public virtual void OnMouseDown()
         {
-            
+            if (!GameController.IsState(GameStates.Play))return;
             if (_tileStates != TileStates.FlipAble  ) return;
           
             if (!_canTouch)

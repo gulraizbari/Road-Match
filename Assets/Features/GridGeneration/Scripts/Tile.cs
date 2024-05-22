@@ -79,6 +79,7 @@ namespace Features.GridGeneration.Scripts
         public override void OnMouseDown()
         {
             base.OnMouseDown();
+            if (!GameController.IsState(GameStates.Play))return;
             if (ignore)return;
             if (_player is null)
             {

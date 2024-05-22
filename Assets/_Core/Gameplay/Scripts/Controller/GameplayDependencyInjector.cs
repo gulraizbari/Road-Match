@@ -15,7 +15,7 @@ namespace Sablo.Core
         [SerializeField] private PathFinding _pathFinding;
         [SerializeField] UIController _uiController;
         [SerializeField] Player _player;
-        [FormerlySerializedAs("_playerCollectibles")] [SerializeField] PlayerGoals playerGoals;
+        [SerializeField] PlayerGoals playerGoals;
         public override void InjectDependencies()
         {
             _gridView.MergeController = _mergeController;
@@ -26,6 +26,8 @@ namespace Sablo.Core
             _player.AssignUIController(_uiController);
             _player.playerGoalHandler = playerGoals;
             _player.GridViewHandler = _gridView;
+            _gridView.UIHandler = _uiController;
+
 
         }
     }
