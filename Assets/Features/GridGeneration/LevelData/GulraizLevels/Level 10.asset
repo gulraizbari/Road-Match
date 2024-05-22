@@ -60,6 +60,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -102,6 +105,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -144,6 +150,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -186,6 +195,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -228,6 +240,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -270,6 +285,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -312,6 +330,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -354,6 +375,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -396,6 +420,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -438,6 +465,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -480,6 +510,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -522,6 +555,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -564,6 +600,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -606,6 +645,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -647,7 +689,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfCollectableItems
       Entry: 3
-      Data: 0
+      Data: 1
+    - Name: linkedID
+      Entry: 1
+      Data: 25
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -690,6 +735,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -732,6 +780,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -774,6 +825,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -816,6 +870,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -858,6 +915,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -900,6 +960,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -942,6 +1005,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -984,6 +1050,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1026,6 +1095,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1068,6 +1140,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1110,6 +1185,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1152,6 +1230,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1194,6 +1275,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1236,6 +1320,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1278,6 +1365,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1320,6 +1410,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1362,6 +1455,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1404,6 +1500,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1446,6 +1545,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1488,6 +1590,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1530,6 +1635,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: true
@@ -1572,6 +1680,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1614,6 +1725,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1656,6 +1770,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1698,6 +1815,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1740,6 +1860,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1782,6 +1905,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1824,6 +1950,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1866,6 +1995,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1908,6 +2040,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1950,6 +2085,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1992,6 +2130,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2009,7 +2150,7 @@ MonoBehaviour:
       Data: 48|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 4
+      Data: 5
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -2034,6 +2175,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2076,6 +2220,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2118,6 +2265,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2160,6 +2310,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2202,6 +2355,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2244,6 +2400,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2286,6 +2445,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2328,6 +2490,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2370,6 +2535,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2412,6 +2580,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2454,6 +2625,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2496,6 +2670,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2538,6 +2715,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2580,6 +2760,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2622,6 +2805,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -2664,6 +2850,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
