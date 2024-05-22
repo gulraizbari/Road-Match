@@ -125,7 +125,7 @@ MonoBehaviour:
       Data: 3|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 4
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -1070,7 +1070,7 @@ MonoBehaviour:
       Data: 24|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 4
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 0
