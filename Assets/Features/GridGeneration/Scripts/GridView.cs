@@ -2,8 +2,10 @@ using System.Collections.Generic;
 using Features.Haptics.Interfaces;
 using Features.MergeMechanic.Scripts.Interface;
 using GridGeneration.Scripts.interfaces;
+using Sablo.Gameplay.Movement;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Features.GridGeneration.Scripts
 {
@@ -22,13 +24,30 @@ namespace Features.GridGeneration.Scripts
         Dictionary<ItemType, List<Item>> _itemDictionary = new();
 
         [BoxGroup("References"), ShowInInspector]
-        Dictionary<CollectableItems, Collectable> _collectables = new(); 
+        Dictionary<CollectableItems, Collectable> _collectables = new();
+        [BoxGroup("References")] public IPlayerCollectible Goals;
 
+       
         [BoxGroup("References"), ShowInInspector]
         public Tile[,] tilesGrid;
 
         Tile tile;
         public Dictionary<string, Tile> PathData => _tiles;
+        public IGridGenerator GridHandler => _gridGenerator;
+        public Tile GetTile(string id)
+        {
+           
+            if (PathData.TryGetValue(id,out Tile _tile))
+            {
+                tile = _tile;
+            }
+            else
+            {
+                tile = null;
+            }
+            return tile;
+        }
+
         public IMergeController MergeController { get; set; }
         public IHapticController HapticHandler { get; set; }
         public Tile PlayerTile { get; set; }
@@ -45,6 +64,7 @@ namespace Features.GridGeneration.Scripts
         public void Init(GridViewDataModel model)
         {
             _gridGenerator = model.GridHandler;
+            GameController.SetState(GameStates.Play);
         }
 
         public void AssignItemContainer(LevelData data)
@@ -69,6 +89,7 @@ namespace Features.GridGeneration.Scripts
                 for (var col = 0; col < levelData.Height; col++)
                 {
                     var _tile = Instantiate(_gridViewReferences._prefabTile, transform);
+                   
                     _tile.gameObject.SetActive(false);
                     _tile.TileState = TileStates.NotWalkable;
                     tilesGrid[row, col] = _tile;
@@ -78,12 +99,14 @@ namespace Features.GridGeneration.Scripts
                     {
                         case TileType.Disable:
                         {
+                            
                             _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
                                 _gridViewReferences.playerController);
                             _tile.SetTransform(tilePosition, 0);
                             _tile.SetID(row, col, grid[row, col]);
                             if (cellData.tilePlacement == TilePlacements.Item)
                             {
+                                _gridViewReferences.moves++;
                                 DisableTile(levelData.Matrix[row, col], _tile);
                             }
                             else if (cellData.tilePlacement == TilePlacements.Hurdle)
@@ -127,6 +150,8 @@ namespace Features.GridGeneration.Scripts
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
                             _tile.keyReq = cellData.KeyRequired;
+                            _tile.requiredCollectableItems = cellData.typeOfCollectableItems;
+                            Goals.SetGate(_tile);
                             if (cellData.CanOpen)
                             {
                                 _tile.TileState = TileStates.OpenGate;
@@ -139,26 +164,48 @@ namespace Features.GridGeneration.Scripts
                             break;
                         }
                         case TileType.Boosters:
-                            _tile.SetTransform(tilePosition, 180);
+                          
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
-                            _tile.TileState = TileStates.Walkable;
-                            _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
+                            
+                          
                             if (cellData.typeOfCollectableItems == CollectableItems.Key)
                             {
+                                _tile.SetTransform(tilePosition, 180);
+                                _tile.TileState = TileStates.Walkable;
+                                _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
                                 tilePosition.y = .6f;
+                                
                                 if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems, out Collectable collectable))
                                 {
                                     var collectablePrefab = Instantiate(collectable);
+                                    collectablePrefab.Init(cellData.linkedID);
                                     _tile.SetCollectable(collectablePrefab);
                                 }
+                               Goals.AddOrUpdateGoals(CollectableItems.Key,1);
                             }
+                            else if (cellData.typeOfCollectableItems == CollectableItems.ChestBox)
+                           {
+                               _tile.SetTransform(tilePosition, 0);
+                               _tile.TileState = TileStates.ChestBox;
+                               Goals.AddOrUpdateGoals(CollectableItems.ChestBox,1);
+                               _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
+                               if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems, out Collectable collectable))
+                               {
+                                   var collectablePrefab = Instantiate(collectable);
+                                   _tile.SetCollectable(collectablePrefab);
+                               }
+                           }
+                            
                           
                             break;
                     }
                 }
             }
+
+            _gridViewReferences.CalculateMoves();
             _gridViewReferences.tutorialManager.PlayTutorial();
+            _gridViewReferences.SetUIHandler(UIHandler);
         }
 
         public void ChangeTileMaterial(bool isGreen, Renderer renderer)
@@ -173,7 +220,18 @@ namespace Features.GridGeneration.Scripts
             }
         }
 
-        public IGridGenerator GridHandler => _gridGenerator;
+        public void ChangeTileMaterial(Tile _tile)
+        {
+            _tile.ChangeColor(_gridViewReferences.enableWithOutRotation);
+        }
+
+        
+        public void UpdateMoves(int value)
+        {
+            _gridViewReferences.UpdateMoves(value);
+        }
+
+        public UIController UIHandler { get; set; }
 
         private void DisableTile(CellData data, Tile tile)
         {

@@ -1,8 +1,10 @@
+using Features;
 using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.Movement;
 using Sablo.Gameplay.PathFinding;
 using Sablo.Gameplay.Utilities;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
 
 public class GridViewReferences : MonoBehaviour
@@ -15,5 +17,42 @@ public class GridViewReferences : MonoBehaviour
     [BoxGroup("References")] public Transform Gate;
     [BoxGroup("References")] public Material disable;
     [BoxGroup("References")] public Material enable;
+    [BoxGroup("References")] public Material enableWithOutRotation;
     [BoxGroup("References")] public TutorialManager tutorialManager;
+    [BoxGroup("References")] public TextMeshProUGUI movesText;
+   
+    [BoxGroup("References/Values")] public int moves;
+    [BoxGroup("References/Values")]public int movesMultiplier=1;
+
+    public IUIController UIHandler;
+
+    public void SetUIHandler(UIController controller) => UIHandler = controller;
+    public void CalculateMoves()
+    {
+        moves = moves * movesMultiplier;
+        UpdateText();
+    }
+
+    public void UpdateMoves(int value)
+    {
+        moves += value;
+        if (moves <=0 )
+        {
+            moves = 0;
+            UpdateText();
+            print("Level Fail");
+          UIHandler.LevelFail(.5f);
+        }
+        else
+        {
+            UpdateText();
+        }
+        
+    }
+
+    private void UpdateText()
+    {
+        movesText.SetText($"{moves}");
+    }
+    
 }

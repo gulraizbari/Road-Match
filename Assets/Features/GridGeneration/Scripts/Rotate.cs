@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-public class Crown : MonoBehaviour
+public class Rotate : MonoBehaviour
 {
     [SerializeField] Transform crown;
     void Start()
@@ -13,9 +13,5 @@ public class Crown : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

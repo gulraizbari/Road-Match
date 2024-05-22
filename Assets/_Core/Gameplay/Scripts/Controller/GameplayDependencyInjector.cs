@@ -2,6 +2,7 @@ using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.Movement;
 using Sablo.Gameplay.PathFinding;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Sablo.Core
 {
@@ -14,7 +15,7 @@ namespace Sablo.Core
         [SerializeField] private PathFinding _pathFinding;
         [SerializeField] UIController _uiController;
         [SerializeField] Player _player;
-        
+        [SerializeField] PlayerGoals playerGoals;
         public override void InjectDependencies()
         {
             _gridView.MergeController = _mergeController;
@@ -23,6 +24,12 @@ namespace Sablo.Core
             _playerController.SelectedPlayer = _player;
             _playerController.PathFinding = _pathFinding;
             _player.AssignUIController(_uiController);
+            _player.playerGoalHandler = playerGoals;
+            _player.GridViewHandler = _gridView;
+            _gridView.UIHandler = _uiController;
+            _gridView.Goals = playerGoals;
+            playerGoals.gridView = _gridView;
+
         }
     }
 }
