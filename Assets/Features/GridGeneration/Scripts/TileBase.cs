@@ -266,7 +266,7 @@ namespace Features.GridGeneration.Scripts
 
 
         [Button]
-        public void CheckAdjacents()
+        public void CheckAdjacents(bool canFlip)
         {
             foreach (var cellID in iGridView.GridHandler.FindAdjacentCells(CellBase))
             {
@@ -274,12 +274,12 @@ namespace Features.GridGeneration.Scripts
                 adjacentIDs.Add(id);
             }
 
-            FetchFromDictionary();
+            FetchFromDictionary(canFlip);
         }
 
       
 
-        private async void FetchFromDictionary()
+        private async void FetchFromDictionary(bool canFlip)
         {
             foreach (var id in adjacentIDs)
             {
@@ -309,6 +309,11 @@ namespace Features.GridGeneration.Scripts
             }
             else
             {
+                if (canFlip)
+                {
+                    FlipAllAdjacent();
+                }
+                
                 if (_collectable)
                 {
                     _player.OnFoundingCollectible(_collectable);

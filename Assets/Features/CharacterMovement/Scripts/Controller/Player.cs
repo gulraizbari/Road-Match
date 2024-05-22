@@ -12,10 +12,6 @@ namespace Sablo.Gameplay.Movement
 {
     public class Player : PlayerBaseClass,IPlayer
     {
-
-
-
-       
         public void OnFoundingCollectible(Collectable collectable)
         {
            
@@ -41,7 +37,7 @@ namespace Sablo.Gameplay.Movement
         {
             transform.position = position;
             CurrentTile = tile;
-            
+            CurrentTile.CheckAdjacents(true);
         }
 
         public void MoveOnPath(List<Tile> path)
@@ -57,7 +53,6 @@ namespace Sablo.Gameplay.Movement
                 var nearestIndex = path.IndexOf(nearestWaypoint);
                 var trimmedPath = path.GetRange(nearestIndex, path.Count - nearestIndex);
                 currentCoroutine = FollowPath(trimmedPath);
-              
                 StartCoroutine(currentCoroutine);
             }
         }
@@ -143,7 +138,7 @@ namespace Sablo.Gameplay.Movement
             {
                 transform.DOLocalRotate(new Vector3(0, 0,0 ), 0.1f).SetEase(Ease.Linear);
                 _playerAnimator.WalkAnimation(false);
-                 lastTile.CheckAdjacents();  //auto fliping on player stop
+                 lastTile.CheckAdjacents(false);  //auto fliping on player stop
             }
             else
             {
