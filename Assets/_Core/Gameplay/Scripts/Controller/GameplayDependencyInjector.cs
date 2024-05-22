@@ -27,7 +27,8 @@ namespace Sablo.Core
             _player.playerGoalHandler = playerGoals;
             _player.GridViewHandler = _gridView;
             _gridView.UIHandler = _uiController;
-
+            _gridView.Goals = playerGoals;
+            playerGoals.gridView = _gridView;
 
         }
     }

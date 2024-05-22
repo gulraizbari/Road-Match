@@ -137,26 +137,43 @@ namespace Sablo.Gameplay.Movement
         
         public void Jump(Vector3 position,CollectableItems requiredItem)
         {
-            if (requiredItem!=CollectableItems.None)
+            if (playerGoalHandler.FetchGoals()>0)
             {
-                
-                if (playerGoalHandler.FetchCollectible(requiredItem)>0)
+                if (playerGoalHandler.TaskComplete)
                 {
-                    playerGoalHandler.DeleteCollectible(requiredItem,1);
                     JumpEffect(position);
                 }
                 else
                 {
-                    Debug.LogError("Key Missing");
-                    return;
+                    Debug.LogError("Task Complete");
                 }
             }
             else
             {
                 JumpEffect(position);
             }
+            // if (requiredItem!=CollectableItems.None)
+            // {
+            //     
+            //     if (playerGoalHandler.FetchCollectible(requiredItem)>0)
+            //     {
+            //         if (playerGoalHandler.TaskComplete)
+            //         {
+            //             JumpEffect(position);
+            //         }
+            //        
+            //     }
+            //     else
+            //     {
+            //         Debug.LogError("Key Missing");
+            //         return;
+            //     }
+            // }
+            // else
+            // {
+            //     JumpEffect(position);
+            // }
             //if (!Haskey)return;
-            
         }
 
        

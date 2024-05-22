@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Features.Haptics.Interfaces;
 using Features.MergeMechanic.Scripts.Interface;
 using GridGeneration.Scripts.interfaces;
+using Sablo.Gameplay.Movement;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -24,6 +25,7 @@ namespace Features.GridGeneration.Scripts
 
         [BoxGroup("References"), ShowInInspector]
         Dictionary<CollectableItems, Collectable> _collectables = new();
+        [BoxGroup("References")] public IPlayerCollectible Goals;
 
        
         [BoxGroup("References"), ShowInInspector]
@@ -48,7 +50,6 @@ namespace Features.GridGeneration.Scripts
 
         public IMergeController MergeController { get; set; }
         public IHapticController HapticHandler { get; set; }
-        [FormerlySerializedAs("playerCollectible")] public PlayerGoals playerGoal;
         public Tile PlayerTile { get; set; }
         public Tile GetFoundTile(string id)
         {
@@ -150,7 +151,7 @@ namespace Features.GridGeneration.Scripts
                             _tiles.Add($"{row}{col}", _tile);
                             _tile.keyReq = cellData.KeyRequired;
                             _tile.requiredCollectableItems = cellData.typeOfCollectableItems;
-                            
+                            Goals.SetGate(_tile);
                             if (cellData.CanOpen)
                             {
                                 _tile.TileState = TileStates.OpenGate;
@@ -181,11 +182,13 @@ namespace Features.GridGeneration.Scripts
                                     collectablePrefab.Init(cellData.linkedID);
                                     _tile.SetCollectable(collectablePrefab);
                                 }
+                               Goals.AddOrUpdateGoals(CollectableItems.Key,1);
                             }
                             else if (cellData.typeOfCollectableItems == CollectableItems.ChestBox)
                            {
                                _tile.SetTransform(tilePosition, 0);
                                _tile.TileState = TileStates.ChestBox;
+                               Goals.AddOrUpdateGoals(CollectableItems.ChestBox,1);
                                _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
                                if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems, out Collectable collectable))
                                {
