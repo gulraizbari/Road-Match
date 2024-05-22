@@ -2761,7 +2761,7 @@ MonoBehaviour:
   tutorialManager: {fileID: 1096717854}
   movesText: {fileID: 1613254681}
   moves: 0
-  movesMultiplier: 1
+  movesMultiplier: 3
 --- !u!4 &1150429824
 Transform:
   m_ObjectHideFlags: 0
@@ -4079,7 +4079,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels:
   - {fileID: 11400000, guid: 255dfb2d13c92405eb1961e494b25149, type: 2}
-  - {fileID: 11400000, guid: a1567ce6687ce4b508c7a592a970f02f, type: 2}
   - {fileID: 11400000, guid: 5a1c8783441c04f59b1913d176246a8f, type: 2}
   - {fileID: 11400000, guid: bc01b934da49d4b2ca26d342bf89c7d3, type: 2}
   - {fileID: 11400000, guid: f8867f5bbdf1b72418e4402141918c63, type: 2}
@@ -4095,6 +4094,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f414c7fe50e4b4a33b17092d5b2df41d, type: 2}
   - {fileID: 11400000, guid: 3efc5b47207234c53ad1e2082af49931, type: 2}
   - {fileID: 11400000, guid: 3f0ed1a154eef459eb9f58f8cf03a8ae, type: 2}
+  - {fileID: 11400000, guid: a1567ce6687ce4b508c7a592a970f02f, type: 2}
   nextButton: {fileID: 162144980}
   resetButton: {fileID: 399078811}
   reloadButton: {fileID: 56685563}
@@ -5042,7 +5042,6 @@ MonoBehaviour:
   _currentTile: {fileID: 0}
   _crown: {fileID: 919132148691420770}
   _playerAnimator: {fileID: 745143095}
-  Haskey: 0
   pathToMove: []
   lastTile: {fileID: 0}
 --- !u!1 &2127438001

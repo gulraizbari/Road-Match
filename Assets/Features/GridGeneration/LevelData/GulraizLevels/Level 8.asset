@@ -1025,7 +1025,7 @@ MonoBehaviour:
       Data: 23|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -1049,7 +1049,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfCollectableItems
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: linkedID
       Entry: 6
       Data: 

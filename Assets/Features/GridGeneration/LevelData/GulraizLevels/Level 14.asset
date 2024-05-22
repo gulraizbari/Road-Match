@@ -710,7 +710,7 @@ MonoBehaviour:
       Data: 16|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -734,10 +734,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfCollectableItems
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: linkedID
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: 23
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1340,7 +1340,7 @@ MonoBehaviour:
       Data: 30|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -1364,7 +1364,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfCollectableItems
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2195,7 +2195,7 @@ MonoBehaviour:
       Data: 49|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -2219,7 +2219,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfCollectableItems
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: linkedID
       Entry: 6
       Data: 
