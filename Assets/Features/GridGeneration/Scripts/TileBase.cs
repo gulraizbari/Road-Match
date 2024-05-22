@@ -292,23 +292,35 @@ namespace Features.GridGeneration.Scripts
                     }
                 }
             }
-            var adjacentsList = _adjacents.ToList();
-             var gateTile = adjacentsList.Find(tile => tile._tileStates == TileStates.Walkable);
-             await Task.Delay(TimeSpan.FromSeconds(0.01f));
-            if (gateTile && gateTile.isGate)
-            {
+            var foundadjacent= _adjacents.ToList();
+            Tile gateTile=new Tile();
+             //var gateTile = foundadjacent.Find(tile => tile._tileStates == TileStates.Walkable);
+             foreach (var data in foundadjacent)
+             {
+                 if (data.isGate)
+                 {
+                     gateTile = data;
+                     break;
+                 } 
+             }
+             await Task.Delay(TimeSpan.FromSeconds(0.05f));
+            if (gateTile )
+            {   
+                print("1");
                 if (_player is null)
                 {
                     print("Player missing");
                 }
                 else
                 {
+                    print("2");
                     gateTile.TileState = TileStates.OpenGate;
                     _player.Jump(gateTile.transform.position);
                 }
             }
             else
             {
+                print("3");
                 if (canFlip)
                 {
                     FlipAllAdjacent();

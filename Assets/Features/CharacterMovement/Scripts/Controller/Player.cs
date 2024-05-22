@@ -37,7 +37,6 @@ namespace Sablo.Gameplay.Movement
         {
             transform.position = position;
             CurrentTile = tile;
-            CurrentTile.CheckAdjacents(true);
         }
 
         public void MoveOnPath(List<Tile> path)

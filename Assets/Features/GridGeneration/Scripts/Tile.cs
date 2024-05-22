@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Features.GridGeneration.Scripts.interfaces;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Gameplay.Movement;
@@ -42,9 +43,16 @@ namespace Features.GridGeneration.Scripts
             _renderer.material = material;
             _player = player;
             gameObject.SetActive(true);
+            
             if (_player!=null)
             {
-                Invoke(nameof(CheckAdjacents),0.5f);
+                
+                //Invoke(nameof(CheckAdjacents),0.5f);
+                var tween = new TweenCallback((() =>
+                {
+                    CheckAdjacents(true);
+                }));
+                DOVirtual.DelayedCall(.5f,tween);
             }
         }
 
