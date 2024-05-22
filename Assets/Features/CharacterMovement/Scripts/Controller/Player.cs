@@ -12,8 +12,8 @@ namespace Sablo.Gameplay.Movement
 {
     public class Player : PlayerBaseClass,IPlayer
     {
-       
-        
+
+
 
        
         public void OnFoundingCollectible(Collectable collectable)
@@ -41,6 +41,7 @@ namespace Sablo.Gameplay.Movement
         {
             transform.position = position;
             CurrentTile = tile;
+            
         }
 
         public void MoveOnPath(List<Tile> path)
@@ -56,6 +57,7 @@ namespace Sablo.Gameplay.Movement
                 var nearestIndex = path.IndexOf(nearestWaypoint);
                 var trimmedPath = path.GetRange(nearestIndex, path.Count - nearestIndex);
                 currentCoroutine = FollowPath(trimmedPath);
+              
                 StartCoroutine(currentCoroutine);
             }
         }
@@ -91,10 +93,27 @@ namespace Sablo.Gameplay.Movement
                     lastTile = CurrentTile;
                 }
                 yield return FollowOnTarget(path[i].transform, last);
+                if (i >= path.Count - 2)
+                {
+                    var gateTile = path[path.Count - 1];
+                    WhenGateIsFound(gateTile);
+                }
                 if (i >= path.Count - 1)
                 {
                     path[i].AssignPlayer(this);
                 }
+            }
+        }
+
+        public void WhenGateIsFound(Tile gateTile)
+        {
+            if (gateTile.isGate)
+            {
+                print("Next is Gate");
+                transform.DOLocalRotate(new Vector3(0, 0,0 ), 0f).SetEase(Ease.Linear);
+                StopCoroutine(currentCoroutine);
+                _playerAnimator.WalkAnimation(false);
+                Jump(gateTile.transform.position);
             }
         }
 
@@ -104,17 +123,13 @@ namespace Sablo.Gameplay.Movement
            
             var targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
             var lookDir = targetPosition - transform.position;
-            // Smoothly rotate towards the target direction
             var targetRotation = Quaternion.LookRotation(lookDir, Vector3.up);
             while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
             {
-                // Move towards the target position
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, configs.playerMoveSpeed * Time.deltaTime);
-                // Smoothly rotate towards the target direction
                 transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * configs.playerRotationSpeed);
                 yield return null;
             }
-           // _playerAnimator.WalkAnimation(false);
            transform.DOLocalMoveY(configs.playerYTargetOnTileMoving, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear).OnComplete((() =>
            {
                transform.DOLocalMoveY(1, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear);
@@ -136,14 +151,13 @@ namespace Sablo.Gameplay.Movement
                 {
                     OnFoundingCollectible(CurrentTile.TileCollectible);
                 }
-              
-
+                
             }
         }
 
        
         
-        public void Jump(Vector3 position,CollectableItems requiredItem)
+        public void Jump(Vector3 position)
         {
             if (playerGoalHandler.FetchGoals()>0)
             {

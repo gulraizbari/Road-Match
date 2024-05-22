@@ -98,7 +98,7 @@ namespace Features.GridGeneration.Scripts
         public void SetTransform(Vector3 pos, float z)
         {
             transform.position = pos;
-            TileState = TileStates.FlipAble;
+            //TileState = TileStates.FlipAble;
             _renderer.transform.localRotation = Quaternion.Euler(0, 0, z);
             if (z != 0)
             {
@@ -293,9 +293,9 @@ namespace Features.GridGeneration.Scripts
                 }
             }
             var adjacentsList = _adjacents.ToList();
-            var gateTile = adjacentsList.Find(tile => tile._tileStates == TileStates.Gate);
-            await Task.Delay(TimeSpan.FromSeconds(0.01f));
-            if (gateTile)
+             var gateTile = adjacentsList.Find(tile => tile._tileStates == TileStates.Walkable);
+             await Task.Delay(TimeSpan.FromSeconds(0.01f));
+            if (gateTile && gateTile.isGate)
             {
                 if (_player is null)
                 {
@@ -303,8 +303,8 @@ namespace Features.GridGeneration.Scripts
                 }
                 else
                 {
-                    
-                    _player.Jump(gateTile.transform.position,gateTile.requiredCollectableItems);
+                    gateTile.TileState = TileStates.OpenGate;
+                    _player.Jump(gateTile.transform.position);
                 }
             }
             else

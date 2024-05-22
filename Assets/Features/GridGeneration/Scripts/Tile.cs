@@ -11,7 +11,7 @@ namespace Features.GridGeneration.Scripts
     {
        // private GridTraversal _gridTraversal;
         private PlayerController _playerController;
-        
+        public bool isGate;
         public int row;
         public int column;
 
@@ -37,7 +37,6 @@ namespace Features.GridGeneration.Scripts
             column = cell.Col;
             gameObject.name = $"{row},{column}";
             iGridView = gridView;
-           
             hapticController = gridView.HapticHandler;
             _playerController = playerController;
             _renderer.material = material;
@@ -47,7 +46,6 @@ namespace Features.GridGeneration.Scripts
             {
                 Invoke(nameof(CheckAdjacents),0.5f);
             }
-            
         }
 
         public Renderer GetRenderer()
