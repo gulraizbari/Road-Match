@@ -509,7 +509,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 6
+      Data: 9
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -593,7 +593,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 4
+      Data: 7
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -800,13 +800,13 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: typeOfFruit
       Entry: 3
       Data: 5
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -1013,7 +1013,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 9
+      Data: 6
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1556,13 +1556,13 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: typeOfVegetables
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -1682,13 +1682,13 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: typeOfFruit
       Entry: 3
-      Data: 7
+      Data: 4
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: typeOfAnimals
       Entry: 3
       Data: 0

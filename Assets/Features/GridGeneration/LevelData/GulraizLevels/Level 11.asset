@@ -554,7 +554,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -635,7 +635,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 6
+      Data: 4
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -674,10 +674,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 8
     - Name: typeOfVegetables
       Entry: 3
       Data: 1
@@ -971,7 +971,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 4
+      Data: 6
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1760,16 +1760,16 @@ MonoBehaviour:
       Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 7
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1940,7 +1940,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -2012,16 +2012,16 @@ MonoBehaviour:
       Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 10
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -2186,13 +2186,13 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: typeOfFruit
       Entry: 3
       Data: 8
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
