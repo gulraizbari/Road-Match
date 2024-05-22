@@ -60,15 +60,15 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
-      Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+      Data: true
     - Name: 
       Entry: 8
       Data: 
@@ -102,13 +102,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -144,13 +144,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -186,13 +186,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -228,13 +228,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -270,13 +270,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -312,13 +312,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -354,13 +354,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -396,13 +396,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -438,13 +438,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -480,13 +480,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -522,13 +522,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -564,13 +564,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -606,13 +606,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -648,13 +648,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -690,13 +690,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -732,13 +732,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -774,13 +774,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -816,13 +816,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -858,13 +858,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -900,13 +900,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: true
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -942,13 +942,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -984,13 +984,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1026,13 +1026,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1068,13 +1068,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1110,13 +1110,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1152,13 +1152,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1194,13 +1194,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1236,13 +1236,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1278,13 +1278,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1320,13 +1320,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1362,13 +1362,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1404,13 +1404,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1446,13 +1446,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 
@@ -1488,13 +1488,13 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: linkedID
+      Entry: 6
+      Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
-      Entry: 5
-      Data: false
-    - Name: KeyRequired
+    - Name: walkableGate
       Entry: 5
       Data: false
     - Name: 

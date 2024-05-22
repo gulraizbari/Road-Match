@@ -116,6 +116,8 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
 
         if (TaskComplete)
         {
+            _gate.isGate = true;
+            _gate.TileState = TileStates.Walkable;
             gridView.ChangeTileMaterial(_gate);
         }
     }

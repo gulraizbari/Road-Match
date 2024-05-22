@@ -14,7 +14,7 @@ namespace GridGeneration.Scripts.interfaces
         public ParticleSystem MergeParticle { get; set; }
         public Item CurrentItem { get; }
         public string ID { get; }
-        void CheckAdjacents();
+        void CheckAdjacents(bool canFlip);
         public Collectable  TileCollectible { get; }
 
     }

@@ -163,7 +163,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -300}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 800, y: 790}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &21128359
@@ -1980,7 +1980,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.1
+  m_Intensity: 0.9
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1989,7 +1989,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.5
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -2761,7 +2761,7 @@ MonoBehaviour:
   tutorialManager: {fileID: 1096717854}
   movesText: {fileID: 1613254681}
   moves: 0
-  movesMultiplier: 1
+  movesMultiplier: 2
 --- !u!4 &1150429824
 Transform:
   m_ObjectHideFlags: 0
@@ -2874,7 +2874,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193042965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalPosition: {x: 0, y: -0.69, z: 0}
   m_LocalScale: {x: 15.427482, y: 15.427482, z: 15.427482}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4081,9 +4081,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 255dfb2d13c92405eb1961e494b25149, type: 2}
   - {fileID: 11400000, guid: 5a1c8783441c04f59b1913d176246a8f, type: 2}
   - {fileID: 11400000, guid: bc01b934da49d4b2ca26d342bf89c7d3, type: 2}
+  - {fileID: 11400000, guid: 11d27759f52284e0f99c4ad3fa7b2713, type: 2}
   - {fileID: 11400000, guid: f8867f5bbdf1b72418e4402141918c63, type: 2}
   - {fileID: 11400000, guid: 84f795d8e2ebc483082483b03260f2b9, type: 2}
   - {fileID: 11400000, guid: a6d69e85575b74bcdad98d135f83c5dc, type: 2}
+  - {fileID: 11400000, guid: fe1319abcb34f4e619ce9e35d3387e63, type: 2}
   nextButton: {fileID: 162144980}
   resetButton: {fileID: 399078811}
   reloadButton: {fileID: 56685563}
@@ -4140,7 +4142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -300}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 800, y: 790}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1655102731
@@ -5031,7 +5033,6 @@ MonoBehaviour:
   _currentTile: {fileID: 0}
   _crown: {fileID: 919132148691420770}
   _playerAnimator: {fileID: 745143095}
-  Haskey: 0
   pathToMove: []
   lastTile: {fileID: 0}
 --- !u!1 &2127438001
