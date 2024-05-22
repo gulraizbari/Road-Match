@@ -5,6 +5,7 @@ public enum TileType
     Walkable,
     Gate,
     Boosters,
+    ChestBox
 }
 
 public enum TilePlacements
@@ -79,6 +80,7 @@ public enum TileStates
     NotWalkable,
     Gate,
     OpenGate,
+    ChestBox
     
 }
 
@@ -129,9 +131,21 @@ public enum RandomObjects
 
 public enum CollectableItems
 {
+    None,
     Key,
     Hint,
     Weapon,
-    Upgrade
+    Upgrade,
+    ChestBox
+}
+
+public enum GameStates
+{
+    None,
+    Ready,
+    Play,
+    Pause,
+    Win,
+    Lose
 }
 

@@ -25,6 +25,7 @@ public sealed class CellData
     [SerializeField] public Animals typeOfAnimals;
     [SerializeField] public RandomObjects typeOfRandomObjects;
     [SerializeField] public CollectableItems typeOfCollectableItems;
+    [SerializeField] public string linkedID;
     [SerializeField] public bool IsPlayer;
     [SerializeField] public bool CanOpen;
     [SerializeField] public bool KeyRequired=false;
@@ -51,6 +52,7 @@ public sealed class CellData
         IsPlayer = false;
         CanOpen = false;
         KeyRequired = false;
+        linkedID = "";
     }
 }
 
@@ -115,6 +117,7 @@ public sealed class LevelData : SerializedScriptableObject
         TileType.Walkable => new Color(0.3f, 0.5f, 0f, 1f),
         TileType.Boosters => new Color(0.7f, 0.5f, 0f, 1f),
         TileType.Gate => new Color(0.25f, 0.7f, 1f, 1f),
+        TileType.ChestBox => new Color(0.5f, 0.3f, 1f, 1f),
         // TileType.ChoppingBoardStation      => new Color(0.8f, 0.3f, .5f, 1f),
         // TileType.OrderTable      => new Color(0.8f, 0.3f, .2f, 1f),
         // TileType.Stove      => new Color(0.6f, 0.4f, .5f, .5f),
@@ -189,11 +192,15 @@ public sealed class LevelData : SerializedScriptableObject
         {
             EditorGUIUtility.labelWidth = 50;
             value.typeOfCollectableItems = (CollectableItems)EditorGUILayout.EnumPopup("Type", value.typeOfCollectableItems);
+            if (value.typeOfCollectableItems==CollectableItems.Key)
+            {
+                value.linkedID = EditorGUILayout.TextField("Link", value.linkedID);
+            }
         }
         else if (value.tileType.Equals(TileType.Gate))
         {
-            value.CanOpen = EditorGUILayout.Toggle("CanOpen", value.CanOpen);
-            value.KeyRequired = EditorGUILayout.Toggle("Req", value.KeyRequired);
+            ///value.CanOpen = EditorGUILayout.Toggle("CanOpen", value.CanOpen);
+          //  value.typeOfCollectableItems = (CollectableItems)EditorGUILayout.EnumPopup("Type", value.typeOfCollectableItems);
         }
 
         // else if (value.tileType.Equals(TileType.ChoppingBoardStation))

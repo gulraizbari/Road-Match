@@ -13,6 +13,7 @@ namespace GridGeneration.Scripts.interfaces
             get;
         }
 
+        Tile GetTile(string id);
         public IMergeController MergeController {
             get;
             set;
@@ -21,6 +22,9 @@ namespace GridGeneration.Scripts.interfaces
         public IHapticController HapticHandler { get; set; }
         public Tile GetFoundTile(string  id);
         public void ChangeTileMaterial(bool isGreen,Renderer renderer);
+        public void ChangeTileMaterial(Tile tile);
         public IGridGenerator GridHandler { get; }
+        void UpdateMoves(int value);
+        public UIController UIHandler { get; set; }
     }
 }
