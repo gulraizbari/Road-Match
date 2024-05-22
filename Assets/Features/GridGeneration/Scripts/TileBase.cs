@@ -65,7 +65,7 @@ namespace Features.GridGeneration.Scripts
         public string ID => _id;
         public Transform PlacementTransform => _itemPlacement.transform;
 
-
+        public Collectable TileCollectible => _collectable;
         public TileStates TileState
         {
             get => _tileStates;
@@ -276,6 +276,8 @@ namespace Features.GridGeneration.Scripts
 
             FetchFromDictionary();
         }
+
+      
 
         private async void FetchFromDictionary()
         {

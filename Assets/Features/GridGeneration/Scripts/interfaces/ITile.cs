@@ -15,6 +15,7 @@ namespace GridGeneration.Scripts.interfaces
         public Item CurrentItem { get; }
         public string ID { get; }
         void CheckAdjacents();
+        public Collectable  TileCollectible { get; }
 
     }
 }

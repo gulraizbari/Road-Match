@@ -124,12 +124,20 @@ namespace Sablo.Gameplay.Movement
             {
                 target.DOLocalMoveY(.2f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear);
             }));
-
             if (lastIndex)
             {
                 transform.DOLocalRotate(new Vector3(0, 0,0 ), 0.1f).SetEase(Ease.Linear);
                 _playerAnimator.WalkAnimation(false);
                  lastTile.CheckAdjacents();  //auto fliping on player stop
+            }
+            else
+            {
+                if (CurrentTile.TileCollectible)
+                {
+                    OnFoundingCollectible(CurrentTile.TileCollectible);
+                }
+              
+
             }
         }
 
