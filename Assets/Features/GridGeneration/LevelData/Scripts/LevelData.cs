@@ -73,6 +73,7 @@ public sealed class LevelData : SerializedScriptableObject
 
        [Space] public List<ItemContainer> Containers;
        [Space] public CollectableContainer collectableContainer;
+       public int movesMultiplier = 1;
 
     [Space]
     [TitleGroup("GRID", boldTitle: true)]

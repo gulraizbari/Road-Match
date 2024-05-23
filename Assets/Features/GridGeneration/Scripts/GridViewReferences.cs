@@ -22,12 +22,12 @@ public class GridViewReferences : MonoBehaviour
     [BoxGroup("References")] public TextMeshProUGUI movesText;
    
     [BoxGroup("References/Values")] public int moves;
-    [BoxGroup("References/Values")]public int movesMultiplier=1;
+   
 
     public IUIController UIHandler;
 
     public void SetUIHandler(UIController controller) => UIHandler = controller;
-    public void CalculateMoves()
+    public void CalculateMoves(int movesMultiplier )
     {
         moves = moves * movesMultiplier;
         UpdateText();

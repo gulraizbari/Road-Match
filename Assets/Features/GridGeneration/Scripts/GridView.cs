@@ -204,7 +204,7 @@ namespace Features.GridGeneration.Scripts
                 }
             }
 
-            _gridViewReferences.CalculateMoves();
+            _gridViewReferences.CalculateMoves(levelData.movesMultiplier);
             _gridViewReferences.tutorialManager.PlayTutorial();
             _gridViewReferences.SetUIHandler(UIHandler);
         }
