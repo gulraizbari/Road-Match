@@ -722,7 +722,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 8
+      Data: 10
     - Name: typeOfVegetables
       Entry: 3
       Data: 1

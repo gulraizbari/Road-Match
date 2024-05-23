@@ -2159,10 +2159,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 7
     - Name: typeOfVegetables
       Entry: 3
       Data: 2
@@ -2342,7 +2342,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 9
+      Data: 2
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
