@@ -66,6 +66,8 @@ namespace Features.GridGeneration.Scripts
         public Transform PlacementTransform => _itemPlacement.transform;
 
         public Collectable TileCollectible => _collectable;
+        public Enemy _Enemy { get; set; }
+
         public TileStates TileState
         {
             get => _tileStates;

@@ -126,6 +126,7 @@ namespace Features.GridGeneration.Scripts
                                 {
                                     var enemy = Instantiate(_gridViewReferences.enemy);
                                     _tile.SetNonFlipAble(enemy.gameObject);
+                                    _tile._Enemy = enemy;
                                 }
                             }
                           
