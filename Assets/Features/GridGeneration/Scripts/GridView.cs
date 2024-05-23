@@ -106,6 +106,7 @@ namespace Features.GridGeneration.Scripts
                             _tile.SetID(row, col, grid[row, col]);
                             if (cellData.tilePlacement == TilePlacements.Item)
                             {
+                                _tile.TileState = TileStates.FlipAble;
                                 _gridViewReferences.moves++;
                                 DisableTile(levelData.Matrix[row, col], _tile);
                             }
@@ -124,11 +125,11 @@ namespace Features.GridGeneration.Scripts
                             _tile.SetTransform(tilePosition, 180);
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
+                            _tile.TileState = TileStates.Walkable;
                             if (cellData.IsPlayer)
                             {
                                 _gridViewReferences.playerController.Player.lastTile = tilesGrid[row, col];
                                 PlayerTile = _gridViewReferences.playerController.Player.lastTile;
-                                _tile.TileState = TileStates.Walkable;
                                 _gridViewReferences.player.Init(new Vector3(tilePosition.x, 1, tilePosition.z), PlayerTile);
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this, _gridViewReferences.player,
                                     _gridViewReferences.playerController);
@@ -144,38 +145,38 @@ namespace Features.GridGeneration.Scripts
 
                         case TileType.Gate:
                         {
-                            _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
-                                _gridViewReferences.playerController);
-                            _tile.SetTransform(tilePosition, 0);
-                            _tile.SetID(row, col, grid[row, col]);
-                            _tiles.Add($"{row}{col}", _tile);
-                            _tile.keyReq = cellData.KeyRequired;
-                            _tile.requiredCollectableItems = cellData.typeOfCollectableItems;
-                            Goals.SetGate(_tile);
-                            if (cellData.CanOpen)
+                            if (cellData.walkableGate)
                             {
-                                _tile.TileState = TileStates.OpenGate;
+                                _tile.isGate = true;
+                                _tile.TileState = TileStates.Walkable;
+                                _tile.Init(_gridViewReferences.enableWithOutRotation, grid[row, col], this, null,
+                                    _gridViewReferences.playerController);
                             }
                             else
                             {
-                                _gridViewReferences.Gate.position = new Vector3(tilePosition.x, .6f, tilePosition.z);
+                                _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
+                                    _gridViewReferences.playerController);
                                 _tile.TileState = TileStates.Gate;
                             }
+                           
+                            _tile.SetTransform(tilePosition, 0);
+                            _tile.SetID(row, col, grid[row, col]);
+                            _tiles.Add($"{row}{col}", _tile);
+                            _gridViewReferences.Gate.position = new Vector3(tilePosition.x, .6f, tilePosition.z);
+                            _tile.requiredCollectableItems = cellData.typeOfCollectableItems;
+                            Goals.SetGate(_tile);
                             break;
                         }
                         case TileType.Boosters:
                           
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
-                            
-                          
                             if (cellData.typeOfCollectableItems == CollectableItems.Key)
                             {
                                 _tile.SetTransform(tilePosition, 180);
                                 _tile.TileState = TileStates.Walkable;
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
                                 tilePosition.y = .6f;
-                                
                                 if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems, out Collectable collectable))
                                 {
                                     var collectablePrefab = Instantiate(collectable);

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Features.GridGeneration.Scripts.interfaces;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Gameplay.Movement;
@@ -11,7 +12,7 @@ namespace Features.GridGeneration.Scripts
     {
        // private GridTraversal _gridTraversal;
         private PlayerController _playerController;
-        
+        public bool isGate;
         public int row;
         public int column;
 
@@ -37,17 +38,22 @@ namespace Features.GridGeneration.Scripts
             column = cell.Col;
             gameObject.name = $"{row},{column}";
             iGridView = gridView;
-           
             hapticController = gridView.HapticHandler;
             _playerController = playerController;
             _renderer.material = material;
             _player = player;
             gameObject.SetActive(true);
+            
             if (_player!=null)
             {
-                Invoke(nameof(CheckAdjacents),0.5f);
+                
+                //Invoke(nameof(CheckAdjacents),0.5f);
+                var tween = new TweenCallback((() =>
+                {
+                    CheckAdjacents(true);
+                }));
+                DOVirtual.DelayedCall(.5f,tween);
             }
-            
         }
 
         public Renderer GetRenderer()

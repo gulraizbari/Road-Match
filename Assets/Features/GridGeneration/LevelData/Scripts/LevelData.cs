@@ -27,8 +27,7 @@ public sealed class CellData
     [SerializeField] public CollectableItems typeOfCollectableItems;
     [SerializeField] public string linkedID;
     [SerializeField] public bool IsPlayer;
-    [SerializeField] public bool CanOpen;
-    [SerializeField] public bool KeyRequired=false;
+    [SerializeField] public bool walkableGate;
    
     // [FormerlySerializedAs("_unBreakableTiles")] [SerializeField] public UnBreakableRocks _unBreakableRocks;
 
@@ -50,8 +49,7 @@ public sealed class CellData
         typeOfRandomObjects = RandomObjects.None;
         typeOfCollectableItems = CollectableItems.Key;
         IsPlayer = false;
-        CanOpen = false;
-        KeyRequired = false;
+        walkableGate = false;
         linkedID = "";
     }
 }
@@ -199,7 +197,7 @@ public sealed class LevelData : SerializedScriptableObject
         }
         else if (value.tileType.Equals(TileType.Gate))
         {
-            ///value.CanOpen = EditorGUILayout.Toggle("CanOpen", value.CanOpen);
+            value.walkableGate = EditorGUILayout.Toggle("State", value.walkableGate);
           //  value.typeOfCollectableItems = (CollectableItems)EditorGUILayout.EnumPopup("Type", value.typeOfCollectableItems);
         }
 

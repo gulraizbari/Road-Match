@@ -98,7 +98,7 @@ namespace Features.GridGeneration.Scripts
         public void SetTransform(Vector3 pos, float z)
         {
             transform.position = pos;
-            TileState = TileStates.FlipAble;
+            //TileState = TileStates.FlipAble;
             _renderer.transform.localRotation = Quaternion.Euler(0, 0, z);
             if (z != 0)
             {
@@ -266,7 +266,7 @@ namespace Features.GridGeneration.Scripts
 
 
         [Button]
-        public void CheckAdjacents()
+        public void CheckAdjacents(bool canFlip)
         {
             foreach (var cellID in iGridView.GridHandler.FindAdjacentCells(CellBase))
             {
@@ -274,12 +274,12 @@ namespace Features.GridGeneration.Scripts
                 adjacentIDs.Add(id);
             }
 
-            FetchFromDictionary();
+            FetchFromDictionary(canFlip);
         }
 
       
 
-        private async void FetchFromDictionary()
+        private async void FetchFromDictionary(bool canFlip)
         {
             foreach (var id in adjacentIDs)
             {
@@ -292,23 +292,40 @@ namespace Features.GridGeneration.Scripts
                     }
                 }
             }
-            var adjacentsList = _adjacents.ToList();
-            var gateTile = adjacentsList.Find(tile => tile._tileStates == TileStates.Gate);
-            await Task.Delay(TimeSpan.FromSeconds(0.01f));
-            if (gateTile)
-            {
+            var foundadjacent= _adjacents.ToList();
+            Tile gateTile=new Tile();
+             //var gateTile = foundadjacent.Find(tile => tile._tileStates == TileStates.Walkable);
+             foreach (var data in foundadjacent)
+             {
+                 if (data.isGate)
+                 {
+                     gateTile = data;
+                     break;
+                 } 
+             }
+             await Task.Delay(TimeSpan.FromSeconds(0.05f));
+            if (gateTile )
+            {   
+                print("1");
                 if (_player is null)
                 {
                     print("Player missing");
                 }
                 else
                 {
-                    
-                    _player.Jump(gateTile.transform.position,gateTile.requiredCollectableItems);
+                    print("2");
+                    gateTile.TileState = TileStates.OpenGate;
+                    _player.Jump(gateTile.transform.position);
                 }
             }
             else
             {
+                print("3");
+                if (canFlip)
+                {
+                    FlipAllAdjacent();
+                }
+                
                 if (_collectable)
                 {
                     _player.OnFoundingCollectible(_collectable);
