@@ -63,6 +63,7 @@ public enum TypesOfHurdle
 {
     NonBreakable,
     Breakable,
+    Enemys
 }
 
 public enum TileStates

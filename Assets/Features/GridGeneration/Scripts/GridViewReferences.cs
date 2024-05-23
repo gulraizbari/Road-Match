@@ -1,16 +1,13 @@
 using Features;
 using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.Movement;
-using Sablo.Gameplay.PathFinding;
-using Sablo.Gameplay.Utilities;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 
 public class GridViewReferences : MonoBehaviour
 {
-    public Player player;
-    //[BoxGroup("References")] public GridTraversal _gridTraversal;
+    [BoxGroup("References")]  public Player player;
     [BoxGroup("References")] public PlayerController playerController;
     [BoxGroup("References")] public Tile _prefabTile;
     [BoxGroup("References")] public GameObject _prefabTileStone;
@@ -20,7 +17,7 @@ public class GridViewReferences : MonoBehaviour
     [BoxGroup("References")] public Material enableWithOutRotation;
     [BoxGroup("References")] public TutorialManager tutorialManager;
     [BoxGroup("References")] public TextMeshProUGUI movesText;
-   
+    [BoxGroup("References")] public Enemy enemy;
     [BoxGroup("References/Values")] public int moves;
    
 

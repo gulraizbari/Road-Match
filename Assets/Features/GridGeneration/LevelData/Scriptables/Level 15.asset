@@ -2054,10 +2054,10 @@ MonoBehaviour:
       Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfHurdle
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfItem
       Entry: 3
       Data: 0
