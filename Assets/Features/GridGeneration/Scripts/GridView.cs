@@ -26,6 +26,7 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("References"), ShowInInspector]
         Dictionary<CollectableItems, Collectable> _collectables = new();
         [BoxGroup("References")] public IPlayerCollectible Goals;
+        [BoxGroup("References")] public Transform NonInteractiveData;
 
        
         [BoxGroup("References"), ShowInInspector]
@@ -113,9 +114,21 @@ namespace Features.GridGeneration.Scripts
                             else if (cellData.tilePlacement == TilePlacements.Hurdle)
                             {
                                 _tile.TileState = TileStates.NotBreakable;
-                                var hurdle = Instantiate(_gridViewReferences._prefabTileStone);
-                                hurdle.transform.position = tilePosition;
+                                
+                                if (cellData.typeOfHurdle == TypesOfHurdle.NonBreakable)
+                                {
+                                    var hurdle = Instantiate(_gridViewReferences._prefabTileStone);
+                                    hurdle.transform.position = tilePosition;
+                                    _tile.gameObject.SetActive(false);
+                                    NonInteractiveData.SetParent(hurdle.transform);
+                                }
+                                else if (cellData.typeOfHurdle == TypesOfHurdle.Enemys)
+                                {
+                                    var enemy = Instantiate(_gridViewReferences.enemy);
+                                    _tile.SetNonFlipAble(enemy.gameObject);
+                                }
                             }
+                          
 
                             _tiles.Add($"{row}{col}", _tile);
                             break;
@@ -204,7 +217,7 @@ namespace Features.GridGeneration.Scripts
                 }
             }
 
-            _gridViewReferences.CalculateMoves();
+            _gridViewReferences.CalculateMoves(levelData.movesMultiplier);
             _gridViewReferences.tutorialManager.PlayTutorial();
             _gridViewReferences.SetUIHandler(UIHandler);
         }

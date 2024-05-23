@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using GridGeneration.Scripts.interfaces;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
 
 namespace Features.GridGeneration.Scripts
@@ -22,15 +23,18 @@ namespace Features.GridGeneration.Scripts
         [FoldoutGroup("References/Values"), SerializeField] [Range(.5f, 10)]
         public float _spacingX = 3f;
 
+        public float factor;
         [BoxGroup("References"), SerializeField]
         List<string> ad;
 
         public Cell cell;
         [SerializeField] LevelData _levelData;
-
+        public CameraAdjuster Adjuster;
+        public TextMeshProUGUI lvlText;
         private void Start()
         {
             _levelData = _levelManager.GetCurrentLevel;
+            lvlText.SetText($"Level {_levelManager.Level+1}");
             GenerateGrid();
             _gridView.Init(new GridViewDataModel()
             {
@@ -40,7 +44,7 @@ namespace Features.GridGeneration.Scripts
             });
             _gridView.AssignItemContainer(_levelData);
             _gridView.SpawnGrid(grid, _levelData);
-            
+            Adjuster.AdjustCamera(grid);
         }
 
         void GenerateGrid()

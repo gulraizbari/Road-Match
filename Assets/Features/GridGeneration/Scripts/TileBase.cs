@@ -106,6 +106,13 @@ namespace Features.GridGeneration.Scripts
             }
         }
 
+        public void SetNonFlipAble(GameObject gameObject)
+        {
+           
+            PlacementTransform.localScale= Vector3.one;
+            gameObject.transform.SetParent(PlacementTransform);
+            gameObject.transform.localPosition = Vector3.zero;
+        }
         public void Flip(bool isAutoFlip, bool canSelect)
         {
             if (_isFlipped)
@@ -178,6 +185,7 @@ namespace Features.GridGeneration.Scripts
             //await Task.Delay(TimeSpan.FromSeconds(.4f));
             Flip(true, false);
         }
+        
 
         public virtual void OnMouseDown()
         {

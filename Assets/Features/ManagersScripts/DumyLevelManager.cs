@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,17 +10,20 @@ public class DumyLevelManager : MonoBehaviour
 {
    public List<LevelData> levels;
    public Button nextButton;
+   public Button dumynextButton;
    public Button resetButton;
    public Button reloadButton;
-
+   
    
    public LevelData GetCurrentLevel => levels[Level];
 
    void Start()
    {
       nextButton.onClick.AddListener((NextLevel));
+      dumynextButton.onClick.AddListener((NextLevel));
       resetButton.onClick.AddListener((ResetLevel));
       reloadButton.onClick.AddListener((ResetLevel));
+      
    }
 
    public void NextLevel()
