@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using Features;
+using Features.CharacterMovement;
 using Features.CharacterMovement.Scripts;
 using Features.GridGeneration.Scripts;
 using Sablo.Core;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Sablo.Gameplay.Movement
 {
-    public class Player : PlayerBaseClass,IPlayer
+    public class Player : PlayerBaseClass,IPlayer,ISFighter
     {
+
+        public int hitPower=1;
+        public int health=1;
         public void OnFoundingCollectible(Collectable collectable)
         {
            
@@ -28,7 +30,9 @@ namespace Sablo.Gameplay.Movement
                 }
             }
         }
-        
+
+        public ISFighter Fighter => this;
+
         public void AssignUIController(UIController uiController)
         {
             UIController = uiController;
@@ -37,6 +41,7 @@ namespace Sablo.Gameplay.Movement
         {
             transform.position = position;
             CurrentTile = tile;
+            _playerAnimator.myFighter = this;
         }
 
         public void MoveOnPath(List<Tile> path)
@@ -203,7 +208,29 @@ namespace Sablo.Gameplay.Movement
             //if (!Haskey)return;
         }
 
-       
-      
+        
+
+        public int HitPower { get=>hitPower; set=>hitPower=value; }
+        public int Health { get=>health; set=>health=value; }
+
+        public int GiveDamage(int value)
+        {
+            Health -= value;
+            if (Health<=0) _playerAnimator.DeathAnim();;
+            return Health;
+        }
+
+        public void Attack(ISFighter fighter)
+        {
+            print("A");
+            _playerAnimator.Fighter = fighter;
+            _playerAnimator.Attack();
+        }
+
+        public void Death()
+        {
+            GameController.SetState(GameStates.Lose);
+           // gameObject.SetActive(false);
+        }
     }
 }

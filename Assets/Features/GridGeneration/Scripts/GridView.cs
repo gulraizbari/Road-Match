@@ -133,6 +133,8 @@ namespace Features.GridGeneration.Scripts
                                 else if (cellData.typeOfHurdle == TypesOfHurdle.Enemys)
                                 {
                                     var enemy = Instantiate(_gridViewReferences.enemy);
+                                    enemy.gridView = this;
+                                    enemy.MyTile = _tile;
                                     _tile.SetNonFlipAble(enemy.gameObject,new Vector3(0,180,0));
                                     _tile._Enemy = enemy;
                                     enemy.Init(_gridViewReferences.player.transform);

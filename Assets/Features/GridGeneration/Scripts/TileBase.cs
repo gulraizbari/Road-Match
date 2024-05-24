@@ -279,6 +279,8 @@ namespace Features.GridGeneration.Scripts
             }
             var foundadjacent= _adjacents.ToList();
             Tile gateTile=new Tile();
+            Tile enemyTile=new Tile();
+          
              //var gateTile = foundadjacent.Find(tile => tile._tileStates == TileStates.Walkable);
              foreach (var data in foundadjacent)
              {
@@ -287,7 +289,11 @@ namespace Features.GridGeneration.Scripts
                      gateTile = data;
                      break;
                  } 
-             }
+                 else if (data._Enemy)
+                 {
+                     enemyTile=data;
+                 }
+          }
              await Task.Delay(TimeSpan.FromSeconds(0.05f));
             if (gateTile )
             {   
@@ -302,6 +308,11 @@ namespace Features.GridGeneration.Scripts
                     gateTile.TileState = TileStates.OpenGate;
                     _player.Jump(gateTile.transform.position);
                 }
+            }
+            else if (enemyTile)
+            {
+                _player.Fighter.Attack(enemyTile._Enemy);
+                enemyTile._Enemy.Attack(_player.Fighter);
             }
             else
             {

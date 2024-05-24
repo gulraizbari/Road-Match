@@ -35,5 +35,13 @@ public class SoundManager : MonoBehaviour
     public void PlayTileMerge(float volume)
     {
         PlayShot(1,volume);
+    } 
+    public void PlayDeathScreem(float volume)
+    {
+        PlayShot(4,volume);
+    }
+    public void PlaySword(float volume)
+    {
+        PlayShot(5,volume);
     }
 }
