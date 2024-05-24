@@ -1587,7 +1587,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1334cc022df9b4df6b4286218377fd82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distanceChecker: 5
+  player: {fileID: 0}
   _animator: {fileID: 8145268253868236691}
+  speed: 5
 --- !u!1 &5699798836529840727
 GameObject:
   m_ObjectHideFlags: 0

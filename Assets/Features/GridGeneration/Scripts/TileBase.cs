@@ -75,7 +75,6 @@ namespace Features.GridGeneration.Scripts
             set => _tileStates = value;
         }
         
-        
         public void SetID(int row, int col, Cell cell)
         {
             _id = $"{row}{col}";
@@ -110,12 +109,13 @@ namespace Features.GridGeneration.Scripts
             }
         }
 
-        public void SetNonFlipAble(GameObject gameObject)
+        public void SetNonFlipAble(GameObject gameObject,Vector3 rot)
         {
-           
+            var _transform = gameObject.transform;
             PlacementTransform.localScale= Vector3.one;
-            gameObject.transform.SetParent(PlacementTransform);
-            gameObject.transform.localPosition = Vector3.zero;
+            _transform.SetParent(PlacementTransform);
+            _transform.localPosition = Vector3.zero;
+            _transform.localRotation = Quaternion.Euler(rot);
         }
         public void Flip(bool isAutoFlip, bool canSelect)
         {
@@ -183,19 +183,15 @@ namespace Features.GridGeneration.Scripts
                         config.placementDuration).SetEase(Ease.Linear);
                 });
         }
-
         private void FlipWithDelay()
         {
             //await Task.Delay(TimeSpan.FromSeconds(.4f));
             Flip(true, false);
         }
-        
-
         public virtual void OnMouseDown()
         {
             if (!GameController.IsState(GameStates.Play))return;
             if (_tileStates != TileStates.FlipAble  ) return;
-          
             if (!_canTouch)
             {
                 _canTouch = true;
@@ -209,19 +205,16 @@ namespace Features.GridGeneration.Scripts
                 TutorialManager.OnTutorialAction();
             }
         }
-
         public void SelectTile(ITile tile)
         {
             iGridView.MergeController.SelectTile(this);
         }
-
         public void UnSelect(bool canSelect, float delay, float rotationDelay, UnityEvent action)
         {
             if (coroutine != null) StopCoroutine(coroutine);
             coroutine = unselect(delay, rotationDelay, action);
             StartCoroutine(coroutine);
         }
-
         IEnumerator unselect(float delay, float rotationDelay, UnityEvent action)
         {
             yield return new WaitForSeconds(delay);
@@ -252,7 +245,6 @@ namespace Features.GridGeneration.Scripts
             yield return new WaitForSeconds(rotationDelay);
             TileRotateLogic(false, 0);
         }
-
         public void OnMerge(Vector3 target, float duration)
         {
             _shadow.SetActive(false);
@@ -275,9 +267,6 @@ namespace Features.GridGeneration.Scripts
                     });
                 });
         }
-
-
-        [Button]
         public void CheckAdjacents(bool canFlip)
         {
             foreach (var cellID in iGridView.GridHandler.FindAdjacentCells(CellBase))
@@ -288,9 +277,6 @@ namespace Features.GridGeneration.Scripts
 
             FetchFromDictionary(canFlip);
         }
-
-      
-
         private async void FetchFromDictionary(bool canFlip)
         {
             foreach (var id in adjacentIDs)
@@ -344,7 +330,6 @@ namespace Features.GridGeneration.Scripts
                 }
             }
         }
-
         private void ActionOnFindingDesiredTile(){}
         private void FlipAllAdjacent()
         {
@@ -359,7 +344,6 @@ namespace Features.GridGeneration.Scripts
             _adjacents.Clear();
             adjacentIDs.Clear();
         }
-
         private void FetchAdjacent(List<string> adjacentCells)
         {
             foreach (var cell in adjacentCells)

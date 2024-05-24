@@ -6102,6 +6102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gridViewReferences: {fileID: 1150429823}
   NonInteractiveData: {fileID: 1822346454}
+  States: 0
 --- !u!4 &2045547670
 Transform:
   m_ObjectHideFlags: 0
