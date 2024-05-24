@@ -53,6 +53,7 @@ namespace Features.GridGeneration.Scripts
         private IEnumerator coroutine;
         bool _isFlipped;
         bool _canTouch;
+        private bool isDragging = false;
         public Cell CellBase;
         Tween _outerTween;
         Tween _innerTween;
@@ -73,7 +74,8 @@ namespace Features.GridGeneration.Scripts
             get => _tileStates;
             set => _tileStates = value;
         }
-
+        
+        
         public void SetID(int row, int col, Cell cell)
         {
             _id = $"{row}{col}";
