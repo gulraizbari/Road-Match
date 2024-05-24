@@ -5,6 +5,7 @@ using Sablo.Gameplay.Movement;
 using Sablo.Gameplay.PathFinding;
 using Sablo.Gameplay.Utilities;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Features.GridGeneration.Scripts
 {
@@ -81,46 +82,23 @@ namespace Features.GridGeneration.Scripts
         //     _colorEffect.StopBlinking();
         //     _renderer.material.color = GetRenderer().material.color;
         // }
-        
-        public override void OnMouseDown()
+
+        public override void OnPointerDown(PointerEventData eventData)
         {
-            base.OnMouseDown();
+            base.OnPointerDown(eventData);
+            if (!isTouch) return;
+            
             if (!GameController.IsState(GameStates.Play))return;
             if (ignore)return;
             if (_player is null)
             {
+                if(TileState != TileStates.Walkable)return;
                 _playerController.AssignPath(this);
-               // _gridTraversal.OnTargetTileSelected(); 
                 if (istutorial)
                 {
                     TutorialManager.OnTutorialAction();
                 }
             }
-            // if (_player != null)
-            // {
-            //     if (_playerController.SelectedPlayer is null)
-            //     {
-            //         _playerController.SelectedPlayer = _player;
-            //         _gridTraversal.TraverseGrid();
-            //         if (istutorial)
-            //         {
-            //             TutorialManager.OnTutorialAction();
-            //         }
-            //     }
-            // }
-            // else
-            // {
-            //     _playerController.AssignPath(this);
-            //     _gridTraversal.OnTargetTileSelected(); 
-            //     if (istutorial)
-            //     {
-            //         TutorialManager.OnTutorialAction();
-            //     }
-            //     // if (_tileStates == TileStates.Player)
-            //     // {
-            //     //     CollectAdjacent();
-            //     // }
-            // }
         }
     }
 }

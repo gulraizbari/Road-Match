@@ -41,17 +41,26 @@ namespace Sablo.Gameplay.Movement
 
         public void MoveOnPath(List<Tile> path)
         {
-            pathToMove = path;
+            if (path == null || path.Count == 0)
+            {
+                Debug.LogWarning("Provided path is null or empty.");
+                return;
+            }
             if (currentCoroutine != null)
             {
                 StopCoroutine(currentCoroutine);
+                currentCoroutine = null;
+                _playerAnimator.WalkAnimation(false);  // Assuming you have a method to handle walk animation
             }
+            pathToMove = path;
+            pathToMove = path;
+
             var nearestWaypoint = FindNearestWaypoint(path);
             if (nearestWaypoint != null)
             {
                 var nearestIndex = path.IndexOf(nearestWaypoint);
                 var trimmedPath = path.GetRange(nearestIndex, path.Count - nearestIndex);
-                currentCoroutine = FollowPath(trimmedPath);
+                currentCoroutine =FollowPath(trimmedPath);
                 StartCoroutine(currentCoroutine);
             }
         }
@@ -86,7 +95,7 @@ namespace Sablo.Gameplay.Movement
                     last = true;
                     lastTile = CurrentTile;
                 }
-                yield return FollowOnTarget(path[i].transform, last);
+                yield return FollowOnTarget(path[i].transform, last,CurrentTile);
                 if (i >= path.Count - 2)
                 {
                     var gateTile = path[path.Count - 1];
@@ -104,27 +113,29 @@ namespace Sablo.Gameplay.Movement
             if (gateTile.isGate)
             {
                 print("Next is Gate");
-                transform.DOLocalRotate(new Vector3(0, 0,0 ), 0f).SetEase(Ease.Linear);
+                //transform.DOLocalRotate(new Vector3(0, 0,0 ), 0f).SetEase(Ease.Linear);
                 StopCoroutine(currentCoroutine);
                 _playerAnimator.WalkAnimation(false);
                 Jump(gateTile.transform.position);
             }
         }
 
-        private IEnumerator FollowOnTarget(Transform target, bool lastIndex)
+        private IEnumerator FollowOnTarget(Transform target, bool lastIndex,Tile current)
         {
             var configs = Configs.GameConfig;
            
             var targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
             var lookDir = targetPosition - transform.position;
             var targetRotation = Quaternion.LookRotation(lookDir, Vector3.up);
+            CurrentTile.isTouch = false;
             while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
             {
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, configs.playerMoveSpeed * Time.deltaTime);
                 transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * configs.playerRotationSpeed);
                 yield return null;
             }
-           transform.DOLocalMoveY(configs.playerYTargetOnTileMoving, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear).OnComplete((() =>
+            CurrentTile.isTouch = true;
+            transform.DOLocalMoveY(configs.playerYTargetOnTileMoving, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear).OnComplete((() =>
            {
                transform.DOLocalMoveY(1, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear);
            }));
@@ -135,7 +146,7 @@ namespace Sablo.Gameplay.Movement
             }));
             if (lastIndex)
             {
-                transform.DOLocalRotate(new Vector3(0, 0,0 ), 0.1f).SetEase(Ease.Linear);
+                //transform.DOLocalRotate(new Vector3(0, 0,0 ), 0.1f).SetEase(Ease.Linear);
                 _playerAnimator.WalkAnimation(false);
                  lastTile.CheckAdjacents(false);  //auto fliping on player stop
             }
