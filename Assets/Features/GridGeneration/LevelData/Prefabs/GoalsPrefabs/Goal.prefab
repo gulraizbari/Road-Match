@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 31cdedb0a8cce431c845c070ce6558a1, type: 2}
-  m_sharedMaterial: {fileID: 928775511178209897, guid: 31cdedb0a8cce431c845c070ce6558a1,
+  m_fontAsset: {fileID: 11400000, guid: 1f15d395c296b44bf96c383f1ae1e0c1, type: 2}
+  m_sharedMaterial: {fileID: 6815567123791479239, guid: 1f15d395c296b44bf96c383f1ae1e0c1,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.65
+  m_fontSize: 41.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -267,6 +267,8 @@ MonoBehaviour:
   _goalType: 1
   _goalText: {fileID: 7482787872052235547}
   _goalTargetText: {fileID: 7482787872981818961}
+  target: 0
+  current: 0
 --- !u!1 &7482787872981818963
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,8 +337,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: /2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 31cdedb0a8cce431c845c070ce6558a1, type: 2}
-  m_sharedMaterial: {fileID: 928775511178209897, guid: 31cdedb0a8cce431c845c070ce6558a1,
+  m_fontAsset: {fileID: 11400000, guid: 1f15d395c296b44bf96c383f1ae1e0c1, type: 2}
+  m_sharedMaterial: {fileID: 6815567123791479239, guid: 1f15d395c296b44bf96c383f1ae1e0c1,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -361,7 +363,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.65
+  m_fontSize: 41.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -899,6 +899,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 458959277}
     m_Modifications:
+    - target: {fileID: 7482787872052235547, guid: 0a3d761434bca4fba9a99352275ba1d2,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7482787872393533601, guid: 0a3d761434bca4fba9a99352275ba1d2,
         type: 3}
       propertyPath: m_Name
@@ -1025,6 +1030,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 1cdd43d5f93694f1d84cc71600f9ab22,
         type: 3}
+    - target: {fileID: 7482787872981818961, guid: 0a3d761434bca4fba9a99352275ba1d2,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3d761434bca4fba9a99352275ba1d2, type: 3}
 --- !u!224 &336591619 stripped
@@ -2643,8 +2653,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 200
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 31cdedb0a8cce431c845c070ce6558a1, type: 2}
-  m_sharedMaterial: {fileID: 928775511178209897, guid: 31cdedb0a8cce431c845c070ce6558a1,
+  m_fontAsset: {fileID: 11400000, guid: 1f15d395c296b44bf96c383f1ae1e0c1, type: 2}
+  m_sharedMaterial: {fileID: 6815567123791479239, guid: 1f15d395c296b44bf96c383f1ae1e0c1,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2669,7 +2679,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.35
+  m_fontSize: 35.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4933,6 +4943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels:
   - {fileID: 11400000, guid: 255dfb2d13c92405eb1961e494b25149, type: 2}
+  - {fileID: 11400000, guid: a1567ce6687ce4b508c7a592a970f02f, type: 2}
   - {fileID: 11400000, guid: 5a1c8783441c04f59b1913d176246a8f, type: 2}
   - {fileID: 11400000, guid: bc01b934da49d4b2ca26d342bf89c7d3, type: 2}
   - {fileID: 11400000, guid: f8867f5bbdf1b72418e4402141918c63, type: 2}
@@ -4948,7 +4959,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f414c7fe50e4b4a33b17092d5b2df41d, type: 2}
   - {fileID: 11400000, guid: 3efc5b47207234c53ad1e2082af49931, type: 2}
   - {fileID: 11400000, guid: 3f0ed1a154eef459eb9f58f8cf03a8ae, type: 2}
-  - {fileID: 11400000, guid: a1567ce6687ce4b508c7a592a970f02f, type: 2}
   - {fileID: 11400000, guid: d55246566540e405aa11c874455bcdf8, type: 2}
   nextButton: {fileID: 162144980}
   dumynextButton: {fileID: 2023480489}
