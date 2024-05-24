@@ -24,7 +24,7 @@ namespace Features.GridGeneration.Scripts
         Dictionary<ItemType, List<Item>> _itemDictionary = new();
 
         [BoxGroup("References"), ShowInInspector]
-        Dictionary<CollectableItems, Collectable> _collectables = new();
+        Dictionary<string, Collectable> _collectables = new();
         [BoxGroup("References")] public IPlayerCollectible Goals;
         [BoxGroup("References")] public Transform NonInteractiveData;
 
@@ -77,7 +77,8 @@ namespace Features.GridGeneration.Scripts
 
             foreach (var collectable in data.collectableContainer.collectables)
             {
-                _collectables.Add(collectable.collectableType,collectable);
+                string id = collectable.collectableType + collectable.typeOfBooster.ToString();
+                _collectables.Add(id,collectable);
             }
            
         }
@@ -191,7 +192,7 @@ namespace Features.GridGeneration.Scripts
                                 _tile.TileState = TileStates.Walkable;
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
                                 tilePosition.y = .6f;
-                                if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems, out Collectable collectable))
+                                if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable))
                                 {
                                     var collectablePrefab = Instantiate(collectable);
                                     collectablePrefab.Init(cellData.linkedID);
@@ -205,14 +206,12 @@ namespace Features.GridGeneration.Scripts
                                _tile.TileState = TileStates.ChestBox;
                                Goals.AddOrUpdateGoals(CollectableItems.ChestBox,1);
                                _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
-                               if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems, out Collectable collectable))
+                               if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable) )
                                {
                                    var collectablePrefab = Instantiate(collectable);
                                    _tile.SetCollectable(collectablePrefab);
                                }
                            }
-                            
-                          
                             break;
                     }
                 }
@@ -221,6 +220,7 @@ namespace Features.GridGeneration.Scripts
             _gridViewReferences.CalculateMoves(levelData.movesMultiplier);
             _gridViewReferences.tutorialManager.PlayTutorial();
             _gridViewReferences.SetUIHandler(UIHandler);
+            Goals.SetSlogan();
         }
 
         public void ChangeTileMaterial(bool isGreen, Renderer renderer)

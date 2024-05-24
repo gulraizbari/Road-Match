@@ -60,6 +60,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -100,6 +103,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -144,6 +150,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -184,6 +193,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -228,6 +240,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -268,6 +283,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -312,6 +330,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -352,6 +373,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -396,6 +420,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -436,6 +463,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -480,6 +510,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -520,6 +553,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -564,6 +600,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -604,6 +643,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -648,6 +690,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 2
     - Name: linkedID
       Entry: 1
       Data: 25
@@ -688,6 +733,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -732,6 +780,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -772,6 +823,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -816,6 +870,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -856,6 +913,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -900,6 +960,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -940,6 +1003,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -984,6 +1050,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1024,6 +1093,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1068,6 +1140,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1108,6 +1183,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1152,6 +1230,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1192,6 +1273,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1236,6 +1320,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1276,6 +1363,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1320,6 +1410,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1360,6 +1453,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1404,6 +1500,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1444,6 +1543,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1488,6 +1590,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1528,6 +1633,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1572,6 +1680,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1612,6 +1723,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1656,6 +1770,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1696,6 +1813,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1740,6 +1860,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1780,6 +1903,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1824,6 +1950,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1864,6 +1993,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1908,6 +2040,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -1948,6 +2083,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -1992,6 +2130,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2034,6 +2175,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 5
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 2
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2074,6 +2218,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -2118,6 +2265,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2158,6 +2308,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -2202,6 +2355,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2242,6 +2398,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -2286,6 +2445,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2326,6 +2488,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -2370,6 +2535,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2410,6 +2578,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -2454,6 +2625,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2494,6 +2668,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -2538,6 +2715,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2578,6 +2758,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID
@@ -2622,6 +2805,9 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2662,6 +2848,9 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: typeOfCollectableItems
+      Entry: 3
+      Data: 0
+    - Name: typeOfBooster
       Entry: 3
       Data: 0
     - Name: linkedID

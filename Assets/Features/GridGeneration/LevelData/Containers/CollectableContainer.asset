@@ -15,3 +15,5 @@ MonoBehaviour:
   collectables:
   - {fileID: 3667382350010493218, guid: 514b50e93685440cf9d96401443884d6, type: 3}
   - {fileID: 1177245705833543423, guid: 5d689c43ff1404480979061ed855afed, type: 3}
+  - {fileID: 1177245705833543423, guid: 38797b71d464c4b1180158b4ce5d2ae5, type: 3}
+  - {fileID: 3667382350010493218, guid: ba6b1591646864cbe8e2ee3dfd34e87b, type: 3}
