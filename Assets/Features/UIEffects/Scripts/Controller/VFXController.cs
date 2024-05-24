@@ -6,52 +6,73 @@ namespace Features.UIEffects
 {
     public class VFXController : MonoBehaviour, IVFXController
     {
-        [SerializeField] private Image _chest;
-        [SerializeField] private Image _key;
         [SerializeField] private Image _overlay;
+        [SerializeField] private Image _key;
+        [SerializeField] private Image _chest;
+        [SerializeField] private RectTransform _keyTarget;
+        [SerializeField] private RectTransform _chestTarget;
 
-        private Sequence _popUpSequence;
+        private Sequence _popUpSequence1;
+        private Sequence _popUpSequence2;
+
         public void ChestPopUpEffect()
         {
-            _popUpSequence?.Kill();
+            _popUpSequence1?.Kill();
+            _popUpSequence2?.Kill();
+
             _overlay.gameObject.SetActive(true);
             _chest.gameObject.SetActive(true);
             _chest.transform.localScale = Vector3.zero;
-            _popUpSequence = DOTween.Sequence();
-            _popUpSequence.Append(_overlay.DOFade(0.8f, 0.4f));
-            _popUpSequence.Append(_chest.transform.DOScale(1.2f, 0.4f).SetEase(Ease.OutBack));
-            _popUpSequence.Append(_chest.transform.DOScale(0.8f, 0.4f).SetEase(Ease.InBack));
-            _popUpSequence.Join(_chest.transform.DOMoveY(Screen.height / 2 + 80, 0.5f).SetRelative().SetEase(Ease.OutBack));
-            _popUpSequence.Join(_chest.transform.DOScale(0.05f, 0.4f).SetEase(Ease.OutBack));
-            _popUpSequence.OnComplete(() => 
+
+            _popUpSequence1 = DOTween.Sequence();
+            _popUpSequence1.Append(_overlay.DOFade(0.8f, 0.4f));
+            _popUpSequence1.Append(_chest.transform.DOScale(1.2f, 0.4f).SetEase(Ease.OutBack));
+            _popUpSequence1.Append(_chest.transform.DOScale(0.8f, 0.4f).SetEase(Ease.InBack));
+            _popUpSequence1.OnComplete(() =>
             {
-                _chest.gameObject.SetActive(false);
-                _overlay.gameObject.SetActive(false);
-                _chest.transform.localScale = Vector3.zero;
+                _popUpSequence2 = DOTween.Sequence();
+                var targetPosition = _chestTarget.position;
+                _popUpSequence2.Append(_chest.transform.DOMove(targetPosition, 2.5f).SetEase(Ease.OutBack));
+                _popUpSequence2.Join(_chest.transform.DOScale(0.4f, 0.2f).SetEase(Ease.OutBack));
+                _popUpSequence2.OnComplete(() =>
+                {
+                    _overlay.gameObject.SetActive(false);
+                    _chest.gameObject.SetActive(false);
+                });
+                _popUpSequence2.Play();
             });
-            _popUpSequence.Play();
+
+            _popUpSequence1.Play();
         }
 
         public void KeyPopUpEffect()
         {
-            _popUpSequence?.Kill();
+            _popUpSequence1?.Kill();
+            _popUpSequence2?.Kill();
+
             _overlay.gameObject.SetActive(true);
             _key.gameObject.SetActive(true);
             _key.transform.localScale = Vector3.zero;
-            _popUpSequence = DOTween.Sequence();
-            _popUpSequence.Append(_overlay.DOFade(0.8f, 0.4f)); 
-            _popUpSequence.Append(_key.transform.DOScale(1.2f, 0.4f).SetEase(Ease.OutBack));
-            _popUpSequence.Append(_key.transform.DOScale(0.8f, 0.4f).SetEase(Ease.InBack));
-            _popUpSequence.Join(_key.transform.DOMoveY(Screen.height / 2 + 80, 0.5f).SetRelative().SetEase(Ease.OutBack));
-            _popUpSequence.Join(_key.transform.DOScale(0.05f, 0.4f).SetEase(Ease.OutBack));
-            _popUpSequence.OnComplete(() => 
+
+            _popUpSequence1 = DOTween.Sequence();
+            _popUpSequence1.Append(_overlay.DOFade(0.8f, 0.4f));
+            _popUpSequence1.Append(_key.transform.DOScale(1.2f, 0.4f).SetEase(Ease.OutBack));
+            _popUpSequence1.Append(_key.transform.DOScale(0.8f, 0.4f).SetEase(Ease.InBack));
+            _popUpSequence1.OnComplete(() =>
             {
-                _key.gameObject.SetActive(false);
-                _overlay.gameObject.SetActive(false);
-                _key.transform.localScale = Vector3.zero;
+                _popUpSequence2 = DOTween.Sequence();
+                var targetPosition = _keyTarget.position;
+                _popUpSequence2.Append(_key.transform.DOMove(targetPosition, 2.5f).SetEase(Ease.OutBack));
+                _popUpSequence2.Join(_key.transform.DOScale(0.4f, 0.2f).SetEase(Ease.OutBack));
+                _popUpSequence2.OnComplete(() =>
+                {
+                    _overlay.gameObject.SetActive(false);
+                    _key.gameObject.SetActive(false);
+                });
+                _popUpSequence2.Play();
             });
-            _popUpSequence.Play();
+
+            _popUpSequence1.Play();
         }
-        
     }
 }
