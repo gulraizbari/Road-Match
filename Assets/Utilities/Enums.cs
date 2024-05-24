@@ -63,6 +63,7 @@ public enum TypesOfHurdle
 {
     NonBreakable,
     Breakable,
+    Enemys
 }
 
 public enum TileStates
@@ -148,4 +149,9 @@ public enum GameStates
     Win,
     Lose
 }
-
+public enum BoosterType
+{
+Silver,
+Gold,
+Royal
+}

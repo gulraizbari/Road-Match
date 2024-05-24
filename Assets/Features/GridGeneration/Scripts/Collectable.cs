@@ -6,6 +6,7 @@ using UnityEngine;
 public class Collectable : MonoBehaviour
 {
     public CollectableItems collectableType;
+    public BoosterType typeOfBooster;
     public bool levelDependent;
     [SerializeField]private string id;
 

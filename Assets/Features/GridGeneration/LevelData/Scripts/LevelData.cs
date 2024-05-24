@@ -25,6 +25,7 @@ public sealed class CellData
     [SerializeField] public Animals typeOfAnimals;
     [SerializeField] public RandomObjects typeOfRandomObjects;
     [SerializeField] public CollectableItems typeOfCollectableItems;
+    [SerializeField] public BoosterType typeOfBooster;
     [SerializeField] public string linkedID;
     [SerializeField] public bool IsPlayer;
     [SerializeField] public bool walkableGate;
@@ -48,6 +49,7 @@ public sealed class CellData
         typeOfAnimals = Animals.None;
         typeOfRandomObjects = RandomObjects.None;
         typeOfCollectableItems = CollectableItems.Key;
+        typeOfBooster = BoosterType.Silver;
         IsPlayer = false;
         walkableGate = false;
         linkedID = "";
@@ -73,6 +75,7 @@ public sealed class LevelData : SerializedScriptableObject
 
        [Space] public List<ItemContainer> Containers;
        [Space] public CollectableContainer collectableContainer;
+       public int movesMultiplier = 1;
 
     [Space]
     [TitleGroup("GRID", boldTitle: true)]
@@ -190,6 +193,7 @@ public sealed class LevelData : SerializedScriptableObject
         {
             EditorGUIUtility.labelWidth = 50;
             value.typeOfCollectableItems = (CollectableItems)EditorGUILayout.EnumPopup("Type", value.typeOfCollectableItems);
+            value.typeOfBooster = (BoosterType)EditorGUILayout.EnumPopup("Type", value.typeOfBooster);
             if (value.typeOfCollectableItems==CollectableItems.Key)
             {
                 value.linkedID = EditorGUILayout.TextField("Link", value.linkedID);
