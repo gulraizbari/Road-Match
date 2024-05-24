@@ -10,11 +10,10 @@ using UnityEngine;
 
 namespace Sablo.Gameplay.Movement
 {
-    public class Player : PlayerBaseClass,IPlayer
+    public class Player : PlayerBaseClass, IPlayer
     {
         public void OnFoundingCollectible(Collectable collectable)
         {
-           
             if (collectable.levelDependent)
             {
                 switch (collectable.collectableType)
@@ -28,11 +27,12 @@ namespace Sablo.Gameplay.Movement
                 }
             }
         }
-        
+
         public void AssignUIController(UIController uiController)
         {
             UIController = uiController;
         }
+
         public void Init(Vector3 position, Tile tile)
         {
             transform.position = position;
@@ -46,6 +46,7 @@ namespace Sablo.Gameplay.Movement
             {
                 StopCoroutine(currentCoroutine);
             }
+
             var nearestWaypoint = FindNearestWaypoint(path);
             if (nearestWaypoint != null)
             {
@@ -69,6 +70,7 @@ namespace Sablo.Gameplay.Movement
                     nearestWaypoint = waypoint;
                 }
             }
+
             return nearestWaypoint;
         }
 
@@ -78,7 +80,7 @@ namespace Sablo.Gameplay.Movement
             for (int i = 1; i < path.Count; i++)
             {
                 var last = false;
-                path[i-1].RemovePlayer();
+                path[i - 1].RemovePlayer();
                 path[i].RemovePlayer();
                 CurrentTile = path[i];
                 if (i >= path.Count - 1)
@@ -86,12 +88,14 @@ namespace Sablo.Gameplay.Movement
                     last = true;
                     lastTile = CurrentTile;
                 }
+
                 yield return FollowOnTarget(path[i].transform, last);
                 if (i >= path.Count - 2)
                 {
                     var gateTile = path[path.Count - 1];
                     WhenGateIsFound(gateTile);
                 }
+
                 if (i >= path.Count - 1)
                 {
                     path[i].AssignPlayer(this);
@@ -104,7 +108,7 @@ namespace Sablo.Gameplay.Movement
             if (gateTile.isGate)
             {
                 print("Next is Gate");
-                transform.DOLocalRotate(new Vector3(0, 0,0 ), 0f).SetEase(Ease.Linear);
+                transform.DOLocalRotate(new Vector3(0, 0, 0), 0f).SetEase(Ease.Linear);
                 StopCoroutine(currentCoroutine);
                 _playerAnimator.WalkAnimation(false);
                 Jump(gateTile.transform.position);
@@ -114,7 +118,7 @@ namespace Sablo.Gameplay.Movement
         private IEnumerator FollowOnTarget(Transform target, bool lastIndex)
         {
             var configs = Configs.GameConfig;
-           
+
             var targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
             var lookDir = targetPosition - transform.position;
             var targetRotation = Quaternion.LookRotation(lookDir, Vector3.up);
@@ -124,20 +128,24 @@ namespace Sablo.Gameplay.Movement
                 transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * configs.playerRotationSpeed);
                 yield return null;
             }
-           transform.DOLocalMoveY(configs.playerYTargetOnTileMoving, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear).OnComplete((() =>
-           {
-               transform.DOLocalMoveY(1, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear);
-           }));
 
-            target.DOLocalMoveY(-.2f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
-            {
-                target.DOLocalMoveY(.2f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear);
-            }));
+            transform.DOLocalMoveY(configs.playerYTargetOnTileMoving, configs.playerYTargetOnTileMovingDuration)
+                .SetEase(Ease.Linear).OnComplete(() =>
+                {
+                    transform.DOLocalMoveY(1, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear);
+                });
+
+            target.DOLocalMoveY(-.2f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear)
+                .OnComplete(() =>
+                {
+                    target.DOLocalMoveY(.2f, configs.playerYTargetOnTileMovingDuration).SetRelative(true)
+                        .SetEase(Ease.Linear);
+                });
             if (lastIndex)
             {
-                transform.DOLocalRotate(new Vector3(0, 0,0 ), 0.1f).SetEase(Ease.Linear);
+                transform.DOLocalRotate(new Vector3(0, 0, 0), 0.1f).SetEase(Ease.Linear);
                 _playerAnimator.WalkAnimation(false);
-                 lastTile.CheckAdjacents(false);  //auto fliping on player stop
+                lastTile.CheckAdjacents(false);
             }
             else
             {
@@ -145,15 +153,13 @@ namespace Sablo.Gameplay.Movement
                 {
                     OnFoundingCollectible(CurrentTile.TileCollectible);
                 }
-                
             }
         }
 
-       
-        
+
         public void Jump(Vector3 position)
         {
-            if (playerGoalHandler.FetchGoals()>0)
+            if (playerGoalHandler.FetchGoals() > 0)
             {
                 if (playerGoalHandler.TaskComplete)
                 {
@@ -168,31 +174,6 @@ namespace Sablo.Gameplay.Movement
             {
                 JumpEffect(position);
             }
-            // if (requiredItem!=CollectableItems.None)
-            // {
-            //     
-            //     if (playerGoalHandler.FetchCollectible(requiredItem)>0)
-            //     {
-            //         if (playerGoalHandler.TaskComplete)
-            //         {
-            //             JumpEffect(position);
-            //         }
-            //        
-            //     }
-            //     else
-            //     {
-            //         Debug.LogError("Key Missing");
-            //         return;
-            //     }
-            // }
-            // else
-            // {
-            //     JumpEffect(position);
-            // }
-            //if (!Haskey)return;
         }
-
-       
-      
     }
 }

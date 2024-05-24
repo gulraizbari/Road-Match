@@ -1,4 +1,5 @@
 using Features.GridGeneration.Scripts;
+using Features.UIEffects;
 using Sablo.Gameplay.Movement;
 using Sablo.Gameplay.PathFinding;
 using UnityEngine;
@@ -13,9 +14,10 @@ namespace Sablo.Core
         [SerializeField] private HapticsController _hapticsController;
         [SerializeField] private PlayerController _playerController;
         [SerializeField] private PathFinding _pathFinding;
-        [SerializeField] UIController _uiController;
-        [SerializeField] Player _player;
-        [SerializeField] PlayerGoals playerGoals;
+        [SerializeField] private UIController _uiController;
+        [SerializeField] private Player _player;
+        [SerializeField] private PlayerGoals _playerGoals;
+        [SerializeField] private VFXController _vfxController;
         public override void InjectDependencies()
         {
             _gridView.MergeController = _mergeController;
@@ -24,12 +26,12 @@ namespace Sablo.Core
             _playerController.SelectedPlayer = _player;
             _playerController.PathFinding = _pathFinding;
             _player.AssignUIController(_uiController);
-            _player.playerGoalHandler = playerGoals;
+            _player.playerGoalHandler = _playerGoals;
             _player.GridViewHandler = _gridView;
             _gridView.UIHandler = _uiController;
-            _gridView.Goals = playerGoals;
-            playerGoals.gridView = _gridView;
-
+            _gridView.Goals = _playerGoals;
+            _playerGoals.gridView = _gridView;
+            _player.VFXControllerHandler = _vfxController;
         }
     }
 }
