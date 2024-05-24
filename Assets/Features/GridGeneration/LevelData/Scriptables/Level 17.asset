@@ -440,10 +440,10 @@ MonoBehaviour:
       Data: 10|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 4
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
@@ -464,13 +464,13 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfCollectableItems
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: linkedID
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: 23
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1070,7 +1070,7 @@ MonoBehaviour:
       Data: 24|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -1094,10 +1094,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfCollectableItems
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: typeOfBooster
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: linkedID
       Entry: 6
       Data: 

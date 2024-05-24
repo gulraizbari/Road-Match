@@ -78,7 +78,7 @@ public class Enemy : MonoBehaviour,ISFighter
 
     public void Death()
     {
-        
+        MyTile._Enemy = null;
         gridView.ChangeTileMaterial(MyTile);
         MyTile.TileState = TileStates.Walkable;
         Invoke(nameof(SetOff),.3f);

@@ -23,9 +23,11 @@ namespace Sablo.Gameplay.Movement
                 {
                     case CollectableItems.ChestBox:
                         ChestBoxCase(collectable);
+                        SoundManager.Instance.PlayChest(.7f);
                         break;
                     case CollectableItems.Key:
                         KeyCase(collectable);
+                        SoundManager.Instance.PlayKey(.7f);
                         break;
                 }
             }
@@ -230,6 +232,7 @@ namespace Sablo.Gameplay.Movement
         public void Death()
         {
             GameController.SetState(GameStates.Lose);
+            UIController.LevelFail(1.3f);
            // gameObject.SetActive(false);
         }
     }
