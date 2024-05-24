@@ -11,6 +11,7 @@ namespace Sablo.Gameplay.Movement
         void DeleteCollectible(CollectableItems item, int count);
         void SetGate(Tile tile);
         public bool TaskComplete { get; set; }
+        void SetSlogan();
 
     }
 }

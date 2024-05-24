@@ -149,4 +149,9 @@ public enum GameStates
     Win,
     Lose
 }
-
+public enum BoosterType
+{
+Silver,
+Gold,
+Royal
+}

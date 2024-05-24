@@ -5,7 +5,9 @@ using Features.GridGeneration.Scripts;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Gameplay.Movement;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlayerGoals : MonoBehaviour,IPlayerCollectible
 {
@@ -14,12 +16,20 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
     [BoxGroup("Reference"), ReadOnly, ShowInInspector]
     [SerializeField] Tile _gate;
 
+    [BoxGroup("Reference"),  SerializeField]
+    List<string> _slogans;
+
+    [BoxGroup("Reference"), SerializeField]
+    Color qouateColor;
+    [BoxGroup("Reference"), SerializeField]
+    TextMeshProUGUI _sloganText;
     [BoxGroup("Reference"), SerializeField,]
     PlayerGoalView _goalView;
     public IGridView gridView;
-   
-    
-    
+
+
+  
+
     public void AddOrUpdateCollectible(CollectableItems item, int count)
     {
         if (collectiblesOfPlayer.ContainsKey(item ))
@@ -120,6 +130,29 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
             _gate.TileState = TileStates.Walkable;
             gridView.ChangeTileMaterial(_gate);
         }
+     //SetSlogan();   
+    }
+
+    public void SetSlogan()
+    {
+        if (tasksOfPlayer.Count is 0)
+        {
+            _sloganText.gameObject.SetActive(true);
+            var slogan = _slogans[Random.Range(0, _slogans.Count)];
+            _sloganText.SetText(ColorizeString(slogan));
+        }
+        else
+        {
+            _sloganText.gameObject.SetActive(false);
+        }
+        
+    }
+    string ColorizeString(string text)
+    {
+        // Convert the color to a hex string
+        string hexColor = ColorUtility.ToHtmlStringRGBA(qouateColor);
+        // Return the string wrapped with color tags
+        return $"<color=#{hexColor}>{text}</color>";
     }
 }
 

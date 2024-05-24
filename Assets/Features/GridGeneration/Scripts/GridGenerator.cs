@@ -34,7 +34,7 @@ namespace Features.GridGeneration.Scripts
         private void Start()
         {
             _levelData = _levelManager.GetCurrentLevel;
-            lvlText.SetText($"Level {_levelManager.Level+1}");
+            lvlText.SetText($"{_levelManager.Level+1}");
             GenerateGrid();
             _gridView.Init(new GridViewDataModel()
             {
