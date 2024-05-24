@@ -13,10 +13,11 @@ using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 namespace Features.GridGeneration.Scripts
 {
-    public class TileBase : MonoBehaviour, ITile
+    public class TileBase : MonoBehaviour, ITile,IPointerDownHandler
     {
         [BoxGroup("Reference"), SerializeField]
         protected string _id;
@@ -60,6 +61,7 @@ namespace Features.GridGeneration.Scripts
         protected Tile MyTile;
         public bool istutorial;
         public bool ignore;
+     public   bool isTouch;
         protected IPlayer _player;
         public ParticleSystem MergeParticle { get; set; }
         Item ITile.CurrentItem => _item;
@@ -81,6 +83,7 @@ namespace Features.GridGeneration.Scripts
             _id = $"{row}{col}";
             _text.SetText($"{row},{col}");
             CellBase = cell;
+            isTouch = true;
         }
 
         public void AssignPlacement(Item item)
@@ -189,27 +192,6 @@ namespace Features.GridGeneration.Scripts
             //await Task.Delay(TimeSpan.FromSeconds(.4f));
             Flip(true, false);
         }
-        
-
-        public virtual void OnMouseDown()
-        {
-            if (!GameController.IsState(GameStates.Play))return;
-            if (_tileStates != TileStates.FlipAble  ) return;
-          
-            if (!_canTouch)
-            {
-                _canTouch = true;
-                SoundManager.Instance.PlayTileSelect(1);
-                hapticController.PlayHaptic();
-                iGridView.UpdateMoves(-1);
-                Flip(false, true);
-            }
-            if (istutorial)
-            {
-                TutorialManager.OnTutorialAction();
-            }
-        }
-
         public void SelectTile(ITile tile)
         {
             iGridView.MergeController.SelectTile(this);
@@ -368,5 +350,29 @@ namespace Features.GridGeneration.Scripts
                 _adjacents.Add(adjacentCell);
             }
         }
+
+        public virtual void OnPointerDown(PointerEventData eventData)
+        {
+            if (isTouch)
+            {
+                if (!GameController.IsState(GameStates.Play))return;
+                if (_tileStates != TileStates.FlipAble  ) return;
+          
+                if (!_canTouch)
+                {
+                    _canTouch = true;
+                    SoundManager.Instance.PlayTileSelect(1);
+                    hapticController.PlayHaptic();
+                    iGridView.UpdateMoves(-1);
+                    Flip(false, true);
+                }
+                if (istutorial)
+                {
+                    TutorialManager.OnTutorialAction();
+                }
+            }
+        }
+
+       
     }
 }
