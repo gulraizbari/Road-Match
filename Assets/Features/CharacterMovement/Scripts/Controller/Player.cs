@@ -14,6 +14,10 @@ namespace Sablo.Gameplay.Movement
 
         public int hitPower=1;
         public int health=1;
+        
+        public int HitPower { get=>hitPower; set=>hitPower=value; }
+        public Transform _Transform => transform;
+        public int Health { get=>health; set=>health=value; }
         public void OnFoundingCollectible(Collectable collectable)
         {
            
@@ -186,34 +190,10 @@ namespace Sablo.Gameplay.Movement
             {
                 JumpEffect(position);
             }
-            // if (requiredItem!=CollectableItems.None)
-            // {
-            //     
-            //     if (playerGoalHandler.FetchCollectible(requiredItem)>0)
-            //     {
-            //         if (playerGoalHandler.TaskComplete)
-            //         {
-            //             JumpEffect(position);
-            //         }
-            //        
-            //     }
-            //     else
-            //     {
-            //         Debug.LogError("Key Missing");
-            //         return;
-            //     }
-            // }
-            // else
-            // {
-            //     JumpEffect(position);
-            // }
-            //if (!Haskey)return;
         }
 
         
 
-        public int HitPower { get=>hitPower; set=>hitPower=value; }
-        public int Health { get=>health; set=>health=value; }
 
         public int GiveDamage(int value)
         {
@@ -224,7 +204,7 @@ namespace Sablo.Gameplay.Movement
 
         public void Attack(ISFighter fighter)
         {
-            print("A");
+            transform.DORotate(fighter._Transform.position,.1f).SetEase(Ease.Linear);
             _playerAnimator.Fighter = fighter;
             _playerAnimator.Attack();
         }
@@ -233,7 +213,6 @@ namespace Sablo.Gameplay.Movement
         {
             GameController.SetState(GameStates.Lose);
             UIController.LevelFail(1.3f);
-           // gameObject.SetActive(false);
         }
     }
 }

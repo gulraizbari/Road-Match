@@ -1,9 +1,7 @@
-
-using System;
+using DG.Tweening;
 using Features.CharacterMovement;
 using Features.GridGeneration.Scripts;
 using GridGeneration.Scripts.interfaces;
-using Sablo.Gameplay.Movement;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -15,10 +13,7 @@ public class Enemy : MonoBehaviour,ISFighter
     [SerializeField,ReadOnly]  private Transform player;
     [SerializeField] PlayerAnimator _animator;
     public IGridView gridView;
-    public float speed = 5;
-    public Player playerScript;
-    public bool isAttack;
-    public Tile MyTile;
+    [HideInInspector]public Tile MyTile;
     public void Init(Transform _player)
     {
         player = _player;
@@ -29,37 +24,24 @@ public class Enemy : MonoBehaviour,ISFighter
         
         if (player)
         {
-            if (Vector3.Distance(transform.localPosition, player.position) < distanceChecker)
+            if (Vector3.Distance(transform.position, player.position) < distanceChecker)
             {
-                transform.LookAt(player);
-               // LookAt(player.position);
+                transform.LookAt(player,Vector3.up);
+             
             }
             else
             {
-                if (playerScript)
-                {
-                    playerScript = null;
-                }
                 transform.localRotation = Quaternion.Euler(new Vector3(0,150,0));
             }
         }
        
        
     }
-    protected void LookAt(Vector3 target)
-    {
-        var lookPos = target - transform.localPosition;
-        var lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
-        var eulerY = lookRot.eulerAngles.y;
-        var rotation = Quaternion.Euler(0, eulerY, 0);
-        transform.localRotation = rotation;
-    }
-   
-
     public int HitPower { get=>power;
         set => power = value;
     }
 
+    public Transform _Transform => transform;
     public int Health { get=>health; set=>health=value; }
 
     public int GiveDamage(int value)
@@ -71,7 +53,6 @@ public class Enemy : MonoBehaviour,ISFighter
 
     public void Attack(ISFighter fighter)
     {
-        print("A");
         _animator.Fighter = fighter;
         _animator.Attack();
     }
@@ -81,7 +62,8 @@ public class Enemy : MonoBehaviour,ISFighter
         MyTile._Enemy = null;
         gridView.ChangeTileMaterial(MyTile);
         MyTile.TileState = TileStates.Walkable;
-        Invoke(nameof(SetOff),.3f);
+        transform.DOScale(.8f, .1f).SetEase(Ease.Linear);
+        Invoke(nameof(SetOff),.35f);
     }
 
     private void SetOff()

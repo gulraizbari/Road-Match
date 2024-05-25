@@ -1587,7 +1587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1334cc022df9b4df6b4286218377fd82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceChecker: 2
+  distanceChecker: 6
   power: 1
   health: 2
   player: {fileID: 0}

@@ -4219,7 +4219,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 054c30af415ba48228a45d4debd0aafd, type: 3}
   - {fileID: 8300000, guid: f658f77ed3fc74a96b4d748093ea12a0, type: 3}
   - {fileID: 8300000, guid: ed47fcc8af4fe4d57a4f06ce83700c8f, type: 3}
-  - {fileID: 8300000, guid: cbec5aaaf8c854554954569c9963133c, type: 3}
+  - {fileID: 8300000, guid: ad6ea335b81fa432488940dbd39e514b, type: 3}
   - {fileID: 8300000, guid: 9140ce8ed977640fda4c2eeea2394af3, type: 3}
   - {fileID: 8300000, guid: b852f9879932f4370809f2cbbf4b8e29, type: 3}
   - {fileID: 8300000, guid: 84d7ada3ebda143b3ac0364ce2f0829d, type: 3}
@@ -5997,7 +5997,7 @@ MonoBehaviour:
   autoPlay: 1
   useTargetAsV3: 0
   endValueFloat: 0
-  endValueV3: {x: 0, y: 0, z: 180}
+  endValueV3: {x: 0, y: 0, z: -180}
   endValueV2: {x: 0, y: 0}
   endValueColor: {r: 1, g: 1, b: 1, a: 1}
   endValueString: 
