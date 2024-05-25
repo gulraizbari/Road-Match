@@ -30,13 +30,13 @@ namespace Features.UIEffects
             _popUpSequence1.Append(_chest.transform.DOScale(0.8f, 0.4f).SetEase(Ease.InBack));
             _popUpSequence1.OnComplete(() =>
             {
+                _overlay.gameObject.SetActive(false);
                 _popUpSequence2 = DOTween.Sequence();
                 var targetPosition = _chestTarget.position;
-                _popUpSequence2.Append(_chest.transform.DOMove(targetPosition, 2.5f).SetEase(Ease.OutBack));
-                _popUpSequence2.Join(_chest.transform.DOScale(0.4f, 0.2f).SetEase(Ease.OutBack));
+                _popUpSequence2.Append(_chest.transform.DOMove(targetPosition, 0.9f).SetEase(Ease.InOutSine));
+                _popUpSequence2.Join(_chest.transform.DOScale(0.35f, 0.5f).SetEase(Ease.OutBack));
                 _popUpSequence2.OnComplete(() =>
                 {
-                    _overlay.gameObject.SetActive(false);
                     _chest.gameObject.SetActive(false);
                 });
                 _popUpSequence2.Play();
@@ -60,13 +60,13 @@ namespace Features.UIEffects
             _popUpSequence1.Append(_key.transform.DOScale(0.8f, 0.4f).SetEase(Ease.InBack));
             _popUpSequence1.OnComplete(() =>
             {
+                _overlay.gameObject.SetActive(false);
                 _popUpSequence2 = DOTween.Sequence();
                 var targetPosition = _keyTarget.position;
-                _popUpSequence2.Append(_key.transform.DOMove(targetPosition, 2.5f).SetEase(Ease.OutBack));
-                _popUpSequence2.Join(_key.transform.DOScale(0.4f, 0.2f).SetEase(Ease.OutBack));
+                _popUpSequence2.Append(_key.transform.DOMove(targetPosition, 0.9f).SetEase(Ease.InOutSine));
+                _popUpSequence2.Join(_key.transform.DOScale(0.35f, 0.5f).SetEase(Ease.OutBack));
                 _popUpSequence2.OnComplete(() =>
                 {
-                    _overlay.gameObject.SetActive(false);
                     _key.gameObject.SetActive(false);
                 });
                 _popUpSequence2.Play();
