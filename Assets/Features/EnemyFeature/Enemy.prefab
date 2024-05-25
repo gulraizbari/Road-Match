@@ -1552,7 +1552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5622948927185005005}
   - component: {fileID: 2161089880569803616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1587,7 +1587,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1334cc022df9b4df6b4286218377fd82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distanceChecker: 6
+  power: 1
+  health: 2
+  player: {fileID: 0}
   _animator: {fileID: 8145268253868236691}
+  speed: 5
+  playerScript: {fileID: 0}
+  isAttack: 0
+  MyTile: {fileID: 0}
 --- !u!1 &5699798836529840727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,7 +2370,7 @@ Animator:
   m_GameObject: {fileID: 8145268253868236689}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a97878d97bb9e40309f23f49eab51bc0, type: 3}
-  m_Controller: {fileID: 9100000, guid: a3edd2226a19e45b2a9ced6db02ecebe, type: 2}
+  m_Controller: {fileID: 9100000, guid: a353747c66e18486184703ef52b305dd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2385,6 +2393,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 8145268253868236690}
+  layer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &8272451842478505162
 GameObject:
   m_ObjectHideFlags: 0

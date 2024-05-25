@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Features.CharacterMovement;
 using Features.GridGeneration.Scripts;
 using UnityEngine;
 
@@ -12,5 +13,6 @@ namespace Sablo.Gameplay.Movement
         public void MoveOnPath(List<Tile> path);
         void OnFoundingCollectible(Collectable collectable);
         public PlayerGoals playerGoalHandler { get; set; }
+        public ISFighter Fighter { get; }
     }
 }

@@ -1,17 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using Features;
+using Features.CharacterMovement;
 using Features.CharacterMovement.Scripts;
 using Features.GridGeneration.Scripts;
 using Sablo.Core;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Sablo.Gameplay.Movement
 {
-    public class Player : PlayerBaseClass,IPlayer
+    public class Player : PlayerBaseClass,IPlayer,ISFighter
     {
+
+        public int hitPower=1;
+        public int health=1;
+        
+        public int HitPower { get=>hitPower; set=>hitPower=value; }
+        public Transform _Transform => transform;
+        public int Health { get=>health; set=>health=value; }
         public void OnFoundingCollectible(Collectable collectable)
         {
            
@@ -21,14 +27,18 @@ namespace Sablo.Gameplay.Movement
                 {
                     case CollectableItems.ChestBox:
                         ChestBoxCase(collectable);
+                        SoundManager.Instance.PlayChest(.7f);
                         break;
                     case CollectableItems.Key:
                         KeyCase(collectable);
+                        SoundManager.Instance.PlayKey(.7f);
                         break;
                 }
             }
         }
-        
+
+        public ISFighter Fighter => this;
+
         public void AssignUIController(UIController uiController)
         {
             UIController = uiController;
@@ -37,6 +47,7 @@ namespace Sablo.Gameplay.Movement
         {
             transform.position = position;
             CurrentTile = tile;
+            _playerAnimator.myFighter = this;
         }
 
         public void MoveOnPath(List<Tile> path)
@@ -179,31 +190,29 @@ namespace Sablo.Gameplay.Movement
             {
                 JumpEffect(position);
             }
-            // if (requiredItem!=CollectableItems.None)
-            // {
-            //     
-            //     if (playerGoalHandler.FetchCollectible(requiredItem)>0)
-            //     {
-            //         if (playerGoalHandler.TaskComplete)
-            //         {
-            //             JumpEffect(position);
-            //         }
-            //        
-            //     }
-            //     else
-            //     {
-            //         Debug.LogError("Key Missing");
-            //         return;
-            //     }
-            // }
-            // else
-            // {
-            //     JumpEffect(position);
-            // }
-            //if (!Haskey)return;
         }
 
-       
-      
+        
+
+
+        public int GiveDamage(int value)
+        {
+            Health -= value;
+            if (Health<=0) _playerAnimator.DeathAnim();;
+            return Health;
+        }
+
+        public void Attack(ISFighter fighter)
+        {
+            transform.DORotate(fighter._Transform.position,.1f).SetEase(Ease.Linear);
+            _playerAnimator.Fighter = fighter;
+            _playerAnimator.Attack();
+        }
+
+        public void Death()
+        {
+            GameController.SetState(GameStates.Lose);
+            UIController.LevelFail(1.3f);
+        }
     }
 }

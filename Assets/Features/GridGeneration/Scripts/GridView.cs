@@ -61,13 +61,20 @@ namespace Features.GridGeneration.Scripts
             return tile;
         }
 
+        public GameStates States;
 
         public void Init(GridViewDataModel model)
         {
             _gridGenerator = model.GridHandler;
             GameController.SetState(GameStates.Play);
+            States = GameStates.Play;
         }
-
+[Button]
+        public void SetState(GameStates states)
+        {
+            GameController.SetState(states);
+            States = states;
+        }
         public void AssignItemContainer(LevelData data)
         {
             foreach (var container in data.Containers)
@@ -126,8 +133,11 @@ namespace Features.GridGeneration.Scripts
                                 else if (cellData.typeOfHurdle == TypesOfHurdle.Enemys)
                                 {
                                     var enemy = Instantiate(_gridViewReferences.enemy);
-                                    _tile.SetNonFlipAble(enemy.gameObject);
+                                    enemy.gridView = this;
+                                    enemy.MyTile = _tile;
+                                    _tile.SetNonFlipAble(enemy.gameObject,new Vector3(0,150,0));
                                     _tile._Enemy = enemy;
+                                    enemy.Init(_gridViewReferences.player.transform);
                                 }
                             }
                           

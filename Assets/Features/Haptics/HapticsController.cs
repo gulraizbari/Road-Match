@@ -28,6 +28,6 @@ public class HapticsController : MonoBehaviour,IHapticController
     
     public void PlayHaptic()
     {
-        TriggerHapticFeedback(3f,1,Duration);
+        if (Setting.Haptic is 0) TriggerHapticFeedback(3f,1,Duration);
     }
 }

@@ -8,7 +8,7 @@ namespace Features.UI.Logics
     public class PanelBase:MonoBehaviour
     {
         [BoxGroup("Reference")][SerializeField] protected UnityEvent _onCompleteAction;
-
+        public GameObject _overlay;
         [BoxGroup("Reference")] [SerializeField]
        protected GameObject _panel;
 
@@ -20,6 +20,7 @@ namespace Features.UI.Logics
 
         public virtual void OpenPanel(float delay)
         {
+            _overlay.SetActive(true);
             _onCompleteAction?.Invoke();
             StartCoroutine(ShowObjectWithDelay(delay));
         }
