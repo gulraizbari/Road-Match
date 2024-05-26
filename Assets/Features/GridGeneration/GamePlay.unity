@@ -4997,10 +4997,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bc01b934da49d4b2ca26d342bf89c7d3, type: 2}
   - {fileID: 11400000, guid: f8867f5bbdf1b72418e4402141918c63, type: 2}
   - {fileID: 11400000, guid: dc3f962acf60a4a53b8f9c72bf8e521b, type: 2}
-  - {fileID: 11400000, guid: 794b86b4800f745c79a60ec447159719, type: 2}
+  - {fileID: 11400000, guid: 1c4a7773ffd8645d69687a14730ac997, type: 2}
   - {fileID: 11400000, guid: 28733ad7867f3451dacd951c50433828, type: 2}
+  - {fileID: 11400000, guid: 61d0f27585e224a4dbf14e4059ee78ad, type: 2}
+  - {fileID: 11400000, guid: 4e69eced5cbc745db8940465ad6df534, type: 2}
+  - {fileID: 11400000, guid: 794b86b4800f745c79a60ec447159719, type: 2}
+  - {fileID: 11400000, guid: 56b66a57b0a514b8e882c5ce0547ed4c, type: 2}
   - {fileID: 11400000, guid: d7dbf74a7cf0d42959fcb77dd55cbcf9, type: 2}
   - {fileID: 11400000, guid: 33db7320cc6654df4a6cd70f88b8e193, type: 2}
+  - {fileID: 11400000, guid: ddd1cce6201344a19b173cf72577b3d8, type: 2}
   - {fileID: 11400000, guid: d45c3fb67e2134dbebdd823c1c79b19e, type: 2}
   - {fileID: 11400000, guid: 126e533493b0641e68070b3f5f265647, type: 2}
   - {fileID: 11400000, guid: c11a8c36b9b674424a5b6e89bf0c5645, type: 2}
@@ -5009,7 +5014,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3efc5b47207234c53ad1e2082af49931, type: 2}
   - {fileID: 11400000, guid: 3f0ed1a154eef459eb9f58f8cf03a8ae, type: 2}
   - {fileID: 11400000, guid: a1567ce6687ce4b508c7a592a970f02f, type: 2}
-  - {fileID: 11400000, guid: d55246566540e405aa11c874455bcdf8, type: 2}
   nextButton: {fileID: 162144980}
   dumynextButton: {fileID: 2023480489}
   resetButton: {fileID: 399078811}
