@@ -92,7 +92,7 @@ namespace Features.GridGeneration.Scripts
             if (ignore)return;
             if (_player is null)
             {
-                if(TileState != TileStates.Walkable)return;
+                if(TileState != TileStates.Walkable )return;
                 _playerController.AssignPath(this);
                 if (istutorial)
                 {

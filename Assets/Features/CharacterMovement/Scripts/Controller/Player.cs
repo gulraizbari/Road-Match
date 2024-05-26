@@ -206,7 +206,8 @@ namespace Sablo.Gameplay.Movement
         {
             transform.DORotate(fighter._Transform.position,.1f).SetEase(Ease.Linear);
             _playerAnimator.Fighter = fighter;
-            _playerAnimator.Attack();
+           if(fighter.Health>0)
+                    _playerAnimator.Attack();
         }
 
         public void Death()

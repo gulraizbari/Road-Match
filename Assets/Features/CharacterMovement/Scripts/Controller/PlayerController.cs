@@ -21,6 +21,7 @@ namespace Sablo.Gameplay.Movement
                 {
                     if (targetTile.ID==target.ID)
                     {
+                        targetTile = null;
                         Debug.LogError($"Target tile ID {target.ID} is already assigned. Clearing target.");
                         return;
                     }

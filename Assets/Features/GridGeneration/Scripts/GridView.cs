@@ -208,13 +208,13 @@ namespace Features.GridGeneration.Scripts
                                     collectablePrefab.Init(cellData.linkedID);
                                     _tile.SetCollectable(collectablePrefab);
                                 }
-                               Goals.AddOrUpdateGoals(CollectableItems.Key,1);
+                                Goals.AddOrUpdateGoals(CollectableItems.Key,cellData.typeOfBooster,1);
                             }
                             else if (cellData.typeOfCollectableItems == CollectableItems.ChestBox)
                            {
                                _tile.SetTransform(tilePosition, 0);
                                _tile.TileState = TileStates.ChestBox;
-                               Goals.AddOrUpdateGoals(CollectableItems.ChestBox,1);
+                               Goals.AddOrUpdateGoals(CollectableItems.ChestBox,cellData.typeOfBooster,1);
                                _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
                                if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable) )
                                {

@@ -33,7 +33,8 @@ namespace Features.CharacterMovement.Scripts
         {
             if (playerGoalHandler.FetchCollectible(CollectableItems.Key)>0)
             {
-                playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,1);
+                playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,collectable.typeOfBooster,1);
+                collectable.isDone = true;
                 collectable.gameObject.SetActive(false);
             }
             else
@@ -44,15 +45,26 @@ namespace Features.CharacterMovement.Scripts
 
         protected void KeyCase(Collectable collectable)
         {
-            playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,1);
+            playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,collectable.typeOfBooster,1);
             collectable.gameObject.SetActive(false);
-            var Tile = GridViewHandler.GetTile(collectable.ReverseString(collectable.CollectibleID));
-            print(Tile.name);
-            if (Tile!=null)
+            if (collectable.CollectibleID is null)
             {
-                GridViewHandler.ChangeTileMaterial(Tile);
-                collectable.CheckTileLink(Tile);
+                print("No Id");
+                collectable.isDone = true;
+                return;
             }
+            else
+            {
+                var Tile = GridViewHandler.GetTile(collectable.ReverseString(collectable.CollectibleID));
+                print(Tile.name);
+                if (Tile!=null)
+                {
+                    GridViewHandler.ChangeTileMaterial(Tile);
+                    collectable.CheckTileLink(Tile);
+                    collectable.isDone = true;
+                }
+            }
+           
         }
         protected void JumpEffect(Vector3 position)
         {

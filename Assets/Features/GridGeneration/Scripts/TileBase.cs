@@ -321,11 +321,14 @@ namespace Features.GridGeneration.Scripts
                 {
                     FlipAllAdjacent();
                 }
-                
-                if (_collectable)
-                {
-                    _player.OnFoundingCollectible(_collectable);
-                }
+            }
+            if (_collectable && !_collectable.isDone)
+            {
+                _player.OnFoundingCollectible(_collectable);
+            }
+            else
+            {
+                _collectable = null;
             }
         }
         private void ActionOnFindingDesiredTile(){}

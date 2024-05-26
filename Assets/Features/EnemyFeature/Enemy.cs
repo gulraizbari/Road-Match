@@ -7,13 +7,15 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour,ISFighter
 {
-    public float distanceChecker;
-   public int power = 1;
-   public int health = 1;
-    [SerializeField,ReadOnly]  private Transform player;
-    [SerializeField] PlayerAnimator _animator;
+    [BoxGroup("Enemy"),SerializeField] float distanceChecker;
+    [BoxGroup("Enemy"),SerializeField] int power = 1;
+    [BoxGroup("Enemy"),SerializeField] int health = 1;
+    [BoxGroup("Enemy"),SerializeField] PlayerAnimator _animator;
+    [BoxGroup("Enemy"),SerializeField] GameObject _particle;
     public IGridView gridView;
     [HideInInspector]public Tile MyTile;
+    Transform player;
+    
     public void Init(Transform _player)
     {
         player = _player;
@@ -21,8 +23,8 @@ public class Enemy : MonoBehaviour,ISFighter
     }
     void Update()
     {
-        
-        if (player)
+        if (health<=0)return;
+        if (player )
         {
             if (Vector3.Distance(transform.position, player.position) < distanceChecker)
             {
@@ -46,28 +48,34 @@ public class Enemy : MonoBehaviour,ISFighter
 
     public int GiveDamage(int value)
     {
-        Health -= value;
+         Health -= value;
         if (Health<=0) _animator.DeathAnim();
         return Health;
     }
 
     public void Attack(ISFighter fighter)
     {
-        _animator.Fighter = fighter;
-        _animator.Attack();
+        if (health>0)
+        {
+            _animator.Fighter = fighter;
+            _animator.Attack();
+        }
+       
     }
 
     public void Death()
     {
         MyTile._Enemy = null;
-        gridView.ChangeTileMaterial(MyTile);
-        MyTile.TileState = TileStates.Walkable;
         transform.DOScale(.8f, .1f).SetEase(Ease.Linear);
-        Invoke(nameof(SetOff),.35f);
+        Invoke(nameof(SetOff),.5f);
     }
 
     private void SetOff()
     {
+        _particle.transform.SetParent(null);
+        _particle.SetActive(true);
         gameObject.SetActive(false);
+        gridView.ChangeTileMaterial(MyTile);
+        MyTile.TileState = TileStates.Walkable;
     }
 }
