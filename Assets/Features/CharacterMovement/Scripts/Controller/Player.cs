@@ -6,6 +6,7 @@ using Features.CharacterMovement.Scripts;
 using Features.GridGeneration.Scripts;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Sablo.Gameplay.Movement
@@ -16,7 +17,7 @@ namespace Sablo.Gameplay.Movement
        
         public int health=1;
         public CharacterLevel _counter;
-        public int HitPower { get=>PlayerLevel; set=>PlayerLevel=value; }
+        public int HitPower { get; set; }
         public Transform _Transform => transform;
         public int Health { get=>health; set=>health=value; }
         public void OnFoundingCollectible(Collectable collectable,ITile tile)
@@ -130,6 +131,7 @@ namespace Sablo.Gameplay.Movement
                 print("Next is Gate");
                 StopCoroutine(currentCoroutine);
                 _playerAnimator.WalkAnimation(false);
+                Child.localRotation=quaternion.identity;
                 Jump(gateTile.transform.position);
             }
         }
@@ -218,8 +220,10 @@ namespace Sablo.Gameplay.Movement
 
         public void UpdateLevel(int value)
         {
-            HitPower += value;
-            _counter.UpdateLevelText(HitPower);
+            _counter.gameObject.SetActive(true);
+            PlayerLevel += value;
+            HitPower = PlayerLevel;
+            _counter.UpdateLevelText(PlayerLevel);
         }
         public  int PlayerLevel { get=>PlayerPrefs.GetInt("PL",2); set=>PlayerPrefs.SetInt("PL",value); }
 

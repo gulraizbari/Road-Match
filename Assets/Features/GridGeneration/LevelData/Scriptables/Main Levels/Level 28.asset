@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 850defe3f8ebf4ba39a8747ee23721be, type: 3}
-  m_Name: Level 0
+  m_Name: Level 28
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -78,6 +78,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -127,6 +130,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -180,6 +186,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -229,6 +238,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -282,6 +294,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -333,6 +348,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -341,7 +359,7 @@ MonoBehaviour:
       Data: 7|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -350,10 +368,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: typeOfVegetables
       Entry: 3
       Data: 3
@@ -382,6 +400,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -435,6 +456,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -486,6 +510,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -494,7 +521,7 @@ MonoBehaviour:
       Data: 10|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -503,10 +530,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 7
     - Name: typeOfVegetables
       Entry: 3
       Data: 3
@@ -535,6 +562,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -545,7 +575,7 @@ MonoBehaviour:
       Data: 11|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -586,6 +616,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -596,22 +629,22 @@ MonoBehaviour:
       Data: 12|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 5
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -639,6 +672,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
@@ -647,22 +683,22 @@ MonoBehaviour:
       Data: 13|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 8
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -688,6 +724,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -698,7 +737,7 @@ MonoBehaviour:
       Data: 14|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -739,6 +778,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -792,6 +834,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -843,6 +888,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -863,7 +911,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 3
+      Data: 7
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -892,6 +940,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -914,7 +965,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 3
+      Data: 9
     - Name: typeOfVegetables
       Entry: 3
       Data: 2
@@ -943,6 +994,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -989,11 +1043,14 @@ MonoBehaviour:
       Data: 
     - Name: IsPlayer
       Entry: 5
-      Data: true
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1004,7 +1061,7 @@ MonoBehaviour:
       Data: 20|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -1040,11 +1097,14 @@ MonoBehaviour:
       Data: 
     - Name: IsPlayer
       Entry: 5
-      Data: true
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1055,22 +1115,22 @@ MonoBehaviour:
       Data: 21|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 8
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -1096,6 +1156,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1149,6 +1212,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1198,6 +1264,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1251,6 +1320,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1259,7 +1331,7 @@ MonoBehaviour:
       Data: 25|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -1268,10 +1340,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1300,6 +1372,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1322,7 +1397,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 4
+      Data: 9
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1351,6 +1426,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1361,19 +1439,19 @@ MonoBehaviour:
       Data: 27|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 0
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: typeOfFruit
       Entry: 3
-      Data: 4
+      Data: 0
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1402,6 +1480,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1412,7 +1493,7 @@ MonoBehaviour:
       Data: 28|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -1421,13 +1502,13 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
       Data: 1
     - Name: typeOfVegetables
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -1453,6 +1534,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1506,6 +1590,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1555,6 +1642,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1608,6 +1698,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1657,6 +1750,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1710,6 +1806,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1761,6 +1860,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1769,19 +1871,19 @@ MonoBehaviour:
       Data: 35|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: typeOfVegetables
       Entry: 3
       Data: 3
@@ -1812,6 +1914,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1824,7 +1929,6 @@ MonoBehaviour:
   _width: 5
   _height: 7
   Containers:
-  - {fileID: 11400000, guid: 4230d39f4bdc641a98f6162d1f1b0be1, type: 2}
   - {fileID: 11400000, guid: f5f258b570a4e4a29ae7ac16100a2be3, type: 2}
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}

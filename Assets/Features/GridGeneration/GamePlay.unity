@@ -15993,6 +15993,7 @@ MonoBehaviour:
   tutorialManager: {fileID: 1096717854}
   movesText: {fileID: 1613254681}
   enemy: {fileID: 2161089880569803616, guid: 7a169fa2c9b8945dd8e0d4342e5514dd, type: 3}
+  powerUp: {fileID: 3757473051195266659, guid: 0f09ba90c2de14f6db5dd4e762f77470, type: 3}
   moves: 0
 --- !u!4 &1150429824
 Transform:
@@ -16930,12 +16931,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f545f236c73654e5b8e620e84454e043, type: 2}
   - {fileID: 11400000, guid: 38a688ad5497146b2bb0dd1ac692a50a, type: 2}
   - {fileID: 11400000, guid: 039a56610c6a14005a3457503a984146, type: 2}
+  - {fileID: 11400000, guid: 2178f666ee0d649438a8fd5cbcb1a8e0, type: 2}
+  - {fileID: 11400000, guid: 25014a8cac9914c8daaaeb0185aad390, type: 2}
   nextButton: {fileID: 162144980}
   dumynextButton: {fileID: 2023480489}
   resetButton: {fileID: 399078811}
   reloadButton: {fileID: 56685563}
-  isTesting: 0
-  testingLvlNumber: 1
+  isTesting: 1
+  testingLvlNumber: 28
 --- !u!4 &1639253927
 Transform:
   m_ObjectHideFlags: 0
@@ -17647,6 +17650,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2090353441}
   - component: {fileID: 2090353442}
+  - component: {fileID: 2090353443}
+  - component: {fileID: 2090353444}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -17690,6 +17695,36 @@ MonoBehaviour:
   lastTile: {fileID: 0}
   health: 3
   _counter: {fileID: 1162384419}
+--- !u!136 &2090353443
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090353440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.582499
+  m_Height: 2.456911
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.72845554, z: -0.42778313}
+--- !u!54 &2090353444
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090353440}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2120291573
 GameObject:
   m_ObjectHideFlags: 0
@@ -23459,6 +23494,18 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 423db215406cb4cbe90eb61b6cb8946b,
         type: 2}
     - target: {fileID: 4232047513188678981, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -715310598988334478, guid: 423db215406cb4cbe90eb61b6cb8946b,
+        type: 2}
+    - target: {fileID: 4232047513228994717, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 423db215406cb4cbe90eb61b6cb8946b,
+        type: 2}
+    - target: {fileID: 4232047513228994717, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
         type: 3}
       propertyPath: m_sharedMaterial
       value: 

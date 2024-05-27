@@ -5,7 +5,7 @@ public enum TileType
     Walkable,
     Gate,
     Boosters,
-    ChestBox
+    PowerUp
 }
 
 public enum TilePlacements
@@ -138,6 +138,11 @@ public enum CollectableItems
     Weapon,
     Upgrade,
     ChestBox
+}
+
+public enum PowerUpTypes
+{
+    Sword
 }
 
 public enum GameStates
