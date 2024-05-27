@@ -30,27 +30,27 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
 
   
 
-    public void AddOrUpdateCollectible(CollectableItems item, int count)
+    public void AddOrUpdateCollectible(CollectableItems item,BoosterType itemSubType, int count)
     {
         if (collectiblesOfPlayer.ContainsKey(item ))
         {
             collectiblesOfPlayer[item] += count;
-            _goalView.UpdateGoal(item,count,false);
+            _goalView.UpdateGoal(item,itemSubType,count,false);
         }
         else
         {
             collectiblesOfPlayer.TryAdd(item, 1);
-            _goalView.UpdateGoal(item,count,false);
+            _goalView.UpdateGoal(item,itemSubType,count,false);
         }
         CheckTasks(item);
     }
 
-    public void AddOrUpdateGoals(CollectableItems item, int count)
+    public void AddOrUpdateGoals(CollectableItems item,BoosterType itemSubType, int count)
     {
         if (tasksOfPlayer.TryGetValue(item, out var existingTask))
         {
             existingTask.target += count;
-            _goalView.UpdateGoal(item,count,true);
+            _goalView.UpdateGoal(item,itemSubType,count,true);
         }
         else
         {
@@ -60,7 +60,7 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
                 State = false 
             };
             tasksOfPlayer.Add(item, newTask);
-            _goalView.UpdateGoal(item,count,true);
+            _goalView.UpdateGoal(item,itemSubType,count,true);
         }
     }
 

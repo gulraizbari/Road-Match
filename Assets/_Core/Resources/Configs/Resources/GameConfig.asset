@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a711066e546e84d7aa77376c1f15bd73, type: 3}
   m_Name: GameConfig
   m_EditorClassIdentifier: 
-  playerMoveSpeed: 5.5
+  playerMoveSpeed: 8
   playerRotationSpeed: 10
   JumpHeight: 5
   JumpDuration: 0.5
@@ -32,4 +32,6 @@ MonoBehaviour:
   tileRotateDelay: 0.05
   tileFlipDelay: 0.5
   AutoFlipDelay: 0.5
-  levelCompleteDelay: 3
+  levelCompleteDelay: 1.5
+  starRevelDelay: 0.15
+  starStartScale: {x: 1.3, y: 1.3, z: 1.3}

@@ -10,7 +10,7 @@ namespace Sablo.Gameplay.PathFinding
     {
         [SerializeField] private GridGenerator _gridGenerator;
         public IPlayer player;
-        private List<Tile> _foundPaths = new List<Tile>();
+        [SerializeField] private List<Tile> _foundPaths = new List<Tile>();
 
         [Button]
         public void Find(Tile start, Tile target)
@@ -18,11 +18,13 @@ namespace Sablo.Gameplay.PathFinding
             _foundPaths.Clear();
             if (FindPath(start, target) != null)
             {
+                target.isTarget = true;
                 _foundPaths = FindPath(start, target);
                 player.MoveOnPath(_foundPaths);
             }
             else
             {
+                
                 return;
             }
         }

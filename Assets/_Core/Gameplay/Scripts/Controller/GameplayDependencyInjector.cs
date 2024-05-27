@@ -25,6 +25,7 @@ namespace Sablo.Core
             _playerController.PathFinding = _pathFinding;
             _player.AssignUIController(_uiController);
             _player.playerGoalHandler = playerGoals;
+            _player.PlayerHandler = _playerController;
             _player.GridViewHandler = _gridView;
             _gridView.UIHandler = _uiController;
             _gridView.Goals = playerGoals;

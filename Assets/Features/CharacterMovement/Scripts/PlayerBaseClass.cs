@@ -21,7 +21,7 @@ namespace Features.CharacterMovement.Scripts
         public List<Tile> pathToMove;
         public Tile lastTile;
         public IGridView GridViewHandler;
-       
+        public Transform Child => _playerAnimator.transform;
         public Tile CurrentTile
         {
             get => _currentTile;
@@ -29,11 +29,14 @@ namespace Features.CharacterMovement.Scripts
         }
         public PlayerGoals playerGoalHandler{get; set; }
         public IUIController UIController { get; protected set; }
-        protected void ChestBoxCase(Collectable collectable)
+        protected void ChestBoxCase(Collectable collectable,ITile tile)
         {
             if (playerGoalHandler.FetchCollectible(CollectableItems.Key)>0)
             {
-                playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,1);
+                playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,collectable.typeOfBooster,1);
+                collectable.isDone = true;
+                tile.IsTouch = true;
+                Destroy(collectable);
                 collectable.gameObject.SetActive(false);
             }
             else
@@ -42,17 +45,31 @@ namespace Features.CharacterMovement.Scripts
             }
         }
 
-        protected void KeyCase(Collectable collectable)
+        protected void KeyCase(Collectable collectable, ITile tile)
         {
-            playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,1);
+            playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,collectable.typeOfBooster,1);
             collectable.gameObject.SetActive(false);
-            var Tile = GridViewHandler.GetTile(collectable.ReverseString(collectable.CollectibleID));
-            print(Tile.name);
-            if (Tile!=null)
+            if (collectable.CollectibleID is null)
             {
-                GridViewHandler.ChangeTileMaterial(Tile);
-                collectable.CheckTileLink(Tile);
+                print("No Id");
+                collectable.isDone = true;
+                return;
             }
+            else
+            {
+                var Tile = GridViewHandler.GetTile(collectable.ReverseString(collectable.CollectibleID));
+                print(Tile.name);
+                if (Tile!=null)
+                {
+                    GridViewHandler.ChangeTileMaterial(Tile);
+                    collectable.CheckTileLink(Tile);
+                    collectable.isDone = true;
+                }
+            }
+
+            tile.IsTouch = true;
+            Destroy(collectable);
+           
         }
         protected void JumpEffect(Vector3 position)
         {
@@ -72,11 +89,11 @@ namespace Features.CharacterMovement.Scripts
         }
         protected void LookAt(Vector3 target)
         {
-            var lookPos = target - transform.position;
+            var lookPos = target - Child.position;
             var lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
             var eulerY = lookRot.eulerAngles.y;
             var rotation = Quaternion.Euler(0, eulerY, 0);
-            transform.rotation = rotation;
+            Child.rotation = rotation;
         }
     }
 }

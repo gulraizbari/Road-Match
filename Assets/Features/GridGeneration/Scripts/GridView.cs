@@ -61,13 +61,20 @@ namespace Features.GridGeneration.Scripts
             return tile;
         }
 
+        public GameStates States;
 
         public void Init(GridViewDataModel model)
         {
             _gridGenerator = model.GridHandler;
             GameController.SetState(GameStates.Play);
+            States = GameStates.Play;
         }
-
+[Button]
+        public void SetState(GameStates states)
+        {
+            GameController.SetState(states);
+            States = states;
+        }
         public void AssignItemContainer(LevelData data)
         {
             foreach (var container in data.Containers)
@@ -126,8 +133,12 @@ namespace Features.GridGeneration.Scripts
                                 else if (cellData.typeOfHurdle == TypesOfHurdle.Enemys)
                                 {
                                     var enemy = Instantiate(_gridViewReferences.enemy);
-                                    _tile.SetNonFlipAble(enemy.gameObject);
+                                    enemy.gridView = this;
+                                    enemy.MyTile = _tile;
+                                    _tile.SetNonFlipAble(enemy.gameObject,Vector3.one);
                                     _tile._Enemy = enemy;
+                                    enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth);
+                                    enemy._playerController = _gridViewReferences.playerController;
                                 }
                             }
                           
@@ -198,13 +209,13 @@ namespace Features.GridGeneration.Scripts
                                     collectablePrefab.Init(cellData.linkedID);
                                     _tile.SetCollectable(collectablePrefab);
                                 }
-                               Goals.AddOrUpdateGoals(CollectableItems.Key,1);
+                                Goals.AddOrUpdateGoals(CollectableItems.Key,cellData.typeOfBooster,1);
                             }
                             else if (cellData.typeOfCollectableItems == CollectableItems.ChestBox)
                            {
                                _tile.SetTransform(tilePosition, 0);
                                _tile.TileState = TileStates.ChestBox;
-                               Goals.AddOrUpdateGoals(CollectableItems.ChestBox,1);
+                               Goals.AddOrUpdateGoals(CollectableItems.ChestBox,cellData.typeOfBooster,1);
                                _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
                                if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable) )
                                {

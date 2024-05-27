@@ -9,7 +9,8 @@ public class Collectable : MonoBehaviour
     public BoosterType typeOfBooster;
     public bool levelDependent;
     [SerializeField]private string id;
-
+    public bool isDone;
+    
     public string CollectibleID => id;
     public void Init(string _id)
     {
@@ -29,6 +30,7 @@ public class Collectable : MonoBehaviour
     }
     public string ReverseString(string input)
     {
+        
         char[] charArray = input.ToCharArray();
         Array.Reverse(charArray);
         return new string(charArray);
