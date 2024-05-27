@@ -137,12 +137,14 @@ namespace Sablo.Gameplay.Movement
         private IEnumerator FollowOnTarget(Transform target, bool lastIndex,Tile current)
         {
             var configs = Configs.GameConfig;
-            _playerAnimator.WalkAnimation(true);
+           
             var targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
             var lookDir = targetPosition - transform.position;
             var targetRotation = Quaternion.LookRotation(lookDir, Vector3.up);
+            _playerAnimator.WalkAnimation(true);
             while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
             {
+               
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, configs.playerMoveSpeed * Time.deltaTime);
                 Child.rotation = Quaternion.Lerp(Child.rotation, targetRotation, Time.deltaTime * configs.playerRotationSpeed);
                 yield return null;

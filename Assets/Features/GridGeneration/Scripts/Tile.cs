@@ -16,7 +16,7 @@ namespace Features.GridGeneration.Scripts
         public bool isGate;
         public int row;
         public int column;
-
+        public bool isTarget;
 
         public void SetCollectable(Collectable collectable)
         {
@@ -90,6 +90,7 @@ namespace Features.GridGeneration.Scripts
             
             if (!GameController.IsState(GameStates.Play))return;
             if (ignore)return;
+            if (isTarget)return;
             if (_player is null)
             {
                 if(TileState != TileStates.Walkable )return;

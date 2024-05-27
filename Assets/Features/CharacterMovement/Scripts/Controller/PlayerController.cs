@@ -28,6 +28,10 @@ namespace Sablo.Gameplay.Movement
                         Debug.LogError($"Target tile ID {target.ID} is already assigned. Clearing target.");
                         return;
                     }
+                    else
+                    {
+                        targetTile.isTarget = false;
+                    }
                 }
                 targetTile = target;
                 PathFinding.Find(SelectedPlayer.CurrentTile, targetTile);

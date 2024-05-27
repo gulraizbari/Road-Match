@@ -18,6 +18,7 @@ namespace Sablo.Gameplay.PathFinding
             _foundPaths.Clear();
             if (FindPath(start, target) != null)
             {
+                target.isTarget = true;
                 _foundPaths = FindPath(start, target);
                 player.MoveOnPath(_foundPaths);
             }
