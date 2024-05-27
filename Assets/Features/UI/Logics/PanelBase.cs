@@ -15,12 +15,13 @@ namespace Features.UI.Logics
         IEnumerator ShowObjectWithDelay(float delay)
         {
             yield return new WaitForSeconds(delay);
+            _overlay.SetActive(true);
             _panel.SetActive(true);
         }
 
         public virtual void OpenPanel(float delay)
         {
-            _overlay.SetActive(true);
+           // _overlay.SetActive(true);
             _onCompleteAction?.Invoke();
             StartCoroutine(ShowObjectWithDelay(delay));
         }

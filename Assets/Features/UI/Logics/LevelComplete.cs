@@ -23,6 +23,7 @@ public class LevelComplete : PanelBase
         {
             star.localScale =Configs.GameConfig.starStartScale;
             star.gameObject.SetActive(true);
+            SoundManager.Instance.Star(1);
             star.DOScale(1, .2f).SetEase(Ease.Linear);
             yield return new WaitForSeconds( Configs.GameConfig.starRevelDelay);
         }

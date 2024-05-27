@@ -4,6 +4,7 @@ using DG.Tweening;
 using Features.CharacterMovement;
 using Features.CharacterMovement.Scripts;
 using Features.GridGeneration.Scripts;
+using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
 using UnityEngine;
 
@@ -12,13 +13,13 @@ namespace Sablo.Gameplay.Movement
     public class Player : PlayerBaseClass,IPlayer,ISFighter
     {
 
-        public int hitPower=1;
+       
         public int health=1;
         public CharacterLevel _counter;
-        public int HitPower { get=>hitPower; set=>hitPower=value; }
+        public int HitPower { get=>PlayerLevel; set=>PlayerLevel=value; }
         public Transform _Transform => transform;
         public int Health { get=>health; set=>health=value; }
-        public void OnFoundingCollectible(Collectable collectable)
+        public void OnFoundingCollectible(Collectable collectable,ITile tile)
         {
            
             if (collectable.levelDependent)
@@ -26,11 +27,11 @@ namespace Sablo.Gameplay.Movement
                 switch (collectable.collectableType)
                 {
                     case CollectableItems.ChestBox:
-                        ChestBoxCase(collectable);
+                        ChestBoxCase(collectable,tile);
                         SoundManager.Instance.PlayChest(.7f);
                         break;
                     case CollectableItems.Key:
-                        KeyCase(collectable);
+                        KeyCase(collectable,tile);
                         SoundManager.Instance.PlayKey(.7f);
                         break;
                 }
@@ -75,6 +76,7 @@ namespace Sablo.Gameplay.Movement
                 var trimmedPath = path.GetRange(nearestIndex, path.Count - nearestIndex);
                 currentCoroutine =FollowPath(trimmedPath);
                 StartCoroutine(currentCoroutine);
+                
             }
         }
 
@@ -135,38 +137,27 @@ namespace Sablo.Gameplay.Movement
         private IEnumerator FollowOnTarget(Transform target, bool lastIndex,Tile current)
         {
             var configs = Configs.GameConfig;
-           
+            _playerAnimator.WalkAnimation(true);
             var targetPosition = new Vector3(target.position.x, transform.position.y, target.position.z);
             var lookDir = targetPosition - transform.position;
             var targetRotation = Quaternion.LookRotation(lookDir, Vector3.up);
-            CurrentTile.isTouch = false;
             while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
             {
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, configs.playerMoveSpeed * Time.deltaTime);
                 Child.rotation = Quaternion.Lerp(Child.rotation, targetRotation, Time.deltaTime * configs.playerRotationSpeed);
                 yield return null;
             }
-            CurrentTile.isTouch = true;
-            transform.DOLocalMoveY(configs.playerYTargetOnTileMoving, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear).OnComplete((() =>
-           {
-               transform.DOLocalMoveY(1, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear);
-           }));
-
-            target.DOLocalMoveY(-.2f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
-            {
-                target.DOLocalMoveY(.2f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear);
-            }));
             if (lastIndex)
             {
-                //transform.DOLocalRotate(new Vector3(0, 0,0 ), 0.1f).SetEase(Ease.Linear);
+                
                 _playerAnimator.WalkAnimation(false);
-                 lastTile.CheckAdjacents(false);  //auto fliping on player stop
+                 lastTile.CheckAdjacents(false);  
             }
             else
             {
                 if (CurrentTile.TileCollectible)
                 {
-                    OnFoundingCollectible(CurrentTile.TileCollectible);
+                    OnFoundingCollectible(CurrentTile.TileCollectible,CurrentTile);
                 }
                 
             }
@@ -228,5 +219,7 @@ namespace Sablo.Gameplay.Movement
             HitPower += value;
             _counter.UpdateLevelText(HitPower);
         }
+        public  int PlayerLevel { get=>PlayerPrefs.GetInt("PL",2); set=>PlayerPrefs.SetInt("PL",value); }
+
     }
 }

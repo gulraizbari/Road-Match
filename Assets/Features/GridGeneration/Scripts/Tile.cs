@@ -86,7 +86,7 @@ namespace Features.GridGeneration.Scripts
         public override void OnPointerDown(PointerEventData eventData)
         {
             base.OnPointerDown(eventData);
-            if (!isTouch) return;
+            if (!IsTouch) return;
             
             if (!GameController.IsState(GameStates.Play))return;
             if (ignore)return;

@@ -13,9 +13,26 @@ public class DumyLevelManager : MonoBehaviour
    public Button dumynextButton;
    public Button resetButton;
    public Button reloadButton;
+   public bool isTesting;
+   public int testingLvlNumber;
    
-   
-   public LevelData GetCurrentLevel => levels[Level];
+   public LevelData GetCurrentLevel
+   {
+      get
+      {
+         LevelData data;
+         if (isTesting)
+         {
+            data = levels[testingLvlNumber];
+         }
+         else
+         {
+            data = levels[Level];
+         }
+
+         return data;
+      }
+   }
 
    void Start()
    {

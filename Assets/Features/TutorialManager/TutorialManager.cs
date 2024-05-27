@@ -37,7 +37,7 @@ public class TutorialManager : MonoBehaviour
 
         foreach (var VARIABLE in gridView.tilesGrid)
         {
-            VARIABLE.isTouch = false;
+            VARIABLE.IsTouch = false;
         }
         yield return new WaitForSeconds(startDelay);
         foreach (var tile in gridView.PathData)
@@ -65,11 +65,12 @@ public class TutorialManager : MonoBehaviour
                 if (TutorialsData[id].currentTutorial == Tutorials.PlayerToTarget1 ||TutorialsData[id].currentTutorial == Tutorials.PlayerToGate )
                 {
                     tile.Value.TileState = TileStates.Walkable;
+                    tile.Value.IsTouch = true;
                     tile.Value.ignore = false;
                 }
                 else
                 {
-                    tile.Value.isTouch = true;
+                    tile.Value.IsTouch = true;
                     tile.Value.TileState = TileStates.FlipAble;
                 }
                

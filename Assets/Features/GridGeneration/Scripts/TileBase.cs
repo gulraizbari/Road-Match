@@ -61,7 +61,7 @@ namespace Features.GridGeneration.Scripts
         protected Tile MyTile;
         public bool istutorial;
         public bool ignore;
-     public   bool isTouch;
+    
         protected IPlayer _player;
         public ParticleSystem MergeParticle { get; set; }
         Item ITile.CurrentItem => _item;
@@ -70,6 +70,7 @@ namespace Features.GridGeneration.Scripts
 
         public Collectable TileCollectible => _collectable;
         public Enemy _Enemy { get; set; }
+        public bool IsTouch { get; set; }
 
         public TileStates TileState
         {
@@ -82,7 +83,7 @@ namespace Features.GridGeneration.Scripts
             _id = $"{row}{col}";
             _text.SetText($"{row},{col}");
             CellBase = cell;
-            isTouch = true;
+            IsTouch = true;
         }
 
         public void AssignPlacement(Item item)
@@ -324,7 +325,7 @@ namespace Features.GridGeneration.Scripts
             }
             if (_collectable && !_collectable.isDone)
             {
-                _player.OnFoundingCollectible(_collectable);
+                _player.OnFoundingCollectible(_collectable,this);
             }
             else
             {
@@ -356,7 +357,7 @@ namespace Features.GridGeneration.Scripts
 
         public virtual void OnPointerDown(PointerEventData eventData)
         {
-            if (isTouch)
+            if (IsTouch)
             {
                 if (!GameController.IsState(GameStates.Play))return;
                 if (_tileStates != TileStates.FlipAble  ) return;

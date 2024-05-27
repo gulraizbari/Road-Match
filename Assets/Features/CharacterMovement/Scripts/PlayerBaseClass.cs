@@ -29,12 +29,14 @@ namespace Features.CharacterMovement.Scripts
         }
         public PlayerGoals playerGoalHandler{get; set; }
         public IUIController UIController { get; protected set; }
-        protected void ChestBoxCase(Collectable collectable)
+        protected void ChestBoxCase(Collectable collectable,ITile tile)
         {
             if (playerGoalHandler.FetchCollectible(CollectableItems.Key)>0)
             {
                 playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,collectable.typeOfBooster,1);
                 collectable.isDone = true;
+                tile.IsTouch = true;
+                Destroy(collectable);
                 collectable.gameObject.SetActive(false);
             }
             else
@@ -43,7 +45,7 @@ namespace Features.CharacterMovement.Scripts
             }
         }
 
-        protected void KeyCase(Collectable collectable)
+        protected void KeyCase(Collectable collectable, ITile tile)
         {
             playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,collectable.typeOfBooster,1);
             collectable.gameObject.SetActive(false);
@@ -64,6 +66,9 @@ namespace Features.CharacterMovement.Scripts
                     collectable.isDone = true;
                 }
             }
+
+            tile.IsTouch = true;
+            Destroy(collectable);
            
         }
         protected void JumpEffect(Vector3 position)
