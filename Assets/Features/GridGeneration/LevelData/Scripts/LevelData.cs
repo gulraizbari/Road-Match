@@ -29,6 +29,7 @@ public sealed class CellData
     [SerializeField] public string linkedID;
     [SerializeField] public bool IsPlayer;
     [SerializeField] public bool walkableGate;
+    [SerializeField] public int enemyHealth;
    
     // [FormerlySerializedAs("_unBreakableTiles")] [SerializeField] public UnBreakableRocks _unBreakableRocks;
 
@@ -53,6 +54,7 @@ public sealed class CellData
         IsPlayer = false;
         walkableGate = false;
         linkedID = "";
+        enemyHealth = 1;
     }
 }
 
@@ -162,6 +164,10 @@ public sealed class LevelData : SerializedScriptableObject
             if (value.tilePlacement == TilePlacements.Hurdle)
             {
                 value.typeOfHurdle = (TypesOfHurdle)EditorGUILayout.EnumPopup("Type", value.typeOfHurdle);
+                if (value.typeOfHurdle == TypesOfHurdle.Enemys)
+                {
+                    value.enemyHealth = EditorGUILayout.IntField("Health", value.enemyHealth);
+                }
             }
             else if (value.tilePlacement == TilePlacements.Item)
             {

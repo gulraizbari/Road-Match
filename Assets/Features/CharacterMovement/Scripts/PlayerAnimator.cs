@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerAnimator : MonoBehaviour
 {
     [BoxGroup("Reference")] [SerializeField]
+    GameObject _slash;
+    [BoxGroup("Reference")] [SerializeField]
     Animator _animator;
 
    [ShowInInspector] public ISFighter myFighter;
@@ -12,6 +14,7 @@ public class PlayerAnimator : MonoBehaviour
     public LayerMask layer;
     public void WalkAnimation(bool isWalk)
     {
+        _slash.SetActive(true);
         _animator.Play(isWalk ? "Run" : "Idle");
        
     }
@@ -42,6 +45,11 @@ public class PlayerAnimator : MonoBehaviour
     public void Dead()
     {
        myFighter.Death();
+    }
+
+    public void Slash()
+    {
+        _slash.SetActive(true);
     }
 
     public void DeathAnim()

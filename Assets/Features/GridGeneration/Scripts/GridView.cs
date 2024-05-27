@@ -135,9 +135,10 @@ namespace Features.GridGeneration.Scripts
                                     var enemy = Instantiate(_gridViewReferences.enemy);
                                     enemy.gridView = this;
                                     enemy.MyTile = _tile;
-                                    _tile.SetNonFlipAble(enemy.gameObject,new Vector3(0,150,0));
+                                    _tile.SetNonFlipAble(enemy.gameObject,Vector3.one);
                                     _tile._Enemy = enemy;
-                                    enemy.Init(_gridViewReferences.player.transform);
+                                    enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth);
+                                    enemy._playerController = _gridViewReferences.playerController;
                                 }
                             }
                           

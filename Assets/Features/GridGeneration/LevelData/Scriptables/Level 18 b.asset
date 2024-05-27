@@ -800,7 +800,7 @@ MonoBehaviour:
       Data: 18|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -824,10 +824,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfCollectableItems
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: linkedID
       Entry: 6
       Data: 

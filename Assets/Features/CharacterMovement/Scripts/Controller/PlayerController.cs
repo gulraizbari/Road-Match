@@ -11,10 +11,13 @@ namespace Sablo.Gameplay.Movement
         public IPathFinding PathFinding;
         public Player Player;
         public Tile targetTile;
+      
        [ShowInInspector] public IPlayer SelectedPlayer { get; set; }
 
         public void AssignPath(Tile target)
         {
+            if (CantRun)return;
+            
             if (SelectedPlayer != null)
             {
                 if (targetTile)
@@ -32,5 +35,7 @@ namespace Sablo.Gameplay.Movement
             }
             
         }
+
+        public bool CantRun { get; set; }
     }
 }

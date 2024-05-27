@@ -10,5 +10,6 @@ namespace Features.CharacterMovement
         int GiveDamage(int value);
         void Attack(ISFighter fighter);
         void Death();
+        void UpdateLevel(int value);
     }
 }

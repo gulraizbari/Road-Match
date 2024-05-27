@@ -2,6 +2,7 @@ using DG.Tweening;
 using Features.CharacterMovement;
 using Features.GridGeneration.Scripts;
 using GridGeneration.Scripts.interfaces;
+using Sablo.Gameplay.Movement;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -12,28 +13,33 @@ public class Enemy : MonoBehaviour,ISFighter
     [BoxGroup("Enemy"),SerializeField] int health = 1;
     [BoxGroup("Enemy"),SerializeField] PlayerAnimator _animator;
     [BoxGroup("Enemy"),SerializeField] GameObject _particle;
+    [BoxGroup("Enemy"),SerializeField] CharacterLevel _counter;
     public IGridView gridView;
     [HideInInspector]public Tile MyTile;
     Transform player;
-    
-    public void Init(Transform _player)
+    public PlayerController _playerController;
+    Transform Child => _animator.transform;
+    public void Init(Transform _player,int _health)
     {
         player = _player;
         _animator.myFighter = this;
+        power=health = _health;
+        
+        Child.localRotation = Quaternion.Euler(new Vector3(0,150,0));
     }
     void Update()
     {
         if (health<=0)return;
         if (player )
         {
-            if (Vector3.Distance(transform.position, player.position) < distanceChecker)
+            if (Vector3.Distance(Child.position, player.position) < distanceChecker)
             {
-                transform.LookAt(player,Vector3.up);
+                Child.LookAt(player,Vector3.up);
              
             }
             else
             {
-                transform.localRotation = Quaternion.Euler(new Vector3(0,150,0));
+                Child.localRotation = Quaternion.Euler(new Vector3(0,150,0));
             }
         }
        
@@ -49,7 +55,11 @@ public class Enemy : MonoBehaviour,ISFighter
     public int GiveDamage(int value)
     {
          Health -= value;
-        if (Health<=0) _animator.DeathAnim();
+        if (Health<=0) {
+           
+            _animator.Fighter.UpdateLevel(HitPower);
+            Death();//_animator.DeathAnim();
+                       }
         return Health;
     }
 
@@ -57,6 +67,7 @@ public class Enemy : MonoBehaviour,ISFighter
     {
         if (health>0)
         {
+            _counter.gameObject.SetActive(true);
             _animator.Fighter = fighter;
             _animator.Attack();
         }
@@ -65,9 +76,16 @@ public class Enemy : MonoBehaviour,ISFighter
 
     public void Death()
     {
+        
+        _playerController.CantRun = false;
         MyTile._Enemy = null;
-        transform.DOScale(.8f, .1f).SetEase(Ease.Linear);
-        Invoke(nameof(SetOff),.5f);
+        transform.DOScale(0f, .1f).SetEase(Ease.Linear).OnComplete((SetOff));
+      
+    }
+
+    public void UpdateLevel(int value)
+    {
+        _counter.UpdateLevelText(value);
     }
 
     private void SetOff()

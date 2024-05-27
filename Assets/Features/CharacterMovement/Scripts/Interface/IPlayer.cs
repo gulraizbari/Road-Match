@@ -14,5 +14,6 @@ namespace Sablo.Gameplay.Movement
         void OnFoundingCollectible( Collectable collectable);
         public PlayerGoals playerGoalHandler { get; set; }
         public ISFighter Fighter { get; }
+        public PlayerController PlayerHandler { get; set; }
     }
 }

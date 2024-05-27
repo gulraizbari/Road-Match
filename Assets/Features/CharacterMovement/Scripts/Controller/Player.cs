@@ -14,7 +14,7 @@ namespace Sablo.Gameplay.Movement
 
         public int hitPower=1;
         public int health=1;
-        
+        public CharacterLevel _counter;
         public int HitPower { get=>hitPower; set=>hitPower=value; }
         public Transform _Transform => transform;
         public int Health { get=>health; set=>health=value; }
@@ -38,6 +38,7 @@ namespace Sablo.Gameplay.Movement
         }
 
         public ISFighter Fighter => this;
+        public PlayerController PlayerHandler { get; set; }
 
         public void AssignUIController(UIController uiController)
         {
@@ -48,6 +49,7 @@ namespace Sablo.Gameplay.Movement
             transform.position = position;
             CurrentTile = tile;
             _playerAnimator.myFighter = this;
+            UpdateLevel(0);
         }
 
         public void MoveOnPath(List<Tile> path)
@@ -124,7 +126,6 @@ namespace Sablo.Gameplay.Movement
             if (gateTile.isGate)
             {
                 print("Next is Gate");
-                //transform.DOLocalRotate(new Vector3(0, 0,0 ), 0f).SetEase(Ease.Linear);
                 StopCoroutine(currentCoroutine);
                 _playerAnimator.WalkAnimation(false);
                 Jump(gateTile.transform.position);
@@ -204,16 +205,26 @@ namespace Sablo.Gameplay.Movement
 
         public void Attack(ISFighter fighter)
         {
+            PlayerHandler.CantRun = true;
+            _counter.gameObject.SetActive(true);
             transform.DORotate(fighter._Transform.position,.1f).SetEase(Ease.Linear);
             _playerAnimator.Fighter = fighter;
            if(fighter.Health>0)
                     _playerAnimator.Attack();
+           else
+               PlayerHandler.CantRun = false;
         }
 
         public void Death()
         {
             GameController.SetState(GameStates.Lose);
             UIController.LevelFail(1.3f);
+        }
+
+        public void UpdateLevel(int value)
+        {
+            HitPower += value;
+            _counter.UpdateLevelText(HitPower);
         }
     }
 }
