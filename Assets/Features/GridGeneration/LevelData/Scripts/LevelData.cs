@@ -82,7 +82,8 @@ public sealed class LevelData : SerializedScriptableObject
        [Space] public List<ItemContainer> Containers;
        [Space] public CollectableContainer collectableContainer;
        public int movesMultiplier = 1;
-
+       public bool moveCamera;
+       public float maxZ, minZ;
     [Space]
     [TitleGroup("GRID", boldTitle: true)]
     [TableMatrix(SquareCells = true, HideRowIndices = false, HideColumnIndices = true, RespectIndentLevel = true,

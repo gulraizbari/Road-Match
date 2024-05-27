@@ -1,4 +1,5 @@
 using Features.GridGeneration.Scripts;
+using Lean.Touch;
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
@@ -6,7 +7,7 @@ public class CameraAdjuster : MonoBehaviour
 {
     public Camera orthoCamera;
     public float padding = 1.0f; // Padding around the grid
-
+    public LeanDragCamera DragCamera;
     private void Awake()
     {
         if (!orthoCamera) orthoCamera = GetComponent<Camera>();
