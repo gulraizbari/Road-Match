@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 1503647320737004815}
   - component: {fileID: 1503647320737004814}
   m_Layer: 5
-  m_Name: Star (2)
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1503647320737004813
 RectTransform:
   m_ObjectHideFlags: 0
@@ -144,8 +144,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Completed
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1a4b431926cd04555a46e83044308495, type: 2}
-  m_sharedMaterial: {fileID: -715310598988334478, guid: 1a4b431926cd04555a46e83044308495,
+  m_fontAsset: {fileID: 11400000, guid: 423db215406cb4cbe90eb61b6cb8946b, type: 2}
+  m_sharedMaterial: {fileID: -715310598988334478, guid: 423db215406cb4cbe90eb61b6cb8946b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: -47.74341, z: -89.88867, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1503647320952081830
@@ -351,6 +351,10 @@ MonoBehaviour:
         m_CallState: 2
   _overlay: {fileID: 0}
   _panel: {fileID: 1503647321429769265}
+  _stars:
+  - {fileID: 1503647320737004813}
+  - {fileID: 1503647322542749057}
+  - {fileID: 1503647321575639045}
 --- !u!1 &1503647321009973806
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,8 +638,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Well done you hsave great job.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1f15d395c296b44bf96c383f1ae1e0c1, type: 2}
-  m_sharedMaterial: {fileID: 6815567123791479239, guid: 1f15d395c296b44bf96c383f1ae1e0c1,
+  m_fontAsset: {fileID: 11400000, guid: 423db215406cb4cbe90eb61b6cb8946b, type: 2}
+  m_sharedMaterial: {fileID: -715310598988334478, guid: 423db215406cb4cbe90eb61b6cb8946b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -699,7 +703,7 @@ MonoBehaviour:
   m_margin: {x: -118.2142, y: 0, z: -105.84241, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1503647321575639044
@@ -714,12 +718,12 @@ GameObject:
   - component: {fileID: 1503647321575639047}
   - component: {fileID: 1503647321575639046}
   m_Layer: 5
-  m_Name: Star (1)
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1503647321575639045
 RectTransform:
   m_ObjectHideFlags: 0
@@ -912,12 +916,12 @@ GameObject:
   - component: {fileID: 1503647322542749059}
   - component: {fileID: 1503647322542749058}
   m_Layer: 5
-  m_Name: Star
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1503647322542749057
 RectTransform:
   m_ObjectHideFlags: 0

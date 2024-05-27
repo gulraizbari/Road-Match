@@ -21,7 +21,7 @@ namespace Features.CharacterMovement.Scripts
         public List<Tile> pathToMove;
         public Tile lastTile;
         public IGridView GridViewHandler;
-       
+        public Transform Child => _playerAnimator.transform;
         public Tile CurrentTile
         {
             get => _currentTile;
@@ -84,11 +84,11 @@ namespace Features.CharacterMovement.Scripts
         }
         protected void LookAt(Vector3 target)
         {
-            var lookPos = target - transform.position;
+            var lookPos = target - Child.position;
             var lookRot = Quaternion.LookRotation(lookPos, Vector3.up);
             var eulerY = lookRot.eulerAngles.y;
             var rotation = Quaternion.Euler(0, eulerY, 0);
-            transform.rotation = rotation;
+            Child.rotation = rotation;
         }
     }
 }

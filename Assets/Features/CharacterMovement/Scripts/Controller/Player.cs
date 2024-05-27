@@ -143,7 +143,7 @@ namespace Sablo.Gameplay.Movement
             while (Vector3.Distance(transform.position, targetPosition) > 0.1f)
             {
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, configs.playerMoveSpeed * Time.deltaTime);
-                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * configs.playerRotationSpeed);
+                Child.rotation = Quaternion.Lerp(Child.rotation, targetRotation, Time.deltaTime * configs.playerRotationSpeed);
                 yield return null;
             }
             CurrentTile.isTouch = true;
@@ -176,10 +176,12 @@ namespace Sablo.Gameplay.Movement
         
         public void Jump(Vector3 position)
         {
+            
             if (playerGoalHandler.FetchGoals()>0)
             {
                 if (playerGoalHandler.TaskComplete)
                 {
+                    _counter.gameObject.SetActive(false);
                     JumpEffect(position);
                 }
                 else
@@ -207,7 +209,7 @@ namespace Sablo.Gameplay.Movement
         {
             PlayerHandler.CantRun = true;
             _counter.gameObject.SetActive(true);
-            transform.DORotate(fighter._Transform.position,.1f).SetEase(Ease.Linear);
+            Child.DORotate(fighter._Transform.position,.1f).SetEase(Ease.Linear);
             _playerAnimator.Fighter = fighter;
            if(fighter.Health>0)
                     _playerAnimator.Attack();

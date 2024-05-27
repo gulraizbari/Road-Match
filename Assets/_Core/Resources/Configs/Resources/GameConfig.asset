@@ -32,4 +32,6 @@ MonoBehaviour:
   tileRotateDelay: 0.05
   tileFlipDelay: 0.5
   AutoFlipDelay: 0.5
-  levelCompleteDelay: 3
+  levelCompleteDelay: 1.5
+  starRevelDelay: 0.15
+  starStartScale: {x: 1.3, y: 1.3, z: 1.3}
