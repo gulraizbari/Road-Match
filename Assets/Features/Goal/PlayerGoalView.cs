@@ -1,13 +1,16 @@
 
 using System;
 using System.Collections.Generic;
+using Features.UIEffects;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerGoalView : MonoBehaviour
 {
    [SerializeField] List<GoalData> playerGoalsUI;
    [SerializeField] List<Goal> playerGoals;
    [SerializeField] Goal playerGoalPrefab;
+   [SerializeField] VFXController _vfxController;
    public Transform parent;
    public void UpdateGoal(CollectableItems type,BoosterType goalSubType,int value,bool isTarget)
    {
@@ -16,7 +19,21 @@ public class PlayerGoalView : MonoBehaviour
      
       if (goalFind!=null)
       {
-         goalFind.UpdateText(value,isTarget);
+         if (isTarget)
+         {
+            goalFind.UpdateText(value,isTarget);
+         }
+         else
+         {
+            UnityEvent action = new UnityEvent();
+            action.AddListener((() =>
+            {
+               goalFind.UpdateText(value,false);
+            }));
+            var goalItem = playerGoalsUI.Find(_goal => _goal.itemType == type && _goal.itemSubType==goalSubType);
+
+            _vfxController.PopUpEffect( goalItem.goalUI,goalFind.transform,action);
+         }
       }
       else
       {
