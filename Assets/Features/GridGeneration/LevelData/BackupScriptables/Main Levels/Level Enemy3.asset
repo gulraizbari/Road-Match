@@ -2381,7 +2381,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 9
@@ -2393,7 +2393,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
