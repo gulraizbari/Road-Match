@@ -297,6 +297,7 @@ namespace Features.GridGeneration.Scripts
             }
             else if (data.typeOfItem == ItemType.Random)
             {
+                Debug.Log(data.typeOfRandomObjects.ToString());
                 item = Instantiate(FindItem(data.typeOfItem, data.typeOfRandomObjects));
             }
 
