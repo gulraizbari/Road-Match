@@ -17,7 +17,7 @@ namespace Sablo.Gameplay.Movement
         public void AssignPath(Tile target)
         {
             if (CantRun)return;
-            
+            CantRun = true;
             if (SelectedPlayer != null)
             {
                 if (targetTile)

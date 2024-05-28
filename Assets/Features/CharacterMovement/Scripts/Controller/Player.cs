@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using DG.Tweening.Plugins.Options;
 using Features.CharacterMovement;
 using Features.CharacterMovement.Scripts;
 using Features.GridGeneration.Scripts;
@@ -103,6 +104,7 @@ namespace Sablo.Gameplay.Movement
         private IEnumerator FollowPath(List<Tile> path)
         {
             _playerAnimator.WalkAnimation(true);
+            transform.position = new Vector3(transform.position.x, 1, transform.position.z);
             for (int i = 1; i < path.Count; i++)
             {
                 var last = false;
@@ -155,23 +157,18 @@ namespace Sablo.Gameplay.Movement
                 yield return null;
             }
             
-            transform.DOLocalMoveY(configs.playerYTargetOnTileMoving, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear).OnComplete((() =>
-            {
-                transform.DOLocalMoveY(1, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear);
-            }));
-
-            target.DOLocalMoveY(-.4f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
-            {
-                target.DOLocalMoveY(.4f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear);
-            }));
             if (lastIndex)
             {
-                
+                PlayerHandler.CantRun = false;
                 _playerAnimator.WalkAnimation(false);
-                 lastTile.CheckAdjacents(false);  
+                 lastTile.CheckAdjacents(false);
+                 transform.DOLocalMoveY(configs.playerYTargetOnTileMoving, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear);
+                 target.DOLocalMoveY(configs.TileDownY, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear);
+                 CurrentTile.ChangeColor(configs.TileDownColor);
             }
             else
             {
+                TileEffect(target,CurrentTile);
                 if (CurrentTile.TileCollectible)
                 {
                     OnFoundingCollectible(CurrentTile.TileCollectible,CurrentTile);
@@ -180,9 +177,24 @@ namespace Sablo.Gameplay.Movement
             }
         }
 
-        private void TileEffect()
+        private void TileEffect(Transform tileTransform,Tile tile)
         {
-            
+            var configs = Configs.GameConfig;
+            transform.DOLocalMoveY(configs.playerYTargetOnTileMoving, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                transform.DOLocalMoveY(1, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear);
+            }));
+            tile.ChangeColor(configs.TileDownColor);
+             tileTransform.DOLocalMoveY(-.4f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                
+               
+                tileTransform.DOLocalMoveY(.4f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear).OnComplete((
+                    () =>
+                    {
+                        tile.ChangeColor(configs.TileOrignalColor);       // tile.SetMeshMaterialColorProperty(configs.TileOrignalColor);
+                    }));
+            }));
         }
         
         public void Jump(Vector3 position)

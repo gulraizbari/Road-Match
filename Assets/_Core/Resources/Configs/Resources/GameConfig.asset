@@ -32,6 +32,9 @@ MonoBehaviour:
   tileRotateDelay: 0.05
   tileFlipDelay: 0.5
   AutoFlipDelay: 0.5
+  TileDownY: -0.3
+  TileDownColor: {r: 0.3952235, g: 0.8018868, b: 0.08699717, a: 1}
+  TileOrignalColor: {r: 0.53333336, g: 0.85882354, b: 0.3372549, a: 1}
   levelCompleteDelay: 1.5
   starRevelDelay: 0.15
   starStartScale: {x: 1.3, y: 1.3, z: 1.3}

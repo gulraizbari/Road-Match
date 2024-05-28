@@ -399,6 +399,17 @@ namespace Features.GridGeneration.Scripts
             }
         }
 
-       
+       public void SetMeshMaterialColorProperty(Color color)
+        {
+            MaterialPropertyBlock prop = new MaterialPropertyBlock();
+            
+            prop.SetColor("_BaseColor",     color);
+            _renderer.SetPropertyBlock(prop, 0);
+        }
+
+        public void ChangeColor(Color color)
+        {
+            _renderer.material.DOColor(color, Configs.GameConfig.playerYTargetOnTileMovingDuration);
+        }
     }
 }
