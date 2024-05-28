@@ -15,10 +15,12 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
     [BoxGroup("Reference"), ReadOnly, ShowInInspector] Dictionary<CollectableItems, PlayerTask > tasksOfPlayer=new();
     [BoxGroup("Reference"), ReadOnly, ShowInInspector]
     [SerializeField] Tile _gate;
-
     [BoxGroup("Reference"),  SerializeField]
     List<string> _slogans;
-
+    [BoxGroup("Reference"), SerializeField] [Switch]
+    public bool isCage;
+    [BoxGroup("Reference"), SerializeField]
+    Cage _cage;
     [BoxGroup("Reference"), SerializeField]
     Color qouateColor;
     [BoxGroup("Reference"), SerializeField]
@@ -91,8 +93,13 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
         }
     }
 
-    public void SetGate(Tile tile)
+    public void SetGate(Tile tile,bool _isCage)
     {
+        isCage = _isCage;
+        if (isCage)
+        {
+          _cage.EnableCage();
+        }
         _gate = tile;
     }
 
@@ -126,6 +133,10 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
 
         if (TaskComplete)
         {
+            if (isCage)
+            {
+                _cage.CageEffect();
+            }
             _gate.isGate = true;
             _gate.TileState = TileStates.Walkable;
             gridView.ChangeTileMaterial(_gate);

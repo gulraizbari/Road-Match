@@ -193,7 +193,7 @@ namespace Features.GridGeneration.Scripts
                             _tiles.Add($"{row}{col}", _tile);
                             _gridViewReferences.Gate.position = new Vector3(tilePosition.x, .6f, tilePosition.z);
                             _tile.requiredCollectableItems = cellData.typeOfCollectableItems;
-                            Goals.SetGate(_tile);
+                            Goals.SetGate(_tile,cellData.IsCage);
                             break;
                         }
                         case TileType.Boosters:
