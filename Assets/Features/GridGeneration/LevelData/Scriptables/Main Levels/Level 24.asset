@@ -557,7 +557,7 @@ MonoBehaviour:
       Data: 5
     - Name: typeOfBooster
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2087,7 +2087,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: linkedID
       Entry: 1
       Data: 94
@@ -2267,7 +2267,7 @@ MonoBehaviour:
       Data: 5
     - Name: typeOfBooster
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: linkedID
       Entry: 6
       Data: 
@@ -2312,7 +2312,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: linkedID
       Entry: 1
       Data: 11
