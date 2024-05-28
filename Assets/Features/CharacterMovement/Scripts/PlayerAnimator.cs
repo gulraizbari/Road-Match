@@ -19,6 +19,10 @@ public class PlayerAnimator : MonoBehaviour
        
     }
 
+    public void Idle()
+    {
+        WalkAnimation(false);
+    }
     public void JumpAnimation()
     {
         _animator.Play("Jump");

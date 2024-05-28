@@ -29,6 +29,7 @@ public sealed class CellData
     [SerializeField] public PowerUpTypes typeOfPowerUps;
     [SerializeField] public string linkedID;
     [SerializeField] public bool IsPlayer;
+    [SerializeField] public bool IsCage;
     [SerializeField] public bool walkableGate;
     [SerializeField] public int enemyHealth;
     [SerializeField] public int powerUPLVL;
@@ -52,10 +53,11 @@ public sealed class CellData
         typeOfAnimals = Animals.None;
         typeOfRandomObjects = RandomObjects.None;
         typeOfCollectableItems = CollectableItems.Key;
-        typeOfBooster = BoosterType.Silver;
+        typeOfBooster = BoosterType.None;
         typeOfPowerUps = PowerUpTypes.Sword;
         IsPlayer = false;
         walkableGate = false;
+        IsCage = false;
         linkedID = "";
         enemyHealth = 1;
         powerUPLVL = 1;
@@ -79,15 +81,22 @@ public sealed class LevelData : SerializedScriptableObject
     [InlineButton(nameof(MakeGrid))] [VerticalGroup("LEVEL DATA/Split/Right"), LabelWidth(60)] [SerializeField]
     int _height = 16;
 
-       [Space] public List<ItemContainer> Containers;
-       [Space] public CollectableContainer collectableContainer;
-       public int movesMultiplier = 1;
+       [FoldoutGroup("LevelAttributes")][Space] public List<ItemContainer> Containers;
+       [FoldoutGroup("LevelAttributes")][Space] public CollectableContainer collectableContainer;
+       [FoldoutGroup("LevelAttributes/Value")][Space]  public int movesMultiplier = 1;
+       [FoldoutGroup("LevelAttributes/Value")] [Switch]
        public bool moveCamera;
-       //[ShowIf("moveCamera")]
+       [FoldoutGroup("LevelAttributes/Value")] [ShowIf("moveCamera")]
        public float maxZ, minZ;
+       [Space]
+       [FoldoutGroup("LevelAttributes/Value")]  [Switch]
        public bool customPadding;
-      // [ShowIf("moveCamera")]
-       public float customPaddingValue=2.6f;
+        [ShowIf("customPadding")]
+        [FoldoutGroup("LevelAttributes/Value")] public float customPaddingValue=2.6f;
+       [Space]
+       [Switch]
+       [FoldoutGroup("LevelAttributes/Value")]  public bool IsEnemy;
+       
     [Space]
     [TitleGroup("GRID", boldTitle: true)]
     [TableMatrix(SquareCells = true, HideRowIndices = false, HideColumnIndices = true, RespectIndentLevel = true,
@@ -211,12 +220,17 @@ public sealed class LevelData : SerializedScriptableObject
             value.typeOfBooster = (BoosterType)EditorGUILayout.EnumPopup("Type", value.typeOfBooster);
             if (value.typeOfCollectableItems==CollectableItems.Key)
             {
-                value.linkedID = EditorGUILayout.TextField("Link", value.linkedID);
+                if (value.typeOfBooster != BoosterType.None)
+                {
+                    value.linkedID = EditorGUILayout.TextField("Link", value.linkedID);
+                }
+                
             }
         }
         else if (value.tileType.Equals(TileType.Gate))
         {
-            value.walkableGate = EditorGUILayout.Toggle("State", value.walkableGate);
+            value.walkableGate = EditorGUILayout.Toggle("IsWalk", value.walkableGate);
+            value.IsCage = EditorGUILayout.Toggle("IsCage", value.IsCage);
           //  value.typeOfCollectableItems = (CollectableItems)EditorGUILayout.EnumPopup("Type", value.typeOfCollectableItems);
         }
         else if (value.tileType.Equals(TileType.PowerUp))

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DG.Tweening;
 using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.Movement;
 using Sirenix.OdinInspector;
@@ -20,6 +21,7 @@ namespace Sablo.Gameplay.PathFinding
             {
                 target.isTarget = true;
                 _foundPaths = FindPath(start, target);
+                player.PlayerHandler.CantRun = true;
                 player.MoveOnPath(_foundPaths);
             }
             else
@@ -28,6 +30,8 @@ namespace Sablo.Gameplay.PathFinding
                 return;
             }
         }
+
+        public List<Tile> foundPath => foundPath;
 
         private List<Tile> FindPath(Tile startCell, Tile targetCell)
         {

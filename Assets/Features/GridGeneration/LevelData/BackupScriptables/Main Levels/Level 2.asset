@@ -74,7 +74,7 @@ MonoBehaviour:
       Data: false
     - Name: walkableGate
       Entry: 5
-      Data: false
+      Data: true
     - Name: enemyHealth
       Entry: 3
       Data: 0
@@ -1939,3 +1939,4 @@ MonoBehaviour:
   minZ: 0
   customPadding: 0
   customPaddingValue: 2.6
+  IsEnemy: 0

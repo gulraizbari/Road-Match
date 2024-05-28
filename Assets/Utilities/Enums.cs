@@ -142,7 +142,8 @@ public enum CollectableItems
 
 public enum PowerUpTypes
 {
-    Sword
+    Sword,
+    X2
 }
 
 public enum GameStates
@@ -156,7 +157,8 @@ public enum GameStates
 }
 public enum BoosterType
 {
-Silver,
-Gold,
-Royal
+   None,
+   Gold,
+   Royal,
 }
+

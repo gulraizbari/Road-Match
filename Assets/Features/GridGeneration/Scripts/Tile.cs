@@ -1,6 +1,7 @@
 using DG.Tweening;
 using Features.GridGeneration.Scripts.interfaces;
 using GridGeneration.Scripts.interfaces;
+using Sablo.Core;
 using Sablo.Gameplay.Movement;
 using Sablo.Gameplay.PathFinding;
 using Sablo.Gameplay.Utilities;
@@ -95,6 +96,17 @@ namespace Features.GridGeneration.Scripts
             if (_player is null)
             {
                 if(TileState != TileStates.Walkable )return;
+                SoundManager.Instance.PlayTileSelect(.5f);
+                foreach (var data in iGridView.PathData)
+                {
+                    if (data.Value.TileState == TileStates.Walkable)
+                    {
+                        data.Value.ChangeColor(Configs.GameConfig.TileOrignalColor); 
+                       // data.Value.SetMeshMaterialColorProperty(Configs.GameConfig.TileOrignalColor);
+                    }
+                   
+                    data.Value.transform.DOLocalMoveY(0, .01f).SetEase(Ease.Linear);
+                }
                 _playerController.AssignPath(this);
                 if (istutorial)
                 {
