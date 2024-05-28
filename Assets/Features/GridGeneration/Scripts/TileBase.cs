@@ -382,20 +382,27 @@ namespace Features.GridGeneration.Scripts
             if (IsTouch)
             {
                 if (!GameController.IsState(GameStates.Play))return;
-                if (_tileStates != TileStates.FlipAble  ) return;
+                if (_tileStates == TileStates.FlipAble)
+                {
+                    if (!_canTouch)
+                    {
+                        _canTouch = true;
+                        SoundManager.Instance.PlayTileSelect(1);
+                        hapticController.PlayHaptic();
+                        iGridView.UpdateMoves(-1);
+                        Flip(false, true);
+                    }
+                    if (istutorial)
+                    {
+                        TutorialManager.OnTutorialAction();
+                    }
+                }
+                else
+                {
+                    print($"{TileState}");
+                }
           
-                if (!_canTouch)
-                {
-                    _canTouch = true;
-                    SoundManager.Instance.PlayTileSelect(1);
-                    hapticController.PlayHaptic();
-                    iGridView.UpdateMoves(-1);
-                    Flip(false, true);
-                }
-                if (istutorial)
-                {
-                    TutorialManager.OnTutorialAction();
-                }
+               
             }
         }
 
