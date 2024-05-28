@@ -6,6 +6,7 @@ using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
 using Sablo.Gameplay.Movement;
 using Sirenix.OdinInspector;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Features.CharacterMovement.Scripts
@@ -77,6 +78,7 @@ namespace Features.CharacterMovement.Scripts
             _playerAnimator.JumpAnimation();
             position.y = 1f;
             LookAt(position);
+            Child.rotation=quaternion.identity;
             transform.DOJump(position, configs.JumpHeight, 1, configs.JumpDuration).SetEase(Ease.Linear).OnComplete((() =>
             {
                 _crown.SetActive(true);

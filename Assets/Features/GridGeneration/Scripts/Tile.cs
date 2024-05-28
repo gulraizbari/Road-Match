@@ -95,6 +95,11 @@ namespace Features.GridGeneration.Scripts
             if (_player is null)
             {
                 if(TileState != TileStates.Walkable )return;
+                SoundManager.Instance.PlayTileSelect(.5f);
+                // foreach (var data in iGridView.PathData)
+                // {
+                //  data.Value.Lift(false);  
+                // }
                 _playerController.AssignPath(this);
                 if (istutorial)
                 {

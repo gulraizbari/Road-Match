@@ -20,6 +20,10 @@ namespace Sablo.Gameplay.PathFinding
             {
                 target.isTarget = true;
                 _foundPaths = FindPath(start, target);
+                // foreach (var path in _foundPaths)
+                // {
+                //     path.Lift(true);
+                // }
                 player.MoveOnPath(_foundPaths);
             }
             else
@@ -28,6 +32,8 @@ namespace Sablo.Gameplay.PathFinding
                 return;
             }
         }
+
+        public List<Tile> foundPath => foundPath;
 
         private List<Tile> FindPath(Tile startCell, Tile targetCell)
         {

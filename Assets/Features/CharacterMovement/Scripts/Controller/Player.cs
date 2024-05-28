@@ -154,6 +154,16 @@ namespace Sablo.Gameplay.Movement
                 Child.rotation = Quaternion.Lerp(Child.rotation, targetRotation, Time.deltaTime * configs.playerRotationSpeed);
                 yield return null;
             }
+            
+            transform.DOLocalMoveY(configs.playerYTargetOnTileMoving, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                transform.DOLocalMoveY(1, configs.playerYTargetOnTileMovingDuration).SetEase(Ease.Linear);
+            }));
+
+            target.DOLocalMoveY(-.4f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                target.DOLocalMoveY(.4f, configs.playerYTargetOnTileMovingDuration).SetRelative(true).SetEase(Ease.Linear);
+            }));
             if (lastIndex)
             {
                 
@@ -170,7 +180,10 @@ namespace Sablo.Gameplay.Movement
             }
         }
 
-       
+        private void TileEffect()
+        {
+            
+        }
         
         public void Jump(Vector3 position)
         {

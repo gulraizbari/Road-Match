@@ -20,10 +20,10 @@ MonoBehaviour:
   playerYTargetOnTileMovingDuration: 0.05
   playerRotationOnJumpComplete: {x: 0, y: 180, z: 0}
   playerRotationOnJumpCompleteDuration: 0.1
-  tileJumpHeight: 3
+  tileJumpHeight: 4.5
   tileJumpDuration: 0.125
   tileRotateDuration: 0.125
-  placementDuration: 0.1
+  placementDuration: 0.125
   placementMoveUpDuration: 0.2
   placementMoveUpValue: 5
   placementMoveDownValue: 2

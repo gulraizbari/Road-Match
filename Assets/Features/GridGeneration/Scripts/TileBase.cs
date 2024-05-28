@@ -23,16 +23,14 @@ namespace Features.GridGeneration.Scripts
         protected string _id;
 
         [BoxGroup("Reference"), SerializeField]
+        ParticleSystem flipParticle;
+        [BoxGroup("Reference"), SerializeField]
         protected Renderer _renderer;
 
         [BoxGroup("Reference"), SerializeField,ReadOnly]
        protected Collectable _collectable;
         [BoxGroup("Reference"), SerializeField]
         Transform _itemPlacement;
-
-        [BoxGroup("Reference"), SerializeField]
-        TextMeshProUGUI _text;
-
         [BoxGroup("Reference"), SerializeField]
         GameObject _shadow;
 
@@ -81,7 +79,6 @@ namespace Features.GridGeneration.Scripts
         public void SetID(int row, int col, Cell cell)
         {
             _id = $"{row}{col}";
-            _text.SetText($"{row},{col}");
             CellBase = cell;
             IsTouch = true;
         }
@@ -167,22 +164,31 @@ namespace Features.GridGeneration.Scripts
                     {
                         ShowPlacement(false, 0);
                     }
-                }).OnComplete((() =>
-                {
-                    if (isGreen)
+                    else
                     {
-                        ShowPlacement(true, 0);
+                        ShowPlacement(true,Configs.GameConfig.tileJumpDuration-.25f);
                     }
-                }));
+                 });//.OnComplete((() =>
+                // {
+                //     if (isGreen)
+                //     {
+                //         ShowPlacement(true, 0);
+                //     }
+                // }));
         }
 
         private void ShowPlacement(bool show, float startDelay)
         {
             var config = Configs.GameConfig;
-            _shadow.SetActive(show);
+            if (show)
+            {
+                flipParticle.Play();
+                //_shadow.SetActive(show);
+            }
             _itemPlacement.DOScale(show ? config.placementMaxScale : config.placementMinScale, config.placementDuration)
                 .SetDelay(startDelay).SetEase(Ease.Linear).OnComplete(() =>
                 {
+                    _shadow.SetActive(show);
                     _item.transform.DOScale(show ? config.placementMaxScale : config.placementMinScale,
                         config.placementDuration).SetEase(Ease.Linear);
                 });
@@ -257,6 +263,10 @@ namespace Features.GridGeneration.Scripts
         }
         public void CheckAdjacents(bool canFlip)
         {
+            // foreach (var VARIABLE in iGridView.PathData)
+            // {
+            //     VARIABLE.Value.Lift(false);
+            // }
             foreach (var cellID in iGridView.GridHandler.FindAdjacentCells(CellBase))
             {
                 var id = $"{cellID.Row}{cellID.Col}";
@@ -355,6 +365,18 @@ namespace Features.GridGeneration.Scripts
             }
         }
 
+        // public void Lift(bool isLift)
+        // {
+        //     if (isLift)
+        //     {
+        //         transform.DOLocalMoveY(.4f, .1f).SetEase(Ease.Linear);
+        //     }
+        //     else
+        //     {
+        //         transform.DOLocalMoveY(0f, .1f).SetEase(Ease.Linear);
+        //     }
+        //    
+        // }
         public virtual void OnPointerDown(PointerEventData eventData)
         {
             if (IsTouch)
