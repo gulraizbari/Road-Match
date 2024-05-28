@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour,ISFighter
         player = _player;
         _animator.myFighter = this;
         power=health = _health;
-        
+        UpdateLevel(power);
         Child.localRotation = Quaternion.Euler(new Vector3(0,150,0));
     }
     void Update()

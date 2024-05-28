@@ -2735,7 +2735,7 @@ MonoBehaviour:
       Data: 51|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 1
