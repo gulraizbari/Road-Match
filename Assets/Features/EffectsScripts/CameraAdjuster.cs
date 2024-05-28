@@ -1,4 +1,5 @@
 using Features.GridGeneration.Scripts;
+using Lean.Touch;
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
@@ -6,7 +7,7 @@ public class CameraAdjuster : MonoBehaviour
 {
     public Camera orthoCamera;
     public float padding = 1.0f; // Padding around the grid
-
+    public LeanDragCamera DragCamera;
     private void Awake()
     {
         if (!orthoCamera) orthoCamera = GetComponent<Camera>();
@@ -21,17 +22,20 @@ public class CameraAdjuster : MonoBehaviour
             return;
         }
 
-        // Find the most left and most right cells
         float minX = float.MaxValue;
         float maxX = float.MinValue;
+        float minY = float.MaxValue;
+        float maxY = float.MinValue;;
 
         foreach (var cell in grid)
         {
-            if (cell == null) continue;
+            if (cell == null || cell.Empty) continue;
             Vector3 position = cell.Position;
 
             if (position.x < minX) minX = position.x;
             if (position.x > maxX) maxX = position.x;
+            if (position.y < minY) minY = position.y;
+            if (position.y > maxY) maxY = position.y;
         }
 
         // Calculate the width of the grid in world space

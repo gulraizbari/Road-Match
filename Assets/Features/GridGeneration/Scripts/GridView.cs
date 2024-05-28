@@ -98,7 +98,6 @@ namespace Features.GridGeneration.Scripts
                 for (var col = 0; col < levelData.Height; col++)
                 {
                     var _tile = Instantiate(_gridViewReferences._prefabTile, transform);
-                   
                     _tile.gameObject.SetActive(false);
                     _tile.TileState = TileStates.NotWalkable;
                     tilesGrid[row, col] = _tile;
@@ -137,7 +136,7 @@ namespace Features.GridGeneration.Scripts
                                     enemy.MyTile = _tile;
                                     _tile.SetNonFlipAble(enemy.gameObject,Vector3.one);
                                     _tile._Enemy = enemy;
-                                    enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth);
+                                    enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth,levelData.IsEnemy);
                                     enemy._playerController = _gridViewReferences.playerController;
                                 }
                             }
@@ -159,6 +158,10 @@ namespace Features.GridGeneration.Scripts
                                 _gridViewReferences.player.Init(new Vector3(tilePosition.x, 1, tilePosition.z), PlayerTile);
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this, _gridViewReferences.player,
                                     _gridViewReferences.playerController);
+                                if (levelData.IsEnemy)
+                                {
+                                    _gridViewReferences.player._counter.gameObject.SetActive(true);
+                                }
                             }
                             else
                             {
@@ -194,7 +197,8 @@ namespace Features.GridGeneration.Scripts
                             break;
                         }
                         case TileType.Boosters:
-                          
+                        {
+                            
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
                             if (cellData.typeOfCollectableItems == CollectableItems.Key)
@@ -224,6 +228,23 @@ namespace Features.GridGeneration.Scripts
                                }
                            }
                             break;
+                        }
+                        case TileType.PowerUp:
+                        {
+                            _tile.SetTransform(tilePosition, 180);
+                            _tile.SetID(row, col, grid[row, col]);
+                            _tiles.Add($"{row}{col}", _tile);
+                            _tile.TileState = TileStates.Walkable;
+                            _tile.gameObject.SetActive(true);
+                            var powerUp = Instantiate(_gridViewReferences.powerUp);
+                            powerUp.UpdateLvl(cellData.powerUPLVL);
+                            tilePosition.y = .8f;
+                            powerUp.transform.position = tilePosition;
+                            _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
+                            break;
+                        }
+                          
+                            
                     }
                 }
             }

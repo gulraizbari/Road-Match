@@ -18,6 +18,7 @@ public class GridViewReferences : MonoBehaviour
     [BoxGroup("References")] public TutorialManager tutorialManager;
     [BoxGroup("References")] public TextMeshProUGUI movesText;
     [BoxGroup("References")] public Enemy enemy;
+    [BoxGroup("References")] public PowerUp powerUp;
     [BoxGroup("References/Values")] public int moves;
    
 

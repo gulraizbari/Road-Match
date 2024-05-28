@@ -15345,10 +15345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gate: {fileID: 0}
   _slogans:
-  - '"Find the Path to Glory"'
-  - '"Claim the Throne of Triumph" '
-  - '"Seek the Road to Victory"'
-  - '"Journey to Eternal Honor"'
+  - '"Get The Crown"'
   qouateColor: {r: 0.07186722, g: 0.4447395, b: 0.8962264, a: 1}
   _sloganText: {fileID: 1507096579}
   _goalView: {fileID: 123614379}
@@ -15764,7 +15761,6 @@ GameObject:
   - component: {fileID: 1145726624}
   - component: {fileID: 1145726628}
   - component: {fileID: 1145726630}
-  - component: {fileID: 1145726629}
   - component: {fileID: 1145726631}
   m_Layer: 0
   m_Name: Main Camera
@@ -15886,21 +15882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orthoCamera: {fileID: 1145726626}
   padding: 2.6
---- !u!114 &1145726629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145726623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21ca717346ff943d7bad04fa22f03afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minClampZ: 0
-  maxClampZ: -44
-  leanDragCamera: {fileID: 1145726630}
+  DragCamera: {fileID: 1145726630}
 --- !u!114 &1145726630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15993,6 +15975,7 @@ MonoBehaviour:
   tutorialManager: {fileID: 1096717854}
   movesText: {fileID: 1613254681}
   enemy: {fileID: 2161089880569803616, guid: 7a169fa2c9b8945dd8e0d4342e5514dd, type: 3}
+  powerUp: {fileID: 3757473051195266659, guid: 0f09ba90c2de14f6db5dd4e762f77470, type: 3}
   moves: 0
 --- !u!4 &1150429824
 Transform:
@@ -16904,38 +16887,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels:
   - {fileID: 11400000, guid: 255dfb2d13c92405eb1961e494b25149, type: 2}
-  - {fileID: 11400000, guid: 5a1c8783441c04f59b1913d176246a8f, type: 2}
-  - {fileID: 11400000, guid: bc01b934da49d4b2ca26d342bf89c7d3, type: 2}
-  - {fileID: 11400000, guid: f8867f5bbdf1b72418e4402141918c63, type: 2}
-  - {fileID: 11400000, guid: dc3f962acf60a4a53b8f9c72bf8e521b, type: 2}
-  - {fileID: 11400000, guid: 1c4a7773ffd8645d69687a14730ac997, type: 2}
-  - {fileID: 11400000, guid: 28733ad7867f3451dacd951c50433828, type: 2}
-  - {fileID: 11400000, guid: 61d0f27585e224a4dbf14e4059ee78ad, type: 2}
-  - {fileID: 11400000, guid: 4e69eced5cbc745db8940465ad6df534, type: 2}
-  - {fileID: 11400000, guid: 794b86b4800f745c79a60ec447159719, type: 2}
-  - {fileID: 11400000, guid: 81fc99620f5c540b6abea33672382bde, type: 2}
-  - {fileID: 11400000, guid: b7a41ce0d119a4b2da056853bedb4df4, type: 2}
-  - {fileID: 11400000, guid: a3f528c9cc12241df980a986bbac0664, type: 2}
-  - {fileID: 11400000, guid: c3ff7acc73f284f339a329705ac32f5a, type: 2}
-  - {fileID: 11400000, guid: 346ef61cd35a34400bba6da75e493308, type: 2}
-  - {fileID: 11400000, guid: bfb72f7fa66da42b2be50da7c5320995, type: 2}
-  - {fileID: 11400000, guid: 649cb56b97c1046e1939685b6bd47465, type: 2}
-  - {fileID: 11400000, guid: 110d9aa9646e246e9abc2182643ed090, type: 2}
-  - {fileID: 11400000, guid: e95599d7b7aa64e67a71a854ee0ec800, type: 2}
-  - {fileID: 11400000, guid: cd320e4f99b8b4f149bf156218b88d04, type: 2}
-  - {fileID: 11400000, guid: 0ceb74922f5a74239ac14b6f0f64ebc7, type: 2}
-  - {fileID: 11400000, guid: 0ef1b19cbe5454bb281b021831ec586d, type: 2}
-  - {fileID: 11400000, guid: eafa0ea85caeb4c459fea64b4052f864, type: 2}
-  - {fileID: 11400000, guid: 107ef2c18b0894e5c9a209883bbc98be, type: 2}
-  - {fileID: 11400000, guid: f545f236c73654e5b8e620e84454e043, type: 2}
-  - {fileID: 11400000, guid: 38a688ad5497146b2bb0dd1ac692a50a, type: 2}
-  - {fileID: 11400000, guid: 039a56610c6a14005a3457503a984146, type: 2}
+  - {fileID: 11400000, guid: ccea839ad9b4b493284eb187faab622a, type: 2}
+  - {fileID: 11400000, guid: 916912eb15e8f49409f19c9e39b7ba94, type: 2}
+  - {fileID: 11400000, guid: b45d9fdcddd2a4ac3aa8a24102bd2502, type: 2}
+  - {fileID: 11400000, guid: 551bf82f9a0134240b63cd5292227dcd, type: 2}
+  - {fileID: 11400000, guid: 090f8e325947340b5b092d80f53029b3, type: 2}
+  - {fileID: 11400000, guid: a37e12f6de9cc45a3b237784eb9013d9, type: 2}
+  - {fileID: 11400000, guid: bd36bc495385e4f20aa01080328b109c, type: 2}
+  - {fileID: 11400000, guid: 5f7db99161a604ffa9226d10f6524b4c, type: 2}
+  - {fileID: 11400000, guid: fbe72d4e05f10440bbc2e45a9cedb1e1, type: 2}
+  - {fileID: 11400000, guid: c2047f2d68b214e56953d54fc0fc7d64, type: 2}
+  - {fileID: 11400000, guid: 2318a5af6b2f24499b7b3ba9b11d8f3f, type: 2}
+  - {fileID: 11400000, guid: 131fec31cf2734c79ba1809bf6758c10, type: 2}
+  - {fileID: 11400000, guid: 59efcd8d675074b738310bf98401f32a, type: 2}
+  - {fileID: 11400000, guid: 5ead1972cacfd444da8620e335c0e19c, type: 2}
+  - {fileID: 11400000, guid: 26beac3830a5f4cba91bbe1891347ffa, type: 2}
+  - {fileID: 11400000, guid: cced63f451c05470599eee67448db91c, type: 2}
+  - {fileID: 11400000, guid: 7a105deac00bc48509b8f04f8f594281, type: 2}
+  - {fileID: 11400000, guid: c44b3b576e9fd4222a62e5b281ad4a6e, type: 2}
+  - {fileID: 11400000, guid: 939f2ed09c94d4d31a9c34475c2f6aa7, type: 2}
+  - {fileID: 11400000, guid: e226c4b384c2845b6a27416aa592f53e, type: 2}
+  - {fileID: 11400000, guid: f989a45ff611c4c7f87616d736b4c196, type: 2}
+  - {fileID: 11400000, guid: 77bad74a2f80a474da4aed4184978685, type: 2}
+  - {fileID: 11400000, guid: 08b705f1bfee04069bd07d82cdf4c47b, type: 2}
+  - {fileID: 11400000, guid: 1bfc82ae425b14e758521de567633b72, type: 2}
+  - {fileID: 11400000, guid: 9ffa27b5a3e0f412fa6df623da92900e, type: 2}
+  - {fileID: 11400000, guid: a161ee8cb09d645cd817caa8899781f0, type: 2}
+  - {fileID: 11400000, guid: 7b28c4060c8004f2996d47b63b4fd0f5, type: 2}
+  - {fileID: 11400000, guid: f73965556c5e64995ad6a10c0fe8d080, type: 2}
+  - {fileID: 11400000, guid: b632bc9edb118489a922a57883dc8052, type: 2}
+  - {fileID: 11400000, guid: fce65083ca25e4cdc8f19818bc040119, type: 2}
   nextButton: {fileID: 162144980}
   dumynextButton: {fileID: 2023480489}
   resetButton: {fileID: 399078811}
   reloadButton: {fileID: 56685563}
-  isTesting: 0
-  testingLvlNumber: 1
+  isTesting: 1
+  testingLvlNumber: 30
 --- !u!4 &1639253927
 Transform:
   m_ObjectHideFlags: 0
@@ -17572,6 +17559,7 @@ MonoBehaviour:
   ad: []
   cell:
     IsWalkable: 0
+    Empty: 0
   _levelData: {fileID: 0}
   Adjuster: {fileID: 1145726628}
   lvlText: {fileID: 1011047383}
@@ -17647,6 +17635,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2090353441}
   - component: {fileID: 2090353442}
+  - component: {fileID: 2090353443}
+  - component: {fileID: 2090353444}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -17690,6 +17680,36 @@ MonoBehaviour:
   lastTile: {fileID: 0}
   health: 3
   _counter: {fileID: 1162384419}
+--- !u!136 &2090353443
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090353440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.582499
+  m_Height: 2.456911
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.72845554, z: -0.42778313}
+--- !u!54 &2090353444
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090353440}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2120291573
 GameObject:
   m_ObjectHideFlags: 0
@@ -23459,6 +23479,18 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 423db215406cb4cbe90eb61b6cb8946b,
         type: 2}
     - target: {fileID: 4232047513188678981, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -715310598988334478, guid: 423db215406cb4cbe90eb61b6cb8946b,
+        type: 2}
+    - target: {fileID: 4232047513228994717, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 423db215406cb4cbe90eb61b6cb8946b,
+        type: 2}
+    - target: {fileID: 4232047513228994717, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
         type: 3}
       propertyPath: m_sharedMaterial
       value: 

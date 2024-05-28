@@ -6,6 +6,7 @@ using Features.CharacterMovement.Scripts;
 using Features.GridGeneration.Scripts;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Sablo.Gameplay.Movement
@@ -15,8 +16,11 @@ namespace Sablo.Gameplay.Movement
 
        
         public int health=1;
+        public int hitPower = 2;
         public CharacterLevel _counter;
-        public int HitPower { get=>PlayerLevel; set=>PlayerLevel=value; }
+        public int HitPower { get=>hitPower;
+            set => hitPower = value;
+        }
         public Transform _Transform => transform;
         public int Health { get=>health; set=>health=value; }
         public void OnFoundingCollectible(Collectable collectable,ITile tile)
@@ -130,6 +134,7 @@ namespace Sablo.Gameplay.Movement
                 print("Next is Gate");
                 StopCoroutine(currentCoroutine);
                 _playerAnimator.WalkAnimation(false);
+                Child.localRotation=quaternion.identity;
                 Jump(gateTile.transform.position);
             }
         }
@@ -184,6 +189,7 @@ namespace Sablo.Gameplay.Movement
             }
             else
             {
+                _counter.gameObject.SetActive(false);
                 JumpEffect(position);
             }
         }
@@ -193,9 +199,19 @@ namespace Sablo.Gameplay.Movement
 
         public int GiveDamage(int value)
         {
-            Health -= value;
-            if (Health<=0) _playerAnimator.DeathAnim();;
-            return Health;
+            int resultValue=0;
+            if (value>HitPower)
+            {
+                _playerAnimator.DeathAnim();
+                resultValue = 0;
+            }
+            else
+            {
+                resultValue = HitPower;
+            }
+            //Health -= value;
+            //if (Health<=0) 
+            return resultValue;
         }
 
         public void Attack(ISFighter fighter)
@@ -221,7 +237,7 @@ namespace Sablo.Gameplay.Movement
             HitPower += value;
             _counter.UpdateLevelText(HitPower);
         }
-        public  int PlayerLevel { get=>PlayerPrefs.GetInt("PL",2); set=>PlayerPrefs.SetInt("PL",value); }
+        //public  int PlayerLevel { get=>PlayerPrefs.GetInt("PL",2); set=>PlayerPrefs.SetInt("PL",value); }
 
     }
 }

@@ -79,6 +79,12 @@ namespace Lean.Touch
 			zMax = Max;
 			zMin = Min;
 		}
+		public void SetCamera(float pos,float Max,float Min)
+		{
+			transform.DOMoveZ(pos, .25f).SetEase(Ease.Linear);
+			zMax = Max;
+			zMin = Min;
+		}
 		/// <summary>If you've set Use to ManuallyAddedFingers, then you can call this method to manually remove a finger.</summary>
 		public void RemoveFinger(LeanFinger finger)
 		{
