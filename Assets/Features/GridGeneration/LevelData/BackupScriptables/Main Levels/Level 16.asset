@@ -3011,7 +3011,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 7
+      Data: 2
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
