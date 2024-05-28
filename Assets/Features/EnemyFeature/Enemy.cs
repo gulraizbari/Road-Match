@@ -19,13 +19,17 @@ public class Enemy : MonoBehaviour,ISFighter
     Transform player;
     public PlayerController _playerController;
     Transform Child => _animator.transform;
-    public void Init(Transform _player,int _health)
+    public void Init(Transform _player,int _health,bool isCounter)
     {
         player = _player;
         _animator.myFighter = this;
         power=health = _health;
         UpdateLevel(power);
         Child.localRotation = Quaternion.Euler(new Vector3(0,150,0));
+        if (isCounter)
+        {
+            _counter.gameObject.SetActive(true);
+        }
     }
     void Update()
     {

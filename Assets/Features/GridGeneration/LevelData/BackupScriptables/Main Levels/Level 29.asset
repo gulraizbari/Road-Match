@@ -5716,3 +5716,6 @@ MonoBehaviour:
   moveCamera: 1
   maxZ: -30
   minZ: -52
+  customPadding: 0
+  customPaddingValue: 2.6
+  IsEnemy: 1

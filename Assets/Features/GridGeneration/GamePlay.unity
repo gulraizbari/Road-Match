@@ -15345,10 +15345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gate: {fileID: 0}
   _slogans:
-  - '"Find the Path to Glory"'
-  - '"Claim the Throne of Triumph" '
-  - '"Seek the Road to Victory"'
-  - '"Journey to Eternal Honor"'
+  - '"Get The Crown"'
   qouateColor: {r: 0.07186722, g: 0.4447395, b: 0.8962264, a: 1}
   _sloganText: {fileID: 1507096579}
   _goalView: {fileID: 123614379}
@@ -16919,12 +16916,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7b28c4060c8004f2996d47b63b4fd0f5, type: 2}
   - {fileID: 11400000, guid: f73965556c5e64995ad6a10c0fe8d080, type: 2}
   - {fileID: 11400000, guid: b632bc9edb118489a922a57883dc8052, type: 2}
+  - {fileID: 11400000, guid: fce65083ca25e4cdc8f19818bc040119, type: 2}
   nextButton: {fileID: 162144980}
   dumynextButton: {fileID: 2023480489}
   resetButton: {fileID: 399078811}
   reloadButton: {fileID: 56685563}
-  isTesting: 0
-  testingLvlNumber: 27
+  isTesting: 1
+  testingLvlNumber: 30
 --- !u!4 &1639253927
 Transform:
   m_ObjectHideFlags: 0

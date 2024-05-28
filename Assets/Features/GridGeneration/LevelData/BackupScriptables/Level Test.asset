@@ -60,18 +60,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -105,18 +114,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -150,18 +168,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 5
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -170,13 +197,13 @@ MonoBehaviour:
       Data: 4|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 4
+      Data: 5
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfHurdle
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfItem
       Entry: 3
       Data: 2
@@ -195,18 +222,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 1
       Data: 53
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 3
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -240,18 +276,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -285,18 +330,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -330,18 +384,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -375,18 +438,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -420,18 +492,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -465,18 +546,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -485,7 +575,7 @@ MonoBehaviour:
       Data: 11|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 3
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -510,18 +600,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -555,18 +654,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -600,18 +708,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -645,18 +762,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -690,18 +816,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -735,18 +870,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: true
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -780,18 +924,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -825,18 +978,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -870,18 +1032,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -915,18 +1086,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -960,18 +1140,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: true
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1005,18 +1194,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1050,18 +1248,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1095,18 +1302,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 1
       Data: 20
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1140,18 +1356,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1185,18 +1410,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1230,18 +1464,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 5
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1275,18 +1518,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1320,18 +1572,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1365,18 +1626,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1410,18 +1680,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1455,18 +1734,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1500,18 +1788,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1545,18 +1842,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1590,18 +1896,27 @@ MonoBehaviour:
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
+    - Name: typeOfBooster
+      Entry: 3
+      Data: 0
+    - Name: typeOfPowerUps
+      Entry: 3
+      Data: 0
     - Name: linkedID
       Entry: 6
       Data: 
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: CanOpen
+    - Name: walkableGate
       Entry: 5
       Data: false
-    - Name: KeyRequired
-      Entry: 5
-      Data: false
+    - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1617,3 +1932,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f5f258b570a4e4a29ae7ac16100a2be3, type: 2}
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}
+  movesMultiplier: 1
+  moveCamera: 0
+  maxZ: 0
+  minZ: 0
+  customPadding: 0
+  customPaddingValue: 2.6
+  IsEnemy: 0

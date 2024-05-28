@@ -136,7 +136,7 @@ namespace Features.GridGeneration.Scripts
                                     enemy.MyTile = _tile;
                                     _tile.SetNonFlipAble(enemy.gameObject,Vector3.one);
                                     _tile._Enemy = enemy;
-                                    enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth);
+                                    enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth,levelData.IsEnemy);
                                     enemy._playerController = _gridViewReferences.playerController;
                                 }
                             }
@@ -158,6 +158,10 @@ namespace Features.GridGeneration.Scripts
                                 _gridViewReferences.player.Init(new Vector3(tilePosition.x, 1, tilePosition.z), PlayerTile);
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this, _gridViewReferences.player,
                                     _gridViewReferences.playerController);
+                                if (levelData.IsEnemy)
+                                {
+                                    _gridViewReferences.player._counter.gameObject.SetActive(true);
+                                }
                             }
                             else
                             {
