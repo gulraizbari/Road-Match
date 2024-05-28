@@ -2741,7 +2741,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfHurdle
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfItem
       Entry: 3
       Data: 0
@@ -2777,7 +2777,7 @@ MonoBehaviour:
       Data: false
     - Name: enemyHealth
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: powerUPLVL
       Entry: 3
       Data: 1
@@ -3173,7 +3173,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfHurdle
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfItem
       Entry: 3
       Data: 0
