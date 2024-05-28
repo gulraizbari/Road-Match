@@ -276,7 +276,7 @@ namespace Features.GridGeneration.Scripts
 
         public UIController UIHandler { get; set; }
 
-        private void DisableTile(CellData data, Tile tile)
+        private void DisableTile(CellData data, Tile _tile)
         {
             Item item = new Item();
             if (data.typeOfItem == ItemType.Fruits)
@@ -296,8 +296,8 @@ namespace Features.GridGeneration.Scripts
                 item = Instantiate(FindItem(data.typeOfItem, data.typeOfRandomObjects));
             }
 
-
-            tile.AssignPlacement(item);
+            // _tile.Flip(false,false);
+           _tile.AssignPlacement(item);
         }
 
       
