@@ -17,6 +17,7 @@ namespace Features.GridGeneration.Scripts
         public int row;
         public int column;
         public bool isTarget;
+        
 
         public void SetCollectable(Collectable collectable)
         {

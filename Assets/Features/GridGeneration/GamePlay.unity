@@ -17561,6 +17561,7 @@ MonoBehaviour:
   ad: []
   cell:
     IsWalkable: 0
+    Empty: 0
   _levelData: {fileID: 0}
   Adjuster: {fileID: 1145726628}
   lvlText: {fileID: 1011047383}

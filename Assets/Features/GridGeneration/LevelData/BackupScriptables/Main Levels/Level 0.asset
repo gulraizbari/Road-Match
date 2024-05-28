@@ -78,6 +78,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -127,6 +130,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -180,6 +186,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -229,6 +238,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -282,6 +294,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -331,6 +346,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -384,6 +402,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -433,6 +454,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -486,6 +510,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -535,6 +562,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -588,6 +618,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -637,6 +670,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -690,6 +726,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -739,6 +778,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -792,6 +834,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -841,6 +886,9 @@ MonoBehaviour:
       Entry: 5
       Data: true
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -894,6 +942,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -943,6 +994,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -996,6 +1050,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1045,6 +1102,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1098,6 +1158,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1147,6 +1210,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1200,6 +1266,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1249,6 +1318,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1302,6 +1374,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1351,6 +1426,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1404,6 +1482,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1453,6 +1534,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1506,6 +1590,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1555,6 +1642,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1608,6 +1698,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1657,6 +1750,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1710,6 +1806,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1759,6 +1858,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: enemyHealth
+      Entry: 3
+      Data: 0
+    - Name: powerUPLVL
       Entry: 3
       Data: 0
     - Name: 
@@ -1812,6 +1914,9 @@ MonoBehaviour:
     - Name: enemyHealth
       Entry: 3
       Data: 0
+    - Name: powerUPLVL
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1829,3 +1934,8 @@ MonoBehaviour:
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}
   movesMultiplier: 3
+  moveCamera: 0
+  maxZ: 0
+  minZ: 0
+  customPadding: 1
+  customPaddingValue: 4.6

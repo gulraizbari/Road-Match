@@ -98,7 +98,6 @@ namespace Features.GridGeneration.Scripts
                 for (var col = 0; col < levelData.Height; col++)
                 {
                     var _tile = Instantiate(_gridViewReferences._prefabTile, transform);
-                   
                     _tile.gameObject.SetActive(false);
                     _tile.TileState = TileStates.NotWalkable;
                     tilesGrid[row, col] = _tile;
