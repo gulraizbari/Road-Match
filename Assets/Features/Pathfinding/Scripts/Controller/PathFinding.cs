@@ -21,7 +21,7 @@ namespace Sablo.Gameplay.PathFinding
             {
                 target.isTarget = true;
                 _foundPaths = FindPath(start, target);
-                
+                player.PlayerHandler.CantRun = true;
                 player.MoveOnPath(_foundPaths);
             }
             else
