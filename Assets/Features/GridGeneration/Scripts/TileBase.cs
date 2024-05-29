@@ -14,10 +14,11 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 
 namespace Features.GridGeneration.Scripts
 {
-    public class TileBase : MonoBehaviour, ITile,IPointerDownHandler
+    public class TileBase : MonoBehaviour, ITile,IPointerDownHandler,IPointerUpHandler,IDragHandler,IEndDragHandler
     {
         [BoxGroup("Reference"), SerializeField]
         protected string _id;
@@ -59,7 +60,7 @@ namespace Features.GridGeneration.Scripts
         protected Tile MyTile;
         public bool istutorial;
         public bool ignore;
-    
+       [FormerlySerializedAs("isDrag")] public bool canClick;
         protected IPlayer _player;
         public ParticleSystem MergeParticle { get; set; }
         Item ITile.CurrentItem => _item;
@@ -379,31 +380,32 @@ namespace Features.GridGeneration.Scripts
         // }
         public virtual void OnPointerDown(PointerEventData eventData)
         {
-            if (IsTouch)
-            {
-                if (!GameController.IsState(GameStates.Play))return;
-                if (_tileStates == TileStates.FlipAble)
-                {
-                    if (!_canTouch)
-                    {
-                        _canTouch = true;
-                        SoundManager.Instance.PlayTileSelect(1);
-                        hapticController.PlayHaptic();
-                        iGridView.UpdateMoves(-1);
-                        Flip(false, true);
-                    }
-                    if (istutorial)
-                    {
-                        TutorialManager.OnTutorialAction();
-                    }
-                }
-                else
-                {
-                    print($"{TileState}");
-                }
-          
-               
-            }
+            canClick = true;
+            // if (IsTouch)
+            // {
+            //     if (!GameController.IsState(GameStates.Play))return;
+            //     if (_tileStates == TileStates.FlipAble)
+            //     {
+            //         if (!_canTouch)
+            //         {
+            //             _canTouch = true;
+            //             SoundManager.Instance.PlayTileSelect(1);
+            //             hapticController.PlayHaptic();
+            //             iGridView.UpdateMoves(-1);
+            //             Flip(false, true);
+            //         }
+            //         if (istutorial)
+            //         {
+            //             TutorialManager.OnTutorialAction();
+            //         }
+            //     }
+            //     else
+            //     {
+            //         print($"{TileState}");
+            //     }
+
+
+            // }
         }
 
        public void SetMeshMaterialColorProperty(Color color)
@@ -417,6 +419,46 @@ namespace Features.GridGeneration.Scripts
         public void ChangeColor(Color color)
         {
             _renderer.material.DOColor(color, Configs.GameConfig.playerYTargetOnTileMovingDuration);
+        }
+
+        public virtual void OnPointerUp(PointerEventData eventData)
+        {
+            if (!canClick)return;
+           
+            if (IsTouch)
+            {
+                if (!GameController.IsState(GameStates.Play)) return;
+                if (_tileStates == TileStates.FlipAble)
+                {
+                    if (!_canTouch)
+                    {
+                        _canTouch = true;
+                        SoundManager.Instance.PlayTileSelect(1);
+                        hapticController.PlayHaptic();
+                        iGridView.UpdateMoves(-1);
+                        Flip(false, true);
+                    }
+
+                    if (istutorial)
+                    {
+                        TutorialManager.OnTutorialAction();
+                    }
+                }
+                else
+                {
+                    print($"{TileState}");
+                }
+            }
+        }
+
+        public void OnDrag(PointerEventData eventData)
+        {
+            canClick = false;
+        }
+
+        public void OnEndDrag(PointerEventData eventData)
+        {
+            canClick = true;
         }
     }
 }

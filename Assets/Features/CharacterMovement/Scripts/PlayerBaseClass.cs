@@ -22,6 +22,8 @@ namespace Features.CharacterMovement.Scripts
         public List<Tile> pathToMove;
         public Tile lastTile;
         public IGridView GridViewHandler;
+        public Transform goldenKey;
+        public GameObject goldenParticle;
         public Transform Child => _playerAnimator.transform;
         public Tile CurrentTile
         {
@@ -69,11 +71,11 @@ namespace Features.CharacterMovement.Scripts
                 {
                     var target = Tile.transform.position;
                     target.y = .9f;
-                    playerGoalHandler.key.transform.position = collectable.transform.position;
+                    goldenKey.position = collectable.transform.position;
                     collectable.gameObject.SetActive(false);
-                    playerGoalHandler.key.gameObject.SetActive(true);
-                    playerGoalHandler.key.transform.transform.DORotate(new Vector3(0, 90, 0), .5f).SetEase(Ease.Linear);
-                    playerGoalHandler.key.transform.transform.DOJump(target,3, 1, .5f).SetEase(Ease.Linear).OnComplete((() =>
+                    goldenKey.gameObject.SetActive(true);
+                    goldenKey.transform.transform.DORotate(new Vector3(0, 90, 0), .5f).SetEase(Ease.Linear);
+                    goldenKey.transform.transform.DOJump(target,3, 1, .5f).SetEase(Ease.Linear).OnComplete((() =>
                     {
                         TweenCallback callback = (() =>
                         {
@@ -81,15 +83,13 @@ namespace Features.CharacterMovement.Scripts
                             collectable.CheckTileLink(Tile);
                             collectable.isDone = true;
                             target.y += 1;
-                            playerGoalHandler.lockParticle.transform.position = target;
+                            goldenParticle.transform.position = target;
                             tile.IsTouch = true;
                             Destroy(collectable);
-                            //Tile.TileCollectible.gameObject.SetActive(false);
                             Destroy( Tile.TileCollectible.gameObject);
-                            playerGoalHandler.key.gameObject.SetActive(false);
-                           
                             SoundManager.Instance.PlayLock(1);
-                            playerGoalHandler.lockParticle.gameObject.SetActive(true);
+                            goldenParticle.SetActive(true);
+                            goldenKey.gameObject.SetActive(false);
 
                         });
                         DOVirtual.DelayedCall(.15f,callback);

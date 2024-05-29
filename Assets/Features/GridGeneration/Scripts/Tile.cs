@@ -88,6 +88,37 @@ namespace Features.GridGeneration.Scripts
         public override void OnPointerDown(PointerEventData eventData)
         {
             base.OnPointerDown(eventData);
+            // if (!IsTouch) return;
+            //
+            // if (!GameController.IsState(GameStates.Play))return;
+            // if (ignore)return;
+            // if (isTarget)return;
+            // if (_player is null)
+            // {
+            //     if(TileState != TileStates.Walkable )return;
+            //     SoundManager.Instance.PlayTileSelect(.5f);
+            //     foreach (var data in iGridView.PathData)
+            //     {
+            //         if (data.Value.TileState == TileStates.Walkable)
+            //         {
+            //             data.Value.ChangeColor(Configs.GameConfig.TileOrignalColor); 
+            //            // data.Value.SetMeshMaterialColorProperty(Configs.GameConfig.TileOrignalColor);
+            //         }
+            //        
+            //         data.Value.transform.DOLocalMoveY(0, .01f).SetEase(Ease.Linear);
+            //     }
+            //     _playerController.AssignPath(this);
+            //     if (istutorial)
+            //     {
+            //         TutorialManager.OnTutorialAction();
+            //     }
+            // }
+        }
+
+        public override void OnPointerUp(PointerEventData eventData)
+        {
+            base.OnPointerUp(eventData);
+            if (!canClick)return;
             if (!IsTouch) return;
             
             if (!GameController.IsState(GameStates.Play))return;
@@ -102,7 +133,7 @@ namespace Features.GridGeneration.Scripts
                     if (data.Value.TileState == TileStates.Walkable)
                     {
                         data.Value.ChangeColor(Configs.GameConfig.TileOrignalColor); 
-                       // data.Value.SetMeshMaterialColorProperty(Configs.GameConfig.TileOrignalColor);
+                        // data.Value.SetMeshMaterialColorProperty(Configs.GameConfig.TileOrignalColor);
                     }
                    
                     data.Value.transform.DOLocalMoveY(0, .01f).SetEase(Ease.Linear);

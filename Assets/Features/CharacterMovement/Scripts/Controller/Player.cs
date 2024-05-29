@@ -19,6 +19,8 @@ namespace Sablo.Gameplay.Movement
         public int health=1;
         public int hitPower = 2;
         public CharacterLevel _counter;
+       
+        
         public int HitPower { get=>hitPower;
             set => hitPower = value;
         }

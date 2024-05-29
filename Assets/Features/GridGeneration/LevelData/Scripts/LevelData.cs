@@ -87,7 +87,7 @@ public sealed class LevelData : SerializedScriptableObject
        [FoldoutGroup("LevelAttributes/Value")] [Switch]
        public bool moveCamera;
        [FoldoutGroup("LevelAttributes/Value")] [ShowIf("moveCamera")]
-       public float maxZ, minZ;
+       public float maxZ, minZ,minX,maxX;
        [Space]
        [FoldoutGroup("LevelAttributes/Value")]  [Switch]
        public bool customPadding;
