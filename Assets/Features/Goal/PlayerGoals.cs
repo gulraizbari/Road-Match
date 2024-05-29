@@ -28,8 +28,9 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
     [BoxGroup("Reference"), SerializeField,]
     PlayerGoalView _goalView;
     public IGridView gridView;
-
-
+    public Transform key;
+    public GameObject lockParticle;
+    
   
 
     public void AddOrUpdateCollectible(CollectableItems item,BoosterType itemSubType, int count)

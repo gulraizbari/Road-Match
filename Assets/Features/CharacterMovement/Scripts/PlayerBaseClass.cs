@@ -49,9 +49,15 @@ namespace Features.CharacterMovement.Scripts
         protected void KeyCase(Collectable collectable, ITile tile)
         {
             playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,collectable.typeOfBooster,1);
-            collectable.gameObject.SetActive(false);
+            collectable.transform.SetParent(null);
+           // collectable.gameObject.SetActive(false);
+           if (collectable.typeOfBooster == BoosterType.Royal)
+           {
+               Destroy( collectable.gameObject);
+           }
             if (collectable.CollectibleID is null)
             {
+               
                 print("No Id");
                 collectable.isDone = true;
                 return;
@@ -59,18 +65,41 @@ namespace Features.CharacterMovement.Scripts
             else
             {
                 var Tile = GridViewHandler.GetTile(collectable.ReverseString(collectable.CollectibleID));
-                print(Tile.name);
                 if (Tile!=null)
                 {
-                    GridViewHandler.ChangeTileMaterial(Tile);
-                    collectable.CheckTileLink(Tile);
-                    collectable.isDone = true;
+                    var target = Tile.transform.position;
+                    target.y = .9f;
+                    playerGoalHandler.key.transform.position = collectable.transform.position;
+                    collectable.gameObject.SetActive(false);
+                    playerGoalHandler.key.gameObject.SetActive(true);
+                    playerGoalHandler.key.transform.transform.DORotate(new Vector3(0, 90, 0), .5f).SetEase(Ease.Linear);
+                    playerGoalHandler.key.transform.transform.DOJump(target,3, 1, .5f).SetEase(Ease.Linear).OnComplete((() =>
+                    {
+                        TweenCallback callback = (() =>
+                        {
+                            GridViewHandler.ChangeTileMaterial(Tile);
+                            collectable.CheckTileLink(Tile);
+                            collectable.isDone = true;
+                            target.y += 1;
+                            playerGoalHandler.lockParticle.transform.position = target;
+                            tile.IsTouch = true;
+                            Destroy(collectable);
+                            //Tile.TileCollectible.gameObject.SetActive(false);
+                            Destroy( Tile.TileCollectible.gameObject);
+                            playerGoalHandler.key.gameObject.SetActive(false);
+                           
+                            SoundManager.Instance.PlayLock(1);
+                            playerGoalHandler.lockParticle.gameObject.SetActive(true);
+
+                        });
+                        DOVirtual.DelayedCall(.15f,callback);
+
+                    }));
+                   
                 }
             }
-
-            tile.IsTouch = true;
-            Destroy(collectable);
-           
+            
+           // Destroy( collectable);;
         }
         protected void JumpEffect(Vector3 position)
         {
@@ -85,6 +114,7 @@ namespace Features.CharacterMovement.Scripts
                 transform.DORotate(configs.playerRotationOnJumpComplete, configs.playerRotationOnJumpCompleteDuration).SetEase(Ease.Linear).OnComplete(() =>
                 {
                     _playerAnimator.WinAnimation();
+                   // SoundManager.Instance.PlaySue(1);
                 });
                 UIController.LevelComplete();
             }));

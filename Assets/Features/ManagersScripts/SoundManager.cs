@@ -26,6 +26,10 @@ public class SoundManager : MonoBehaviour
     {
         PlayShot(0,volume);
     }
+    public void PlayLock(float volume)
+    {
+        PlayShot(14,volume);
+    }
     public void Star(float volume)
     {
         PlayShot(12,volume);

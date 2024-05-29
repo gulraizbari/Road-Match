@@ -108,7 +108,11 @@ namespace Features.GridGeneration.Scripts
                     {
                         case TileType.Disable:
                         {
-                            _tile.Flip(false,false);
+                            if (isTesting)
+                            {
+                                _tile.Flip(false,false);
+                            }
+                           
                             _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
                                 _gridViewReferences.playerController);
                             _tile.SetTransform(tilePosition, 0);
@@ -228,6 +232,18 @@ namespace Features.GridGeneration.Scripts
                                    _tile.SetCollectable(collectablePrefab);
                                }
                            }
+                            else if (cellData.typeOfCollectableItems == CollectableItems.Gate)
+                            {
+                                _tile.SetTransform(tilePosition, 0);
+                                _tile.TileState = TileStates.ChestBox;
+                            //    Goals.AddOrUpdateGoals(CollectableItems.ChestBox,cellData.typeOfBooster,1);
+                                _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
+                                if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable) )
+                                {
+                                    var collectablePrefab = Instantiate(collectable);
+                                    _tile.SetCollectable(collectablePrefab);
+                                }
+                            }
                             break;
                         }
                         case TileType.PowerUp:

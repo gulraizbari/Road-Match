@@ -137,7 +137,8 @@ public enum CollectableItems
     Hint,
     Weapon,
     Upgrade,
-    ChestBox
+    ChestBox,
+    Gate
 }
 
 public enum PowerUpTypes
