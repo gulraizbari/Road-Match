@@ -301,7 +301,7 @@ namespace Features.GridGeneration.Scripts
                 item = Instantiate(FindItem(data.typeOfItem, data.typeOfRandomObjects));
             }
 
-            // _tile.Flip(false,false);
+            _tile.Flip(false,false);
            _tile.AssignPlacement(item);
         }
 
