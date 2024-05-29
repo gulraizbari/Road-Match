@@ -105,32 +105,72 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
 
     public bool TaskComplete { get; set; }
 
+    // private void CheckTasks(CollectableItems collectableItems)
+    // {
+    //     if (collectiblesOfPlayer.TryGetValue(collectableItems,out  int value))
+    //     {
+    //         if (tasksOfPlayer.TryGetValue(collectableItems,out PlayerTask task))
+    //         {
+    //             if (value==task.target)
+    //             {
+    //                 task.State = true;
+    //             }
+    //         }
+    //     }
+    //
+    //     TaskComplete = false;
+    //     foreach (var task in tasksOfPlayer)
+    //     {
+    //         if (task.Value.State)
+    //         {
+    //             TaskComplete = true;
+    //         }
+    //         else
+    //         {
+    //             TaskComplete = false;
+    //         }
+    //     }
+    //
+    //     if (TaskComplete)
+    //     {
+    //         if (isCage)
+    //         {
+    //             _cage.CageEffect();
+    //         }
+    //         _gate.isGate = true;
+    //         _gate.TileState = TileStates.Walkable;
+    //         gridView.ChangeTileMaterial(_gate);
+    //     }
+    //  //SetSlogan();   
+    // }
     private void CheckTasks(CollectableItems collectableItems)
     {
-        if (collectiblesOfPlayer.TryGetValue(collectableItems,out  int value))
+        // Check if the player has collected the required number of a specific item
+        if (collectiblesOfPlayer.TryGetValue(collectableItems, out int value))
         {
-            if (tasksOfPlayer.TryGetValue(collectableItems,out PlayerTask task))
+            if (tasksOfPlayer.TryGetValue(collectableItems, out PlayerTask task))
             {
-                if (value==task.target)
+                if (value == task.target)
                 {
                     task.State = true;
                 }
             }
         }
 
-        TaskComplete = false;
+        // Assume all tasks are complete initially
+        TaskComplete = true;
+    
+        // Check each task to see if any are incomplete
         foreach (var task in tasksOfPlayer)
         {
-            if (task.Value.State)
-            {
-                TaskComplete = true;
-            }
-            else
+            if (!task.Value.State)
             {
                 TaskComplete = false;
+                break; // Exit the loop early since we found an incomplete task
             }
         }
 
+        // If all tasks are complete, trigger the necessary effects
         if (TaskComplete)
         {
             if (isCage)
@@ -141,7 +181,7 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
             _gate.TileState = TileStates.Walkable;
             gridView.ChangeTileMaterial(_gate);
         }
-     //SetSlogan();   
+        // SetSlogan(); // Uncomment if needed
     }
 
     public void SetSlogan()

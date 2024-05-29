@@ -162,3 +162,8 @@ public enum BoosterType
    Royal,
 }
 
+public enum ToastMessages
+{
+    
+}
+
