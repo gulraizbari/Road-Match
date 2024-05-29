@@ -25,7 +25,7 @@ public class Splash : MonoBehaviour
          yield return new WaitForSeconds(updateDelay);
          loadingFill.fillAmount += .1f;
          var value = loadingFill.fillAmount * 100;
-         var ValueToInt = (int)(value);
+         var ValueToInt = (int)value;
          loadingText.SetText($"{ValueToInt}%");
          
       }
