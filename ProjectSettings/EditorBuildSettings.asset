@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Features/GridGeneration/GamePlay Duplicate.unity
+    guid: 30efeb29288994907b8429362d012dfa
   - enabled: 1
     path: Assets/Features/GridGeneration/GamePlay.unity
     guid: ed2755315e5844d879c909f03a21edd0

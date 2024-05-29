@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 850defe3f8ebf4ba39a8747ee23721be, type: 3}
-  m_Name: Level 14
+  m_Name: Level Enemy + Gate + Key 2
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -890,19 +890,19 @@ MonoBehaviour:
       Data: 16|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 4
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1289,7 +1289,7 @@ MonoBehaviour:
       Data: 23|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -1403,22 +1403,22 @@ MonoBehaviour:
       Data: 25|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 5
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -1517,7 +1517,7 @@ MonoBehaviour:
       Data: 27|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -1544,13 +1544,13 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfPowerUps
       Entry: 3
       Data: 0
     - Name: linkedID
       Entry: 1
-      Data: 
+      Data: 45
     - Name: IsPlayer
       Entry: 5
       Data: false
@@ -1859,13 +1859,13 @@ MonoBehaviour:
       Data: 33|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 4
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfHurdle
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfItem
       Entry: 3
       Data: 0
@@ -1904,7 +1904,7 @@ MonoBehaviour:
       Data: false
     - Name: enemyHealth
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: powerUPLVL
       Entry: 3
       Data: 0
@@ -2429,7 +2429,7 @@ MonoBehaviour:
       Data: 43|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -2543,22 +2543,22 @@ MonoBehaviour:
       Data: 45|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 4
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -3113,7 +3113,7 @@ MonoBehaviour:
       Data: 55|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 1
@@ -3137,10 +3137,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfCollectableItems
       Entry: 3
-      Data: 1
+      Data: 5
     - Name: typeOfBooster
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfPowerUps
       Entry: 3
       Data: 0
@@ -4039,4 +4039,4 @@ MonoBehaviour:
   minZ: 0
   customPadding: 0
   customPaddingValue: 2.6
-  IsEnemy: 0
+  IsEnemy: 1
