@@ -164,6 +164,8 @@ public enum BoosterType
 
 public enum ToastMessages
 {
-    
+    KeyForCrown,
+    GetCrown,
+    KeyToUnlockGate,
 }
 

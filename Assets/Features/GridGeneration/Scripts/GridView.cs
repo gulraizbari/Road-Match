@@ -35,6 +35,7 @@ namespace Features.GridGeneration.Scripts
         Tile tile;
         public Dictionary<string, Tile> PathData => _tiles;
         public IGridGenerator GridHandler => _gridGenerator;
+        public bool isTesting;
         public Tile GetTile(string id)
         {
            
@@ -107,7 +108,7 @@ namespace Features.GridGeneration.Scripts
                     {
                         case TileType.Disable:
                         {
-                            
+                            _tile.Flip(false,false);
                             _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
                                 _gridViewReferences.playerController);
                             _tile.SetTransform(tilePosition, 0);
