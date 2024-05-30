@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Features.MergeMechanic.Scripts.Interface;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
@@ -22,7 +24,7 @@ public class MergeController : MonoBehaviour, IMergeController
     bool WithSameSubType => selectedTile1.CurrentItem.GetItemObject().ToString() ==
                             selectedTile2.CurrentItem.GetItemObject().ToString();
 
-    public void SelectTile(ITile tile)
+    public  void SelectTile(ITile tile)
     {
         if (oldData.Count > 0)
         {
@@ -65,6 +67,8 @@ public class MergeController : MonoBehaviour, IMergeController
         var distance = Vector3.Distance(_selectedTransform.position, _newSelectedTransform.position);
         var delayTime = Mathf.Clamp(distance * 0.1f, 0.0f, .1f);
         selectedTile1.MergeParticle = selectedTile2.MergeParticle = mergeParticle;
+       // selectedTile1.CurrentItem.particle.SetActive(true);
+      //  selectedTile2.CurrentItem.particle.SetActive(true);
         selectedTile1.OnMerge(centerPoint, delayTime);
         selectedTile2.OnMerge(centerPoint, delayTime);
         selectedTile1 = null;

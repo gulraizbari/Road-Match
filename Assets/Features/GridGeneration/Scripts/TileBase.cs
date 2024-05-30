@@ -14,14 +14,17 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 
 namespace Features.GridGeneration.Scripts
 {
-    public class TileBase : MonoBehaviour, ITile,IPointerDownHandler
+    public class TileBase : MonoBehaviour, ITile,IPointerDownHandler,IPointerUpHandler,IDragHandler,IEndDragHandler
     {
         [BoxGroup("Reference"), SerializeField]
         protected string _id;
 
+        [BoxGroup("Reference"), SerializeField]
+        ParticleSystem flipParticle;
         [BoxGroup("Reference"), SerializeField]
         protected Renderer _renderer;
 
@@ -29,10 +32,6 @@ namespace Features.GridGeneration.Scripts
        protected Collectable _collectable;
         [BoxGroup("Reference"), SerializeField]
         Transform _itemPlacement;
-
-        [BoxGroup("Reference"), SerializeField]
-        TextMeshProUGUI _text;
-
         [BoxGroup("Reference"), SerializeField]
         GameObject _shadow;
 
@@ -54,14 +53,13 @@ namespace Features.GridGeneration.Scripts
         private IEnumerator coroutine;
         bool _isFlipped;
         bool _canTouch;
-        private bool isDragging = false;
         public Cell CellBase;
         Tween _outerTween;
         Tween _innerTween;
         protected Tile MyTile;
         public bool istutorial;
-        public bool ignore;
-    
+        public bool cantSelectPlayer;
+        public bool canClick;
         protected IPlayer _player;
         public ParticleSystem MergeParticle { get; set; }
         Item ITile.CurrentItem => _item;
@@ -70,7 +68,7 @@ namespace Features.GridGeneration.Scripts
 
         public Collectable TileCollectible => _collectable;
         public Enemy _Enemy { get; set; }
-        public bool IsTouch { get; set; }
+        public bool TileTouch { get; set; }
 
         public TileStates TileState
         {
@@ -81,9 +79,8 @@ namespace Features.GridGeneration.Scripts
         public void SetID(int row, int col, Cell cell)
         {
             _id = $"{row}{col}";
-            _text.SetText($"{row},{col}");
             CellBase = cell;
-            IsTouch = true;
+            TileTouch = true;
         }
 
         public void AssignPlacement(Item item)
@@ -167,22 +164,25 @@ namespace Features.GridGeneration.Scripts
                     {
                         ShowPlacement(false, 0);
                     }
-                }).OnComplete((() =>
-                {
-                    if (isGreen)
+                    else
                     {
-                        ShowPlacement(true, 0);
+                        ShowPlacement(true,Configs.GameConfig.tileJumpDuration-.25f);
                     }
-                }));
+                 });
         }
 
         private void ShowPlacement(bool show, float startDelay)
         {
             var config = Configs.GameConfig;
-            _shadow.SetActive(show);
+            if (show)
+            {
+                flipParticle.Play();
+                //_shadow.SetActive(show);
+            }
             _itemPlacement.DOScale(show ? config.placementMaxScale : config.placementMinScale, config.placementDuration)
                 .SetDelay(startDelay).SetEase(Ease.Linear).OnComplete(() =>
                 {
+                    _shadow.SetActive(show);
                     _item.transform.DOScale(show ? config.placementMaxScale : config.placementMinScale,
                         config.placementDuration).SetEase(Ease.Linear);
                 });
@@ -257,6 +257,10 @@ namespace Features.GridGeneration.Scripts
         }
         public void CheckAdjacents(bool canFlip)
         {
+            // foreach (var VARIABLE in iGridView.PathData)
+            // {
+            //     VARIABLE.Value.Lift(false);
+            // }
             foreach (var cellID in iGridView.GridHandler.FindAdjacentCells(CellBase))
             {
                 var id = $"{cellID.Row}{cellID.Col}";
@@ -317,7 +321,6 @@ namespace Features.GridGeneration.Scripts
             }
             else
             {
-                print("3");
                 if (canFlip)
                 {
                     FlipAllAdjacent();
@@ -355,28 +358,99 @@ namespace Features.GridGeneration.Scripts
             }
         }
 
+        // public void Lift(bool isLift)
+        // {
+        //     if (isLift)
+        //     {
+        //         transform.DOLocalMoveY(.4f, .1f).SetEase(Ease.Linear);
+        //     }
+        //     else
+        //     {
+        //         transform.DOLocalMoveY(0f, .1f).SetEase(Ease.Linear);
+        //     }
+        //    
+        // }
         public virtual void OnPointerDown(PointerEventData eventData)
         {
-            if (IsTouch)
+            canClick = true;
+            // if (IsTouch)
+            // {
+            //     if (!GameController.IsState(GameStates.Play))return;
+            //     if (_tileStates == TileStates.FlipAble)
+            //     {
+            //         if (!_canTouch)
+            //         {
+            //             _canTouch = true;
+            //             SoundManager.Instance.PlayTileSelect(1);
+            //             hapticController.PlayHaptic();
+            //             iGridView.UpdateMoves(-1);
+            //             Flip(false, true);
+            //         }
+            //         if (istutorial)
+            //         {
+            //             TutorialManager.OnTutorialAction();
+            //         }
+            //     }
+            //     else
+            //     {
+            //         print($"{TileState}");
+            //     }
+
+
+            // }
+        }
+
+       public void SetMeshMaterialColorProperty(Color color)
+        {
+            MaterialPropertyBlock prop = new MaterialPropertyBlock();
+            
+            prop.SetColor("_BaseColor",     color);
+            _renderer.SetPropertyBlock(prop, 0);
+        }
+
+        public void ChangeColor(Color color)
+        {
+            _renderer.material.DOColor(color, Configs.GameConfig.playerYTargetOnTileMovingDuration);
+        }
+
+        public virtual void OnPointerUp(PointerEventData eventData)
+        {
+            if (!canClick)return;
+           
+            if (TileTouch)
             {
-                if (!GameController.IsState(GameStates.Play))return;
-                if (_tileStates != TileStates.FlipAble  ) return;
-          
-                if (!_canTouch)
+                if (!GameController.IsState(GameStates.Play)) return;
+                if (_tileStates == TileStates.FlipAble)
                 {
-                    _canTouch = true;
-                    SoundManager.Instance.PlayTileSelect(1);
-                    hapticController.PlayHaptic();
-                    iGridView.UpdateMoves(-1);
-                    Flip(false, true);
+                    if (!_canTouch)
+                    {
+                        _canTouch = true;
+                        SoundManager.Instance.PlayTileSelect(1);
+                        hapticController.PlayHaptic();
+                        iGridView.UpdateMoves(-1);
+                        Flip(false, true);
+                    }
+
+                    if (istutorial)
+                    {
+                        TutorialManager.OnTutorialAction();
+                    }
                 }
-                if (istutorial)
+                else
                 {
-                    TutorialManager.OnTutorialAction();
+                   // print($"{TileState}");
                 }
             }
         }
 
-       
+        public void OnDrag(PointerEventData eventData)
+        {
+            canClick = false;
+        }
+
+        public void OnEndDrag(PointerEventData eventData)
+        {
+            canClick = true;
+        }
     }
 }

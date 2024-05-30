@@ -6,6 +6,7 @@ using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
 using Sablo.Gameplay.Movement;
 using Sirenix.OdinInspector;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Features.CharacterMovement.Scripts
@@ -21,6 +22,8 @@ namespace Features.CharacterMovement.Scripts
         public List<Tile> pathToMove;
         public Tile lastTile;
         public IGridView GridViewHandler;
+        public Transform goldenKey;
+        public GameObject goldenParticle;
         public Transform Child => _playerAnimator.transform;
         public Tile CurrentTile
         {
@@ -35,7 +38,7 @@ namespace Features.CharacterMovement.Scripts
             {
                 playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,collectable.typeOfBooster,1);
                 collectable.isDone = true;
-                tile.IsTouch = true;
+                tile.TileTouch = true;
                 Destroy(collectable);
                 collectable.gameObject.SetActive(false);
             }
@@ -48,41 +51,71 @@ namespace Features.CharacterMovement.Scripts
         protected void KeyCase(Collectable collectable, ITile tile)
         {
             playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,collectable.typeOfBooster,1);
-            collectable.gameObject.SetActive(false);
+            collectable.transform.SetParent(null);
+           // collectable.gameObject.SetActive(false);
+          
             if (collectable.CollectibleID is null)
             {
+               
                 print("No Id");
                 collectable.isDone = true;
+                Destroy( collectable.gameObject);
+                
                 return;
             }
             else
             {
                 var Tile = GridViewHandler.GetTile(collectable.ReverseString(collectable.CollectibleID));
-                print(Tile.name);
                 if (Tile!=null)
                 {
-                    GridViewHandler.ChangeTileMaterial(Tile);
-                    collectable.CheckTileLink(Tile);
-                    collectable.isDone = true;
+                    var target = Tile.transform.position;
+                    target.y = .9f;
+                    goldenKey.position = collectable.transform.position;
+                    collectable.gameObject.SetActive(false);
+                    goldenKey.gameObject.SetActive(true);
+                    goldenKey.transform.transform.DORotate(new Vector3(0, 90, 0), .5f).SetEase(Ease.Linear);
+                    goldenKey.transform.transform.DOJump(target,3, 1, .5f).SetEase(Ease.Linear).OnComplete((() =>
+                    {
+                        TweenCallback callback = (() =>
+                        {
+                            GridViewHandler.ChangeTileMaterial(Tile);
+                            collectable.CheckTileLink(Tile);
+                            collectable.isDone = true;
+                            target.y += 1;
+                            goldenParticle.transform.position = target;
+                            tile.TileTouch = true;
+                            Destroy(collectable);
+                            Destroy( Tile.TileCollectible.gameObject);
+                            SoundManager.Instance.PlayLock(1);
+                            goldenParticle.SetActive(true);
+                            goldenKey.gameObject.SetActive(false);
+
+                        });
+                        DOVirtual.DelayedCall(.15f,callback);
+
+                    }));
+                   
                 }
             }
-
-            tile.IsTouch = true;
-            Destroy(collectable);
-           
+            
+           // Destroy( collectable);;
         }
-        protected void JumpEffect(Vector3 position)
+        protected virtual void JumpEffect(Vector3 position)
         {
+           
+          GameController.SetState(GameStates.Win);
             var configs = Configs.GameConfig;
             _playerAnimator.JumpAnimation();
             position.y = 1f;
             LookAt(position);
+            Child.rotation=quaternion.identity;
             transform.DOJump(position, configs.JumpHeight, 1, configs.JumpDuration).SetEase(Ease.Linear).OnComplete((() =>
             {
                 _crown.SetActive(true);
                 transform.DORotate(configs.playerRotationOnJumpComplete, configs.playerRotationOnJumpCompleteDuration).SetEase(Ease.Linear).OnComplete(() =>
                 {
                     _playerAnimator.WinAnimation();
+                   // SoundManager.Instance.PlaySue(1);
                 });
                 UIController.LevelComplete();
             }));

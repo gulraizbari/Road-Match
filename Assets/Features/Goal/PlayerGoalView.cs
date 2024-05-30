@@ -44,6 +44,14 @@ public class PlayerGoalView : MonoBehaviour
          goal.UpdateText(value,isTarget);
       }
    }
+
+   public void DisableAllGoals()
+   {
+      foreach (var goal in playerGoals)
+      {
+         goal.gameObject.SetActive(false);
+      }
+   }
 }
 
 [Serializable]

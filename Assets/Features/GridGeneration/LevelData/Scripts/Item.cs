@@ -15,7 +15,7 @@ public class Item : MonoBehaviour
     [ShowIf("type", ItemType.Random)] [BoxGroup("Item"), SerializeField]
     RandomObjects randomObjects;
     public bool Is2D;
-    
+    public GameObject particle;
     public ItemType TypeItem => type;
     public Fruits Fruit => fruits;
     public Vegetables Vegetable => vegetables;
