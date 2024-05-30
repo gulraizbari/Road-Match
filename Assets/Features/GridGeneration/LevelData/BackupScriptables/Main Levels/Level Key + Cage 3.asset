@@ -746,7 +746,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfPowerUps
       Entry: 3
       Data: 0
@@ -974,7 +974,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfPowerUps
       Entry: 3
       Data: 0
@@ -2228,7 +2228,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfPowerUps
       Entry: 3
       Data: 0
@@ -3368,7 +3368,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfPowerUps
       Entry: 3
       Data: 0
