@@ -77,7 +77,7 @@ MonoBehaviour:
       Data: false
     - Name: walkableGate
       Entry: 5
-      Data: true
+      Data: false
     - Name: enemyHealth
       Entry: 3
       Data: 0

@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using Utilities;
 
 public  static class GameController //: MonoBehaviour,IGameController
 {
@@ -12,5 +13,12 @@ public  static class GameController //: MonoBehaviour,IGameController
     public static bool IsState(GameStates state)
     {
         return States == state;
+    }
+
+    public static int TotalMoney
+    {
+       
+        get => PlayerPrefs.GetInt("Cash",20);
+        set => PlayerPrefs.SetInt("Cash", PlayerPrefs.GetInt("Cash" + value));
     }
 }

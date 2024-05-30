@@ -16,19 +16,17 @@ public class GridViewReferences : MonoBehaviour
     [BoxGroup("References")] public Material enable;
     [BoxGroup("References")] public Material enableWithOutRotation;
     [BoxGroup("References")] public TutorialManager tutorialManager;
-    [BoxGroup("References")] public TextMeshProUGUI movesText;
     [BoxGroup("References")] public Enemy enemy;
     [BoxGroup("References")] public PowerUp powerUp;
     [BoxGroup("References/Values")] public int moves;
    
+    
 
-    public IUIController UIHandler;
-
-    public void SetUIHandler(UIController controller) => UIHandler = controller;
+   
     public void CalculateMoves(int movesMultiplier )
     {
-        moves = moves * movesMultiplier;
-        UpdateText();
+        moves *= movesMultiplier;
+        UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
     }
 
     public void UpdateMoves(int value)
@@ -37,20 +35,16 @@ public class GridViewReferences : MonoBehaviour
         if (moves <=0 )
         {
             moves = 0;
-            UpdateText();
+            UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
             print("Level Fail");
-          UIHandler.LevelFail(.5f);
+            UIController.instance.LevelFail(.5f);
         }
         else
         {
-            UpdateText();
+            UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
         }
         
     }
 
-    private void UpdateText()
-    {
-        movesText.SetText($"{moves}");
-    }
     
 }

@@ -1613,10 +1613,10 @@ MonoBehaviour:
       Data: false
     - Name: IsCage
       Entry: 5
-      Data: false
+      Data: true
     - Name: walkableGate
       Entry: 5
-      Data: true
+      Data: false
     - Name: enemyHealth
       Entry: 3
       Data: 0

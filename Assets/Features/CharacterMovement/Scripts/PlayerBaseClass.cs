@@ -31,7 +31,7 @@ namespace Features.CharacterMovement.Scripts
             set => _currentTile = value;
         }
         public PlayerGoals playerGoalHandler{get; set; }
-        public IUIController UIController { get; protected set; }
+      
         protected void ChestBoxCase(Collectable collectable,ITile tile)
         {
             if (playerGoalHandler.FetchCollectible(CollectableItems.Key)>0)
@@ -117,7 +117,7 @@ namespace Features.CharacterMovement.Scripts
                     _playerAnimator.WinAnimation();
                    // SoundManager.Instance.PlaySue(1);
                 });
-                UIController.LevelComplete();
+                UIController.instance.LevelComplete();
             }));
         }
         protected void LookAt(Vector3 target)

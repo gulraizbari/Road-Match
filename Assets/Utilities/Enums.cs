@@ -169,4 +169,9 @@ public enum ToastMessages
     GetCrown,
     KeyToUnlockGate,
 }
+public enum TextType
+{
+    Level,
+    Moves
+}
 

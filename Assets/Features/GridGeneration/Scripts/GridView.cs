@@ -265,10 +265,9 @@ namespace Features.GridGeneration.Scripts
                     }
                 }
             }
-
+            
             _gridViewReferences.CalculateMoves(levelData.movesMultiplier);
             _gridViewReferences.tutorialManager.PlayTutorial();
-            _gridViewReferences.SetUIHandler(UIHandler);
             Goals.SetSlogan();
         }
 
@@ -294,8 +293,7 @@ namespace Features.GridGeneration.Scripts
         {
             _gridViewReferences.UpdateMoves(value);
         }
-
-        public UIController UIHandler { get; set; }
+        
 
         private void DisableTile(CellData data, Tile tile)
         {
