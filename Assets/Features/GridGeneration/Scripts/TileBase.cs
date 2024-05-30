@@ -53,14 +53,13 @@ namespace Features.GridGeneration.Scripts
         private IEnumerator coroutine;
         bool _isFlipped;
         bool _canTouch;
-        private bool isDragging = false;
         public Cell CellBase;
         Tween _outerTween;
         Tween _innerTween;
         protected Tile MyTile;
         public bool istutorial;
-        public bool ignore;
-       [FormerlySerializedAs("isDrag")] public bool canClick;
+        public bool cantSelectPlayer;
+        public bool canClick;
         protected IPlayer _player;
         public ParticleSystem MergeParticle { get; set; }
         Item ITile.CurrentItem => _item;
@@ -69,7 +68,7 @@ namespace Features.GridGeneration.Scripts
 
         public Collectable TileCollectible => _collectable;
         public Enemy _Enemy { get; set; }
-        public bool IsTouch { get; set; }
+        public bool TileTouch { get; set; }
 
         public TileStates TileState
         {
@@ -81,7 +80,7 @@ namespace Features.GridGeneration.Scripts
         {
             _id = $"{row}{col}";
             CellBase = cell;
-            IsTouch = true;
+            TileTouch = true;
         }
 
         public void AssignPlacement(Item item)
@@ -169,13 +168,7 @@ namespace Features.GridGeneration.Scripts
                     {
                         ShowPlacement(true,Configs.GameConfig.tileJumpDuration-.25f);
                     }
-                 });//.OnComplete((() =>
-                // {
-                //     if (isGreen)
-                //     {
-                //         ShowPlacement(true, 0);
-                //     }
-                // }));
+                 });
         }
 
         private void ShowPlacement(bool show, float startDelay)
@@ -328,7 +321,6 @@ namespace Features.GridGeneration.Scripts
             }
             else
             {
-                print("3");
                 if (canFlip)
                 {
                     FlipAllAdjacent();
@@ -425,7 +417,7 @@ namespace Features.GridGeneration.Scripts
         {
             if (!canClick)return;
            
-            if (IsTouch)
+            if (TileTouch)
             {
                 if (!GameController.IsState(GameStates.Play)) return;
                 if (_tileStates == TileStates.FlipAble)
@@ -446,7 +438,7 @@ namespace Features.GridGeneration.Scripts
                 }
                 else
                 {
-                    print($"{TileState}");
+                   // print($"{TileState}");
                 }
             }
         }

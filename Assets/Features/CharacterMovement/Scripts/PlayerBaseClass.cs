@@ -38,7 +38,7 @@ namespace Features.CharacterMovement.Scripts
             {
                 playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,collectable.typeOfBooster,1);
                 collectable.isDone = true;
-                tile.IsTouch = true;
+                tile.TileTouch = true;
                 Destroy(collectable);
                 collectable.gameObject.SetActive(false);
             }
@@ -53,15 +53,14 @@ namespace Features.CharacterMovement.Scripts
             playerGoalHandler.AddOrUpdateCollectible(collectable.collectableType,collectable.typeOfBooster,1);
             collectable.transform.SetParent(null);
            // collectable.gameObject.SetActive(false);
-           if (collectable.typeOfBooster == BoosterType.Royal)
-           {
-               Destroy( collectable.gameObject);
-           }
+          
             if (collectable.CollectibleID is null)
             {
                
                 print("No Id");
                 collectable.isDone = true;
+                Destroy( collectable.gameObject);
+                
                 return;
             }
             else
@@ -84,7 +83,7 @@ namespace Features.CharacterMovement.Scripts
                             collectable.isDone = true;
                             target.y += 1;
                             goldenParticle.transform.position = target;
-                            tile.IsTouch = true;
+                            tile.TileTouch = true;
                             Destroy(collectable);
                             Destroy( Tile.TileCollectible.gameObject);
                             SoundManager.Instance.PlayLock(1);
@@ -101,8 +100,10 @@ namespace Features.CharacterMovement.Scripts
             
            // Destroy( collectable);;
         }
-        protected void JumpEffect(Vector3 position)
+        protected virtual void JumpEffect(Vector3 position)
         {
+           
+          GameController.SetState(GameStates.Win);
             var configs = Configs.GameConfig;
             _playerAnimator.JumpAnimation();
             position.y = 1f;

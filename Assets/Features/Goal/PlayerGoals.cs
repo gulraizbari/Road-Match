@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using Features.GridGeneration.Scripts;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Gameplay.Movement;
@@ -174,6 +175,13 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
         // If all tasks are complete, trigger the necessary effects
         if (TaskComplete)
         {
+            TweenCallback callback = ((() =>
+            {
+              _goalView.DisableAllGoals();
+              tasksOfPlayer.Clear();
+              SetSlogan();
+            }));
+            DOVirtual.DelayedCall(.5f,callback);
             if (isCage)
             {
                 _cage.CageEffect();

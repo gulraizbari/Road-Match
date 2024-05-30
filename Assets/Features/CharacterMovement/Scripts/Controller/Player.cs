@@ -216,13 +216,14 @@ namespace Sablo.Gameplay.Movement
             }
             else
             {
+                
                 _counter.gameObject.SetActive(false);
                 JumpEffect(position);
             }
         }
 
-        
 
+       
 
         public int GiveDamage(int value)
         {

@@ -17,7 +17,6 @@ namespace Features.GridGeneration.Scripts
         public bool isGate;
         public int row;
         public int column;
-        public bool isTarget;
         
 
         public void SetCollectable(Collectable collectable)
@@ -119,11 +118,10 @@ namespace Features.GridGeneration.Scripts
         {
             base.OnPointerUp(eventData);
             if (!canClick)return;
-            if (!IsTouch) return;
+            if (!TileTouch) return;
             
             if (!GameController.IsState(GameStates.Play))return;
-            if (ignore)return;
-            if (isTarget)return;
+            if (cantSelectPlayer)return;
             if (_player is null)
             {
                 if(TileState != TileStates.Walkable )return;

@@ -10,7 +10,6 @@ namespace Sablo.Gameplay.Movement
         [SerializeField] private GridTraversal _gridTraversal;
         public IPathFinding PathFinding;
         public Player Player;
-        public Tile targetTile;
       
        [ShowInInspector] public IPlayer SelectedPlayer { get; set; }
 
@@ -20,21 +19,8 @@ namespace Sablo.Gameplay.Movement
            
             if (SelectedPlayer != null)
             {
-                if (targetTile)
-                {
-                    if (targetTile.ID==target.ID)
-                    {
-                        targetTile = null;
-                        Debug.LogError($"Target tile ID {target.ID} is already assigned. Clearing target.");
-                        return;
-                    }
-                    else
-                    {
-                        targetTile.isTarget = false;
-                    }
-                }
-                targetTile = target;
-                PathFinding.Find(SelectedPlayer.CurrentTile, targetTile);
+                
+                PathFinding.Find(SelectedPlayer.CurrentTile, target);
                // _gridTraversal.StopBlinkingOnTraversableTiles();
             }
             
