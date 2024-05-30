@@ -26,10 +26,13 @@ public sealed class CellData
     [SerializeField] public RandomObjects typeOfRandomObjects;
     [SerializeField] public CollectableItems typeOfCollectableItems;
     [SerializeField] public BoosterType typeOfBooster;
+    [SerializeField] public PowerUpTypes typeOfPowerUps;
     [SerializeField] public string linkedID;
     [SerializeField] public bool IsPlayer;
+    [SerializeField] public bool IsCage;
     [SerializeField] public bool walkableGate;
     [SerializeField] public int enemyHealth;
+    [SerializeField] public int powerUPLVL;
    
     // [FormerlySerializedAs("_unBreakableTiles")] [SerializeField] public UnBreakableRocks _unBreakableRocks;
 
@@ -50,11 +53,14 @@ public sealed class CellData
         typeOfAnimals = Animals.None;
         typeOfRandomObjects = RandomObjects.None;
         typeOfCollectableItems = CollectableItems.Key;
-        typeOfBooster = BoosterType.Silver;
+        typeOfBooster = BoosterType.None;
+        typeOfPowerUps = PowerUpTypes.Sword;
         IsPlayer = false;
         walkableGate = false;
+        IsCage = false;
         linkedID = "";
         enemyHealth = 1;
+        powerUPLVL = 1;
     }
 }
 
@@ -75,10 +81,22 @@ public sealed class LevelData : SerializedScriptableObject
     [InlineButton(nameof(MakeGrid))] [VerticalGroup("LEVEL DATA/Split/Right"), LabelWidth(60)] [SerializeField]
     int _height = 16;
 
-       [Space] public List<ItemContainer> Containers;
-       [Space] public CollectableContainer collectableContainer;
-       public int movesMultiplier = 1;
-
+       [FoldoutGroup("LevelAttributes")][Space] public List<ItemContainer> Containers;
+       [FoldoutGroup("LevelAttributes")][Space] public CollectableContainer collectableContainer;
+       [FoldoutGroup("LevelAttributes/Value")][Space]  public int movesMultiplier = 1;
+       [FoldoutGroup("LevelAttributes/Value")] [Switch]
+       public bool moveCamera;
+       [FoldoutGroup("LevelAttributes/Value")] [ShowIf("moveCamera")]
+       public float maxZ, minZ,minX,maxX;
+       [Space]
+       [FoldoutGroup("LevelAttributes/Value")]  [Switch]
+       public bool customPadding;
+        [ShowIf("customPadding")]
+        [FoldoutGroup("LevelAttributes/Value")] public float customPaddingValue=2.6f;
+       [Space]
+       [Switch]
+       [FoldoutGroup("LevelAttributes/Value")]  public bool IsEnemy;
+       
     [Space]
     [TitleGroup("GRID", boldTitle: true)]
     [TableMatrix(SquareCells = true, HideRowIndices = false, HideColumnIndices = true, RespectIndentLevel = true,
@@ -120,7 +138,7 @@ public sealed class LevelData : SerializedScriptableObject
         TileType.Walkable => new Color(0.3f, 0.5f, 0f, 1f),
         TileType.Boosters => new Color(0.7f, 0.5f, 0f, 1f),
         TileType.Gate => new Color(0.25f, 0.7f, 1f, 1f),
-        TileType.ChestBox => new Color(0.5f, 0.3f, 1f, 1f),
+        TileType.PowerUp => new Color(0.5f, 0.3f, 1f, 1f),
         // TileType.ChoppingBoardStation      => new Color(0.8f, 0.3f, .5f, 1f),
         // TileType.OrderTable      => new Color(0.8f, 0.3f, .2f, 1f),
         // TileType.Stove      => new Color(0.6f, 0.4f, .5f, .5f),
@@ -202,15 +220,25 @@ public sealed class LevelData : SerializedScriptableObject
             value.typeOfBooster = (BoosterType)EditorGUILayout.EnumPopup("Type", value.typeOfBooster);
             if (value.typeOfCollectableItems==CollectableItems.Key)
             {
-                value.linkedID = EditorGUILayout.TextField("Link", value.linkedID);
+                if (value.typeOfBooster != BoosterType.None)
+                {
+                    value.linkedID = EditorGUILayout.TextField("Link", value.linkedID);
+                }
+                
             }
         }
         else if (value.tileType.Equals(TileType.Gate))
         {
-            value.walkableGate = EditorGUILayout.Toggle("State", value.walkableGate);
+            value.walkableGate = EditorGUILayout.Toggle("IsWalk", value.walkableGate);
+            value.IsCage = EditorGUILayout.Toggle("IsCage", value.IsCage);
           //  value.typeOfCollectableItems = (CollectableItems)EditorGUILayout.EnumPopup("Type", value.typeOfCollectableItems);
         }
-
+        else if (value.tileType.Equals(TileType.PowerUp))
+        {
+            EditorGUIUtility.labelWidth = 50;
+            value.typeOfPowerUps = (PowerUpTypes)EditorGUILayout.EnumPopup("Type", value.typeOfPowerUps);
+            value.powerUPLVL = EditorGUILayout.IntField("value", value.powerUPLVL);
+        }
         // else if (value.tileType.Equals(TileType.ChoppingBoardStation))
         // {
         //     EditorGUIUtility.labelWidth = 50;

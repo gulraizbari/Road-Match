@@ -18,7 +18,7 @@ namespace Features.GridGeneration.Scripts
          Vector3 _position;
          IGridGenerator _gridGenerator;
          public bool IsWalkable;
-         
+         public bool Empty;
         public int Row => _row;
         public int Col => _col;
         public Vector3 Position => _position;

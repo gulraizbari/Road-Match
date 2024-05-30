@@ -42,8 +42,17 @@ namespace Features.GridGeneration.Scripts
                 LevelData = _levelData,
                 CellGrid = grid
             });
+            if (_levelData.moveCamera)
+            {
+                Adjuster.DragCamera.enabled = true;
+                Adjuster.DragCamera.SetCamera(_levelData.minZ, _levelData.maxZ,_levelData.minZ,0,_levelData.maxX,_levelData.minX);
+            }
             _gridView.AssignItemContainer(_levelData);
             _gridView.SpawnGrid(grid, _levelData);
+            if (_levelData.customPadding)
+            {
+                Adjuster.padding = _levelData.customPaddingValue;
+            }
             Adjuster.AdjustCamera(grid);
         }
 
@@ -69,6 +78,10 @@ namespace Features.GridGeneration.Scripts
                     var hexPosition = new Vector3(_x, startPos.y, _z);
                     var prefabNew = new Cell();
                     var id = $"{row}-{col}";
+                    if (_levelData.Matrix[row,col].tileType == TileType.Empty)
+                    {
+                        prefabNew.Empty = true;
+                    }
                     prefabNew.Init(hexPosition, col, row, this);
                     grid[row, col] = prefabNew;
                 }

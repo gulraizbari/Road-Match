@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using Features.GridGeneration.Scripts;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Gameplay.Movement;
@@ -15,10 +16,12 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
     [BoxGroup("Reference"), ReadOnly, ShowInInspector] Dictionary<CollectableItems, PlayerTask > tasksOfPlayer=new();
     [BoxGroup("Reference"), ReadOnly, ShowInInspector]
     [SerializeField] Tile _gate;
-
     [BoxGroup("Reference"),  SerializeField]
     List<string> _slogans;
-
+    [BoxGroup("Reference"), SerializeField] [Switch]
+    public bool isCage;
+    [BoxGroup("Reference"), SerializeField]
+    Cage _cage;
     [BoxGroup("Reference"), SerializeField]
     Color qouateColor;
     [BoxGroup("Reference"), SerializeField]
@@ -26,8 +29,9 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
     [BoxGroup("Reference"), SerializeField,]
     PlayerGoalView _goalView;
     public IGridView gridView;
-
-
+    public Transform key;
+    public GameObject lockParticle;
+    
   
 
     public void AddOrUpdateCollectible(CollectableItems item,BoosterType itemSubType, int count)
@@ -91,46 +95,102 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
         }
     }
 
-    public void SetGate(Tile tile)
+    public void SetGate(Tile tile,bool _isCage)
     {
+        isCage = _isCage;
+        if (isCage)
+        {
+          _cage.EnableCage();
+        }
         _gate = tile;
     }
 
     public bool TaskComplete { get; set; }
 
+    // private void CheckTasks(CollectableItems collectableItems)
+    // {
+    //     if (collectiblesOfPlayer.TryGetValue(collectableItems,out  int value))
+    //     {
+    //         if (tasksOfPlayer.TryGetValue(collectableItems,out PlayerTask task))
+    //         {
+    //             if (value==task.target)
+    //             {
+    //                 task.State = true;
+    //             }
+    //         }
+    //     }
+    //
+    //     TaskComplete = false;
+    //     foreach (var task in tasksOfPlayer)
+    //     {
+    //         if (task.Value.State)
+    //         {
+    //             TaskComplete = true;
+    //         }
+    //         else
+    //         {
+    //             TaskComplete = false;
+    //         }
+    //     }
+    //
+    //     if (TaskComplete)
+    //     {
+    //         if (isCage)
+    //         {
+    //             _cage.CageEffect();
+    //         }
+    //         _gate.isGate = true;
+    //         _gate.TileState = TileStates.Walkable;
+    //         gridView.ChangeTileMaterial(_gate);
+    //     }
+    //  //SetSlogan();   
+    // }
     private void CheckTasks(CollectableItems collectableItems)
     {
-        if (collectiblesOfPlayer.TryGetValue(collectableItems,out  int value))
+        // Check if the player has collected the required number of a specific item
+        if (collectiblesOfPlayer.TryGetValue(collectableItems, out int value))
         {
-            if (tasksOfPlayer.TryGetValue(collectableItems,out PlayerTask task))
+            if (tasksOfPlayer.TryGetValue(collectableItems, out PlayerTask task))
             {
-                if (value==task.target)
+                if (value == task.target)
                 {
                     task.State = true;
                 }
             }
         }
 
-        TaskComplete = false;
+        // Assume all tasks are complete initially
+        TaskComplete = true;
+    
+        // Check each task to see if any are incomplete
         foreach (var task in tasksOfPlayer)
         {
-            if (task.Value.State)
-            {
-                TaskComplete = true;
-            }
-            else
+            if (!task.Value.State)
             {
                 TaskComplete = false;
+                break; // Exit the loop early since we found an incomplete task
             }
         }
 
+        // If all tasks are complete, trigger the necessary effects
         if (TaskComplete)
         {
+            TweenCallback callback = ((() =>
+            {
+              _goalView.DisableAllGoals();
+              tasksOfPlayer.Clear();
+              SetSlogan();
+            }));
+            DOVirtual.DelayedCall(.5f,callback);
+            if (isCage)
+            {
+                _cage.CageEffect();
+            }
             _gate.isGate = true;
             _gate.TileState = TileStates.Walkable;
             gridView.ChangeTileMaterial(_gate);
         }
-     //SetSlogan();   
+        // SetSlogan(); // Uncomment if needed
     }
 
     public void SetSlogan()

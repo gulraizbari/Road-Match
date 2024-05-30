@@ -5,7 +5,7 @@ public enum TileType
     Walkable,
     Gate,
     Boosters,
-    ChestBox
+    PowerUp
 }
 
 public enum TilePlacements
@@ -137,7 +137,14 @@ public enum CollectableItems
     Hint,
     Weapon,
     Upgrade,
-    ChestBox
+    ChestBox,
+    Gate
+}
+
+public enum PowerUpTypes
+{
+    Sword,
+    X2
 }
 
 public enum GameStates
@@ -151,7 +158,15 @@ public enum GameStates
 }
 public enum BoosterType
 {
-Silver,
-Gold,
-Royal
+   None,
+   Gold,
+   Royal,
 }
+
+public enum ToastMessages
+{
+    KeyForCrown,
+    GetCrown,
+    KeyToUnlockGate,
+}
+

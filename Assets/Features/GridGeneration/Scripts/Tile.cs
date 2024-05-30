@@ -1,6 +1,7 @@
 using DG.Tweening;
 using Features.GridGeneration.Scripts.interfaces;
 using GridGeneration.Scripts.interfaces;
+using Sablo.Core;
 using Sablo.Gameplay.Movement;
 using Sablo.Gameplay.PathFinding;
 using Sablo.Gameplay.Utilities;
@@ -16,7 +17,7 @@ namespace Features.GridGeneration.Scripts
         public bool isGate;
         public int row;
         public int column;
-        public bool isTarget;
+        
 
         public void SetCollectable(Collectable collectable)
         {
@@ -86,14 +87,55 @@ namespace Features.GridGeneration.Scripts
         public override void OnPointerDown(PointerEventData eventData)
         {
             base.OnPointerDown(eventData);
-            if (!IsTouch) return;
+            // if (!IsTouch) return;
+            //
+            // if (!GameController.IsState(GameStates.Play))return;
+            // if (ignore)return;
+            // if (isTarget)return;
+            // if (_player is null)
+            // {
+            //     if(TileState != TileStates.Walkable )return;
+            //     SoundManager.Instance.PlayTileSelect(.5f);
+            //     foreach (var data in iGridView.PathData)
+            //     {
+            //         if (data.Value.TileState == TileStates.Walkable)
+            //         {
+            //             data.Value.ChangeColor(Configs.GameConfig.TileOrignalColor); 
+            //            // data.Value.SetMeshMaterialColorProperty(Configs.GameConfig.TileOrignalColor);
+            //         }
+            //        
+            //         data.Value.transform.DOLocalMoveY(0, .01f).SetEase(Ease.Linear);
+            //     }
+            //     _playerController.AssignPath(this);
+            //     if (istutorial)
+            //     {
+            //         TutorialManager.OnTutorialAction();
+            //     }
+            // }
+        }
+
+        public override void OnPointerUp(PointerEventData eventData)
+        {
+            base.OnPointerUp(eventData);
+            if (!canClick)return;
+            if (!TileTouch) return;
             
             if (!GameController.IsState(GameStates.Play))return;
-            if (ignore)return;
-            if (isTarget)return;
+            if (cantSelectPlayer)return;
             if (_player is null)
             {
                 if(TileState != TileStates.Walkable )return;
+                SoundManager.Instance.PlayTileSelect(.5f);
+                foreach (var data in iGridView.PathData)
+                {
+                    if (data.Value.TileState == TileStates.Walkable)
+                    {
+                        data.Value.ChangeColor(Configs.GameConfig.TileOrignalColor); 
+                        // data.Value.SetMeshMaterialColorProperty(Configs.GameConfig.TileOrignalColor);
+                    }
+                   
+                    data.Value.transform.DOLocalMoveY(0, .01f).SetEase(Ease.Linear);
+                }
                 _playerController.AssignPath(this);
                 if (istutorial)
                 {

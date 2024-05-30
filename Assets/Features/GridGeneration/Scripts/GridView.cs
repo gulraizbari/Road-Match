@@ -35,6 +35,7 @@ namespace Features.GridGeneration.Scripts
         Tile tile;
         public Dictionary<string, Tile> PathData => _tiles;
         public IGridGenerator GridHandler => _gridGenerator;
+        public bool isTesting;
         public Tile GetTile(string id)
         {
            
@@ -98,7 +99,6 @@ namespace Features.GridGeneration.Scripts
                 for (var col = 0; col < levelData.Height; col++)
                 {
                     var _tile = Instantiate(_gridViewReferences._prefabTile, transform);
-                   
                     _tile.gameObject.SetActive(false);
                     _tile.TileState = TileStates.NotWalkable;
                     tilesGrid[row, col] = _tile;
@@ -108,7 +108,11 @@ namespace Features.GridGeneration.Scripts
                     {
                         case TileType.Disable:
                         {
-                            
+                            if (isTesting)
+                            {
+                                _tile.Flip(false,false);
+                            }
+                           
                             _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
                                 _gridViewReferences.playerController);
                             _tile.SetTransform(tilePosition, 0);
@@ -137,7 +141,7 @@ namespace Features.GridGeneration.Scripts
                                     enemy.MyTile = _tile;
                                     _tile.SetNonFlipAble(enemy.gameObject,Vector3.one);
                                     _tile._Enemy = enemy;
-                                    enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth);
+                                    enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth,levelData.IsEnemy);
                                     enemy._playerController = _gridViewReferences.playerController;
                                 }
                             }
@@ -159,6 +163,10 @@ namespace Features.GridGeneration.Scripts
                                 _gridViewReferences.player.Init(new Vector3(tilePosition.x, 1, tilePosition.z), PlayerTile);
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this, _gridViewReferences.player,
                                     _gridViewReferences.playerController);
+                                if (levelData.IsEnemy)
+                                {
+                                    _gridViewReferences.player._counter.gameObject.SetActive(true);
+                                }
                             }
                             else
                             {
@@ -190,11 +198,12 @@ namespace Features.GridGeneration.Scripts
                             _tiles.Add($"{row}{col}", _tile);
                             _gridViewReferences.Gate.position = new Vector3(tilePosition.x, .6f, tilePosition.z);
                             _tile.requiredCollectableItems = cellData.typeOfCollectableItems;
-                            Goals.SetGate(_tile);
+                            Goals.SetGate(_tile,cellData.IsCage);
                             break;
                         }
                         case TileType.Boosters:
-                          
+                        {
+                            
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
                             if (cellData.typeOfCollectableItems == CollectableItems.Key)
@@ -223,7 +232,36 @@ namespace Features.GridGeneration.Scripts
                                    _tile.SetCollectable(collectablePrefab);
                                }
                            }
+                            else if (cellData.typeOfCollectableItems == CollectableItems.Gate)
+                            {
+                                _tile.SetTransform(tilePosition, 0);
+                                _tile.TileState = TileStates.ChestBox;
+                            //    Goals.AddOrUpdateGoals(CollectableItems.ChestBox,cellData.typeOfBooster,1);
+                                _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
+                                if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable) )
+                                {
+                                    var collectablePrefab = Instantiate(collectable);
+                                    _tile.SetCollectable(collectablePrefab);
+                                }
+                            }
                             break;
+                        }
+                        case TileType.PowerUp:
+                        {
+                            _tile.SetTransform(tilePosition, 180);
+                            _tile.SetID(row, col, grid[row, col]);
+                            _tiles.Add($"{row}{col}", _tile);
+                            _tile.TileState = TileStates.Walkable;
+                            _tile.gameObject.SetActive(true);
+                            var powerUp = Instantiate(_gridViewReferences.powerUp);
+                            powerUp.UpdateLvl(cellData.powerUPLVL);
+                            tilePosition.y = .8f;
+                            powerUp.transform.position = tilePosition;
+                            _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
+                            break;
+                        }
+                          
+                            
                     }
                 }
             }
@@ -276,6 +314,7 @@ namespace Features.GridGeneration.Scripts
             }
             else if (data.typeOfItem == ItemType.Random)
             {
+                Debug.Log(data.typeOfRandomObjects.ToString());
                 item = Instantiate(FindItem(data.typeOfItem, data.typeOfRandomObjects));
             }
 

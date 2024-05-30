@@ -9708,6 +9708,7 @@ MonoBehaviour:
   typeOfBooster: 2
   levelDependent: 1
   id: 
+  isDone: 0
 --- !u!1001 &2185102733705858269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9810,6 +9811,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ab6514a634f204811a86804c22b2cf1a, type: 2}
+    - target: {fileID: 8167458272561823372, guid: 66eeb451226864a688d11f37c69f7692,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d0212e5f34474f6ea9b85b0b9a1fdf8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66eeb451226864a688d11f37c69f7692, type: 3}
 --- !u!4 &8994498061810715850 stripped

@@ -17,7 +17,7 @@ namespace GridGeneration.Scripts.interfaces
         void CheckAdjacents(bool canFlip);
         public Collectable  TileCollectible { get; }
         public Enemy _Enemy { get; set; }
-        public bool IsTouch { get; set; }
+        public bool TileTouch { get; set; }
 
     }
 }

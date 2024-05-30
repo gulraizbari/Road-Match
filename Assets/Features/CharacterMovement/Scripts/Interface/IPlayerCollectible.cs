@@ -9,7 +9,7 @@ namespace Sablo.Gameplay.Movement
         int FetchCollectible(CollectableItems item);
         int FetchGoals();
         void DeleteCollectible(CollectableItems item, int count);
-        void SetGate(Tile tile);
+        void SetGate(Tile tile,bool isCage);
         public bool TaskComplete { get; set; }
         void SetSlogan();
 
