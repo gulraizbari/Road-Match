@@ -12,6 +12,8 @@ namespace GridGeneration.Scripts.interfaces
         public Dictionary<string, Tile> PathData {
             get;
         }
+        
+        public Tile PlayerTile { get; }
 
         Tile GetTile(string id);
         public IMergeController MergeController {

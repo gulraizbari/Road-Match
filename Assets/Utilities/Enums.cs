@@ -21,7 +21,7 @@ public enum Fruits
     WaterMellon,
     BlueBerry,
     Peach,
-    Pineapple, 
+    Pineapple,
     Apple,
     Banana,
     Grapes,
@@ -47,7 +47,6 @@ public enum Vegetables
     Qado,
     GreenBean,
     GreenLeaf,
-   
 }
 
 public enum ItemType
@@ -82,7 +81,6 @@ public enum TileStates
     Gate,
     OpenGate,
     ChestBox
-    
 }
 
 public enum Tutorials
@@ -156,11 +154,12 @@ public enum GameStates
     Win,
     Lose
 }
+
 public enum BoosterType
 {
-   None,
-   Gold,
-   Royal,
+    None,
+    Gold,
+    Royal,
 }
 
 public enum ToastMessages
@@ -169,4 +168,3 @@ public enum ToastMessages
     GetCrown,
     KeyToUnlockGate,
 }
-

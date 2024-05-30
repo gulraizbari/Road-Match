@@ -14,6 +14,8 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("References"), SerializeField]
         public GridView _gridView;
 
+        public IGridView GridView => _gridView;
+
         [BoxGroup("References"), ShowInInspector]
         private Cell[,] grid;
 

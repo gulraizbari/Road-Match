@@ -1,9 +1,8 @@
-using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Features.MergeMechanic.Scripts.Interface;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
+using Sablo.Gameplay.TilesHint;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
@@ -14,17 +13,17 @@ public class MergeController : MonoBehaviour, IMergeController
     [ShowInInspector] ITile selectedTile2 = null;
     [ShowInInspector] public List<ITile> oldData = new List<ITile>();
     public ParticleSystem mergeParticle;
-    bool SelectedTilesAvailable => selectedTile1 != null && selectedTile2 != null;
+    public ITileHintController TileHintHandler { get; set; }
+    
+    private bool SelectedTilesAvailable => selectedTile1 != null && selectedTile2 != null;
 
-    bool MergeableTiles => selectedTile1.TileState == TileStates.CanMerge &&
-                           selectedTile2.TileState == TileStates.CanMerge;
+    private bool MergeableTiles => selectedTile1.TileState == TileStates.CanMerge && selectedTile2.TileState == TileStates.CanMerge;
 
-    bool TilesWithSameType => selectedTile1.CurrentItem.TypeItem == selectedTile2.CurrentItem.TypeItem;
+    private bool TilesWithSameType => selectedTile1.CurrentItem.TypeItem == selectedTile2.CurrentItem.TypeItem;
 
-    bool WithSameSubType => selectedTile1.CurrentItem.GetItemObject().ToString() ==
-                            selectedTile2.CurrentItem.GetItemObject().ToString();
+    private bool WithSameSubType => selectedTile1.CurrentItem.GetItemObject().ToString() == selectedTile2.CurrentItem.GetItemObject().ToString();
 
-    public  void SelectTile(ITile tile)
+    public void SelectTile(ITile tile)
     {
         if (oldData.Count > 0)
         {
@@ -67,8 +66,6 @@ public class MergeController : MonoBehaviour, IMergeController
         var distance = Vector3.Distance(_selectedTransform.position, _newSelectedTransform.position);
         var delayTime = Mathf.Clamp(distance * 0.1f, 0.0f, .1f);
         selectedTile1.MergeParticle = selectedTile2.MergeParticle = mergeParticle;
-       // selectedTile1.CurrentItem.particle.SetActive(true);
-      //  selectedTile2.CurrentItem.particle.SetActive(true);
         selectedTile1.OnMerge(centerPoint, delayTime);
         selectedTile2.OnMerge(centerPoint, delayTime);
         selectedTile1 = null;
@@ -84,8 +81,6 @@ public class MergeController : MonoBehaviour, IMergeController
             {
                 if (TilesWithSameType)
                 {
-                    //var id1 = selectedTile1.CurrentItem.GetItemObject().ToString();
-                    //var id2 = selectedTile2.CurrentItem.GetItemObject().ToString();
                     if (WithSameSubType)
                     {
                         PerformMerge();
@@ -103,14 +98,13 @@ public class MergeController : MonoBehaviour, IMergeController
             }
             else
             {
-                print($" Masla s1 {selectedTile1.TileState} , s2 {selectedTile2.TileState}");
-                //tutorial
+                print($"s1 {selectedTile1.TileState}, s2 {selectedTile2.TileState}");
                 PerformMerge();
             }
         }
         else
         {
-            print("Masla2");
+            print("Merge Controller Problem");
         }
     }
 
@@ -124,6 +118,7 @@ public class MergeController : MonoBehaviour, IMergeController
 
     private void UnSelectTiles()
     {
+        TileHintHandler.ResetHintMatchedTiles();
         UnityEvent action = new UnityEvent();
         action.AddListener(CheckCompletion);
         selectedTile1.UnSelect(false, Configs.GameConfig.tileFlipDelay, Configs.GameConfig.tileRotateDelay, action);

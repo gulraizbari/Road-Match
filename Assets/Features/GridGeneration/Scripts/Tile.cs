@@ -17,7 +17,7 @@ namespace Features.GridGeneration.Scripts
         public bool isGate;
         public int row;
         public int column;
-        
+        public ITile ITileHandler => this;
 
         public void SetCollectable(Collectable collectable)
         {
