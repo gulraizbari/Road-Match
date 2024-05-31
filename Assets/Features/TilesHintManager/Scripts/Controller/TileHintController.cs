@@ -1,14 +1,19 @@
+using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using Features.GridGeneration.Scripts;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Gameplay.Movement;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Sablo.Gameplay.TilesHint
 {
     public class TileHintController : MonoBehaviour, ITileHintController
     {
         private List<Tile> _tempFlipAbleTilesList = new List<Tile>();
+        private List<HintPairsData> _backupHintData;
+        private HintPairsData _hintData;
         private ITile _randomTile;
         private Tile _foundTile;
 
@@ -23,6 +28,7 @@ namespace Sablo.Gameplay.TilesHint
 
         public void IndicateSimilarTiles()
         {
+            _tempFlipAbleTilesList.Clear();
             foreach (Tile neighbor in GridGenerationHandler.FindAdjacentCells(SelectedPlayer.CurrentTile))
             {
                 if (neighbor.TileState == TileStates.FlipAble)
@@ -32,50 +38,112 @@ namespace Sablo.Gameplay.TilesHint
             }
 
             _randomTile = SelectRandomFlipAbleTile(_tempFlipAbleTilesList);
-            print(_randomTile);
-            SearchInGrid(_randomTile);
+            if (_randomTile != null && _randomTile.CurrentItem != null)
+            {
+                print(_randomTile);
+                SearchInGrid(_randomTile);
+            }
+            else
+            {
+                print("No valid random tile found. Selecting nearest random pair.");
+                SelectTwoRandomMatchingTiles();
+            }
         }
 
         private void SearchInGrid(ITile randomlySelectedTile)
         {
-            if (_randomTile is null) return;
-            if (_randomTile.CurrentItem is null) return;
+            _foundTile = null;
+            // Check if the hint tiles are already in backupHintData and not used
+            foreach (var hintPair in _backupHintData)
+            {
+                if ((hintPair.Tile_1 == randomlySelectedTile as Tile || hintPair.Tile_2 == randomlySelectedTile as Tile) &&
+                    hintPair.Tile_1.TileState == TileStates.FlipAble && hintPair.Tile_2.TileState == TileStates.FlipAble)
+                {
+                    print($"Using cached hint pair: Tile 1 - {hintPair.Tile_1.ID}, Tile 2 - {hintPair.Tile_2.ID}");
+                    _foundTile = hintPair.Tile_1;
+                    randomlySelectedTile = hintPair.Tile_2;
+                    StartBlinking(hintPair.Tile_1, hintPair.Tile_2);
+                    return;
+                }
+            }
+
             foreach (var tileData in GridGenerationHandler.GridView.PathData)
             {
                 if (tileData.Value.ITileHandler.CurrentItem is null) continue;
-                if (tileData.Value.TileState == TileStates.FlipAble)
+                if (TilesWithSameType(tileData.Value.ITileHandler, randomlySelectedTile) &&
+                    WithSameSubType(tileData.Value.ITileHandler, randomlySelectedTile) &&
+                    tileData.Value.ID != randomlySelectedTile.ID)
                 {
-                    if (TilesWithSameType(tileData.Value.ITileHandler, randomlySelectedTile))
+                    _foundTile = tileData.Value;
+                    if (_foundTile)
                     {
-                        if (WithSameSubType(tileData.Value.ITileHandler, randomlySelectedTile))
+                        print(tileData.Value.ITileHandler.CurrentItem.TypeItem);
+                        print(randomlySelectedTile.CurrentItem.TypeItem);
+                        var isMatching = tileData.Value.ITileHandler.CurrentItem.TypeItem == randomlySelectedTile.CurrentItem.TypeItem;
+                        print("Items are matching: " + isMatching);
+                        _hintData = new HintPairsData()
                         {
-                            if (tileData.Value.ID == _randomTile.ID)
-                            {
-                                continue;
-                            }
-
-                            _foundTile = tileData.Value;
-                            if (_foundTile)
-                            {
-                                print(tileData.Value.ITileHandler.CurrentItem.TypeItem);
-                                print(randomlySelectedTile.CurrentItem.TypeItem);
-                                var isMatching = tileData.Value.ITileHandler.CurrentItem.TypeItem == randomlySelectedTile.CurrentItem.TypeItem;
-                                print("Items are matching: " + isMatching);
-                                break;
-                            }
-                            else
-                            {
-                                print("Tile not found");
-                            }
-                        }
+                            Tile_1 = randomlySelectedTile as Tile,
+                            Tile_2 = tileData.Value.ITileHandler as Tile,
+                            OriginalColor = _foundTile.GetRenderer().material.color
+                        };
+                        _backupHintData.Add(_hintData);
+                        StartBlinking(_hintData.Tile_1, _hintData.Tile_2);
+                        break;
+                    }
+                    else
+                    {
+                        print("Tile not found");
                     }
                 }
             }
 
             if (_foundTile is null)
             {
-                print("Restart Process");
-                IndicateSimilarTiles();
+                print("No matching tile found. Selecting nearest random pair.");
+                SelectTwoRandomMatchingTiles();
+            }
+        }
+
+        private void SelectTwoRandomMatchingTiles()
+        {
+            var allTiles = GridGenerationHandler.GridView.PathData.Values;
+            var matchingTilePairs = new List<(Tile, Tile)>();
+
+            foreach (var tile1 in allTiles)
+            {
+                foreach (var tile2 in allTiles)
+                {
+                    if (tile1 != tile2 &&
+                        tile1.ID != tile2.ID &&
+                        tile1.ITileHandler.CurrentItem != null &&
+                        tile2.ITileHandler.CurrentItem != null &&
+                        tile1.TileState == TileStates.FlipAble &&
+                        tile2.TileState == TileStates.FlipAble &&
+                        TilesWithSameType(tile1.ITileHandler, tile2.ITileHandler) &&
+                        WithSameSubType(tile1.ITileHandler, tile2.ITileHandler))
+                    {
+                        matchingTilePairs.Add((tile1, tile2));
+                        break;
+                    }
+                }
+            }
+
+            if (matchingTilePairs.Count > 0)
+            {
+                var randomPair = matchingTilePairs[Random.Range(0, matchingTilePairs.Count)];
+                print($"Random Pair Found: Tile 1 - {randomPair.Item1.ID}, Tile 2 - {randomPair.Item2.ID}");
+                var hintData = new HintPairsData()
+                {
+                    Tile_1 = randomPair.Item1,
+                    Tile_2 = randomPair.Item2
+                };
+                _backupHintData.Add(hintData);
+                StartBlinking(hintData.Tile_1, hintData.Tile_2);
+            }
+            else
+            {
+                print("No matching pairs found in the grid.");
             }
         }
 
@@ -89,6 +157,46 @@ namespace Sablo.Gameplay.TilesHint
         {
             _randomTile = null;
             _foundTile = null;
+
+            foreach (var hintPair in _backupHintData)
+            {
+                hintPair.ResetTiles(hintPair.Tile_1, hintPair.Tile_2);
+            }
+        }
+
+        private void StartBlinking(Tile tile1, Tile tile2)
+        {
+            var tile1Material = tile1.GetRenderer().material;
+            var tile2Material = tile2.GetRenderer().material;
+            var originalColor = tile1Material.color;
+            var blinkColor = Color.white;
+
+            var blinkingSequence = DOTween.Sequence();
+            blinkingSequence.Append(tile1Material.DOColor(blinkColor, 0.5f).SetLoops(-1, LoopType.Yoyo));
+            blinkingSequence.Join(tile2Material.DOColor(blinkColor, 0.5f).SetLoops(-1, LoopType.Yoyo));
+            blinkingSequence.Play();
+        }
+    }
+
+    [Serializable]
+    public class HintPairsData
+    {
+        [HideInInspector] public Tile Tile_1;
+        [HideInInspector] public Tile Tile_2;
+        [HideInInspector] public Color OriginalColor;
+
+        public void ResetTiles(Tile tile1, Tile tile2)
+        {
+            if (tile1 != null && tile2 != null)
+            {
+                var renderer1 = Tile_1.GetRenderer();
+                var renderer2 = Tile_2.GetRenderer();
+                if (renderer1 != null && renderer2 != null)
+                {
+                    renderer1.material.color = OriginalColor;
+                    renderer2.material.color = OriginalColor;
+                }
+            }
         }
     }
 }
