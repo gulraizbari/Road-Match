@@ -11,16 +11,16 @@ using Utilities;
 public class Booster : MonoBehaviour
 {
     [BoxGroup("Booster")][SerializeField]  Button button;
+    [BoxGroup("Booster")][SerializeField] Sprite _hintDisable;
+    [BoxGroup("Booster")][SerializeField] Sprite _hindEnable;
     [BoxGroup("Booster")][SerializeField] Sprite IconLock;
     [BoxGroup("Booster")][SerializeField] Sprite IconUnlock;
-    [BoxGroup("Booster")][SerializeField] Sprite bgUnlock;
     [BoxGroup("Booster")][SerializeField] Sprite bgLock;
     [BoxGroup("Booster")][SerializeField] Image IconBooster;
     [BoxGroup("Booster")][SerializeField] Image bgBooster;
     [BoxGroup("Booster")][SerializeField] MultiText availableAfterText;
     [BoxGroup("Booster")][SerializeField] MultiText unLockText;
     [BoxGroup("Booster")][SerializeField] Money price;
-    [BoxGroup("Booster")] [SerializeField] GameObject unlockPlacement;
     [BoxGroup("Booster")][SerializeField] int availableAfter;
     public UnityEvent Action;
 
@@ -38,8 +38,7 @@ public class Booster : MonoBehaviour
     {
         if (currentLevel>=availableAfter)
         {
-            unlockPlacement.SetActive(true);
-            bgBooster.sprite = bgUnlock;
+            bgBooster.sprite = _hindEnable;
             IconBooster.sprite = IconUnlock;
            bgBooster.SetNativeSize();
            IconBooster.SetNativeSize();
@@ -51,7 +50,6 @@ public class Booster : MonoBehaviour
         }
         else
         {
-            unlockPlacement.SetActive(false);
             bgBooster.sprite = bgLock;
             IconBooster.sprite = IconLock;
             button.interactable = false;
@@ -73,10 +71,12 @@ public class Booster : MonoBehaviour
         if (GameController.GameCash >= price)
         {
             button.interactable = enable;
+            bgBooster.sprite = _hindEnable;
         }
         else
         {
             button.interactable = false;
+            bgBooster.sprite = _hintDisable;
         }
     }
 }
