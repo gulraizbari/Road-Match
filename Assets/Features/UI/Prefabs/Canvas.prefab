@@ -446,6 +446,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3144c28762e143be8c6555373c0dde9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _levelText: {fileID: 0}
+  _movesText: {fileID: 0}
+  _mainCashText: {fileID: 0}
   _levelComplete: {fileID: 4232047513260833854}
   _levelFail: {fileID: 4232047511817892047}
   _mainPanel: {fileID: 0}
@@ -570,6 +573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelFail
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033378584344038940, guid: 9ab6877224a024a63aa15a1229d97229,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ab6877224a024a63aa15a1229d97229, type: 3}
@@ -1173,18 +1181,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 3675870147904358655}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4232047513266593233 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 700328051411113262, guid: e099fc2297b874cd5becd1b53b9fb954,
-    type: 3}
-  m_PrefabInstance: {fileID: 3675870147904358655}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4552616281351742466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1382,7 +1378,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _setting
       value: 
-      objectReference: {fileID: 4232047513266593233}
+      objectReference: {fileID: 0}
     - target: {fileID: 7461596056140970322, guid: 7b1b45755c7ff44199d6c113080eb997,
         type: 3}
       propertyPath: m_Name

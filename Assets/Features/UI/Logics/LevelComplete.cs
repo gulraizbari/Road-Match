@@ -5,19 +5,29 @@ using Features.UI.Logics;
 using Helpers;
 using Sablo.Core;
 using Sirenix.OdinInspector;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Utilities;
 
 public class LevelComplete : PanelBase
 {
     [SerializeField] List<RectTransform> _stars;
-    [SerializeField] [BoxGroup("Reference")] Money _cashToGive=new Money(20,MoneyPrefix.Empty);
-    [SerializeField] [BoxGroup("Reference")] TextMeshProUGUI _cashToGiveText;
+    [SerializeField] [BoxGroup("Reference")] Money _cashToGive=new Money(20);
+    [SerializeField] [BoxGroup("Reference")] MultiText _cashToGiveText;
+    [SerializeField] [BoxGroup("Reference")] MultiText _winCashText;
+    [SerializeField] [BoxGroup("Reference")] Button _nextButton;
+
+
+    public override void Start()
+    {
+        base.Start();
+        _nextButton.onClick.AddListener(UpdateCash);
+    }
+
     public override void OpenPanel(float delay)
     {
         base.OpenPanel(delay);
-        UpdateCash();
+        OnStart();
         SoundManager.Instance.LevelComplete(1);
         StartCoroutine(ShowStars(delay));
     }
@@ -35,12 +45,16 @@ public class LevelComplete : PanelBase
         }
     }
 
+    private void OnStart()
+    {
+        _cashToGiveText.UpdateText(_cashToGive.ToInt().ToString());
+        _winCashText.UpdateText(GameController.GameCash.ToString());
+    }
     [Button]
     private void UpdateCash()
     {
-        GameController.TotalMoney += _cashToGive.ToInt();
-        Money money = new Money(GameController.TotalMoney,MoneyPrefix.Empty);
-        _cashToGiveText.SetText(money.ToString());
+        
+        UIController.instance.AddCash(_cashToGive);
 
     }
     

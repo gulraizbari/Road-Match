@@ -172,6 +172,7 @@ public enum ToastMessages
 public enum TextType
 {
     Level,
-    Moves
+    Moves,
+    MainCash
 }
 

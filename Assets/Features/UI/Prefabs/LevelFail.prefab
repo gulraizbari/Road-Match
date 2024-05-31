@@ -583,7 +583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4033378584344038915
 RectTransform:
   m_ObjectHideFlags: 0
@@ -622,6 +622,14 @@ MonoBehaviour:
       m_Calls: []
   _overlay: {fileID: 0}
   _panel: {fileID: 4033378584268983030}
+  _playOnButton: {fileID: 6191118992312556904}
+  _movesReward: 0a000000140000001e000000
+  _cashText: {fileID: 5597297075169230850}
+  _requiredText: {fileID: 4798165554427268585}
+  _movesText: {fileID: 1478001645834495395}
+  _requiredCash:
+    value: 50
+    moneyPrefix: 0
 --- !u!1 &4681474890749361538
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,7 +854,7 @@ GameObject:
   - component: {fileID: 9117227903811062637}
   - component: {fileID: 4798165554427268585}
   m_Layer: 5
-  m_Name: CashText
+  m_Name: RequiredCashText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1379,6 +1387,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c10dbf26be2dd4d5488c714d4cc5b661, type: 3}
+--- !u!114 &1478001645834495395 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3938040828197664263, guid: c10dbf26be2dd4d5488c714d4cc5b661,
+    type: 3}
+  m_PrefabInstance: {fileID: 2460181380284060580}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e984356ca2c4f89824841a90c366d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &6938988125248980575 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4785194458444600827, guid: c10dbf26be2dd4d5488c714d4cc5b661,
@@ -1510,3 +1530,15 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 3059540387930469157}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5597297075169230850 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7482787738404909863, guid: daa15e8c6449d49718293902f1f64192,
+    type: 3}
+  m_PrefabInstance: {fileID: 3059540387930469157}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e984356ca2c4f89824841a90c366d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

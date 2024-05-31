@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -11,6 +12,11 @@ namespace Features.UI.Logics
         public GameObject _overlay;
         [BoxGroup("Reference")] [SerializeField]
        protected GameObject _panel;
+
+      public virtual void  Start()
+        {
+            
+        }
 
         IEnumerator ShowObjectWithDelay(float delay)
         {
