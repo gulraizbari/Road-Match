@@ -71,6 +71,7 @@ public class MergeController : MonoBehaviour, IMergeController
         selectedTile1 = null;
         selectedTile2 = null;
         SoundManager.Instance.PlayTileMerge(1);
+        TileHintHandler.ResetHintMatchedTiles();
     }
 
     private void MergeThem()
@@ -84,7 +85,6 @@ public class MergeController : MonoBehaviour, IMergeController
                     if (WithSameSubType)
                     {
                         PerformMerge();
-
                     }
                     else
                     {
