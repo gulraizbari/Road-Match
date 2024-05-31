@@ -12,10 +12,12 @@ namespace Sablo.Gameplay.TilesHint
     public class TileHintController : MonoBehaviour, ITileHintController
     {
         private List<Tile> _tempFlipAbleTilesList = new List<Tile>();
-        private List<HintPairsData> _backupHintData;
+        private List<HintPairsData> _backupHintData = new List<HintPairsData>();
         private HintPairsData _hintData;
         private ITile _randomTile;
         private Tile _foundTile;
+        private Tween _tile1; 
+        private Tween _tile2;
 
         public IGridGenerator GridGenerationHandler { get; set; }
         public IPlayer SelectedPlayer { get; set; }
@@ -54,16 +56,22 @@ namespace Sablo.Gameplay.TilesHint
         {
             _foundTile = null;
             // Check if the hint tiles are already in backupHintData and not used
-            foreach (var hintPair in _backupHintData)
+            if (_backupHintData.Count > 0)
             {
-                if ((hintPair.Tile_1 == randomlySelectedTile as Tile || hintPair.Tile_2 == randomlySelectedTile as Tile) &&
-                    hintPair.Tile_1.TileState == TileStates.FlipAble && hintPair.Tile_2.TileState == TileStates.FlipAble)
+                foreach (var hintPair in _backupHintData)
                 {
-                    print($"Using cached hint pair: Tile 1 - {hintPair.Tile_1.ID}, Tile 2 - {hintPair.Tile_2.ID}");
-                    _foundTile = hintPair.Tile_1;
-                    randomlySelectedTile = hintPair.Tile_2;
-                    StartBlinking(hintPair.Tile_1, hintPair.Tile_2);
-                    return;
+                    if ((hintPair.Tile_1 == randomlySelectedTile as Tile ||
+                         hintPair.Tile_2 == randomlySelectedTile as Tile) &&
+                        hintPair.Tile_1.TileState == TileStates.FlipAble &&
+                        hintPair.Tile_2.TileState == TileStates.FlipAble &&
+                        hintPair.Tile_1.ID != hintPair.Tile_2.ID)
+                    {
+                        print($"Using cached hint pair: Tile 1 - {hintPair.Tile_1.ID}, Tile 2 - {hintPair.Tile_2.ID}");
+                        _foundTile = hintPair.Tile_1;
+                        randomlySelectedTile = hintPair.Tile_2;
+                        StartBlinking(hintPair.Tile_1, hintPair.Tile_2);
+                        return;
+                    }
                 }
             }
 
@@ -72,6 +80,8 @@ namespace Sablo.Gameplay.TilesHint
                 if (tileData.Value.ITileHandler.CurrentItem is null) continue;
                 if (TilesWithSameType(tileData.Value.ITileHandler, randomlySelectedTile) &&
                     WithSameSubType(tileData.Value.ITileHandler, randomlySelectedTile) &&
+                    tileData.Value.TileState == TileStates.FlipAble && 
+                    randomlySelectedTile.TileState == TileStates.FlipAble &&
                     tileData.Value.ID != randomlySelectedTile.ID)
                 {
                     _foundTile = tileData.Value;
@@ -160,21 +170,25 @@ namespace Sablo.Gameplay.TilesHint
 
             foreach (var hintPair in _backupHintData)
             {
-                hintPair.ResetTiles(hintPair.Tile_1, hintPair.Tile_2);
+                hintPair.ResetTiles(hintPair.Tile_1, hintPair.Tile_2, _tile1, _tile2);
             }
         }
 
         private void StartBlinking(Tile tile1, Tile tile2)
         {
-            var tile1Material = tile1.GetRenderer().material;
-            var tile2Material = tile2.GetRenderer().material;
-            var originalColor = tile1Material.color;
-            var blinkColor = Color.white;
-
-            var blinkingSequence = DOTween.Sequence();
-            blinkingSequence.Append(tile1Material.DOColor(blinkColor, 0.5f).SetLoops(-1, LoopType.Yoyo));
-            blinkingSequence.Join(tile2Material.DOColor(blinkColor, 0.5f).SetLoops(-1, LoopType.Yoyo));
-            blinkingSequence.Play();
+            _tile1 = tile1.transform.DOScale(1.1f, .5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
+            _tile2 = tile2.transform.DOScale(1.1f, .5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
+            // var tile1Material = tile1.GetRenderer().material;
+            // var tile2Material = tile2.GetRenderer().material;
+            // var originalColor = tile1Material.color;
+            // var blinkColor = Color.white;
+            //
+            // var blinkingSequence = DOTween.Sequence();
+            // blinkingSequence.Append(tile1Material.DOColor(blinkColor, 0.5f).SetLoops(-1, LoopType.Yoyo));
+            // blinkingSequence.Join(tile2Material.DOColor(blinkColor, 0.5f).SetLoops(-1, LoopType.Yoyo));
+            // blinkingSequence.Append(tile1Material.DOColor(originalColor, 0.5f).SetLoops(-1, LoopType.Yoyo));
+            // blinkingSequence.Join(tile2Material.DOColor(originalColor, 0.5f).SetLoops(-1, LoopType.Yoyo));
+            // blinkingSequence.Play();
         }
     }
 
@@ -185,17 +199,21 @@ namespace Sablo.Gameplay.TilesHint
         [HideInInspector] public Tile Tile_2;
         [HideInInspector] public Color OriginalColor;
 
-        public void ResetTiles(Tile tile1, Tile tile2)
+        public void ResetTiles(Tile tile1, Tile tile2, Tween t1, Tween t2)
         {
             if (tile1 != null && tile2 != null)
             {
-                var renderer1 = Tile_1.GetRenderer();
-                var renderer2 = Tile_2.GetRenderer();
-                if (renderer1 != null && renderer2 != null)
-                {
-                    renderer1.material.color = OriginalColor;
-                    renderer2.material.color = OriginalColor;
-                }
+                t1?.Kill();
+                t2?.Kill();
+                tile1.transform.localScale = Vector3.one;
+                tile2.transform.localScale = Vector3.one;
+                // var renderer1 = Tile_1.GetRenderer();
+                // var renderer2 = Tile_2.GetRenderer();
+                // if (renderer1 != null && renderer2 != null)
+                // {
+                //     renderer1.material.color = OriginalColor;
+                //     renderer2.material.color = OriginalColor;
+                // }
             }
         }
     }
