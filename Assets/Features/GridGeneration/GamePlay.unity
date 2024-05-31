@@ -17865,7 +17865,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 864d072c4a53344618abbdf4955ac6d0, type: 2}
+  - {fileID: 2100000, guid: 0c42a8a35901d2d498124d6974b4e2ef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19058,7 +19058,7 @@ MonoBehaviour:
   nextButton: {fileID: 817033152}
   resetButton: {fileID: 56685563}
   reloadButton: {fileID: 56685563}
-  isTesting: 1
+  isTesting: 0
   testingLvlNumber: 0
 --- !u!4 &1639253927
 Transform:
