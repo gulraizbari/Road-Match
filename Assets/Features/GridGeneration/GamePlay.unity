@@ -18093,10 +18093,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mergeController: {fileID: 1957587253}
+  _gridController: {fileID: 2012773269}
   _gridView: {fileID: 2045547669}
   _hapticsController: {fileID: 1202539670}
   _playerController: {fileID: 1457352167}
   _pathFinding: {fileID: 1767689964}
+  _hintController: {fileID: 1803617106}
   _player: {fileID: 2090353442}
   playerGoals: {fileID: 762620189}
 --- !u!4 &1228550221
@@ -19225,6 +19227,57 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1897615370}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1803617105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1803617107}
+  - component: {fileID: 1803617106}
+  m_Layer: 0
+  m_Name: HintHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1803617106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803617105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f378c2ace1724546be242231b79ebc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tempFlipAbleTilesList: []
+  _backupHintData: []
+  _hintData:
+    Tile_1: {fileID: 0}
+    Tile_2: {fileID: 0}
+    OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  _booster: {fileID: 1218415792}
+--- !u!4 &1803617107
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803617105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1812899714
 GameObject:
   m_ObjectHideFlags: 0

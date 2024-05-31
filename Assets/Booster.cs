@@ -10,7 +10,7 @@ using Utilities;
 
 public class Booster : MonoBehaviour
 {
-    [BoxGroup("Booster")][SerializeField] Button button;
+    [BoxGroup("Booster")][SerializeField]  Button button;
     [BoxGroup("Booster")][SerializeField] Sprite IconLock;
     [BoxGroup("Booster")][SerializeField] Sprite IconUnlock;
     [BoxGroup("Booster")][SerializeField] Sprite bgUnlock;
@@ -22,7 +22,7 @@ public class Booster : MonoBehaviour
     [BoxGroup("Booster")][SerializeField] Money price;
     [BoxGroup("Booster")] [SerializeField] GameObject unlockPlacement;
     [BoxGroup("Booster")][SerializeField] int availableAfter;
-    public UnityAction Action;
+    public UnityEvent Action;
 
 
     void OnEnable()=>EventManager._onMoneyUpdate += OnMoneyUpdate;
@@ -66,6 +66,17 @@ public class Booster : MonoBehaviour
             UIController.instance.DetectMoney(price);
             Action?.Invoke();
         }
-        
+    }
+
+    public void EnableBoosterButton(bool enable)
+    {
+        if (GameController.GameCash >= price)
+        {
+            button.interactable = enable;
+        }
+        else
+        {
+            button.interactable = false;
+        }
     }
 }

@@ -11,6 +11,7 @@ public partial class GameConfig
    [FoldoutGroup("Player")] public float JumpDuration;
    [FoldoutGroup("Player")] public float playerYTargetOnTileMoving;
    [FoldoutGroup("Player")] public float playerYTargetOnTileMovingDuration;
+  
    [FoldoutGroup("Player")] public Vector3 playerRotationOnJumpComplete;
    [FoldoutGroup("Player")] public float playerRotationOnJumpCompleteDuration;
     

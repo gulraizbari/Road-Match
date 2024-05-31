@@ -14,7 +14,7 @@ public class PlayerAnimator : MonoBehaviour
     public LayerMask layer;
     public void WalkAnimation(bool isWalk)
     {
-        _slash.SetActive(true);
+        _slash.SetActive(false);
         _animator.Play(isWalk ? "Run" : "Idle");
        
     }

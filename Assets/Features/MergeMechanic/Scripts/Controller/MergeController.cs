@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Features.MergeMechanic.Scripts.Interface;
 using GridGeneration.Scripts.interfaces;
 using Sablo.Core;
+using Sablo.Gameplay.TilesHint;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
@@ -14,6 +15,7 @@ public class MergeController : MonoBehaviour, IMergeController
     [ShowInInspector] ITile selectedTile2 = null;
     [ShowInInspector] public List<ITile> oldData = new List<ITile>();
     public ParticleSystem mergeParticle;
+    public ITileHintController HintHandler;
     bool SelectedTilesAvailable => selectedTile1 != null && selectedTile2 != null;
 
     bool MergeableTiles => selectedTile1.TileState == TileStates.CanMerge &&
@@ -74,6 +76,7 @@ public class MergeController : MonoBehaviour, IMergeController
         selectedTile1 = null;
         selectedTile2 = null;
         SoundManager.Instance.PlayTileMerge(1);
+        HintHandler.ResetHintMatchedTiles(true);
     }
 
     private void MergeThem()
@@ -89,7 +92,7 @@ public class MergeController : MonoBehaviour, IMergeController
                     if (WithSameSubType)
                     {
                         PerformMerge();
-
+                       
                     }
                     else
                     {
@@ -124,6 +127,7 @@ public class MergeController : MonoBehaviour, IMergeController
 
     private void UnSelectTiles()
     {
+        HintHandler.ResetHintMatchedTiles(false);
         UnityEvent action = new UnityEvent();
         action.AddListener(CheckCompletion);
         selectedTile1.UnSelect(false, Configs.GameConfig.tileFlipDelay, Configs.GameConfig.tileRotateDelay, action);
