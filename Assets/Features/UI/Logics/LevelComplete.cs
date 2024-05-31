@@ -53,9 +53,14 @@ public class LevelComplete : PanelBase
     [Button]
     private void UpdateCash()
     {
-        
         UIController.instance.AddCash(_cashToGive);
+    }
 
+    private void GetX2Reward()
+    {
+        var value = _cashToGive.ToInt() * 2;
+        _cashToGiveText.UpdateText(value.ToString());
+        
     }
     
 }

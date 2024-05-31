@@ -57,6 +57,6 @@ public class DumyLevelManager : MonoBehaviour
       SceneManager.LoadScene(0);
    }
 
-   public int Level { get=>PlayerPrefs.GetInt("Lvl"); set=>PlayerPrefs.SetInt("Lvl",value); }
+   public  int Level { get=>PlayerPrefs.GetInt("Lvl"); set=>PlayerPrefs.SetInt("Lvl",value); }
 
 }

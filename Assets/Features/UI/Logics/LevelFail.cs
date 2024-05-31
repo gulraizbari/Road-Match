@@ -38,7 +38,7 @@ namespace Features.UI.Logics
         {
             _requiredText.SetText(_requiredCash.ToInt().ToString());
             GameController.ShowCash(_cashText);
-            _movesText.UpdateText(_movesReward[movesCounter].ToString());
+            _movesText.UpdateText($"+{_movesReward[movesCounter]}" );
             SoundManager.Instance.LevelFail(1);
             _playOnButton.interactable = GameController.GameCash.ToInt() >= _requiredCash.ToInt();
         }

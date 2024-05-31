@@ -67,8 +67,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1347683689611860824}
   - {fileID: 4359475610696680565}
+  - {fileID: 1347683689611860824}
   - {fileID: 1036999449945543271}
   m_Father: {fileID: 4787866756438950501}
   m_RootOrder: 0
@@ -138,7 +138,7 @@ PrefabInstance:
     - target: {fileID: 3625135099526863950, guid: 581356008686a4d46873b394d6d4894d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3625135099526863950, guid: 581356008686a4d46873b394d6d4894d,
         type: 3}
@@ -233,7 +233,7 @@ PrefabInstance:
     - target: {fileID: 7207960900259431307, guid: 581356008686a4d46873b394d6d4894d,
         type: 3}
       propertyPath: m_Name
-      value: Boster Button 1 (1)
+      value: Hint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 581356008686a4d46873b394d6d4894d, type: 3}
@@ -263,7 +263,7 @@ PrefabInstance:
     - target: {fileID: 3625135099526863950, guid: 581356008686a4d46873b394d6d4894d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3625135099526863950, guid: 581356008686a4d46873b394d6d4894d,
         type: 3}
@@ -354,6 +354,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6699767223847518412, guid: 581356008686a4d46873b394d6d4894d,
+        type: 3}
+      propertyPath: availableAfter
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7207960900259431307, guid: 581356008686a4d46873b394d6d4894d,
         type: 3}
@@ -479,6 +484,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6699767223847518412, guid: 581356008686a4d46873b394d6d4894d,
+        type: 3}
+      propertyPath: availableAfter
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7207960900259431307, guid: 581356008686a4d46873b394d6d4894d,
         type: 3}
