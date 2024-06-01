@@ -38,6 +38,13 @@ namespace Sablo.Gameplay.TilesHint
 
         public void IndicateSimilarTiles()
         {
+            if (Check())
+            {
+                _booster.EnableBoosterButton(false);
+                return;
+            }
+            
+            
             _tempFlipAbleTilesList.Clear();
             foreach (Tile neighbor in GridGenerationHandler.FindAdjacentCells(SelectedPlayer.CurrentTile))
             {
@@ -58,31 +65,35 @@ namespace Sablo.Gameplay.TilesHint
                 print("No valid random tile found. Selecting nearest random pair.");
                 SelectTwoRandomMatchingTiles();
             }
+
+            
+
+        }
+
+        private bool Check()
+        {
+            int counter=0;
+            bool condition = false;
+            foreach (var VARIABLE in GridViewHandler.PathData)
+            {
+                if (VARIABLE.Value.TileState == TileStates.Walkable)
+                {
+                    counter++;
+                }
+               
+            }
+
+            if (counter >= GridViewHandler.PathData.Count-3)
+            {
+                _booster.stop = true;
+                condition = true;
+            }
+            return condition;
         }
 
         private void SearchInGrid(ITile randomlySelectedTile)
         {
             _foundTile = null;
-            // Check if the hint tiles are already in backupHintData and not used
-            // if (_backupHintData.Count > 0)
-            // {
-            //     foreach (var hintPair in _backupHintData)
-            //     {
-            //         if ((hintPair.Tile_1 == randomlySelectedTile as Tile ||
-            //              hintPair.Tile_2 == randomlySelectedTile as Tile) &&
-            //             hintPair.Tile_1.TileState == TileStates.FlipAble &&
-            //             hintPair.Tile_2.TileState == TileStates.FlipAble &&
-            //             hintPair.Tile_1.ID != hintPair.Tile_2.ID)
-            //         {
-            //             print($"Using cached hint pair: Tile 1 - {hintPair.Tile_1.ID}, Tile 2 - {hintPair.Tile_2.ID}");
-            //             _foundTile = hintPair.Tile_1;
-            //             randomlySelectedTile = hintPair.Tile_2;
-            //             StartBlinking(hintPair.Tile_1, hintPair.Tile_2);
-            //             return;
-            //         }
-            //     }
-            // }
-
             foreach (var tileData in GridViewHandler.PathData)
             {
                 if (tileData.Value.ITileHandler.CurrentItem is null) continue;
@@ -184,43 +195,42 @@ namespace Sablo.Gameplay.TilesHint
                 {
                     
                     print("mine merge");
+                    hintPair.Tile_1.ChangeColor(Configs.GameConfig.TileOrignalColor); 
+                    
                 }
                 else
                 {
+                    hintPair.Tile_1.ChangeHintColor(Configs.GameConfig.TileHintOrignalColor,true); 
                     print(" not mine merge");
                 }
                 if (hintPair.Tile_2.TileState == TileStates.Walkable)
                 {
                     print("mine merge");
+                    hintPair.Tile_2.ChangeColor(Configs.GameConfig.TileOrignalColor); 
+                   
                 }
                 else
                 {
                     print(" not mine merge");
+                    hintPair.Tile_2.ChangeHintColor(Configs.GameConfig.TileHintOrignalColor,true); 
                 }
                 
                 hintPair.ResetTiles(hintPair.Tile_1, hintPair.Tile_2, t1, t2,isMerge);
             }
             //_tempFlipAbleTilesList.Clear();
             _backupHintData.Clear();
-            _booster.EnableBoosterButton(true);
+            _booster.EnableBoosterButton(!Check());
+            //Check();
         }
 
         Tween t1, t2, h1, h2;
 
         private void StartBlinking(Tile tile1, Tile tile2)
         {
-            //tile1.ChangeHintColor(Configs.GameConfig.TileHintColor); 
-           // tile2.ChangeHintColor(Configs.GameConfig.TileHintColor); 
-            t1 = tile1.transform.DOLocalMoveY(.6f, .5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).OnStart((() =>
-            {
-               
-                
-            }));
-            t2 = tile2.transform.DOLocalMoveY(.6f, .5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).OnStart((() =>
-            {
-              
-            }));
-           
+            tile1.ChangeHintColor(Configs.GameConfig.TileHintColor,false); 
+            tile2.ChangeHintColor(Configs.GameConfig.TileHintColor,false);
+            t1 = tile1.transform.DOLocalMoveY(.6f, .5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
+            t2 = tile2.transform.DOLocalMoveY(.6f, .5f).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
         }
     }
 
@@ -239,8 +249,6 @@ namespace Sablo.Gameplay.TilesHint
                 t2?.Kill();
                 tile1.transform.DOLocalMoveY(0, .1f);
                 tile2.transform.DOLocalMoveY(0, .1f);
-              
-                
             }
         }
     }

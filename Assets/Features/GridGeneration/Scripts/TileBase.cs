@@ -411,14 +411,24 @@ namespace Features.GridGeneration.Scripts
         public void ChangeColor(Color color)
         {
             _renderer.material.DOColor(color, Configs.GameConfig.playerYTargetOnTileMovingDuration);
-        } 
-        public void ChangeHintColor(Color color1)
+        }
+
+        Tween tween;
+        public void ChangeHintColor(Color color1 ,bool stop)
         {
-            _renderer.material.DOColor(color1, Configs.GameConfig.colorDuration).SetEase(Ease.Linear)
-                .SetLoops(-1, LoopType.Yoyo); //.OnComplete((() =>
-            // {
-            //     _renderer.material.DOColor(color2, Configs.GameConfig.colorDuration).SetEase(Ease.Linear);
-            // }));
+            
+            if (stop)
+            {
+                if (tween.IsActive())
+                {
+                    tween.Kill();
+                    ChangeColor(color1);
+                    return;
+                }
+            }
+            tween= _renderer.material.DOColor(color1, Configs.GameConfig.colorDuration).SetEase(Ease.Linear)
+                .SetLoops(-1, LoopType.Yoyo);
+           
         }
 
         public virtual void OnPointerUp(PointerEventData eventData)
