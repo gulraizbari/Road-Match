@@ -42,7 +42,6 @@ namespace Sablo.Gameplay.TilesHint
             _randomTile = SelectRandomFlipAbleTile(_tempFlipAbleTilesList);
             if (_randomTile != null && _randomTile.CurrentItem != null)
             {
-                print(_randomTile);
                 SearchInGrid(_randomTile);
             }
             else
@@ -87,10 +86,6 @@ namespace Sablo.Gameplay.TilesHint
                     _foundTile = tileData.Value;
                     if (_foundTile)
                     {
-                        print(tileData.Value.ITileHandler.CurrentItem.TypeItem);
-                        print(randomlySelectedTile.CurrentItem.TypeItem);
-                        var isMatching = tileData.Value.ITileHandler.CurrentItem.TypeItem == randomlySelectedTile.CurrentItem.TypeItem;
-                        print("Items are matching: " + isMatching);
                         _hintData = new HintPairsData()
                         {
                             Tile_1 = randomlySelectedTile as Tile,
@@ -100,10 +95,6 @@ namespace Sablo.Gameplay.TilesHint
                         _backupHintData.Add(_hintData);
                         StartBlinking(_hintData.Tile_1, _hintData.Tile_2);
                         break;
-                    }
-                    else
-                    {
-                        print("Tile not found");
                     }
                 }
             }
