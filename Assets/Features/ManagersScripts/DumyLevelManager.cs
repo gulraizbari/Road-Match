@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -40,7 +41,7 @@ public class DumyLevelManager : MonoBehaviour
       reloadButton.onClick.AddListener((ResetLevel));
       
    }
-
+   [Button]
    public void NextLevel()
    {
       Level++;

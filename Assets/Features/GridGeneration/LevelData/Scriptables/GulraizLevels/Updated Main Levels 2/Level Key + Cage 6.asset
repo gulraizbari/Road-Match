@@ -75,6 +75,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -130,6 +133,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -189,6 +195,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -244,6 +253,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -303,6 +315,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -358,6 +373,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -417,6 +435,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -472,6 +493,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -531,6 +555,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -586,6 +613,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -645,6 +675,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -700,6 +733,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -759,6 +795,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -814,6 +853,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -873,6 +915,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -930,6 +975,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: true
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -985,6 +1033,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1044,6 +1095,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1099,6 +1153,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1158,6 +1215,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1213,6 +1273,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1272,6 +1335,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1327,6 +1393,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1386,6 +1455,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1441,6 +1513,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1500,6 +1575,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1555,6 +1633,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1614,6 +1695,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1669,6 +1753,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1728,6 +1815,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: true
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1783,6 +1873,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1842,6 +1935,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1897,6 +1993,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1956,6 +2055,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -2011,6 +2113,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -2070,6 +2175,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -2125,6 +2233,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -2184,6 +2295,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -2239,6 +2353,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -2298,6 +2415,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -2353,6 +2473,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -2412,6 +2535,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: true
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -2467,6 +2593,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -2526,6 +2655,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -2581,6 +2713,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -2640,6 +2775,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -2697,6 +2835,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: true
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -2752,6 +2893,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -2811,6 +2955,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: true
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -2866,6 +3013,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -2925,6 +3075,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -2980,6 +3133,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -3039,6 +3195,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -3094,6 +3253,9 @@ MonoBehaviour:
       Entry: 5
       Data: true
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -3153,6 +3315,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -3208,6 +3373,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -3267,6 +3435,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -3322,6 +3493,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -3381,6 +3555,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -3436,6 +3613,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -3495,6 +3675,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -3550,6 +3733,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -3609,6 +3795,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -3640,6 +3829,7 @@ MonoBehaviour:
   minZ: 0
   minX: 0
   maxX: 0
+  xPos: 0
   customPadding: 0
   customPaddingValue: 2.6
   IsEnemy: 0

@@ -24,11 +24,11 @@ public class Booster : MonoBehaviour
     [BoxGroup("Booster")][SerializeField] int availableAfter;
     public UnityEvent Action;
     public bool stop;
-
+    public bool available;
     void OnEnable()=>EventManager._onMoneyUpdate += OnMoneyUpdate;
     void OnDisable()=>EventManager._onMoneyUpdate -= OnMoneyUpdate;
 
-    
+   public int lvl;
     private void OnMoneyUpdate()
     {
         button.interactable = GameController.GameCash>=price;
@@ -36,8 +36,10 @@ public class Booster : MonoBehaviour
 
     public void OnStart(int currentLevel)
     {
-        if (currentLevel>=availableAfter)
+        lvl = currentLevel+1;
+        if (lvl>=availableAfter)
         {
+            available = true;
             bgBooster.sprite = _hindEnable;
             IconBooster.sprite = IconUnlock;
            bgBooster.SetNativeSize();
@@ -55,7 +57,7 @@ public class Booster : MonoBehaviour
             bgBooster.sprite = bgLock;
             IconBooster.sprite = IconLock;
             button.interactable = false;
-            availableAfterText.UpdateText($"Level{availableAfter}");
+            availableAfterText.UpdateText($"Level {availableAfter}");
            
         }
     }
@@ -68,7 +70,11 @@ public class Booster : MonoBehaviour
             {
                 UIController.instance.DetectMoney(price);
                 Action?.Invoke();
-            } 
+            }
+            else
+            {
+                
+            }
         }
         else
         {
@@ -78,6 +84,7 @@ public class Booster : MonoBehaviour
   
     public void EnableBoosterButton(bool enable)
     {
+        if (!available)return;
         if (GameController.GameCash >= price)
         {
             button.interactable = enable;
@@ -85,8 +92,23 @@ public class Booster : MonoBehaviour
         }
         else
         {
-            button.interactable = false;
-            bgBooster.sprite = _hintDisable;
+           
+            // if (lvl >= availableAfter)
+            // {
+            //     button.interactable = true;
+            //     IconBooster.sprite = IconLock;
+            //     bgBooster.sprite = _hintDisable;
+            //     availableAfterText.gameObject.SetActive(false);
+            //     unLockText.gameObject.SetActive(true);
+            // }
+            // else
+            {
+                button.interactable = false;
+               // availableAfterText.gameObject.SetActive(true);
+                //unLockText.gameObject.SetActive(false);
+                bgBooster.sprite = _hintDisable;
+                IconBooster.sprite = IconUnlock;
+            }
         }
     }
 }

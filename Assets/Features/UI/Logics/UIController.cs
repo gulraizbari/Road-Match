@@ -59,7 +59,7 @@ public class UIController : MonoBehaviour
       }
       else
       {
-         _mainPanel.DOAnchorPosY(200, .5f).SetEase(Ease.Linear);
+         _mainPanel.DOAnchorPosY(300, .5f).SetEase(Ease.Linear);
       }
    } 
    private void BottomPanelMove(bool isDown)

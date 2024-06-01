@@ -6029,10 +6029,11 @@ MonoBehaviour:
     type: 2}
   movesMultiplier: 3
   moveCamera: 1
-  maxZ: -30
-  minZ: -52
-  minX: 0
-  maxX: 0
-  customPadding: 0
-  customPaddingValue: 2.6
+  maxZ: -28
+  minZ: -54
+  minX: -4
+  maxX: 4
+  xPos: 0
+  customPadding: 1
+  customPaddingValue: 0
   IsEnemy: 1

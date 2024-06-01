@@ -54,9 +54,10 @@ namespace Features.CharacterMovement.Scripts
             collectable.transform.SetParent(null);
            // collectable.gameObject.SetActive(false);
           
-            if (collectable.CollectibleID is null)
+           
+            if (collectable.Unlink )
             {
-               
+                print(collectable.Unlink+ "pc");
                 print("No Id");
                 collectable.isDone = true;
                 Destroy( collectable.gameObject);

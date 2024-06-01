@@ -452,6 +452,7 @@ MonoBehaviour:
   _levelComplete: {fileID: 4232047513260833854}
   _levelFail: {fileID: 4232047511817892047}
   _mainPanel: {fileID: 0}
+  _bottomPanel: {fileID: 0}
 --- !u!1001 &955379645338205901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -805,6 +806,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _cashToGiveText
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503647320952081816, guid: e98b6b6be9f134f8cad55cf23f6dae83,
+        type: 3}
+      propertyPath: _cashToGive.value
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1503647320952081816, guid: e98b6b6be9f134f8cad55cf23f6dae83,
         type: 3}

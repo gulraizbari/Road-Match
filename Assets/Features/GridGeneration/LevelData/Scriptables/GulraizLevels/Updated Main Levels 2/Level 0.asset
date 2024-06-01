@@ -2038,12 +2038,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f5f258b570a4e4a29ae7ac16100a2be3, type: 2}
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}
-  movesMultiplier: 1
-  moveCamera: 1
-  maxZ: -455
+  movesMultiplier: 3
+  moveCamera: 0
+  maxZ: -45
   minZ: -42
   minX: -3
   maxX: 3
   customPadding: 1
-  customPaddingValue: 4.6
+  customPaddingValue: 4.5
   IsEnemy: 0

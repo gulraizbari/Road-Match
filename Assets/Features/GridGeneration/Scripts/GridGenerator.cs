@@ -45,8 +45,7 @@ namespace Features.GridGeneration.Scripts
             });
             if (_levelData.moveCamera)
             {
-                Adjuster.DragCamera.enabled = true;
-                Adjuster.DragCamera.SetCamera(_levelData.minZ, _levelData.maxZ,_levelData.minZ,0,_levelData.maxX,_levelData.minX);
+                Adjuster.SetCamera(_levelData);
             }
             _gridView.AssignItemContainer(_levelData);
             _gridView.SpawnGrid(grid, _levelData);
