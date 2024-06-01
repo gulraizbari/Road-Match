@@ -4035,10 +4035,10 @@ MonoBehaviour:
     type: 2}
   movesMultiplier: 2
   moveCamera: 0
-  maxZ: 0
-  minZ: 0
+  maxZ: -41
+  minZ: -46
   minX: 0
   maxX: 0
-  customPadding: 0
-  customPaddingValue: 2.6
+  customPadding: 1
+  customPaddingValue: 3.2
   IsEnemy: 0

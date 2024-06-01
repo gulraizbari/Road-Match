@@ -3636,9 +3636,11 @@ MonoBehaviour:
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}
   movesMultiplier: 3
-  moveCamera: 0
-  maxZ: 0
-  minZ: 0
-  customPadding: 0
-  customPaddingValue: 2.6
+  moveCamera: 1
+  maxZ: -42
+  minZ: -45
+  minX: 0
+  maxX: 0
+  customPadding: 1
+  customPaddingValue: 3
   IsEnemy: 1

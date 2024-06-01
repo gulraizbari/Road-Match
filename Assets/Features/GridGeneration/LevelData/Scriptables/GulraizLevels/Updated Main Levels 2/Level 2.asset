@@ -35,7 +35,7 @@ MonoBehaviour:
       Data: 1|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -70,6 +70,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -126,6 +129,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -178,6 +184,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -234,6 +243,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -286,6 +298,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -342,6 +357,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -359,7 +377,7 @@ MonoBehaviour:
       Data: 7|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -394,6 +412,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -450,6 +471,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -502,6 +526,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -558,6 +585,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -610,6 +640,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -666,6 +699,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -718,6 +754,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -774,6 +813,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -826,6 +868,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -882,6 +927,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -934,6 +982,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -990,6 +1041,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1042,6 +1096,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1098,6 +1155,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1152,6 +1212,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: true
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1169,7 +1232,7 @@ MonoBehaviour:
       Data: 22|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: tilePlacement
       Entry: 3
       Data: 0
@@ -1206,9 +1269,12 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
-    - Name: walkableGate
+    - Name: IsCage
       Entry: 5
       Data: false
+    - Name: walkableGate
+      Entry: 5
+      Data: true
     - Name: enemyHealth
       Entry: 3
       Data: 0
@@ -1258,6 +1324,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1314,6 +1383,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1366,6 +1438,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1422,6 +1497,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1476,6 +1554,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1493,22 +1574,22 @@ MonoBehaviour:
       Data: 28|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfFruit
       Entry: 3
       Data: 0
     - Name: typeOfVegetables
       Entry: 3
-      Data: 0
+      Data: 3
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -1528,6 +1609,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1584,6 +1668,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1636,6 +1723,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1692,6 +1782,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1744,6 +1837,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1800,6 +1896,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1852,6 +1951,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: IsPlayer
+      Entry: 5
+      Data: false
+    - Name: IsCage
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1908,6 +2010,9 @@ MonoBehaviour:
     - Name: IsPlayer
       Entry: 5
       Data: false
+    - Name: IsCage
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1934,9 +2039,11 @@ MonoBehaviour:
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}
   movesMultiplier: 3
-  moveCamera: 0
-  maxZ: 0
-  minZ: 0
-  customPadding: 0
-  customPaddingValue: 2.6
+  moveCamera: 1
+  maxZ: -42
+  minZ: -45
+  minX: 0
+  maxX: 0
+  customPadding: 1
+  customPaddingValue: 3.8
   IsEnemy: 0
