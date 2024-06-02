@@ -2045,5 +2045,5 @@ MonoBehaviour:
   minX: 0
   maxX: 0
   customPadding: 1
-  customPaddingValue: 3.8
+  customPaddingValue: 4
   IsEnemy: 0
