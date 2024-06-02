@@ -131,6 +131,7 @@ namespace Features.GridGeneration.Scripts
                                 {
                                     var hurdle = Instantiate(_gridViewReferences._prefabTileStone);
                                     hurdle.transform.position = tilePosition;
+                                    hurdle.transform.SetParent(_gridViewReferences.extraTransform);
                                     _tile.gameObject.SetActive(false);
                                     NonInteractiveData.SetParent(hurdle.transform);
                                 }

@@ -20,6 +20,7 @@ public class GridViewReferences : MonoBehaviour
     [BoxGroup("References")] public TutorialManager tutorialManager;
     [BoxGroup("References")] public Enemy enemy;
     [BoxGroup("References")] public PowerUp powerUp;
+    [BoxGroup("References")] public Transform extraTransform;
     [BoxGroup("References/Values")] public int moves;
 
 

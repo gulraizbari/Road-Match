@@ -164,7 +164,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 1
@@ -176,7 +176,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 34
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -344,7 +344,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 3
@@ -356,7 +356,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 36
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -524,7 +524,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 7
@@ -536,7 +536,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 37
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -764,7 +764,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 3
@@ -776,7 +776,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 36
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -884,7 +884,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 1
@@ -896,7 +896,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 34
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -944,7 +944,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 0
@@ -956,7 +956,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 36
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -1247,7 +1247,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 5
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1556,7 +1556,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 21
+      Data: 28
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -1604,7 +1604,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 0
@@ -1616,7 +1616,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 36
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -1727,7 +1727,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 4
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -2447,7 +2447,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 5
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -3356,7 +3356,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 21
+      Data: 28
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -3587,7 +3587,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 4
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -4124,7 +4124,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 7
@@ -4136,7 +4136,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 37
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -4245,15 +4245,15 @@ MonoBehaviour:
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}
   movesMultiplier: 3
-  moveCamera: 0
+  moveCamera: 1
   maxZ: 0
   minZ: 0
   minX: 0
   maxX: 0
   xPos: 0
-  startZ: 0
+  startZ: -42
   showGoalFirst: 0
-  setZOnly: 0
+  setZOnly: 1
   customPadding: 1
   customPaddingValue: 3.2
   IsEnemy: 0

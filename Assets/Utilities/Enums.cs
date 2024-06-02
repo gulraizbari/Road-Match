@@ -27,7 +27,8 @@ public enum Fruits
     Grapes,
     Coconut,
     DragonFruit,
-    Avacado
+    Avacado,
+    Cashnut,
 }
 
 public enum Animals
@@ -36,7 +37,11 @@ public enum Animals
     Duck,
     Tweety,
     Rat,
-    Snail
+    Snail,
+    LadyBug,
+    Whale,
+    Frog,
+    Parrot,
 }
 
 public enum Vegetables
@@ -47,6 +52,7 @@ public enum Vegetables
     Qado,
     GreenBean,
     GreenLeaf,
+    Lemon
    
 }
 
@@ -127,7 +133,15 @@ public enum RandomObjects
     Telescope,
     Plant,
     Poison,
-    HoneySpoon
+    HoneySpoon,
+    Camera,
+    Burger,
+    Leaf,
+    FlowerYellow,
+    FlowerRed,
+    Comb,
+    Fries
+   
 }
 
 public enum CollectableItems

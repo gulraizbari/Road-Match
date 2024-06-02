@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fc517067aed33479bb3bc90709bf9150, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3efcade2da0c4817a9fa07ea134d1b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   type: 3
   fruits: 3
   vegetables: 0
-  animals: 2
+  animals: 7
   randomObjects: 0
   Is2D: 1
   particle: {fileID: 1205577448828258555}

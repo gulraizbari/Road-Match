@@ -647,7 +647,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 7
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 2
@@ -707,7 +707,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 6
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -884,7 +884,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 1
@@ -896,7 +896,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 40
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -1307,7 +1307,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 6
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1604,7 +1604,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 1
@@ -1616,7 +1616,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 40
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -2207,7 +2207,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 7
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -3821,6 +3821,7 @@ MonoBehaviour:
   Containers:
   - {fileID: 11400000, guid: f5f258b570a4e4a29ae7ac16100a2be3, type: 2}
   - {fileID: 11400000, guid: 4230d39f4bdc641a98f6162d1f1b0be1, type: 2}
+  - {fileID: 11400000, guid: 2e0d3f55ae3c54e81b31e5000d50a9a4, type: 2}
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}
   movesMultiplier: 3

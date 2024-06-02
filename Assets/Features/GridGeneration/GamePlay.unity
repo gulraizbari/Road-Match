@@ -17719,6 +17719,7 @@ MonoBehaviour:
   tutorialManager: {fileID: 1096717854}
   enemy: {fileID: 2161089880569803616, guid: 7a169fa2c9b8945dd8e0d4342e5514dd, type: 3}
   powerUp: {fileID: 3757473051195266659, guid: 0f09ba90c2de14f6db5dd4e762f77470, type: 3}
+  extraTransform: {fileID: 1822346454}
   moves: 0
 --- !u!4 &1150429824
 Transform:
@@ -20231,7 +20232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gridViewReferences: {fileID: 1150429823}
   NonInteractiveData: {fileID: 1822346454}
-  isTesting: 0
+  isTesting: 1
   States: 0
 --- !u!4 &2045547670
 Transform:

@@ -2687,7 +2687,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 7
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -3167,7 +3167,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 7
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -3836,7 +3836,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 3
+      Data: 40
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -4076,7 +4076,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 3
+      Data: 40
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -4256,5 +4256,5 @@ MonoBehaviour:
   showGoalFirst: 0
   setZOnly: 1
   customPadding: 1
-  customPaddingValue: 3.2
+  customPaddingValue: 3.6
   IsEnemy: 0
