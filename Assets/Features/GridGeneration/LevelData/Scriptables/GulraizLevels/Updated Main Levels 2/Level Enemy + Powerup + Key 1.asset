@@ -1508,7 +1508,7 @@ MonoBehaviour:
       Data: 0
     - Name: linkedID
       Entry: 1
-      Data: 15
+      Data: 20
     - Name: IsPlayer
       Entry: 5
       Data: false
