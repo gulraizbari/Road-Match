@@ -200,7 +200,11 @@ namespace Sablo.Gameplay.TilesHint
                 }
                 else
                 {
-                    hintPair.Tile_1.ChangeHintColor(Configs.GameConfig.TileHintOrignalColor,true); 
+                    if (hintPair.Tile_1.TileState == TileStates.FlipAble)
+                    {
+                        hintPair.Tile_1.ChangeHintColor(Configs.GameConfig.TileHintOrignalColor,true); 
+                    }
+                  //  hintPair.Tile_1.ChangeHintColor(Configs.GameConfig.TileHintOrignalColor,true); 
                     print(" not mine merge");
                 }
                 if (hintPair.Tile_2.TileState == TileStates.Walkable)
@@ -212,7 +216,8 @@ namespace Sablo.Gameplay.TilesHint
                 else
                 {
                     print(" not mine merge");
-                    hintPair.Tile_2.ChangeHintColor(Configs.GameConfig.TileHintOrignalColor,true); 
+                    if (hintPair.Tile_2.TileState == TileStates.FlipAble)
+                              hintPair.Tile_2.ChangeHintColor(Configs.GameConfig.TileHintOrignalColor,true); 
                 }
                 
                 hintPair.ResetTiles(hintPair.Tile_1, hintPair.Tile_2, t1, t2,isMerge);
