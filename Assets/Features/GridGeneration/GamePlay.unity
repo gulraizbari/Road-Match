@@ -19115,7 +19115,7 @@ MonoBehaviour:
   nextButton: {fileID: 817033152}
   resetButton: {fileID: 56685563}
   reloadButton: {fileID: 56685563}
-  isTesting: 1
+  isTesting: 0
   testingLvlNumber: 36
 --- !u!4 &1639253927
 Transform:
