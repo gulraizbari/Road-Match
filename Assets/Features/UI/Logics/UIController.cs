@@ -127,9 +127,9 @@ public class UIController : MonoBehaviour
    }
 
    [Button]
-   public void GiveCash(int amount)
+   public void GiveCash()
    {
-      GameController.AddCash(amount,GameController.GameCash.ToInt(),_mainCashText);
+      GameController.AddCash(1000000,GameController.GameCash.ToInt(),_mainCashText);
    }
  
 }
