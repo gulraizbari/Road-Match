@@ -344,7 +344,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 5
@@ -356,7 +356,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 20
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -1484,7 +1484,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 0
@@ -1496,7 +1496,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 12
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -1844,7 +1844,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 1
@@ -1853,10 +1853,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfAnimals
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 10
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -2624,7 +2624,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 1
@@ -2633,10 +2633,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfAnimals
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 10
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -3164,7 +3164,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 5
@@ -3176,7 +3176,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 20
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -3824,7 +3824,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 8
@@ -3836,7 +3836,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 26
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -4304,7 +4304,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 2
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 0
@@ -4316,7 +4316,7 @@ MonoBehaviour:
       Data: 3
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 12
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -4604,7 +4604,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 8
@@ -4616,7 +4616,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 26
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
