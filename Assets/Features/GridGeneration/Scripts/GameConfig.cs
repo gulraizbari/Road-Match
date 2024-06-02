@@ -17,7 +17,10 @@ public partial class GameConfig
   [FoldoutGroup("GridRelated")] public float tileRotateDelay;
   [FoldoutGroup("GridRelated")] public float tileFlipDelay;
   [FoldoutGroup("GridRelated")] public float AutoFlipDelay;
+  [FoldoutGroup("Player")] public float colorDuration;
   [FoldoutGroup("GridRelated")] public float TileDownY;
   [FoldoutGroup("GridRelated")] public Color TileDownColor;
+  [FoldoutGroup("GridRelated")] public Color TileHintColor;
+  [FoldoutGroup("GridRelated")] public Color TileHintOrignalColor;
   [FoldoutGroup("GridRelated")] public Color TileOrignalColor;
 }

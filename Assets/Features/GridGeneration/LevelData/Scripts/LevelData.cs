@@ -30,6 +30,7 @@ public sealed class CellData
     [SerializeField] public string linkedID;
     [SerializeField] public bool IsPlayer;
     [SerializeField] public bool IsCage;
+    [SerializeField] public bool notLink;
     [SerializeField] public bool walkableGate;
     [SerializeField] public int enemyHealth;
     [SerializeField] public int powerUPLVL;
@@ -58,6 +59,7 @@ public sealed class CellData
         IsPlayer = false;
         walkableGate = false;
         IsCage = false;
+        notLink = false;
         linkedID = "";
         enemyHealth = 1;
         powerUPLVL = 1;
@@ -87,7 +89,13 @@ public sealed class LevelData : SerializedScriptableObject
        [FoldoutGroup("LevelAttributes/Value")] [Switch]
        public bool moveCamera;
        [FoldoutGroup("LevelAttributes/Value")] [ShowIf("moveCamera")]
-       public float maxZ, minZ,minX,maxX;
+       public float maxZ, minZ,minX,maxX,xPos,startZ;
+
+       [FoldoutGroup("LevelAttributes/Value")] [ShowIf("moveCamera")]
+       [Space]
+        public bool showGoalFirst;
+       [Space]
+       [FoldoutGroup("LevelAttributes/Value")] public bool setZOnly;
        [Space]
        [FoldoutGroup("LevelAttributes/Value")]  [Switch]
        public bool customPadding;
@@ -222,7 +230,12 @@ public sealed class LevelData : SerializedScriptableObject
             {
                 if (value.typeOfBooster != BoosterType.None)
                 {
-                    value.linkedID = EditorGUILayout.TextField("Link", value.linkedID);
+                    value.notLink = EditorGUILayout.Toggle("UnLink", value.notLink);
+                    if (!value.notLink)
+                    {
+                        value.linkedID = EditorGUILayout.TextField("Link", value.linkedID);
+                    }
+                    
                 }
                 
             }

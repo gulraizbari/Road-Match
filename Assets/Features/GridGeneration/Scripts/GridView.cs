@@ -212,10 +212,12 @@ namespace Features.GridGeneration.Scripts
                                 _tile.TileState = TileStates.Walkable;
                                 _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
                                 tilePosition.y = .6f;
+                                
                                 if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable))
                                 {
                                     var collectablePrefab = Instantiate(collectable);
-                                    collectablePrefab.Init(cellData.linkedID);
+                                    print($"id {cellData.linkedID} ,case {cellData.notLink}");
+                                    collectablePrefab.Init(cellData.linkedID,cellData.notLink);
                                     _tile.SetCollectable(collectablePrefab);
                                 }
                                 Goals.AddOrUpdateGoals(CollectableItems.Key,cellData.typeOfBooster,1);
@@ -265,10 +267,9 @@ namespace Features.GridGeneration.Scripts
                     }
                 }
             }
-
+            
             _gridViewReferences.CalculateMoves(levelData.movesMultiplier);
             _gridViewReferences.tutorialManager.PlayTutorial();
-            _gridViewReferences.SetUIHandler(UIHandler);
             Goals.SetSlogan();
         }
 
@@ -294,8 +295,7 @@ namespace Features.GridGeneration.Scripts
         {
             _gridViewReferences.UpdateMoves(value);
         }
-
-        public UIController UIHandler { get; set; }
+        
 
         private void DisableTile(CellData data, Tile tile)
         {

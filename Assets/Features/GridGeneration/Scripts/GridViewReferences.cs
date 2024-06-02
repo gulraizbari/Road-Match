@@ -1,9 +1,11 @@
+using System;
 using Features;
 using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.Movement;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
+using Utilities;
 
 public class GridViewReferences : MonoBehaviour
 {
@@ -16,19 +18,31 @@ public class GridViewReferences : MonoBehaviour
     [BoxGroup("References")] public Material enable;
     [BoxGroup("References")] public Material enableWithOutRotation;
     [BoxGroup("References")] public TutorialManager tutorialManager;
-    [BoxGroup("References")] public TextMeshProUGUI movesText;
     [BoxGroup("References")] public Enemy enemy;
     [BoxGroup("References")] public PowerUp powerUp;
     [BoxGroup("References/Values")] public int moves;
-   
 
-    public IUIController UIHandler;
 
-    public void SetUIHandler(UIController controller) => UIHandler = controller;
+    void OnEnable()
+    {
+        EventManager._updateMoves += UpdateMyMoves;
+    }
+
+    void OnDisable()
+    {
+        EventManager._updateMoves -= UpdateMyMoves;
+    }
+
+    private void UpdateMyMoves(int value)
+    {
+        moves += value;
+        UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
+        GameController.SetState(GameStates.Play);
+    }
     public void CalculateMoves(int movesMultiplier )
     {
-        moves = moves * movesMultiplier;
-        UpdateText();
+        moves *= movesMultiplier;
+        UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
     }
 
     public void UpdateMoves(int value)
@@ -37,20 +51,16 @@ public class GridViewReferences : MonoBehaviour
         if (moves <=0 )
         {
             moves = 0;
-            UpdateText();
+            UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
             print("Level Fail");
-          UIHandler.LevelFail(.5f);
+            UIController.instance.LevelFail(.5f);
         }
         else
         {
-            UpdateText();
+            UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
         }
         
     }
 
-    private void UpdateText()
-    {
-        movesText.SetText($"{moves}");
-    }
     
 }

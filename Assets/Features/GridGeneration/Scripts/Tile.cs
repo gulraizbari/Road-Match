@@ -17,8 +17,8 @@ namespace Features.GridGeneration.Scripts
         public bool isGate;
         public int row;
         public int column;
-        
 
+        
         public void SetCollectable(Collectable collectable)
         {
             _collectable = collectable;
@@ -137,6 +137,10 @@ namespace Features.GridGeneration.Scripts
                     data.Value.transform.DOLocalMoveY(0, .01f).SetEase(Ease.Linear);
                 }
                 _playerController.AssignPath(this);
+                transform.DOScale(1.1f, .15f).SetEase(Ease.Linear).OnComplete((() =>
+                {
+                    transform.DOScale(1f, .1f).SetEase(Ease.Linear);
+                }));
                 if (istutorial)
                 {
                     TutorialManager.OnTutorialAction();

@@ -8,7 +8,7 @@ public class Goal : MonoBehaviour
 {
     [BoxGroup("PlayerGoal")][SerializeField] CollectableItems _goalType;
     [BoxGroup("PlayerGoal")][SerializeField] BoosterType _goalSubType;
-    [BoxGroup("PlayerGoal")][SerializeField] TextMeshProUGUI _goalText;
+    [BoxGroup("PlayerGoal")][SerializeField] MultiText _goalText;
     [BoxGroup("PlayerGoal")][SerializeField] GameObject _goalComplete;
     [BoxGroup("PlayerGoal")][SerializeField] Image _goalImage;
     public int target;
@@ -21,7 +21,7 @@ public class Goal : MonoBehaviour
         _goalType = data.itemType;
         _goalSubType = data.itemSubType;
         gameObject.name = $"{_goalType}:{_goalSubType}";
-        _goalText.SetText($"{target}");
+        _goalText.UpdateText($"{target}");
     }
     public void UpdateText(int value,bool isTarget)
     {
@@ -40,7 +40,7 @@ public class Goal : MonoBehaviour
                Invoke(nameof(Off),.15f);
             }
         }
-        _goalText.SetText($"{target}");
+        _goalText.UpdateText($"{target}");
        
     }
 

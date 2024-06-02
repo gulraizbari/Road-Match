@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,7 +11,6 @@ public class DumyLevelManager : MonoBehaviour
 {
    public List<LevelData> levels;
    public Button nextButton;
-   public Button dumynextButton;
    public Button resetButton;
    public Button reloadButton;
    public bool isTesting;
@@ -37,12 +37,11 @@ public class DumyLevelManager : MonoBehaviour
    void Start()
    {
       nextButton.onClick.AddListener((NextLevel));
-      dumynextButton.onClick.AddListener((NextLevel));
       resetButton.onClick.AddListener((ResetLevel));
       reloadButton.onClick.AddListener((ResetLevel));
       
    }
-
+   [Button]
    public void NextLevel()
    {
       Level++;
@@ -59,6 +58,6 @@ public class DumyLevelManager : MonoBehaviour
       SceneManager.LoadScene(0);
    }
 
-   public int Level { get=>PlayerPrefs.GetInt("Lvl"); set=>PlayerPrefs.SetInt("Lvl",value); }
+   public  int Level { get=>PlayerPrefs.GetInt("Lvl"); set=>PlayerPrefs.SetInt("Lvl",value); }
 
 }

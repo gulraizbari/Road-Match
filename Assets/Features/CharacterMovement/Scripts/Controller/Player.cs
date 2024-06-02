@@ -48,10 +48,7 @@ namespace Sablo.Gameplay.Movement
         public ISFighter Fighter => this;
         public PlayerController PlayerHandler { get; set; }
 
-        public void AssignUIController(UIController uiController)
-        {
-            UIController = uiController;
-        }
+       
         public void Init(Vector3 position, Tile tile)
         {
             transform.position = position;
@@ -257,7 +254,7 @@ namespace Sablo.Gameplay.Movement
         public void Death()
         {
             GameController.SetState(GameStates.Lose);
-            UIController.LevelFail(1.3f);
+            UIController.instance.LevelFail(1.3f);
         }
 
         public void UpdateLevel(int value)

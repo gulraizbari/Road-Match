@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Features.GridGeneration.Scripts;
 using Lean.Touch;
 using UnityEngine;
@@ -53,5 +54,26 @@ public class CameraAdjuster : MonoBehaviour
         // Optionally, center the camera on the grid
         float gridCenterX = (minX + maxX) / 2;
         orthoCamera.transform.position = new Vector3(gridCenterX, orthoCamera.transform.position.y, orthoCamera.transform.position.z);
+    }
+
+    public void SetCamera(LevelData data)
+    {
+        if (data.setZOnly)
+        {
+            transform.DOMoveZ(data.startZ, .01f);
+        }
+        else
+        {
+            if (data.showGoalFirst)
+            {
+                transform.DOMoveZ(data.maxZ, .01f);
+                transform.DOMoveZ(data.minZ, .5f).SetDelay(1).SetEase(Ease.Linear).OnComplete((() =>
+                {
+                    DragCamera.enabled = true;
+                    DragCamera.SetCamera(data.maxZ, data.maxZ,data.minZ,data.xPos,data.maxX,data.minX);
+                }));
+            }
+        }
+        
     }
 }

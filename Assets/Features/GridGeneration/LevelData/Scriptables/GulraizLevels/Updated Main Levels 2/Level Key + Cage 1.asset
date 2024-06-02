@@ -75,6 +75,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -130,6 +133,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -189,6 +195,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -244,6 +253,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -303,6 +315,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -360,6 +375,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -386,7 +404,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 5
@@ -398,7 +416,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 18
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -415,6 +433,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -474,6 +495,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -531,6 +555,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -557,7 +584,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 7
@@ -569,7 +596,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 9
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -586,6 +613,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -645,6 +675,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -700,6 +733,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -759,6 +795,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -785,7 +824,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 1
@@ -797,7 +836,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 33
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -814,6 +853,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -873,6 +915,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -930,6 +975,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: true
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -956,7 +1004,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 7
@@ -968,7 +1016,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 33
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -985,6 +1033,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1013,7 +1064,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 9
@@ -1025,7 +1076,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 32
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -1042,6 +1093,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1070,7 +1124,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 2
@@ -1082,7 +1136,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 29
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -1099,6 +1153,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1127,7 +1184,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 2
@@ -1139,7 +1196,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 9
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -1156,6 +1213,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1215,6 +1275,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1270,6 +1333,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1329,6 +1395,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1384,6 +1453,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1443,6 +1515,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: true
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1469,7 +1544,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 9
@@ -1481,7 +1556,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 18
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -1498,6 +1573,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1557,6 +1635,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1583,7 +1664,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 1
@@ -1595,7 +1676,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 32
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -1612,6 +1693,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1671,6 +1755,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1726,6 +1813,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1785,6 +1875,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1840,6 +1933,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -1899,6 +1995,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1956,6 +2055,9 @@ MonoBehaviour:
     - Name: IsCage
       Entry: 5
       Data: false
+    - Name: notLink
+      Entry: 5
+      Data: false
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -1982,7 +2084,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 5
@@ -1994,7 +2096,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 29
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -2011,6 +2113,9 @@ MonoBehaviour:
       Entry: 5
       Data: false
     - Name: IsCage
+      Entry: 5
+      Data: false
+    - Name: notLink
       Entry: 5
       Data: false
     - Name: walkableGate
@@ -2034,13 +2139,19 @@ MonoBehaviour:
   _width: 5
   _height: 7
   Containers:
-  - {fileID: 11400000, guid: f5f258b570a4e4a29ae7ac16100a2be3, type: 2}
+  - {fileID: 11400000, guid: 2e0d3f55ae3c54e81b31e5000d50a9a4, type: 2}
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}
   movesMultiplier: 3
-  moveCamera: 0
+  moveCamera: 1
   maxZ: 0
   minZ: 0
-  customPadding: 0
-  customPaddingValue: 2.6
+  minX: 0
+  maxX: 0
+  xPos: 0
+  startZ: -42.44
+  showGoalFirst: 0
+  setZOnly: 1
+  customPadding: 1
+  customPaddingValue: 3.3
   IsEnemy: 0

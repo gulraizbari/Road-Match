@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using GridGeneration.Scripts.interfaces;
 using Sirenix.OdinInspector;
 using TMPro;
@@ -26,15 +27,15 @@ namespace Features.GridGeneration.Scripts
         public float factor;
         [BoxGroup("References"), SerializeField]
         List<string> ad;
-
         public Cell cell;
         [SerializeField] LevelData _levelData;
         public CameraAdjuster Adjuster;
-        public TextMeshProUGUI lvlText;
+        
         private void Start()
         {
+           
             _levelData = _levelManager.GetCurrentLevel;
-            lvlText.SetText($"{_levelManager.Level+1}");
+            
             GenerateGrid();
             _gridView.Init(new GridViewDataModel()
             {
@@ -44,8 +45,7 @@ namespace Features.GridGeneration.Scripts
             });
             if (_levelData.moveCamera)
             {
-                Adjuster.DragCamera.enabled = true;
-                Adjuster.DragCamera.SetCamera(_levelData.minZ, _levelData.maxZ,_levelData.minZ,0,_levelData.maxX,_levelData.minX);
+                Adjuster.SetCamera(_levelData);
             }
             _gridView.AssignItemContainer(_levelData);
             _gridView.SpawnGrid(grid, _levelData);
@@ -54,6 +54,7 @@ namespace Features.GridGeneration.Scripts
                 Adjuster.padding = _levelData.customPaddingValue;
             }
             Adjuster.AdjustCamera(grid);
+            UIController.instance.Text(TextType.Level).UpdateText($"{_levelManager.Level+1}");
         }
 
         void GenerateGrid()
