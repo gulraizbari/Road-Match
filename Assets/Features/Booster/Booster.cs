@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Helpers;
+using Sablo.Analytics;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
@@ -91,6 +92,7 @@ public class Booster : MonoBehaviour
         {
             button.interactable = enable;
             bgBooster.sprite = enable ?  _hindEnable:_hintDisable;
+            LionAnalyticEvents.PowerUpUsed("hint_booster",UIController.instance.levelManager.Level+1);
         }
         else
         {

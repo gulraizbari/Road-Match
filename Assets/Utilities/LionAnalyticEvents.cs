@@ -208,6 +208,9 @@ namespace Sablo.Analytics
         // };
         //
         // #endregion
-        
+        public static void PowerUpUsed( string powerUpName,int lvlNumber )
+        {
+            LionAnalytics.PowerUpUsed(lvlNumber.ToString(), "", 0, powerUpName, null);//mission attempt can be level attempts
+        }
     }
 }
