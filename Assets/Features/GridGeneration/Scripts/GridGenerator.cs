@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using GridGeneration.Scripts.interfaces;
+using Sablo.Analytics;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -34,6 +35,7 @@ namespace Features.GridGeneration.Scripts
         private void Start()
         {
            
+            LionAnalyticEvents.OnGameStartEvent();
             _levelData = _levelManager.GetCurrentLevel;
             
             GenerateGrid();
@@ -55,6 +57,7 @@ namespace Features.GridGeneration.Scripts
             }
             Adjuster.AdjustCamera(grid);
             UIController.instance.Text(TextType.Level).UpdateText($"{_levelManager.Level+1}");
+            LionAnalyticEvents.OnLevelStart(_levelManager.Level+1);
         }
 
         void GenerateGrid()

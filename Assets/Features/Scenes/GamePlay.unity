@@ -19301,9 +19301,9 @@ MonoBehaviour:
   nextButton: {fileID: 817033152}
   resetButton: {fileID: 56685563}
   reloadButton: {fileID: 56685563}
-  isTesting: 0
+  isTesting: 1
   currentScene: 1
-  testingLvlNumber: 17
+  testingLvlNumber: 10
 --- !u!4 &1639253927
 Transform:
   m_ObjectHideFlags: 0
