@@ -49,7 +49,7 @@ namespace Features.UI.Logics
             {
                 GameController.ShowCash(_cashText);
                 UIController.instance.DetectMoney(_requiredCash);
-               GiveMoves();
+                GiveMoves();
                 _panel.SetActive(false);
                 _overlay.SetActive(false);
                 SoundManager.Instance.PlayClick(1);

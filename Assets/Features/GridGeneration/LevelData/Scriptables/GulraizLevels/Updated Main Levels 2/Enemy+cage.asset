@@ -3275,7 +3275,7 @@ MonoBehaviour:
       Data: 55|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -3296,13 +3296,13 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 3
+      Data: 25
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfPowerUps
       Entry: 3
       Data: 0
@@ -3317,7 +3317,7 @@ MonoBehaviour:
       Data: false
     - Name: notLink
       Entry: 5
-      Data: false
+      Data: true
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -5506,8 +5506,8 @@ MonoBehaviour:
   moveCamera: 1
   maxZ: -35
   minZ: -50
-  minX: 0
-  maxX: 0
+  minX: -1.5
+  maxX: 1.5
   xPos: 0
   startZ: -35
   showGoalFirst: 1

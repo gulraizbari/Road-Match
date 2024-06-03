@@ -593,7 +593,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfAnimals
       Entry: 3
-      Data: 1
+      Data: 6
     - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
@@ -1253,7 +1253,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfAnimals
       Entry: 3
-      Data: 1
+      Data: 6
     - Name: typeOfRandomObjects
       Entry: 3
       Data: 0
@@ -4672,9 +4672,9 @@ MonoBehaviour:
   minX: 0
   maxX: 0
   xPos: 0
-  startZ: -43
+  startZ: -42
   showGoalFirst: 0
   setZOnly: 1
   customPadding: 1
-  customPaddingValue: 5.3
+  customPaddingValue: 4.6
   IsEnemy: 1

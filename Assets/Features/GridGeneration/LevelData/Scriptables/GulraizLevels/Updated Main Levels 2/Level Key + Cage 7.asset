@@ -656,7 +656,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 27
+      Data: 37
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -716,7 +716,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 27
+      Data: 36
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -1736,7 +1736,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 12
+      Data: 36
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -2090,7 +2090,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfVegetables
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfAnimals
       Entry: 3
       Data: 0
@@ -2276,7 +2276,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 12
+      Data: 37
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 0
@@ -2855,7 +2855,7 @@ MonoBehaviour:
       Data: 48|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -2879,10 +2879,10 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfCollectableItems
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfPowerUps
       Entry: 3
       Data: 0
@@ -2897,7 +2897,7 @@ MonoBehaviour:
       Data: false
     - Name: notLink
       Entry: 5
-      Data: false
+      Data: true
     - Name: walkableGate
       Entry: 5
       Data: false
@@ -3835,5 +3835,5 @@ MonoBehaviour:
   showGoalFirst: 0
   setZOnly: 1
   customPadding: 1
-  customPaddingValue: 4
+  customPaddingValue: 4.6
   IsEnemy: 1

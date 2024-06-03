@@ -827,7 +827,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 1
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -2567,7 +2567,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 1
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0

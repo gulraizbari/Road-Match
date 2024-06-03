@@ -62,7 +62,7 @@ namespace Features.GridGeneration.Scripts
         {
             return _renderer;
         }
-
+       
         public void RemovePlayer()
         {
             _player = null;

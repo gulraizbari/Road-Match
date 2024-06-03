@@ -53,6 +53,7 @@ public class LevelComplete : PanelBase
     [Button]
     private void UpdateCash()
     {
+        SoundManager.Instance.PlayClick(1);
         UIController.instance.AddCash(_cashToGive);
     }
 

@@ -132,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   fruits: 0
-  vegetables: 3
+  vegetables: 6
   animals: 0
   randomObjects: 0
   Is2D: 1

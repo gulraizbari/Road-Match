@@ -1,19 +1,18 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
-public class DumyLevelManager : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
    public List<LevelData> levels;
    public Button nextButton;
    public Button resetButton;
    public Button reloadButton;
    public bool isTesting;
+   public int currentScene;
    public int testingLvlNumber;
    
    public LevelData GetCurrentLevel
@@ -47,15 +46,15 @@ public class DumyLevelManager : MonoBehaviour
       Level++;
       if (Level >= levels.Count)
       {
-         Level = 0;
+         Level = Random.Range(1,levels.Count);
       }
 
-      SceneManager.LoadScene(0);
+      SceneManager.LoadScene(currentScene);
    }
 
    public void ResetLevel()
    {
-      SceneManager.LoadScene(0);
+      SceneManager.LoadScene(currentScene);
    }
 
    public  int Level { get=>PlayerPrefs.GetInt("Lvl"); set=>PlayerPrefs.SetInt("Lvl",value); }

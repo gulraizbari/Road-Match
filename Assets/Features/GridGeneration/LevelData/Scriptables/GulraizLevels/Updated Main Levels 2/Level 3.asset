@@ -3291,9 +3291,9 @@ MonoBehaviour:
   minX: -2
   maxX: 2
   xPos: -1
-  startZ: -42.1
+  startZ: -42.5
   showGoalFirst: 0
-  setZOnly: 0
+  setZOnly: 1
   customPadding: 1
-  customPaddingValue: 4
+  customPaddingValue: 4.1
   IsEnemy: 0

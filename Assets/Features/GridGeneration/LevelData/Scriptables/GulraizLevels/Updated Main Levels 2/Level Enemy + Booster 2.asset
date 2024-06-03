@@ -2516,7 +2516,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 6
+      Data: 39
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -2636,7 +2636,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 3
+      Data: 36
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -3296,7 +3296,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 6
+      Data: 39
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -4076,7 +4076,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 3
+      Data: 38
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -4856,7 +4856,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 3
+      Data: 38
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -5276,7 +5276,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 3
+      Data: 36
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -6345,11 +6345,11 @@ MonoBehaviour:
   movesMultiplier: 3
   moveCamera: 1
   maxZ: -33
-  minZ: -55
+  minZ: -52
   minX: -1.5
   maxX: 1.5
   xPos: 0
-  startZ: -55
+  startZ: -52
   showGoalFirst: 1
   setZOnly: 0
   customPadding: 1

@@ -767,7 +767,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 3
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -1547,7 +1547,7 @@ MonoBehaviour:
       Data: 1
     - Name: typeOfFruit
       Entry: 3
-      Data: 3
+      Data: 11
     - Name: typeOfVegetables
       Entry: 3
       Data: 0
@@ -2423,7 +2423,7 @@ MonoBehaviour:
       Data: false
     - Name: enemyHealth
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: powerUPLVL
       Entry: 3
       Data: 0
@@ -3832,9 +3832,9 @@ MonoBehaviour:
   minX: 0
   maxX: 0
   xPos: 0
-  startZ: -44
+  startZ: -42.35
   showGoalFirst: 0
   setZOnly: 1
   customPadding: 1
-  customPaddingValue: 5.6
+  customPaddingValue: 4.6
   IsEnemy: 1

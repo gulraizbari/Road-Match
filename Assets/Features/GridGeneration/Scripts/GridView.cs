@@ -131,6 +131,7 @@ namespace Features.GridGeneration.Scripts
                                 {
                                     var hurdle = Instantiate(_gridViewReferences._prefabTileStone);
                                     hurdle.transform.position = tilePosition;
+                                    hurdle.transform.SetParent(_gridViewReferences.extraTransform);
                                     _tile.gameObject.SetActive(false);
                                     NonInteractiveData.SetParent(hurdle.transform);
                                 }
@@ -139,6 +140,7 @@ namespace Features.GridGeneration.Scripts
                                     var enemy = Instantiate(_gridViewReferences.enemy);
                                     enemy.gridView = this;
                                     enemy.MyTile = _tile;
+                                    _tile.DisableShadow();
                                     _tile.SetNonFlipAble(enemy.gameObject,Vector3.one);
                                     _tile._Enemy = enemy;
                                     enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth,levelData.IsEnemy);
