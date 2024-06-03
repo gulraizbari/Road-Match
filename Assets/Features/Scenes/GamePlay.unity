@@ -17564,7 +17564,7 @@ MonoBehaviour:
     startDelay: 0
   - currentTutorial: 0
     touchableID: 23
-    delay: 2.25
+    delay: 1
     startDelay: 0
   - currentTutorial: 0
     touchableID: 22
