@@ -15,6 +15,8 @@ namespace Features.GridGeneration.Scripts
         [BoxGroup("References"), SerializeField]
         public GridView _gridView;
 
+        [BoxGroup("References"), SerializeField]
+        MovesTutorial _tutorial;
         [BoxGroup("References"), ShowInInspector]
         private Cell[,] grid;
 
@@ -55,6 +57,11 @@ namespace Features.GridGeneration.Scripts
             }
             Adjuster.AdjustCamera(grid);
             UIController.instance.Text(TextType.Level).UpdateText($"{_levelManager.Level+1}");
+            if (_levelManager.Level == 2&& PlayerPrefs.GetInt("T")==0)
+            {
+                PlayerPrefs.SetInt("T", 1);
+                _tutorial.ShowTutorial();
+            }
         }
 
         void GenerateGrid()
