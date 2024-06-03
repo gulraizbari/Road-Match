@@ -49,12 +49,12 @@ public class GridViewReferences : MonoBehaviour
     public void UpdateMoves(int value)
     {
         moves += value;
-        if (moves <=0 )
+        if (moves <0 )
         {
             moves = 0;
             UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
             print("Level Fail");
-            UIController.instance.LevelFail(.5f);
+            UIController.instance.LevelFail(.5f,Reason.OutOfMoves);
         }
         else
         {

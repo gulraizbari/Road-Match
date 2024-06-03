@@ -2,6 +2,7 @@
 using System;
 using DG.Tweening;
 using Features;
+using Features.GridGeneration.Scripts;
 using Features.UI.Logics;
 using Helpers;
 using Sablo.Core;
@@ -22,7 +23,7 @@ public class UIController : MonoBehaviour
    [SerializeField] [BoxGroup("Reference")] RectTransform     _mainPanel;
    [SerializeField] [BoxGroup("Reference")] RectTransform     _bottomPanel;
    MultiText _text;
-
+   public GridView gridView;
    public static UIController instance;
 
    void Awake()
@@ -80,12 +81,12 @@ public class UIController : MonoBehaviour
       BottomPanelMove(false);
    }
 
-   public void LevelFail(float delay)
+   public void LevelFail(float delay,Reason reason)
    {
       GameController.SetState(GameStates.Lose);
      MainPanelMove(false);
      BottomPanelMove(true);
-      _levelFail.OpenPanel(Configs.GameConfig.levelCompleteDelay);  
+      _levelFail.OpenPanel(Configs.GameConfig.levelCompleteDelay,reason);  
    }
 
    public void AddCash(Money moneyToadd)

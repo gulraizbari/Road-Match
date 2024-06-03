@@ -19301,9 +19301,9 @@ MonoBehaviour:
   nextButton: {fileID: 817033152}
   resetButton: {fileID: 56685563}
   reloadButton: {fileID: 56685563}
-  isTesting: 0
+  isTesting: 1
   currentScene: 1
-  testingLvlNumber: 17
+  testingLvlNumber: 10
 --- !u!4 &1639253927
 Transform:
   m_ObjectHideFlags: 0
@@ -20267,6 +20267,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gridViewReferences: {fileID: 1150429823}
   NonInteractiveData: {fileID: 1822346454}
+  startingTile: {fileID: 0}
+  startingCell:
+    IsWalkable: 0
+    Empty: 0
   isTesting: 0
   States: 0
 --- !u!4 &2045547670
@@ -20345,6 +20349,7 @@ MonoBehaviour:
   health: 3
   hitPower: 2
   _counter: {fileID: 1162384419}
+  startHitPower: 0
 --- !u!136 &2090353443
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26603,6 +26608,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4232047511817892047, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: _greenButton
+      value: 
+      objectReference: {fileID: 21300000, guid: 90a20e72d1fc042528199f7ffb240dd1,
+        type: 3}
+    - target: {fileID: 4232047511817892047, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: _purpleButton
+      value: 
+      objectReference: {fileID: 21300000, guid: c42c85b7acaa948ecadc8d621684c671,
+        type: 3}
     - target: {fileID: 4232047511856566198, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -26916,6 +26933,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 4232047513247079350, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
         type: 3}
+      propertyPath: gridView
+      value: 
+      objectReference: {fileID: 2045547669}
+    - target: {fileID: 4232047513247079350, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
       propertyPath: _levelText
       value: 
       objectReference: {fileID: 4232047511763849378}
@@ -27123,6 +27145,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389344778402890394, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389344778402890394, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389344778402890394, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2045547669}
+    - target: {fileID: 4389344778402890394, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389344778402890394, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RevivePlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389344778402890394, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Features.GridGeneration.Scripts.GridView, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389344778402890394, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4395984424273012056, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
         type: 3}

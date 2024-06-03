@@ -338,6 +338,12 @@ namespace Features.GridGeneration.Scripts
                 _collectable = null;
             }
         }
+
+        public void RemovePlayer()
+        {
+            _player = null;
+           
+        }
         private void ActionOnFindingDesiredTile(){}
         private void FlipAllAdjacent()
         {

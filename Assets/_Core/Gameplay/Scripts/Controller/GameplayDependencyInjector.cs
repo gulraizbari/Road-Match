@@ -35,6 +35,7 @@ namespace Sablo.Core
             _mergeController.HintHandler = _hintController;
             _hintController.GridGenerationHandler = _gridController;
             _hintController.SelectedPlayer = _player;
+           
 
         }
     }

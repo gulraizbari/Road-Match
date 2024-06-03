@@ -60,12 +60,19 @@ public class Enemy : MonoBehaviour,ISFighter
 
     public int GiveDamage(int value)
     {
-         Health -= value;
-        if (Health<=0) {
-           
+        if (value>=HitPower)
+        {
             _animator.Fighter.UpdateLevel(HitPower);
             Death();//_animator.DeathAnim();
-                       }
+            Health = 0;
+        }
+        // Health -= value;
+        // if (Health<=0) {
+        //    
+        //     _animator.Fighter.UpdateLevel(HitPower);
+        //     Death();//_animator.DeathAnim();
+        //     
+        // }
         return Health;
     }
 

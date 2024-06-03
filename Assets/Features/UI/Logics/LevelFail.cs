@@ -13,12 +13,16 @@ namespace Features.UI.Logics
     {
         
         [BoxGroup("Reference")][SerializeField] Button _playOnButton;
+        [BoxGroup("Reference")][SerializeField] Button _resumeButton;
         [BoxGroup("Reference")][SerializeField] List<int> _movesReward;
         [BoxGroup("Reference")][SerializeField] MultiText _cashText;
         [BoxGroup("Reference")][SerializeField] TextMeshProUGUI _requiredText;
         [BoxGroup("Reference")][SerializeField] MultiText _movesText;
         [BoxGroup("Reference")][SerializeField] Money _requiredCash;
-
+        [BoxGroup("Reference")][SerializeField] Sprite _grayButton;
+         [BoxGroup("Reference")][SerializeField] Sprite _greenButton;
+          [BoxGroup("Reference")][SerializeField] Sprite _purpleButton;
+          public Reason reasonOfFail;
         int movesCounter;
 
 
@@ -26,21 +30,38 @@ namespace Features.UI.Logics
         {
             base.Start();
             _playOnButton.onClick.AddListener(PlayOn);
+            _resumeButton.onClick.AddListener(RevivePlayer);
         }
 
-        public override void OpenPanel(float delay)
+        public override void OpenPanel(float delay,Reason reason)
         {
             base.OpenPanel(delay);
-            OnStart();
+            reasonOfFail = reason;
+            OnStart(reason);
         }
 
-        private void OnStart()
+        private void OnStart(Reason reason)
         {
             _requiredText.SetText(_requiredCash.ToInt().ToString());
             GameController.ShowCash(_cashText);
             _movesText.UpdateText($"+{_movesReward[movesCounter]}" );
             SoundManager.Instance.LevelFail(1);
-            _playOnButton.interactable = GameController.GameCash.ToInt() >= _requiredCash.ToInt();
+            if(reason == Reason.OutOfMoves)
+            {
+                _playOnButton.gameObject.SetActive(true);
+                _resumeButton.gameObject.SetActive(false);
+                _playOnButton.interactable = GameController.GameCash.ToInt() >= _requiredCash.ToInt();
+            _playOnButton.image.sprite = GameController.GameCash.ToInt() <=0? _grayButton:_greenButton ;
+            }
+            else
+            {
+                 _playOnButton.gameObject.SetActive(false);
+                 _resumeButton.gameObject.SetActive(true);
+                 _resumeButton.interactable = GameController.GameCash.ToInt() >= _requiredCash.ToInt();
+                 _resumeButton.image.sprite = GameController.GameCash.ToInt() <=0? _grayButton:_purpleButton ;
+              }
+            
+           
         }
 
         private void PlayOn()
@@ -50,13 +71,31 @@ namespace Features.UI.Logics
                 GameController.ShowCash(_cashText);
                 UIController.instance.DetectMoney(_requiredCash);
                 GiveMoves();
-                _panel.SetActive(false);
-                _overlay.SetActive(false);
-                SoundManager.Instance.PlayClick(1);
-                UIController.instance.ShowPanels();
+                OffPanel();
+               
+               
             }
         }
 
+        private void RevivePlayer()
+        {
+            if (GameController.GameCash.ToInt()>=_requiredCash.ToInt())
+            {
+                GameController.ShowCash(_cashText);
+                UIController.instance.DetectMoney(_requiredCash);
+                GiveMoves();
+                OffPanel();
+                UIController.instance.gridView.RevivePlayer();
+            }
+        }
+
+        private void OffPanel()
+        {
+            SoundManager.Instance.PlayClick(1);
+            UIController.instance.ShowPanels();
+            _panel.SetActive(false);
+            _overlay.SetActive(false);
+        }
         private void GiveMoves()
         {
             EventManager.UpdateMoves(_movesReward[movesCounter]);
