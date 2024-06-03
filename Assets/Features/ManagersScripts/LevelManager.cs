@@ -38,13 +38,11 @@ public class LevelManager : MonoBehaviour
       if (Level >= levels.Count)
       {
          Level = Random.Range(1,levels.Count);
-      }
-
-      
+      }      
    } 
+
    public void NextScene()
    {
-     
       SceneManager.LoadScene(currentScene);
    }
 

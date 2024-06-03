@@ -36,7 +36,7 @@ public class LevelComplete : PanelBase
 
     private IEnumerator ShowStars(float delay)
     {
-        UIController.instance.levelManager.NextLevel();
+    
         yield return new WaitForSeconds(delay+.2f);
         foreach (var star in _stars)
         {
@@ -50,8 +50,10 @@ public class LevelComplete : PanelBase
 
     private void OnStart()
     {
+
         LionAnalyticEvents.OnLevelComplete(UIController.instance.levelManager.Level+1 , "" , null , 0); // Level event should be sent before increasing the level counter.
       
+UIController.instance.levelManager.NextLevel();
         _cashToGiveText.UpdateText(_cashToGive.ToInt().ToString());
         _winCashText.UpdateText(GameController.GameCash.ToString());
     }
@@ -62,8 +64,6 @@ public class LevelComplete : PanelBase
         SoundManager.Instance.PlayClick(1);
         UIController.instance.AddCash(_cashToGive);
         UIController.instance.levelManager.NextScene();
-        
-        
     }
 
     private void GetX2Reward()

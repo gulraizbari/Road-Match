@@ -35,7 +35,7 @@ MonoBehaviour:
   colorDuration: 0.5
   TileDownY: -0.3
   TileDownColor: {r: 0.3952235, g: 0.8018868, b: 0.08699717, a: 1}
-  TileHintColor: {r: 0.8018868, g: 0.7981043, b: 0.7981043, a: 1}
+  TileHintColor: {r: 0.8385545, g: 0.9339623, b: 0, a: 1}
   TileHintOrignalColor: {r: 0.5568628, g: 0.5803922, b: 0.6117647, a: 1}
   TileOrignalColor: {r: 0.53333336, g: 0.85882354, b: 0.3372549, a: 1}
   levelCompleteDelay: 1.5
