@@ -103,7 +103,12 @@ namespace Features.CharacterMovement.Scripts
         }
         protected virtual void JumpEffect(Vector3 position)
         {
-           
+
+            if (CurrentTile)
+            {
+                CurrentTile.ChangeColor(Configs.GameConfig.TileOrignalColor);
+                CurrentTile.transform.DOLocalMoveY(0, .1f);
+            }
           GameController.SetState(GameStates.Win);
             var configs = Configs.GameConfig;
             _playerAnimator.JumpAnimation();

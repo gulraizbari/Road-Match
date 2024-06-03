@@ -125,7 +125,7 @@ namespace Features.GridGeneration.Scripts
             if (_player is null)
             {
                 if(TileState != TileStates.Walkable )return;
-                SoundManager.Instance.PlayTileSelect(.5f);
+                SoundManager.Instance.PlayTileSelect(1f);
                 foreach (var data in iGridView.PathData)
                 {
                     if (data.Value.TileState == TileStates.Walkable)

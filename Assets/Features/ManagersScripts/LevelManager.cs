@@ -39,7 +39,9 @@ public class LevelManager : MonoBehaviour
       {
          Level = Random.Range(1,levels.Count);
       }
-
+   }
+   public void NextScene()
+   {
       SceneManager.LoadScene(currentScene);
    }
 

@@ -39,7 +39,7 @@ namespace Sablo.Gameplay.Movement
                         break;
                     case CollectableItems.Key:
                         KeyCase(collectable,tile);
-                        //SoundManager.Instance.PlayKey(.7f);
+                        SoundManager.Instance.Joy();
                         break;
                 }
             }
