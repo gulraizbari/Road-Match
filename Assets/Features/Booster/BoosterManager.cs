@@ -9,7 +9,7 @@ public class BoosterManager : MonoBehaviour
     [SerializeField]Booster _hintBooster;
     [SerializeField]Booster _booster2;
     [SerializeField]Booster _booster3;
-    [SerializeField] DumyLevelManager _LevelManager;
+    [SerializeField] LevelManager _LevelManager;
 
     void Start()
     {

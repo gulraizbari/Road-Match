@@ -29,6 +29,7 @@ public class Splash : MonoBehaviour
          loadingText.SetText($"{ValueToInt}%");
          
       }
-      gameObject.SetActive(false);
+      //gameObject.SetActive(false);
+      UnityEngine.SceneManagement.SceneManager.LoadScene(1);
    }
 }

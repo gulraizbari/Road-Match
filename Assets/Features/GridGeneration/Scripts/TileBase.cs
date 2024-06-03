@@ -109,7 +109,10 @@ namespace Features.GridGeneration.Scripts
                 _isFlipped = true;
             }
         }
-
+        public void DisableShadow()
+        {
+            _shadow.SetActive(false);
+        }
         public void SetNonFlipAble(GameObject gameObject,Vector3 rot)
         {
             var _transform = gameObject.transform;

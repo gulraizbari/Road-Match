@@ -70,6 +70,8 @@ public class Booster : MonoBehaviour
             {
                 UIController.instance.DetectMoney(price);
                 Action?.Invoke();
+                EnableBoosterButton(false);
+                
             }
             else
             {

@@ -140,6 +140,7 @@ namespace Features.GridGeneration.Scripts
                                     var enemy = Instantiate(_gridViewReferences.enemy);
                                     enemy.gridView = this;
                                     enemy.MyTile = _tile;
+                                    _tile.DisableShadow();
                                     _tile.SetNonFlipAble(enemy.gameObject,Vector3.one);
                                     _tile._Enemy = enemy;
                                     enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth,levelData.IsEnemy);

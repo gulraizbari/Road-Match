@@ -10,7 +10,7 @@ namespace Features.GridGeneration.Scripts
     public class GridGenerator : MonoBehaviour, IGridGenerator
     {
         [BoxGroup("References"), SerializeField]
-        DumyLevelManager _levelManager;
+        LevelManager _levelManager;
 
         [BoxGroup("References"), SerializeField]
         public GridView _gridView;
