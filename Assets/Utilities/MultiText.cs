@@ -31,5 +31,9 @@ public class MultiText : MonoBehaviour
         _valueText1.SetText(value);
         _valueText2.SetText(value);
     }
-    
+
+    public void ChangeColor(Color color)
+    {
+        _valueText2.color = color;
+    }
 }

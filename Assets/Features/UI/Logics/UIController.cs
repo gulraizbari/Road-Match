@@ -2,6 +2,7 @@
 using System;
 using DG.Tweening;
 using Features;
+using Features.GridGeneration.Scripts;
 using Features.UI.Logics;
 using Helpers;
 using Sablo.Core;
@@ -22,8 +23,10 @@ public class UIController : MonoBehaviour
    [SerializeField] [BoxGroup("Reference")] RectTransform     _mainPanel;
    [SerializeField] [BoxGroup("Reference")] RectTransform     _bottomPanel;
    MultiText _text;
-
+   public GridView gridView;
    public static UIController instance;
+   public LevelManager levelManager;
+   public GameObject infinitySign;
 
    void Awake()
    {
@@ -41,6 +44,16 @@ public class UIController : MonoBehaviour
    {
       ShowPanels();
       GameController.ShowCash(_mainCashText);
+      if (levelManager.Level>2)
+      {
+        infinitySign.SetActive(false);
+        Text(TextType.Moves).gameObject.SetActive(true);
+      }
+      else
+      {
+        infinitySign.SetActive(true);
+        Text(TextType.Moves).gameObject.SetActive(false);
+      }
    }
 
    public void LevelComplete()
@@ -80,12 +93,12 @@ public class UIController : MonoBehaviour
       BottomPanelMove(false);
    }
 
-   public void LevelFail(float delay)
+   public void LevelFail(float delay,Reason reason)
    {
       GameController.SetState(GameStates.Lose);
      MainPanelMove(false);
      BottomPanelMove(true);
-      _levelFail.OpenPanel(Configs.GameConfig.levelCompleteDelay);  
+      _levelFail.OpenPanel(Configs.GameConfig.levelCompleteDelay,reason);  
    }
 
    public void AddCash(Money moneyToadd)

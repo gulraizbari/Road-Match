@@ -103,13 +103,19 @@ namespace Features.CharacterMovement.Scripts
         }
         protected virtual void JumpEffect(Vector3 position)
         {
-           
+
+            if (CurrentTile)
+            {
+                CurrentTile.ChangeColor(Configs.GameConfig.TileOrignalColor);
+                CurrentTile.transform.DOLocalMoveY(0, .1f);
+            }
           GameController.SetState(GameStates.Win);
             var configs = Configs.GameConfig;
             _playerAnimator.JumpAnimation();
             position.y = 1f;
             LookAt(position);
             Child.rotation=quaternion.identity;
+            SoundManager.Instance.Joy();
             transform.DOJump(position, configs.JumpHeight, 1, configs.JumpDuration).SetEase(Ease.Linear).OnComplete((() =>
             {
                 _crown.SetActive(true);

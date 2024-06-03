@@ -31,5 +31,12 @@ namespace Features.UI.Logics
             _onCompleteAction?.Invoke();
             StartCoroutine(ShowObjectWithDelay(delay));
         }
+         public virtual void OpenPanel(float delay,Reason reason)
+        {
+           // _overlay.SetActive(true);
+            _onCompleteAction?.Invoke();
+            StartCoroutine(ShowObjectWithDelay(delay));
+        }
+         
     }
 }

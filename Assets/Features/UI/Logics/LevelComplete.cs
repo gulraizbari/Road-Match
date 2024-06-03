@@ -47,6 +47,7 @@ public class LevelComplete : PanelBase
 
     private void OnStart()
     {
+        UIController.instance.levelManager.NextLevel();
         _cashToGiveText.UpdateText(_cashToGive.ToInt().ToString());
         _winCashText.UpdateText(GameController.GameCash.ToString());
     }
@@ -55,6 +56,7 @@ public class LevelComplete : PanelBase
     {
         SoundManager.Instance.PlayClick(1);
         UIController.instance.AddCash(_cashToGive);
+        UIController.instance.levelManager.NextScene();
     }
 
     private void GetX2Reward()

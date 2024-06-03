@@ -19,8 +19,8 @@ namespace Sablo.Gameplay.Movement
         public int health=1;
         public int hitPower = 2;
         public CharacterLevel _counter;
-       
-        
+
+        public int startHitPower;
         public int HitPower { get=>hitPower;
             set => hitPower = value;
         }
@@ -39,7 +39,7 @@ namespace Sablo.Gameplay.Movement
                         break;
                     case CollectableItems.Key:
                         KeyCase(collectable,tile);
-                        //SoundManager.Instance.PlayKey(.7f);
+                        SoundManager.Instance.Joy();
                         break;
                 }
             }
@@ -55,6 +55,7 @@ namespace Sablo.Gameplay.Movement
             CurrentTile = tile;
             _playerAnimator.myFighter = this;
             UpdateLevel(0);
+            startHitPower = hitPower;
         }
 
         public void MoveOnPath(List<Tile> path)
@@ -176,6 +177,19 @@ namespace Sablo.Gameplay.Movement
             }
         }
 
+        public void Revive()
+        {
+            HitPower = startHitPower;
+            health = startHitPower;
+            PlayerHandler.CantRun = false;
+            _playerAnimator.WalkAnimation(false);
+            CurrentTile.RemovePlayer();
+            CurrentTile.ChangeColor(Configs.GameConfig.TileOrignalColor);
+            CurrentTile.transform.DOLocalMoveY(0, .1f);
+            CurrentTile.RemovePlayer();
+            SoundManager.Instance.Joy();
+        }
+
         private void TileEffect(Transform tileTransform,Tile tile)
         {
             var configs = Configs.GameConfig;
@@ -254,7 +268,7 @@ namespace Sablo.Gameplay.Movement
         public void Death()
         {
             GameController.SetState(GameStates.Lose);
-            UIController.instance.LevelFail(1.3f);
+            UIController.instance.LevelFail(1.3f,Reason.PlayerDeath);
         }
 
         public void UpdateLevel(int value)

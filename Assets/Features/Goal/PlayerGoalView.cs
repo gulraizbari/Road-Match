@@ -11,6 +11,7 @@ public class PlayerGoalView : MonoBehaviour
    [SerializeField] List<Goal> playerGoals;
    [SerializeField] Goal playerGoalPrefab;
    [SerializeField] VFXController _vfxController;
+   [SerializeField] GameObject goalsHeading;
    public Transform parent;
    public void UpdateGoal(CollectableItems type,BoosterType goalSubType,int value,bool isTarget)
    {
