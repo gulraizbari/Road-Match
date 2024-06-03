@@ -25,6 +25,7 @@ public class UIController : MonoBehaviour
    MultiText _text;
    public GridView gridView;
    public static UIController instance;
+   public LevelManager levelManager;
 
    void Awake()
    {

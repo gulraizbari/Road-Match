@@ -37,5 +37,6 @@ namespace Features.UI.Logics
             _onCompleteAction?.Invoke();
             StartCoroutine(ShowObjectWithDelay(delay));
         }
+         
     }
 }

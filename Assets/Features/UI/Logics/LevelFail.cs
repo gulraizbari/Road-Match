@@ -14,6 +14,7 @@ namespace Features.UI.Logics
         
         [BoxGroup("Reference")][SerializeField] Button _playOnButton;
         [BoxGroup("Reference")][SerializeField] Button _resumeButton;
+        [BoxGroup("Reference")][SerializeField] Button _retryButton;
         [BoxGroup("Reference")][SerializeField] List<int> _movesReward;
         [BoxGroup("Reference")][SerializeField] MultiText _cashText;
         [BoxGroup("Reference")][SerializeField] TextMeshProUGUI _requiredText;
@@ -22,7 +23,9 @@ namespace Features.UI.Logics
         [BoxGroup("Reference")][SerializeField] Sprite _grayButton;
          [BoxGroup("Reference")][SerializeField] Sprite _greenButton;
           [BoxGroup("Reference")][SerializeField] Sprite _purpleButton;
-          public Reason reasonOfFail;
+          [BoxGroup("Reference")]public Reason reasonOfFail;
+          [BoxGroup("Reference")] [SerializeField]GameObject _movesPart;
+          [BoxGroup("Reference")] [SerializeField]GameObject _DeathPart;
         int movesCounter;
 
 
@@ -51,7 +54,9 @@ namespace Features.UI.Logics
                 _playOnButton.gameObject.SetActive(true);
                 _resumeButton.gameObject.SetActive(false);
                 _playOnButton.interactable = GameController.GameCash.ToInt() >= _requiredCash.ToInt();
-            _playOnButton.image.sprite = GameController.GameCash.ToInt() <=0? _grayButton:_greenButton ;
+                _playOnButton.image.sprite = GameController.GameCash.ToInt() <=0? _grayButton:_greenButton ;
+                _movesPart.SetActive(true);
+                _DeathPart.SetActive(false);
             }
             else
             {
@@ -59,6 +64,8 @@ namespace Features.UI.Logics
                  _resumeButton.gameObject.SetActive(true);
                  _resumeButton.interactable = GameController.GameCash.ToInt() >= _requiredCash.ToInt();
                  _resumeButton.image.sprite = GameController.GameCash.ToInt() <=0? _grayButton:_purpleButton ;
+                 _movesPart.SetActive(false);
+                 _DeathPart.SetActive(true);
               }
             
            
@@ -104,6 +111,11 @@ namespace Features.UI.Logics
             {
                 movesCounter = _movesReward.Count - 1;
             }
+        }
+
+        public  void TryAgain()
+        {
+            UIController.instance.levelManager.ResetLevel();
         }
     }
 }
