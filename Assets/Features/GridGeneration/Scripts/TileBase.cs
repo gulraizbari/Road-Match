@@ -42,7 +42,7 @@ namespace Features.GridGeneration.Scripts
 
         [BoxGroup("Reference"), ShowInInspector]
         protected HashSet<Tile> _adjacents = new HashSet<Tile>();
-
+        public ITile ITileHandler => this;
         public List<string> adjacentIDs;
         public bool keyReq;
         [BoxGroup("Reference"), SerializeField, ReadOnly]
@@ -109,7 +109,10 @@ namespace Features.GridGeneration.Scripts
                 _isFlipped = true;
             }
         }
-
+        public void DisableShadow()
+        {
+            _shadow.SetActive(false);
+        }
         public void SetNonFlipAble(GameObject gameObject,Vector3 rot)
         {
             var _transform = gameObject.transform;
@@ -411,6 +414,24 @@ namespace Features.GridGeneration.Scripts
         public void ChangeColor(Color color)
         {
             _renderer.material.DOColor(color, Configs.GameConfig.playerYTargetOnTileMovingDuration);
+        }
+
+        Tween tween;
+        public void ChangeHintColor(Color color1 ,bool stop)
+        {
+            
+            if (stop)
+            {
+                if (tween.IsActive())
+                {
+                    tween.Kill();
+                    ChangeColor(color1);
+                    return;
+                }
+            }
+            tween= _renderer.material.DOColor(color1, Configs.GameConfig.colorDuration).SetEase(Ease.Linear)
+                .SetLoops(-1, LoopType.Yoyo);
+           
         }
 
         public virtual void OnPointerUp(PointerEventData eventData)

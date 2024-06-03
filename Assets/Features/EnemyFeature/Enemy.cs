@@ -31,6 +31,8 @@ public class Enemy : MonoBehaviour,ISFighter
             _counter.gameObject.SetActive(true);
         }
     }
+
+   
     void Update()
     {
         if (health<=0)return;

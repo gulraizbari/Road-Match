@@ -131,6 +131,8 @@ Library: /Volumes/data/RoadMapPrototype/Temp/StagingArea/tempburstlibs/armeabi-v
 --compilation-defines=USING_PHYSICS2D_MODULE
 --compilation-defines=UNIVERSAL_1_0_0_OR_NEWER
 --compilation-defines=TIMELINE_FRAMEACCURATE
+--compilation-defines=UNIVERSAL_RENDERER
+--compilation-defines=UNIVERSAL_731
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/Volumes/data/RoadMapPrototype/Temp/Burst
 --output=/Volumes/data/RoadMapPrototype/Temp/StagingArea/tempburstlibs/armeabi-v7a/lib_burst_generated

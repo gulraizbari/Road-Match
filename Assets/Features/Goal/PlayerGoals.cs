@@ -16,8 +16,6 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
     [BoxGroup("Reference"), ReadOnly, ShowInInspector] Dictionary<CollectableItems, PlayerTask > tasksOfPlayer=new();
     [BoxGroup("Reference"), ReadOnly, ShowInInspector]
     [SerializeField] Tile _gate;
-    [BoxGroup("Reference"),  SerializeField]
-    List<string> _slogans;
     [BoxGroup("Reference"), SerializeField] [Switch]
     public bool isCage;
     [BoxGroup("Reference"), SerializeField]
@@ -25,7 +23,7 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
     [BoxGroup("Reference"), SerializeField]
     Color qouateColor;
     [BoxGroup("Reference"), SerializeField]
-    TextMeshProUGUI _sloganText;
+    GameObject _slogan;
     [BoxGroup("Reference"), SerializeField,]
     PlayerGoalView _goalView;
     public IGridView gridView;
@@ -197,23 +195,15 @@ public class PlayerGoals : MonoBehaviour,IPlayerCollectible
     {
         if (tasksOfPlayer.Count is 0)
         {
-            _sloganText.gameObject.SetActive(true);
-            var slogan = _slogans[Random.Range(0, _slogans.Count)];
-            _sloganText.SetText(ColorizeString(slogan));
+            _slogan.SetActive(true);
         }
         else
         {
-            _sloganText.gameObject.SetActive(false);
+            _slogan.SetActive(false);
         }
         
     }
-    string ColorizeString(string text)
-    {
-        // Convert the color to a hex string
-        string hexColor = ColorUtility.ToHtmlStringRGBA(qouateColor);
-        // Return the string wrapped with color tags
-        return $"<color=#{hexColor}>{text}</color>";
-    }
+   
 }
 
 [Serializable]

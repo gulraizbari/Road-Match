@@ -8,5 +8,6 @@ namespace GridGeneration.Scripts.interfaces
     {
          Cell[,] Grid();
          List<Cell> FindAdjacentCells(Cell cell);
+         List<Tile> FindAdjacentCells(Tile cell);
     }
 }

@@ -56,14 +56,14 @@ public class Setting : PanelBase
         }));
     }
 
-    private void SoundLogic()
+    public static void SoundLogic()
     {
         Sound = Sound is 0 ? 1 : 0;
         SoundManager.Instance.audioSourceBG.mute = Sound>0;
     }
 
-    private void MusicLogic()=>Music = Music is 0 ? 1 : 0;
-    private void HapticLogic()=>Haptic = Haptic is 0 ? 1 : 0;
+    public static void MusicLogic()=>Music = Music is 0 ? 1 : 0;
+    public static void HapticLogic()=>Haptic = Haptic is 0 ? 1 : 0;
     
    
 }
