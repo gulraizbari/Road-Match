@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 public class LevelManager : MonoBehaviour
 {
    public List<LevelData> levels;
-   public Button nextButton;
+  
    public bool isTesting;
    public int currentScene;
    public int testingLvlNumber;
@@ -31,11 +31,7 @@ public class LevelManager : MonoBehaviour
       }
    }
 
-   void Start()
-   {
-      nextButton.onClick.AddListener((NextLevel));
-   }
-   [Button]
+   
    public void NextLevel()
    {
       Level++;

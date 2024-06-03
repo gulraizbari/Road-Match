@@ -19381,13 +19381,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b97f3d5b446244ec8a87b6d48f8201ae, type: 2}
   - {fileID: 11400000, guid: 5293e46690ada463e8b4de8f67abd56f, type: 2}
   - {fileID: 11400000, guid: b544cfd48e68e456abe637f35d9ee806, type: 2}
+  - {fileID: 11400000, guid: c7a8ca0fb782540e4a7a9e9056732b98, type: 2}
   - {fileID: 11400000, guid: 518d051d7100b4fd3858b116acc9e7f2, type: 2}
   - {fileID: 11400000, guid: 3bf7088b9f40c4e9eadca60a978ba5a3, type: 2}
   - {fileID: 11400000, guid: 202ac53d0f39a45aa8bac74fe955e33b, type: 2}
+  - {fileID: 11400000, guid: c5137a2baf25348a7993158da9ab1188, type: 2}
+  - {fileID: 11400000, guid: 8286f432e41714ef6b422092abfd3689, type: 2}
   nextButton: {fileID: 817033152}
   isTesting: 0
   currentScene: 1
-  testingLvlNumber: 10
+  testingLvlNumber: 39
 --- !u!4 &1639253927
 Transform:
   m_ObjectHideFlags: 0
