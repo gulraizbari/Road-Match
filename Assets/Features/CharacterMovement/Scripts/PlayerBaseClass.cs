@@ -110,6 +110,7 @@ namespace Features.CharacterMovement.Scripts
             position.y = 1f;
             LookAt(position);
             Child.rotation=quaternion.identity;
+            SoundManager.Instance.Joy();
             transform.DOJump(position, configs.JumpHeight, 1, configs.JumpDuration).SetEase(Ease.Linear).OnComplete((() =>
             {
                 _crown.SetActive(true);
