@@ -187,6 +187,7 @@ namespace Sablo.Gameplay.Movement
             CurrentTile.ChangeColor(Configs.GameConfig.TileOrignalColor);
             CurrentTile.transform.DOLocalMoveY(0, .1f);
             CurrentTile.RemovePlayer();
+            SoundManager.Instance.Joy();
         }
 
         private void TileEffect(Transform tileTransform,Tile tile)

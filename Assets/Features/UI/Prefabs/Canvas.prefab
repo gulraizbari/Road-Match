@@ -612,6 +612,7 @@ MonoBehaviour:
   _bottomPanel: {fileID: 0}
   gridView: {fileID: 0}
   levelManager: {fileID: 0}
+  infinitySign: {fileID: 820446711150211033}
 --- !u!1 &6797920211050706170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,6 +1726,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e099fc2297b874cd5becd1b53b9fb954, type: 3}
+--- !u!1 &820446711150211033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4062703725220964134, guid: e099fc2297b874cd5becd1b53b9fb954,
+    type: 3}
+  m_PrefabInstance: {fileID: 3675870147904358655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4232047511856566198 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 700328050134615881, guid: e099fc2297b874cd5becd1b53b9fb954,

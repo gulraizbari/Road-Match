@@ -52,6 +52,7 @@ public class GridViewReferences : MonoBehaviour
     Tween _tween;
     public void UpdateMoves(int value)
     {
+        
         moves += value;
         if (moves <0 )
         {

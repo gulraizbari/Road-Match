@@ -26,6 +26,7 @@ public class UIController : MonoBehaviour
    public GridView gridView;
    public static UIController instance;
    public LevelManager levelManager;
+   public GameObject infinitySign;
 
    void Awake()
    {
@@ -43,6 +44,16 @@ public class UIController : MonoBehaviour
    {
       ShowPanels();
       GameController.ShowCash(_mainCashText);
+      if (levelManager.Level>2)
+      {
+        infinitySign.SetActive(false);
+        Text(TextType.Moves).gameObject.SetActive(true);
+      }
+      else
+      {
+        infinitySign.SetActive(true);
+        Text(TextType.Moves).gameObject.SetActive(false);
+      }
    }
 
    public void LevelComplete()
