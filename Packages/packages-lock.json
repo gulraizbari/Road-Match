@@ -1,5 +1,121 @@
 {
   "dependencies": {
+    "com.lionstudios.release.autobuilder": {
+      "version": "1.5.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.lionstudios.release.lionkitcore": "3.6.0"
+      },
+      "url": "http://packages.lionstudios.cc:4873"
+    },
+    "com.lionstudios.release.bundle": {
+      "version": "1.6.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.lionstudios.release.heroiclabs.nakama-unity": "3.8.0",
+        "com.lionstudios.release.lionkitcore": "3.6.0",
+        "com.lionstudios.release.lionsdkservice": "3.5.0",
+        "com.lionstudios.release.lionanalytics": "3.6.0",
+        "com.lionstudios.release.nakamaclient": "1.5.0",
+        "com.lionstudios.release.iap": "1.5.0",
+        "com.lionstudios.release.splash": "1.1.0",
+        "com.lionstudios.release.autobuilder": "1.5.0",
+        "com.lionstudios.release.ingamemessaging": "1.4.0",
+        "com.lionstudios.release.settingsmenu": "1.5.0"
+      },
+      "url": "http://packages.lionstudios.cc:4873"
+    },
+    "com.lionstudios.release.heroiclabs.nakama-unity": {
+      "version": "3.8.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0"
+      },
+      "url": "http://packages.lionstudios.cc:4873"
+    },
+    "com.lionstudios.release.iap": {
+      "version": "1.5.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.lionstudios.release.lionanalytics": "3.6.0",
+        "com.lionstudios.release.nakamaclient": "1.5.0"
+      },
+      "url": "http://packages.lionstudios.cc:4873"
+    },
+    "com.lionstudios.release.ingamemessaging": {
+      "version": "1.4.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.lionstudios.release.lionanalytics": "3.6.0",
+        "com.lionstudios.release.lionkitcore": "3.6.0",
+        "com.lionstudios.release.nakamaclient": "1.5.0"
+      },
+      "url": "http://packages.lionstudios.cc:4873"
+    },
+    "com.lionstudios.release.lionanalytics": {
+      "version": "3.6.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.lionstudios.release.lionkitcore": "3.6.0"
+      },
+      "url": "http://packages.lionstudios.cc:4873"
+    },
+    "com.lionstudios.release.lionkitcore": {
+      "version": "3.6.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.0.2"
+      },
+      "url": "http://packages.lionstudios.cc:4873"
+    },
+    "com.lionstudios.release.lionsdkservice": {
+      "version": "3.5.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.lionstudios.release.lionkitcore": "3.6.0",
+        "com.unity.nuget.newtonsoft-json": "3.0.2",
+        "com.lionstudios.release.lionanalytics": "3.6.0"
+      },
+      "url": "http://packages.lionstudios.cc:4873"
+    },
+    "com.lionstudios.release.nakamaclient": {
+      "version": "1.5.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.textmeshpro": "3.0.6",
+        "com.lionstudios.release.lionanalytics": "3.6.0"
+      },
+      "url": "http://packages.lionstudios.cc:4873"
+    },
+    "com.lionstudios.release.settingsmenu": {
+      "version": "1.5.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.lionstudios.release.lionanalytics": "3.6.0"
+      },
+      "url": "http://packages.lionstudios.cc:4873"
+    },
+    "com.lionstudios.release.splash": {
+      "version": "1.1.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "10.8.1",
+        "com.unity.render-pipelines.core": "10.8.1",
+        "com.lionstudios.release.lionanalytics": "3.6.0"
+      },
+      "url": "http://packages.lionstudios.cc:4873"
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
