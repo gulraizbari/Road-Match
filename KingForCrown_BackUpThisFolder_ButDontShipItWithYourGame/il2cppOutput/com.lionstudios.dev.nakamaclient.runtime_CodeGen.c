@@ -1,0 +1,760 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 <userid>j__TPar <>f__AnonymousType0`3::get_userid()
+// 0x00000002 <oldUsername>j__TPar <>f__AnonymousType0`3::get_oldUsername()
+// 0x00000003 <newUsername>j__TPar <>f__AnonymousType0`3::get_newUsername()
+// 0x00000004 System.Void <>f__AnonymousType0`3::.ctor(<userid>j__TPar,<oldUsername>j__TPar,<newUsername>j__TPar)
+// 0x00000005 System.Boolean <>f__AnonymousType0`3::Equals(System.Object)
+// 0x00000006 System.Int32 <>f__AnonymousType0`3::GetHashCode()
+// 0x00000007 System.String <>f__AnonymousType0`3::ToString()
+// 0x00000008 LionStudios.Suite.NakamaClient.ConnectionState LionStudios.Suite.NakamaClient.NakamaConnection::get_State()
+extern void NakamaConnection_get_State_m9B5225F77F0038F8C83C6AC4F060555C04E5A01C (void);
+// 0x00000009 System.Void LionStudios.Suite.NakamaClient.NakamaConnection::set_State(LionStudios.Suite.NakamaClient.ConnectionState)
+extern void NakamaConnection_set_State_mBF09D86BACA2D5BB7B80974C14AB89456CAA62B1 (void);
+// 0x0000000A Nakama.IClient LionStudios.Suite.NakamaClient.NakamaConnection::get_Client()
+extern void NakamaConnection_get_Client_m087749704AB5FA946B676072EE2A06FF8957315D (void);
+// 0x0000000B System.Void LionStudios.Suite.NakamaClient.NakamaConnection::set_Client(Nakama.IClient)
+extern void NakamaConnection_set_Client_m5E10A82F269421E4ABB5B3A8CFBDAF19E4E01924 (void);
+// 0x0000000C Nakama.ISocket LionStudios.Suite.NakamaClient.NakamaConnection::get_Socket()
+extern void NakamaConnection_get_Socket_mF8923487B420A66FF9D88ECC3A1B54AC46BD5A8C (void);
+// 0x0000000D System.Void LionStudios.Suite.NakamaClient.NakamaConnection::set_Socket(Nakama.ISocket)
+extern void NakamaConnection_set_Socket_m812644FFE122D714363A990F04701AA26F08CCEB (void);
+// 0x0000000E Nakama.IApiAccount LionStudios.Suite.NakamaClient.NakamaConnection::get_Account()
+extern void NakamaConnection_get_Account_m44771027D37B65ADA59147DB4E05C4189318ACE5 (void);
+// 0x0000000F System.Void LionStudios.Suite.NakamaClient.NakamaConnection::set_Account(Nakama.IApiAccount)
+extern void NakamaConnection_set_Account_m35D9F2EF11387D1B29AF2EC4862083042EAFEB5C (void);
+// 0x00000010 System.Void LionStudios.Suite.NakamaClient.NakamaConnection::add_OnStateChanged(System.Action)
+extern void NakamaConnection_add_OnStateChanged_m2B7BCF615B284410A4E4F0534C4B7B74DCC22948 (void);
+// 0x00000011 System.Void LionStudios.Suite.NakamaClient.NakamaConnection::remove_OnStateChanged(System.Action)
+extern void NakamaConnection_remove_OnStateChanged_mC769BAF4FB27FB578E80FF3FAA2EEB5B2F7E5BD4 (void);
+// 0x00000012 System.Void LionStudios.Suite.NakamaClient.NakamaConnection::SetConnectionState(LionStudios.Suite.NakamaClient.ConnectionState)
+extern void NakamaConnection_SetConnectionState_m30C544A3B68C47FA3D1B6D5364C1BEEE1121025C (void);
+// 0x00000013 System.Threading.Tasks.Task LionStudios.Suite.NakamaClient.NakamaConnection::Connect()
+extern void NakamaConnection_Connect_m1D807BF266A1D3C8B8A82216C2299BE7D10AE9F2 (void);
+// 0x00000014 System.Threading.Tasks.Task`1<System.Boolean> LionStudios.Suite.NakamaClient.NakamaConnection::OpenSocket()
+extern void NakamaConnection_OpenSocket_m8D2945614695AF840F452CEF23432B7DB5C2095F (void);
+// 0x00000015 System.String LionStudios.Suite.NakamaClient.NakamaConnection::GetDeviceId()
+extern void NakamaConnection_GetDeviceId_m6AB4D889D1BDC6C0E7091A70785C392F17BC2CDF (void);
+// 0x00000016 System.Threading.Tasks.Task LionStudios.Suite.NakamaClient.NakamaConnection::RefreshAccount()
+extern void NakamaConnection_RefreshAccount_mAE189D207906F2DB364B80A24B50EFEE9317B80B (void);
+// 0x00000017 System.Threading.Tasks.Task LionStudios.Suite.NakamaClient.NakamaConnection::RefreshSession()
+extern void NakamaConnection_RefreshSession_m2B73227C66BE34C20A6A78BC7D9C9ED52F910338 (void);
+// 0x00000018 System.Threading.Tasks.Task`1<LionStudios.Suite.NakamaClient.RPCBaseResult> LionStudios.Suite.NakamaClient.NakamaConnection::ChangeUsername(System.String)
+extern void NakamaConnection_ChangeUsername_m6765BB0B81D101E5E43320E7AD9690F6FD2F9AE4 (void);
+// 0x00000019 System.Void LionStudios.Suite.NakamaClient.NakamaConnection::ResetPlayerPrefs()
+extern void NakamaConnection_ResetPlayerPrefs_m277CD61B449083FDF513EB8D52AE144D90E9E981 (void);
+// 0x0000001A System.String LionStudios.Suite.NakamaClient.NakamaConnection::GenerateRandomUserName()
+extern void NakamaConnection_GenerateRandomUserName_m562FDCB67C7C6B9F5FE4B9B034D45196460D8C19 (void);
+// 0x0000001B System.Void LionStudios.Suite.NakamaClient.NakamaConnection::.ctor()
+extern void NakamaConnection__ctor_m52C5B85645F07B9C7206C48A1F239FEACCF50B8B (void);
+// 0x0000001C System.Void LionStudios.Suite.NakamaClient.NakamaConnection::.cctor()
+extern void NakamaConnection__cctor_m309C03B3242C37F76C04932C62672E9E721BBDB7 (void);
+// 0x0000001D System.Void LionStudios.Suite.NakamaClient.NakamaConnection/<Connect>d__26::MoveNext()
+extern void U3CConnectU3Ed__26_MoveNext_m435E004F9AD56933E5B60B3435E334A7A440B109 (void);
+// 0x0000001E System.Void LionStudios.Suite.NakamaClient.NakamaConnection/<Connect>d__26::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CConnectU3Ed__26_SetStateMachine_m984DA5301BB9811F564A0BE8B10C6F620A605A78 (void);
+// 0x0000001F System.Void LionStudios.Suite.NakamaClient.NakamaConnection/<OpenSocket>d__27::MoveNext()
+extern void U3COpenSocketU3Ed__27_MoveNext_m032C93C441A81C1DA3A099564D61E5CF5E2BEC1C (void);
+// 0x00000020 System.Void LionStudios.Suite.NakamaClient.NakamaConnection/<OpenSocket>d__27::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3COpenSocketU3Ed__27_SetStateMachine_mB62D8A17A5FED6A88CE780CAB9BEF4D470A76AC8 (void);
+// 0x00000021 System.Void LionStudios.Suite.NakamaClient.NakamaConnection/<RefreshAccount>d__29::MoveNext()
+extern void U3CRefreshAccountU3Ed__29_MoveNext_m969E1246C33243DCB648F1F96ABAF652146676DD (void);
+// 0x00000022 System.Void LionStudios.Suite.NakamaClient.NakamaConnection/<RefreshAccount>d__29::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRefreshAccountU3Ed__29_SetStateMachine_m890D4F887CB92D1F847774260BEC5FB411553D88 (void);
+// 0x00000023 System.Void LionStudios.Suite.NakamaClient.NakamaConnection/<RefreshSession>d__30::MoveNext()
+extern void U3CRefreshSessionU3Ed__30_MoveNext_m7CF781313690FBACAD0B1DB0CC25B932E9CB0D3B (void);
+// 0x00000024 System.Void LionStudios.Suite.NakamaClient.NakamaConnection/<RefreshSession>d__30::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRefreshSessionU3Ed__30_SetStateMachine_m658EA5925555BCA5423A8E28F5A209DD275DE68E (void);
+// 0x00000025 System.Void LionStudios.Suite.NakamaClient.NakamaConnection/<ChangeUsername>d__31::MoveNext()
+extern void U3CChangeUsernameU3Ed__31_MoveNext_m19F6F3F999E58F1628D5EF84C7B75FB2BA0DBC0C (void);
+// 0x00000026 System.Void LionStudios.Suite.NakamaClient.NakamaConnection/<ChangeUsername>d__31::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CChangeUsernameU3Ed__31_SetStateMachine_mAD2FF7F7409FA21DB1B05FAF1469CDC8D5A13DBE (void);
+// 0x00000027 System.Void LionStudios.Suite.NakamaClient.NotConnectedException::.ctor()
+extern void NotConnectedException__ctor_m7080E1153A5F3C1EFC6AC5468397CB3B01C27E0C (void);
+// 0x00000028 System.Void LionStudios.Suite.NakamaClient.RPCBaseResult::.ctor()
+extern void RPCBaseResult__ctor_mB646005F22C395A4CC99C0B3C511A369D9EC2B53 (void);
+// 0x00000029 System.Void LionStudios.Suite.NakamaClient.LocationInfo::.ctor()
+extern void LocationInfo__ctor_m2F021C31A931CAB92056E6EF75069BF42C5617E3 (void);
+// 0x0000002A LionStudios.Suite.NakamaClient.NakamaConnection LionStudios.Suite.NakamaClient.NakamaConnector::get_Connection()
+extern void NakamaConnector_get_Connection_m292BC19826C92360169990AD593D68D2F54FD75E (void);
+// 0x0000002B LionStudios.Suite.NakamaClient.LocationInfo LionStudios.Suite.NakamaClient.NakamaConnector::get_Location()
+extern void NakamaConnector_get_Location_mFE82CBB3A2870E71B1B4EED64E5AF81CFF9124CC (void);
+// 0x0000002C System.Threading.Tasks.Task LionStudios.Suite.NakamaClient.NakamaConnector::Initialize(Utility.Dispatcher.Dispatcher,Data.CoreData)
+extern void NakamaConnector_Initialize_mA4A3EB012371B4B332790307328280416B243233 (void);
+// 0x0000002D System.Void LionStudios.Suite.NakamaClient.NakamaConnector::OnInitialize(LionStudios.Suite.Core.LionCoreContext)
+extern void NakamaConnector_OnInitialize_m141210DD73536A71DB6E8ECF2529395753BC4D1E (void);
+// 0x0000002E System.Int32 LionStudios.Suite.NakamaClient.NakamaConnector::get_Priority()
+extern void NakamaConnector_get_Priority_m07B1D3798BB87B124E69EF85B58A42E31BFB4210 (void);
+// 0x0000002F System.Void LionStudios.Suite.NakamaClient.NakamaConnector::KeepSessionFromExpiring()
+extern void NakamaConnector_KeepSessionFromExpiring_mCA0AE4AB17C1E25C0629A7474C87A2FDAC0660D8 (void);
+// 0x00000030 System.Void LionStudios.Suite.NakamaClient.NakamaConnector::EnsureNotDisabled()
+extern void NakamaConnector_EnsureNotDisabled_mCCEBE2458B61539161D3D2A058C22FFD01790E43 (void);
+// 0x00000031 System.Void LionStudios.Suite.NakamaClient.NakamaConnector::KeepProcessingNotifications()
+extern void NakamaConnector_KeepProcessingNotifications_m103FEFBB6E100F890A64C6AF1F351752654F7168 (void);
+// 0x00000032 System.Threading.Tasks.Task LionStudios.Suite.NakamaClient.NakamaConnector::Connect()
+extern void NakamaConnector_Connect_m0106C56FED447160C354ACD55699883CEB524C78 (void);
+// 0x00000033 System.Threading.Tasks.Task LionStudios.Suite.NakamaClient.NakamaConnector::RefreshAccount()
+extern void NakamaConnector_RefreshAccount_mF0421643E51D2A389865B8990680B6AF17C905A4 (void);
+// 0x00000034 System.Threading.Tasks.Task`1<System.Boolean> LionStudios.Suite.NakamaClient.NakamaConnector::CheckConnection()
+extern void NakamaConnector_CheckConnection_mBC8655B765A76B45045A9A3A6AF75D0F4678671E (void);
+// 0x00000035 System.Threading.Tasks.Task`1<System.String> LionStudios.Suite.NakamaClient.NakamaConnector::RpcCall(System.String,System.String)
+extern void NakamaConnector_RpcCall_mD2587398C4464611576F39FF3708A44D653522AA (void);
+// 0x00000036 System.Threading.Tasks.Task`1<LionStudios.Suite.NakamaClient.RpcResponse> LionStudios.Suite.NakamaClient.NakamaConnector::CallRpc(System.String,System.String)
+extern void NakamaConnector_CallRpc_mE08C499D76B190EB8FF9791F72552188174F1964 (void);
+// 0x00000037 LionStudios.Suite.NakamaClient.RpcResponse LionStudios.Suite.NakamaClient.NakamaConnector::GetEmptyRpcResponse()
+extern void NakamaConnector_GetEmptyRpcResponse_mA0439D2925FF903B90EC0FAAF1FA380A710454D9 (void);
+// 0x00000038 System.Threading.Tasks.Task`1<System.DateTime> LionStudios.Suite.NakamaClient.NakamaConnector::GetServerTime()
+extern void NakamaConnector_GetServerTime_mDF579403A6E85E1C14D94895EE3E4E28B6E63240 (void);
+// 0x00000039 System.Void LionStudios.Suite.NakamaClient.NakamaConnector::GetLocation()
+extern void NakamaConnector_GetLocation_m69B067D20E7577D6B92873CEF62B59BF465A0D28 (void);
+// 0x0000003A System.Void LionStudios.Suite.NakamaClient.NakamaConnector::SetLocationRegion(System.String)
+extern void NakamaConnector_SetLocationRegion_m9CB692CAD306A5D4FC379F5FA2BBFE311816C6AD (void);
+// 0x0000003B System.Void LionStudios.Suite.NakamaClient.NakamaConnector::OnGetLocationComplete(LionStudios.Suite.NakamaClient.LocationInfo)
+extern void NakamaConnector_OnGetLocationComplete_m2E1B056B0F234624DC4A45562471DE784933832E (void);
+// 0x0000003C System.Threading.Tasks.Task LionStudios.Suite.NakamaClient.NakamaConnector::GetUserRegionByIpAsync(System.Action`1<LionStudios.Suite.NakamaClient.LocationInfo>)
+extern void NakamaConnector_GetUserRegionByIpAsync_m2E74C21070D744CE2512B926205670C15FE5444B (void);
+// 0x0000003D System.Void LionStudios.Suite.NakamaClient.NakamaConnector::RegisterOnNotificationReceived(System.Int32,System.Func`2<Nakama.IApiNotification,System.Boolean>)
+extern void NakamaConnector_RegisterOnNotificationReceived_m17754ABC528ACAA723B8EF5E0976AC65FF288789 (void);
+// 0x0000003E System.Void LionStudios.Suite.NakamaClient.NakamaConnector::ProcessNotifications()
+extern void NakamaConnector_ProcessNotifications_m392622B2E29EA96B17A00BE443F2C7CCFF2D3CC4 (void);
+// 0x0000003F System.Void LionStudios.Suite.NakamaClient.NakamaConnector::HandleNotification(Nakama.IApiNotification)
+extern void NakamaConnector_HandleNotification_mFD7484D12FC8F25C272AACD38B66CF30DAAC6366 (void);
+// 0x00000040 System.Void LionStudios.Suite.NakamaClient.NakamaConnector::DeleteNotification(System.String)
+extern void NakamaConnector_DeleteNotification_mAF511D956D66DE53D0546BCCA400EB805D1EFE6F (void);
+// 0x00000041 System.Threading.Tasks.Task LionStudios.Suite.NakamaClient.NakamaConnector::GetAllPendingNotifications()
+extern void NakamaConnector_GetAllPendingNotifications_mB23734BDF060610A024BD345FA598EC3F9F6DBBB (void);
+// 0x00000042 System.Void LionStudios.Suite.NakamaClient.NakamaConnector::InitNotifications()
+extern void NakamaConnector_InitNotifications_m5D536B8A4BB787607E34BCE887C5ACFFD2B444E2 (void);
+// 0x00000043 System.Void LionStudios.Suite.NakamaClient.NakamaConnector::.ctor()
+extern void NakamaConnector__ctor_m204FA051567EAE831E1EB41BE8C81D5A6ADEC609 (void);
+// 0x00000044 System.Void LionStudios.Suite.NakamaClient.NakamaConnector::.cctor()
+extern void NakamaConnector__cctor_mFEABCF8E003D079DEC71E0B87125D8BA2CE80C1A (void);
+// 0x00000045 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<Initialize>d__9::MoveNext()
+extern void U3CInitializeU3Ed__9_MoveNext_m5AA527F8850732332FD90E09875C45F77FAB054D (void);
+// 0x00000046 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<Initialize>d__9::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CInitializeU3Ed__9_SetStateMachine_mC34ED9702DDDD55FF93760E4636050C96E1A6AF9 (void);
+// 0x00000047 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<KeepSessionFromExpiring>d__13::MoveNext()
+extern void U3CKeepSessionFromExpiringU3Ed__13_MoveNext_m6B937E946E0DDB95D1C43D908C05491B86B9EF89 (void);
+// 0x00000048 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<KeepSessionFromExpiring>d__13::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CKeepSessionFromExpiringU3Ed__13_SetStateMachine_m836AD1A76D640AAC949E155865BCBDA2EA49BFA8 (void);
+// 0x00000049 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<KeepProcessingNotifications>d__15::MoveNext()
+extern void U3CKeepProcessingNotificationsU3Ed__15_MoveNext_m1C9F3CDCA36F9027CA3FE0A803431EEA13295152 (void);
+// 0x0000004A System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<KeepProcessingNotifications>d__15::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CKeepProcessingNotificationsU3Ed__15_SetStateMachine_m69836D768EE08F0F70553C888CE22498F51180F9 (void);
+// 0x0000004B System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<Connect>d__16::MoveNext()
+extern void U3CConnectU3Ed__16_MoveNext_mEF8323DCE0380F1AE41E47A63F7B8177E9650787 (void);
+// 0x0000004C System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<Connect>d__16::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CConnectU3Ed__16_SetStateMachine_m5DB3DF6799094B5FFA2910B82510DF43F40B7386 (void);
+// 0x0000004D System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<RefreshAccount>d__17::MoveNext()
+extern void U3CRefreshAccountU3Ed__17_MoveNext_mAB15D957DC1587FDAD25BC85EB705E5ADF276E43 (void);
+// 0x0000004E System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<RefreshAccount>d__17::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRefreshAccountU3Ed__17_SetStateMachine_m05B819E0C8778B36CBB187BDE12C9C7BF57C3EBB (void);
+// 0x0000004F System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<CheckConnection>d__18::MoveNext()
+extern void U3CCheckConnectionU3Ed__18_MoveNext_m086AF1070EC02545A6C56E23203BDE73E10E9459 (void);
+// 0x00000050 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<CheckConnection>d__18::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CCheckConnectionU3Ed__18_SetStateMachine_mDF6FB09FF5225A6666F388DEB3AD0D5B1F2D1EC5 (void);
+// 0x00000051 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<RpcCall>d__19::MoveNext()
+extern void U3CRpcCallU3Ed__19_MoveNext_m4D04D061953AA963FE03A08C7A070D3DA70F4B93 (void);
+// 0x00000052 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<RpcCall>d__19::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRpcCallU3Ed__19_SetStateMachine_m85A503771F4260427B8DC53F12BC80C154BFAC14 (void);
+// 0x00000053 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<CallRpc>d__20::MoveNext()
+extern void U3CCallRpcU3Ed__20_MoveNext_mAF882A7E5753E594806A51B48B1871E23F34A77E (void);
+// 0x00000054 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<CallRpc>d__20::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CCallRpcU3Ed__20_SetStateMachine_mD0886BA60EACE1E6206768440043704E28F4BF46 (void);
+// 0x00000055 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<GetServerTime>d__22::MoveNext()
+extern void U3CGetServerTimeU3Ed__22_MoveNext_mEA480D5AC930DB6EB83DE00238D5D7E15BA1BCC2 (void);
+// 0x00000056 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<GetServerTime>d__22::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CGetServerTimeU3Ed__22_SetStateMachine_m83FC42E61FC65B74D25C2442BC13940F98981463 (void);
+// 0x00000057 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<GetUserRegionByIpAsync>d__26::MoveNext()
+extern void U3CGetUserRegionByIpAsyncU3Ed__26_MoveNext_m9AF52DA3FC029719A529DAE7DB39B1E315F63342 (void);
+// 0x00000058 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<GetUserRegionByIpAsync>d__26::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CGetUserRegionByIpAsyncU3Ed__26_SetStateMachine_mA723638BD3BD9CB0F6286F5C7A57982A25F209F8 (void);
+// 0x00000059 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<DeleteNotification>d__30::MoveNext()
+extern void U3CDeleteNotificationU3Ed__30_MoveNext_mB204924BFCE848A40BEA360BE95253F52F5E125D (void);
+// 0x0000005A System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<DeleteNotification>d__30::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CDeleteNotificationU3Ed__30_SetStateMachine_m8C4808CB53CD870E6BB93B7ABD1A2D30EB1E153C (void);
+// 0x0000005B System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<GetAllPendingNotifications>d__31::MoveNext()
+extern void U3CGetAllPendingNotificationsU3Ed__31_MoveNext_m71B6C41FE4517897D4247D2EEEAF307B59F6D4C2 (void);
+// 0x0000005C System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<GetAllPendingNotifications>d__31::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CGetAllPendingNotificationsU3Ed__31_SetStateMachine_m64D2670FD5BC518599D3BCDBED54D0B62D2AC85A (void);
+// 0x0000005D System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<>c::.cctor()
+extern void U3CU3Ec__cctor_mDB87B83A3EBBA424338C177471957261CB9706CA (void);
+// 0x0000005E System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<>c::.ctor()
+extern void U3CU3Ec__ctor_mAD69620E326DCDE8EFF5772651A1A8052B5BB80A (void);
+// 0x0000005F System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<>c::<InitNotifications>b__32_0(Nakama.IApiNotification)
+extern void U3CU3Ec_U3CInitNotificationsU3Eb__32_0_mC19C827614905454F416E34CD488413D57F9AFA7 (void);
+// 0x00000060 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<InitNotifications>d__32::MoveNext()
+extern void U3CInitNotificationsU3Ed__32_MoveNext_m30451CB6B00D9393D4268FD6CABC92D6E7AF7676 (void);
+// 0x00000061 System.Void LionStudios.Suite.NakamaClient.NakamaConnector/<InitNotifications>d__32::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CInitNotificationsU3Ed__32_SetStateMachine_m99E42C7DF1BD94E60DF3572D47363387C289DDA0 (void);
+// 0x00000062 LionStudios.Suite.NakamaClient.NakamaController LionStudios.Suite.NakamaClient.NakamaController::get_Instance()
+extern void NakamaController_get_Instance_m3FD5314D96C770422E837198AD7BDC97E3A7D287 (void);
+// 0x00000063 LionStudios.Suite.NakamaClient.NakamaConnection LionStudios.Suite.NakamaClient.NakamaController::get_Connection()
+extern void NakamaController_get_Connection_m6666CB4071FA346EDC52757A1C445C7623EFFA52 (void);
+// 0x00000064 System.Threading.Tasks.Task LionStudios.Suite.NakamaClient.NakamaController::RefreshAccount()
+extern void NakamaController_RefreshAccount_m90318C04EFFC05582BEEA01F866CBBD9A937C7B0 (void);
+// 0x00000065 System.Threading.Tasks.Task`1<System.String> LionStudios.Suite.NakamaClient.NakamaController::RpcCall(System.String,System.String)
+extern void NakamaController_RpcCall_m32FCDD23E6B70D73BCACA9CADB0BAAA2BC88A3C7 (void);
+// 0x00000066 System.Threading.Tasks.Task`1<System.DateTime> LionStudios.Suite.NakamaClient.NakamaController::GetServerTime()
+extern void NakamaController_GetServerTime_mF45F1D774098D6794F52FD9151B25165CAFE8BEE (void);
+// 0x00000067 LionStudios.Suite.NakamaClient.LocationInfo LionStudios.Suite.NakamaClient.NakamaController::get_Location()
+extern void NakamaController_get_Location_m9638FF5B8EF38E21CBD48AE16FAEC7A7E17B35DA (void);
+// 0x00000068 System.Void LionStudios.Suite.NakamaClient.NakamaController::SetLocationRegion(System.String)
+extern void NakamaController_SetLocationRegion_m7BCA5EF0209A94BE5367207DC1B28896BD060CB8 (void);
+// 0x00000069 System.Void LionStudios.Suite.NakamaClient.NakamaController::RegisterOnNotificationReceived(System.Int32,System.Func`2<Nakama.IApiNotification,System.Boolean>)
+extern void NakamaController_RegisterOnNotificationReceived_mBA43C3D693A8D95CE610A8B7DCC8015B0AE51E92 (void);
+// 0x0000006A System.Void LionStudios.Suite.NakamaClient.NakamaController::.ctor()
+extern void NakamaController__ctor_mB32687EA100FE0F278582DD0DDA7B69231D79B85 (void);
+// 0x0000006B System.Void LionStudios.Suite.NakamaClient.NakamaController::.cctor()
+extern void NakamaController__cctor_m11D8FF4C74CC08969B74B53D2A94E58526B904DF (void);
+// 0x0000006C System.Void LionStudios.Suite.NakamaClient.NakamaController/<RefreshAccount>d__5::MoveNext()
+extern void U3CRefreshAccountU3Ed__5_MoveNext_mFD0F1B8499B0CC0D365FF3BB7293B13B2AC3DB5E (void);
+// 0x0000006D System.Void LionStudios.Suite.NakamaClient.NakamaController/<RefreshAccount>d__5::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRefreshAccountU3Ed__5_SetStateMachine_mDA7BEB985DAD20E0395C9F53D9697C362759CDFF (void);
+// 0x0000006E System.Void LionStudios.Suite.NakamaClient.NakamaController/<RpcCall>d__6::MoveNext()
+extern void U3CRpcCallU3Ed__6_MoveNext_mA99F79852DC26774A07290CEB310C995B2036221 (void);
+// 0x0000006F System.Void LionStudios.Suite.NakamaClient.NakamaController/<RpcCall>d__6::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRpcCallU3Ed__6_SetStateMachine_mAAE924EF779B826BF7EE9FFFB7A69A6FFE06BC6D (void);
+// 0x00000070 System.Void LionStudios.Suite.NakamaClient.NakamaController/<GetServerTime>d__7::MoveNext()
+extern void U3CGetServerTimeU3Ed__7_MoveNext_m1E9BACAA94DF6A0DAA9B5FD617F154E079AD47EA (void);
+// 0x00000071 System.Void LionStudios.Suite.NakamaClient.NakamaController/<GetServerTime>d__7::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CGetServerTimeU3Ed__7_SetStateMachine_m5E6FF6D3A397686E218D13241D5361B87B843191 (void);
+// 0x00000072 System.Void LionStudios.Suite.NakamaClient.RpcResponse::.ctor()
+extern void RpcResponse__ctor_m716737DC913315AF1853703B600E6D5D199DD73F (void);
+// 0x00000073 LionStudios.Suite.NakamaClient.NakamaServerConfig LionStudios.Suite.NakamaClient.LionNakamaSettings::GetServerConfig()
+extern void LionNakamaSettings_GetServerConfig_mDA25348CAABB38679C652405382A556CD0283169 (void);
+// 0x00000074 System.Void LionStudios.Suite.NakamaClient.LionNakamaSettings::.ctor()
+extern void LionNakamaSettings__ctor_m2FFE39CC0F6C777A69D4CA93A245CDF305EE9D60 (void);
+// 0x00000075 System.Void LionStudios.Suite.NakamaClient.LionNakamaSettings::.cctor()
+extern void LionNakamaSettings__cctor_m8B5EE06C4E97F02540C4D0254689B7DAB3518E3E (void);
+// 0x00000076 System.String LionStudios.Suite.NakamaClient.LionNakamaSettingsProvider::get_Name()
+extern void LionNakamaSettingsProvider_get_Name_m02CE9CB8DA2810D5906F81760D191DA15C900A24 (void);
+// 0x00000077 LionStudios.Suite.Core.ILionSettingsInfo LionStudios.Suite.NakamaClient.LionNakamaSettingsProvider::GetSettings()
+extern void LionNakamaSettingsProvider_GetSettings_m3EC6D791799E36B8FAF6C8121901AE0A38470867 (void);
+// 0x00000078 System.Void LionStudios.Suite.NakamaClient.LionNakamaSettingsProvider::ApplySettings(LionStudios.Suite.Core.ILionSettingsInfo)
+extern void LionNakamaSettingsProvider_ApplySettings_mE20F9C02F2010C9E2E32F391F801494C875BFEC6 (void);
+// 0x00000079 LionStudios.Suite.NakamaClient.LionNakamaSettings LionStudios.Suite.NakamaClient.LionNakamaSettingsProvider::get_Settings()
+extern void LionNakamaSettingsProvider_get_Settings_m79D0DE430994976AB36240BE1D7F6CD5C49A6B87 (void);
+// 0x0000007A System.Void LionStudios.Suite.NakamaClient.LionNakamaSettingsProvider::set_Settings(LionStudios.Suite.NakamaClient.LionNakamaSettings)
+extern void LionNakamaSettingsProvider_set_Settings_m831C2C566C8ED1FF0AEBCDC6A32D90A9E375D927 (void);
+// 0x0000007B System.Void LionStudios.Suite.NakamaClient.LionNakamaSettingsProvider::.ctor()
+extern void LionNakamaSettingsProvider__ctor_m50CDB641D6DEEA599B13558FB5B402E25C803674 (void);
+// 0x0000007C System.Void LionStudios.Suite.NakamaClient.NakamaServerSettings::.ctor(LionStudios.Suite.NakamaClient.NakamaServer)
+extern void NakamaServerSettings__ctor_m171482BE1DA6A090E11B02DDF4298EB9C72E2753 (void);
+// 0x0000007D LionStudios.Suite.NakamaClient.NakamaServerConfig LionStudios.Suite.NakamaClient.NakamaServerSettings::GetServerConfig()
+extern void NakamaServerSettings_GetServerConfig_m884CEADD6716598AA2F0A6660710A91539AD5843 (void);
+// 0x0000007E System.Void LionStudios.Suite.NakamaClient.NakamaServerSettings::SetServerConfig(LionStudios.Suite.NakamaClient.NakamaServerConfig)
+extern void NakamaServerSettings_SetServerConfig_m38EA510A42BFEF7F1E1B151EC782A5D5791D3D42 (void);
+// 0x0000007F System.Void LionStudios.Suite.NakamaClient.UsernameView::Awake()
+extern void UsernameView_Awake_mEF8D6F3DDA12A3E0F56CDF55EC164735B782AB7A (void);
+// 0x00000080 System.Void LionStudios.Suite.NakamaClient.UsernameView::OnEnable()
+extern void UsernameView_OnEnable_m03A42217CCCAF6AF32B29D88C6D5F4A063F48C9A (void);
+// 0x00000081 System.Void LionStudios.Suite.NakamaClient.UsernameView::OnConnectionStateChanged()
+extern void UsernameView_OnConnectionStateChanged_m8569A37AEED2799E369E45F48FC76A94B43F947A (void);
+// 0x00000082 System.Void LionStudios.Suite.NakamaClient.UsernameView::EnableEdit()
+extern void UsernameView_EnableEdit_mB0EBEF94B8CF99685A45C43761766AC3E89D7C26 (void);
+// 0x00000083 System.Void LionStudios.Suite.NakamaClient.UsernameView::ValidateEdit(System.String)
+extern void UsernameView_ValidateEdit_m2CB54A69974A1A51AB71B4810B361CF4D53C798C (void);
+// 0x00000084 System.Collections.IEnumerator LionStudios.Suite.NakamaClient.UsernameView::ShowError(System.String)
+extern void UsernameView_ShowError_m28E04E94235678BDE35EA33923516125BF72031F (void);
+// 0x00000085 System.Void LionStudios.Suite.NakamaClient.UsernameView::ValidateEdit()
+extern void UsernameView_ValidateEdit_m52049027F3B41CB28B0CC660304C4D0DA9221F28 (void);
+// 0x00000086 System.Void LionStudios.Suite.NakamaClient.UsernameView::DisableEdit()
+extern void UsernameView_DisableEdit_m4E1A7A2B320EE16C65BDEF91FEC9A8B28D05990B (void);
+// 0x00000087 System.Void LionStudios.Suite.NakamaClient.UsernameView::.ctor()
+extern void UsernameView__ctor_mA16B006B68A2FCCE1B53BAC990085EBE56E51B4B (void);
+// 0x00000088 System.Void LionStudios.Suite.NakamaClient.UsernameView/<ValidateEdit>d__9::MoveNext()
+extern void U3CValidateEditU3Ed__9_MoveNext_mF73D29361668B90CB659181848FF6213C0C64286 (void);
+// 0x00000089 System.Void LionStudios.Suite.NakamaClient.UsernameView/<ValidateEdit>d__9::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CValidateEditU3Ed__9_SetStateMachine_mA4FAAE5ACF14B270115D3E1EDBB1B8F792750C41 (void);
+// 0x0000008A System.Void LionStudios.Suite.NakamaClient.UsernameView/<ShowError>d__10::.ctor(System.Int32)
+extern void U3CShowErrorU3Ed__10__ctor_m1A237B3AB0AC2BAE8043879B1ED3E9E967D700F7 (void);
+// 0x0000008B System.Void LionStudios.Suite.NakamaClient.UsernameView/<ShowError>d__10::System.IDisposable.Dispose()
+extern void U3CShowErrorU3Ed__10_System_IDisposable_Dispose_m11CA4E995AF7F15CC7620B8D26473F10ECE98561 (void);
+// 0x0000008C System.Boolean LionStudios.Suite.NakamaClient.UsernameView/<ShowError>d__10::MoveNext()
+extern void U3CShowErrorU3Ed__10_MoveNext_m1CD3F6B0CA83FA801872E4E66863857F601ED6CE (void);
+// 0x0000008D System.Object LionStudios.Suite.NakamaClient.UsernameView/<ShowError>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CShowErrorU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1C27A2A69DFC41D8AC1ABDDC8CFA509518E8BD50 (void);
+// 0x0000008E System.Void LionStudios.Suite.NakamaClient.UsernameView/<ShowError>d__10::System.Collections.IEnumerator.Reset()
+extern void U3CShowErrorU3Ed__10_System_Collections_IEnumerator_Reset_mDF530CCB1EF70DBEA2533A64688F942CCF11D1C1 (void);
+// 0x0000008F System.Object LionStudios.Suite.NakamaClient.UsernameView/<ShowError>d__10::System.Collections.IEnumerator.get_Current()
+extern void U3CShowErrorU3Ed__10_System_Collections_IEnumerator_get_Current_m2994ADF1F652FCB726C8FB455EE9C612C052AB0E (void);
+// 0x00000090 System.Void LionStudios.Suite.NakamaClient.UsernameView/<DisableEdit>d__12::MoveNext()
+extern void U3CDisableEditU3Ed__12_MoveNext_m8A88D5297437C43D8F0DA95A4438684912A02655 (void);
+// 0x00000091 System.Void LionStudios.Suite.NakamaClient.UsernameView/<DisableEdit>d__12::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CDisableEditU3Ed__12_SetStateMachine_mD0F67D68DEF6ADE0A865B960EB1AE4F90FECAE38 (void);
+static Il2CppMethodPointer s_methodPointers[145] = 
+{
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NakamaConnection_get_State_m9B5225F77F0038F8C83C6AC4F060555C04E5A01C,
+	NakamaConnection_set_State_mBF09D86BACA2D5BB7B80974C14AB89456CAA62B1,
+	NakamaConnection_get_Client_m087749704AB5FA946B676072EE2A06FF8957315D,
+	NakamaConnection_set_Client_m5E10A82F269421E4ABB5B3A8CFBDAF19E4E01924,
+	NakamaConnection_get_Socket_mF8923487B420A66FF9D88ECC3A1B54AC46BD5A8C,
+	NakamaConnection_set_Socket_m812644FFE122D714363A990F04701AA26F08CCEB,
+	NakamaConnection_get_Account_m44771027D37B65ADA59147DB4E05C4189318ACE5,
+	NakamaConnection_set_Account_m35D9F2EF11387D1B29AF2EC4862083042EAFEB5C,
+	NakamaConnection_add_OnStateChanged_m2B7BCF615B284410A4E4F0534C4B7B74DCC22948,
+	NakamaConnection_remove_OnStateChanged_mC769BAF4FB27FB578E80FF3FAA2EEB5B2F7E5BD4,
+	NakamaConnection_SetConnectionState_m30C544A3B68C47FA3D1B6D5364C1BEEE1121025C,
+	NakamaConnection_Connect_m1D807BF266A1D3C8B8A82216C2299BE7D10AE9F2,
+	NakamaConnection_OpenSocket_m8D2945614695AF840F452CEF23432B7DB5C2095F,
+	NakamaConnection_GetDeviceId_m6AB4D889D1BDC6C0E7091A70785C392F17BC2CDF,
+	NakamaConnection_RefreshAccount_mAE189D207906F2DB364B80A24B50EFEE9317B80B,
+	NakamaConnection_RefreshSession_m2B73227C66BE34C20A6A78BC7D9C9ED52F910338,
+	NakamaConnection_ChangeUsername_m6765BB0B81D101E5E43320E7AD9690F6FD2F9AE4,
+	NakamaConnection_ResetPlayerPrefs_m277CD61B449083FDF513EB8D52AE144D90E9E981,
+	NakamaConnection_GenerateRandomUserName_m562FDCB67C7C6B9F5FE4B9B034D45196460D8C19,
+	NakamaConnection__ctor_m52C5B85645F07B9C7206C48A1F239FEACCF50B8B,
+	NakamaConnection__cctor_m309C03B3242C37F76C04932C62672E9E721BBDB7,
+	U3CConnectU3Ed__26_MoveNext_m435E004F9AD56933E5B60B3435E334A7A440B109,
+	U3CConnectU3Ed__26_SetStateMachine_m984DA5301BB9811F564A0BE8B10C6F620A605A78,
+	U3COpenSocketU3Ed__27_MoveNext_m032C93C441A81C1DA3A099564D61E5CF5E2BEC1C,
+	U3COpenSocketU3Ed__27_SetStateMachine_mB62D8A17A5FED6A88CE780CAB9BEF4D470A76AC8,
+	U3CRefreshAccountU3Ed__29_MoveNext_m969E1246C33243DCB648F1F96ABAF652146676DD,
+	U3CRefreshAccountU3Ed__29_SetStateMachine_m890D4F887CB92D1F847774260BEC5FB411553D88,
+	U3CRefreshSessionU3Ed__30_MoveNext_m7CF781313690FBACAD0B1DB0CC25B932E9CB0D3B,
+	U3CRefreshSessionU3Ed__30_SetStateMachine_m658EA5925555BCA5423A8E28F5A209DD275DE68E,
+	U3CChangeUsernameU3Ed__31_MoveNext_m19F6F3F999E58F1628D5EF84C7B75FB2BA0DBC0C,
+	U3CChangeUsernameU3Ed__31_SetStateMachine_mAD2FF7F7409FA21DB1B05FAF1469CDC8D5A13DBE,
+	NotConnectedException__ctor_m7080E1153A5F3C1EFC6AC5468397CB3B01C27E0C,
+	RPCBaseResult__ctor_mB646005F22C395A4CC99C0B3C511A369D9EC2B53,
+	LocationInfo__ctor_m2F021C31A931CAB92056E6EF75069BF42C5617E3,
+	NakamaConnector_get_Connection_m292BC19826C92360169990AD593D68D2F54FD75E,
+	NakamaConnector_get_Location_mFE82CBB3A2870E71B1B4EED64E5AF81CFF9124CC,
+	NakamaConnector_Initialize_mA4A3EB012371B4B332790307328280416B243233,
+	NakamaConnector_OnInitialize_m141210DD73536A71DB6E8ECF2529395753BC4D1E,
+	NakamaConnector_get_Priority_m07B1D3798BB87B124E69EF85B58A42E31BFB4210,
+	NakamaConnector_KeepSessionFromExpiring_mCA0AE4AB17C1E25C0629A7474C87A2FDAC0660D8,
+	NakamaConnector_EnsureNotDisabled_mCCEBE2458B61539161D3D2A058C22FFD01790E43,
+	NakamaConnector_KeepProcessingNotifications_m103FEFBB6E100F890A64C6AF1F351752654F7168,
+	NakamaConnector_Connect_m0106C56FED447160C354ACD55699883CEB524C78,
+	NakamaConnector_RefreshAccount_mF0421643E51D2A389865B8990680B6AF17C905A4,
+	NakamaConnector_CheckConnection_mBC8655B765A76B45045A9A3A6AF75D0F4678671E,
+	NakamaConnector_RpcCall_mD2587398C4464611576F39FF3708A44D653522AA,
+	NakamaConnector_CallRpc_mE08C499D76B190EB8FF9791F72552188174F1964,
+	NakamaConnector_GetEmptyRpcResponse_mA0439D2925FF903B90EC0FAAF1FA380A710454D9,
+	NakamaConnector_GetServerTime_mDF579403A6E85E1C14D94895EE3E4E28B6E63240,
+	NakamaConnector_GetLocation_m69B067D20E7577D6B92873CEF62B59BF465A0D28,
+	NakamaConnector_SetLocationRegion_m9CB692CAD306A5D4FC379F5FA2BBFE311816C6AD,
+	NakamaConnector_OnGetLocationComplete_m2E1B056B0F234624DC4A45562471DE784933832E,
+	NakamaConnector_GetUserRegionByIpAsync_m2E74C21070D744CE2512B926205670C15FE5444B,
+	NakamaConnector_RegisterOnNotificationReceived_m17754ABC528ACAA723B8EF5E0976AC65FF288789,
+	NakamaConnector_ProcessNotifications_m392622B2E29EA96B17A00BE443F2C7CCFF2D3CC4,
+	NakamaConnector_HandleNotification_mFD7484D12FC8F25C272AACD38B66CF30DAAC6366,
+	NakamaConnector_DeleteNotification_mAF511D956D66DE53D0546BCCA400EB805D1EFE6F,
+	NakamaConnector_GetAllPendingNotifications_mB23734BDF060610A024BD345FA598EC3F9F6DBBB,
+	NakamaConnector_InitNotifications_m5D536B8A4BB787607E34BCE887C5ACFFD2B444E2,
+	NakamaConnector__ctor_m204FA051567EAE831E1EB41BE8C81D5A6ADEC609,
+	NakamaConnector__cctor_mFEABCF8E003D079DEC71E0B87125D8BA2CE80C1A,
+	U3CInitializeU3Ed__9_MoveNext_m5AA527F8850732332FD90E09875C45F77FAB054D,
+	U3CInitializeU3Ed__9_SetStateMachine_mC34ED9702DDDD55FF93760E4636050C96E1A6AF9,
+	U3CKeepSessionFromExpiringU3Ed__13_MoveNext_m6B937E946E0DDB95D1C43D908C05491B86B9EF89,
+	U3CKeepSessionFromExpiringU3Ed__13_SetStateMachine_m836AD1A76D640AAC949E155865BCBDA2EA49BFA8,
+	U3CKeepProcessingNotificationsU3Ed__15_MoveNext_m1C9F3CDCA36F9027CA3FE0A803431EEA13295152,
+	U3CKeepProcessingNotificationsU3Ed__15_SetStateMachine_m69836D768EE08F0F70553C888CE22498F51180F9,
+	U3CConnectU3Ed__16_MoveNext_mEF8323DCE0380F1AE41E47A63F7B8177E9650787,
+	U3CConnectU3Ed__16_SetStateMachine_m5DB3DF6799094B5FFA2910B82510DF43F40B7386,
+	U3CRefreshAccountU3Ed__17_MoveNext_mAB15D957DC1587FDAD25BC85EB705E5ADF276E43,
+	U3CRefreshAccountU3Ed__17_SetStateMachine_m05B819E0C8778B36CBB187BDE12C9C7BF57C3EBB,
+	U3CCheckConnectionU3Ed__18_MoveNext_m086AF1070EC02545A6C56E23203BDE73E10E9459,
+	U3CCheckConnectionU3Ed__18_SetStateMachine_mDF6FB09FF5225A6666F388DEB3AD0D5B1F2D1EC5,
+	U3CRpcCallU3Ed__19_MoveNext_m4D04D061953AA963FE03A08C7A070D3DA70F4B93,
+	U3CRpcCallU3Ed__19_SetStateMachine_m85A503771F4260427B8DC53F12BC80C154BFAC14,
+	U3CCallRpcU3Ed__20_MoveNext_mAF882A7E5753E594806A51B48B1871E23F34A77E,
+	U3CCallRpcU3Ed__20_SetStateMachine_mD0886BA60EACE1E6206768440043704E28F4BF46,
+	U3CGetServerTimeU3Ed__22_MoveNext_mEA480D5AC930DB6EB83DE00238D5D7E15BA1BCC2,
+	U3CGetServerTimeU3Ed__22_SetStateMachine_m83FC42E61FC65B74D25C2442BC13940F98981463,
+	U3CGetUserRegionByIpAsyncU3Ed__26_MoveNext_m9AF52DA3FC029719A529DAE7DB39B1E315F63342,
+	U3CGetUserRegionByIpAsyncU3Ed__26_SetStateMachine_mA723638BD3BD9CB0F6286F5C7A57982A25F209F8,
+	U3CDeleteNotificationU3Ed__30_MoveNext_mB204924BFCE848A40BEA360BE95253F52F5E125D,
+	U3CDeleteNotificationU3Ed__30_SetStateMachine_m8C4808CB53CD870E6BB93B7ABD1A2D30EB1E153C,
+	U3CGetAllPendingNotificationsU3Ed__31_MoveNext_m71B6C41FE4517897D4247D2EEEAF307B59F6D4C2,
+	U3CGetAllPendingNotificationsU3Ed__31_SetStateMachine_m64D2670FD5BC518599D3BCDBED54D0B62D2AC85A,
+	U3CU3Ec__cctor_mDB87B83A3EBBA424338C177471957261CB9706CA,
+	U3CU3Ec__ctor_mAD69620E326DCDE8EFF5772651A1A8052B5BB80A,
+	U3CU3Ec_U3CInitNotificationsU3Eb__32_0_mC19C827614905454F416E34CD488413D57F9AFA7,
+	U3CInitNotificationsU3Ed__32_MoveNext_m30451CB6B00D9393D4268FD6CABC92D6E7AF7676,
+	U3CInitNotificationsU3Ed__32_SetStateMachine_m99E42C7DF1BD94E60DF3572D47363387C289DDA0,
+	NakamaController_get_Instance_m3FD5314D96C770422E837198AD7BDC97E3A7D287,
+	NakamaController_get_Connection_m6666CB4071FA346EDC52757A1C445C7623EFFA52,
+	NakamaController_RefreshAccount_m90318C04EFFC05582BEEA01F866CBBD9A937C7B0,
+	NakamaController_RpcCall_m32FCDD23E6B70D73BCACA9CADB0BAAA2BC88A3C7,
+	NakamaController_GetServerTime_mF45F1D774098D6794F52FD9151B25165CAFE8BEE,
+	NakamaController_get_Location_m9638FF5B8EF38E21CBD48AE16FAEC7A7E17B35DA,
+	NakamaController_SetLocationRegion_m7BCA5EF0209A94BE5367207DC1B28896BD060CB8,
+	NakamaController_RegisterOnNotificationReceived_mBA43C3D693A8D95CE610A8B7DCC8015B0AE51E92,
+	NakamaController__ctor_mB32687EA100FE0F278582DD0DDA7B69231D79B85,
+	NakamaController__cctor_m11D8FF4C74CC08969B74B53D2A94E58526B904DF,
+	U3CRefreshAccountU3Ed__5_MoveNext_mFD0F1B8499B0CC0D365FF3BB7293B13B2AC3DB5E,
+	U3CRefreshAccountU3Ed__5_SetStateMachine_mDA7BEB985DAD20E0395C9F53D9697C362759CDFF,
+	U3CRpcCallU3Ed__6_MoveNext_mA99F79852DC26774A07290CEB310C995B2036221,
+	U3CRpcCallU3Ed__6_SetStateMachine_mAAE924EF779B826BF7EE9FFFB7A69A6FFE06BC6D,
+	U3CGetServerTimeU3Ed__7_MoveNext_m1E9BACAA94DF6A0DAA9B5FD617F154E079AD47EA,
+	U3CGetServerTimeU3Ed__7_SetStateMachine_m5E6FF6D3A397686E218D13241D5361B87B843191,
+	RpcResponse__ctor_m716737DC913315AF1853703B600E6D5D199DD73F,
+	LionNakamaSettings_GetServerConfig_mDA25348CAABB38679C652405382A556CD0283169,
+	LionNakamaSettings__ctor_m2FFE39CC0F6C777A69D4CA93A245CDF305EE9D60,
+	LionNakamaSettings__cctor_m8B5EE06C4E97F02540C4D0254689B7DAB3518E3E,
+	LionNakamaSettingsProvider_get_Name_m02CE9CB8DA2810D5906F81760D191DA15C900A24,
+	LionNakamaSettingsProvider_GetSettings_m3EC6D791799E36B8FAF6C8121901AE0A38470867,
+	LionNakamaSettingsProvider_ApplySettings_mE20F9C02F2010C9E2E32F391F801494C875BFEC6,
+	LionNakamaSettingsProvider_get_Settings_m79D0DE430994976AB36240BE1D7F6CD5C49A6B87,
+	LionNakamaSettingsProvider_set_Settings_m831C2C566C8ED1FF0AEBCDC6A32D90A9E375D927,
+	LionNakamaSettingsProvider__ctor_m50CDB641D6DEEA599B13558FB5B402E25C803674,
+	NakamaServerSettings__ctor_m171482BE1DA6A090E11B02DDF4298EB9C72E2753,
+	NakamaServerSettings_GetServerConfig_m884CEADD6716598AA2F0A6660710A91539AD5843,
+	NakamaServerSettings_SetServerConfig_m38EA510A42BFEF7F1E1B151EC782A5D5791D3D42,
+	UsernameView_Awake_mEF8D6F3DDA12A3E0F56CDF55EC164735B782AB7A,
+	UsernameView_OnEnable_m03A42217CCCAF6AF32B29D88C6D5F4A063F48C9A,
+	UsernameView_OnConnectionStateChanged_m8569A37AEED2799E369E45F48FC76A94B43F947A,
+	UsernameView_EnableEdit_mB0EBEF94B8CF99685A45C43761766AC3E89D7C26,
+	UsernameView_ValidateEdit_m2CB54A69974A1A51AB71B4810B361CF4D53C798C,
+	UsernameView_ShowError_m28E04E94235678BDE35EA33923516125BF72031F,
+	UsernameView_ValidateEdit_m52049027F3B41CB28B0CC660304C4D0DA9221F28,
+	UsernameView_DisableEdit_m4E1A7A2B320EE16C65BDEF91FEC9A8B28D05990B,
+	UsernameView__ctor_mA16B006B68A2FCCE1B53BAC990085EBE56E51B4B,
+	U3CValidateEditU3Ed__9_MoveNext_mF73D29361668B90CB659181848FF6213C0C64286,
+	U3CValidateEditU3Ed__9_SetStateMachine_mA4FAAE5ACF14B270115D3E1EDBB1B8F792750C41,
+	U3CShowErrorU3Ed__10__ctor_m1A237B3AB0AC2BAE8043879B1ED3E9E967D700F7,
+	U3CShowErrorU3Ed__10_System_IDisposable_Dispose_m11CA4E995AF7F15CC7620B8D26473F10ECE98561,
+	U3CShowErrorU3Ed__10_MoveNext_m1CD3F6B0CA83FA801872E4E66863857F601ED6CE,
+	U3CShowErrorU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1C27A2A69DFC41D8AC1ABDDC8CFA509518E8BD50,
+	U3CShowErrorU3Ed__10_System_Collections_IEnumerator_Reset_mDF530CCB1EF70DBEA2533A64688F942CCF11D1C1,
+	U3CShowErrorU3Ed__10_System_Collections_IEnumerator_get_Current_m2994ADF1F652FCB726C8FB455EE9C612C052AB0E,
+	U3CDisableEditU3Ed__12_MoveNext_m8A88D5297437C43D8F0DA95A4438684912A02655,
+	U3CDisableEditU3Ed__12_SetStateMachine_mD0F67D68DEF6ADE0A865B960EB1AE4F90FECAE38,
+};
+extern void U3CConnectU3Ed__26_MoveNext_m435E004F9AD56933E5B60B3435E334A7A440B109_AdjustorThunk (void);
+extern void U3CConnectU3Ed__26_SetStateMachine_m984DA5301BB9811F564A0BE8B10C6F620A605A78_AdjustorThunk (void);
+extern void U3COpenSocketU3Ed__27_MoveNext_m032C93C441A81C1DA3A099564D61E5CF5E2BEC1C_AdjustorThunk (void);
+extern void U3COpenSocketU3Ed__27_SetStateMachine_mB62D8A17A5FED6A88CE780CAB9BEF4D470A76AC8_AdjustorThunk (void);
+extern void U3CRefreshAccountU3Ed__29_MoveNext_m969E1246C33243DCB648F1F96ABAF652146676DD_AdjustorThunk (void);
+extern void U3CRefreshAccountU3Ed__29_SetStateMachine_m890D4F887CB92D1F847774260BEC5FB411553D88_AdjustorThunk (void);
+extern void U3CRefreshSessionU3Ed__30_MoveNext_m7CF781313690FBACAD0B1DB0CC25B932E9CB0D3B_AdjustorThunk (void);
+extern void U3CRefreshSessionU3Ed__30_SetStateMachine_m658EA5925555BCA5423A8E28F5A209DD275DE68E_AdjustorThunk (void);
+extern void U3CChangeUsernameU3Ed__31_MoveNext_m19F6F3F999E58F1628D5EF84C7B75FB2BA0DBC0C_AdjustorThunk (void);
+extern void U3CChangeUsernameU3Ed__31_SetStateMachine_mAD2FF7F7409FA21DB1B05FAF1469CDC8D5A13DBE_AdjustorThunk (void);
+extern void U3CInitializeU3Ed__9_MoveNext_m5AA527F8850732332FD90E09875C45F77FAB054D_AdjustorThunk (void);
+extern void U3CInitializeU3Ed__9_SetStateMachine_mC34ED9702DDDD55FF93760E4636050C96E1A6AF9_AdjustorThunk (void);
+extern void U3CKeepSessionFromExpiringU3Ed__13_MoveNext_m6B937E946E0DDB95D1C43D908C05491B86B9EF89_AdjustorThunk (void);
+extern void U3CKeepSessionFromExpiringU3Ed__13_SetStateMachine_m836AD1A76D640AAC949E155865BCBDA2EA49BFA8_AdjustorThunk (void);
+extern void U3CKeepProcessingNotificationsU3Ed__15_MoveNext_m1C9F3CDCA36F9027CA3FE0A803431EEA13295152_AdjustorThunk (void);
+extern void U3CKeepProcessingNotificationsU3Ed__15_SetStateMachine_m69836D768EE08F0F70553C888CE22498F51180F9_AdjustorThunk (void);
+extern void U3CConnectU3Ed__16_MoveNext_mEF8323DCE0380F1AE41E47A63F7B8177E9650787_AdjustorThunk (void);
+extern void U3CConnectU3Ed__16_SetStateMachine_m5DB3DF6799094B5FFA2910B82510DF43F40B7386_AdjustorThunk (void);
+extern void U3CRefreshAccountU3Ed__17_MoveNext_mAB15D957DC1587FDAD25BC85EB705E5ADF276E43_AdjustorThunk (void);
+extern void U3CRefreshAccountU3Ed__17_SetStateMachine_m05B819E0C8778B36CBB187BDE12C9C7BF57C3EBB_AdjustorThunk (void);
+extern void U3CCheckConnectionU3Ed__18_MoveNext_m086AF1070EC02545A6C56E23203BDE73E10E9459_AdjustorThunk (void);
+extern void U3CCheckConnectionU3Ed__18_SetStateMachine_mDF6FB09FF5225A6666F388DEB3AD0D5B1F2D1EC5_AdjustorThunk (void);
+extern void U3CRpcCallU3Ed__19_MoveNext_m4D04D061953AA963FE03A08C7A070D3DA70F4B93_AdjustorThunk (void);
+extern void U3CRpcCallU3Ed__19_SetStateMachine_m85A503771F4260427B8DC53F12BC80C154BFAC14_AdjustorThunk (void);
+extern void U3CCallRpcU3Ed__20_MoveNext_mAF882A7E5753E594806A51B48B1871E23F34A77E_AdjustorThunk (void);
+extern void U3CCallRpcU3Ed__20_SetStateMachine_mD0886BA60EACE1E6206768440043704E28F4BF46_AdjustorThunk (void);
+extern void U3CGetServerTimeU3Ed__22_MoveNext_mEA480D5AC930DB6EB83DE00238D5D7E15BA1BCC2_AdjustorThunk (void);
+extern void U3CGetServerTimeU3Ed__22_SetStateMachine_m83FC42E61FC65B74D25C2442BC13940F98981463_AdjustorThunk (void);
+extern void U3CGetUserRegionByIpAsyncU3Ed__26_MoveNext_m9AF52DA3FC029719A529DAE7DB39B1E315F63342_AdjustorThunk (void);
+extern void U3CGetUserRegionByIpAsyncU3Ed__26_SetStateMachine_mA723638BD3BD9CB0F6286F5C7A57982A25F209F8_AdjustorThunk (void);
+extern void U3CDeleteNotificationU3Ed__30_MoveNext_mB204924BFCE848A40BEA360BE95253F52F5E125D_AdjustorThunk (void);
+extern void U3CDeleteNotificationU3Ed__30_SetStateMachine_m8C4808CB53CD870E6BB93B7ABD1A2D30EB1E153C_AdjustorThunk (void);
+extern void U3CGetAllPendingNotificationsU3Ed__31_MoveNext_m71B6C41FE4517897D4247D2EEEAF307B59F6D4C2_AdjustorThunk (void);
+extern void U3CGetAllPendingNotificationsU3Ed__31_SetStateMachine_m64D2670FD5BC518599D3BCDBED54D0B62D2AC85A_AdjustorThunk (void);
+extern void U3CInitNotificationsU3Ed__32_MoveNext_m30451CB6B00D9393D4268FD6CABC92D6E7AF7676_AdjustorThunk (void);
+extern void U3CInitNotificationsU3Ed__32_SetStateMachine_m99E42C7DF1BD94E60DF3572D47363387C289DDA0_AdjustorThunk (void);
+extern void U3CRefreshAccountU3Ed__5_MoveNext_mFD0F1B8499B0CC0D365FF3BB7293B13B2AC3DB5E_AdjustorThunk (void);
+extern void U3CRefreshAccountU3Ed__5_SetStateMachine_mDA7BEB985DAD20E0395C9F53D9697C362759CDFF_AdjustorThunk (void);
+extern void U3CRpcCallU3Ed__6_MoveNext_mA99F79852DC26774A07290CEB310C995B2036221_AdjustorThunk (void);
+extern void U3CRpcCallU3Ed__6_SetStateMachine_mAAE924EF779B826BF7EE9FFFB7A69A6FFE06BC6D_AdjustorThunk (void);
+extern void U3CGetServerTimeU3Ed__7_MoveNext_m1E9BACAA94DF6A0DAA9B5FD617F154E079AD47EA_AdjustorThunk (void);
+extern void U3CGetServerTimeU3Ed__7_SetStateMachine_m5E6FF6D3A397686E218D13241D5361B87B843191_AdjustorThunk (void);
+extern void U3CValidateEditU3Ed__9_MoveNext_mF73D29361668B90CB659181848FF6213C0C64286_AdjustorThunk (void);
+extern void U3CValidateEditU3Ed__9_SetStateMachine_mA4FAAE5ACF14B270115D3E1EDBB1B8F792750C41_AdjustorThunk (void);
+extern void U3CDisableEditU3Ed__12_MoveNext_m8A88D5297437C43D8F0DA95A4438684912A02655_AdjustorThunk (void);
+extern void U3CDisableEditU3Ed__12_SetStateMachine_mD0F67D68DEF6ADE0A865B960EB1AE4F90FECAE38_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[46] = 
+{
+	{ 0x0600001D, U3CConnectU3Ed__26_MoveNext_m435E004F9AD56933E5B60B3435E334A7A440B109_AdjustorThunk },
+	{ 0x0600001E, U3CConnectU3Ed__26_SetStateMachine_m984DA5301BB9811F564A0BE8B10C6F620A605A78_AdjustorThunk },
+	{ 0x0600001F, U3COpenSocketU3Ed__27_MoveNext_m032C93C441A81C1DA3A099564D61E5CF5E2BEC1C_AdjustorThunk },
+	{ 0x06000020, U3COpenSocketU3Ed__27_SetStateMachine_mB62D8A17A5FED6A88CE780CAB9BEF4D470A76AC8_AdjustorThunk },
+	{ 0x06000021, U3CRefreshAccountU3Ed__29_MoveNext_m969E1246C33243DCB648F1F96ABAF652146676DD_AdjustorThunk },
+	{ 0x06000022, U3CRefreshAccountU3Ed__29_SetStateMachine_m890D4F887CB92D1F847774260BEC5FB411553D88_AdjustorThunk },
+	{ 0x06000023, U3CRefreshSessionU3Ed__30_MoveNext_m7CF781313690FBACAD0B1DB0CC25B932E9CB0D3B_AdjustorThunk },
+	{ 0x06000024, U3CRefreshSessionU3Ed__30_SetStateMachine_m658EA5925555BCA5423A8E28F5A209DD275DE68E_AdjustorThunk },
+	{ 0x06000025, U3CChangeUsernameU3Ed__31_MoveNext_m19F6F3F999E58F1628D5EF84C7B75FB2BA0DBC0C_AdjustorThunk },
+	{ 0x06000026, U3CChangeUsernameU3Ed__31_SetStateMachine_mAD2FF7F7409FA21DB1B05FAF1469CDC8D5A13DBE_AdjustorThunk },
+	{ 0x06000045, U3CInitializeU3Ed__9_MoveNext_m5AA527F8850732332FD90E09875C45F77FAB054D_AdjustorThunk },
+	{ 0x06000046, U3CInitializeU3Ed__9_SetStateMachine_mC34ED9702DDDD55FF93760E4636050C96E1A6AF9_AdjustorThunk },
+	{ 0x06000047, U3CKeepSessionFromExpiringU3Ed__13_MoveNext_m6B937E946E0DDB95D1C43D908C05491B86B9EF89_AdjustorThunk },
+	{ 0x06000048, U3CKeepSessionFromExpiringU3Ed__13_SetStateMachine_m836AD1A76D640AAC949E155865BCBDA2EA49BFA8_AdjustorThunk },
+	{ 0x06000049, U3CKeepProcessingNotificationsU3Ed__15_MoveNext_m1C9F3CDCA36F9027CA3FE0A803431EEA13295152_AdjustorThunk },
+	{ 0x0600004A, U3CKeepProcessingNotificationsU3Ed__15_SetStateMachine_m69836D768EE08F0F70553C888CE22498F51180F9_AdjustorThunk },
+	{ 0x0600004B, U3CConnectU3Ed__16_MoveNext_mEF8323DCE0380F1AE41E47A63F7B8177E9650787_AdjustorThunk },
+	{ 0x0600004C, U3CConnectU3Ed__16_SetStateMachine_m5DB3DF6799094B5FFA2910B82510DF43F40B7386_AdjustorThunk },
+	{ 0x0600004D, U3CRefreshAccountU3Ed__17_MoveNext_mAB15D957DC1587FDAD25BC85EB705E5ADF276E43_AdjustorThunk },
+	{ 0x0600004E, U3CRefreshAccountU3Ed__17_SetStateMachine_m05B819E0C8778B36CBB187BDE12C9C7BF57C3EBB_AdjustorThunk },
+	{ 0x0600004F, U3CCheckConnectionU3Ed__18_MoveNext_m086AF1070EC02545A6C56E23203BDE73E10E9459_AdjustorThunk },
+	{ 0x06000050, U3CCheckConnectionU3Ed__18_SetStateMachine_mDF6FB09FF5225A6666F388DEB3AD0D5B1F2D1EC5_AdjustorThunk },
+	{ 0x06000051, U3CRpcCallU3Ed__19_MoveNext_m4D04D061953AA963FE03A08C7A070D3DA70F4B93_AdjustorThunk },
+	{ 0x06000052, U3CRpcCallU3Ed__19_SetStateMachine_m85A503771F4260427B8DC53F12BC80C154BFAC14_AdjustorThunk },
+	{ 0x06000053, U3CCallRpcU3Ed__20_MoveNext_mAF882A7E5753E594806A51B48B1871E23F34A77E_AdjustorThunk },
+	{ 0x06000054, U3CCallRpcU3Ed__20_SetStateMachine_mD0886BA60EACE1E6206768440043704E28F4BF46_AdjustorThunk },
+	{ 0x06000055, U3CGetServerTimeU3Ed__22_MoveNext_mEA480D5AC930DB6EB83DE00238D5D7E15BA1BCC2_AdjustorThunk },
+	{ 0x06000056, U3CGetServerTimeU3Ed__22_SetStateMachine_m83FC42E61FC65B74D25C2442BC13940F98981463_AdjustorThunk },
+	{ 0x06000057, U3CGetUserRegionByIpAsyncU3Ed__26_MoveNext_m9AF52DA3FC029719A529DAE7DB39B1E315F63342_AdjustorThunk },
+	{ 0x06000058, U3CGetUserRegionByIpAsyncU3Ed__26_SetStateMachine_mA723638BD3BD9CB0F6286F5C7A57982A25F209F8_AdjustorThunk },
+	{ 0x06000059, U3CDeleteNotificationU3Ed__30_MoveNext_mB204924BFCE848A40BEA360BE95253F52F5E125D_AdjustorThunk },
+	{ 0x0600005A, U3CDeleteNotificationU3Ed__30_SetStateMachine_m8C4808CB53CD870E6BB93B7ABD1A2D30EB1E153C_AdjustorThunk },
+	{ 0x0600005B, U3CGetAllPendingNotificationsU3Ed__31_MoveNext_m71B6C41FE4517897D4247D2EEEAF307B59F6D4C2_AdjustorThunk },
+	{ 0x0600005C, U3CGetAllPendingNotificationsU3Ed__31_SetStateMachine_m64D2670FD5BC518599D3BCDBED54D0B62D2AC85A_AdjustorThunk },
+	{ 0x06000060, U3CInitNotificationsU3Ed__32_MoveNext_m30451CB6B00D9393D4268FD6CABC92D6E7AF7676_AdjustorThunk },
+	{ 0x06000061, U3CInitNotificationsU3Ed__32_SetStateMachine_m99E42C7DF1BD94E60DF3572D47363387C289DDA0_AdjustorThunk },
+	{ 0x0600006C, U3CRefreshAccountU3Ed__5_MoveNext_mFD0F1B8499B0CC0D365FF3BB7293B13B2AC3DB5E_AdjustorThunk },
+	{ 0x0600006D, U3CRefreshAccountU3Ed__5_SetStateMachine_mDA7BEB985DAD20E0395C9F53D9697C362759CDFF_AdjustorThunk },
+	{ 0x0600006E, U3CRpcCallU3Ed__6_MoveNext_mA99F79852DC26774A07290CEB310C995B2036221_AdjustorThunk },
+	{ 0x0600006F, U3CRpcCallU3Ed__6_SetStateMachine_mAAE924EF779B826BF7EE9FFFB7A69A6FFE06BC6D_AdjustorThunk },
+	{ 0x06000070, U3CGetServerTimeU3Ed__7_MoveNext_m1E9BACAA94DF6A0DAA9B5FD617F154E079AD47EA_AdjustorThunk },
+	{ 0x06000071, U3CGetServerTimeU3Ed__7_SetStateMachine_m5E6FF6D3A397686E218D13241D5361B87B843191_AdjustorThunk },
+	{ 0x06000088, U3CValidateEditU3Ed__9_MoveNext_mF73D29361668B90CB659181848FF6213C0C64286_AdjustorThunk },
+	{ 0x06000089, U3CValidateEditU3Ed__9_SetStateMachine_mA4FAAE5ACF14B270115D3E1EDBB1B8F792750C41_AdjustorThunk },
+	{ 0x06000090, U3CDisableEditU3Ed__12_MoveNext_m8A88D5297437C43D8F0DA95A4438684912A02655_AdjustorThunk },
+	{ 0x06000091, U3CDisableEditU3Ed__12_SetStateMachine_mD0F67D68DEF6ADE0A865B960EB1AE4F90FECAE38_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[145] = 
+{
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	7780,
+	6404,
+	7814,
+	6450,
+	7814,
+	6450,
+	7814,
+	6450,
+	6450,
+	6450,
+	6404,
+	7814,
+	7814,
+	7814,
+	7814,
+	7814,
+	5810,
+	7958,
+	14027,
+	7958,
+	14067,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	7958,
+	7958,
+	14027,
+	14027,
+	3060,
+	6450,
+	7780,
+	14067,
+	14067,
+	14067,
+	14027,
+	14027,
+	14027,
+	11313,
+	11313,
+	14027,
+	14027,
+	14067,
+	13207,
+	13207,
+	12831,
+	11639,
+	14067,
+	13207,
+	13207,
+	14027,
+	14067,
+	7958,
+	14067,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	14067,
+	7958,
+	6450,
+	7958,
+	6450,
+	14027,
+	7814,
+	7814,
+	3060,
+	7814,
+	7814,
+	6450,
+	3543,
+	7958,
+	14067,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	6450,
+	7958,
+	7811,
+	7958,
+	14067,
+	7814,
+	7814,
+	6450,
+	14027,
+	13207,
+	7958,
+	6404,
+	7811,
+	6447,
+	7958,
+	7958,
+	7958,
+	7958,
+	6450,
+	5810,
+	7958,
+	7958,
+	7958,
+	7958,
+	6450,
+	6404,
+	7958,
+	7715,
+	7814,
+	7958,
+	7814,
+	7958,
+	6450,
+};
+static const Il2CppTokenRangePair s_rgctxIndices[1] = 
+{
+	{ 0x02000002, { 0, 22 } },
+};
+extern const uint32_t g_rgctx_U3CU3Ef__AnonymousType0_3_tB478D3774273D13E5EB88E8E748B38D8A56EE3C4;
+extern const uint32_t g_rgctx_EqualityComparer_1_get_Default_mEF4306266159AD18824D6B4F2A28FF0839495936;
+extern const uint32_t g_rgctx_EqualityComparer_1_tA41DF554F7BABC744A158EFD28A1049D96F34E8C;
+extern const uint32_t g_rgctx_EqualityComparer_1_tA41DF554F7BABC744A158EFD28A1049D96F34E8C;
+extern const uint32_t g_rgctx_EqualityComparer_1_Equals_mD2F943FB2269A36BC39C22B6ED10B68E585FACB8;
+extern const uint32_t g_rgctx_EqualityComparer_1_get_Default_mACDDADF295B5363A880E25EF2601115CB02040AE;
+extern const uint32_t g_rgctx_EqualityComparer_1_t35C044DB052C3F30A527020EBED21BB103232A55;
+extern const uint32_t g_rgctx_EqualityComparer_1_t35C044DB052C3F30A527020EBED21BB103232A55;
+extern const uint32_t g_rgctx_EqualityComparer_1_Equals_m33735F3F4185083142AFDDE80FC84A70DE3B7C34;
+extern const uint32_t g_rgctx_EqualityComparer_1_get_Default_mB1BEDABD13F5248D7ACEEC14F4213AFD11E46D1B;
+extern const uint32_t g_rgctx_EqualityComparer_1_tA8C9F0F9AD861DF4ADDA7C7C855B49C10CCA4ABE;
+extern const uint32_t g_rgctx_EqualityComparer_1_tA8C9F0F9AD861DF4ADDA7C7C855B49C10CCA4ABE;
+extern const uint32_t g_rgctx_EqualityComparer_1_Equals_mA1C60176AB5DB959BB26AA27D91D60C4B60FDF1F;
+extern const uint32_t g_rgctx_EqualityComparer_1_GetHashCode_m6680756D13A4B8E2C24782C8FA977724399026C0;
+extern const uint32_t g_rgctx_EqualityComparer_1_GetHashCode_m8D5C1717C73E45FBAB8DDAE2C97E6C8181890D9B;
+extern const uint32_t g_rgctx_EqualityComparer_1_GetHashCode_m35A43AC9E253F84E5C33C69781B725B2DE503E59;
+extern const uint32_t g_rgctx_U3CuseridU3Ej__TPar_tFC5A50B1542C439D8C827C4BC361511C18C075C1;
+extern const Il2CppRGCTXConstrainedData g_rgctx_U3CuseridU3Ej__TPar_tFC5A50B1542C439D8C827C4BC361511C18C075C1_Object_ToString_mF8AC1EB9D85AB52EC8FD8B8BDD131E855E69673F;
+extern const uint32_t g_rgctx_U3ColdUsernameU3Ej__TPar_t18265467F41786641E94090F4F9828CDB52C0930;
+extern const Il2CppRGCTXConstrainedData g_rgctx_U3ColdUsernameU3Ej__TPar_t18265467F41786641E94090F4F9828CDB52C0930_Object_ToString_mF8AC1EB9D85AB52EC8FD8B8BDD131E855E69673F;
+extern const uint32_t g_rgctx_U3CnewUsernameU3Ej__TPar_t52E31B3FE8CD1C0593DF19A23EE65E0D723A8721;
+extern const Il2CppRGCTXConstrainedData g_rgctx_U3CnewUsernameU3Ej__TPar_t52E31B3FE8CD1C0593DF19A23EE65E0D723A8721_Object_ToString_mF8AC1EB9D85AB52EC8FD8B8BDD131E855E69673F;
+static const Il2CppRGCTXDefinition s_rgctxValues[22] = 
+{
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_U3CU3Ef__AnonymousType0_3_tB478D3774273D13E5EB88E8E748B38D8A56EE3C4 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_EqualityComparer_1_get_Default_mEF4306266159AD18824D6B4F2A28FF0839495936 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_EqualityComparer_1_tA41DF554F7BABC744A158EFD28A1049D96F34E8C },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_EqualityComparer_1_tA41DF554F7BABC744A158EFD28A1049D96F34E8C },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_EqualityComparer_1_Equals_mD2F943FB2269A36BC39C22B6ED10B68E585FACB8 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_EqualityComparer_1_get_Default_mACDDADF295B5363A880E25EF2601115CB02040AE },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_EqualityComparer_1_t35C044DB052C3F30A527020EBED21BB103232A55 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_EqualityComparer_1_t35C044DB052C3F30A527020EBED21BB103232A55 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_EqualityComparer_1_Equals_m33735F3F4185083142AFDDE80FC84A70DE3B7C34 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_EqualityComparer_1_get_Default_mB1BEDABD13F5248D7ACEEC14F4213AFD11E46D1B },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_EqualityComparer_1_tA8C9F0F9AD861DF4ADDA7C7C855B49C10CCA4ABE },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_EqualityComparer_1_tA8C9F0F9AD861DF4ADDA7C7C855B49C10CCA4ABE },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_EqualityComparer_1_Equals_mA1C60176AB5DB959BB26AA27D91D60C4B60FDF1F },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_EqualityComparer_1_GetHashCode_m6680756D13A4B8E2C24782C8FA977724399026C0 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_EqualityComparer_1_GetHashCode_m8D5C1717C73E45FBAB8DDAE2C97E6C8181890D9B },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_EqualityComparer_1_GetHashCode_m35A43AC9E253F84E5C33C69781B725B2DE503E59 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_U3CuseridU3Ej__TPar_tFC5A50B1542C439D8C827C4BC361511C18C075C1 },
+	{ (Il2CppRGCTXDataType)5, (const void *)&g_rgctx_U3CuseridU3Ej__TPar_tFC5A50B1542C439D8C827C4BC361511C18C075C1_Object_ToString_mF8AC1EB9D85AB52EC8FD8B8BDD131E855E69673F },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_U3ColdUsernameU3Ej__TPar_t18265467F41786641E94090F4F9828CDB52C0930 },
+	{ (Il2CppRGCTXDataType)5, (const void *)&g_rgctx_U3ColdUsernameU3Ej__TPar_t18265467F41786641E94090F4F9828CDB52C0930_Object_ToString_mF8AC1EB9D85AB52EC8FD8B8BDD131E855E69673F },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_U3CnewUsernameU3Ej__TPar_t52E31B3FE8CD1C0593DF19A23EE65E0D723A8721 },
+	{ (Il2CppRGCTXDataType)5, (const void *)&g_rgctx_U3CnewUsernameU3Ej__TPar_t52E31B3FE8CD1C0593DF19A23EE65E0D723A8721_Object_ToString_mF8AC1EB9D85AB52EC8FD8B8BDD131E855E69673F },
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_com_lionstudios_dev_nakamaclient_runtime_CodeGenModule;
+const Il2CppCodeGenModule g_com_lionstudios_dev_nakamaclient_runtime_CodeGenModule = 
+{
+	"com.lionstudios.dev.nakamaclient.runtime.dll",
+	145,
+	s_methodPointers,
+	46,
+	s_adjustorThunks,
+	s_InvokerIndices,
+	0,
+	NULL,
+	1,
+	s_rgctxIndices,
+	22,
+	s_rgctxValues,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

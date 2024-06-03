@@ -44,8 +44,7 @@ public class LevelManager : MonoBehaviour
    } 
    public void NextScene()
    {
-      
-
+     
       SceneManager.LoadScene(currentScene);
    }
 

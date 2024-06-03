@@ -61,6 +61,8 @@ public class LevelComplete : PanelBase
          _cashToGiveText.UpdateText(_cashToGive.ToInt().ToString());
         SoundManager.Instance.PlayClick(1);
         UIController.instance.AddCash(_cashToGive);
+        UIController.instance.levelManager.NextScene();
+        
         
     }
 

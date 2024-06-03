@@ -1,0 +1,253 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Void LionStudios.Suite.ThirdParty.AdjustInitialization::HandleLAEventsHoldStatus()
+extern void AdjustInitialization_HandleLAEventsHoldStatus_m15E2DF560A056392F8CC8EDD69F387897B619FC1 (void);
+// 0x00000002 System.Int32 LionStudios.Suite.ThirdParty.AdjustInitialization::get_Priority()
+extern void AdjustInitialization_get_Priority_m23616C6A0901193E57AE8E34A613861C7192298A (void);
+// 0x00000003 LionStudios.Suite.ThirdParty.LionAdjustSettings LionStudios.Suite.ThirdParty.AdjustInitialization::get_Settings()
+extern void AdjustInitialization_get_Settings_m6B4B282CB6C08C05CC1F2830E0B7EA9EBD891389 (void);
+// 0x00000004 System.Void LionStudios.Suite.ThirdParty.AdjustInitialization::set_Settings(LionStudios.Suite.ThirdParty.LionAdjustSettings)
+extern void AdjustInitialization_set_Settings_m9F41B58742F0FCA2D2459FF5709BBA5EA1A3D4CC (void);
+// 0x00000005 System.Void LionStudios.Suite.ThirdParty.AdjustInitialization::.ctor()
+extern void AdjustInitialization__ctor_mDA594C6BF38FCAB4004A99C84CB2E027ECC95F56 (void);
+// 0x00000006 System.String LionStudios.Suite.ThirdParty.AdjustInitialization::LionStudios.Suite.Core.ILionSettingsProvider.get_Name()
+extern void AdjustInitialization_LionStudios_Suite_Core_ILionSettingsProvider_get_Name_mC88D8BAE85EEC118CD8905B762B9B711925C328F (void);
+// 0x00000007 LionStudios.Suite.Core.ILionSettingsInfo LionStudios.Suite.ThirdParty.AdjustInitialization::GetSettings()
+extern void AdjustInitialization_GetSettings_m5EFAC19711CC78A9985763F7A16B094F254DF91C (void);
+// 0x00000008 System.Void LionStudios.Suite.ThirdParty.AdjustInitialization::LionStudios.Suite.Core.ILionSettingsProvider.ApplySettings(LionStudios.Suite.Core.ILionSettingsInfo)
+extern void AdjustInitialization_LionStudios_Suite_Core_ILionSettingsProvider_ApplySettings_m2275A84CE363AF0FE9B72D43FFC86B62092F7F57 (void);
+// 0x00000009 System.Threading.Tasks.Task LionStudios.Suite.ThirdParty.AdjustInitialization::Initialize(Utility.Dispatcher.Dispatcher,Data.CoreData)
+extern void AdjustInitialization_Initialize_mA7135FB39CA3C34E1EAF9E4390A778E00489A363 (void);
+// 0x0000000A System.Void LionStudios.Suite.ThirdParty.AdjustInitialization::OnInitialize(LionStudios.Suite.Core.LionCoreContext)
+extern void AdjustInitialization_OnInitialize_m443787452748AE7120CEB250ACCE37EB2B66C9A3 (void);
+// 0x0000000B System.Int32 LionStudios.Suite.ThirdParty.FacebookInitialization::get_Priority()
+extern void FacebookInitialization_get_Priority_m643EDF9BA734E46AB6562DA13F61351D1828ACCE (void);
+// 0x0000000C LionStudios.Suite.ThirdParty.LionFacebookSettings LionStudios.Suite.ThirdParty.FacebookInitialization::get_Settings()
+extern void FacebookInitialization_get_Settings_m3FFC6F44E31BF8ED83C7FADA00390C0E4612F03B (void);
+// 0x0000000D System.Void LionStudios.Suite.ThirdParty.FacebookInitialization::set_Settings(LionStudios.Suite.ThirdParty.LionFacebookSettings)
+extern void FacebookInitialization_set_Settings_m2DDF938D81B030B3EE3C54295B7C0A5AE59989C6 (void);
+// 0x0000000E System.Void LionStudios.Suite.ThirdParty.FacebookInitialization::.ctor()
+extern void FacebookInitialization__ctor_mD91EEA524C8A1485DC6AB0FCA4CEADB7AA4A6563 (void);
+// 0x0000000F System.String LionStudios.Suite.ThirdParty.FacebookInitialization::LionStudios.Suite.Core.ILionSettingsProvider.get_Name()
+extern void FacebookInitialization_LionStudios_Suite_Core_ILionSettingsProvider_get_Name_mB8461FC9E033CA2E3F928EF0E2EB13404B3EE109 (void);
+// 0x00000010 LionStudios.Suite.Core.ILionSettingsInfo LionStudios.Suite.ThirdParty.FacebookInitialization::GetSettings()
+extern void FacebookInitialization_GetSettings_mE189A8F0D7AC635DC4F44DB884F296E0A614AB09 (void);
+// 0x00000011 System.Void LionStudios.Suite.ThirdParty.FacebookInitialization::LionStudios.Suite.Core.ILionSettingsProvider.ApplySettings(LionStudios.Suite.Core.ILionSettingsInfo)
+extern void FacebookInitialization_LionStudios_Suite_Core_ILionSettingsProvider_ApplySettings_m9510F479C7A9242E3BE0C6E62049CDA15A271C39 (void);
+// 0x00000012 System.Threading.Tasks.Task LionStudios.Suite.ThirdParty.FacebookInitialization::Initialize(Utility.Dispatcher.Dispatcher,Data.CoreData)
+extern void FacebookInitialization_Initialize_mFD172C30DF2CB33ABC1B295D01FA7801A511F4A0 (void);
+// 0x00000013 System.Void LionStudios.Suite.ThirdParty.FacebookInitialization::OnInitialize(LionStudios.Suite.Core.LionCoreContext)
+extern void FacebookInitialization_OnInitialize_mB6FC625BC90205AF12960CFA87EEC603BF57F369 (void);
+// 0x00000014 System.Int32 LionStudios.Suite.ThirdParty.FirebaseInitialization::get_Priority()
+extern void FirebaseInitialization_get_Priority_mF07E6FF52A677BF0AE9AB177CB5AD38099FCCB1C (void);
+// 0x00000015 LionStudios.Suite.ThirdParty.LionFirebaseSettings LionStudios.Suite.ThirdParty.FirebaseInitialization::get_Settings()
+extern void FirebaseInitialization_get_Settings_m84EA2E49A42BD0D1A17402F6E7809ED1101B5CFB (void);
+// 0x00000016 System.Void LionStudios.Suite.ThirdParty.FirebaseInitialization::set_Settings(LionStudios.Suite.ThirdParty.LionFirebaseSettings)
+extern void FirebaseInitialization_set_Settings_mE2CD1C416E2E58EDCEB821A7903A1714A7FD6212 (void);
+// 0x00000017 System.Void LionStudios.Suite.ThirdParty.FirebaseInitialization::.ctor()
+extern void FirebaseInitialization__ctor_mC040BAB4A2BDEC26AD9052F7F973D685B85DEE88 (void);
+// 0x00000018 System.String LionStudios.Suite.ThirdParty.FirebaseInitialization::LionStudios.Suite.Core.ILionSettingsProvider.get_Name()
+extern void FirebaseInitialization_LionStudios_Suite_Core_ILionSettingsProvider_get_Name_m0C7EBFCC08583AAAAD9BEFED794C381E1DB0470D (void);
+// 0x00000019 LionStudios.Suite.Core.ILionSettingsInfo LionStudios.Suite.ThirdParty.FirebaseInitialization::GetSettings()
+extern void FirebaseInitialization_GetSettings_m04CFFD6344F2A5DB1D5982BB841ED965B6B5FCEA (void);
+// 0x0000001A System.Void LionStudios.Suite.ThirdParty.FirebaseInitialization::LionStudios.Suite.Core.ILionSettingsProvider.ApplySettings(LionStudios.Suite.Core.ILionSettingsInfo)
+extern void FirebaseInitialization_LionStudios_Suite_Core_ILionSettingsProvider_ApplySettings_m1D4EF092813B2255BA404967044B18A2A4E1A77A (void);
+// 0x0000001B System.Threading.Tasks.Task LionStudios.Suite.ThirdParty.FirebaseInitialization::Initialize(Utility.Dispatcher.Dispatcher,Data.CoreData)
+extern void FirebaseInitialization_Initialize_m4CD04B8D7E40C544732B9F7998A01F358191673F (void);
+// 0x0000001C System.Void LionStudios.Suite.ThirdParty.FirebaseInitialization::OnInitialize(LionStudios.Suite.Core.LionCoreContext)
+extern void FirebaseInitialization_OnInitialize_mFBDA620A190DE9D4A5B60568866162149901090C (void);
+// 0x0000001D System.Int32 LionStudios.Suite.ThirdParty.HelpshiftInitialization::get_Priority()
+extern void HelpshiftInitialization_get_Priority_m7FE39F735BE946BF0988A4594A786DA6D89E2763 (void);
+// 0x0000001E LionStudios.Suite.ThirdParty.LionHelpshiftSettings LionStudios.Suite.ThirdParty.HelpshiftInitialization::get_Settings()
+extern void HelpshiftInitialization_get_Settings_m5CD820C5B38E8276861957248CCD082A36D26FFE (void);
+// 0x0000001F System.Void LionStudios.Suite.ThirdParty.HelpshiftInitialization::set_Settings(LionStudios.Suite.ThirdParty.LionHelpshiftSettings)
+extern void HelpshiftInitialization_set_Settings_mE206FD0AEA73E1B3C50B144CCFBB0F9F8776DD9B (void);
+// 0x00000020 System.Void LionStudios.Suite.ThirdParty.HelpshiftInitialization::.ctor()
+extern void HelpshiftInitialization__ctor_mC1AA49FEF2A45D7CDA6019FDA1245931B3AE6317 (void);
+// 0x00000021 System.String LionStudios.Suite.ThirdParty.HelpshiftInitialization::LionStudios.Suite.Core.ILionSettingsProvider.get_Name()
+extern void HelpshiftInitialization_LionStudios_Suite_Core_ILionSettingsProvider_get_Name_m29F82655B1E79ACB72A4DCBDC6010741A6DFDAD5 (void);
+// 0x00000022 LionStudios.Suite.Core.ILionSettingsInfo LionStudios.Suite.ThirdParty.HelpshiftInitialization::GetSettings()
+extern void HelpshiftInitialization_GetSettings_mAA0A4AE5BD09C0A6D92C0AC2CA07092EBE51242B (void);
+// 0x00000023 System.Void LionStudios.Suite.ThirdParty.HelpshiftInitialization::LionStudios.Suite.Core.ILionSettingsProvider.ApplySettings(LionStudios.Suite.Core.ILionSettingsInfo)
+extern void HelpshiftInitialization_LionStudios_Suite_Core_ILionSettingsProvider_ApplySettings_mE6E033320F9648A9412E9D3B4836C9C3E8EF341C (void);
+// 0x00000024 System.Threading.Tasks.Task LionStudios.Suite.ThirdParty.HelpshiftInitialization::Initialize(Utility.Dispatcher.Dispatcher,Data.CoreData)
+extern void HelpshiftInitialization_Initialize_m06FE62F98DB5D1302EA49034169F1DB5816D70D3 (void);
+// 0x00000025 System.Void LionStudios.Suite.ThirdParty.HelpshiftInitialization::OnInitialize(LionStudios.Suite.Core.LionCoreContext)
+extern void HelpshiftInitialization_OnInitialize_mF2EAF507BBB5F80F59FD755CD70AA5ACA0E8FA9D (void);
+// 0x00000026 System.String LionStudios.Suite.ThirdParty.HelpshiftInitialization::GetGoogleAdId()
+extern void HelpshiftInitialization_GetGoogleAdId_mE1A1E67ECB31B2966D21CEA7354098FDD57E653A (void);
+// 0x00000027 System.Void LionStudios.Suite.ThirdParty.LionAdjustSettings::.ctor()
+extern void LionAdjustSettings__ctor_m26E57BEAFCAFD5BD1D441715563D406BCA35FD14 (void);
+// 0x00000028 System.Void LionStudios.Suite.ThirdParty.LionFacebookSettings::.ctor()
+extern void LionFacebookSettings__ctor_m458EF05E52FB454EC017ABEFCB69D7DC66D2FFD4 (void);
+// 0x00000029 System.Void LionStudios.Suite.ThirdParty.LionFirebaseSettings::.ctor()
+extern void LionFirebaseSettings__ctor_m25810F110724B2EE3D80E27B173F47DB14C7D5DA (void);
+// 0x0000002A System.Void LionStudios.Suite.ThirdParty.LionHelpshiftSettings::.ctor()
+extern void LionHelpshiftSettings__ctor_mB9CAD9D5ABE43D66E4FA32F2A6E6D8E4D3A35368 (void);
+// 0x0000002B System.Void LionStudios.Suite.ThirdParty.LionMaxSettings::.ctor()
+extern void LionMaxSettings__ctor_m16979C4FFD8084ADF0729EF765397B1FC80EAE2C (void);
+// 0x0000002C System.Int32 LionStudios.Suite.ThirdParty.MaxInitialization::get_Priority()
+extern void MaxInitialization_get_Priority_mF49D49824DC386A8022563B28C0B0F11C0C66843 (void);
+// 0x0000002D LionStudios.Suite.ThirdParty.LionMaxSettings LionStudios.Suite.ThirdParty.MaxInitialization::get_Settings()
+extern void MaxInitialization_get_Settings_mC70F7613E39588138510F5C0FB9DB33A6F3ECD4A (void);
+// 0x0000002E System.Void LionStudios.Suite.ThirdParty.MaxInitialization::set_Settings(LionStudios.Suite.ThirdParty.LionMaxSettings)
+extern void MaxInitialization_set_Settings_m03BEBB94E3882602EC011298ABF2423E588416C6 (void);
+// 0x0000002F System.Void LionStudios.Suite.ThirdParty.MaxInitialization::.ctor()
+extern void MaxInitialization__ctor_m738F81C7951A4262A28586AD6FE6FB7DDB47F97C (void);
+// 0x00000030 System.String LionStudios.Suite.ThirdParty.MaxInitialization::LionStudios.Suite.Core.ILionSettingsProvider.get_Name()
+extern void MaxInitialization_LionStudios_Suite_Core_ILionSettingsProvider_get_Name_m4EE395CF8F5AF6425542E41EB00C7FD4846B289C (void);
+// 0x00000031 LionStudios.Suite.Core.ILionSettingsInfo LionStudios.Suite.ThirdParty.MaxInitialization::GetSettings()
+extern void MaxInitialization_GetSettings_m84379B74A36D829BF6F82E3B93565C851E62F7DC (void);
+// 0x00000032 System.Void LionStudios.Suite.ThirdParty.MaxInitialization::LionStudios.Suite.Core.ILionSettingsProvider.ApplySettings(LionStudios.Suite.Core.ILionSettingsInfo)
+extern void MaxInitialization_LionStudios_Suite_Core_ILionSettingsProvider_ApplySettings_m751C82B7EBEB02B10AEEB8B67B5564E820CFAA45 (void);
+// 0x00000033 System.Threading.Tasks.Task LionStudios.Suite.ThirdParty.MaxInitialization::Initialize(Utility.Dispatcher.Dispatcher,Data.CoreData)
+extern void MaxInitialization_Initialize_m652BE23C57146674281D4309B876CE294F9D2BE3 (void);
+// 0x00000034 System.Void LionStudios.Suite.ThirdParty.MaxInitialization::OnInitialize(LionStudios.Suite.Core.LionCoreContext)
+extern void MaxInitialization_OnInitialize_m7B19B5A7EDC9C9398A9E38E24EE6B79F6B45E54A (void);
+// 0x00000035 System.Void LionStudios.Suite.ThirdParty.SdkInitializerSettingsBase::.ctor()
+extern void SdkInitializerSettingsBase__ctor_m93BD34BD07D33CEC6BD403653EDB165DD008E350 (void);
+static Il2CppMethodPointer s_methodPointers[53] = 
+{
+	AdjustInitialization_HandleLAEventsHoldStatus_m15E2DF560A056392F8CC8EDD69F387897B619FC1,
+	AdjustInitialization_get_Priority_m23616C6A0901193E57AE8E34A613861C7192298A,
+	AdjustInitialization_get_Settings_m6B4B282CB6C08C05CC1F2830E0B7EA9EBD891389,
+	AdjustInitialization_set_Settings_m9F41B58742F0FCA2D2459FF5709BBA5EA1A3D4CC,
+	AdjustInitialization__ctor_mDA594C6BF38FCAB4004A99C84CB2E027ECC95F56,
+	AdjustInitialization_LionStudios_Suite_Core_ILionSettingsProvider_get_Name_mC88D8BAE85EEC118CD8905B762B9B711925C328F,
+	AdjustInitialization_GetSettings_m5EFAC19711CC78A9985763F7A16B094F254DF91C,
+	AdjustInitialization_LionStudios_Suite_Core_ILionSettingsProvider_ApplySettings_m2275A84CE363AF0FE9B72D43FFC86B62092F7F57,
+	AdjustInitialization_Initialize_mA7135FB39CA3C34E1EAF9E4390A778E00489A363,
+	AdjustInitialization_OnInitialize_m443787452748AE7120CEB250ACCE37EB2B66C9A3,
+	FacebookInitialization_get_Priority_m643EDF9BA734E46AB6562DA13F61351D1828ACCE,
+	FacebookInitialization_get_Settings_m3FFC6F44E31BF8ED83C7FADA00390C0E4612F03B,
+	FacebookInitialization_set_Settings_m2DDF938D81B030B3EE3C54295B7C0A5AE59989C6,
+	FacebookInitialization__ctor_mD91EEA524C8A1485DC6AB0FCA4CEADB7AA4A6563,
+	FacebookInitialization_LionStudios_Suite_Core_ILionSettingsProvider_get_Name_mB8461FC9E033CA2E3F928EF0E2EB13404B3EE109,
+	FacebookInitialization_GetSettings_mE189A8F0D7AC635DC4F44DB884F296E0A614AB09,
+	FacebookInitialization_LionStudios_Suite_Core_ILionSettingsProvider_ApplySettings_m9510F479C7A9242E3BE0C6E62049CDA15A271C39,
+	FacebookInitialization_Initialize_mFD172C30DF2CB33ABC1B295D01FA7801A511F4A0,
+	FacebookInitialization_OnInitialize_mB6FC625BC90205AF12960CFA87EEC603BF57F369,
+	FirebaseInitialization_get_Priority_mF07E6FF52A677BF0AE9AB177CB5AD38099FCCB1C,
+	FirebaseInitialization_get_Settings_m84EA2E49A42BD0D1A17402F6E7809ED1101B5CFB,
+	FirebaseInitialization_set_Settings_mE2CD1C416E2E58EDCEB821A7903A1714A7FD6212,
+	FirebaseInitialization__ctor_mC040BAB4A2BDEC26AD9052F7F973D685B85DEE88,
+	FirebaseInitialization_LionStudios_Suite_Core_ILionSettingsProvider_get_Name_m0C7EBFCC08583AAAAD9BEFED794C381E1DB0470D,
+	FirebaseInitialization_GetSettings_m04CFFD6344F2A5DB1D5982BB841ED965B6B5FCEA,
+	FirebaseInitialization_LionStudios_Suite_Core_ILionSettingsProvider_ApplySettings_m1D4EF092813B2255BA404967044B18A2A4E1A77A,
+	FirebaseInitialization_Initialize_m4CD04B8D7E40C544732B9F7998A01F358191673F,
+	FirebaseInitialization_OnInitialize_mFBDA620A190DE9D4A5B60568866162149901090C,
+	HelpshiftInitialization_get_Priority_m7FE39F735BE946BF0988A4594A786DA6D89E2763,
+	HelpshiftInitialization_get_Settings_m5CD820C5B38E8276861957248CCD082A36D26FFE,
+	HelpshiftInitialization_set_Settings_mE206FD0AEA73E1B3C50B144CCFBB0F9F8776DD9B,
+	HelpshiftInitialization__ctor_mC1AA49FEF2A45D7CDA6019FDA1245931B3AE6317,
+	HelpshiftInitialization_LionStudios_Suite_Core_ILionSettingsProvider_get_Name_m29F82655B1E79ACB72A4DCBDC6010741A6DFDAD5,
+	HelpshiftInitialization_GetSettings_mAA0A4AE5BD09C0A6D92C0AC2CA07092EBE51242B,
+	HelpshiftInitialization_LionStudios_Suite_Core_ILionSettingsProvider_ApplySettings_mE6E033320F9648A9412E9D3B4836C9C3E8EF341C,
+	HelpshiftInitialization_Initialize_m06FE62F98DB5D1302EA49034169F1DB5816D70D3,
+	HelpshiftInitialization_OnInitialize_mF2EAF507BBB5F80F59FD755CD70AA5ACA0E8FA9D,
+	HelpshiftInitialization_GetGoogleAdId_mE1A1E67ECB31B2966D21CEA7354098FDD57E653A,
+	LionAdjustSettings__ctor_m26E57BEAFCAFD5BD1D441715563D406BCA35FD14,
+	LionFacebookSettings__ctor_m458EF05E52FB454EC017ABEFCB69D7DC66D2FFD4,
+	LionFirebaseSettings__ctor_m25810F110724B2EE3D80E27B173F47DB14C7D5DA,
+	LionHelpshiftSettings__ctor_mB9CAD9D5ABE43D66E4FA32F2A6E6D8E4D3A35368,
+	LionMaxSettings__ctor_m16979C4FFD8084ADF0729EF765397B1FC80EAE2C,
+	MaxInitialization_get_Priority_mF49D49824DC386A8022563B28C0B0F11C0C66843,
+	MaxInitialization_get_Settings_mC70F7613E39588138510F5C0FB9DB33A6F3ECD4A,
+	MaxInitialization_set_Settings_m03BEBB94E3882602EC011298ABF2423E588416C6,
+	MaxInitialization__ctor_m738F81C7951A4262A28586AD6FE6FB7DDB47F97C,
+	MaxInitialization_LionStudios_Suite_Core_ILionSettingsProvider_get_Name_m4EE395CF8F5AF6425542E41EB00C7FD4846B289C,
+	MaxInitialization_GetSettings_m84379B74A36D829BF6F82E3B93565C851E62F7DC,
+	MaxInitialization_LionStudios_Suite_Core_ILionSettingsProvider_ApplySettings_m751C82B7EBEB02B10AEEB8B67B5564E820CFAA45,
+	MaxInitialization_Initialize_m652BE23C57146674281D4309B876CE294F9D2BE3,
+	MaxInitialization_OnInitialize_m7B19B5A7EDC9C9398A9E38E24EE6B79F6B45E54A,
+	SdkInitializerSettingsBase__ctor_m93BD34BD07D33CEC6BD403653EDB165DD008E350,
+};
+static const int32_t s_InvokerIndices[53] = 
+{
+	14067,
+	7780,
+	14027,
+	13207,
+	7958,
+	7814,
+	7814,
+	6450,
+	3060,
+	6450,
+	7780,
+	14027,
+	13207,
+	7958,
+	7814,
+	7814,
+	6450,
+	3060,
+	6450,
+	7780,
+	14027,
+	13207,
+	7958,
+	7814,
+	7814,
+	6450,
+	3060,
+	6450,
+	7780,
+	14027,
+	13207,
+	7958,
+	7814,
+	7814,
+	6450,
+	3060,
+	6450,
+	7814,
+	7958,
+	7958,
+	7958,
+	7958,
+	7958,
+	7780,
+	14027,
+	13207,
+	7958,
+	7814,
+	7814,
+	6450,
+	3060,
+	6450,
+	7958,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Lion_SDKServices_Runtime_CodeGenModule;
+const Il2CppCodeGenModule g_Lion_SDKServices_Runtime_CodeGenModule = 
+{
+	"Lion.SDKServices.Runtime.dll",
+	53,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};
