@@ -57,7 +57,7 @@ namespace Features.GridGeneration.Scripts
             }
             Adjuster.AdjustCamera(grid);
             UIController.instance.Text(TextType.Level).UpdateText($"{_levelManager.Level+1}");
-            if (_levelManager.Level == 2&& PlayerPrefs.GetInt("T")==0)
+            if (_levelManager.Level == 3&& PlayerPrefs.GetInt("T")==0)
             {
                 PlayerPrefs.SetInt("T", 1);
                 _tutorial.ShowTutorial();
