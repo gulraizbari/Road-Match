@@ -68,12 +68,14 @@ public class GridViewReferences : MonoBehaviour
             if (moves<10)
             {
                 extraTMove.enabled = true;
-                UIController.instance.Text(TextType.Moves).UpdateText(ColorizeString(move,tensionColor));
+                UIController.instance.Text(TextType.Moves).UpdateText(move);
+                UIController.instance.Text(TextType.Moves).ChangeColor(tensionColor);
             }
             else
             {
                
-                UIController.instance.Text(TextType.Moves).UpdateText(ColorizeString(move,orignalColor));
+                UIController.instance.Text(TextType.Moves).UpdateText(move);
+                UIController.instance.Text(TextType.Moves).ChangeColor(orignalColor);
             }
            
         }
