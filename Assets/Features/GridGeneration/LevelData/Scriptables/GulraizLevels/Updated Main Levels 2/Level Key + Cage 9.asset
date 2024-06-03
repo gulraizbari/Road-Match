@@ -4255,4 +4255,4 @@ MonoBehaviour:
   setZOnly: 0
   customPadding: 1
   customPaddingValue: 3.2
-  IsEnemy: 0
+  IsEnemy: 1
