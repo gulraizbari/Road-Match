@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Helpers;
+using Sablo.Analytics;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -34,6 +35,7 @@ namespace Features.UI.Logics
             base.Start();
             _playOnButton.onClick.AddListener(PlayOn);
             _resumeButton.onClick.AddListener(RevivePlayer);
+            _retryButton.onClick.AddListener(TryAgain);
         }
 
         public override void OpenPanel(float delay,Reason reason)
@@ -115,6 +117,7 @@ namespace Features.UI.Logics
 
         public  void TryAgain()
         {
+            LionAnalyticEvents.OnLevelFail(UIController.instance.levelManager.Level+1,reasonOfFail.ToString());
             UIController.instance.levelManager.ResetLevel();
         }
     }

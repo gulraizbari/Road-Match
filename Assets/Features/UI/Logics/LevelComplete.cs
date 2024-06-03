@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Features.UI.Logics;
 using Helpers;
+using Sablo.Analytics;
 using Sablo.Core;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -30,10 +31,12 @@ public class LevelComplete : PanelBase
         OnStart();
         SoundManager.Instance.LevelComplete(1);
         StartCoroutine(ShowStars(delay));
+        //LionAnalyticEvents.OnLevelComplete(UIController.instance.levelManager.Level+1);
     }
 
     private IEnumerator ShowStars(float delay)
     {
+        UIController.instance.levelManager.NextLevel();
         yield return new WaitForSeconds(delay+.2f);
         foreach (var star in _stars)
         {
@@ -47,6 +50,7 @@ public class LevelComplete : PanelBase
 
     private void OnStart()
     {
+        UIController.instance.levelManager.NextScene();
         _cashToGiveText.UpdateText(_cashToGive.ToInt().ToString());
         _winCashText.UpdateText(GameController.GameCash.ToString());
     }
@@ -55,6 +59,7 @@ public class LevelComplete : PanelBase
     {
         SoundManager.Instance.PlayClick(1);
         UIController.instance.AddCash(_cashToGive);
+        
     }
 
     private void GetX2Reward()
