@@ -27,7 +27,8 @@ namespace Features.GridGeneration.Scripts
         Dictionary<string, Collectable> _collectables = new();
         [BoxGroup("References")] public IPlayerCollectible Goals;
         [BoxGroup("References")] public Transform NonInteractiveData;
-
+        public Tile startingTile;
+        public Cell startingCell;
        
         [BoxGroup("References"), ShowInInspector]
         public Tile[,] tilesGrid;
@@ -160,6 +161,8 @@ namespace Features.GridGeneration.Scripts
                             _tile.TileState = TileStates.Walkable;
                             if (cellData.IsPlayer)
                             {
+                                startingTile = tilesGrid[row, col];
+                                startingCell = grid[row, col];
                                 _gridViewReferences.playerController.Player.lastTile = tilesGrid[row, col];
                                 PlayerTile = _gridViewReferences.playerController.Player.lastTile;
                                 _gridViewReferences.player.Init(new Vector3(tilePosition.x, 1, tilePosition.z), PlayerTile);
@@ -336,6 +339,18 @@ namespace Features.GridGeneration.Scripts
             {
                 return null; // Handle case when type is not found
             }
+        }
+
+        [Button]
+        public void RevivePlayer()
+        {
+            _gridViewReferences.player.Revive();
+            _gridViewReferences.player.CurrentTile = startingTile;
+            _gridViewReferences.playerController.Player.lastTile = startingTile;
+            _gridViewReferences.player.Init(new Vector3(startingTile.transform.position.x, 1, startingTile.transform.position.z), PlayerTile);
+            startingTile.Init(_gridViewReferences.enable, startingCell, this, _gridViewReferences.player,
+                _gridViewReferences.playerController);
+            GameController.SetState(GameStates.Play);
         }
         
     }

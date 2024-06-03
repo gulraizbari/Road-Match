@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using Features;
 using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.Movement;
@@ -21,6 +22,7 @@ public class GridViewReferences : MonoBehaviour
     [BoxGroup("References")] public Enemy enemy;
     [BoxGroup("References")] public PowerUp powerUp;
     [BoxGroup("References")] public Transform extraTransform;
+    [BoxGroup("References")] public Animator extraTMove;
     [BoxGroup("References/Values")] public int moves;
 
 
@@ -39,6 +41,7 @@ public class GridViewReferences : MonoBehaviour
         moves += value;
         UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
         GameController.SetState(GameStates.Play);
+        extraTMove.enabled = false;
     }
     public void CalculateMoves(int movesMultiplier )
     {
@@ -46,22 +49,47 @@ public class GridViewReferences : MonoBehaviour
         UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
     }
 
+    Tween _tween;
     public void UpdateMoves(int value)
     {
         moves += value;
-        if (moves <=0 )
+        if (moves <0 )
         {
+           
+           
             moves = 0;
             UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
             print("Level Fail");
-            UIController.instance.LevelFail(.5f);
+            UIController.instance.LevelFail(.5f,Reason.OutOfMoves);
         }
         else
         {
-            UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
+            string move=$"{moves}";
+            if (moves<10)
+            {
+                extraTMove.enabled = true;
+                UIController.instance.Text(TextType.Moves).UpdateText(move);
+                UIController.instance.Text(TextType.Moves).ChangeColor(tensionColor);
+            }
+            else
+            {
+               
+                UIController.instance.Text(TextType.Moves).UpdateText(move);
+                UIController.instance.Text(TextType.Moves).ChangeColor(orignalColor);
+            }
+           
         }
         
     }
 
-    
+    string ColorizeString(string text,Color color)
+    {
+        // Convert the color to a hex string
+        string hexColor = ColorUtility.ToHtmlStringRGBA(color);
+        // Return the string wrapped with color tags
+        return $"<color=#{hexColor}>{text}</color>";
+    }
+
+    public Color tensionColor;
+    public Color orignalColor;
 }

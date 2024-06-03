@@ -14,6 +14,10 @@ public enum TilePlacements
     Hurdle,
     Item
 }
+public enum Reason{
+    PlayerDeath,
+    OutOfMoves
+}
 
 public enum Fruits
 {
