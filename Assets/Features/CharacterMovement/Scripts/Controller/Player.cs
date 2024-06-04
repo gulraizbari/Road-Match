@@ -253,16 +253,20 @@ namespace Sablo.Gameplay.Movement
             return resultValue;
         }
 
+        public bool StopRotation;
+
         public void Attack(ISFighter fighter)
         {
+         
             PlayerHandler.CantRun = true;
             _counter.gameObject.SetActive(true);
-            Child.DORotate(fighter._Transform.position,.1f).SetEase(Ease.Linear);
+          
             _playerAnimator.Fighter = fighter;
            if(fighter.Health>0)
                     _playerAnimator.Attack();
            else
                PlayerHandler.CantRun = false;
+         
         }
 
         public void Death()
