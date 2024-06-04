@@ -98,6 +98,7 @@ public class Enemy : MonoBehaviour,ISFighter
         MyTile._Enemy = null;
         transform.DOScale(0f, .1f).SetEase(Ease.Linear).OnComplete((SetOff));
         SoundManager.Instance.Joy();
+        SoundManager.Instance.Death(1);
     }
 
     public void UpdateLevel(int value)

@@ -21,6 +21,10 @@ namespace Sablo.Gameplay.PathFinding
             {
                 _foundPaths = FindPath(start, target);
                 player.PlayerHandler.CantRun = true;
+                if (target._Enemy)
+                {
+                    _foundPaths.RemoveAt(_foundPaths.Count-1);
+                }
                 player.MoveOnPath(_foundPaths);
                
             }
