@@ -10203,6 +10203,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TileBase_set__Enemy_mEA8C99D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TweenerCore_3_tCD82DFC45FB71C681FA8659EA63A7D7D16BFFE77* ShortcutExtensions_DOScale_m5935113B55474CC0551EF8A8EA3CFA82371D5E99 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_target, float ___1_endValue, float ___2_duration, const RuntimeMethod* method) ;
 // System.Void SoundManager::Joy()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundManager_Joy_m8914FEAB5F5927E9A2336B77D5A3C8C491C7DB92 (SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734* __this, const RuntimeMethod* method) ;
+// System.Void SoundManager::Death(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundManager_Death_m1C8188644C5742E54B439B6011D7EED426D6E21F (SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734* __this, float ___0_volume, const RuntimeMethod* method) ;
 // System.Void CharacterLevel::UpdateLevelText(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterLevel_UpdateLevelText_mE1AF3189F071824D03530760D85D713D03A84F23 (CharacterLevel_t916C8795004045F9EB6A86DDEAC164107E41C99D* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.Transform UnityEngine.GameObject::get_transform()
@@ -14404,6 +14406,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enemy_Death_m199BDD54DE405ED010AE850D71D
 		SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734* L_7 = ((SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734_StaticFields*)il2cpp_codegen_static_fields_for(SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734_il2cpp_TypeInfo_var))->___Instance_7;
 		NullCheck(L_7);
 		SoundManager_Joy_m8914FEAB5F5927E9A2336B77D5A3C8C491C7DB92(L_7, NULL);
+		// SoundManager.Instance.Death(1);
+		SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734* L_8 = ((SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734_StaticFields*)il2cpp_codegen_static_fields_for(SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734_il2cpp_TypeInfo_var))->___Instance_7;
+		NullCheck(L_8);
+		SoundManager_Death_m1C8188644C5742E54B439B6011D7EED426D6E21F(L_8, (1.0f), NULL);
 		// }
 		return;
 	}

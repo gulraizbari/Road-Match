@@ -40,7 +40,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 27.2}
   m_SizeDelta: {x: 512, y: 272}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5629926638264498274
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: congrats
+  m_text: "level\n completed"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 423db215406cb4cbe90eb61b6cb8946b, type: 2}
   m_sharedMaterial: {fileID: -715310598988334478, guid: 423db215406cb4cbe90eb61b6cb8946b,
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 75.1
+  m_fontSize: 57.05
   m_fontSizeBase: 65.9
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -47.74341, z: -89.88867, w: 0}
+  m_margin: {x: -40.520996, y: -71.15723, z: -144.78302, w: -3.7144775}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -696,8 +696,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.1, y: 86}
-  m_SizeDelta: {x: 500, y: 200}
+  m_AnchoredPosition: {x: 12.1, y: 96}
+  m_SizeDelta: {x: 209.7, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1503647321494192524
 CanvasRenderer:
@@ -727,18 +727,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You Earned
+  m_text: Well done! you have done a great job
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2cbef920a3dea4ffea4672abbd73a066, type: 2}
-  m_sharedMaterial: {fileID: -715310598988334478, guid: 2cbef920a3dea4ffea4672abbd73a066,
+  m_fontAsset: {fileID: 11400000, guid: 423db215406cb4cbe90eb61b6cb8946b, type: 2}
+  m_sharedMaterial: {fileID: -715310598988334478, guid: 423db215406cb4cbe90eb61b6cb8946b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -755,13 +755,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.6
+  m_fontSize: 36.8
   m_fontSizeBase: 52.4
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 53.6
-  m_fontStyle: 1
+  m_fontSizeMax: 50
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3263,7 +3263,7 @@ PrefabInstance:
     - target: {fileID: 2667994566209749938, guid: daa15e8c6449d49718293902f1f64192,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -177
+      value: -199
       objectReference: {fileID: 0}
     - target: {fileID: 2667994566209749938, guid: daa15e8c6449d49718293902f1f64192,
         type: 3}

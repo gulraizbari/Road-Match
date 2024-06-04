@@ -1078,6 +1078,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m9DB2B96E0976E2357DF3E
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mB95E3338C8F8F43B5A82309E5921FE6FC1C2698C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetRange_mBA28A39833ACD8D34B098E5435CF8426E80E2669_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_IndexOf_mF3A3DA0BDACF03D072D4C1E919E91230867EB8E5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_RemoveAt_m912A94A9176C90D29FECA452A2A50C07CA832290_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Reverse_m16E74889B28C3034FB996307E0A48AB54D750372_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Sort_m90CDC07AEBE737318A490F4C2BC6F2955443EDA4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_RuntimeMethod_var;
@@ -8927,6 +8928,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenSettingsExtensions_OnComp
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenSettingsExtensions_OnStart_TisRuntimeObject_m52FC13AB79CA3D572C72BA5BBCE169E95B255CE5_gshared (RuntimeObject* ___0_t, TweenCallback_t7C8B8A38E7B30905FF1B83C943256EF23617BB24* ___1_action, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::Clear()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::RemoveAt(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.HashSet`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_m9132EE1422BAA45E44B7FFF495F378790D36D90E_gshared (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.HashSet`1<System.Object>::Add(T)
@@ -9001,8 +9006,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBE11DA1DAFC756EB87E
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m1747175525F15736BD2C9209C7B090DC8164FE7A_gshared_inline (List_1_tFD45D9C668A7B019127FE442DDD78CF33B7DEDBF* __this, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<System.ValueTuple`2<System.Object,System.Object>>::get_Item(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_tC3717D4552EE1E5FC27BFBA3F5155741BC04557A List_1_get_Item_mDEEB92B35DD1643CAC7F2F8F7CF3B84C99C3DE42_gshared (List_1_tFD45D9C668A7B019127FE442DDD78CF33B7DEDBF* __this, int32_t ___0_index, const RuntimeMethod* method) ;
-// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // T DG.Tweening.TweenSettingsExtensions::SetLoops<System.Object>(T,System.Int32,DG.Tweening.LoopType)
@@ -9482,6 +9485,18 @@ inline void List_1_Clear_m0AEA752010BF2D70BAFCD812C99F88F15546A8E3_inline (List_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* PathFinding_FindPath_m9428ADCDF468C869A4AED31BB68D8234FFCABE8C (PathFinding_tE027CD4C90F95B46B49F471EEF5EB97353D138DF* __this, Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* ___0_startCell, Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* ___1_targetCell, const RuntimeMethod* method) ;
 // System.Void Sablo.Gameplay.Movement.PlayerController::set_CantRun(System.Boolean)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayerController_set_CantRun_m44C11D715519CC53661C6C26759A7E1D3AA3FB03_inline (PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* __this, bool ___0_value, const RuntimeMethod* method) ;
+// Enemy Features.GridGeneration.Scripts.TileBase::get__Enemy()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* TileBase_get__Enemy_mD777EC1DF3CB8117E041520E6BFD9EEE6BB0211F_inline (TileBase_t3577419B4F5A05707485902EE179F4D7C1B80DF1* __this, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<Features.GridGeneration.Scripts.Tile>::get_Count()
+inline int32_t List_1_get_Count_m488F143C84738126AB507F9DFB5E26A905B9E684_inline (List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<Features.GridGeneration.Scripts.Tile>::RemoveAt(System.Int32)
+inline void List_1_RemoveAt_m912A94A9176C90D29FECA452A2A50C07CA832290 (List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB*, int32_t, const RuntimeMethod*))List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared)(__this, ___0_index, method);
+}
 // System.Collections.Generic.List`1<Features.GridGeneration.Scripts.Tile> Sablo.Gameplay.PathFinding.PathFinding::get_foundPath()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* PathFinding_get_foundPath_mE012AC4C5973B873D782A151FE334E6CB1155F5C (PathFinding_tE027CD4C90F95B46B49F471EEF5EB97353D138DF* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.HashSet`1<Features.GridGeneration.Scripts.Tile>::.ctor()
@@ -9756,11 +9771,6 @@ inline ValueTuple_2_tDAFC91D0A0EFCBD32D970B3543CF145852A4EAE8 List_1_get_Item_m0
 }
 // System.String System.String::Concat(System.String,System.String,System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m093934F71A9B351911EE46311674ED463B180006 (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, String_t* ___3_str3, const RuntimeMethod* method) ;
-// System.Int32 System.Collections.Generic.List`1<Features.GridGeneration.Scripts.Tile>::get_Count()
-inline int32_t List_1_get_Count_m488F143C84738126AB507F9DFB5E26A905B9E684_inline (List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* __this, const RuntimeMethod* method)
-{
-	return ((  int32_t (*) (List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
-}
 // T System.Collections.Generic.List`1<Features.GridGeneration.Scripts.Tile>::get_Item(System.Int32)
 inline Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* List_1_get_Item_mBB58177A4B4C3F38530875B25E3DBB8D6A0F0A63 (List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* __this, int32_t ___0_index, const RuntimeMethod* method)
 {
@@ -10426,10 +10436,6 @@ inline TweenerCore_3_t392C54729BB024F5802F8E205C583653C4E886E3* TweenSettingsExt
 {
 	return ((  TweenerCore_3_t392C54729BB024F5802F8E205C583653C4E886E3* (*) (TweenerCore_3_t392C54729BB024F5802F8E205C583653C4E886E3*, TweenCallback_t7C8B8A38E7B30905FF1B83C943256EF23617BB24*, const RuntimeMethod*))TweenSettingsExtensions_OnComplete_TisRuntimeObject_mC014D07E92193DA79B257C4508B6DF208FE502A6_gshared)(___0_t, ___1_action, method);
 }
-// Enemy Features.GridGeneration.Scripts.TileBase::get__Enemy()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* TileBase_get__Enemy_mD777EC1DF3CB8117E041520E6BFD9EEE6BB0211F_inline (TileBase_t3577419B4F5A05707485902EE179F4D7C1B80DF1* __this, const RuntimeMethod* method) ;
-// System.Void Enemy::TakeHit()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enemy_TakeHit_m161003FFD7799DBAA2A046698FF0320FC614B629 (Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* __this, const RuntimeMethod* method) ;
 // System.Void Features.GridGeneration.Scripts.TileBase::LockTileAction()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TileBase_LockTileAction_mB7A9F6EAF2432B9B1E33A9917EC50BF7CE35A0B5 (TileBase_t3577419B4F5A05707485902EE179F4D7C1B80DF1* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.MonoBehaviour::Invoke(System.String,System.Single)
@@ -16507,6 +16513,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PathFinding_Find_mEDE591EB4DA116AF498438
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IPlayer_t5F1BD591296ACE23773A20231A7B1C63D6C7FF8F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Clear_m0AEA752010BF2D70BAFCD812C99F88F15546A8E3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_RemoveAt_m912A94A9176C90D29FECA452A2A50C07CA832290_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m488F143C84738126AB507F9DFB5E26A905B9E684_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -16521,7 +16530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PathFinding_Find_mEDE591EB4DA116AF498438
 		L_3 = PathFinding_FindPath_m9428ADCDF468C869A4AED31BB68D8234FFCABE8C(__this, L_1, L_2, NULL);
 		if (!L_3)
 		{
-			goto IL_0046;
+			goto IL_006b;
 		}
 	}
 	{
@@ -16539,15 +16548,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PathFinding_Find_mEDE591EB4DA116AF498438
 		L_8 = InterfaceFuncInvoker0< PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* >::Invoke(9 /* Sablo.Gameplay.Movement.PlayerController Sablo.Gameplay.Movement.IPlayer::get_PlayerHandler() */, IPlayer_t5F1BD591296ACE23773A20231A7B1C63D6C7FF8F_il2cpp_TypeInfo_var, L_7);
 		NullCheck(L_8);
 		PlayerController_set_CantRun_m44C11D715519CC53661C6C26759A7E1D3AA3FB03_inline(L_8, (bool)1, NULL);
-		// player.MoveOnPath(_foundPaths);
-		RuntimeObject* L_9 = __this->___player_5;
-		List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* L_10 = __this->____foundPaths_6;
+		// if (target._Enemy)
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_9 = ___1_target;
 		NullCheck(L_9);
-		InterfaceActionInvoker1< List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* >::Invoke(4 /* System.Void Sablo.Gameplay.Movement.IPlayer::MoveOnPath(System.Collections.Generic.List`1<Features.GridGeneration.Scripts.Tile>) */, IPlayer_t5F1BD591296ACE23773A20231A7B1C63D6C7FF8F_il2cpp_TypeInfo_var, L_9, L_10);
+		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_10;
+		L_10 = TileBase_get__Enemy_mD777EC1DF3CB8117E041520E6BFD9EEE6BB0211F_inline(L_9, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_11;
+		L_11 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_10, NULL);
+		if (!L_11)
+		{
+			goto IL_0059;
+		}
+	}
+	{
+		// _foundPaths.RemoveAt(_foundPaths.Count-1);
+		List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* L_12 = __this->____foundPaths_6;
+		List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* L_13 = __this->____foundPaths_6;
+		NullCheck(L_13);
+		int32_t L_14;
+		L_14 = List_1_get_Count_m488F143C84738126AB507F9DFB5E26A905B9E684_inline(L_13, List_1_get_Count_m488F143C84738126AB507F9DFB5E26A905B9E684_RuntimeMethod_var);
+		NullCheck(L_12);
+		List_1_RemoveAt_m912A94A9176C90D29FECA452A2A50C07CA832290(L_12, ((int32_t)il2cpp_codegen_subtract(L_14, 1)), List_1_RemoveAt_m912A94A9176C90D29FECA452A2A50C07CA832290_RuntimeMethod_var);
+	}
+
+IL_0059:
+	{
+		// player.MoveOnPath(_foundPaths);
+		RuntimeObject* L_15 = __this->___player_5;
+		List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* L_16 = __this->____foundPaths_6;
+		NullCheck(L_15);
+		InterfaceActionInvoker1< List_1_t76C7C11A5ABB176AC04578841B2BB49530A092EB* >::Invoke(4 /* System.Void Sablo.Gameplay.Movement.IPlayer::MoveOnPath(System.Collections.Generic.List`1<Features.GridGeneration.Scripts.Tile>) */, IPlayer_t5F1BD591296ACE23773A20231A7B1C63D6C7FF8F_il2cpp_TypeInfo_var, L_15, L_16);
 		return;
 	}
 
-IL_0046:
+IL_006b:
 	{
 		// return;
 		return;
@@ -22885,14 +22920,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GridView_SpawnGrid_m0F4737E050B5E457F813
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___tilesGrid_14), (void*)L_4);
 		// for (var row = 0; row < levelData.Width; row++)
 		V_0 = 0;
-		goto IL_081d;
+		goto IL_084d;
 	}
 
 IL_001e:
 	{
 		// for (var col = 0; col < levelData.Height; col++)
 		V_1 = 0;
-		goto IL_080d;
+		goto IL_083d;
 	}
 
 IL_0025:
@@ -22960,24 +22995,24 @@ IL_0025:
 			}
 			case 1:
 			{
-				goto IL_0251;
+				goto IL_0281;
 			}
 			case 2:
 			{
-				goto IL_03b4;
+				goto IL_03e4;
 			}
 			case 3:
 			{
-				goto IL_04c0;
+				goto IL_04f0;
 			}
 			case 4:
 			{
-				goto IL_075d;
+				goto IL_078d;
 			}
 		}
 	}
 	{
-		goto IL_0809;
+		goto IL_0839;
 	}
 
 IL_00a5:
@@ -23064,7 +23099,7 @@ IL_00b5:
 		L_60 = (L_57)->GetAt(L_58, L_59);
 		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_61 = V_2;
 		GridView_DisableTile_mE5A2255F597270680E6AF4152367049E7D621266(__this, L_60, L_61, NULL);
-		goto IL_022a;
+		goto IL_025a;
 	}
 
 IL_0134:
@@ -23075,7 +23110,7 @@ IL_0134:
 		int32_t L_63 = L_62->___tilePlacement_1;
 		if ((!(((uint32_t)L_63) == ((uint32_t)1))))
 		{
-			goto IL_022a;
+			goto IL_025a;
 		}
 	}
 	{
@@ -23134,7 +23169,7 @@ IL_0134:
 		L_81 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_80, NULL);
 		NullCheck(L_79);
 		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_79, L_81, NULL);
-		goto IL_022a;
+		goto IL_025a;
 	}
 
 IL_01aa:
@@ -23145,881 +23180,902 @@ IL_01aa:
 		int32_t L_83 = L_82->___typeOfHurdle_2;
 		if ((!(((uint32_t)L_83) == ((uint32_t)2))))
 		{
-			goto IL_022a;
+			goto IL_025a;
 		}
 	}
 	{
-		// var enemy = Instantiate(_gridViewReferences.enemy);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_84 = __this->____gridViewReferences_6;
+		// _tile.TileState = TileStates.Walkable;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_84 = V_2;
 		NullCheck(L_84);
-		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_85 = L_84->___enemy_13;
+		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_84, 6, NULL);
+		// var enemy = Instantiate(_gridViewReferences.enemy);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_85 = __this->____gridViewReferences_6;
+		NullCheck(L_85);
+		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_86 = L_85->___enemy_13;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_86;
-		L_86 = Object_Instantiate_TisEnemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB_m5438947E50112880878CA55D4C6709F4647A23AA(L_85, Object_Instantiate_TisEnemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB_m5438947E50112880878CA55D4C6709F4647A23AA_RuntimeMethod_var);
-		V_7 = L_86;
+		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_87;
+		L_87 = Object_Instantiate_TisEnemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB_m5438947E50112880878CA55D4C6709F4647A23AA(L_86, Object_Instantiate_TisEnemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB_m5438947E50112880878CA55D4C6709F4647A23AA_RuntimeMethod_var);
+		V_7 = L_87;
 		// enemy.gridView = this;
-		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_87 = V_7;
-		NullCheck(L_87);
-		L_87->___gridView_10 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&L_87->___gridView_10), (void*)__this);
-		// enemy.MyTile = _tile;
 		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_88 = V_7;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_89 = V_2;
 		NullCheck(L_88);
-		L_88->___MyTile_11 = L_89;
-		Il2CppCodeGenWriteBarrier((void**)(&L_88->___MyTile_11), (void*)L_89);
-		// _tile.DisableShadow();
+		L_88->___gridView_10 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_88->___gridView_10), (void*)__this);
+		// enemy.MyTile = _tile;
+		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_89 = V_7;
 		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_90 = V_2;
-		NullCheck(L_90);
-		TileBase_DisableShadow_m52EAEA32881AA80BA85846F9EC64C0729B0D7200(L_90, NULL);
-		// _tile.SetNonFlipAble(enemy.gameObject,Vector3.one);
+		NullCheck(L_89);
+		L_89->___MyTile_11 = L_90;
+		Il2CppCodeGenWriteBarrier((void**)(&L_89->___MyTile_11), (void*)L_90);
+		// _tile.DisableShadow();
 		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_91 = V_2;
-		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_92 = V_7;
-		NullCheck(L_92);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_93;
-		L_93 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_92, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_94;
-		L_94 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
 		NullCheck(L_91);
-		TileBase_SetNonFlipAble_m75E44C307AD70B547A9A54B02A11E3A0BB560982(L_91, L_93, L_94, NULL);
+		TileBase_DisableShadow_m52EAEA32881AA80BA85846F9EC64C0729B0D7200(L_91, NULL);
+		// _tile.SetNonFlipAble(enemy.gameObject,Vector3.one);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_92 = V_2;
+		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_93 = V_7;
+		NullCheck(L_93);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_94;
+		L_94 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_93, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_95;
+		L_95 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		NullCheck(L_92);
+		TileBase_SetNonFlipAble_m75E44C307AD70B547A9A54B02A11E3A0BB560982(L_92, L_94, L_95, NULL);
 		// _tile._Enemy = enemy;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_95 = V_2;
-		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_96 = V_7;
-		NullCheck(L_95);
-		TileBase_set__Enemy_mEA8C99D246F5703BC90F7276402CAA9F4862C6D1_inline(L_95, L_96, NULL);
-		// enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth,levelData.IsEnemy);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_96 = V_2;
 		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_97 = V_7;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_98 = __this->____gridViewReferences_6;
-		NullCheck(L_98);
-		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_99 = L_98->___player_4;
+		NullCheck(L_96);
+		TileBase_set__Enemy_mEA8C99D246F5703BC90F7276402CAA9F4862C6D1_inline(L_96, L_97, NULL);
+		// enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth,levelData.IsEnemy);
+		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_98 = V_7;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_99 = __this->____gridViewReferences_6;
 		NullCheck(L_99);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_100;
-		L_100 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_99, NULL);
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_101 = V_3;
-		NullCheck(L_101);
-		int32_t L_102 = L_101->___enemyHealth_16;
-		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_103 = ___1_levelData;
-		NullCheck(L_103);
-		bool L_104 = L_103->___IsEnemy_21;
-		NullCheck(L_97);
-		Enemy_Init_m2BC65084B0123709791700057AC96530615959D9(L_97, L_100, L_102, L_104, NULL);
+		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_100 = L_99->___player_4;
+		NullCheck(L_100);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_101;
+		L_101 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_100, NULL);
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_102 = V_3;
+		NullCheck(L_102);
+		int32_t L_103 = L_102->___enemyHealth_16;
+		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_104 = ___1_levelData;
+		NullCheck(L_104);
+		bool L_105 = L_104->___IsEnemy_21;
+		NullCheck(L_98);
+		Enemy_Init_m2BC65084B0123709791700057AC96530615959D9(L_98, L_101, L_103, L_105, NULL);
 		// enemy._playerController = _gridViewReferences.playerController;
-		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_105 = V_7;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_106 = __this->____gridViewReferences_6;
+		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_106 = V_7;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_107 = __this->____gridViewReferences_6;
+		NullCheck(L_107);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_108 = L_107->___playerController_5;
 		NullCheck(L_106);
-		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_107 = L_106->___playerController_5;
-		NullCheck(L_105);
-		L_105->____playerController_13 = L_107;
-		Il2CppCodeGenWriteBarrier((void**)(&L_105->____playerController_13), (void*)L_107);
+		L_106->____playerController_13 = L_108;
+		Il2CppCodeGenWriteBarrier((void**)(&L_106->____playerController_13), (void*)L_108);
+		// _tile.Init(_gridViewReferences.enableWithOutRotation, grid[row, col], this, null,
+		//     _gridViewReferences.playerController);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_109 = V_2;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_110 = __this->____gridViewReferences_6;
+		NullCheck(L_110);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_111 = L_110->___enableWithOutRotation_11;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_112 = ___0_grid;
+		int32_t L_113 = V_0;
+		int32_t L_114 = V_1;
+		NullCheck(L_112);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_115;
+		L_115 = (L_112)->GetAt(L_113, L_114);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_116 = __this->____gridViewReferences_6;
+		NullCheck(L_116);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_117 = L_116->___playerController_5;
+		NullCheck(L_109);
+		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_109, L_111, L_115, __this, (RuntimeObject*)NULL, L_117, NULL);
 	}
 
-IL_022a:
+IL_025a:
 	{
 		// _tiles.Add($"{row}{col}", _tile);
-		Dictionary_2_t5611D662123858688BBF1F9BAA64CF60688247DA* L_108 = __this->____tiles_7;
-		int32_t L_109 = V_0;
-		int32_t L_110 = L_109;
-		RuntimeObject* L_111 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_110);
-		int32_t L_112 = V_1;
-		int32_t L_113 = L_112;
-		RuntimeObject* L_114 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_113);
-		String_t* L_115;
-		L_115 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1FB9018D8BFC0FACF068B1067EF9E96C35FED1FE, L_111, L_114, NULL);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_116 = V_2;
-		NullCheck(L_108);
-		Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC(L_108, L_115, L_116, Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC_RuntimeMethod_var);
+		Dictionary_2_t5611D662123858688BBF1F9BAA64CF60688247DA* L_118 = __this->____tiles_7;
+		int32_t L_119 = V_0;
+		int32_t L_120 = L_119;
+		RuntimeObject* L_121 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_120);
+		int32_t L_122 = V_1;
+		int32_t L_123 = L_122;
+		RuntimeObject* L_124 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_123);
+		String_t* L_125;
+		L_125 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1FB9018D8BFC0FACF068B1067EF9E96C35FED1FE, L_121, L_124, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_126 = V_2;
+		NullCheck(L_118);
+		Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC(L_118, L_125, L_126, Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC_RuntimeMethod_var);
 		// break;
-		goto IL_0809;
+		goto IL_0839;
 	}
 
-IL_0251:
+IL_0281:
 	{
 		// _tile.SetTransform(tilePosition, 180);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_117 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_118 = V_4;
-		NullCheck(L_117);
-		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_117, L_118, (180.0f), NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_127 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_128 = V_4;
+		NullCheck(L_127);
+		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_127, L_128, (180.0f), NULL);
 		// _tile.SetID(row, col, grid[row, col]);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_119 = V_2;
-		int32_t L_120 = V_0;
-		int32_t L_121 = V_1;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_122 = ___0_grid;
-		int32_t L_123 = V_0;
-		int32_t L_124 = V_1;
-		NullCheck(L_122);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_125;
-		L_125 = (L_122)->GetAt(L_123, L_124);
-		NullCheck(L_119);
-		TileBase_SetID_mCE0784E6B6EC5D4C5BFE03D922C308E242931914(L_119, L_120, L_121, L_125, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_129 = V_2;
+		int32_t L_130 = V_0;
+		int32_t L_131 = V_1;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_132 = ___0_grid;
+		int32_t L_133 = V_0;
+		int32_t L_134 = V_1;
+		NullCheck(L_132);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_135;
+		L_135 = (L_132)->GetAt(L_133, L_134);
+		NullCheck(L_129);
+		TileBase_SetID_mCE0784E6B6EC5D4C5BFE03D922C308E242931914(L_129, L_130, L_131, L_135, NULL);
 		// _tiles.Add($"{row}{col}", _tile);
-		Dictionary_2_t5611D662123858688BBF1F9BAA64CF60688247DA* L_126 = __this->____tiles_7;
-		int32_t L_127 = V_0;
-		int32_t L_128 = L_127;
-		RuntimeObject* L_129 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_128);
-		int32_t L_130 = V_1;
-		int32_t L_131 = L_130;
-		RuntimeObject* L_132 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_131);
-		String_t* L_133;
-		L_133 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1FB9018D8BFC0FACF068B1067EF9E96C35FED1FE, L_129, L_132, NULL);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_134 = V_2;
-		NullCheck(L_126);
-		Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC(L_126, L_133, L_134, Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC_RuntimeMethod_var);
-		// _tile.TileState = TileStates.Walkable;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_135 = V_2;
-		NullCheck(L_135);
-		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_135, 6, NULL);
-		// if (cellData.IsPlayer)
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_136 = V_3;
+		Dictionary_2_t5611D662123858688BBF1F9BAA64CF60688247DA* L_136 = __this->____tiles_7;
+		int32_t L_137 = V_0;
+		int32_t L_138 = L_137;
+		RuntimeObject* L_139 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_138);
+		int32_t L_140 = V_1;
+		int32_t L_141 = L_140;
+		RuntimeObject* L_142 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_141);
+		String_t* L_143;
+		L_143 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1FB9018D8BFC0FACF068B1067EF9E96C35FED1FE, L_139, L_142, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_144 = V_2;
 		NullCheck(L_136);
-		bool L_137 = L_136->___IsPlayer_12;
-		if (!L_137)
+		Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC(L_136, L_143, L_144, Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC_RuntimeMethod_var);
+		// _tile.TileState = TileStates.Walkable;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_145 = V_2;
+		NullCheck(L_145);
+		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_145, 6, NULL);
+		// if (cellData.IsPlayer)
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_146 = V_3;
+		NullCheck(L_146);
+		bool L_147 = L_146->___IsPlayer_12;
+		if (!L_147)
 		{
-			goto IL_0389;
+			goto IL_03b9;
 		}
 	}
 	{
 		// startingTile = tilesGrid[row, col];
-		TileU5BU2CU5D_t8934389734FAA30E15B8649AA9C3E227AFCDCBA9* L_138 = __this->___tilesGrid_14;
-		int32_t L_139 = V_0;
-		int32_t L_140 = V_1;
-		NullCheck(L_138);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_141;
-		L_141 = (L_138)->GetAt(L_139, L_140);
-		__this->___startingTile_12 = L_141;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___startingTile_12), (void*)L_141);
-		// startingCell = grid[row, col];
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_142 = ___0_grid;
-		int32_t L_143 = V_0;
-		int32_t L_144 = V_1;
-		NullCheck(L_142);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_145;
-		L_145 = (L_142)->GetAt(L_143, L_144);
-		__this->___startingCell_13 = L_145;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___startingCell_13), (void*)L_145);
-		// _gridViewReferences.playerController.Player.lastTile = tilesGrid[row, col];
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_146 = __this->____gridViewReferences_6;
-		NullCheck(L_146);
-		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_147 = L_146->___playerController_5;
-		NullCheck(L_147);
-		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_148 = L_147->___Player_6;
-		TileU5BU2CU5D_t8934389734FAA30E15B8649AA9C3E227AFCDCBA9* L_149 = __this->___tilesGrid_14;
-		int32_t L_150 = V_0;
-		int32_t L_151 = V_1;
-		NullCheck(L_149);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_152;
-		L_152 = (L_149)->GetAt(L_150, L_151);
+		TileU5BU2CU5D_t8934389734FAA30E15B8649AA9C3E227AFCDCBA9* L_148 = __this->___tilesGrid_14;
+		int32_t L_149 = V_0;
+		int32_t L_150 = V_1;
 		NullCheck(L_148);
-		((PlayerBaseClass_t756D2C09AA9A4F072E4B65B63AE694C68BF8B621*)L_148)->___lastTile_9 = L_152;
-		Il2CppCodeGenWriteBarrier((void**)(&((PlayerBaseClass_t756D2C09AA9A4F072E4B65B63AE694C68BF8B621*)L_148)->___lastTile_9), (void*)L_152);
-		// PlayerTile = _gridViewReferences.playerController.Player.lastTile;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_153 = __this->____gridViewReferences_6;
-		NullCheck(L_153);
-		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_154 = L_153->___playerController_5;
-		NullCheck(L_154);
-		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_155 = L_154->___Player_6;
-		NullCheck(L_155);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_156 = ((PlayerBaseClass_t756D2C09AA9A4F072E4B65B63AE694C68BF8B621*)L_155)->___lastTile_9;
-		GridView_set_PlayerTile_m227FD9B015BF3A5DA87A4F4A62E273784BE13CA6_inline(__this, L_156, NULL);
-		// _gridViewReferences.player.Init(new Vector3(tilePosition.x, 1, tilePosition.z), PlayerTile);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_157 = __this->____gridViewReferences_6;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_151;
+		L_151 = (L_148)->GetAt(L_149, L_150);
+		__this->___startingTile_12 = L_151;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___startingTile_12), (void*)L_151);
+		// startingCell = grid[row, col];
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_152 = ___0_grid;
+		int32_t L_153 = V_0;
+		int32_t L_154 = V_1;
+		NullCheck(L_152);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_155;
+		L_155 = (L_152)->GetAt(L_153, L_154);
+		__this->___startingCell_13 = L_155;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___startingCell_13), (void*)L_155);
+		// _gridViewReferences.playerController.Player.lastTile = tilesGrid[row, col];
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_156 = __this->____gridViewReferences_6;
+		NullCheck(L_156);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_157 = L_156->___playerController_5;
 		NullCheck(L_157);
-		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_158 = L_157->___player_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_159 = V_4;
-		float L_160 = L_159.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_161 = V_4;
-		float L_162 = L_161.___z_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_163;
-		memset((&L_163), 0, sizeof(L_163));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_163), L_160, (1.0f), L_162, /*hidden argument*/NULL);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_164;
-		L_164 = GridView_get_PlayerTile_mDE1ADB9DFAA68BFC028D13AA9EA78FDD1CC14109_inline(__this, NULL);
+		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_158 = L_157->___Player_6;
+		TileU5BU2CU5D_t8934389734FAA30E15B8649AA9C3E227AFCDCBA9* L_159 = __this->___tilesGrid_14;
+		int32_t L_160 = V_0;
+		int32_t L_161 = V_1;
+		NullCheck(L_159);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_162;
+		L_162 = (L_159)->GetAt(L_160, L_161);
 		NullCheck(L_158);
-		Player_Init_m19C59AD036AD6D613B3EF734ED8FF445D4FD4402(L_158, L_163, L_164, NULL);
+		((PlayerBaseClass_t756D2C09AA9A4F072E4B65B63AE694C68BF8B621*)L_158)->___lastTile_9 = L_162;
+		Il2CppCodeGenWriteBarrier((void**)(&((PlayerBaseClass_t756D2C09AA9A4F072E4B65B63AE694C68BF8B621*)L_158)->___lastTile_9), (void*)L_162);
+		// PlayerTile = _gridViewReferences.playerController.Player.lastTile;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_163 = __this->____gridViewReferences_6;
+		NullCheck(L_163);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_164 = L_163->___playerController_5;
+		NullCheck(L_164);
+		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_165 = L_164->___Player_6;
+		NullCheck(L_165);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_166 = ((PlayerBaseClass_t756D2C09AA9A4F072E4B65B63AE694C68BF8B621*)L_165)->___lastTile_9;
+		GridView_set_PlayerTile_m227FD9B015BF3A5DA87A4F4A62E273784BE13CA6_inline(__this, L_166, NULL);
+		// _gridViewReferences.player.Init(new Vector3(tilePosition.x, 1, tilePosition.z), PlayerTile);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_167 = __this->____gridViewReferences_6;
+		NullCheck(L_167);
+		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_168 = L_167->___player_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_169 = V_4;
+		float L_170 = L_169.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_171 = V_4;
+		float L_172 = L_171.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_173;
+		memset((&L_173), 0, sizeof(L_173));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_173), L_170, (1.0f), L_172, /*hidden argument*/NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_174;
+		L_174 = GridView_get_PlayerTile_mDE1ADB9DFAA68BFC028D13AA9EA78FDD1CC14109_inline(__this, NULL);
+		NullCheck(L_168);
+		Player_Init_m19C59AD036AD6D613B3EF734ED8FF445D4FD4402(L_168, L_173, L_174, NULL);
 		// _tile.Init(_gridViewReferences.enable, grid[row, col], this, _gridViewReferences.player,
 		//     _gridViewReferences.playerController);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_165 = V_2;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_166 = __this->____gridViewReferences_6;
-		NullCheck(L_166);
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_167 = L_166->___enable_10;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_168 = ___0_grid;
-		int32_t L_169 = V_0;
-		int32_t L_170 = V_1;
-		NullCheck(L_168);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_171;
-		L_171 = (L_168)->GetAt(L_169, L_170);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_172 = __this->____gridViewReferences_6;
-		NullCheck(L_172);
-		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_173 = L_172->___player_4;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_174 = __this->____gridViewReferences_6;
-		NullCheck(L_174);
-		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_175 = L_174->___playerController_5;
-		NullCheck(L_165);
-		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_165, L_167, L_171, __this, L_173, L_175, NULL);
-		// if (levelData.IsEnemy)
-		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_176 = ___1_levelData;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_175 = V_2;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_176 = __this->____gridViewReferences_6;
 		NullCheck(L_176);
-		bool L_177 = L_176->___IsEnemy_21;
-		if (!L_177)
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_177 = L_176->___enable_10;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_178 = ___0_grid;
+		int32_t L_179 = V_0;
+		int32_t L_180 = V_1;
+		NullCheck(L_178);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_181;
+		L_181 = (L_178)->GetAt(L_179, L_180);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_182 = __this->____gridViewReferences_6;
+		NullCheck(L_182);
+		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_183 = L_182->___player_4;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_184 = __this->____gridViewReferences_6;
+		NullCheck(L_184);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_185 = L_184->___playerController_5;
+		NullCheck(L_175);
+		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_175, L_177, L_181, __this, L_183, L_185, NULL);
+		// if (levelData.IsEnemy)
+		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_186 = ___1_levelData;
+		NullCheck(L_186);
+		bool L_187 = L_186->___IsEnemy_21;
+		if (!L_187)
 		{
-			goto IL_0809;
+			goto IL_0839;
 		}
 	}
 	{
 		// _gridViewReferences.player._counter.gameObject.SetActive(true);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_178 = __this->____gridViewReferences_6;
-		NullCheck(L_178);
-		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_179 = L_178->___player_4;
-		NullCheck(L_179);
-		CharacterLevel_t916C8795004045F9EB6A86DDEAC164107E41C99D* L_180 = L_179->____counter_16;
-		NullCheck(L_180);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_181;
-		L_181 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_180, NULL);
-		NullCheck(L_181);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_181, (bool)1, NULL);
-		goto IL_0809;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_188 = __this->____gridViewReferences_6;
+		NullCheck(L_188);
+		Player_t1A8D3E5A414A17A98D1ECB4605A25EF9E5391CE9* L_189 = L_188->___player_4;
+		NullCheck(L_189);
+		CharacterLevel_t916C8795004045F9EB6A86DDEAC164107E41C99D* L_190 = L_189->____counter_16;
+		NullCheck(L_190);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_191;
+		L_191 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_190, NULL);
+		NullCheck(L_191);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_191, (bool)1, NULL);
+		goto IL_0839;
 	}
 
-IL_0389:
+IL_03b9:
 	{
 		// _tile.Init(_gridViewReferences.enable, grid[row, col], this, null,
 		//     _gridViewReferences.playerController);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_182 = V_2;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_183 = __this->____gridViewReferences_6;
-		NullCheck(L_183);
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_184 = L_183->___enable_10;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_185 = ___0_grid;
-		int32_t L_186 = V_0;
-		int32_t L_187 = V_1;
-		NullCheck(L_185);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_188;
-		L_188 = (L_185)->GetAt(L_186, L_187);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_189 = __this->____gridViewReferences_6;
-		NullCheck(L_189);
-		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_190 = L_189->___playerController_5;
-		NullCheck(L_182);
-		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_182, L_184, L_188, __this, (RuntimeObject*)NULL, L_190, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_192 = V_2;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_193 = __this->____gridViewReferences_6;
+		NullCheck(L_193);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_194 = L_193->___enable_10;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_195 = ___0_grid;
+		int32_t L_196 = V_0;
+		int32_t L_197 = V_1;
+		NullCheck(L_195);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_198;
+		L_198 = (L_195)->GetAt(L_196, L_197);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_199 = __this->____gridViewReferences_6;
+		NullCheck(L_199);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_200 = L_199->___playerController_5;
+		NullCheck(L_192);
+		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_192, L_194, L_198, __this, (RuntimeObject*)NULL, L_200, NULL);
 		// break;
-		goto IL_0809;
+		goto IL_0839;
 	}
 
-IL_03b4:
+IL_03e4:
 	{
 		// if (cellData.walkableGate)
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_191 = V_3;
-		NullCheck(L_191);
-		bool L_192 = L_191->___walkableGate_15;
-		if (!L_192)
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_201 = V_3;
+		NullCheck(L_201);
+		bool L_202 = L_201->___walkableGate_15;
+		if (!L_202)
 		{
-			goto IL_03f2;
+			goto IL_0422;
 		}
 	}
 	{
 		// _tile.isGate = true;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_193 = V_2;
-		NullCheck(L_193);
-		L_193->___isGate_37 = (bool)1;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_203 = V_2;
+		NullCheck(L_203);
+		L_203->___isGate_37 = (bool)1;
 		// _tile.TileState = TileStates.Walkable;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_194 = V_2;
-		NullCheck(L_194);
-		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_194, 6, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_204 = V_2;
+		NullCheck(L_204);
+		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_204, 6, NULL);
 		// _tile.Init(_gridViewReferences.enableWithOutRotation, grid[row, col], this, null,
 		//     _gridViewReferences.playerController);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_195 = V_2;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_196 = __this->____gridViewReferences_6;
-		NullCheck(L_196);
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_197 = L_196->___enableWithOutRotation_11;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_198 = ___0_grid;
-		int32_t L_199 = V_0;
-		int32_t L_200 = V_1;
-		NullCheck(L_198);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_201;
-		L_201 = (L_198)->GetAt(L_199, L_200);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_202 = __this->____gridViewReferences_6;
-		NullCheck(L_202);
-		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_203 = L_202->___playerController_5;
-		NullCheck(L_195);
-		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_195, L_197, L_201, __this, (RuntimeObject*)NULL, L_203, NULL);
-		goto IL_0420;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_205 = V_2;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_206 = __this->____gridViewReferences_6;
+		NullCheck(L_206);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_207 = L_206->___enableWithOutRotation_11;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_208 = ___0_grid;
+		int32_t L_209 = V_0;
+		int32_t L_210 = V_1;
+		NullCheck(L_208);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_211;
+		L_211 = (L_208)->GetAt(L_209, L_210);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_212 = __this->____gridViewReferences_6;
+		NullCheck(L_212);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_213 = L_212->___playerController_5;
+		NullCheck(L_205);
+		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_205, L_207, L_211, __this, (RuntimeObject*)NULL, L_213, NULL);
+		goto IL_0450;
 	}
 
-IL_03f2:
+IL_0422:
 	{
 		// _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
 		//     _gridViewReferences.playerController);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_204 = V_2;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_205 = __this->____gridViewReferences_6;
-		NullCheck(L_205);
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_206 = L_205->___disable_9;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_207 = ___0_grid;
-		int32_t L_208 = V_0;
-		int32_t L_209 = V_1;
-		NullCheck(L_207);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_210;
-		L_210 = (L_207)->GetAt(L_208, L_209);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_211 = __this->____gridViewReferences_6;
-		NullCheck(L_211);
-		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_212 = L_211->___playerController_5;
-		NullCheck(L_204);
-		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_204, L_206, L_210, __this, (RuntimeObject*)NULL, L_212, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_214 = V_2;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_215 = __this->____gridViewReferences_6;
+		NullCheck(L_215);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_216 = L_215->___disable_9;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_217 = ___0_grid;
+		int32_t L_218 = V_0;
+		int32_t L_219 = V_1;
+		NullCheck(L_217);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_220;
+		L_220 = (L_217)->GetAt(L_218, L_219);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_221 = __this->____gridViewReferences_6;
+		NullCheck(L_221);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_222 = L_221->___playerController_5;
+		NullCheck(L_214);
+		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_214, L_216, L_220, __this, (RuntimeObject*)NULL, L_222, NULL);
 		// _tile.TileState = TileStates.Gate;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_213 = V_2;
-		NullCheck(L_213);
-		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_213, ((int32_t)11), NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_223 = V_2;
+		NullCheck(L_223);
+		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_223, ((int32_t)11), NULL);
 	}
 
-IL_0420:
+IL_0450:
 	{
 		// _tile.SetTransform(tilePosition, 0);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_214 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_215 = V_4;
-		NullCheck(L_214);
-		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_214, L_215, (0.0f), NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_224 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_225 = V_4;
+		NullCheck(L_224);
+		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_224, L_225, (0.0f), NULL);
 		// _tile.SetID(row, col, grid[row, col]);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_216 = V_2;
-		int32_t L_217 = V_0;
-		int32_t L_218 = V_1;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_219 = ___0_grid;
-		int32_t L_220 = V_0;
-		int32_t L_221 = V_1;
-		NullCheck(L_219);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_222;
-		L_222 = (L_219)->GetAt(L_220, L_221);
-		NullCheck(L_216);
-		TileBase_SetID_mCE0784E6B6EC5D4C5BFE03D922C308E242931914(L_216, L_217, L_218, L_222, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_226 = V_2;
+		int32_t L_227 = V_0;
+		int32_t L_228 = V_1;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_229 = ___0_grid;
+		int32_t L_230 = V_0;
+		int32_t L_231 = V_1;
+		NullCheck(L_229);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_232;
+		L_232 = (L_229)->GetAt(L_230, L_231);
+		NullCheck(L_226);
+		TileBase_SetID_mCE0784E6B6EC5D4C5BFE03D922C308E242931914(L_226, L_227, L_228, L_232, NULL);
 		// _tiles.Add($"{row}{col}", _tile);
-		Dictionary_2_t5611D662123858688BBF1F9BAA64CF60688247DA* L_223 = __this->____tiles_7;
-		int32_t L_224 = V_0;
-		int32_t L_225 = L_224;
-		RuntimeObject* L_226 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_225);
-		int32_t L_227 = V_1;
-		int32_t L_228 = L_227;
-		RuntimeObject* L_229 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_228);
-		String_t* L_230;
-		L_230 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1FB9018D8BFC0FACF068B1067EF9E96C35FED1FE, L_226, L_229, NULL);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_231 = V_2;
-		NullCheck(L_223);
-		Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC(L_223, L_230, L_231, Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC_RuntimeMethod_var);
-		// _gridViewReferences.Gate.position = new Vector3(tilePosition.x, .6f, tilePosition.z);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_232 = __this->____gridViewReferences_6;
-		NullCheck(L_232);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_233 = L_232->___Gate_8;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_234 = V_4;
-		float L_235 = L_234.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_236 = V_4;
-		float L_237 = L_236.___z_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_238;
-		memset((&L_238), 0, sizeof(L_238));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_238), L_235, (0.600000024f), L_237, /*hidden argument*/NULL);
-		NullCheck(L_233);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_233, L_238, NULL);
-		// _gridViewReferences.Gate.SetParent(_tile.transform);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_239 = __this->____gridViewReferences_6;
-		NullCheck(L_239);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_240 = L_239->___Gate_8;
+		Dictionary_2_t5611D662123858688BBF1F9BAA64CF60688247DA* L_233 = __this->____tiles_7;
+		int32_t L_234 = V_0;
+		int32_t L_235 = L_234;
+		RuntimeObject* L_236 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_235);
+		int32_t L_237 = V_1;
+		int32_t L_238 = L_237;
+		RuntimeObject* L_239 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_238);
+		String_t* L_240;
+		L_240 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1FB9018D8BFC0FACF068B1067EF9E96C35FED1FE, L_236, L_239, NULL);
 		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_241 = V_2;
-		NullCheck(L_241);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_242;
-		L_242 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_241, NULL);
-		NullCheck(L_240);
-		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_240, L_242, NULL);
-		// _tile.requiredCollectableItems = cellData.typeOfCollectableItems;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_243 = V_2;
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_244 = V_3;
-		NullCheck(L_244);
-		int32_t L_245 = L_244->___typeOfCollectableItems_8;
+		NullCheck(L_233);
+		Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC(L_233, L_240, L_241, Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC_RuntimeMethod_var);
+		// _gridViewReferences.Gate.position = new Vector3(tilePosition.x, .6f, tilePosition.z);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_242 = __this->____gridViewReferences_6;
+		NullCheck(L_242);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_243 = L_242->___Gate_8;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_244 = V_4;
+		float L_245 = L_244.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_246 = V_4;
+		float L_247 = L_246.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_248;
+		memset((&L_248), 0, sizeof(L_248));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_248), L_245, (0.600000024f), L_247, /*hidden argument*/NULL);
 		NullCheck(L_243);
-		((TileBase_t3577419B4F5A05707485902EE179F4D7C1B80DF1*)L_243)->___requiredCollectableItems_10 = L_245;
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_243, L_248, NULL);
+		// _gridViewReferences.Gate.SetParent(_tile.transform);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_249 = __this->____gridViewReferences_6;
+		NullCheck(L_249);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_250 = L_249->___Gate_8;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_251 = V_2;
+		NullCheck(L_251);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_252;
+		L_252 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_251, NULL);
+		NullCheck(L_250);
+		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_250, L_252, NULL);
+		// _tile.requiredCollectableItems = cellData.typeOfCollectableItems;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_253 = V_2;
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_254 = V_3;
+		NullCheck(L_254);
+		int32_t L_255 = L_254->___typeOfCollectableItems_8;
+		NullCheck(L_253);
+		((TileBase_t3577419B4F5A05707485902EE179F4D7C1B80DF1*)L_253)->___requiredCollectableItems_10 = L_255;
 		// Goals.SetGate(_tile,cellData.IsCage);
-		RuntimeObject* L_246 = __this->___Goals_10;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_247 = V_2;
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_248 = V_3;
-		NullCheck(L_248);
-		bool L_249 = L_248->___IsCage_13;
-		NullCheck(L_246);
-		InterfaceActionInvoker2< Tile_t24D8CF53E1263E118B38443A0D63509EA4808841*, bool >::Invoke(5 /* System.Void Sablo.Gameplay.Movement.IPlayerCollectible::SetGate(Features.GridGeneration.Scripts.Tile,System.Boolean) */, IPlayerCollectible_t713DA331F25BC577650F782607073367BB524959_il2cpp_TypeInfo_var, L_246, L_247, L_249);
+		RuntimeObject* L_256 = __this->___Goals_10;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_257 = V_2;
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_258 = V_3;
+		NullCheck(L_258);
+		bool L_259 = L_258->___IsCage_13;
+		NullCheck(L_256);
+		InterfaceActionInvoker2< Tile_t24D8CF53E1263E118B38443A0D63509EA4808841*, bool >::Invoke(5 /* System.Void Sablo.Gameplay.Movement.IPlayerCollectible::SetGate(Features.GridGeneration.Scripts.Tile,System.Boolean) */, IPlayerCollectible_t713DA331F25BC577650F782607073367BB524959_il2cpp_TypeInfo_var, L_256, L_257, L_259);
 		// break;
-		goto IL_0809;
+		goto IL_0839;
 	}
 
-IL_04c0:
+IL_04f0:
 	{
 		// _tile.SetID(row, col, grid[row, col]);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_250 = V_2;
-		int32_t L_251 = V_0;
-		int32_t L_252 = V_1;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_253 = ___0_grid;
-		int32_t L_254 = V_0;
-		int32_t L_255 = V_1;
-		NullCheck(L_253);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_256;
-		L_256 = (L_253)->GetAt(L_254, L_255);
-		NullCheck(L_250);
-		TileBase_SetID_mCE0784E6B6EC5D4C5BFE03D922C308E242931914(L_250, L_251, L_252, L_256, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_260 = V_2;
+		int32_t L_261 = V_0;
+		int32_t L_262 = V_1;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_263 = ___0_grid;
+		int32_t L_264 = V_0;
+		int32_t L_265 = V_1;
+		NullCheck(L_263);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_266;
+		L_266 = (L_263)->GetAt(L_264, L_265);
+		NullCheck(L_260);
+		TileBase_SetID_mCE0784E6B6EC5D4C5BFE03D922C308E242931914(L_260, L_261, L_262, L_266, NULL);
 		// _tiles.Add($"{row}{col}", _tile);
-		Dictionary_2_t5611D662123858688BBF1F9BAA64CF60688247DA* L_257 = __this->____tiles_7;
-		int32_t L_258 = V_0;
-		int32_t L_259 = L_258;
-		RuntimeObject* L_260 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_259);
-		int32_t L_261 = V_1;
-		int32_t L_262 = L_261;
-		RuntimeObject* L_263 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_262);
-		String_t* L_264;
-		L_264 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1FB9018D8BFC0FACF068B1067EF9E96C35FED1FE, L_260, L_263, NULL);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_265 = V_2;
-		NullCheck(L_257);
-		Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC(L_257, L_264, L_265, Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC_RuntimeMethod_var);
+		Dictionary_2_t5611D662123858688BBF1F9BAA64CF60688247DA* L_267 = __this->____tiles_7;
+		int32_t L_268 = V_0;
+		int32_t L_269 = L_268;
+		RuntimeObject* L_270 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_269);
+		int32_t L_271 = V_1;
+		int32_t L_272 = L_271;
+		RuntimeObject* L_273 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_272);
+		String_t* L_274;
+		L_274 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1FB9018D8BFC0FACF068B1067EF9E96C35FED1FE, L_270, L_273, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_275 = V_2;
+		NullCheck(L_267);
+		Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC(L_267, L_274, L_275, Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC_RuntimeMethod_var);
 		// if (cellData.typeOfCollectableItems == CollectableItems.Key)
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_266 = V_3;
-		NullCheck(L_266);
-		int32_t L_267 = L_266->___typeOfCollectableItems_8;
-		if ((!(((uint32_t)L_267) == ((uint32_t)1))))
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_276 = V_3;
+		NullCheck(L_276);
+		int32_t L_277 = L_276->___typeOfCollectableItems_8;
+		if ((!(((uint32_t)L_277) == ((uint32_t)1))))
 		{
-			goto IL_05ee;
+			goto IL_061e;
 		}
 	}
 	{
 		// _tile.SetTransform(tilePosition, 180);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_268 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_269 = V_4;
-		NullCheck(L_268);
-		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_268, L_269, (180.0f), NULL);
-		// _tile.TileState = TileStates.Walkable;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_270 = V_2;
-		NullCheck(L_270);
-		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_270, 6, NULL);
-		// _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_271 = V_2;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_272 = __this->____gridViewReferences_6;
-		NullCheck(L_272);
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_273 = L_272->___enable_10;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_274 = ___0_grid;
-		int32_t L_275 = V_0;
-		int32_t L_276 = V_1;
-		NullCheck(L_274);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_277;
-		L_277 = (L_274)->GetAt(L_275, L_276);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_278 = __this->____gridViewReferences_6;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_278 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_279 = V_4;
 		NullCheck(L_278);
-		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_279 = L_278->___playerController_5;
-		NullCheck(L_271);
-		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_271, L_273, L_277, __this, (RuntimeObject*)NULL, L_279, NULL);
+		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_278, L_279, (180.0f), NULL);
+		// _tile.TileState = TileStates.Walkable;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_280 = V_2;
+		NullCheck(L_280);
+		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_280, 6, NULL);
+		// _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_281 = V_2;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_282 = __this->____gridViewReferences_6;
+		NullCheck(L_282);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_283 = L_282->___enable_10;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_284 = ___0_grid;
+		int32_t L_285 = V_0;
+		int32_t L_286 = V_1;
+		NullCheck(L_284);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_287;
+		L_287 = (L_284)->GetAt(L_285, L_286);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_288 = __this->____gridViewReferences_6;
+		NullCheck(L_288);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_289 = L_288->___playerController_5;
+		NullCheck(L_281);
+		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_281, L_283, L_287, __this, (RuntimeObject*)NULL, L_289, NULL);
 		// tilePosition.y = .6f;
 		(&V_4)->___y_3 = (0.600000024f);
 		// if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable))
-		Dictionary_2_t851435252D9BAC039813CE7CB6671F5ED56CD897* L_280 = __this->____collectables_9;
-		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_281 = ___1_levelData;
-		NullCheck(L_281);
-		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_282 = L_281->___Matrix_22;
-		int32_t L_283 = V_0;
-		int32_t L_284 = V_1;
-		NullCheck(L_282);
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_285;
-		L_285 = (L_282)->GetAt(L_283, L_284);
-		NullCheck(L_285);
-		int32_t* L_286 = (&L_285->___typeOfCollectableItems_8);
-		Il2CppFakeBox<int32_t> L_287(CollectableItems_t7C7B12A211EA42707556765267999334A06A2E70_il2cpp_TypeInfo_var, L_286);
-		String_t* L_288;
-		L_288 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_287), NULL);
-		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_289 = ___1_levelData;
-		NullCheck(L_289);
-		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_290 = L_289->___Matrix_22;
-		int32_t L_291 = V_0;
-		int32_t L_292 = V_1;
+		Dictionary_2_t851435252D9BAC039813CE7CB6671F5ED56CD897* L_290 = __this->____collectables_9;
+		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_291 = ___1_levelData;
+		NullCheck(L_291);
+		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_292 = L_291->___Matrix_22;
+		int32_t L_293 = V_0;
+		int32_t L_294 = V_1;
+		NullCheck(L_292);
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_295;
+		L_295 = (L_292)->GetAt(L_293, L_294);
+		NullCheck(L_295);
+		int32_t* L_296 = (&L_295->___typeOfCollectableItems_8);
+		Il2CppFakeBox<int32_t> L_297(CollectableItems_t7C7B12A211EA42707556765267999334A06A2E70_il2cpp_TypeInfo_var, L_296);
+		String_t* L_298;
+		L_298 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_297), NULL);
+		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_299 = ___1_levelData;
+		NullCheck(L_299);
+		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_300 = L_299->___Matrix_22;
+		int32_t L_301 = V_0;
+		int32_t L_302 = V_1;
+		NullCheck(L_300);
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_303;
+		L_303 = (L_300)->GetAt(L_301, L_302);
+		NullCheck(L_303);
+		int32_t* L_304 = (&L_303->___typeOfBooster_9);
+		Il2CppFakeBox<int32_t> L_305(BoosterType_t7EEFE9AF3A586ED70234A3276C611B8F78A05D76_il2cpp_TypeInfo_var, L_304);
+		String_t* L_306;
+		L_306 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_305), NULL);
+		String_t* L_307;
+		L_307 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_298, L_306, NULL);
 		NullCheck(L_290);
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_293;
-		L_293 = (L_290)->GetAt(L_291, L_292);
-		NullCheck(L_293);
-		int32_t* L_294 = (&L_293->___typeOfBooster_9);
-		Il2CppFakeBox<int32_t> L_295(BoosterType_t7EEFE9AF3A586ED70234A3276C611B8F78A05D76_il2cpp_TypeInfo_var, L_294);
-		String_t* L_296;
-		L_296 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_295), NULL);
-		String_t* L_297;
-		L_297 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_288, L_296, NULL);
-		NullCheck(L_280);
-		bool L_298;
-		L_298 = Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F(L_280, L_297, (&V_8), Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F_RuntimeMethod_var);
-		if (!L_298)
+		bool L_308;
+		L_308 = Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F(L_290, L_307, (&V_8), Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F_RuntimeMethod_var);
+		if (!L_308)
 		{
-			goto IL_05d6;
+			goto IL_0606;
 		}
 	}
 	{
 		// var collectablePrefab = Instantiate(collectable);
-		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_299 = V_8;
+		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_309 = V_8;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_300;
-		L_300 = Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE(L_299, Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE_RuntimeMethod_var);
-		V_9 = L_300;
+		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_310;
+		L_310 = Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE(L_309, Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE_RuntimeMethod_var);
+		V_9 = L_310;
 		// print($"id {cellData.linkedID} ,case {cellData.notLink}");
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_301 = V_3;
-		NullCheck(L_301);
-		String_t* L_302 = L_301->___linkedID_11;
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_303 = V_3;
-		NullCheck(L_303);
-		bool L_304 = L_303->___notLink_14;
-		bool L_305 = L_304;
-		RuntimeObject* L_306 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_305);
-		String_t* L_307;
-		L_307 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteralEC1959CE258A2D1733543466BAAE4DF970CA5028, L_302, L_306, NULL);
-		MonoBehaviour_print_m9E6FF71C673B651F35DD418C293CFC50C46803B6(L_307, NULL);
-		// collectablePrefab.Init(cellData.linkedID,cellData.notLink);
-		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_308 = V_9;
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_309 = V_3;
-		NullCheck(L_309);
-		String_t* L_310 = L_309->___linkedID_11;
 		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_311 = V_3;
 		NullCheck(L_311);
-		bool L_312 = L_311->___notLink_14;
-		NullCheck(L_308);
-		Collectable_Init_mD73221EFE3D672E6381091657E2149D65F2D9F85(L_308, L_310, L_312, NULL);
-		// _tile.SetCollectable(collectablePrefab);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_313 = V_2;
-		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_314 = V_9;
+		String_t* L_312 = L_311->___linkedID_11;
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_313 = V_3;
 		NullCheck(L_313);
-		Tile_SetCollectable_m1C2D4D335EB1CEAEC68BDF7BEC128E81776AFB75(L_313, L_314, NULL);
+		bool L_314 = L_313->___notLink_14;
+		bool L_315 = L_314;
+		RuntimeObject* L_316 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_315);
+		String_t* L_317;
+		L_317 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteralEC1959CE258A2D1733543466BAAE4DF970CA5028, L_312, L_316, NULL);
+		MonoBehaviour_print_m9E6FF71C673B651F35DD418C293CFC50C46803B6(L_317, NULL);
+		// collectablePrefab.Init(cellData.linkedID,cellData.notLink);
+		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_318 = V_9;
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_319 = V_3;
+		NullCheck(L_319);
+		String_t* L_320 = L_319->___linkedID_11;
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_321 = V_3;
+		NullCheck(L_321);
+		bool L_322 = L_321->___notLink_14;
+		NullCheck(L_318);
+		Collectable_Init_mD73221EFE3D672E6381091657E2149D65F2D9F85(L_318, L_320, L_322, NULL);
+		// _tile.SetCollectable(collectablePrefab);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_323 = V_2;
+		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_324 = V_9;
+		NullCheck(L_323);
+		Tile_SetCollectable_m1C2D4D335EB1CEAEC68BDF7BEC128E81776AFB75(L_323, L_324, NULL);
 	}
 
-IL_05d6:
+IL_0606:
 	{
 		// Goals.AddOrUpdateGoals(CollectableItems.Key,cellData.typeOfBooster,1);
-		RuntimeObject* L_315 = __this->___Goals_10;
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_316 = V_3;
-		NullCheck(L_316);
-		int32_t L_317 = L_316->___typeOfBooster_9;
-		NullCheck(L_315);
-		InterfaceActionInvoker3< int32_t, int32_t, int32_t >::Invoke(1 /* System.Void Sablo.Gameplay.Movement.IPlayerCollectible::AddOrUpdateGoals(CollectableItems,BoosterType,System.Int32) */, IPlayerCollectible_t713DA331F25BC577650F782607073367BB524959_il2cpp_TypeInfo_var, L_315, 1, L_317, 1);
-		goto IL_0809;
+		RuntimeObject* L_325 = __this->___Goals_10;
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_326 = V_3;
+		NullCheck(L_326);
+		int32_t L_327 = L_326->___typeOfBooster_9;
+		NullCheck(L_325);
+		InterfaceActionInvoker3< int32_t, int32_t, int32_t >::Invoke(1 /* System.Void Sablo.Gameplay.Movement.IPlayerCollectible::AddOrUpdateGoals(CollectableItems,BoosterType,System.Int32) */, IPlayerCollectible_t713DA331F25BC577650F782607073367BB524959_il2cpp_TypeInfo_var, L_325, 1, L_327, 1);
+		goto IL_0839;
 	}
 
-IL_05ee:
+IL_061e:
 	{
 		// else if (cellData.typeOfCollectableItems == CollectableItems.ChestBox)
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_318 = V_3;
-		NullCheck(L_318);
-		int32_t L_319 = L_318->___typeOfCollectableItems_8;
-		if ((!(((uint32_t)L_319) == ((uint32_t)5))))
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_328 = V_3;
+		NullCheck(L_328);
+		int32_t L_329 = L_328->___typeOfCollectableItems_8;
+		if ((!(((uint32_t)L_329) == ((uint32_t)5))))
 		{
-			goto IL_06af;
+			goto IL_06df;
 		}
 	}
 	{
 		// _tile.SetTransform(tilePosition, 0);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_320 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_321 = V_4;
-		NullCheck(L_320);
-		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_320, L_321, (0.0f), NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_330 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_331 = V_4;
+		NullCheck(L_330);
+		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_330, L_331, (0.0f), NULL);
 		// _tile.TileState = TileStates.ChestBox;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_322 = V_2;
-		NullCheck(L_322);
-		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_322, ((int32_t)13), NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_332 = V_2;
+		NullCheck(L_332);
+		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_332, ((int32_t)13), NULL);
 		// Goals.AddOrUpdateGoals(CollectableItems.ChestBox,cellData.typeOfBooster,1);
-		RuntimeObject* L_323 = __this->___Goals_10;
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_324 = V_3;
-		NullCheck(L_324);
-		int32_t L_325 = L_324->___typeOfBooster_9;
-		NullCheck(L_323);
-		InterfaceActionInvoker3< int32_t, int32_t, int32_t >::Invoke(1 /* System.Void Sablo.Gameplay.Movement.IPlayerCollectible::AddOrUpdateGoals(CollectableItems,BoosterType,System.Int32) */, IPlayerCollectible_t713DA331F25BC577650F782607073367BB524959_il2cpp_TypeInfo_var, L_323, 5, L_325, 1);
-		// _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_326 = V_2;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_327 = __this->____gridViewReferences_6;
-		NullCheck(L_327);
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_328 = L_327->___disable_9;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_329 = ___0_grid;
-		int32_t L_330 = V_0;
-		int32_t L_331 = V_1;
-		NullCheck(L_329);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_332;
-		L_332 = (L_329)->GetAt(L_330, L_331);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_333 = __this->____gridViewReferences_6;
+		RuntimeObject* L_333 = __this->___Goals_10;
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_334 = V_3;
+		NullCheck(L_334);
+		int32_t L_335 = L_334->___typeOfBooster_9;
 		NullCheck(L_333);
-		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_334 = L_333->___playerController_5;
-		NullCheck(L_326);
-		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_326, L_328, L_332, __this, (RuntimeObject*)NULL, L_334, NULL);
-		// if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable) )
-		Dictionary_2_t851435252D9BAC039813CE7CB6671F5ED56CD897* L_335 = __this->____collectables_9;
-		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_336 = ___1_levelData;
-		NullCheck(L_336);
-		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_337 = L_336->___Matrix_22;
-		int32_t L_338 = V_0;
-		int32_t L_339 = V_1;
+		InterfaceActionInvoker3< int32_t, int32_t, int32_t >::Invoke(1 /* System.Void Sablo.Gameplay.Movement.IPlayerCollectible::AddOrUpdateGoals(CollectableItems,BoosterType,System.Int32) */, IPlayerCollectible_t713DA331F25BC577650F782607073367BB524959_il2cpp_TypeInfo_var, L_333, 5, L_335, 1);
+		// _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_336 = V_2;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_337 = __this->____gridViewReferences_6;
 		NullCheck(L_337);
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_340;
-		L_340 = (L_337)->GetAt(L_338, L_339);
-		NullCheck(L_340);
-		int32_t* L_341 = (&L_340->___typeOfCollectableItems_8);
-		Il2CppFakeBox<int32_t> L_342(CollectableItems_t7C7B12A211EA42707556765267999334A06A2E70_il2cpp_TypeInfo_var, L_341);
-		String_t* L_343;
-		L_343 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_342), NULL);
-		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_344 = ___1_levelData;
-		NullCheck(L_344);
-		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_345 = L_344->___Matrix_22;
-		int32_t L_346 = V_0;
-		int32_t L_347 = V_1;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_338 = L_337->___disable_9;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_339 = ___0_grid;
+		int32_t L_340 = V_0;
+		int32_t L_341 = V_1;
+		NullCheck(L_339);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_342;
+		L_342 = (L_339)->GetAt(L_340, L_341);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_343 = __this->____gridViewReferences_6;
+		NullCheck(L_343);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_344 = L_343->___playerController_5;
+		NullCheck(L_336);
+		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_336, L_338, L_342, __this, (RuntimeObject*)NULL, L_344, NULL);
+		// if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable) )
+		Dictionary_2_t851435252D9BAC039813CE7CB6671F5ED56CD897* L_345 = __this->____collectables_9;
+		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_346 = ___1_levelData;
+		NullCheck(L_346);
+		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_347 = L_346->___Matrix_22;
+		int32_t L_348 = V_0;
+		int32_t L_349 = V_1;
+		NullCheck(L_347);
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_350;
+		L_350 = (L_347)->GetAt(L_348, L_349);
+		NullCheck(L_350);
+		int32_t* L_351 = (&L_350->___typeOfCollectableItems_8);
+		Il2CppFakeBox<int32_t> L_352(CollectableItems_t7C7B12A211EA42707556765267999334A06A2E70_il2cpp_TypeInfo_var, L_351);
+		String_t* L_353;
+		L_353 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_352), NULL);
+		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_354 = ___1_levelData;
+		NullCheck(L_354);
+		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_355 = L_354->___Matrix_22;
+		int32_t L_356 = V_0;
+		int32_t L_357 = V_1;
+		NullCheck(L_355);
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_358;
+		L_358 = (L_355)->GetAt(L_356, L_357);
+		NullCheck(L_358);
+		int32_t* L_359 = (&L_358->___typeOfBooster_9);
+		Il2CppFakeBox<int32_t> L_360(BoosterType_t7EEFE9AF3A586ED70234A3276C611B8F78A05D76_il2cpp_TypeInfo_var, L_359);
+		String_t* L_361;
+		L_361 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_360), NULL);
+		String_t* L_362;
+		L_362 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_353, L_361, NULL);
 		NullCheck(L_345);
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_348;
-		L_348 = (L_345)->GetAt(L_346, L_347);
-		NullCheck(L_348);
-		int32_t* L_349 = (&L_348->___typeOfBooster_9);
-		Il2CppFakeBox<int32_t> L_350(BoosterType_t7EEFE9AF3A586ED70234A3276C611B8F78A05D76_il2cpp_TypeInfo_var, L_349);
-		String_t* L_351;
-		L_351 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_350), NULL);
-		String_t* L_352;
-		L_352 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_343, L_351, NULL);
-		NullCheck(L_335);
-		bool L_353;
-		L_353 = Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F(L_335, L_352, (&V_10), Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F_RuntimeMethod_var);
-		if (!L_353)
+		bool L_363;
+		L_363 = Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F(L_345, L_362, (&V_10), Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F_RuntimeMethod_var);
+		if (!L_363)
 		{
-			goto IL_0809;
+			goto IL_0839;
 		}
 	}
 	{
 		// var collectablePrefab = Instantiate(collectable);
-		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_354 = V_10;
+		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_364 = V_10;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_355;
-		L_355 = Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE(L_354, Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE_RuntimeMethod_var);
-		V_11 = L_355;
+		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_365;
+		L_365 = Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE(L_364, Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE_RuntimeMethod_var);
+		V_11 = L_365;
 		// _tile.SetCollectable(collectablePrefab);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_356 = V_2;
-		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_357 = V_11;
-		NullCheck(L_356);
-		Tile_SetCollectable_m1C2D4D335EB1CEAEC68BDF7BEC128E81776AFB75(L_356, L_357, NULL);
-		goto IL_0809;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_366 = V_2;
+		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_367 = V_11;
+		NullCheck(L_366);
+		Tile_SetCollectable_m1C2D4D335EB1CEAEC68BDF7BEC128E81776AFB75(L_366, L_367, NULL);
+		goto IL_0839;
 	}
 
-IL_06af:
+IL_06df:
 	{
 		// else if (cellData.typeOfCollectableItems == CollectableItems.Gate)
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_358 = V_3;
-		NullCheck(L_358);
-		int32_t L_359 = L_358->___typeOfCollectableItems_8;
-		if ((!(((uint32_t)L_359) == ((uint32_t)6))))
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_368 = V_3;
+		NullCheck(L_368);
+		int32_t L_369 = L_368->___typeOfCollectableItems_8;
+		if ((!(((uint32_t)L_369) == ((uint32_t)6))))
 		{
-			goto IL_0809;
+			goto IL_0839;
 		}
 	}
 	{
 		// _tile.SetTransform(tilePosition, 0);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_360 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_361 = V_4;
-		NullCheck(L_360);
-		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_360, L_361, (0.0f), NULL);
-		// _tile.TileState = TileStates.ChestBox;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_362 = V_2;
-		NullCheck(L_362);
-		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_362, ((int32_t)13), NULL);
-		// _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_363 = V_2;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_364 = __this->____gridViewReferences_6;
-		NullCheck(L_364);
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_365 = L_364->___disable_9;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_366 = ___0_grid;
-		int32_t L_367 = V_0;
-		int32_t L_368 = V_1;
-		NullCheck(L_366);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_369;
-		L_369 = (L_366)->GetAt(L_367, L_368);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_370 = __this->____gridViewReferences_6;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_370 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_371 = V_4;
 		NullCheck(L_370);
-		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_371 = L_370->___playerController_5;
-		NullCheck(L_363);
-		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_363, L_365, L_369, __this, (RuntimeObject*)NULL, L_371, NULL);
-		// if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable) )
-		Dictionary_2_t851435252D9BAC039813CE7CB6671F5ED56CD897* L_372 = __this->____collectables_9;
-		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_373 = ___1_levelData;
-		NullCheck(L_373);
-		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_374 = L_373->___Matrix_22;
-		int32_t L_375 = V_0;
-		int32_t L_376 = V_1;
-		NullCheck(L_374);
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_377;
-		L_377 = (L_374)->GetAt(L_375, L_376);
-		NullCheck(L_377);
-		int32_t* L_378 = (&L_377->___typeOfCollectableItems_8);
-		Il2CppFakeBox<int32_t> L_379(CollectableItems_t7C7B12A211EA42707556765267999334A06A2E70_il2cpp_TypeInfo_var, L_378);
-		String_t* L_380;
-		L_380 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_379), NULL);
-		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_381 = ___1_levelData;
-		NullCheck(L_381);
-		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_382 = L_381->___Matrix_22;
-		int32_t L_383 = V_0;
-		int32_t L_384 = V_1;
-		NullCheck(L_382);
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_385;
-		L_385 = (L_382)->GetAt(L_383, L_384);
-		NullCheck(L_385);
-		int32_t* L_386 = (&L_385->___typeOfBooster_9);
-		Il2CppFakeBox<int32_t> L_387(BoosterType_t7EEFE9AF3A586ED70234A3276C611B8F78A05D76_il2cpp_TypeInfo_var, L_386);
-		String_t* L_388;
-		L_388 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_387), NULL);
-		String_t* L_389;
-		L_389 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_380, L_388, NULL);
+		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_370, L_371, (0.0f), NULL);
+		// _tile.TileState = TileStates.ChestBox;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_372 = V_2;
 		NullCheck(L_372);
-		bool L_390;
-		L_390 = Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F(L_372, L_389, (&V_12), Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F_RuntimeMethod_var);
-		if (!L_390)
+		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_372, ((int32_t)13), NULL);
+		// _tile.Init(_gridViewReferences.disable, grid[row, col], this,null, _gridViewReferences.playerController);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_373 = V_2;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_374 = __this->____gridViewReferences_6;
+		NullCheck(L_374);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_375 = L_374->___disable_9;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_376 = ___0_grid;
+		int32_t L_377 = V_0;
+		int32_t L_378 = V_1;
+		NullCheck(L_376);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_379;
+		L_379 = (L_376)->GetAt(L_377, L_378);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_380 = __this->____gridViewReferences_6;
+		NullCheck(L_380);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_381 = L_380->___playerController_5;
+		NullCheck(L_373);
+		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_373, L_375, L_379, __this, (RuntimeObject*)NULL, L_381, NULL);
+		// if (_collectables.TryGetValue(levelData.Matrix[row, col].typeOfCollectableItems+levelData.Matrix[row, col].typeOfBooster.ToString(), out Collectable collectable) )
+		Dictionary_2_t851435252D9BAC039813CE7CB6671F5ED56CD897* L_382 = __this->____collectables_9;
+		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_383 = ___1_levelData;
+		NullCheck(L_383);
+		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_384 = L_383->___Matrix_22;
+		int32_t L_385 = V_0;
+		int32_t L_386 = V_1;
+		NullCheck(L_384);
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_387;
+		L_387 = (L_384)->GetAt(L_385, L_386);
+		NullCheck(L_387);
+		int32_t* L_388 = (&L_387->___typeOfCollectableItems_8);
+		Il2CppFakeBox<int32_t> L_389(CollectableItems_t7C7B12A211EA42707556765267999334A06A2E70_il2cpp_TypeInfo_var, L_388);
+		String_t* L_390;
+		L_390 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_389), NULL);
+		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_391 = ___1_levelData;
+		NullCheck(L_391);
+		CellDataU5BU2CU5D_t6EA627782BBC22C0A0003CD7A6E8660D262BB8B5* L_392 = L_391->___Matrix_22;
+		int32_t L_393 = V_0;
+		int32_t L_394 = V_1;
+		NullCheck(L_392);
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_395;
+		L_395 = (L_392)->GetAt(L_393, L_394);
+		NullCheck(L_395);
+		int32_t* L_396 = (&L_395->___typeOfBooster_9);
+		Il2CppFakeBox<int32_t> L_397(BoosterType_t7EEFE9AF3A586ED70234A3276C611B8F78A05D76_il2cpp_TypeInfo_var, L_396);
+		String_t* L_398;
+		L_398 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_397), NULL);
+		String_t* L_399;
+		L_399 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_390, L_398, NULL);
+		NullCheck(L_382);
+		bool L_400;
+		L_400 = Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F(L_382, L_399, (&V_12), Dictionary_2_TryGetValue_m10C26EC43B8B5E8FB5FC52DDEFC70DB15C04369F_RuntimeMethod_var);
+		if (!L_400)
 		{
-			goto IL_0809;
+			goto IL_0839;
 		}
 	}
 	{
 		// var collectablePrefab = Instantiate(collectable);
-		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_391 = V_12;
+		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_401 = V_12;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_392;
-		L_392 = Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE(L_391, Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE_RuntimeMethod_var);
-		V_13 = L_392;
+		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_402;
+		L_402 = Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE(L_401, Object_Instantiate_TisCollectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D_m323B5F387D044C1F3AC60437DFB350ACB0077ADE_RuntimeMethod_var);
+		V_13 = L_402;
 		// _tile.SetCollectable(collectablePrefab);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_393 = V_2;
-		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_394 = V_13;
-		NullCheck(L_393);
-		Tile_SetCollectable_m1C2D4D335EB1CEAEC68BDF7BEC128E81776AFB75(L_393, L_394, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_403 = V_2;
+		Collectable_t8220374A43FAAAD3E198CEFFAA0860B9BFD6C02D* L_404 = V_13;
+		NullCheck(L_403);
+		Tile_SetCollectable_m1C2D4D335EB1CEAEC68BDF7BEC128E81776AFB75(L_403, L_404, NULL);
 		// break;
-		goto IL_0809;
+		goto IL_0839;
 	}
 
-IL_075d:
+IL_078d:
 	{
 		// _tile.SetTransform(tilePosition, 180);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_395 = V_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_396 = V_4;
-		NullCheck(L_395);
-		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_395, L_396, (180.0f), NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_405 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_406 = V_4;
+		NullCheck(L_405);
+		TileBase_SetTransform_m09C938862E9DAB7C8985DE1242DA1AB850D4F91F(L_405, L_406, (180.0f), NULL);
 		// _tile.SetID(row, col, grid[row, col]);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_397 = V_2;
-		int32_t L_398 = V_0;
-		int32_t L_399 = V_1;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_400 = ___0_grid;
-		int32_t L_401 = V_0;
-		int32_t L_402 = V_1;
-		NullCheck(L_400);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_403;
-		L_403 = (L_400)->GetAt(L_401, L_402);
-		NullCheck(L_397);
-		TileBase_SetID_mCE0784E6B6EC5D4C5BFE03D922C308E242931914(L_397, L_398, L_399, L_403, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_407 = V_2;
+		int32_t L_408 = V_0;
+		int32_t L_409 = V_1;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_410 = ___0_grid;
+		int32_t L_411 = V_0;
+		int32_t L_412 = V_1;
+		NullCheck(L_410);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_413;
+		L_413 = (L_410)->GetAt(L_411, L_412);
+		NullCheck(L_407);
+		TileBase_SetID_mCE0784E6B6EC5D4C5BFE03D922C308E242931914(L_407, L_408, L_409, L_413, NULL);
 		// _tiles.Add($"{row}{col}", _tile);
-		Dictionary_2_t5611D662123858688BBF1F9BAA64CF60688247DA* L_404 = __this->____tiles_7;
-		int32_t L_405 = V_0;
-		int32_t L_406 = L_405;
-		RuntimeObject* L_407 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_406);
-		int32_t L_408 = V_1;
-		int32_t L_409 = L_408;
-		RuntimeObject* L_410 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_409);
-		String_t* L_411;
-		L_411 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1FB9018D8BFC0FACF068B1067EF9E96C35FED1FE, L_407, L_410, NULL);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_412 = V_2;
-		NullCheck(L_404);
-		Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC(L_404, L_411, L_412, Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC_RuntimeMethod_var);
-		// _tile.TileState = TileStates.Walkable;
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_413 = V_2;
-		NullCheck(L_413);
-		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_413, 6, NULL);
-		// _tile.gameObject.SetActive(true);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_414 = V_2;
+		Dictionary_2_t5611D662123858688BBF1F9BAA64CF60688247DA* L_414 = __this->____tiles_7;
+		int32_t L_415 = V_0;
+		int32_t L_416 = L_415;
+		RuntimeObject* L_417 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_416);
+		int32_t L_418 = V_1;
+		int32_t L_419 = L_418;
+		RuntimeObject* L_420 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_419);
+		String_t* L_421;
+		L_421 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteral1FB9018D8BFC0FACF068B1067EF9E96C35FED1FE, L_417, L_420, NULL);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_422 = V_2;
 		NullCheck(L_414);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_415;
-		L_415 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_414, NULL);
-		NullCheck(L_415);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_415, (bool)1, NULL);
+		Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC(L_414, L_421, L_422, Dictionary_2_Add_m44DA116438FD88204A6FF66CFA88912F5066A3AC_RuntimeMethod_var);
+		// _tile.TileState = TileStates.Walkable;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_423 = V_2;
+		NullCheck(L_423);
+		TileBase_set_TileState_m5D45C26D1CD4D74E6573B3CC7A20ADAD9BFB1F6F_inline(L_423, 6, NULL);
+		// _tile.gameObject.SetActive(true);
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_424 = V_2;
+		NullCheck(L_424);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_425;
+		L_425 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_424, NULL);
+		NullCheck(L_425);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_425, (bool)1, NULL);
 		// var powerUp = Instantiate(_gridViewReferences.powerUp);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_416 = __this->____gridViewReferences_6;
-		NullCheck(L_416);
-		PowerUp_tE7C54110BB5FC1180B11E810D59F8AA32123F232* L_417 = L_416->___powerUp_14;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_426 = __this->____gridViewReferences_6;
+		NullCheck(L_426);
+		PowerUp_tE7C54110BB5FC1180B11E810D59F8AA32123F232* L_427 = L_426->___powerUp_14;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		PowerUp_tE7C54110BB5FC1180B11E810D59F8AA32123F232* L_418;
-		L_418 = Object_Instantiate_TisPowerUp_tE7C54110BB5FC1180B11E810D59F8AA32123F232_m3216F51BD29199E3157C05666A10449157F0A157(L_417, Object_Instantiate_TisPowerUp_tE7C54110BB5FC1180B11E810D59F8AA32123F232_m3216F51BD29199E3157C05666A10449157F0A157_RuntimeMethod_var);
+		PowerUp_tE7C54110BB5FC1180B11E810D59F8AA32123F232* L_428;
+		L_428 = Object_Instantiate_TisPowerUp_tE7C54110BB5FC1180B11E810D59F8AA32123F232_m3216F51BD29199E3157C05666A10449157F0A157(L_427, Object_Instantiate_TisPowerUp_tE7C54110BB5FC1180B11E810D59F8AA32123F232_m3216F51BD29199E3157C05666A10449157F0A157_RuntimeMethod_var);
 		// powerUp.UpdateLvl(cellData.powerUPLVL);
-		PowerUp_tE7C54110BB5FC1180B11E810D59F8AA32123F232* L_419 = L_418;
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_420 = V_3;
-		NullCheck(L_420);
-		int32_t L_421 = L_420->___powerUPLVL_17;
-		NullCheck(L_419);
-		PowerUp_UpdateLvl_m8B85D6771542F7AEED7C2F9B8149A26600F3D828(L_419, L_421, NULL);
+		PowerUp_tE7C54110BB5FC1180B11E810D59F8AA32123F232* L_429 = L_428;
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_430 = V_3;
+		NullCheck(L_430);
+		int32_t L_431 = L_430->___powerUPLVL_17;
+		NullCheck(L_429);
+		PowerUp_UpdateLvl_m8B85D6771542F7AEED7C2F9B8149A26600F3D828(L_429, L_431, NULL);
 		// tilePosition.y = .8f;
 		(&V_4)->___y_3 = (0.800000012f);
 		// powerUp.transform.position = tilePosition;
-		NullCheck(L_419);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_422;
-		L_422 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_419, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_423 = V_4;
-		NullCheck(L_422);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_422, L_423, NULL);
+		NullCheck(L_429);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_432;
+		L_432 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_429, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_433 = V_4;
+		NullCheck(L_432);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_432, L_433, NULL);
 		// _tile.Init(_gridViewReferences.enable, grid[row, col], this,null, _gridViewReferences.playerController);
-		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_424 = V_2;
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_425 = __this->____gridViewReferences_6;
-		NullCheck(L_425);
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_426 = L_425->___enable_10;
-		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_427 = ___0_grid;
-		int32_t L_428 = V_0;
-		int32_t L_429 = V_1;
-		NullCheck(L_427);
-		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_430;
-		L_430 = (L_427)->GetAt(L_428, L_429);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_431 = __this->____gridViewReferences_6;
-		NullCheck(L_431);
-		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_432 = L_431->___playerController_5;
-		NullCheck(L_424);
-		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_424, L_426, L_430, __this, (RuntimeObject*)NULL, L_432, NULL);
-	}
-
-IL_0809:
-	{
-		// for (var col = 0; col < levelData.Height; col++)
-		int32_t L_433 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_433, 1));
-	}
-
-IL_080d:
-	{
-		// for (var col = 0; col < levelData.Height; col++)
-		int32_t L_434 = V_1;
-		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_435 = ___1_levelData;
+		Tile_t24D8CF53E1263E118B38443A0D63509EA4808841* L_434 = V_2;
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_435 = __this->____gridViewReferences_6;
 		NullCheck(L_435);
-		int32_t L_436;
-		L_436 = LevelData_get_Height_m26CAEF89331D5C8AD5E257E28735534E7768E08D(L_435, NULL);
-		if ((((int32_t)L_434) < ((int32_t)L_436)))
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_436 = L_435->___enable_10;
+		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_437 = ___0_grid;
+		int32_t L_438 = V_0;
+		int32_t L_439 = V_1;
+		NullCheck(L_437);
+		Cell_t4BCDCB09A15D17540EAA8BB101F9DE3E2133F22B* L_440;
+		L_440 = (L_437)->GetAt(L_438, L_439);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_441 = __this->____gridViewReferences_6;
+		NullCheck(L_441);
+		PlayerController_t9B0C601F9489B31A44D7597907DAF506B542C139* L_442 = L_441->___playerController_5;
+		NullCheck(L_434);
+		Tile_Init_mB1EFF91D5260C6C44375DD135D1BC6C9C6DF7EAD(L_434, L_436, L_440, __this, (RuntimeObject*)NULL, L_442, NULL);
+	}
+
+IL_0839:
+	{
+		// for (var col = 0; col < levelData.Height; col++)
+		int32_t L_443 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_443, 1));
+	}
+
+IL_083d:
+	{
+		// for (var col = 0; col < levelData.Height; col++)
+		int32_t L_444 = V_1;
+		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_445 = ___1_levelData;
+		NullCheck(L_445);
+		int32_t L_446;
+		L_446 = LevelData_get_Height_m26CAEF89331D5C8AD5E257E28735534E7768E08D(L_445, NULL);
+		if ((((int32_t)L_444) < ((int32_t)L_446)))
 		{
 			goto IL_0025;
 		}
 	}
 	{
 		// for (var row = 0; row < levelData.Width; row++)
-		int32_t L_437 = V_0;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_437, 1));
+		int32_t L_447 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_447, 1));
 	}
 
-IL_081d:
+IL_084d:
 	{
 		// for (var row = 0; row < levelData.Width; row++)
-		int32_t L_438 = V_0;
-		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_439 = ___1_levelData;
-		NullCheck(L_439);
-		int32_t L_440;
-		L_440 = LevelData_get_Width_mD3D6429258B8231C558E3DB1EE7FE7C6BCACE4CB(L_439, NULL);
-		if ((((int32_t)L_438) < ((int32_t)L_440)))
+		int32_t L_448 = V_0;
+		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_449 = ___1_levelData;
+		NullCheck(L_449);
+		int32_t L_450;
+		L_450 = LevelData_get_Width_mD3D6429258B8231C558E3DB1EE7FE7C6BCACE4CB(L_449, NULL);
+		if ((((int32_t)L_448) < ((int32_t)L_450)))
 		{
 			goto IL_001e;
 		}
 	}
 	{
 		// _gridViewReferences.CalculateMoves(levelData.movesMultiplier);
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_441 = __this->____gridViewReferences_6;
-		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_442 = ___1_levelData;
-		NullCheck(L_442);
-		int32_t L_443 = L_442->___movesMultiplier_9;
-		NullCheck(L_441);
-		GridViewReferences_CalculateMoves_m9688B067EEF057EE222F5918727DE9878ACE0238(L_441, L_443, NULL);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_451 = __this->____gridViewReferences_6;
+		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_452 = ___1_levelData;
+		NullCheck(L_452);
+		int32_t L_453 = L_452->___movesMultiplier_9;
+		NullCheck(L_451);
+		GridViewReferences_CalculateMoves_m9688B067EEF057EE222F5918727DE9878ACE0238(L_451, L_453, NULL);
 		// _gridViewReferences.tutorialManager.PlayTutorial();
-		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_444 = __this->____gridViewReferences_6;
-		NullCheck(L_444);
-		TutorialManager_tA517EF826FE03300C6A8ED492158E82A0E210CCF* L_445 = L_444->___tutorialManager_12;
-		NullCheck(L_445);
-		TutorialManager_PlayTutorial_m2CC12D6ACB80512EBBD0A687A853922E782FDC24(L_445, NULL);
+		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_454 = __this->____gridViewReferences_6;
+		NullCheck(L_454);
+		TutorialManager_tA517EF826FE03300C6A8ED492158E82A0E210CCF* L_455 = L_454->___tutorialManager_12;
+		NullCheck(L_455);
+		TutorialManager_PlayTutorial_m2CC12D6ACB80512EBBD0A687A853922E782FDC24(L_455, NULL);
 		// Goals.SetSlogan();
-		RuntimeObject* L_446 = __this->___Goals_10;
-		NullCheck(L_446);
-		InterfaceActionInvoker0::Invoke(8 /* System.Void Sablo.Gameplay.Movement.IPlayerCollectible::SetSlogan() */, IPlayerCollectible_t713DA331F25BC577650F782607073367BB524959_il2cpp_TypeInfo_var, L_446);
+		RuntimeObject* L_456 = __this->___Goals_10;
+		NullCheck(L_456);
+		InterfaceActionInvoker0::Invoke(8 /* System.Void Sablo.Gameplay.Movement.IPlayerCollectible::SetSlogan() */, IPlayerCollectible_t713DA331F25BC577650F782607073367BB524959_il2cpp_TypeInfo_var, L_456);
 		// }
 		return;
 	}
@@ -26302,7 +26358,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TileBase_LockTileAction_mB7A9F6EAF2432B9
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IHapticController_t69E635725D98D4F5FC6C2BEE7F34BAA328CEBAF2_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileBase_U3CLockTileActionU3Eb__77_0_m55E00C4FDBEAC92047AF2C095A4F097AD17ABD43_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileBase_U3CLockTileActionU3Eb__77_1_mF415876C0B4A9CB23D904D1B107FAC8096BD24A5_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TweenCallback_t7C8B8A38E7B30905FF1B83C943256EF23617BB24_il2cpp_TypeInfo_var);
@@ -26326,7 +26381,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TileBase_LockTileAction_mB7A9F6EAF2432B9
 		int32_t L_1 = __this->____tileStates_11;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)13)))))
 		{
-			goto IL_010d;
+			goto IL_010c;
 		}
 	}
 
@@ -26419,43 +26474,9 @@ IL_0066:
 		L_26 = TweenSettingsExtensions_OnComplete_TisTweenerCore_3_t392C54729BB024F5802F8E205C583653C4E886E3_m8BE213B05FF94E9AE889B180DB8B3DE6EC4EB1E1(L_24, L_25, TweenSettingsExtensions_OnComplete_TisTweenerCore_3_t392C54729BB024F5802F8E205C583653C4E886E3_m8BE213B05FF94E9AE889B180DB8B3DE6EC4EB1E1_RuntimeMethod_var);
 		__this->___rotation_35 = L_26;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___rotation_35), (void*)L_26);
-		return;
 	}
 
-IL_010d:
-	{
-		// else if (_tileStates == TileStates.NotBreakable)
-		int32_t L_27 = __this->____tileStates_11;
-		if ((!(((uint32_t)L_27) == ((uint32_t)((int32_t)9)))))
-		{
-			goto IL_013a;
-		}
-	}
-	{
-		// hapticController.PlayHaptic();
-		RuntimeObject* L_28 = __this->___hapticController_18;
-		NullCheck(L_28);
-		InterfaceActionInvoker0::Invoke(0 /* System.Void Features.Haptics.Interfaces.IHapticController::PlayHaptic() */, IHapticController_t69E635725D98D4F5FC6C2BEE7F34BAA328CEBAF2_il2cpp_TypeInfo_var, L_28);
-		// if (_Enemy)
-		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_29;
-		L_29 = TileBase_get__Enemy_mD777EC1DF3CB8117E041520E6BFD9EEE6BB0211F_inline(__this, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_30;
-		L_30 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_29, NULL);
-		if (!L_30)
-		{
-			goto IL_013a;
-		}
-	}
-	{
-		// _Enemy.TakeHit();
-		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_31;
-		L_31 = TileBase_get__Enemy_mD777EC1DF3CB8117E041520E6BFD9EEE6BB0211F_inline(__this, NULL);
-		NullCheck(L_31);
-		Enemy_TakeHit_m161003FFD7799DBAA2A046698FF0320FC614B629(L_31, NULL);
-	}
-
-IL_013a:
+IL_010c:
 	{
 		// }
 		return;
@@ -32735,6 +32756,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PlayerController_set_CantRun
 		return;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* TileBase_get__Enemy_mD777EC1DF3CB8117E041520E6BFD9EEE6BB0211F_inline (TileBase_t3577419B4F5A05707485902EE179F4D7C1B80DF1* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Enemy _Enemy { get; set; }
+		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_0 = __this->___U3C_EnemyU3Ek__BackingField_32;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TileBase_get_TileState_mC624FB61858D08611CA99971CBBA19645B01E9D7_inline (TileBase_t3577419B4F5A05707485902EE179F4D7C1B80DF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -33228,14 +33257,6 @@ IL_0014:
 		return L_3;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* TileBase_get__Enemy_mD777EC1DF3CB8117E041520E6BFD9EEE6BB0211F_inline (TileBase_t3577419B4F5A05707485902EE179F4D7C1B80DF1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Enemy _Enemy { get; set; }
-		Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* L_0 = __this->___U3C_EnemyU3Ek__BackingField_32;
-		return L_0;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* TileBase_get_MergeParticle_mBBAAB0CC17C96B2E376107EEC6090EBEEA6320BD_inline (TileBase_t3577419B4F5A05707485902EE179F4D7C1B80DF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -33616,6 +33637,13 @@ IL_003c:
 		return;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = (int32_t)__this->____size_2;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m139A176CD271A0532D75BE08DA7831C8C45CE28F_gshared_inline (Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -33696,13 +33724,6 @@ IL_0034:
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m1747175525F15736BD2C9209C7B090DC8164FE7A_gshared_inline (List_1_tFD45D9C668A7B019127FE442DDD78CF33B7DEDBF* __this, const RuntimeMethod* method) 
-{
-	{
-		int32_t L_0 = (int32_t)__this->____size_2;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = (int32_t)__this->____size_2;

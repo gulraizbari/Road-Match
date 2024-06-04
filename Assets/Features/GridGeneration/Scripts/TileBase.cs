@@ -468,15 +468,6 @@ namespace Features.GridGeneration.Scripts
                         transform.rotation=Quaternion.identity;
                     }));
             }
-            else if (_tileStates == TileStates.NotBreakable)
-            {
-                hapticController.PlayHaptic();
-                if (_Enemy)
-                {
-                    _Enemy.TakeHit();
-                }
-            }
-            
         }
         public virtual void OnPointerUp(PointerEventData eventData)
         {
