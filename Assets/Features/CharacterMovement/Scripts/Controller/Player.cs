@@ -269,6 +269,7 @@ namespace Sablo.Gameplay.Movement
         {
             GameController.SetState(GameStates.Lose);
             UIController.instance.LevelFail(1.3f,Reason.PlayerDeath);
+            SoundManager.Instance.Death(.7f);
         }
 
         public void UpdateLevel(int value)

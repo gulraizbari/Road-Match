@@ -17862,6 +17862,7 @@ MonoBehaviour:
   extraTransform: {fileID: 1822346454}
   extraTMove: {fileID: 4232047511763849386}
   moves: 0
+  extraMoves: 50
   tensionColor: {r: 0.990566, g: 0.34109113, b: 0.34109113, a: 1}
   orignalColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1150429824
@@ -18005,7 +18006,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1eda58959f2b54914b63eead760ef9d4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9fa0ab5dd428f4042a946d8548570b41, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.15
   m_Pitch: 1
@@ -18566,11 +18567,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3cff92ce7cde147e8af34b7992004e78, type: 3}
   - {fileID: 8300000, guid: 3cff92ce7cde147e8af34b7992004e78, type: 3}
   - {fileID: 8300000, guid: d873b97299d15482bacf9f9148f367fd, type: 3}
-  - {fileID: 8300000, guid: de003cd8b0ebd4e619c9d63c6dc387fe, type: 3}
-  - {fileID: 8300000, guid: 33ec4b391ca24457cb38942f86b52608, type: 3}
+  - {fileID: 8300000, guid: 1c76a76cb95c8480a85922301d22019c, type: 3}
+  - {fileID: 8300000, guid: 10d45bc19c7414304b33808ae154f58e, type: 3}
   - {fileID: 8300000, guid: cbb60045b308b4c9d930efbde1c8ace0, type: 3}
   - {fileID: 8300000, guid: fa9ba5099ff20452987bb472d917c648, type: 3}
   - {fileID: 8300000, guid: 49fb49af56f3e4ae89516fceb153b8d7, type: 3}
+  - {fileID: 8300000, guid: c05fbb1fb5c8b4189a9bbdfdc74a3f38, type: 3}
 --- !u!82 &1245666740
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19498,7 +19500,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c5137a2baf25348a7993158da9ab1188, type: 2}
   - {fileID: 11400000, guid: 8286f432e41714ef6b422092abfd3689, type: 2}
   isTesting: 0
-  currentScene: 1
+  currentScene: 2
   testingLvlNumber: 3
 --- !u!4 &1639253927
 Transform:
@@ -28013,7 +28015,7 @@ PrefabInstance:
     - target: {fileID: 8985472781578095737, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9096113803646538531, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
         type: 3}

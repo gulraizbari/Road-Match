@@ -42,16 +42,7 @@ public class Splash : MonoBehaviour
       loadingText.text = "100%";
 
       yield return new WaitForSeconds(.5f);
-      SceneManager.LoadScene(1);
+      SceneManager.LoadScene(2);
    }
-
-   private void Loading()
-   {
-      DOTween.To(x => loadingFill.fillAmount = x , loadingFill.fillAmount, 1, delay).SetEase(Ease.InQuint).OnComplete((
-         () =>
-         { 
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-         }));
-      
-   }
+   
 }

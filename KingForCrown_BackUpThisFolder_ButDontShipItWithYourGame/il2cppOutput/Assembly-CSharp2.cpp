@@ -5060,12 +5060,14 @@ struct GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2  : public Mo
 	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___extraTMove_16;
 	// System.Int32 GridViewReferences::moves
 	int32_t ___moves_17;
+	// System.Int32 GridViewReferences::extraMoves
+	int32_t ___extraMoves_18;
 	// DG.Tweening.Tween GridViewReferences::_tween
-	Tween_t8CB06EBC48A5B6F5065C490E4F4909C18CE7983C* ____tween_18;
+	Tween_t8CB06EBC48A5B6F5065C490E4F4909C18CE7983C* ____tween_19;
 	// UnityEngine.Color GridViewReferences::tensionColor
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___tensionColor_19;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___tensionColor_20;
 	// UnityEngine.Color GridViewReferences::orignalColor
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___orignalColor_20;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___orignalColor_21;
 };
 
 // HapticsController
@@ -9893,6 +9895,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerAnimator_Attack_m7ED3071D1EE23E343
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GameController_SetState_mB1A62FAB2E571094CCAEF305FC560075E4A2C503_inline (int32_t ___0_newState, const RuntimeMethod* method) ;
 // System.Void UIController::LevelFail(System.Single,Reason)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIController_LevelFail_mE86DA79EBD862694871A7F6A505DA89B02E6F3C4 (UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2* __this, float ___0_delay, int32_t ___1_reason, const RuntimeMethod* method) ;
+// System.Void SoundManager::Death(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundManager_Death_m1C8188644C5742E54B439B6011D7EED426D6E21F (SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734* __this, float ___0_volume, const RuntimeMethod* method) ;
 // System.Void CharacterLevel::UpdateLevelText(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterLevel_UpdateLevelText_mE1AF3189F071824D03530760D85D713D03A84F23 (CharacterLevel_t916C8795004045F9EB6A86DDEAC164107E41C99D* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void Features.CharacterMovement.Scripts.PlayerBaseClass::.ctor()
@@ -19708,6 +19712,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_Death_m7FF55059FFDF72577D3F9EDD5F
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -19718,6 +19723,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_Death_m7FF55059FFDF72577D3F9EDD5F
 		UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2* L_0 = ((UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_StaticFields*)il2cpp_codegen_static_fields_for(UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_il2cpp_TypeInfo_var))->___instance_13;
 		NullCheck(L_0);
 		UIController_LevelFail_mE86DA79EBD862694871A7F6A505DA89B02E6F3C4(L_0, (1.29999995f), 0, NULL);
+		// SoundManager.Instance.Death(.7f);
+		SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734* L_1 = ((SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734_StaticFields*)il2cpp_codegen_static_fields_for(SoundManager_tCA2CCAC5CDF1BA10E525C01C8D1D0DFAC9BE3734_il2cpp_TypeInfo_var))->___Instance_7;
+		NullCheck(L_1);
+		SoundManager_Death_m1C8188644C5742E54B439B6011D7EED426D6E21F(L_1, (0.699999988f), NULL);
 		// }
 		return;
 	}

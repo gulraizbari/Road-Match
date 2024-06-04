@@ -74,9 +74,15 @@ public class SoundManager : MonoBehaviour
     {
         PlayShot(7,volume);
         Joy();
-    }  public void PlayKey(float volume)
+    } 
+    public void PlayKey(float volume)
     {
         PlayShot(8,volume);
+        Joy();
+    } 
+    public void Death(float volume)
+    {
+        PlayShot(15,volume);
         Joy();
     }
 

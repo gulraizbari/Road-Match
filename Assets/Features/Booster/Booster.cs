@@ -72,7 +72,7 @@ public class Booster : MonoBehaviour
                 UIController.instance.DetectMoney(price);
                 Action?.Invoke();
                 EnableBoosterButton(false);
-                
+                LionAnalyticEvents.PowerUpUsed("hint_booster",UIController.instance.levelManager.Level+1);
             }
             else
             {
@@ -92,7 +92,7 @@ public class Booster : MonoBehaviour
         {
             button.interactable = enable;
             bgBooster.sprite = enable ?  _hindEnable:_hintDisable;
-            LionAnalyticEvents.PowerUpUsed("hint_booster",UIController.instance.levelManager.Level+1);
+            
         }
         else
         {

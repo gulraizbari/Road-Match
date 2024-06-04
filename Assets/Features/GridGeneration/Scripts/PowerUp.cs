@@ -20,6 +20,7 @@ public class PowerUp : MonoBehaviour
         {
             player.UpdateLevel(lvl);
             SoundManager.Instance.PlayKey(1);
+           
             gameObject.SetActive(false);
         }
     }

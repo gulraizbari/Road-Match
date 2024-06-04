@@ -93,7 +93,7 @@ public class Enemy : MonoBehaviour,ISFighter
         _playerController.CantRun = false;
         MyTile._Enemy = null;
         transform.DOScale(0f, .1f).SetEase(Ease.Linear).OnComplete((SetOff));
-      
+        SoundManager.Instance.Joy();
     }
 
     public void UpdateLevel(int value)

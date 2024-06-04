@@ -24,6 +24,7 @@ public class GridViewReferences : MonoBehaviour
     [BoxGroup("References")] public Transform extraTransform;
     [BoxGroup("References")] public Animator extraTMove;
     [BoxGroup("References/Values")] public int moves;
+    [BoxGroup("References/Values")] public int extraMoves;
 
 
     void OnEnable()
@@ -41,11 +42,13 @@ public class GridViewReferences : MonoBehaviour
         moves += value;
         UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
         GameController.SetState(GameStates.Play);
+        UIController.instance.Text(TextType.Moves).ChangeColor(orignalColor);
         extraTMove.enabled = false;
     }
     public void CalculateMoves(int movesMultiplier )
     {
         moves *= movesMultiplier;
+        moves += extraMoves;
         UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
     }
 
