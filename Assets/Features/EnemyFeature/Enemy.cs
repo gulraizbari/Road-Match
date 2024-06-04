@@ -32,6 +32,10 @@ public class Enemy : MonoBehaviour,ISFighter
         }
     }
 
+    public void TakeHit()
+    {
+        _animator.HitAnimation();
+    }
    
     void Update()
     {

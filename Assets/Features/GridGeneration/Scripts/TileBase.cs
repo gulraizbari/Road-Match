@@ -15,6 +15,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 namespace Features.GridGeneration.Scripts
 {
@@ -56,6 +57,7 @@ namespace Features.GridGeneration.Scripts
         public Cell CellBase;
         Tween _outerTween;
         Tween _innerTween;
+        Vector3 startRotation;
         protected Tile MyTile;
         public bool istutorial;
         public bool cantSelectPlayer;
@@ -108,6 +110,7 @@ namespace Features.GridGeneration.Scripts
             {
                 _isFlipped = true;
             }
+            startRotation=transform.eulerAngles;
         }
         public void DisableShadow()
         {
@@ -440,6 +443,41 @@ namespace Features.GridGeneration.Scripts
            
         }
 
+        Tween rotation;
+
+        private void LockTileAction()
+        { 
+            if (_tileStates == TileStates.Gate ||_tileStates == TileStates.ChestBox  )
+            {
+                print("Gate");
+                transform.rotation=Quaternion.Euler(startRotation);
+                if (rotation.IsActive())
+                {
+                    rotation.Kill();
+                    transform.rotation=Quaternion.Euler(startRotation);
+                }
+                hapticController.PlayHaptic();
+                transform.rotation=Quaternion.Euler(new Vector3(0, 0, -10f));
+                transform.DOMoveY(.5f, .05f).SetEase(Ease.Linear).OnComplete((() =>
+                {
+                    transform.DOMoveY(0, .05f).SetEase(Ease.Linear);
+                }));
+                rotation= transform.DORotate(new Vector3(0, 0, 10f), .1f).SetEase(Ease.Linear).SetLoops(1,LoopType.Yoyo).OnComplete((
+                    () =>
+                    {
+                        transform.rotation=Quaternion.identity;
+                    }));
+            }
+            else if (_tileStates == TileStates.NotBreakable)
+            {
+                hapticController.PlayHaptic();
+                if (_Enemy)
+                {
+                    _Enemy.TakeHit();
+                }
+            }
+            
+        }
         public virtual void OnPointerUp(PointerEventData eventData)
         {
             if (!canClick)return;
@@ -447,10 +485,7 @@ namespace Features.GridGeneration.Scripts
             if (TileTouch)
             {
                 if (!GameController.IsState(GameStates.Play)) return;
-                if (_tileStates == TileStates.Gate)
-                {
-                    print("Gate");
-                }
+               LockTileAction();
                 if (_tileStates == TileStates.FlipAble)
                 {
                     if (!_canTouch)

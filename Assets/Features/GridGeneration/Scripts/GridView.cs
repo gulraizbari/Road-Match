@@ -202,6 +202,7 @@ namespace Features.GridGeneration.Scripts
                             _tile.SetID(row, col, grid[row, col]);
                             _tiles.Add($"{row}{col}", _tile);
                             _gridViewReferences.Gate.position = new Vector3(tilePosition.x, .6f, tilePosition.z);
+                            _gridViewReferences.Gate.SetParent(_tile.transform);
                             _tile.requiredCollectableItems = cellData.typeOfCollectableItems;
                             Goals.SetGate(_tile,cellData.IsCage);
                             break;

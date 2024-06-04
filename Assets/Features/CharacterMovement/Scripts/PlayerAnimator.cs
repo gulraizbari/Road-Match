@@ -16,7 +16,7 @@ public class PlayerAnimator : MonoBehaviour
     {
         _slash.SetActive(false);
         _animator.Play(isWalk ? "Run" : "Idle");
-       
+     
     }
 
     public void Idle()
@@ -31,6 +31,11 @@ public class PlayerAnimator : MonoBehaviour
     public void WinAnimation()
     {
         _animator.Play("Win");
+    }
+    public void HitAnimation()
+    {
+     //   _animator.SetBool("Hit",true);
+        _animator.Play("Hit");
     }
     
     public void Damage()

@@ -1,0 +1,14471 @@
+﻿#include "pch-cpp.hpp"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include <limits>
+
+
+template <typename R>
+struct VirtualFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R, typename T1>
+struct VirtualFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+struct InterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct InterfaceActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R, typename T1>
+struct InterfaceFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+
+// System.Action`1<LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs>
+struct Action_1_t6128C74DF67D64902721C05BEF8F74C1C0FBB097;
+// System.Action`1<LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs>
+struct Action_1_t4D42836C0651203AA9BC52407C8C5B93CFDB0AD1;
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Globalization.CultureInfo>
+struct Dictionary_2_t9FA6D82CAFC18769F7515BB51D1C56DAE09381C3;
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>
+struct Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180;
+// System.Collections.Generic.Dictionary`2<System.Object,System.Object>
+struct Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA;
+// System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>>
+struct Dictionary_2_tB6CE3B793B413BC658CEFEF1339D0C1E2DE28904;
+// System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureInfo>
+struct Dictionary_2_tE1603CE612C16451D1E56FF4D4859D4FE4087C28;
+// System.Collections.Generic.Dictionary`2<System.String,System.Int32>
+struct Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588;
+// System.Collections.Generic.Dictionary`2<System.String,System.Object>
+struct Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710;
+// System.Func`1<Utility.Dispatcher.Dispatcher>
+struct Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4;
+// System.Func`1<System.Object>
+struct Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4;
+// System.Func`2<System.Object,System.Int32>
+struct Func_2_t9A0D493A82DCC47C9C819A3B045E02D9B5DDCE1B;
+// System.Func`2<LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs,System.Int32>
+struct Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445;
+// System.Func`2<LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs,System.Int32>
+struct Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC;
+// Data.GlobalDataContainer`2<System.Int32,System.Object>
+struct GlobalDataContainer_2_tD3F694C884CF19067765F5F45CEA7E6C139FA2E9;
+// Data.GlobalDataContainer`2<System.Int32,System.String>
+struct GlobalDataContainer_2_t3B95E2138826C88A59FE35A910E9B63228560BC9;
+// Data.GlobalDataContainer`2<System.Object,System.Object>
+struct GlobalDataContainer_2_t243100C2FBBB862B6704EAFD58BA289A840E2382;
+// Data.GlobalDataContainer`2<System.String,System.String>
+struct GlobalDataContainer_2_t248016E27216826B0BACAE44865C608566B718F2;
+// System.Collections.Generic.IDictionary`2<System.Tuple`2<System.Int32,System.String>,System.Collections.Generic.LinkedListNode`1<System.Tuple`2<System.Int32,System.String>>>
+struct IDictionary_2_t5A0C04E43D506CD97E46EBFA0666E821513CA877;
+// System.Collections.Generic.IDictionary`2<System.Tuple`2<System.Int32,System.String>,System.String>
+struct IDictionary_2_tC78CD909652C1DB8E7A48BB6C6C328C832693A47;
+// System.Collections.Generic.IDictionary`2<System.Tuple`2<System.String,System.String>,System.Collections.Generic.LinkedListNode`1<System.Tuple`2<System.String,System.String>>>
+struct IDictionary_2_tEA9676D24959E84081ECC21E57841765428009A4;
+// System.Collections.Generic.IDictionary`2<System.Tuple`2<System.String,System.String>,System.String>
+struct IDictionary_2_tC363E54625777FCCCC172F2490E140F458B43519;
+// System.Collections.Generic.IDictionary`2<Utility.Dispatcher.EventId,System.Action`1<System.EventArgs>>
+struct IDictionary_2_t59B430AD40558560F30261E0AAC065B5ACA3D1F1;
+// System.Collections.Generic.IDictionary`2<System.String,System.Object>
+struct IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19;
+// System.Collections.Generic.IEqualityComparer`1<System.String>
+struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
+// System.Collections.Generic.IList`1<System.Object[]>
+struct IList_1_t4A21004D62D38100B9B52F88035799FE90CFB71F;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,System.Object>
+struct KeyCollection_tE66790F09E854C19C7F612BEAD203AE626E90A36;
+// System.Collections.Generic.LinkedList`1<System.Tuple`2<System.Int32,System.String>>
+struct LinkedList_1_tB153A3355A582AA81ACB762BD0B7A6867307F594;
+// System.Collections.Generic.LinkedList`1<System.Tuple`2<System.String,System.String>>
+struct LinkedList_1_t2CD573593FCD9488F0F0A49A4F60DB2471E6A4B6;
+// System.Collections.Generic.List`1<System.Collections.Generic.IDictionary`2<System.String,System.Object>>
+struct List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395;
+// System.Collections.Generic.List`1<LionStudios.Suite.Analytics.Item>
+struct List_1_t16359674018645FCCC8FBA6DB6A3FDF4DE00AACD;
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+// System.Collections.Generic.List`1<LionStudios.Suite.Analytics.VirtualCurrency>
+struct List_1_tCD725B32EE9F72CA7AB04A10B25A0AE9313BA30C;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.Object>
+struct ValueCollection_tC9D91E8A3198E40EA339059703AB10DFC9F5CC2E;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,System.Object>[]
+struct EntryU5BU5D_t233BB24ED01E2D8D65B0651D54B8E3AD125CAF96;
+// System.Collections.Generic.IDictionary`2<System.String,System.Object>[]
+struct IDictionary_2U5BU5D_t1C2A5F38641F518CA51394506890777E78EDF79C;
+// System.Byte[]
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+// System.Char[]
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+// System.Delegate[]
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+// System.Int32[]
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+// System.IntPtr[]
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+// System.Diagnostics.StackTrace[]
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+// System.Type[]
+struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB;
+// LionStudios.Suite.Analytics.Events.AchievementEvent
+struct AchievementEvent_t0EF334ABC77C2536C3DC2095564493F61E41A022;
+// Events.InGame.EventArgs.AchievementEventArgs
+struct AchievementEventArgs_t26486A44BC52EF62604A85A0A80BCC9CD000FB51;
+// System.Action
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
+// LionStudios.Suite.Analytics.Events.AdEvent
+struct AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727;
+// LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs
+struct AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13;
+// LionStudios.Suite.Analytics.Events.EventArgs.AdFailEventArgs
+struct AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A;
+// LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs
+struct AdRewardArgs_t1A7EF7F0C6E5BCA2E9BC705084D90FBA2389E798;
+// Data.AnalyticsData
+struct AnalyticsData_tE4CA341BDBA72543789A49776E8AB50603116D9C;
+// LionStudios.Suite.Analytics.AnalyticsSdkBridge
+struct AnalyticsSdkBridge_tFADA264EB45DE42446DF57730F16260FE2AABE71;
+// System.AsyncCallback
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
+// LionStudios.Suite.Analytics.Events.EventArgs.BannerEventArgs
+struct BannerEventArgs_tC08D7467258524E54870E87CBCDCC84892C8825C;
+// LionStudios.Suite.Analytics.Events.EventArgs.BannerFailEventArgs
+struct BannerFailEventArgs_t7343B3EBF9FB87146FC79A41852F4BE377F81ABF;
+// System.Reflection.Binder
+struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
+// System.Globalization.Calendar
+struct Calendar_t0A117CC7532A54C17188C2EFEA1F79DB20DF3A3B;
+// LionStudios.Suite.Analytics.Events.CharacterCreatedEvent
+struct CharacterCreatedEvent_t8905F462AAED5672B04AA719BBB7C37809E13F08;
+// Events.InGame.EventArgs.CharacterCreatedEventArgs
+struct CharacterCreatedEventArgs_tE6E3357D9B66FF8CF2E091AC970CD2AC3BB565D3;
+// LionStudios.Suite.Analytics.Events.CharacterDeletedEvent
+struct CharacterDeletedEvent_t6B3A153DA60A167D88C225C99CD101B61376D5BB;
+// Events.InGame.EventArgs.CharacterDeletedEventArgs
+struct CharacterDeletedEventArgs_tC23ECBC98C3FE7E17C623863B11528C80130DA0E;
+// LionStudios.Suite.Analytics.Events.CharacterUpdatedEvent
+struct CharacterUpdatedEvent_tA1C0926B1573AAFC44D050553F562246E115130D;
+// Events.InGame.EventArgs.CharacterUpdatedEventArgs
+struct CharacterUpdatedEventArgs_tB3FB54484789DD0C2FB17C919E982B8342A0F035;
+// System.Globalization.CompareInfo
+struct CompareInfo_t1B1A6AC3486B570C76ABA52149C9BD4CD82F9E57;
+// Data.CoreData
+struct CoreData_t0131416461D5064142B0042F97FDC5408B8B2BDD;
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoClickEvent
+struct CrossPromoClickEvent_t1147033BEF5370FC1F315F3DC94999405A4C409C;
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoEndEvent
+struct CrossPromoEndEvent_tDF07A6DDCB1D032EA9136F937EAEFC06A3509DEB;
+// LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs
+struct CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC;
+// LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoFailEventArgs
+struct CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10;
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadEvent
+struct CrossPromoLoadEvent_t143B1961BD4AA3BEA39EC9E9DEA841741DD1FC12;
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadFailEvent
+struct CrossPromoLoadFailEvent_t3824081A8BDCB178327F856B5C5FBAE5A84CDF7C;
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowEvent
+struct CrossPromoShowEvent_tACF84C46677BA35C2C26AC84B67C04573E6B7C03;
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowFailEvent
+struct CrossPromoShowFailEvent_t9B03FA6E28066D86F8157F9DE058FC56DB1C50C7;
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoStartEvent
+struct CrossPromoStartEvent_tA3A0E57339CD99A694FA2D2CF04B99E63E770F5D;
+// System.Globalization.CultureData
+struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D;
+// System.Globalization.CultureInfo
+struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0;
+// System.Globalization.DateTimeFormatInfo
+struct DateTimeFormatInfo_t0457520F9FA7B5C8EAAEB3AD50413B6AEEB7458A;
+// LionStudios.Suite.Analytics.Events.DebugEvent
+struct DebugEvent_t98307C329856C6B56095059615CBB9D7A73E5A52;
+// LionStudios.Suite.Analytics.Events.DebugEventArgs
+struct DebugEventArgs_tEE401912C87109BFEB54519FB310BFBC0D8382CB;
+// System.Delegate
+struct Delegate_t;
+// System.DelegateData
+struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// Utility.Dispatcher.Dispatcher
+struct Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6;
+// LionStudios.Suite.Analytics.Events.EconomyEvent
+struct EconomyEvent_t234779EB492CA9100BC2E589751F107242498988;
+// LionStudios.Suite.Analytics.Events.EconomyEventWithReceipt
+struct EconomyEventWithReceipt_t5A7145C808A134EF088B83A2D296881AB32DDE50;
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2;
+// System.EventArgs
+struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377;
+// LionStudios.Suite.Analytics.EventScheduler
+struct EventScheduler_t42BCE1F0ACC19E57B5FE3758E3B62E9280BE3C52;
+// LionStudios.Suite.Analytics.EventsFilter
+struct EventsFilter_t508B7309CB03C3B1F5116AD82429D70B2E2C5E6C;
+// LionStudios.Suite.Analytics.Events.FeatureUnlockedEvent
+struct FeatureUnlockedEvent_t0519CD849D9CD9AC54C22652233FF3F4C0FC9D2E;
+// Events.InGame.EventArgs.FeatureUnlockedEventArgs
+struct FeatureUnlockedEventArgs_tB68A3347EF7C79E744E312D84F842B3D056189BC;
+// LionStudios.Suite.Analytics.Events.Game.GameEvent
+struct GameEvent_t76F761CAA37C7D6F009F5149FE0E3A211CA80692;
+// LionStudios.Suite.Analytics.Events.GiftReceivedEvent
+struct GiftReceivedEvent_t45DF44073BB683D8E8B26FD505D909420841E38F;
+// Events.InGame.EventArgs.GiftReceivedEventArgs
+struct GiftReceivedEventArgs_t1672CEC93E26080B2EA9D6EA7DCF697ABA6B67E1;
+// LionStudios.Suite.Analytics.Events.GiftSentEvent
+struct GiftSentEvent_t2C5C62F0A687B4F15122A8C7EDEAC5B145F4867C;
+// Events.InGame.EventArgs.GiftSentEventArgs
+struct GiftSentEventArgs_tB07CC7AB04F0A4CEE6072D33E1F3E08E200AE3D2;
+// LionStudios.Suite.Analytics.Events.HandActionEvent
+struct HandActionEvent_t93A6A6A7EEC282605503B04F1AA22BD5BAB6C1C2;
+// Events.InGame.EventArgs.HandActionEventArgs
+struct HandActionEventArgs_t9FF58B739760F248D7A0D135A2988B9F2046A7BB;
+// LionStudios.Suite.Analytics.Events.IAPEvent
+struct IAPEvent_t69C94E103CC5432EECC26E82BAA0D42CB161CC5F;
+// System.IAsyncResult
+struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
+// System.Collections.IDictionary
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+// System.IFormatProvider
+struct IFormatProvider_tC202922D43BFF3525109ABF3FB79625F5646AB52;
+// LionStudios.Suite.Analytics.Events.InappPurchaseEvent
+struct InappPurchaseEvent_tECDD0EDC6F9DC49096D515A741E5898E6382C0AD;
+// LionStudios.Suite.Analytics.Events.InappPurchaseWithReceipt
+struct InappPurchaseWithReceipt_tD1466C9B625B71F8760AD63F1A6CA58F653587F5;
+// LionStudios.Suite.Analytics.Events.InterOpenEvent
+struct InterOpenEvent_t55598A4B3AC6DEB93C2DC0BD64D547BF35322133;
+// LionStudios.Suite.Analytics.Events.InterOpenLoadEvent
+struct InterOpenLoadEvent_t35E71AEF2BCB18A54E1E0DA4A62E2EE1BA900D8D;
+// LionStudios.Suite.Analytics.Events.InterOpenLoadFailEvent
+struct InterOpenLoadFailEvent_t03DA1B7E2E9EDE12B718FE14221B0556D9D681BC;
+// LionStudios.Suite.Analytics.Events.InterOpenShowEvent
+struct InterOpenShowEvent_tD73998E6784FDA3FB2AE58DBF06F86A1AE28EB76;
+// LionStudios.Suite.Analytics.Events.InterOpenShowFailEvent
+struct InterOpenShowFailEvent_t46603162A0EEE2A5BF1FC642A16C2003D5F35EE0;
+// LionStudios.Suite.Analytics.Events.InterOpenStartEvent
+struct InterOpenStartEvent_t396E2B4CA997A7873BABE2CF60B98F8761AC3AE7;
+// LionStudios.Suite.Analytics.Events.InterstitialClickEvent
+struct InterstitialClickEvent_t7A29339214D1FAB9EB61E1E0BC949DDB54A4A8B3;
+// LionStudios.Suite.Analytics.Events.InterstitialEndEvent
+struct InterstitialEndEvent_t52DA18B629AFC3F2DCDCAEE7D8AA81DFA3066DC5;
+// LionStudios.Suite.Analytics.Events.InterstitialEvent
+struct InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3;
+// LionStudios.Suite.Analytics.Events.InterstitialLoadEvent
+struct InterstitialLoadEvent_tE62B4C6D2F27561AF7FB32AC4D2D0359D997E421;
+// LionStudios.Suite.Analytics.Events.InterstitialLoadFailEvent
+struct InterstitialLoadFailEvent_tEB0086A11E7835C3DBE3F5E9EEEEDE115232E2F1;
+// LionStudios.Suite.Analytics.Events.InterstitialShowEvent
+struct InterstitialShowEvent_t1551E92A50E0C95AA7A369DCBC4733C210505893;
+// LionStudios.Suite.Analytics.Events.InterstitialShowFailEvent
+struct InterstitialShowFailEvent_t79D8727A0DEB29D9A8BA0E00357FEAC8F956D8A6;
+// LionStudios.Suite.Analytics.Events.InterstitialStartEvent
+struct InterstitialStartEvent_tBA4E7F78257ED52747E03F618C6D9B048D4BCCB5;
+// LionStudios.Suite.Analytics.Events.InviteReceivedEvent
+struct InviteReceivedEvent_tB599B397F5A1A75984665561875527B96E2DB797;
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteReceivedEventArgs
+struct InviteReceivedEventArgs_t636949BC7DDF26D009B63898AE45745A123C309E;
+// LionStudios.Suite.Analytics.Events.InviteRewardedEvent
+struct InviteRewardedEvent_tAFC0F5C84F7669770815B7C03441701C55822902;
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteRewardedEventArgs
+struct InviteRewardedEventArgs_tC69B703FAAFE69591D75C447BA609854A4F66CC6;
+// LionStudios.Suite.Analytics.Events.InviteSentEvent
+struct InviteSentEvent_t6444EA0DB99146B8281B8A9A244EB116838C5766;
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteSentEventArgs
+struct InviteSentEventArgs_tF325FA40D4A401CCEF4DC98C34F365EF96D56BC9;
+// LionStudios.Suite.Analytics.Events.ItemActionedEvent
+struct ItemActionedEvent_t82740FBF14D9B3C638FE5A92688AC5CFC367A4D2;
+// Events.InGame.EventArgs.ItemActionedEventArgs
+struct ItemActionedEventArgs_t71CB2C48AA0401E3CE532AB91BED60751C2A15A1;
+// LionStudios.Suite.Analytics.Events.ItemCollectedEvent
+struct ItemCollectedEvent_t4939F153ECF45D86A24C8EBC1F79BF562C585E2E;
+// Events.InGame.EventArgs.ItemCollectedEventArgs
+struct ItemCollectedEventArgs_t1A785B05235A04BDF22A600C16B447681EA93AE0;
+// LionStudios.Suite.Analytics.Events.LevelAbandonedEvent
+struct LevelAbandonedEvent_tA07955FECECE7DCBA3D9AC691A595F943C076A77;
+// LionStudios.Suite.Analytics.Events.LevelCompleteEvent
+struct LevelCompleteEvent_t1477CF07D00D2EDB8A5A9266519D9B078505E9F0;
+// Events.Level.EventArgs.LevelCompleteEventArgs
+struct LevelCompleteEventArgs_t2D0117E51ED14206337B6644DBE82FC9A6C25356;
+// LionStudios.Suite.Analytics.Events.LevelEvent
+struct LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA;
+// Events.Level.EventArgs.LevelEventArgs
+struct LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94;
+// LionStudios.Suite.Analytics.Events.LevelFailEvent
+struct LevelFailEvent_tCA4C0CA75BA150B0231C8EBC11387B0F588A1BDA;
+// Events.Level.EventArgs.LevelFailEventArgs
+struct LevelFailEventArgs_t0D7FAD938FE3F0D0FAE00E1716619A3072F62539;
+// LionStudios.Suite.Analytics.Events.LevelRestartEvent
+struct LevelRestartEvent_t405FD4057FDF12943FCDBB106783FFC02B702749;
+// LionStudios.Suite.Analytics.Events.LevelStartEvent
+struct LevelStartEvent_t92B8C43DCDABF2215B0A9BAFA2CCF1632C7F9A1A;
+// LionStudios.Suite.Analytics.Events.LevelStepEvent
+struct LevelStepEvent_t47638460AD38FDAFC6D0D9AC41D51DC089EA65CA;
+// Events.Level.EventArgs.LevelStepEventArgs
+struct LevelStepEventArgs_t9EFFAD397A46654E661B250CB24DE64B8D54E7E2;
+// LionStudios.Suite.Analytics.Events.LevelUpEvent
+struct LevelUpEvent_t6B004C2F5565FCAC65E53453BED0CEBFEF83E9A3;
+// Events.Level.EventArgs.LevelUpEventArgs
+struct LevelUpEventArgs_t145E17C6FC0867308B87C6D7D966045613743654;
+// LionStudios.Suite.Analytics.LionAnalyticsSettings
+struct LionAnalyticsSettings_t8E9C085D37EF49849928BA5B12705F59790C91C0;
+// LionStudios.Suite.Analytics.Events.LionGameEventBase
+struct LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A;
+// LionStudios.Suite.Analytics.Events.MachineLearningEventArgs
+struct MachineLearningEventArgs_t897E0FB81E806CD136FBF38285B8670FE102A161;
+// System.Reflection.MemberFilter
+struct MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553;
+// System.Reflection.MethodInfo
+struct MethodInfo_t;
+// LionStudios.Suite.Analytics.Events.MissionAbandonedEvent
+struct MissionAbandonedEvent_t3821916F1E31FB14546375A96FF02DCF81C5644D;
+// LionStudios.Suite.Analytics.Events.MissionCompletedEvent
+struct MissionCompletedEvent_tE3C88FB7154AD97182D1EAB109D7DA32CBF6D76D;
+// Events.Mission.EventArgs.MissionCompletedEventArgs
+struct MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775;
+// LionStudios.Suite.Analytics.Events.MissionEvent
+struct MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862;
+// Events.Mission.EventArgs.MissionEventArgs
+struct MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C;
+// LionStudios.Suite.Analytics.Events.MissionFailedEvent
+struct MissionFailedEvent_tC303528B367BE7C51D1DB260D549084DB30C81A6;
+// Events.Mission.EventArgs.MissionFailedEventArgs
+struct MissionFailedEventArgs_t54F3264EEF3E19AB58F57F6616C368289E4F34F0;
+// LionStudios.Suite.Analytics.Events.MissionStartedEvent
+struct MissionStartedEvent_tAC26CEC3D3FCE63C78DEFA358ACDF8F819032283;
+// LionStudios.Suite.Analytics.Events.MissionStepEvent
+struct MissionStepEvent_tCFF7E7BF2488E449CE672F329CB2C1A1645932BB;
+// Events.Mission.EventArgs.MissionStepEventArgs
+struct MissionStepEventArgs_tFD9EA9C9B41143C3A66320CA4A07EB75B358D2CE;
+// Newtonsoft.Json.Serialization.NamingStrategy
+struct NamingStrategy_tB85DD4A9F6C33F668AF7273D3B5193ABC4617D50;
+// System.NotImplementedException
+struct NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8;
+// LionStudios.Suite.Analytics.Events.NotificationOpenedEvent
+struct NotificationOpenedEvent_t44AAD5BD986EF9097074BE1FA5FD2661ABFAD616;
+// Events.InGame.EventArgs.NotificationOpenedEventArgs
+struct NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246;
+// System.Globalization.NumberFormatInfo
+struct NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472;
+// LionStudios.Suite.Analytics.Events.OptionsEvent
+struct OptionsEvent_t9A7738D507FF1FA7B3018692C1E4C6D7F21E8884;
+// Events.InGame.EventArgs.OptionsEventArgs
+struct OptionsEventArgs_t22341BD03512C1E6E646DCF85622DF9C01C21A61;
+// LionStudios.Suite.Analytics.Events.PowerUpUsedEvent
+struct PowerUpUsedEvent_tE083427C6584A4D437D378194C400D158F3A6A9A;
+// Events.InGame.EventArgs.PowerUpUsedEventArgs
+struct PowerUpUsedEventArgs_t02C937594D8BD1A93597D45658BEE410E591F289;
+// LionStudios.Suite.Analytics.Events.PredictionResultEvent
+struct PredictionResultEvent_tA078B8C498600D03798813438B8E88CD2DBA8E99;
+// LionStudios.Suite.Analytics.Product
+struct Product_tF33F3342755B680CD2835C2A548770F9149CA2D7;
+// LionStudios.Suite.Analytics.Events.ProductViewedEvent
+struct ProductViewedEvent_t31DF8C1759C9B4775545551B2C30D77FAD78F93C;
+// Events.InGame.EventArgs.ProductViewedEventArgs
+struct ProductViewedEventArgs_t3E8FE2F10F6C229E1DBB57AA2B78180E0631ABF8;
+// LionStudios.Suite.Analytics.RealCurrency
+struct RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214;
+// LionStudios.Suite.Analytics.Reward
+struct Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575;
+// LionStudios.Suite.Analytics.Events.RewardVideoClickEvent
+struct RewardVideoClickEvent_t15EA050322868D22E3BC6EEF70E9364DA18394F5;
+// LionStudios.Suite.Analytics.Events.RewardVideoCollectEvent
+struct RewardVideoCollectEvent_tD83B081540126E32C2DF6055AF5EAF0F6AE5FBEC;
+// LionStudios.Suite.Analytics.Events.RewardVideoEndEvent
+struct RewardVideoEndEvent_t1FB6495C385B953ACF910335E29E32417765C534;
+// LionStudios.Suite.Analytics.Events.RewardVideoLoadEvent
+struct RewardVideoLoadEvent_tFC2F7BAEAB1D603E4C8A3AACC3013B2C496FD0DA;
+// LionStudios.Suite.Analytics.Events.RewardVideoLoadFailEvent
+struct RewardVideoLoadFailEvent_t6C9A1F5B230AD659036AEA4B3B8EC76C9A8FFD04;
+// LionStudios.Suite.Analytics.Events.RewardVideoOpportunityEvent
+struct RewardVideoOpportunityEvent_tD69B4F8DF571E66D3CCF8DBA81CB550D15E9F5CF;
+// LionStudios.Suite.Analytics.Events.RewardVideoShowEvent
+struct RewardVideoShowEvent_tAB1860899095F9444D9F19A52372935E19CF6C10;
+// LionStudios.Suite.Analytics.Events.RewardVideoShowFailEvent
+struct RewardVideoShowFailEvent_t905DE0DADEB75148A2B9341569D66CCB04F1FEFD;
+// LionStudios.Suite.Analytics.Events.RewardVideoStartEvent
+struct RewardVideoStartEvent_t473F2102005FF05ECBC5C582A2051B36B41DE4FF;
+// System.Runtime.Serialization.SafeSerializationManager
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+// LionStudios.Suite.Analytics.Events.ShopEnteredEvent
+struct ShopEnteredEvent_t91D071D9A659ECA89A3A70E8C7374B0E9B693F3E;
+// Events.InGame.EventArgs.ShopEnteredEventArgs
+struct ShopEnteredEventArgs_t3990D32341CA1BCB59C608B09A8676CBDB2715E0;
+// LionStudios.Suite.Analytics.Events.SkillUpgradedEvent
+struct SkillUpgradedEvent_tE2B3914B6406455710F9F0E901704C85B72C4F6D;
+// Events.InGame.EventArgs.SkillUpgradedEventArgs
+struct SkillUpgradedEventArgs_t9C077E9497D9C9C2CD02BF55123589B0B3D606AB;
+// LionStudios.Suite.Analytics.Events.SkillUsedEvent
+struct SkillUsedEvent_t5A6942F8F26980E152282490F96811B77E34F63D;
+// Events.InGame.EventArgs.SkillUsedEventArgs
+struct SkillUsedEventArgs_t2AC3468D7FA16FE0CE5768F2C666DA02E12A5E51;
+// LionStudios.Suite.Analytics.Events.SocialConnectEvent
+struct SocialConnectEvent_tDEEA8E6E9A5E344F5896DDE841F2FFB75FBE6A4F;
+// LionStudios.Suite.Analytics.Events.EventArgs.SocialConnectEventArgs
+struct SocialConnectEventArgs_tA3D0E95B54D448D797FEF9C022FC315621C0C4BE;
+// LionStudios.Suite.Analytics.Events.SocialEvent
+struct SocialEvent_tAB02B35ED8F05CC51DD59605A98B5572D8646EBD;
+// LionStudios.Suite.Analytics.Events.EventArgs.SocialEventArgs
+struct SocialEventArgs_t05A06736EF7CBB940AE098FB30F39FD063F3259F;
+// System.String
+struct String_t;
+// Newtonsoft.Json.Converters.StringEnumConverter
+struct StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184;
+// LionStudios.Suite.Analytics.Events.SupportEvent
+struct SupportEvent_t3761B773BBFB9BE73FB6598374EC47F9779F6774;
+// LionStudios.Suite.Analytics.Events.EventArgs.SupportEventArgs
+struct SupportEventArgs_tCE9BE8371F94B757DF517AFA5B7310986E01A8AA;
+// System.Globalization.TextInfo
+struct TextInfo_tD3BAFCFD77418851E7D5CB8D2588F47019E414B4;
+// LionStudios.Suite.Analytics.Transaction
+struct Transaction_t12BEC26500383F0721FC66524801C5C126142A23;
+// System.Type
+struct Type_t;
+// LionStudios.Suite.Analytics.Events.UiInteractionEvent
+struct UiInteractionEvent_t1D726F4398978B2EECE591960F1BCE2D63C4CFA1;
+// Events.InGame.EventArgs.UiInteractionEventArgs
+struct UiInteractionEventArgs_t5D4127421F485B9767BDE07C8F531CAE03927E5B;
+// LionStudios.Suite.Analytics.VirtualCurrency
+struct VirtualCurrency_tA04EAD092BED69D54D0E3BB539ABDD3D77DF7D27;
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+// LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs
+struct LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0;
+// LionStudios.Suite.Analytics.LionAnalytics/LionEventDelegate
+struct LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE;
+// LionStudios.Suite.Analytics.Events.LionGameEventBase/<>c
+struct U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B;
+// LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs
+struct MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38;
+
+IL2CPP_EXTERN_C RuntimeClass* AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EventType_t429FA7DC7D1CB8045AC7F315B8307A2FFE8F87AF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IAPEventType_t3A06756C5D419E79DC6618A715557D4A21706949_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ICollection_1_t7FAFDB77857BA6F1396E710E9F065944B2183233_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerable_1_t1F32F711C91AEBCFA4770668CA067447D2A4F665_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_1_t913F242211877D391217C9D75152235266FDAF10_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LionCore_t64FA1D4AACD36060EA085AA7376F96EDA486ACF4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Product_tF33F3342755B680CD2835C2A548770F9149CA2D7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ReceiptStatus_t39B7FD27E8E95A5467AF287CD900DA5938B06361_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* String_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Transaction_t12BEC26500383F0721FC66524801C5C126142A23_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* VirtualCurrency_tA04EAD092BED69D54D0E3BB539ABDD3D77DF7D27_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD;
+IL2CPP_EXTERN_C String_t* _stringLiteral0138657F026CD45F0B00A9533EC60497F3CD4EEF;
+IL2CPP_EXTERN_C String_t* _stringLiteral0B988E2022EA115D1F3BC600C1497808CDAECDA7;
+IL2CPP_EXTERN_C String_t* _stringLiteral0C9040C4DC413BA80EE9819FE084DE07D6B8ED46;
+IL2CPP_EXTERN_C String_t* _stringLiteral0E828A82C7DAB1840AD232BFF71A40EA2AA611CC;
+IL2CPP_EXTERN_C String_t* _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4;
+IL2CPP_EXTERN_C String_t* _stringLiteral11C9A673622979E6A5814D0E630E82FFD2877F39;
+IL2CPP_EXTERN_C String_t* _stringLiteral1284A85AD0C164E5D47B34FC51268F1BCEB46BBC;
+IL2CPP_EXTERN_C String_t* _stringLiteral1317CF02F3F3926703DF869C594244C35D400F6A;
+IL2CPP_EXTERN_C String_t* _stringLiteral142BF3CD167698FA3328C355D56EEF712AFED0A8;
+IL2CPP_EXTERN_C String_t* _stringLiteral14BBC620E8E75411EAE7D5F909B52070704C37FA;
+IL2CPP_EXTERN_C String_t* _stringLiteral1671D86E8DE91CE35C3BB103B871E12D71870E41;
+IL2CPP_EXTERN_C String_t* _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F;
+IL2CPP_EXTERN_C String_t* _stringLiteral18378624E2FDAF34032A8553382EF68C1D78970B;
+IL2CPP_EXTERN_C String_t* _stringLiteral189EE3A3E565D46B3514A166D75CD9A28F261944;
+IL2CPP_EXTERN_C String_t* _stringLiteral1ACBFDE52298290BB54453C54FFF5AAFD9015100;
+IL2CPP_EXTERN_C String_t* _stringLiteral1B03F4FA5C3D68B3DD133DD7F7F8D989E4D3705F;
+IL2CPP_EXTERN_C String_t* _stringLiteral1BDC6FCDE87738D8A1B9914AAA135DD976BB837C;
+IL2CPP_EXTERN_C String_t* _stringLiteral1CC0E5250DCE5955BD32F5A8AD583F7E3C7CEB02;
+IL2CPP_EXTERN_C String_t* _stringLiteral1CCB7A5F9209C416D30F8D4F39C404A9BE09849D;
+IL2CPP_EXTERN_C String_t* _stringLiteral1E59D4BB4C3292F60AB0064894B1C2CF7C81CA3E;
+IL2CPP_EXTERN_C String_t* _stringLiteral1F65C77D018B2C07B1DE2EFA824BFED14D3CF282;
+IL2CPP_EXTERN_C String_t* _stringLiteral20569223F7470C016A28A73ACCC591387912540D;
+IL2CPP_EXTERN_C String_t* _stringLiteral27BBD127FDFD39CCC74FFF25A220E5E57BDF5078;
+IL2CPP_EXTERN_C String_t* _stringLiteral2A36F6FA5E54880BFB0DBE4C60D70291E0D03EBD;
+IL2CPP_EXTERN_C String_t* _stringLiteral2B4F395BB091D43942F806D044403DC6BB9B580F;
+IL2CPP_EXTERN_C String_t* _stringLiteral2BE0C47BE96EAB5BC6200A3CE617F30144898F38;
+IL2CPP_EXTERN_C String_t* _stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968;
+IL2CPP_EXTERN_C String_t* _stringLiteral2F4C04323DBB37299F3954CAEB8A3F5AEB6EA06F;
+IL2CPP_EXTERN_C String_t* _stringLiteral3176E9F79739FDCA80215B879066D7F29CE0CC91;
+IL2CPP_EXTERN_C String_t* _stringLiteral34629DCDEF990D3A0518799AA5049DCF7615D75D;
+IL2CPP_EXTERN_C String_t* _stringLiteral35C5252656EAA7532472F1F895FEBC8038A15FB6;
+IL2CPP_EXTERN_C String_t* _stringLiteral364215BDCE011F1DB4D055B09425F77B0BEF997C;
+IL2CPP_EXTERN_C String_t* _stringLiteral3828858EDDADFB2AEC895F54A3E3F0586C7AC85C;
+IL2CPP_EXTERN_C String_t* _stringLiteral386D46E8E03D5EAD3DEAD8B7F9DF16793B2CB9B8;
+IL2CPP_EXTERN_C String_t* _stringLiteral3A2F21217E1EA4F545008A202FB9E52469A8BE29;
+IL2CPP_EXTERN_C String_t* _stringLiteral3BBECC64A7E20484234F26AF7EC9F752A79657D0;
+IL2CPP_EXTERN_C String_t* _stringLiteral3C902E99E3892A503088A0C6527E5C0A8AE807B0;
+IL2CPP_EXTERN_C String_t* _stringLiteral3DC05FEBC8D528958F92F5E1C84430689E0AAFC7;
+IL2CPP_EXTERN_C String_t* _stringLiteral3F9515E29AC041A0E382EFC495BCAF1494AC7C05;
+IL2CPP_EXTERN_C String_t* _stringLiteral4175865BA8E8EC7BF1D511F76A9EE34DD8AA2EDE;
+IL2CPP_EXTERN_C String_t* _stringLiteral41FDC774843900151F6C14D21FB4BAF0A6F1266E;
+IL2CPP_EXTERN_C String_t* _stringLiteral4546C3AF85E54C67C49E60DB80F4872109DF5BA5;
+IL2CPP_EXTERN_C String_t* _stringLiteral45781C19CB30F4812DBE50F3B90E55E5E6458411;
+IL2CPP_EXTERN_C String_t* _stringLiteral45BF2FF718D14446E4FA055DB5A6B2344B8C7693;
+IL2CPP_EXTERN_C String_t* _stringLiteral468D1A36553E0D806ED6D3DF59E9459B1B5B7671;
+IL2CPP_EXTERN_C String_t* _stringLiteral4702301DC141AEF4221635583D36092DAC2C67AB;
+IL2CPP_EXTERN_C String_t* _stringLiteral47E8F1BB17382BB01CE272E0E5F0A6DD55331C97;
+IL2CPP_EXTERN_C String_t* _stringLiteral49358F1C1A159D63E0A1540F41203FDED62ABF43;
+IL2CPP_EXTERN_C String_t* _stringLiteral4C58449193C8F05F4999001E64A0509DAFB0C89F;
+IL2CPP_EXTERN_C String_t* _stringLiteral4D14D9A60A32951C0B499FAB674CBE49BB71F4E3;
+IL2CPP_EXTERN_C String_t* _stringLiteral4D3AB98A53D05A27B5E0409A8837B83C853CC83F;
+IL2CPP_EXTERN_C String_t* _stringLiteral4E66AFFFD9EF4D4CA7828270EA8D89E97AF001FF;
+IL2CPP_EXTERN_C String_t* _stringLiteral4F4C10BB8B4A0AA75EAF24C3FEEE5043F6E42B07;
+IL2CPP_EXTERN_C String_t* _stringLiteral5228BBE52D5AD80482153B7432A6DEC5B76C473A;
+IL2CPP_EXTERN_C String_t* _stringLiteral545ADE15A3EEFE31A2DC92E9C4D39A17EE1CC37E;
+IL2CPP_EXTERN_C String_t* _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821;
+IL2CPP_EXTERN_C String_t* _stringLiteral5C45296559F7CA6929E01412FE0C8BFD8304B3F4;
+IL2CPP_EXTERN_C String_t* _stringLiteral5D4017B95AB42E66F45ACDB89EECCA2D3C4F526F;
+IL2CPP_EXTERN_C String_t* _stringLiteral5D5BBC97D4881113EB4174C2365252C8BCC000FC;
+IL2CPP_EXTERN_C String_t* _stringLiteral5D8D0DBD41CE017CE7706C1D5463E08058EE9F5D;
+IL2CPP_EXTERN_C String_t* _stringLiteral5E7EF2A58ED5207397D58B9236FE1C7BF363CFBF;
+IL2CPP_EXTERN_C String_t* _stringLiteral603848C23E58A824DE887DDA23F73B88030181D8;
+IL2CPP_EXTERN_C String_t* _stringLiteral60EBBABC9966C710E1E4647D18DA99BFFFD533E3;
+IL2CPP_EXTERN_C String_t* _stringLiteral63B25E587F89A2CBE24B0C2802A8EA23C0163E74;
+IL2CPP_EXTERN_C String_t* _stringLiteral6421D48A4E68239A9B33429440F908A9679C2D91;
+IL2CPP_EXTERN_C String_t* _stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF;
+IL2CPP_EXTERN_C String_t* _stringLiteral6A5592D0062C9AE9F4D590C21C32B0A2C09C9003;
+IL2CPP_EXTERN_C String_t* _stringLiteral6BC89B240588F94903015A1BBAE29ACB584D9AA1;
+IL2CPP_EXTERN_C String_t* _stringLiteral6DE5A3ACE04D7E373C4AA3EABD29D32D728DE5E7;
+IL2CPP_EXTERN_C String_t* _stringLiteral6E005336CF197D8FE945DCDAF5F189F9B55FBF8E;
+IL2CPP_EXTERN_C String_t* _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1;
+IL2CPP_EXTERN_C String_t* _stringLiteral70C09EB5DC1ED91119F4322651458BB5B0582547;
+IL2CPP_EXTERN_C String_t* _stringLiteral72EF5E6D37836B03D1804B7F0C789CB5D3045062;
+IL2CPP_EXTERN_C String_t* _stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2;
+IL2CPP_EXTERN_C String_t* _stringLiteral737770B3F764157DABB4CE6100DDE5F3A7607BE8;
+IL2CPP_EXTERN_C String_t* _stringLiteral75EAF09B87D67E0FEBA609C4C5794CA8524FE155;
+IL2CPP_EXTERN_C String_t* _stringLiteral78850661D84F871021A87294A510D90D963AD7F4;
+IL2CPP_EXTERN_C String_t* _stringLiteral795D9B13BB321AEEEC9768F4D6DD8CEE852A5D23;
+IL2CPP_EXTERN_C String_t* _stringLiteral7BA4811D9B4DD1C83525D6D519B43A954269123C;
+IL2CPP_EXTERN_C String_t* _stringLiteral7CB9FD26BFD0E7B5C94645BEA61C366F39E3E946;
+IL2CPP_EXTERN_C String_t* _stringLiteral7EE0E1BAD7CCF8B68C69068748007E32A0E2C227;
+IL2CPP_EXTERN_C String_t* _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6;
+IL2CPP_EXTERN_C String_t* _stringLiteral800A43C54AA43351D63B2BFCABCBBC885EADBF9B;
+IL2CPP_EXTERN_C String_t* _stringLiteral821E8A2D8EB7B22DBA42A462970A22E7A2DD3342;
+IL2CPP_EXTERN_C String_t* _stringLiteral83120395E2A0A67DBEB3A232D34C51462E2FF675;
+IL2CPP_EXTERN_C String_t* _stringLiteral840D94CDC6A5AD28D5CB4F7047FAB75458D55B82;
+IL2CPP_EXTERN_C String_t* _stringLiteral875FEDCB0C2F99400D7F33363907C81EF6B85260;
+IL2CPP_EXTERN_C String_t* _stringLiteral8881FF8E6F60F89F7833A485E9E35B467A0D308B;
+IL2CPP_EXTERN_C String_t* _stringLiteral8C2D3D4D35B67C1B740496D7A1A97A732F01C4FB;
+IL2CPP_EXTERN_C String_t* _stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1;
+IL2CPP_EXTERN_C String_t* _stringLiteral933B6DF8FB07C5B401999ADDA8A9463D38B69E49;
+IL2CPP_EXTERN_C String_t* _stringLiteral9490CD524EF06FB60D93E6086F59632419A82BDE;
+IL2CPP_EXTERN_C String_t* _stringLiteral96C0F8A931984A180E59B9D03E03D2546B9586BD;
+IL2CPP_EXTERN_C String_t* _stringLiteral97521173B2ACE3F53F484A9ED9D4DEBB573F5998;
+IL2CPP_EXTERN_C String_t* _stringLiteral977DECB5022A510B5EB4313C178CEA161D6AED36;
+IL2CPP_EXTERN_C String_t* _stringLiteral99A9CAAB454612DB5E8D8EBE22477B5395A2545B;
+IL2CPP_EXTERN_C String_t* _stringLiteral9BC1C82E2DB1C701DDA65153FF8E48FD0B966DA9;
+IL2CPP_EXTERN_C String_t* _stringLiteral9C2501A8AD53E9560A348FAFB85F4353AB1C0987;
+IL2CPP_EXTERN_C String_t* _stringLiteral9FD4341A8AF88AFA55D8CB191AEA2C9BAC9BA186;
+IL2CPP_EXTERN_C String_t* _stringLiteralA17B189D16DA98E82DA27D22D5CAAE15A575EAC4;
+IL2CPP_EXTERN_C String_t* _stringLiteralA39F26E1A96A85480E1DF45DA4FB0C20431FE762;
+IL2CPP_EXTERN_C String_t* _stringLiteralA4BA9AF5444B452878DA458D053CE44F77B995E8;
+IL2CPP_EXTERN_C String_t* _stringLiteralA5FD35728A36B9EC9515929B05D64409AE8F1727;
+IL2CPP_EXTERN_C String_t* _stringLiteralA66F0B14E046945D8C8AC14EA7F583EF031A7367;
+IL2CPP_EXTERN_C String_t* _stringLiteralA6805D1A54FB63B263503FD84E9524D9F1BA798A;
+IL2CPP_EXTERN_C String_t* _stringLiteralA78969364BD554BF87182FABCADA3B9006ED78B7;
+IL2CPP_EXTERN_C String_t* _stringLiteralA8B331B9581E8DD4BECDA23A2ED02131FA892922;
+IL2CPP_EXTERN_C String_t* _stringLiteralABBA2DB6F733A544053CFC86E422C65E2E5FAD05;
+IL2CPP_EXTERN_C String_t* _stringLiteralABE8503EB3EE4C0E25C512A420C6106BD32842B5;
+IL2CPP_EXTERN_C String_t* _stringLiteralAD8D9AC56D8F533F4EC71C3E1EE98F84EE26FFB6;
+IL2CPP_EXTERN_C String_t* _stringLiteralADD18B13E5D6E09273E22A1EF0064899B7C2274F;
+IL2CPP_EXTERN_C String_t* _stringLiteralAF559BEEEDC4A3DA7C3E4A7642A932EA7C00491E;
+IL2CPP_EXTERN_C String_t* _stringLiteralAF5814DABD4CD7584AC407E0D72A87CAB2B45A7D;
+IL2CPP_EXTERN_C String_t* _stringLiteralB2A1FEE7D68E23AD52765D17E0714B789BDEC7E4;
+IL2CPP_EXTERN_C String_t* _stringLiteralB3E36369A14EE279CCABE60446F3EEE3E1852A4A;
+IL2CPP_EXTERN_C String_t* _stringLiteralB533CE2423F0C94244872A1A23981600D074BD29;
+IL2CPP_EXTERN_C String_t* _stringLiteralB535D783805B75101BBBE560D97D1CF01A06DAFF;
+IL2CPP_EXTERN_C String_t* _stringLiteralB835F4D75292BE504618B695A0D689AE6DB75010;
+IL2CPP_EXTERN_C String_t* _stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C;
+IL2CPP_EXTERN_C String_t* _stringLiteralB90FF710A0CBA324DC518986A7B4AF047D001E24;
+IL2CPP_EXTERN_C String_t* _stringLiteralBA72BA139540F1BC502326441FEA8171B68CACFA;
+IL2CPP_EXTERN_C String_t* _stringLiteralBCC74ADACE086BE0051550BCC7212909CF0DF4F2;
+IL2CPP_EXTERN_C String_t* _stringLiteralBCCB4F21C80E84DF6007C8C04DBF1B2E590D4DE8;
+IL2CPP_EXTERN_C String_t* _stringLiteralBE4D3D1724175067118898E58F7AF49F3B4A7E92;
+IL2CPP_EXTERN_C String_t* _stringLiteralBF0A8C3ED906A11642A747332EB32E4F8F493469;
+IL2CPP_EXTERN_C String_t* _stringLiteralBF5122DC4AFD41D43C493F0AD2C0129FEF7748A6;
+IL2CPP_EXTERN_C String_t* _stringLiteralC1AEFC63E4254EE6808112E3668D1AE3BA6D3E52;
+IL2CPP_EXTERN_C String_t* _stringLiteralC20F4101FAEED126882D0D5F1B517E34E17DCC88;
+IL2CPP_EXTERN_C String_t* _stringLiteralC26B1D98F1DA53DB51AC763D66E0E79A4143386D;
+IL2CPP_EXTERN_C String_t* _stringLiteralC513D98AA129E5C82CFFBC0A3726201B9F97FAC7;
+IL2CPP_EXTERN_C String_t* _stringLiteralCB963BA6B3467DA024278D64836E9A8D373DD1A5;
+IL2CPP_EXTERN_C String_t* _stringLiteralCCE359C6B0ABE9D58CB588667F9A93BA52A1C294;
+IL2CPP_EXTERN_C String_t* _stringLiteralCD3F5FD7D806A83A6A3E2726770CA44ECCF7FB2D;
+IL2CPP_EXTERN_C String_t* _stringLiteralCDC0DD269BFBB2BFE69E4C5F7A4D9C3A66A3FAB0;
+IL2CPP_EXTERN_C String_t* _stringLiteralCF7DF948FC4905FED1A56776B9DFCCB86C46912A;
+IL2CPP_EXTERN_C String_t* _stringLiteralD03EC2C7B5D10E32285F19A5E6C3B41F7B9D11E8;
+IL2CPP_EXTERN_C String_t* _stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809;
+IL2CPP_EXTERN_C String_t* _stringLiteralD47778A389B7F2930821A5B0A86CE1866E8A3D23;
+IL2CPP_EXTERN_C String_t* _stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964;
+IL2CPP_EXTERN_C String_t* _stringLiteralD9141234F35784C0D878CFAD97E9A401CDC537CF;
+IL2CPP_EXTERN_C String_t* _stringLiteralD9522C0271068996E05A7F33876E053B38938AB9;
+IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+IL2CPP_EXTERN_C String_t* _stringLiteralDB347720ACADB3AA506FE23BBE9D82F18731732D;
+IL2CPP_EXTERN_C String_t* _stringLiteralDBDABAA4DFB5B16108C5DE34D90C5FB71267B492;
+IL2CPP_EXTERN_C String_t* _stringLiteralDDBE0ABE849E3FF68EF0AC5E9C15ADABBB385BE9;
+IL2CPP_EXTERN_C String_t* _stringLiteralDEA922D56FC1DCE2D2E04F2CB6355A8761A1A64C;
+IL2CPP_EXTERN_C String_t* _stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D;
+IL2CPP_EXTERN_C String_t* _stringLiteralE009AE33CE6DAFD8CFC5EF32937BD7B9D0421CD1;
+IL2CPP_EXTERN_C String_t* _stringLiteralE0105010ED710A65053D492B3441DC58D914C147;
+IL2CPP_EXTERN_C String_t* _stringLiteralE0228745E227EA8D7812EA85DF6FB01E66F3535A;
+IL2CPP_EXTERN_C String_t* _stringLiteralE14FF21A9FC32D558F62881D9B2FF02DEB6BA164;
+IL2CPP_EXTERN_C String_t* _stringLiteralE170ABB9A7ACC8521EBF25722B9712F924D3BBBC;
+IL2CPP_EXTERN_C String_t* _stringLiteralE4A489E89816C517A3BF78A907EBCEBD70679683;
+IL2CPP_EXTERN_C String_t* _stringLiteralE56E7D1788FC888035CB712FC6843A1BB0A20DCD;
+IL2CPP_EXTERN_C String_t* _stringLiteralE7DEAF0EF6792BEC84DBA15AD00C8661FDDED53C;
+IL2CPP_EXTERN_C String_t* _stringLiteralE9DA95F1606E525EAD2F3A936EBCC96928E34BB8;
+IL2CPP_EXTERN_C String_t* _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E;
+IL2CPP_EXTERN_C String_t* _stringLiteralEB5940BF5425A934C058C5D5C104621EF7EB774B;
+IL2CPP_EXTERN_C String_t* _stringLiteralEC0FFBA8FCFACF334D9B130D25602258A46B88B8;
+IL2CPP_EXTERN_C String_t* _stringLiteralECA9373707C32EE39D5917C06C12D23BADC9BFE9;
+IL2CPP_EXTERN_C String_t* _stringLiteralEDEE40BEF459DD9C27F85D40588E78C271504D4E;
+IL2CPP_EXTERN_C String_t* _stringLiteralEFF2F2EC520BBD2C5279D038C129016916386B8F;
+IL2CPP_EXTERN_C String_t* _stringLiteralF0D7B046C55396D78FD7ECF4CC8C56BAF8615A70;
+IL2CPP_EXTERN_C String_t* _stringLiteralF18DF1173399C9E11281CE68C66299F68FC2C2A5;
+IL2CPP_EXTERN_C String_t* _stringLiteralF27AC7D8AC0DC92F5C779D46168F30EA1B89F32B;
+IL2CPP_EXTERN_C String_t* _stringLiteralF2E72A7F37FB91711FBE127645AED660BCB9E433;
+IL2CPP_EXTERN_C String_t* _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC;
+IL2CPP_EXTERN_C String_t* _stringLiteralF5A7EAD0D3CB838AA308A871570DA8222A86656B;
+IL2CPP_EXTERN_C String_t* _stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267;
+IL2CPP_EXTERN_C String_t* _stringLiteralFB6240E9D3745CE34CBFF18B8598413C559D391D;
+IL2CPP_EXTERN_C String_t* _stringLiteralFC51D5E56AD109C29C8FD03D96141DD94AB29458;
+IL2CPP_EXTERN_C String_t* _stringLiteralFCCFEC9F93B2E6C8FC784051CD70F40F98362E57;
+IL2CPP_EXTERN_C String_t* _stringLiteralFD3B5EAFB846340E4413C2D6FDC05D708DED244D;
+IL2CPP_EXTERN_C String_t* _stringLiteralFD9EF1E00F6BC0384B0AB8EF109230935B177387;
+IL2CPP_EXTERN_C String_t* _stringLiteralFFF7CC8327ABE8A6FB36C4010B59A46F2ADA910D;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EconomyEventWithReceipt__ctor_m5635E20E9AA6A34461906D4D77782FAE8D23DAF8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mAB55B0CC0AB348115A0344B47741E1B59C5B6A2C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m4DBC8A7F39D0DC0AFAB9A760DF7A0763723B4872_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mC3C14AD5B61C2B549861AC3E91B0330173A0D120_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GlobalDataContainer_2_GetData_m7C87CDEBB717283B553A0A774294EEDADFC9D5DA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GlobalDataContainer_2_GetData_mA67FC6B5F172B738F05B5D9F3F88290E1C0967D2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* InappPurchaseWithReceipt__ctor_m05FB7EE1BCD3F9BEFC70C2FE6A65218891569CA9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mE3DE0E9822F3B8020540EB71BCD6852180A92D7D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m0395314B4DB8328D1E82FE871C37CB62204E5601_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mFB6D973C2F0DE12CC2CFB6DCFF650427C590CBC5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3C_cctorU3Eb__37_0_m6C38E7F52558C21A1092420C2EE82527EB3B27F1_RuntimeMethod_var;
+struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com;
+struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_pinvoke;
+struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com;
+struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_pinvoke;
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
+
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2<System.String,System.Object>
+struct Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t233BB24ED01E2D8D65B0651D54B8E3AD125CAF96* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_tE66790F09E854C19C7F612BEAD203AE626E90A36* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_tC9D91E8A3198E40EA339059703AB10DFC9F5CC2E* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// Data.GlobalDataContainer`2<System.Int32,System.String>
+struct GlobalDataContainer_2_t3B95E2138826C88A59FE35A910E9B63228560BC9  : public RuntimeObject
+{
+	// System.Collections.Generic.IDictionary`2<System.Tuple`2<TK,TV>,TV> Data.GlobalDataContainer`2::_idToDataMap
+	RuntimeObject* ____idToDataMap_0;
+	// System.Collections.Generic.IDictionary`2<System.Tuple`2<TK,TV>,System.Collections.Generic.LinkedListNode`1<System.Tuple`2<TK,TV>>> Data.GlobalDataContainer`2::_idToListNodeMap
+	RuntimeObject* ____idToListNodeMap_1;
+	// System.Collections.Generic.LinkedList`1<System.Tuple`2<TK,TV>> Data.GlobalDataContainer`2::_ids
+	LinkedList_1_tB153A3355A582AA81ACB762BD0B7A6867307F594* ____ids_2;
+	// System.Collections.Generic.IList`1<System.Object[]> Data.GlobalDataContainer`2::_trackingInfo
+	RuntimeObject* ____trackingInfo_3;
+	// System.String Data.GlobalDataContainer`2::_name
+	String_t* ____name_4;
+	// System.Collections.Generic.IList`1<System.Object[]> Data.GlobalDataContainer`2::_lastData
+	RuntimeObject* ____lastData_5;
+};
+
+// Data.GlobalDataContainer`2<System.String,System.String>
+struct GlobalDataContainer_2_t248016E27216826B0BACAE44865C608566B718F2  : public RuntimeObject
+{
+	// System.Collections.Generic.IDictionary`2<System.Tuple`2<TK,TV>,TV> Data.GlobalDataContainer`2::_idToDataMap
+	RuntimeObject* ____idToDataMap_0;
+	// System.Collections.Generic.IDictionary`2<System.Tuple`2<TK,TV>,System.Collections.Generic.LinkedListNode`1<System.Tuple`2<TK,TV>>> Data.GlobalDataContainer`2::_idToListNodeMap
+	RuntimeObject* ____idToListNodeMap_1;
+	// System.Collections.Generic.LinkedList`1<System.Tuple`2<TK,TV>> Data.GlobalDataContainer`2::_ids
+	LinkedList_1_t2CD573593FCD9488F0F0A49A4F60DB2471E6A4B6* ____ids_2;
+	// System.Collections.Generic.IList`1<System.Object[]> Data.GlobalDataContainer`2::_trackingInfo
+	RuntimeObject* ____trackingInfo_3;
+	// System.String Data.GlobalDataContainer`2::_name
+	String_t* ____name_4;
+	// System.Collections.Generic.IList`1<System.Object[]> Data.GlobalDataContainer`2::_lastData
+	RuntimeObject* ____lastData_5;
+};
+
+// System.Collections.Generic.List`1<System.Collections.Generic.IDictionary`2<System.String,System.Object>>
+struct List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	IDictionary_2U5BU5D_t1C2A5F38641F518CA51394506890777E78EDF79C* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// SDKMethodProviders.AdjustEventNames
+struct AdjustEventNames_tDD6EE943FB090094F395F2691036FE4B89775F27  : public RuntimeObject
+{
+};
+
+// Data.CoreData
+struct CoreData_t0131416461D5064142B0042F97FDC5408B8B2BDD  : public RuntimeObject
+{
+	// Utility.Dispatcher.Dispatcher Data.CoreData::_dispatcher
+	Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6* ____dispatcher_0;
+	// System.Int32 Data.CoreData::<SequenceId>k__BackingField
+	int32_t ___U3CSequenceIdU3Ek__BackingField_1;
+};
+
+// System.Globalization.CultureInfo
+struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0  : public RuntimeObject
+{
+	// System.Boolean System.Globalization.CultureInfo::m_isReadOnly
+	bool ___m_isReadOnly_3;
+	// System.Int32 System.Globalization.CultureInfo::cultureID
+	int32_t ___cultureID_4;
+	// System.Int32 System.Globalization.CultureInfo::parent_lcid
+	int32_t ___parent_lcid_5;
+	// System.Int32 System.Globalization.CultureInfo::datetime_index
+	int32_t ___datetime_index_6;
+	// System.Int32 System.Globalization.CultureInfo::number_index
+	int32_t ___number_index_7;
+	// System.Int32 System.Globalization.CultureInfo::default_calendar_type
+	int32_t ___default_calendar_type_8;
+	// System.Boolean System.Globalization.CultureInfo::m_useUserOverride
+	bool ___m_useUserOverride_9;
+	// System.Globalization.NumberFormatInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::numInfo
+	NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* ___numInfo_10;
+	// System.Globalization.DateTimeFormatInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::dateTimeInfo
+	DateTimeFormatInfo_t0457520F9FA7B5C8EAAEB3AD50413B6AEEB7458A* ___dateTimeInfo_11;
+	// System.Globalization.TextInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::textInfo
+	TextInfo_tD3BAFCFD77418851E7D5CB8D2588F47019E414B4* ___textInfo_12;
+	// System.String System.Globalization.CultureInfo::m_name
+	String_t* ___m_name_13;
+	// System.String System.Globalization.CultureInfo::englishname
+	String_t* ___englishname_14;
+	// System.String System.Globalization.CultureInfo::nativename
+	String_t* ___nativename_15;
+	// System.String System.Globalization.CultureInfo::iso3lang
+	String_t* ___iso3lang_16;
+	// System.String System.Globalization.CultureInfo::iso2lang
+	String_t* ___iso2lang_17;
+	// System.String System.Globalization.CultureInfo::win3lang
+	String_t* ___win3lang_18;
+	// System.String System.Globalization.CultureInfo::territory
+	String_t* ___territory_19;
+	// System.String[] System.Globalization.CultureInfo::native_calendar_names
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___native_calendar_names_20;
+	// System.Globalization.CompareInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::compareInfo
+	CompareInfo_t1B1A6AC3486B570C76ABA52149C9BD4CD82F9E57* ___compareInfo_21;
+	// System.Void* System.Globalization.CultureInfo::textinfo_data
+	void* ___textinfo_data_22;
+	// System.Int32 System.Globalization.CultureInfo::m_dataItem
+	int32_t ___m_dataItem_23;
+	// System.Globalization.Calendar System.Globalization.CultureInfo::calendar
+	Calendar_t0A117CC7532A54C17188C2EFEA1F79DB20DF3A3B* ___calendar_24;
+	// System.Globalization.CultureInfo System.Globalization.CultureInfo::parent_culture
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___parent_culture_25;
+	// System.Boolean System.Globalization.CultureInfo::constructed
+	bool ___constructed_26;
+	// System.Byte[] System.Globalization.CultureInfo::cached_serialized_form
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___cached_serialized_form_27;
+	// System.Globalization.CultureData System.Globalization.CultureInfo::m_cultureData
+	CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D* ___m_cultureData_28;
+	// System.Boolean System.Globalization.CultureInfo::m_isInherited
+	bool ___m_isInherited_29;
+};
+// Native definition for P/Invoke marshalling of System.Globalization.CultureInfo
+struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_pinvoke
+{
+	int32_t ___m_isReadOnly_3;
+	int32_t ___cultureID_4;
+	int32_t ___parent_lcid_5;
+	int32_t ___datetime_index_6;
+	int32_t ___number_index_7;
+	int32_t ___default_calendar_type_8;
+	int32_t ___m_useUserOverride_9;
+	NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* ___numInfo_10;
+	DateTimeFormatInfo_t0457520F9FA7B5C8EAAEB3AD50413B6AEEB7458A* ___dateTimeInfo_11;
+	TextInfo_tD3BAFCFD77418851E7D5CB8D2588F47019E414B4* ___textInfo_12;
+	char* ___m_name_13;
+	char* ___englishname_14;
+	char* ___nativename_15;
+	char* ___iso3lang_16;
+	char* ___iso2lang_17;
+	char* ___win3lang_18;
+	char* ___territory_19;
+	char** ___native_calendar_names_20;
+	CompareInfo_t1B1A6AC3486B570C76ABA52149C9BD4CD82F9E57* ___compareInfo_21;
+	void* ___textinfo_data_22;
+	int32_t ___m_dataItem_23;
+	Calendar_t0A117CC7532A54C17188C2EFEA1F79DB20DF3A3B* ___calendar_24;
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_pinvoke* ___parent_culture_25;
+	int32_t ___constructed_26;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
+	CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_pinvoke* ___m_cultureData_28;
+	int32_t ___m_isInherited_29;
+};
+// Native definition for COM marshalling of System.Globalization.CultureInfo
+struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com
+{
+	int32_t ___m_isReadOnly_3;
+	int32_t ___cultureID_4;
+	int32_t ___parent_lcid_5;
+	int32_t ___datetime_index_6;
+	int32_t ___number_index_7;
+	int32_t ___default_calendar_type_8;
+	int32_t ___m_useUserOverride_9;
+	NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* ___numInfo_10;
+	DateTimeFormatInfo_t0457520F9FA7B5C8EAAEB3AD50413B6AEEB7458A* ___dateTimeInfo_11;
+	TextInfo_tD3BAFCFD77418851E7D5CB8D2588F47019E414B4* ___textInfo_12;
+	Il2CppChar* ___m_name_13;
+	Il2CppChar* ___englishname_14;
+	Il2CppChar* ___nativename_15;
+	Il2CppChar* ___iso3lang_16;
+	Il2CppChar* ___iso2lang_17;
+	Il2CppChar* ___win3lang_18;
+	Il2CppChar* ___territory_19;
+	Il2CppChar** ___native_calendar_names_20;
+	CompareInfo_t1B1A6AC3486B570C76ABA52149C9BD4CD82F9E57* ___compareInfo_21;
+	void* ___textinfo_data_22;
+	int32_t ___m_dataItem_23;
+	Calendar_t0A117CC7532A54C17188C2EFEA1F79DB20DF3A3B* ___calendar_24;
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com* ___parent_culture_25;
+	int32_t ___constructed_26;
+	Il2CppSafeArray/*NONE*/* ___cached_serialized_form_27;
+	CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com* ___m_cultureData_28;
+	int32_t ___m_isInherited_29;
+};
+
+// Utility.Dispatcher.Dispatcher
+struct Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6  : public RuntimeObject
+{
+	// System.Collections.Generic.IDictionary`2<Utility.Dispatcher.EventId,System.Action`1<System.EventArgs>> Utility.Dispatcher.Dispatcher::_eventHandlers
+	RuntimeObject* ____eventHandlers_0;
+};
+
+// System.EventArgs
+struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377  : public RuntimeObject
+{
+};
+
+// Newtonsoft.Json.JsonConverter
+struct JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16  : public RuntimeObject
+{
+};
+
+// LionStudios.Suite.Analytics.LionAnalytics
+struct LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C  : public RuntimeObject
+{
+	// LionStudios.Suite.Analytics.AnalyticsSdkBridge LionStudios.Suite.Analytics.LionAnalytics::_analyticsSdkBridge
+	AnalyticsSdkBridge_tFADA264EB45DE42446DF57730F16260FE2AABE71* ____analyticsSdkBridge_0;
+	// Data.AnalyticsData LionStudios.Suite.Analytics.LionAnalytics::_analyticsData
+	AnalyticsData_tE4CA341BDBA72543789A49776E8AB50603116D9C* ____analyticsData_2;
+	// Utility.Dispatcher.Dispatcher LionStudios.Suite.Analytics.LionAnalytics::_dispatcher
+	Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6* ____dispatcher_3;
+	// System.Boolean LionStudios.Suite.Analytics.LionAnalytics::<IsInitialized>k__BackingField
+	bool ___U3CIsInitializedU3Ek__BackingField_10;
+};
+
+// LionStudios.Suite.Analytics.Events.LionGameEventBase
+struct LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A  : public RuntimeObject
+{
+	// Utility.Dispatcher.Dispatcher LionStudios.Suite.Analytics.Events.LionGameEventBase::_dispatcher
+	Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6* ____dispatcher_2;
+	// System.Collections.Generic.IDictionary`2<System.String,System.Object> LionStudios.Suite.Analytics.Events.LionGameEventBase::_additionalData
+	RuntimeObject* ____additionalData_3;
+	// Newtonsoft.Json.Converters.StringEnumConverter LionStudios.Suite.Analytics.Events.LionGameEventBase::_strEnumConverter
+	StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184* ____strEnumConverter_4;
+	// LionStudios.Suite.Analytics.EventType LionStudios.Suite.Analytics.Events.LionGameEventBase::<eventType>k__BackingField
+	int32_t ___U3CeventTypeU3Ek__BackingField_5;
+	// System.String LionStudios.Suite.Analytics.Events.LionGameEventBase::<eventName>k__BackingField
+	String_t* ___U3CeventNameU3Ek__BackingField_6;
+	// System.Boolean LionStudios.Suite.Analytics.Events.LionGameEventBase::<IsCalledExplicitly>k__BackingField
+	bool ___U3CIsCalledExplicitlyU3Ek__BackingField_7;
+	// System.Collections.Generic.IDictionary`2<System.String,System.Object> LionStudios.Suite.Analytics.Events.LionGameEventBase::<eventParams>k__BackingField
+	RuntimeObject* ___U3CeventParamsU3Ek__BackingField_8;
+};
+
+// System.Reflection.MemberInfo
+struct MemberInfo_t  : public RuntimeObject
+{
+};
+
+// LionStudios.Suite.Analytics.SerializableObject
+struct SerializableObject_t654D2489215F014339EDE34F8EF987416FE98E38  : public RuntimeObject
+{
+};
+
+// System.String
+struct String_t  : public RuntimeObject
+{
+	// System.Int32 System.String::_stringLength
+	int32_t ____stringLength_4;
+	// System.Char System.String::_firstChar
+	Il2CppChar ____firstChar_5;
+};
+
+// System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+// Native definition for P/Invoke marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+
+// LionStudios.Suite.Analytics.Events.LionGameEventBase/<>c
+struct U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B  : public RuntimeObject
+{
+};
+
+// System.Collections.Generic.List`1/Enumerator<System.Collections.Generic.IDictionary`2<System.String,System.Object>>
+struct Enumerator_tE87B1415DBD31A595989F8D52B16C0BE42BFEFC6 
+{
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::_list
+	List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395* ____list_0;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_index
+	int32_t ____index_1;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_version
+	int32_t ____version_2;
+	// T System.Collections.Generic.List`1/Enumerator::_current
+	RuntimeObject* ____current_3;
+};
+
+// System.Collections.Generic.List`1/Enumerator<System.Object>
+struct Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A 
+{
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::_list
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ____list_0;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_index
+	int32_t ____index_1;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_version
+	int32_t ____version_2;
+	// T System.Collections.Generic.List`1/Enumerator::_current
+	RuntimeObject* ____current_3;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
+struct KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	RuntimeObject* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	RuntimeObject* ___value_1;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.String,System.Object>
+struct KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	RuntimeObject* ___value_1;
+};
+
+// System.Nullable`1<System.Boolean>
+struct Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	bool ___value_1;
+};
+
+// System.Nullable`1<System.Int32>
+struct Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	int32_t ___value_1;
+};
+
+// LionStudios.Suite.Analytics.Events.AchievementEvent
+struct AchievementEvent_t0EF334ABC77C2536C3DC2095564493F61E41A022  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.AchievementEventArgs
+struct AchievementEventArgs_t26486A44BC52EF62604A85A0A80BCC9CD000FB51  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// LionStudios.Suite.Analytics.Reward Events.InGame.EventArgs.AchievementEventArgs::Reward
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Reward_1;
+	// System.String Events.InGame.EventArgs.AchievementEventArgs::AchievementID
+	String_t* ___AchievementID_2;
+	// System.String Events.InGame.EventArgs.AchievementEventArgs::AchievementName
+	String_t* ___AchievementName_3;
+};
+
+// LionStudios.Suite.Analytics.Events.AdEvent
+struct AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Events.EventArgs.BannerEventArgs
+struct BannerEventArgs_tC08D7467258524E54870E87CBCDCC84892C8825C  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.BannerEventArgs::Placement
+	String_t* ___Placement_1;
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.BannerEventArgs::Network
+	String_t* ___Network_2;
+};
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	// System.Boolean System.Boolean::m_value
+	bool ___m_value_0;
+};
+
+// LionStudios.Suite.Analytics.Events.CharacterCreatedEvent
+struct CharacterCreatedEvent_t8905F462AAED5672B04AA719BBB7C37809E13F08  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.CharacterCreatedEventArgs
+struct CharacterCreatedEventArgs_tE6E3357D9B66FF8CF2E091AC970CD2AC3BB565D3  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.InGame.EventArgs.CharacterCreatedEventArgs::CharacterClass
+	String_t* ___CharacterClass_1;
+	// System.String Events.InGame.EventArgs.CharacterCreatedEventArgs::CharacterGender
+	String_t* ___CharacterGender_2;
+	// System.String Events.InGame.EventArgs.CharacterCreatedEventArgs::CharacterID
+	String_t* ___CharacterID_3;
+	// System.String Events.InGame.EventArgs.CharacterCreatedEventArgs::CharacterName
+	String_t* ___CharacterName_4;
+};
+
+// LionStudios.Suite.Analytics.Events.CharacterDeletedEvent
+struct CharacterDeletedEvent_t6B3A153DA60A167D88C225C99CD101B61376D5BB  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.CharacterDeletedEventArgs
+struct CharacterDeletedEventArgs_tC23ECBC98C3FE7E17C623863B11528C80130DA0E  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.InGame.EventArgs.CharacterDeletedEventArgs::CharacterClass
+	String_t* ___CharacterClass_1;
+	// System.String Events.InGame.EventArgs.CharacterDeletedEventArgs::CharacterID
+	String_t* ___CharacterID_2;
+	// System.String Events.InGame.EventArgs.CharacterDeletedEventArgs::CharacterName
+	String_t* ___CharacterName_3;
+};
+
+// LionStudios.Suite.Analytics.Events.CharacterUpdatedEvent
+struct CharacterUpdatedEvent_tA1C0926B1573AAFC44D050553F562246E115130D  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.CharacterUpdatedEventArgs
+struct CharacterUpdatedEventArgs_tB3FB54484789DD0C2FB17C919E982B8342A0F035  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.InGame.EventArgs.CharacterUpdatedEventArgs::CharacterClass
+	String_t* ___CharacterClass_1;
+	// System.String Events.InGame.EventArgs.CharacterUpdatedEventArgs::CharacterID
+	String_t* ___CharacterID_2;
+	// System.String Events.InGame.EventArgs.CharacterUpdatedEventArgs::CharacterName
+	String_t* ___CharacterName_3;
+};
+
+// System.DateTime
+struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D 
+{
+	// System.UInt64 System.DateTime::_dateData
+	uint64_t ____dateData_46;
+};
+
+// LionStudios.Suite.Analytics.Events.DebugEvent
+struct DebugEvent_t98307C329856C6B56095059615CBB9D7A73E5A52  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Events.DebugEventArgs
+struct DebugEventArgs_tEE401912C87109BFEB54519FB310BFBC0D8382CB  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.DebugEventArgs::Message
+	String_t* ___Message_1;
+};
+
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+// Native definition for P/Invoke marshalling of System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
+
+// LionStudios.Suite.Analytics.Events.FeatureUnlockedEvent
+struct FeatureUnlockedEvent_t0519CD849D9CD9AC54C22652233FF3F4C0FC9D2E  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.FeatureUnlockedEventArgs
+struct FeatureUnlockedEventArgs_tB68A3347EF7C79E744E312D84F842B3D056189BC  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.InGame.EventArgs.FeatureUnlockedEventArgs::FeatureName
+	String_t* ___FeatureName_1;
+	// System.String Events.InGame.EventArgs.FeatureUnlockedEventArgs::FeatureType
+	String_t* ___FeatureType_2;
+};
+
+// LionStudios.Suite.Analytics.Events.Game.GameEvent
+struct GameEvent_t76F761CAA37C7D6F009F5149FE0E3A211CA80692  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Events.GiftReceivedEvent
+struct GiftReceivedEvent_t45DF44073BB683D8E8B26FD505D909420841E38F  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.GiftReceivedEventArgs
+struct GiftReceivedEventArgs_t1672CEC93E26080B2EA9D6EA7DCF697ABA6B67E1  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// LionStudios.Suite.Analytics.Reward Events.InGame.EventArgs.GiftReceivedEventArgs::Gift
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Gift_1;
+	// System.String Events.InGame.EventArgs.GiftReceivedEventArgs::SenderID
+	String_t* ___SenderID_2;
+	// System.Boolean Events.InGame.EventArgs.GiftReceivedEventArgs::GiftAccepted
+	bool ___GiftAccepted_3;
+	// System.String Events.InGame.EventArgs.GiftReceivedEventArgs::UniqueTracking
+	String_t* ___UniqueTracking_4;
+};
+
+// LionStudios.Suite.Analytics.Events.GiftSentEvent
+struct GiftSentEvent_t2C5C62F0A687B4F15122A8C7EDEAC5B145F4867C  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.GiftSentEventArgs
+struct GiftSentEventArgs_tB07CC7AB04F0A4CEE6072D33E1F3E08E200AE3D2  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// LionStudios.Suite.Analytics.Reward Events.InGame.EventArgs.GiftSentEventArgs::Gift
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Gift_1;
+	// System.String Events.InGame.EventArgs.GiftSentEventArgs::RecipientID
+	String_t* ___RecipientID_2;
+	// System.String Events.InGame.EventArgs.GiftSentEventArgs::UniqueTracking
+	String_t* ___UniqueTracking_3;
+};
+
+// LionStudios.Suite.Analytics.Events.HandActionEvent
+struct HandActionEvent_t93A6A6A7EEC282605503B04F1AA22BD5BAB6C1C2  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.HandActionEventArgs
+struct HandActionEventArgs_t9FF58B739760F248D7A0D135A2988B9F2046A7BB  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.Int32 Events.InGame.EventArgs.HandActionEventArgs::Amount
+	int32_t ___Amount_1;
+	// System.String Events.InGame.EventArgs.HandActionEventArgs::GameID
+	String_t* ___GameID_2;
+	// System.String Events.InGame.EventArgs.HandActionEventArgs::HandID
+	String_t* ___HandID_3;
+	// System.String Events.InGame.EventArgs.HandActionEventArgs::RoundAction
+	String_t* ___RoundAction_4;
+	// System.String Events.InGame.EventArgs.HandActionEventArgs::RoundName
+	String_t* ___RoundName_5;
+};
+
+// LionStudios.Suite.Analytics.Events.IAPEvent
+struct IAPEvent_t69C94E103CC5432EECC26E82BAA0D42CB161CC5F  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// System.Int32
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	// System.Int32 System.Int32::m_value
+	int32_t ___m_value_0;
+};
+
+// System.IntPtr
+struct IntPtr_t 
+{
+	// System.Void* System.IntPtr::m_value
+	void* ___m_value_0;
+};
+
+// LionStudios.Suite.Analytics.Events.InviteReceivedEvent
+struct InviteReceivedEvent_tB599B397F5A1A75984665561875527B96E2DB797  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InviteRewardedEvent
+struct InviteRewardedEvent_tAFC0F5C84F7669770815B7C03441701C55822902  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteRewardedEventArgs
+struct InviteRewardedEventArgs_tC69B703FAAFE69591D75C447BA609854A4F66CC6  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.InviteRewardedEventArgs::InviterId
+	String_t* ___InviterId_1;
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.InviteRewardedEventArgs::InviteeId
+	String_t* ___InviteeId_2;
+};
+
+// LionStudios.Suite.Analytics.Events.InviteSentEvent
+struct InviteSentEvent_t6444EA0DB99146B8281B8A9A244EB116838C5766  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteSentEventArgs
+struct InviteSentEventArgs_tF325FA40D4A401CCEF4DC98C34F365EF96D56BC9  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.InviteSentEventArgs::UniqueTracking
+	String_t* ___UniqueTracking_1;
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.InviteSentEventArgs::InviteType
+	String_t* ___InviteType_2;
+	// System.String[] LionStudios.Suite.Analytics.Events.EventArgs.InviteSentEventArgs::Recipients
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___Recipients_3;
+};
+
+// LionStudios.Suite.Analytics.Events.ItemActionedEvent
+struct ItemActionedEvent_t82740FBF14D9B3C638FE5A92688AC5CFC367A4D2  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.ItemActionedEventArgs
+struct ItemActionedEventArgs_t71CB2C48AA0401E3CE532AB91BED60751C2A15A1  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.InGame.EventArgs.ItemActionedEventArgs::Action
+	String_t* ___Action_1;
+	// System.String Events.InGame.EventArgs.ItemActionedEventArgs::ItemId
+	String_t* ___ItemId_2;
+	// System.String Events.InGame.EventArgs.ItemActionedEventArgs::ItemName
+	String_t* ___ItemName_3;
+	// System.String Events.InGame.EventArgs.ItemActionedEventArgs::ItemType
+	String_t* ___ItemType_4;
+	// LionStudios.Suite.Analytics.Reward Events.InGame.EventArgs.ItemActionedEventArgs::Reward
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Reward_5;
+};
+
+// LionStudios.Suite.Analytics.Events.ItemCollectedEvent
+struct ItemCollectedEvent_t4939F153ECF45D86A24C8EBC1F79BF562C585E2E  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.ItemCollectedEventArgs
+struct ItemCollectedEventArgs_t1A785B05235A04BDF22A600C16B447681EA93AE0  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// LionStudios.Suite.Analytics.Reward Events.InGame.EventArgs.ItemCollectedEventArgs::Reward
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Reward_1;
+};
+
+// LionStudios.Suite.Analytics.Events.LevelEvent
+struct LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Events.LevelUpEvent
+struct LevelUpEvent_t6B004C2F5565FCAC65E53453BED0CEBFEF83E9A3  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.Level.EventArgs.LevelUpEventArgs
+struct LevelUpEventArgs_t145E17C6FC0867308B87C6D7D966045613743654  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.Level.EventArgs.LevelUpEventArgs::LevelUpName
+	String_t* ___LevelUpName_1;
+	// LionStudios.Suite.Analytics.Reward Events.Level.EventArgs.LevelUpEventArgs::Reward
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Reward_2;
+};
+
+// LionStudios.Suite.Analytics.Events.MachineLearningEventArgs
+struct MachineLearningEventArgs_t897E0FB81E806CD136FBF38285B8670FE102A161  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.MachineLearningEventArgs::ModelName
+	String_t* ___ModelName_1;
+	// System.String LionStudios.Suite.Analytics.Events.MachineLearningEventArgs::ModelVersion
+	String_t* ___ModelVersion_2;
+	// System.Object LionStudios.Suite.Analytics.Events.MachineLearningEventArgs::ModelInput
+	RuntimeObject* ___ModelInput_3;
+	// System.Object LionStudios.Suite.Analytics.Events.MachineLearningEventArgs::ModelOutput
+	RuntimeObject* ___ModelOutput_4;
+};
+
+// LionStudios.Suite.Analytics.Events.MissionEvent
+struct MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Events.NotificationOpenedEvent
+struct NotificationOpenedEvent_t44AAD5BD986EF9097074BE1FA5FD2661ABFAD616  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.NotificationOpenedEventArgs
+struct NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.Int32 Events.InGame.EventArgs.NotificationOpenedEventArgs::CampaignID
+	int32_t ___CampaignID_1;
+	// System.String Events.InGame.EventArgs.NotificationOpenedEventArgs::CampaignName
+	String_t* ___CampaignName_2;
+	// System.String Events.InGame.EventArgs.NotificationOpenedEventArgs::CohortGroup
+	String_t* ___CohortGroup_3;
+	// System.Int32 Events.InGame.EventArgs.NotificationOpenedEventArgs::CohortID
+	int32_t ___CohortID_4;
+	// System.String Events.InGame.EventArgs.NotificationOpenedEventArgs::CohortName
+	String_t* ___CohortName_5;
+	// System.String Events.InGame.EventArgs.NotificationOpenedEventArgs::CommunicationSender
+	String_t* ___CommunicationSender_6;
+	// System.String Events.InGame.EventArgs.NotificationOpenedEventArgs::CommunicationState
+	String_t* ___CommunicationState_7;
+	// System.Int32 Events.InGame.EventArgs.NotificationOpenedEventArgs::NotificationID
+	int32_t ___NotificationID_8;
+	// System.String Events.InGame.EventArgs.NotificationOpenedEventArgs::NotificationLaunch
+	String_t* ___NotificationLaunch_9;
+	// System.String Events.InGame.EventArgs.NotificationOpenedEventArgs::NotificationName
+	String_t* ___NotificationName_10;
+};
+
+// LionStudios.Suite.Analytics.Events.OptionsEvent
+struct OptionsEvent_t9A7738D507FF1FA7B3018692C1E4C6D7F21E8884  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.OptionsEventArgs
+struct OptionsEventArgs_t22341BD03512C1E6E646DCF85622DF9C01C21A61  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.InGame.EventArgs.OptionsEventArgs::Action
+	String_t* ___Action_1;
+	// System.String Events.InGame.EventArgs.OptionsEventArgs::Option
+	String_t* ___Option_2;
+};
+
+// LionStudios.Suite.Analytics.Events.PowerUpUsedEvent
+struct PowerUpUsedEvent_tE083427C6584A4D437D378194C400D158F3A6A9A  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.PowerUpUsedEventArgs
+struct PowerUpUsedEventArgs_t02C937594D8BD1A93597D45658BEE410E591F289  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.InGame.EventArgs.PowerUpUsedEventArgs::MissionID
+	String_t* ___MissionID_1;
+	// System.String Events.InGame.EventArgs.PowerUpUsedEventArgs::MissionType
+	String_t* ___MissionType_2;
+	// System.Int32 Events.InGame.EventArgs.PowerUpUsedEventArgs::MissionAttempt
+	int32_t ___MissionAttempt_3;
+	// System.String Events.InGame.EventArgs.PowerUpUsedEventArgs::PowerUpName
+	String_t* ___PowerUpName_4;
+	// System.String Events.InGame.EventArgs.PowerUpUsedEventArgs::MissionName
+	String_t* ___MissionName_5;
+};
+
+// LionStudios.Suite.Analytics.Events.PredictionResultEvent
+struct PredictionResultEvent_tA078B8C498600D03798813438B8E88CD2DBA8E99  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Product
+struct Product_tF33F3342755B680CD2835C2A548770F9149CA2D7  : public SerializableObject_t654D2489215F014339EDE34F8EF987416FE98E38
+{
+	// System.Collections.Generic.List`1<LionStudios.Suite.Analytics.Item> LionStudios.Suite.Analytics.Product::items
+	List_1_t16359674018645FCCC8FBA6DB6A3FDF4DE00AACD* ___items_0;
+	// LionStudios.Suite.Analytics.RealCurrency LionStudios.Suite.Analytics.Product::realCurrency
+	RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214* ___realCurrency_1;
+	// System.Collections.Generic.List`1<LionStudios.Suite.Analytics.VirtualCurrency> LionStudios.Suite.Analytics.Product::virtualCurrencies
+	List_1_tCD725B32EE9F72CA7AB04A10B25A0AE9313BA30C* ___virtualCurrencies_2;
+};
+
+// LionStudios.Suite.Analytics.Events.ProductViewedEvent
+struct ProductViewedEvent_t31DF8C1759C9B4775545551B2C30D77FAD78F93C  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.ProductViewedEventArgs
+struct ProductViewedEventArgs_t3E8FE2F10F6C229E1DBB57AA2B78180E0631ABF8  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.InGame.EventArgs.ProductViewedEventArgs::ViewedProductID
+	String_t* ___ViewedProductID_1;
+	// System.String Events.InGame.EventArgs.ProductViewedEventArgs::ViewedProductName
+	String_t* ___ViewedProductName_2;
+};
+
+// LionStudios.Suite.Analytics.RealCurrency
+struct RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214  : public SerializableObject_t654D2489215F014339EDE34F8EF987416FE98E38
+{
+	// System.Int32 LionStudios.Suite.Analytics.RealCurrency::realCurrencyAmount
+	int32_t ___realCurrencyAmount_0;
+	// System.String LionStudios.Suite.Analytics.RealCurrency::realCurrencyType
+	String_t* ___realCurrencyType_1;
+};
+
+// LionStudios.Suite.Analytics.Reward
+struct Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575  : public SerializableObject_t654D2489215F014339EDE34F8EF987416FE98E38
+{
+	// System.String LionStudios.Suite.Analytics.Reward::rewardName
+	String_t* ___rewardName_0;
+	// LionStudios.Suite.Analytics.Product LionStudios.Suite.Analytics.Reward::rewardProducts
+	Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* ___rewardProducts_1;
+};
+
+// LionStudios.Suite.Analytics.Events.ShopEnteredEvent
+struct ShopEnteredEvent_t91D071D9A659ECA89A3A70E8C7374B0E9B693F3E  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.ShopEnteredEventArgs
+struct ShopEnteredEventArgs_t3990D32341CA1BCB59C608B09A8676CBDB2715E0  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.InGame.EventArgs.ShopEnteredEventArgs::ShopName
+	String_t* ___ShopName_1;
+	// System.String Events.InGame.EventArgs.ShopEnteredEventArgs::ShopID
+	String_t* ___ShopID_2;
+	// System.String Events.InGame.EventArgs.ShopEnteredEventArgs::ShopType
+	String_t* ___ShopType_3;
+};
+
+// System.Single
+struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
+{
+	// System.Single System.Single::m_value
+	float ___m_value_0;
+};
+
+// LionStudios.Suite.Analytics.Events.SkillUpgradedEvent
+struct SkillUpgradedEvent_tE2B3914B6406455710F9F0E901704C85B72C4F6D  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.SkillUpgradedEventArgs
+struct SkillUpgradedEventArgs_t9C077E9497D9C9C2CD02BF55123589B0B3D606AB  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.Int32 Events.InGame.EventArgs.SkillUpgradedEventArgs::CurrentSkillLevel
+	int32_t ___CurrentSkillLevel_1;
+	// System.Int32 Events.InGame.EventArgs.SkillUpgradedEventArgs::NewSkillLevel
+	int32_t ___NewSkillLevel_2;
+	// System.String Events.InGame.EventArgs.SkillUpgradedEventArgs::SkillId
+	String_t* ___SkillId_3;
+	// System.String Events.InGame.EventArgs.SkillUpgradedEventArgs::SkillName
+	String_t* ___SkillName_4;
+};
+
+// LionStudios.Suite.Analytics.Events.SkillUsedEvent
+struct SkillUsedEvent_t5A6942F8F26980E152282490F96811B77E34F63D  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.SkillUsedEventArgs
+struct SkillUsedEventArgs_t2AC3468D7FA16FE0CE5768F2C666DA02E12A5E51  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.InGame.EventArgs.SkillUsedEventArgs::SkillID
+	String_t* ___SkillID_1;
+	// System.String Events.InGame.EventArgs.SkillUsedEventArgs::SkillName
+	String_t* ___SkillName_2;
+	// System.Boolean Events.InGame.EventArgs.SkillUsedEventArgs::Success
+	bool ___Success_3;
+	// System.String Events.InGame.EventArgs.SkillUsedEventArgs::ReasonForFailure
+	String_t* ___ReasonForFailure_4;
+};
+
+// LionStudios.Suite.Analytics.Events.SocialConnectEvent
+struct SocialConnectEvent_tDEEA8E6E9A5E344F5896DDE841F2FFB75FBE6A4F  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Events.EventArgs.SocialConnectEventArgs
+struct SocialConnectEventArgs_tA3D0E95B54D448D797FEF9C022FC315621C0C4BE  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.SocialConnectEventArgs::ConnectedUserId
+	String_t* ___ConnectedUserId_1;
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.SocialConnectEventArgs::SocialAlias
+	String_t* ___SocialAlias_2;
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.SocialConnectEventArgs::SocialPlatform
+	String_t* ___SocialPlatform_3;
+	// LionStudios.Suite.Analytics.Reward LionStudios.Suite.Analytics.Events.EventArgs.SocialConnectEventArgs::Reward
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Reward_4;
+};
+
+// LionStudios.Suite.Analytics.Events.SocialEvent
+struct SocialEvent_tAB02B35ED8F05CC51DD59605A98B5572D8646EBD  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Events.EventArgs.SocialEventArgs
+struct SocialEventArgs_t05A06736EF7CBB940AE098FB30F39FD063F3259F  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.SocialEventArgs::SocialType
+	String_t* ___SocialType_1;
+	// LionStudios.Suite.Analytics.Reward LionStudios.Suite.Analytics.Events.EventArgs.SocialEventArgs::Reward
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Reward_2;
+};
+
+// Newtonsoft.Json.Converters.StringEnumConverter
+struct StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184  : public JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16
+{
+	// Newtonsoft.Json.Serialization.NamingStrategy Newtonsoft.Json.Converters.StringEnumConverter::<NamingStrategy>k__BackingField
+	NamingStrategy_tB85DD4A9F6C33F668AF7273D3B5193ABC4617D50* ___U3CNamingStrategyU3Ek__BackingField_0;
+	// System.Boolean Newtonsoft.Json.Converters.StringEnumConverter::<AllowIntegerValues>k__BackingField
+	bool ___U3CAllowIntegerValuesU3Ek__BackingField_1;
+};
+
+// LionStudios.Suite.Analytics.Events.SupportEvent
+struct SupportEvent_t3761B773BBFB9BE73FB6598374EC47F9779F6774  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// LionStudios.Suite.Analytics.Events.EventArgs.SupportEventArgs
+struct SupportEventArgs_tCE9BE8371F94B757DF517AFA5B7310986E01A8AA  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.SupportEventArgs::TicketID
+	String_t* ___TicketID_1;
+};
+
+// LionStudios.Suite.Analytics.Transaction
+struct Transaction_t12BEC26500383F0721FC66524801C5C126142A23  : public SerializableObject_t654D2489215F014339EDE34F8EF987416FE98E38
+{
+	// System.String LionStudios.Suite.Analytics.Transaction::type
+	String_t* ___type_0;
+	// System.String LionStudios.Suite.Analytics.Transaction::name
+	String_t* ___name_1;
+	// LionStudios.Suite.Analytics.Product LionStudios.Suite.Analytics.Transaction::productReceived
+	Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* ___productReceived_2;
+	// LionStudios.Suite.Analytics.Product LionStudios.Suite.Analytics.Transaction::productSpent
+	Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* ___productSpent_3;
+	// System.String LionStudios.Suite.Analytics.Transaction::transactionID
+	String_t* ___transactionID_4;
+	// System.String LionStudios.Suite.Analytics.Transaction::productID
+	String_t* ___productID_5;
+};
+
+// LionStudios.Suite.Analytics.Events.UiInteractionEvent
+struct UiInteractionEvent_t1D726F4398978B2EECE591960F1BCE2D63C4CFA1  : public LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A
+{
+};
+
+// Events.InGame.EventArgs.UiInteractionEventArgs
+struct UiInteractionEventArgs_t5D4127421F485B9767BDE07C8F531CAE03927E5B  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String Events.InGame.EventArgs.UiInteractionEventArgs::UiAction
+	String_t* ___UiAction_1;
+	// System.String Events.InGame.EventArgs.UiInteractionEventArgs::UiName
+	String_t* ___UiName_2;
+	// System.String Events.InGame.EventArgs.UiInteractionEventArgs::UiLocation
+	String_t* ___UiLocation_3;
+	// System.String Events.InGame.EventArgs.UiInteractionEventArgs::UiType
+	String_t* ___UiType_4;
+};
+
+// LionStudios.Suite.Analytics.VirtualCurrency
+struct VirtualCurrency_tA04EAD092BED69D54D0E3BB539ABDD3D77DF7D27  : public SerializableObject_t654D2489215F014339EDE34F8EF987416FE98E38
+{
+	// System.Int32 LionStudios.Suite.Analytics.VirtualCurrency::virtualCurrencyAmount
+	int32_t ___virtualCurrencyAmount_0;
+	// System.String LionStudios.Suite.Analytics.VirtualCurrency::virtualCurrencyName
+	String_t* ___virtualCurrencyName_1;
+	// System.String LionStudios.Suite.Analytics.VirtualCurrency::virtualCurrencyType
+	String_t* ___virtualCurrencyType_2;
+};
+
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+
+// LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs
+struct LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.Boolean LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::<IncrementCounter>k__BackingField
+	bool ___U3CIncrementCounterU3Ek__BackingField_1;
+	// System.Int32 LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::<Level>k__BackingField
+	int32_t ___U3CLevelU3Ek__BackingField_2;
+	// System.String LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::<LevelCollection1>k__BackingField
+	String_t* ___U3CLevelCollection1U3Ek__BackingField_3;
+	// System.String LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::<LevelCollection2>k__BackingField
+	String_t* ___U3CLevelCollection2U3Ek__BackingField_4;
+	// System.String LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::<MissionName>k__BackingField
+	String_t* ___U3CMissionNameU3Ek__BackingField_5;
+	// System.String LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::<MissionType>k__BackingField
+	String_t* ___U3CMissionTypeU3Ek__BackingField_6;
+};
+
+// LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs
+struct MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.Boolean LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs::<IncrementCounter>k__BackingField
+	bool ___U3CIncrementCounterU3Ek__BackingField_1;
+	// System.String LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs::<MissionName>k__BackingField
+	String_t* ___U3CMissionNameU3Ek__BackingField_2;
+	// System.String LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs::<MissionID>k__BackingField
+	String_t* ___U3CMissionIDU3Ek__BackingField_3;
+	// System.String LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs::<MissionType>k__BackingField
+	String_t* ___U3CMissionTypeU3Ek__BackingField_4;
+};
+
+// LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs
+struct AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs::Network
+	String_t* ___Network_1;
+	// System.Nullable`1<System.Int32> LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs::Level
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___Level_2;
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs::Placement
+	String_t* ___Placement_3;
+};
+
+// LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs
+struct AdRewardArgs_t1A7EF7F0C6E5BCA2E9BC705084D90FBA2389E798  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs::Placement
+	String_t* ___Placement_1;
+	// System.Object LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs::Reward
+	RuntimeObject* ___Reward_2;
+	// System.Nullable`1<System.Int32> LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs::Level
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___Level_3;
+};
+
+// LionStudios.Suite.Analytics.Events.EventArgs.BannerFailEventArgs
+struct BannerFailEventArgs_t7343B3EBF9FB87146FC79A41852F4BE377F81ABF  : public BannerEventArgs_tC08D7467258524E54870E87CBCDCC84892C8825C
+{
+	// LionStudios.Suite.Analytics.Events.AdErrorType LionStudios.Suite.Analytics.Events.EventArgs.BannerFailEventArgs::Reason
+	int32_t ___Reason_3;
+};
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoClickEvent
+struct CrossPromoClickEvent_t1147033BEF5370FC1F315F3DC94999405A4C409C  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoEndEvent
+struct CrossPromoEndEvent_tDF07A6DDCB1D032EA9136F937EAEFC06A3509DEB  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs
+struct CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs::Placement
+	String_t* ___Placement_1;
+	// System.String LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs::Network
+	String_t* ___Network_2;
+	// System.Nullable`1<System.Int32> LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs::Level
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___Level_3;
+};
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadEvent
+struct CrossPromoLoadEvent_t143B1961BD4AA3BEA39EC9E9DEA841741DD1FC12  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadFailEvent
+struct CrossPromoLoadFailEvent_t3824081A8BDCB178327F856B5C5FBAE5A84CDF7C  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowEvent
+struct CrossPromoShowEvent_tACF84C46677BA35C2C26AC84B67C04573E6B7C03  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowFailEvent
+struct CrossPromoShowFailEvent_t9B03FA6E28066D86F8157F9DE058FC56DB1C50C7  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoStartEvent
+struct CrossPromoStartEvent_tA3A0E57339CD99A694FA2D2CF04B99E63E770F5D  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// System.Delegate
+struct Delegate_t  : public RuntimeObject
+{
+	// System.IntPtr System.Delegate::method_ptr
+	Il2CppMethodPointer ___method_ptr_0;
+	// System.IntPtr System.Delegate::invoke_impl
+	intptr_t ___invoke_impl_1;
+	// System.Object System.Delegate::m_target
+	RuntimeObject* ___m_target_2;
+	// System.IntPtr System.Delegate::method
+	intptr_t ___method_3;
+	// System.IntPtr System.Delegate::delegate_trampoline
+	intptr_t ___delegate_trampoline_4;
+	// System.IntPtr System.Delegate::extra_arg
+	intptr_t ___extra_arg_5;
+	// System.IntPtr System.Delegate::method_code
+	intptr_t ___method_code_6;
+	// System.IntPtr System.Delegate::interp_method
+	intptr_t ___interp_method_7;
+	// System.IntPtr System.Delegate::interp_invoke_impl
+	intptr_t ___interp_invoke_impl_8;
+	// System.Reflection.MethodInfo System.Delegate::method_info
+	MethodInfo_t* ___method_info_9;
+	// System.Reflection.MethodInfo System.Delegate::original_method_info
+	MethodInfo_t* ___original_method_info_10;
+	// System.DelegateData System.Delegate::data
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	// System.Boolean System.Delegate::method_is_virtual
+	bool ___method_is_virtual_12;
+};
+// Native definition for P/Invoke marshalling of System.Delegate
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+// Native definition for COM marshalling of System.Delegate
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+
+// System.Exception
+struct Exception_t  : public RuntimeObject
+{
+	// System.String System.Exception::_className
+	String_t* ____className_1;
+	// System.String System.Exception::_message
+	String_t* ____message_2;
+	// System.Collections.IDictionary System.Exception::_data
+	RuntimeObject* ____data_3;
+	// System.Exception System.Exception::_innerException
+	Exception_t* ____innerException_4;
+	// System.String System.Exception::_helpURL
+	String_t* ____helpURL_5;
+	// System.Object System.Exception::_stackTrace
+	RuntimeObject* ____stackTrace_6;
+	// System.String System.Exception::_stackTraceString
+	String_t* ____stackTraceString_7;
+	// System.String System.Exception::_remoteStackTraceString
+	String_t* ____remoteStackTraceString_8;
+	// System.Int32 System.Exception::_remoteStackIndex
+	int32_t ____remoteStackIndex_9;
+	// System.Object System.Exception::_dynamicMethods
+	RuntimeObject* ____dynamicMethods_10;
+	// System.Int32 System.Exception::_HResult
+	int32_t ____HResult_11;
+	// System.String System.Exception::_source
+	String_t* ____source_12;
+	// System.Runtime.Serialization.SafeSerializationManager System.Exception::_safeSerializationManager
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	// System.Diagnostics.StackTrace[] System.Exception::captured_traces
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	// System.IntPtr[] System.Exception::native_trace_ips
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips_15;
+	// System.Int32 System.Exception::caught_in_unmanaged
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for P/Invoke marshalling of System.Exception
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className_1;
+	char* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_pinvoke* ____innerException_4;
+	char* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	char* ____stackTraceString_7;
+	char* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	char* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for COM marshalling of System.Exception
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className_1;
+	Il2CppChar* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_com* ____innerException_4;
+	Il2CppChar* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	Il2CppChar* ____stackTraceString_7;
+	Il2CppChar* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	Il2CppChar* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+
+// LionStudios.Suite.Analytics.Events.InappPurchaseEvent
+struct InappPurchaseEvent_tECDD0EDC6F9DC49096D515A741E5898E6382C0AD  : public IAPEvent_t69C94E103CC5432EECC26E82BAA0D42CB161CC5F
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InappPurchaseWithReceipt
+struct InappPurchaseWithReceipt_tD1466C9B625B71F8760AD63F1A6CA58F653587F5  : public IAPEvent_t69C94E103CC5432EECC26E82BAA0D42CB161CC5F
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterOpenEvent
+struct InterOpenEvent_t55598A4B3AC6DEB93C2DC0BD64D547BF35322133  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterstitialEvent
+struct InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteReceivedEventArgs
+struct InviteReceivedEventArgs_t636949BC7DDF26D009B63898AE45745A123C309E  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.InviteReceivedEventArgs::SenderID
+	String_t* ___SenderID_1;
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.InviteReceivedEventArgs::UniqueTracking
+	String_t* ___UniqueTracking_2;
+	// System.String LionStudios.Suite.Analytics.Events.EventArgs.InviteReceivedEventArgs::InviteType
+	String_t* ___InviteType_3;
+	// System.Nullable`1<System.Boolean> LionStudios.Suite.Analytics.Events.EventArgs.InviteReceivedEventArgs::IsInviteAccepted
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___IsInviteAccepted_4;
+};
+
+// LionStudios.Suite.Analytics.Events.LevelAbandonedEvent
+struct LevelAbandonedEvent_tA07955FECECE7DCBA3D9AC691A595F943C076A77  : public LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA
+{
+};
+
+// LionStudios.Suite.Analytics.Events.LevelCompleteEvent
+struct LevelCompleteEvent_t1477CF07D00D2EDB8A5A9266519D9B078505E9F0  : public LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA
+{
+};
+
+// Events.Level.EventArgs.LevelEventArgs
+struct LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// LionStudios.Suite.Analytics.EventType Events.Level.EventArgs.LevelEventArgs::EventType
+	int32_t ___EventType_1;
+	// System.Int32 Events.Level.EventArgs.LevelEventArgs::LevelNum
+	int32_t ___LevelNum_2;
+	// System.Nullable`1<System.Int32> Events.Level.EventArgs.LevelEventArgs::AttemptNum
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___AttemptNum_3;
+	// System.Nullable`1<System.Int32> Events.Level.EventArgs.LevelEventArgs::Score
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___Score_4;
+	// System.String Events.Level.EventArgs.LevelEventArgs::LevelCollection1
+	String_t* ___LevelCollection1_5;
+	// System.String Events.Level.EventArgs.LevelEventArgs::LevelCollection2
+	String_t* ___LevelCollection2_6;
+	// System.String Events.Level.EventArgs.LevelEventArgs::MissionType
+	String_t* ___MissionType_7;
+	// System.String Events.Level.EventArgs.LevelEventArgs::MissionName
+	String_t* ___MissionName_8;
+	// System.Nullable`1<System.Boolean> Events.Level.EventArgs.LevelEventArgs::IsTutorial
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___IsTutorial_9;
+	// System.Boolean Events.Level.EventArgs.LevelEventArgs::IncrementCounter
+	bool ___IncrementCounter_10;
+};
+
+// LionStudios.Suite.Analytics.Events.LevelFailEvent
+struct LevelFailEvent_tCA4C0CA75BA150B0231C8EBC11387B0F588A1BDA  : public LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA
+{
+};
+
+// LionStudios.Suite.Analytics.Events.LevelRestartEvent
+struct LevelRestartEvent_t405FD4057FDF12943FCDBB106783FFC02B702749  : public LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA
+{
+};
+
+// LionStudios.Suite.Analytics.Events.LevelStartEvent
+struct LevelStartEvent_t92B8C43DCDABF2215B0A9BAFA2CCF1632C7F9A1A  : public LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA
+{
+};
+
+// LionStudios.Suite.Analytics.Events.LevelStepEvent
+struct LevelStepEvent_t47638460AD38FDAFC6D0D9AC41D51DC089EA65CA  : public LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA
+{
+};
+
+// LionStudios.Suite.Analytics.Events.MissionAbandonedEvent
+struct MissionAbandonedEvent_t3821916F1E31FB14546375A96FF02DCF81C5644D  : public MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862
+{
+};
+
+// LionStudios.Suite.Analytics.Events.MissionCompletedEvent
+struct MissionCompletedEvent_tE3C88FB7154AD97182D1EAB109D7DA32CBF6D76D  : public MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862
+{
+};
+
+// Events.Mission.EventArgs.MissionEventArgs
+struct MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
+{
+	// System.Boolean Events.Mission.EventArgs.MissionEventArgs::IsTutorial
+	bool ___IsTutorial_1;
+	// System.String Events.Mission.EventArgs.MissionEventArgs::MissionType
+	String_t* ___MissionType_2;
+	// System.String Events.Mission.EventArgs.MissionEventArgs::MissionName
+	String_t* ___MissionName_3;
+	// System.String Events.Mission.EventArgs.MissionEventArgs::MissionID
+	String_t* ___MissionID_4;
+	// System.Nullable`1<System.Int32> Events.Mission.EventArgs.MissionEventArgs::MissionAttempt
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___MissionAttempt_5;
+	// System.Int32 Events.Mission.EventArgs.MissionEventArgs::UserScore
+	int32_t ___UserScore_6;
+	// System.Boolean Events.Mission.EventArgs.MissionEventArgs::IncrementCounter
+	bool ___IncrementCounter_7;
+};
+
+// LionStudios.Suite.Analytics.Events.MissionFailedEvent
+struct MissionFailedEvent_tC303528B367BE7C51D1DB260D549084DB30C81A6  : public MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862
+{
+};
+
+// LionStudios.Suite.Analytics.Events.MissionStartedEvent
+struct MissionStartedEvent_tAC26CEC3D3FCE63C78DEFA358ACDF8F819032283  : public MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862
+{
+};
+
+// LionStudios.Suite.Analytics.Events.MissionStepEvent
+struct MissionStepEvent_tCFF7E7BF2488E449CE672F329CB2C1A1645932BB  : public MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862
+{
+};
+
+// LionStudios.Suite.Analytics.Events.RewardVideoClickEvent
+struct RewardVideoClickEvent_t15EA050322868D22E3BC6EEF70E9364DA18394F5  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.RewardVideoCollectEvent
+struct RewardVideoCollectEvent_tD83B081540126E32C2DF6055AF5EAF0F6AE5FBEC  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.RewardVideoEndEvent
+struct RewardVideoEndEvent_t1FB6495C385B953ACF910335E29E32417765C534  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.RewardVideoLoadEvent
+struct RewardVideoLoadEvent_tFC2F7BAEAB1D603E4C8A3AACC3013B2C496FD0DA  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.RewardVideoLoadFailEvent
+struct RewardVideoLoadFailEvent_t6C9A1F5B230AD659036AEA4B3B8EC76C9A8FFD04  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.RewardVideoOpportunityEvent
+struct RewardVideoOpportunityEvent_tD69B4F8DF571E66D3CCF8DBA81CB550D15E9F5CF  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.RewardVideoShowEvent
+struct RewardVideoShowEvent_tAB1860899095F9444D9F19A52372935E19CF6C10  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.RewardVideoShowFailEvent
+struct RewardVideoShowFailEvent_t905DE0DADEB75148A2B9341569D66CCB04F1FEFD  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// LionStudios.Suite.Analytics.Events.RewardVideoStartEvent
+struct RewardVideoStartEvent_t473F2102005FF05ECBC5C582A2051B36B41DE4FF  : public AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727
+{
+};
+
+// System.RuntimeTypeHandle
+struct RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B 
+{
+	// System.IntPtr System.RuntimeTypeHandle::value
+	intptr_t ___value_0;
+};
+
+// LionStudios.Suite.Analytics.Events.EventArgs.AdFailEventArgs
+struct AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A  : public AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13
+{
+	// LionStudios.Suite.Analytics.Events.AdErrorType LionStudios.Suite.Analytics.Events.EventArgs.AdFailEventArgs::Reason
+	int32_t ___Reason_4;
+};
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoFailEventArgs
+struct CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10  : public CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC
+{
+	// LionStudios.Suite.Analytics.Events.AdErrorType LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoFailEventArgs::Reason
+	int32_t ___Reason_4;
+};
+
+// LionStudios.Suite.Analytics.Events.EconomyEvent
+struct EconomyEvent_t234779EB492CA9100BC2E589751F107242498988  : public InappPurchaseEvent_tECDD0EDC6F9DC49096D515A741E5898E6382C0AD
+{
+};
+
+// LionStudios.Suite.Analytics.Events.EconomyEventWithReceipt
+struct EconomyEventWithReceipt_t5A7145C808A134EF088B83A2D296881AB32DDE50  : public InappPurchaseWithReceipt_tD1466C9B625B71F8760AD63F1A6CA58F653587F5
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterOpenLoadEvent
+struct InterOpenLoadEvent_t35E71AEF2BCB18A54E1E0DA4A62E2EE1BA900D8D  : public InterOpenEvent_t55598A4B3AC6DEB93C2DC0BD64D547BF35322133
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterOpenLoadFailEvent
+struct InterOpenLoadFailEvent_t03DA1B7E2E9EDE12B718FE14221B0556D9D681BC  : public InterOpenEvent_t55598A4B3AC6DEB93C2DC0BD64D547BF35322133
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterOpenShowEvent
+struct InterOpenShowEvent_tD73998E6784FDA3FB2AE58DBF06F86A1AE28EB76  : public InterOpenEvent_t55598A4B3AC6DEB93C2DC0BD64D547BF35322133
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterOpenShowFailEvent
+struct InterOpenShowFailEvent_t46603162A0EEE2A5BF1FC642A16C2003D5F35EE0  : public InterOpenEvent_t55598A4B3AC6DEB93C2DC0BD64D547BF35322133
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterOpenStartEvent
+struct InterOpenStartEvent_t396E2B4CA997A7873BABE2CF60B98F8761AC3AE7  : public InterOpenEvent_t55598A4B3AC6DEB93C2DC0BD64D547BF35322133
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterstitialClickEvent
+struct InterstitialClickEvent_t7A29339214D1FAB9EB61E1E0BC949DDB54A4A8B3  : public InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterstitialEndEvent
+struct InterstitialEndEvent_t52DA18B629AFC3F2DCDCAEE7D8AA81DFA3066DC5  : public InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterstitialLoadEvent
+struct InterstitialLoadEvent_tE62B4C6D2F27561AF7FB32AC4D2D0359D997E421  : public InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterstitialLoadFailEvent
+struct InterstitialLoadFailEvent_tEB0086A11E7835C3DBE3F5E9EEEEDE115232E2F1  : public InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterstitialShowEvent
+struct InterstitialShowEvent_t1551E92A50E0C95AA7A369DCBC4733C210505893  : public InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterstitialShowFailEvent
+struct InterstitialShowFailEvent_t79D8727A0DEB29D9A8BA0E00357FEAC8F956D8A6  : public InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3
+{
+};
+
+// LionStudios.Suite.Analytics.Events.InterstitialStartEvent
+struct InterstitialStartEvent_tBA4E7F78257ED52747E03F618C6D9B048D4BCCB5  : public InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3
+{
+};
+
+// Events.Level.EventArgs.LevelCompleteEventArgs
+struct LevelCompleteEventArgs_t2D0117E51ED14206337B6644DBE82FC9A6C25356  : public LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94
+{
+	// LionStudios.Suite.Analytics.Reward Events.Level.EventArgs.LevelCompleteEventArgs::Reward
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Reward_11;
+};
+
+// Events.Level.EventArgs.LevelFailEventArgs
+struct LevelFailEventArgs_t0D7FAD938FE3F0D0FAE00E1716619A3072F62539  : public LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94
+{
+	// System.String Events.Level.EventArgs.LevelFailEventArgs::FailReason
+	String_t* ___FailReason_11;
+};
+
+// Events.Level.EventArgs.LevelStepEventArgs
+struct LevelStepEventArgs_t9EFFAD397A46654E661B250CB24DE64B8D54E7E2  : public LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94
+{
+	// System.Boolean Events.Level.EventArgs.LevelStepEventArgs::IsCalledExplicitly
+	bool ___IsCalledExplicitly_11;
+	// LionStudios.Suite.Analytics.Reward Events.Level.EventArgs.LevelStepEventArgs::Reward
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Reward_12;
+};
+
+// Events.Mission.EventArgs.MissionCompletedEventArgs
+struct MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775  : public MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C
+{
+	// LionStudios.Suite.Analytics.Reward Events.Mission.EventArgs.MissionCompletedEventArgs::Reward
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Reward_8;
+};
+
+// Events.Mission.EventArgs.MissionFailedEventArgs
+struct MissionFailedEventArgs_t54F3264EEF3E19AB58F57F6616C368289E4F34F0  : public MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C
+{
+	// System.String Events.Mission.EventArgs.MissionFailedEventArgs::FailReason
+	String_t* ___FailReason_8;
+};
+
+// Events.Mission.EventArgs.MissionStepEventArgs
+struct MissionStepEventArgs_tFD9EA9C9B41143C3A66320CA4A07EB75B358D2CE  : public MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C
+{
+	// LionStudios.Suite.Analytics.Reward Events.Mission.EventArgs.MissionStepEventArgs::Reward
+	Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___Reward_8;
+};
+
+// System.MulticastDelegate
+struct MulticastDelegate_t  : public Delegate_t
+{
+	// System.Delegate[] System.MulticastDelegate::delegates
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates_13;
+};
+// Native definition for P/Invoke marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates_13;
+};
+// Native definition for COM marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates_13;
+};
+
+// System.SystemException
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+
+// System.Type
+struct Type_t  : public MemberInfo_t
+{
+	// System.RuntimeTypeHandle System.Type::_impl
+	RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ____impl_8;
+};
+
+// System.Func`1<Utility.Dispatcher.Dispatcher>
+struct Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4  : public MulticastDelegate_t
+{
+};
+
+// System.Func`1<System.Object>
+struct Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4  : public MulticastDelegate_t
+{
+};
+
+// System.Func`2<System.Object,System.Int32>
+struct Func_2_t9A0D493A82DCC47C9C819A3B045E02D9B5DDCE1B  : public MulticastDelegate_t
+{
+};
+
+// System.Func`2<LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs,System.Int32>
+struct Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445  : public MulticastDelegate_t
+{
+};
+
+// System.Func`2<LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs,System.Int32>
+struct Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC  : public MulticastDelegate_t
+{
+};
+
+// System.NotImplementedException
+struct NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+
+// LionStudios.Suite.Analytics.LionAnalytics/LionEventDelegate
+struct LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE  : public MulticastDelegate_t
+{
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,System.Object>
+
+// System.Collections.Generic.Dictionary`2<System.String,System.Object>
+
+// Data.GlobalDataContainer`2<System.Int32,System.String>
+
+// Data.GlobalDataContainer`2<System.Int32,System.String>
+
+// Data.GlobalDataContainer`2<System.String,System.String>
+
+// Data.GlobalDataContainer`2<System.String,System.String>
+
+// System.Collections.Generic.List`1<System.Collections.Generic.IDictionary`2<System.String,System.Object>>
+struct List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	IDictionary_2U5BU5D_t1C2A5F38641F518CA51394506890777E78EDF79C* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Collections.Generic.IDictionary`2<System.String,System.Object>>
+
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Object>
+
+// SDKMethodProviders.AdjustEventNames
+
+// SDKMethodProviders.AdjustEventNames
+
+// Data.CoreData
+
+// Data.CoreData
+
+// System.Globalization.CultureInfo
+struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_StaticFields
+{
+	// System.Globalization.CultureInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::invariant_culture_info
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___invariant_culture_info_0;
+	// System.Object System.Globalization.CultureInfo::shared_table_lock
+	RuntimeObject* ___shared_table_lock_1;
+	// System.Globalization.CultureInfo System.Globalization.CultureInfo::default_current_culture
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___default_current_culture_2;
+	// System.Globalization.CultureInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::s_DefaultThreadCurrentUICulture
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___s_DefaultThreadCurrentUICulture_34;
+	// System.Globalization.CultureInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::s_DefaultThreadCurrentCulture
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___s_DefaultThreadCurrentCulture_35;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Globalization.CultureInfo> System.Globalization.CultureInfo::shared_by_number
+	Dictionary_2_t9FA6D82CAFC18769F7515BB51D1C56DAE09381C3* ___shared_by_number_36;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureInfo> System.Globalization.CultureInfo::shared_by_name
+	Dictionary_2_tE1603CE612C16451D1E56FF4D4859D4FE4087C28* ___shared_by_name_37;
+	// System.Globalization.CultureInfo System.Globalization.CultureInfo::s_UserPreferredCultureInfoInAppX
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___s_UserPreferredCultureInfoInAppX_38;
+	// System.Boolean System.Globalization.CultureInfo::IsTaiwanSku
+	bool ___IsTaiwanSku_39;
+};
+
+// System.Globalization.CultureInfo
+
+// Utility.Dispatcher.Dispatcher
+
+// Utility.Dispatcher.Dispatcher
+
+// System.EventArgs
+struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields
+{
+	// System.EventArgs System.EventArgs::Empty
+	EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___Empty_0;
+};
+
+// System.EventArgs
+
+// Newtonsoft.Json.JsonConverter
+
+// Newtonsoft.Json.JsonConverter
+
+// LionStudios.Suite.Analytics.LionAnalytics
+struct LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields
+{
+	// Data.CoreData LionStudios.Suite.Analytics.LionAnalytics::_coreData
+	CoreData_t0131416461D5064142B0042F97FDC5408B8B2BDD* ____coreData_1;
+	// System.String LionStudios.Suite.Analytics.LionAnalytics::_version
+	String_t* ____version_4;
+	// LionStudios.Suite.Analytics.LionAnalyticsSettings LionStudios.Suite.Analytics.LionAnalytics::_settings
+	LionAnalyticsSettings_t8E9C085D37EF49849928BA5B12705F59790C91C0* ____settings_5;
+	// LionStudios.Suite.Analytics.EventScheduler LionStudios.Suite.Analytics.LionAnalytics::_eventScheduler
+	EventScheduler_t42BCE1F0ACC19E57B5FE3758E3B62E9280BE3C52* ____eventScheduler_6;
+	// Data.GlobalDataContainer`2<System.String,System.String> LionStudios.Suite.Analytics.LionAnalytics::_missionTrackingInfo
+	GlobalDataContainer_2_t248016E27216826B0BACAE44865C608566B718F2* ____missionTrackingInfo_7;
+	// Data.GlobalDataContainer`2<System.Int32,System.String> LionStudios.Suite.Analytics.LionAnalytics::_levelTrackingInfo
+	GlobalDataContainer_2_t3B95E2138826C88A59FE35A910E9B63228560BC9* ____levelTrackingInfo_8;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>> LionStudios.Suite.Analytics.LionAnalytics::AdaptersMap
+	Dictionary_2_tB6CE3B793B413BC658CEFEF1339D0C1E2DE28904* ___AdaptersMap_9;
+	// System.Action`1<LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs> LionStudios.Suite.Analytics.LionAnalytics::RemoveLevelAttemptTrackingDataRequired
+	Action_1_t6128C74DF67D64902721C05BEF8F74C1C0FBB097* ___RemoveLevelAttemptTrackingDataRequired_11;
+	// System.Action`1<LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs> LionStudios.Suite.Analytics.LionAnalytics::RemoveMissionAttemptTrackingDataRequired
+	Action_1_t4D42836C0651203AA9BC52407C8C5B93CFDB0AD1* ___RemoveMissionAttemptTrackingDataRequired_12;
+	// LionStudios.Suite.Analytics.EventsFilter LionStudios.Suite.Analytics.LionAnalytics::_filter
+	EventsFilter_t508B7309CB03C3B1F5116AD82429D70B2E2C5E6C* ____filter_13;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Object> LionStudios.Suite.Analytics.LionAnalytics::FilterOverrides
+	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___FilterOverrides_14;
+	// System.Action LionStudios.Suite.Analytics.LionAnalytics::OnInitialized
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___OnInitialized_15;
+	// System.Boolean LionStudios.Suite.Analytics.LionAnalytics::holdEvents
+	bool ___holdEvents_16;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32> LionStudios.Suite.Analytics.LionAnalytics::levelStartTime
+	Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* ___levelStartTime_17;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> LionStudios.Suite.Analytics.LionAnalytics::missionStartTime
+	Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* ___missionStartTime_18;
+	// System.Collections.Generic.IDictionary`2<System.String,System.Object> LionStudios.Suite.Analytics.LionAnalytics::_globalParams
+	RuntimeObject* ____globalParams_19;
+	// System.Collections.Generic.IDictionary`2<System.String,System.Object> LionStudios.Suite.Analytics.LionAnalytics::_devProvidedAdditionalData
+	RuntimeObject* ____devProvidedAdditionalData_20;
+	// System.Collections.Generic.IDictionary`2<System.String,System.Object> LionStudios.Suite.Analytics.LionAnalytics::_abCohort
+	RuntimeObject* ____abCohort_21;
+};
+
+// LionStudios.Suite.Analytics.LionAnalytics
+
+// LionStudios.Suite.Analytics.Events.LionGameEventBase
+struct LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields
+{
+	// System.Func`1<Utility.Dispatcher.Dispatcher> LionStudios.Suite.Analytics.Events.LionGameEventBase::DispatcherRequired
+	Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* ___DispatcherRequired_9;
+	// LionStudios.Suite.Analytics.LionAnalytics/LionEventDelegate LionStudios.Suite.Analytics.Events.LionGameEventBase::OnLogEvent
+	LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* ___OnLogEvent_10;
+};
+
+// LionStudios.Suite.Analytics.Events.LionGameEventBase
+
+// System.Reflection.MemberInfo
+
+// System.Reflection.MemberInfo
+
+// LionStudios.Suite.Analytics.SerializableObject
+
+// LionStudios.Suite.Analytics.SerializableObject
+
+// System.String
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// System.String
+
+// System.ValueType
+
+// System.ValueType
+
+// LionStudios.Suite.Analytics.Events.LionGameEventBase/<>c
+struct U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_StaticFields
+{
+	// LionStudios.Suite.Analytics.Events.LionGameEventBase/<>c LionStudios.Suite.Analytics.Events.LionGameEventBase/<>c::<>9
+	U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B* ___U3CU3E9_0;
+};
+
+// LionStudios.Suite.Analytics.Events.LionGameEventBase/<>c
+
+// System.Collections.Generic.List`1/Enumerator<System.Collections.Generic.IDictionary`2<System.String,System.Object>>
+
+// System.Collections.Generic.List`1/Enumerator<System.Collections.Generic.IDictionary`2<System.String,System.Object>>
+
+// System.Collections.Generic.List`1/Enumerator<System.Object>
+
+// System.Collections.Generic.List`1/Enumerator<System.Object>
+
+// System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
+
+// System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
+
+// System.Collections.Generic.KeyValuePair`2<System.String,System.Object>
+
+// System.Collections.Generic.KeyValuePair`2<System.String,System.Object>
+
+// System.Nullable`1<System.Boolean>
+
+// System.Nullable`1<System.Boolean>
+
+// System.Nullable`1<System.Int32>
+
+// System.Nullable`1<System.Int32>
+
+// LionStudios.Suite.Analytics.Events.AchievementEvent
+
+// LionStudios.Suite.Analytics.Events.AchievementEvent
+
+// Events.InGame.EventArgs.AchievementEventArgs
+
+// Events.InGame.EventArgs.AchievementEventArgs
+
+// LionStudios.Suite.Analytics.Events.AdEvent
+
+// LionStudios.Suite.Analytics.Events.AdEvent
+
+// LionStudios.Suite.Analytics.Events.EventArgs.BannerEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.BannerEventArgs
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Boolean
+
+// LionStudios.Suite.Analytics.Events.CharacterCreatedEvent
+
+// LionStudios.Suite.Analytics.Events.CharacterCreatedEvent
+
+// Events.InGame.EventArgs.CharacterCreatedEventArgs
+
+// Events.InGame.EventArgs.CharacterCreatedEventArgs
+
+// LionStudios.Suite.Analytics.Events.CharacterDeletedEvent
+
+// LionStudios.Suite.Analytics.Events.CharacterDeletedEvent
+
+// Events.InGame.EventArgs.CharacterDeletedEventArgs
+
+// Events.InGame.EventArgs.CharacterDeletedEventArgs
+
+// LionStudios.Suite.Analytics.Events.CharacterUpdatedEvent
+
+// LionStudios.Suite.Analytics.Events.CharacterUpdatedEvent
+
+// Events.InGame.EventArgs.CharacterUpdatedEventArgs
+
+// Events.InGame.EventArgs.CharacterUpdatedEventArgs
+
+// System.DateTime
+struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
+{
+	// System.Int32[] System.DateTime::s_daysToMonth365
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth365_30;
+	// System.Int32[] System.DateTime::s_daysToMonth366
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth366_31;
+	// System.DateTime System.DateTime::MinValue
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MinValue_32;
+	// System.DateTime System.DateTime::MaxValue
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MaxValue_33;
+	// System.DateTime System.DateTime::UnixEpoch
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___UnixEpoch_34;
+};
+
+// System.DateTime
+
+// LionStudios.Suite.Analytics.Events.DebugEvent
+
+// LionStudios.Suite.Analytics.Events.DebugEvent
+
+// LionStudios.Suite.Analytics.Events.DebugEventArgs
+
+// LionStudios.Suite.Analytics.Events.DebugEventArgs
+
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
+{
+	// System.Char[] System.Enum::enumSeperatorCharArray
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
+};
+
+// System.Enum
+
+// LionStudios.Suite.Analytics.Events.FeatureUnlockedEvent
+
+// LionStudios.Suite.Analytics.Events.FeatureUnlockedEvent
+
+// Events.InGame.EventArgs.FeatureUnlockedEventArgs
+
+// Events.InGame.EventArgs.FeatureUnlockedEventArgs
+
+// LionStudios.Suite.Analytics.Events.Game.GameEvent
+
+// LionStudios.Suite.Analytics.Events.Game.GameEvent
+
+// LionStudios.Suite.Analytics.Events.GiftReceivedEvent
+
+// LionStudios.Suite.Analytics.Events.GiftReceivedEvent
+
+// Events.InGame.EventArgs.GiftReceivedEventArgs
+
+// Events.InGame.EventArgs.GiftReceivedEventArgs
+
+// LionStudios.Suite.Analytics.Events.GiftSentEvent
+
+// LionStudios.Suite.Analytics.Events.GiftSentEvent
+
+// Events.InGame.EventArgs.GiftSentEventArgs
+
+// Events.InGame.EventArgs.GiftSentEventArgs
+
+// LionStudios.Suite.Analytics.Events.HandActionEvent
+
+// LionStudios.Suite.Analytics.Events.HandActionEvent
+
+// Events.InGame.EventArgs.HandActionEventArgs
+
+// Events.InGame.EventArgs.HandActionEventArgs
+
+// LionStudios.Suite.Analytics.Events.IAPEvent
+
+// LionStudios.Suite.Analytics.Events.IAPEvent
+
+// System.Int32
+
+// System.Int32
+
+// System.IntPtr
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.IntPtr
+
+// LionStudios.Suite.Analytics.Events.InviteReceivedEvent
+
+// LionStudios.Suite.Analytics.Events.InviteReceivedEvent
+
+// LionStudios.Suite.Analytics.Events.InviteRewardedEvent
+
+// LionStudios.Suite.Analytics.Events.InviteRewardedEvent
+
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteRewardedEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteRewardedEventArgs
+
+// LionStudios.Suite.Analytics.Events.InviteSentEvent
+
+// LionStudios.Suite.Analytics.Events.InviteSentEvent
+
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteSentEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteSentEventArgs
+
+// LionStudios.Suite.Analytics.Events.ItemActionedEvent
+
+// LionStudios.Suite.Analytics.Events.ItemActionedEvent
+
+// Events.InGame.EventArgs.ItemActionedEventArgs
+
+// Events.InGame.EventArgs.ItemActionedEventArgs
+
+// LionStudios.Suite.Analytics.Events.ItemCollectedEvent
+
+// LionStudios.Suite.Analytics.Events.ItemCollectedEvent
+
+// Events.InGame.EventArgs.ItemCollectedEventArgs
+
+// Events.InGame.EventArgs.ItemCollectedEventArgs
+
+// LionStudios.Suite.Analytics.Events.LevelEvent
+struct LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_StaticFields
+{
+	// System.Func`2<LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs,System.Int32> LionStudios.Suite.Analytics.Events.LevelEvent::LevelAttemptInfoRequired
+	Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* ___LevelAttemptInfoRequired_11;
+};
+
+// LionStudios.Suite.Analytics.Events.LevelEvent
+
+// LionStudios.Suite.Analytics.Events.LevelUpEvent
+
+// LionStudios.Suite.Analytics.Events.LevelUpEvent
+
+// Events.Level.EventArgs.LevelUpEventArgs
+
+// Events.Level.EventArgs.LevelUpEventArgs
+
+// LionStudios.Suite.Analytics.Events.MachineLearningEventArgs
+
+// LionStudios.Suite.Analytics.Events.MachineLearningEventArgs
+
+// LionStudios.Suite.Analytics.Events.MissionEvent
+struct MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_StaticFields
+{
+	// System.Func`2<LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs,System.Int32> LionStudios.Suite.Analytics.Events.MissionEvent::MissionAttemptInfoRequired
+	Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* ___MissionAttemptInfoRequired_11;
+};
+
+// LionStudios.Suite.Analytics.Events.MissionEvent
+
+// LionStudios.Suite.Analytics.Events.NotificationOpenedEvent
+
+// LionStudios.Suite.Analytics.Events.NotificationOpenedEvent
+
+// Events.InGame.EventArgs.NotificationOpenedEventArgs
+
+// Events.InGame.EventArgs.NotificationOpenedEventArgs
+
+// LionStudios.Suite.Analytics.Events.OptionsEvent
+
+// LionStudios.Suite.Analytics.Events.OptionsEvent
+
+// Events.InGame.EventArgs.OptionsEventArgs
+
+// Events.InGame.EventArgs.OptionsEventArgs
+
+// LionStudios.Suite.Analytics.Events.PowerUpUsedEvent
+
+// LionStudios.Suite.Analytics.Events.PowerUpUsedEvent
+
+// Events.InGame.EventArgs.PowerUpUsedEventArgs
+
+// Events.InGame.EventArgs.PowerUpUsedEventArgs
+
+// LionStudios.Suite.Analytics.Events.PredictionResultEvent
+
+// LionStudios.Suite.Analytics.Events.PredictionResultEvent
+
+// LionStudios.Suite.Analytics.Product
+
+// LionStudios.Suite.Analytics.Product
+
+// LionStudios.Suite.Analytics.Events.ProductViewedEvent
+
+// LionStudios.Suite.Analytics.Events.ProductViewedEvent
+
+// Events.InGame.EventArgs.ProductViewedEventArgs
+
+// Events.InGame.EventArgs.ProductViewedEventArgs
+
+// LionStudios.Suite.Analytics.RealCurrency
+struct RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214_StaticFields
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> LionStudios.Suite.Analytics.RealCurrency::Iso4217CurrencyCodes
+	Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* ___Iso4217CurrencyCodes_2;
+};
+
+// LionStudios.Suite.Analytics.RealCurrency
+
+// LionStudios.Suite.Analytics.Reward
+
+// LionStudios.Suite.Analytics.Reward
+
+// LionStudios.Suite.Analytics.Events.ShopEnteredEvent
+
+// LionStudios.Suite.Analytics.Events.ShopEnteredEvent
+
+// Events.InGame.EventArgs.ShopEnteredEventArgs
+
+// Events.InGame.EventArgs.ShopEnteredEventArgs
+
+// System.Single
+
+// System.Single
+
+// LionStudios.Suite.Analytics.Events.SkillUpgradedEvent
+
+// LionStudios.Suite.Analytics.Events.SkillUpgradedEvent
+
+// Events.InGame.EventArgs.SkillUpgradedEventArgs
+
+// Events.InGame.EventArgs.SkillUpgradedEventArgs
+
+// LionStudios.Suite.Analytics.Events.SkillUsedEvent
+
+// LionStudios.Suite.Analytics.Events.SkillUsedEvent
+
+// Events.InGame.EventArgs.SkillUsedEventArgs
+
+// Events.InGame.EventArgs.SkillUsedEventArgs
+
+// LionStudios.Suite.Analytics.Events.SocialConnectEvent
+
+// LionStudios.Suite.Analytics.Events.SocialConnectEvent
+
+// LionStudios.Suite.Analytics.Events.EventArgs.SocialConnectEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.SocialConnectEventArgs
+
+// LionStudios.Suite.Analytics.Events.SocialEvent
+
+// LionStudios.Suite.Analytics.Events.SocialEvent
+
+// LionStudios.Suite.Analytics.Events.EventArgs.SocialEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.SocialEventArgs
+
+// Newtonsoft.Json.Converters.StringEnumConverter
+
+// Newtonsoft.Json.Converters.StringEnumConverter
+
+// LionStudios.Suite.Analytics.Events.SupportEvent
+
+// LionStudios.Suite.Analytics.Events.SupportEvent
+
+// LionStudios.Suite.Analytics.Events.EventArgs.SupportEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.SupportEventArgs
+
+// LionStudios.Suite.Analytics.Transaction
+
+// LionStudios.Suite.Analytics.Transaction
+
+// LionStudios.Suite.Analytics.Events.UiInteractionEvent
+
+// LionStudios.Suite.Analytics.Events.UiInteractionEvent
+
+// Events.InGame.EventArgs.UiInteractionEventArgs
+
+// Events.InGame.EventArgs.UiInteractionEventArgs
+
+// LionStudios.Suite.Analytics.VirtualCurrency
+
+// LionStudios.Suite.Analytics.VirtualCurrency
+
+// System.Void
+
+// System.Void
+
+// LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs
+
+// LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs
+
+// LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs
+
+// LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.BannerFailEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.BannerFailEventArgs
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoClickEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoClickEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoEndEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoEndEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadFailEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadFailEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowFailEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowFailEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoStartEvent
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoStartEvent
+
+// System.Delegate
+
+// System.Delegate
+
+// System.Exception
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+
+// System.Exception
+
+// LionStudios.Suite.Analytics.Events.InappPurchaseEvent
+
+// LionStudios.Suite.Analytics.Events.InappPurchaseEvent
+
+// LionStudios.Suite.Analytics.Events.InappPurchaseWithReceipt
+
+// LionStudios.Suite.Analytics.Events.InappPurchaseWithReceipt
+
+// LionStudios.Suite.Analytics.Events.InterOpenEvent
+
+// LionStudios.Suite.Analytics.Events.InterOpenEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialEvent
+
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteReceivedEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.InviteReceivedEventArgs
+
+// LionStudios.Suite.Analytics.Events.LevelAbandonedEvent
+
+// LionStudios.Suite.Analytics.Events.LevelAbandonedEvent
+
+// LionStudios.Suite.Analytics.Events.LevelCompleteEvent
+
+// LionStudios.Suite.Analytics.Events.LevelCompleteEvent
+
+// Events.Level.EventArgs.LevelEventArgs
+
+// Events.Level.EventArgs.LevelEventArgs
+
+// LionStudios.Suite.Analytics.Events.LevelFailEvent
+
+// LionStudios.Suite.Analytics.Events.LevelFailEvent
+
+// LionStudios.Suite.Analytics.Events.LevelRestartEvent
+
+// LionStudios.Suite.Analytics.Events.LevelRestartEvent
+
+// LionStudios.Suite.Analytics.Events.LevelStartEvent
+
+// LionStudios.Suite.Analytics.Events.LevelStartEvent
+
+// LionStudios.Suite.Analytics.Events.LevelStepEvent
+
+// LionStudios.Suite.Analytics.Events.LevelStepEvent
+
+// LionStudios.Suite.Analytics.Events.MissionAbandonedEvent
+
+// LionStudios.Suite.Analytics.Events.MissionAbandonedEvent
+
+// LionStudios.Suite.Analytics.Events.MissionCompletedEvent
+
+// LionStudios.Suite.Analytics.Events.MissionCompletedEvent
+
+// Events.Mission.EventArgs.MissionEventArgs
+
+// Events.Mission.EventArgs.MissionEventArgs
+
+// LionStudios.Suite.Analytics.Events.MissionFailedEvent
+
+// LionStudios.Suite.Analytics.Events.MissionFailedEvent
+
+// LionStudios.Suite.Analytics.Events.MissionStartedEvent
+
+// LionStudios.Suite.Analytics.Events.MissionStartedEvent
+
+// LionStudios.Suite.Analytics.Events.MissionStepEvent
+
+// LionStudios.Suite.Analytics.Events.MissionStepEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoClickEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoClickEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoCollectEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoCollectEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoEndEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoEndEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoLoadEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoLoadEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoLoadFailEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoLoadFailEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoOpportunityEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoOpportunityEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoShowEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoShowEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoShowFailEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoShowFailEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoStartEvent
+
+// LionStudios.Suite.Analytics.Events.RewardVideoStartEvent
+
+// System.RuntimeTypeHandle
+
+// System.RuntimeTypeHandle
+
+// LionStudios.Suite.Analytics.Events.EventArgs.AdFailEventArgs
+
+// LionStudios.Suite.Analytics.Events.EventArgs.AdFailEventArgs
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoFailEventArgs
+
+// LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoFailEventArgs
+
+// LionStudios.Suite.Analytics.Events.EconomyEvent
+
+// LionStudios.Suite.Analytics.Events.EconomyEvent
+
+// LionStudios.Suite.Analytics.Events.EconomyEventWithReceipt
+
+// LionStudios.Suite.Analytics.Events.EconomyEventWithReceipt
+
+// LionStudios.Suite.Analytics.Events.InterOpenLoadEvent
+
+// LionStudios.Suite.Analytics.Events.InterOpenLoadEvent
+
+// LionStudios.Suite.Analytics.Events.InterOpenLoadFailEvent
+
+// LionStudios.Suite.Analytics.Events.InterOpenLoadFailEvent
+
+// LionStudios.Suite.Analytics.Events.InterOpenShowEvent
+
+// LionStudios.Suite.Analytics.Events.InterOpenShowEvent
+
+// LionStudios.Suite.Analytics.Events.InterOpenShowFailEvent
+
+// LionStudios.Suite.Analytics.Events.InterOpenShowFailEvent
+
+// LionStudios.Suite.Analytics.Events.InterOpenStartEvent
+
+// LionStudios.Suite.Analytics.Events.InterOpenStartEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialClickEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialClickEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialEndEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialEndEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialLoadEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialLoadEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialLoadFailEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialLoadFailEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialShowEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialShowEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialShowFailEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialShowFailEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialStartEvent
+
+// LionStudios.Suite.Analytics.Events.InterstitialStartEvent
+
+// Events.Level.EventArgs.LevelCompleteEventArgs
+
+// Events.Level.EventArgs.LevelCompleteEventArgs
+
+// Events.Level.EventArgs.LevelFailEventArgs
+
+// Events.Level.EventArgs.LevelFailEventArgs
+
+// Events.Level.EventArgs.LevelStepEventArgs
+
+// Events.Level.EventArgs.LevelStepEventArgs
+
+// Events.Mission.EventArgs.MissionCompletedEventArgs
+
+// Events.Mission.EventArgs.MissionCompletedEventArgs
+
+// Events.Mission.EventArgs.MissionFailedEventArgs
+
+// Events.Mission.EventArgs.MissionFailedEventArgs
+
+// Events.Mission.EventArgs.MissionStepEventArgs
+
+// Events.Mission.EventArgs.MissionStepEventArgs
+
+// System.MulticastDelegate
+
+// System.MulticastDelegate
+
+// System.SystemException
+
+// System.SystemException
+
+// System.Type
+struct Type_t_StaticFields
+{
+	// System.Reflection.Binder modreq(System.Runtime.CompilerServices.IsVolatile) System.Type::s_defaultBinder
+	Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235* ___s_defaultBinder_0;
+	// System.Char System.Type::Delimiter
+	Il2CppChar ___Delimiter_1;
+	// System.Type[] System.Type::EmptyTypes
+	TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___EmptyTypes_2;
+	// System.Object System.Type::Missing
+	RuntimeObject* ___Missing_3;
+	// System.Reflection.MemberFilter System.Type::FilterAttribute
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterAttribute_4;
+	// System.Reflection.MemberFilter System.Type::FilterName
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterName_5;
+	// System.Reflection.MemberFilter System.Type::FilterNameIgnoreCase
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterNameIgnoreCase_6;
+};
+
+// System.Type
+
+// System.Func`1<Utility.Dispatcher.Dispatcher>
+
+// System.Func`1<Utility.Dispatcher.Dispatcher>
+
+// System.Func`1<System.Object>
+
+// System.Func`1<System.Object>
+
+// System.Func`2<System.Object,System.Int32>
+
+// System.Func`2<System.Object,System.Int32>
+
+// System.Func`2<LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs,System.Int32>
+
+// System.Func`2<LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs,System.Int32>
+
+// System.Func`2<LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs,System.Int32>
+
+// System.Func`2<LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs,System.Int32>
+
+// System.NotImplementedException
+
+// System.NotImplementedException
+
+// LionStudios.Suite.Analytics.LionAnalytics/LionEventDelegate
+
+// LionStudios.Suite.Analytics.LionAnalytics/LionEventDelegate
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
+{
+	ALIGN_FIELD (8) String_t* m_Items[1];
+
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+
+
+// System.Void System.Nullable`1<System.Int32>::.ctor(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_gshared (Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// T System.Nullable`1<System.Boolean>::GetValueOrDefault()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_gshared_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Nullable`1<System.Boolean>::get_HasValue()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_gshared_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Nullable`1<System.Int32>::get_HasValue()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_gshared_inline (Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28* __this, const RuntimeMethod* method) ;
+// TResult System.Func`2<System.Object,System.Int32>::Invoke(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Func_2_Invoke_m5216F6C7BCECCCED81384876C2968E0D4358618B_gshared_inline (Func_2_t9A0D493A82DCC47C9C819A3B045E02D9B5DDCE1B* __this, RuntimeObject* ___0_arg, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// TResult System.Func`1<System.Object>::Invoke()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Func_1_Invoke_m1412272198DFA4066C83206E5B43353AF10A2EEE_gshared_inline (Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1/Enumerator<System.Object>::get_Current()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+// TKey System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Key()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Value()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1/Enumerator<System.Object>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.IList`1<System.Object[]> Data.GlobalDataContainer`2<System.Object,System.Object>::GetData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GlobalDataContainer_2_GetData_mC5FD32E7AEF86C892A8B3C914DBB3835A1A300EB_gshared (GlobalDataContainer_2_t243100C2FBBB862B6704EAFD58BA289A840E2382* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.IList`1<System.Object[]> Data.GlobalDataContainer`2<System.Int32,System.Object>::GetData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GlobalDataContainer_2_GetData_mA378CFAD7DE5390B9DB2A88C2F8468FB8BA39D23_gshared (GlobalDataContainer_2_tD3F694C884CF19067765F5F45CEA7E6C139FA2E9* __this, const RuntimeMethod* method) ;
+// System.Void System.Func`1<System.Object>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_1__ctor_m663374A863E492A515BE9626B6F0E444991834E8_gshared (Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Add(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_key, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
+
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenEvent::.ctor(System.String,System.Nullable`1<System.Int32>,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenEvent__ctor_m8DF9AE1B4ECCEA1C57687124B3638BD020E8EC87 (InterOpenEvent_t55598A4B3AC6DEB93C2DC0BD64D547BF35322133* __this, String_t* ___0_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___1_level, String_t* ___2_placement, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.String System.Enum::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::set_eventName(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenEvent__ctor_m55EDB75C2DA109DD4F4B6BB0B61B8867BD572424 (InterOpenEvent_t55598A4B3AC6DEB93C2DC0BD64D547BF35322133* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialEvent::.ctor(System.String,System.Nullable`1<System.Int32>,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialEvent__ctor_mDF32EE8E2CC8317DE01AF68C3648610D9153579F (InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3* __this, String_t* ___0_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___1_level, String_t* ___2_placement, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialEvent__ctor_m0935CC1B2C7F442BEAFA3E87A60660967941A5F1 (InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.AdEvent::.ctor(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B (AdEvent_t0F8DCA7151522F17F82B88468F99B016A227B727* __this, RuntimeObject* ___0_additionalData, bool ___1_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::AddParam(System.String,System.Object,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, String_t* ___0_name, RuntimeObject* ___1_value, bool ___2_overrideExisting, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::.ctor(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, RuntimeObject* ___0_additionalData, bool ___1_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::set_eventType(LionStudios.Suite.Analytics.EventType)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// System.Void System.EventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3 (EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* __this, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.InappPurchaseEvent::.ctor(LionStudios.Suite.Analytics.Transaction,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,LionStudios.Suite.Analytics.Events.ReceiptStatus,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InappPurchaseEvent__ctor_mA343F002F3426B6B20A6C59FFF5FBD53BDBA7DE4 (InappPurchaseEvent_tECDD0EDC6F9DC49096D515A741E5898E6382C0AD* __this, Transaction_t12BEC26500383F0721FC66524801C5C126142A23* ___0_transaction, String_t* ___1_productID, String_t* ___2_transactionID, String_t* ___3_purchaseLocation, RuntimeObject* ___4_additionalData, int32_t ___5_receiptStatus, bool ___6_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.InappPurchaseEvent::.ctor(System.Int32,System.String,System.String,System.String,System.Single,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,LionStudios.Suite.Analytics.Events.ReceiptStatus,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InappPurchaseEvent__ctor_mAD4D688FBD14960EB7DF740CA8D07CA3280F453C (InappPurchaseEvent_tECDD0EDC6F9DC49096D515A741E5898E6382C0AD* __this, int32_t ___0_virtualCurrencyAmount, String_t* ___1_virtualCurrencyName, String_t* ___2_virtualCurrencyType, String_t* ___3_realCurrencyType, float ___4_realCurrencyAmount, String_t* ___5_purchaseName, String_t* ___6_productID, String_t* ___7_transactionID, String_t* ___8_purchaseLocation, RuntimeObject* ___9_additionalData, int32_t ___10_receiptStatus, bool ___11_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.InappPurchaseEvent::.ctor(System.String,LionStudios.Suite.Analytics.Product,LionStudios.Suite.Analytics.Product,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,LionStudios.Suite.Analytics.Events.ReceiptStatus,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InappPurchaseEvent__ctor_m58FCFF5BE47F0F04927729FE1F5AA787F49C4D61 (InappPurchaseEvent_tECDD0EDC6F9DC49096D515A741E5898E6382C0AD* __this, String_t* ___0_purchaseName, Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* ___1_spentProducts, Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* ___2_receivedProducts, String_t* ___3_purchaseLocation, String_t* ___4_productID, String_t* ___5_transactionID, RuntimeObject* ___6_additionalData, int32_t ___7_receiptStatus, bool ___8_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.InappPurchaseWithReceipt::.ctor(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InappPurchaseWithReceipt__ctor_m05FB7EE1BCD3F9BEFC70C2FE6A65218891569CA9 (InappPurchaseWithReceipt_tD1466C9B625B71F8760AD63F1A6CA58F653587F5* __this, RuntimeObject* ___0_additionalData, bool ___1_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void System.NotImplementedException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotImplementedException__ctor_m8339D1A685E8D77CAC9D3260C06B38B5C7CA7742 (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* __this, String_t* ___0_message, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.IAPEvent::.ctor(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IAPEvent__ctor_mBF0919398F0547F70F31845E258A5CA371C5AADE (IAPEvent_t69C94E103CC5432EECC26E82BAA0D42CB161CC5F* __this, RuntimeObject* ___0_additionalData, bool ___1_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::Log(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Product::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Product__ctor_m3BB3BC10A4BEF1FEC728145C6D4E32C888BE36E0 (Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* __this, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.VirtualCurrency::.ctor(System.String,System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VirtualCurrency__ctor_mFCA0F47C55E39BD89C3C75DFEE6E03BBF5BC4306 (VirtualCurrency_tA04EAD092BED69D54D0E3BB539ABDD3D77DF7D27* __this, String_t* ___0_name, String_t* ___1_type, int32_t ___2_amount, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Product::AddVirtualCurrency(LionStudios.Suite.Analytics.VirtualCurrency)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Product_AddVirtualCurrency_m472DA9D14472E94C2C83F67861016C01EE81E98C (Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* __this, VirtualCurrency_tA04EAD092BED69D54D0E3BB539ABDD3D77DF7D27* ___0_currency, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.RealCurrency::.ctor(System.String,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RealCurrency__ctor_m177D5996E515DC0EE7E301E707DC9E77C6E9E451 (RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214* __this, String_t* ___0_type, float ___1_amount, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Product::AddRealCurrency(LionStudios.Suite.Analytics.RealCurrency)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Product_AddRealCurrency_m81374B22CC050D73CBAF9107CB2D92F774FAC559_inline (Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* __this, RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214* ___0_currency, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Transaction::.ctor(System.String,System.String,LionStudios.Suite.Analytics.Product,LionStudios.Suite.Analytics.Product,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transaction__ctor_mB0BD95FC03CD216D94854D1096A5AC8B32B2464E (Transaction_t12BEC26500383F0721FC66524801C5C126142A23* __this, String_t* ___0_name, String_t* ___1_type, Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* ___2_productsReceived, Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* ___3_productsSpent, String_t* ___4_transactionID, String_t* ___5_productID, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.PowerUpUsedEvent::.ctor(System.String,System.String,System.Int32,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PowerUpUsedEvent__ctor_m9A4B6C9D79669CFF987D4F346A94A5994F57233C (PowerUpUsedEvent_tE083427C6584A4D437D378194C400D158F3A6A9A* __this, String_t* ___0_missionID, String_t* ___1_missionType, int32_t ___2_missionAttempt, String_t* ___3_powerUpName, String_t* ___4_missionName, RuntimeObject* ___5_additionalData, bool ___6_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.LevelEvent::.ctor(System.Int32,System.Nullable`1<System.Int32>,System.Boolean,System.Nullable`1<System.Int32>,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelEvent__ctor_mF316C2575EA31CC21AF2CF7060369C3ABA0342CE (LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA* __this, int32_t ___0_level, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___1_attemptNum, bool ___2_incrementCounter, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___3_score, String_t* ___4_levelCollection1, String_t* ___5_levelCollection2, String_t* ___6_missionType, String_t* ___7_missionName, RuntimeObject* ___8_additionalData, bool ___9_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Int32 LionStudios.Suite.Analytics.LionAnalyticsApplication::GetTimeSinceLevelStart(System.Int32,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LionAnalyticsApplication_GetTimeSinceLevelStart_m3E62D3892AF53B6FC7192A1B689D6C9DBCEEBFC5 (int32_t ___0_level, bool ___1_isLevelStepEvent, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.LionAnalytics::RemoveLevelTrackingDataCombination(System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionAnalytics_RemoveLevelTrackingDataCombination_mF7E3715C7A89DA04DA7C463AD65186BB36FF939E (int32_t ___0_levelNum, String_t* ___1_missionName, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.LevelEvent::.ctor(Events.Level.EventArgs.LevelEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelEvent__ctor_m2C3A97FF79288DA676310FBC22810C3637B3C94F (LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA* __this, LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void System.Nullable`1<System.Int32>::.ctor(T)
+inline void Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703 (Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28* __this, int32_t ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28*, int32_t, const RuntimeMethod*))Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_gshared)(__this, ___0_value, method);
+}
+// T System.Nullable`1<System.Boolean>::GetValueOrDefault()
+inline bool Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01*, const RuntimeMethod*))Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_gshared_inline)(__this, method);
+}
+// System.Boolean System.Nullable`1<System.Boolean>::get_HasValue()
+inline bool Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01*, const RuntimeMethod*))Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_gshared_inline)(__this, method);
+}
+// System.Void LionStudios.Suite.Analytics.LionAnalytics::SetTutorial(System.Boolean,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionAnalytics_SetTutorial_mBFE5D8438D26C05CFFC2A02ADD27348CBCF76DAE (bool ___0_tutorialState, String_t* ___1_trackMission, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Combine(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00 (Delegate_t* ___0_a, Delegate_t* ___1_b, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Remove(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3 (Delegate_t* ___0_source, Delegate_t* ___1_value, const RuntimeMethod* method) ;
+// System.Boolean System.Nullable`1<System.Int32>::get_HasValue()
+inline bool Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline (Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28*, const RuntimeMethod*))Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_gshared_inline)(__this, method);
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::.ctor(System.Boolean,System.Int32,System.String,System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelAttemptEventArgs__ctor_mF88FCFF343C5B788ED1C53AD503513AF578E7F17 (LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* __this, bool ___0_incrementCounter, int32_t ___1_level, String_t* ___2_levelCollection1, String_t* ___3_levelCollection2, String_t* ___4_missionName, String_t* ___5_missionType, const RuntimeMethod* method) ;
+// TResult System.Func`2<LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs,System.Int32>::Invoke(T)
+inline int32_t Func_2_Invoke_m4981F3B4B1D38D3CED7E434A3223DC893E0639B5_inline (Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* __this, LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* ___0_arg, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445*, LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0*, const RuntimeMethod*))Func_2_Invoke_m5216F6C7BCECCCED81384876C2968E0D4358618B_gshared_inline)(__this, ___0_arg, method);
+}
+// System.String System.Int32::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.LionAnalytics::SetPlayerScore(System.Nullable`1<System.Int32>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionAnalytics_SetPlayerScore_m9F4AD82AAE100147EC67C91DAAA7562E62F2D260 (Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___0_userScore, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.LionAnalytics::AddLevelTrackingDataCombination(System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionAnalytics_AddLevelTrackingDataCombination_m311FA1DA21F620D9CA3ED8ED0F32A20EAA9C8FAB (int32_t ___0_levelNum, String_t* ___1_missionName, const RuntimeMethod* method) ;
+// System.Void Newtonsoft.Json.Converters.StringEnumConverter::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringEnumConverter__ctor_m36B6009E735666675AEB30CD83B385291E98CC73 (StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,System.Object>::.ctor()
+inline void Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9 (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+}
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::SetAdditionalData(System.Collections.Generic.IDictionary`2<System.String,System.Object>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_SetAdditionalData_m68AAFEA4839CF35DDFD880D53D433D1D03265EC1 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, RuntimeObject* ___0_additionalData, const RuntimeMethod* method) ;
+// TResult System.Func`1<Utility.Dispatcher.Dispatcher>::Invoke()
+inline Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6* Func_1_Invoke_m9DC6C81DAC8318EA07CB6657B19122E8DF324D80_inline (Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* __this, const RuntimeMethod* method)
+{
+	return ((  Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6* (*) (Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4*, const RuntimeMethod*))Func_1_Invoke_m1412272198DFA4066C83206E5B43353AF10A2EEE_gshared_inline)(__this, method);
+}
+// System.Type System.Object::GetType()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.String System.String::Replace(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166 (String_t* __this, String_t* ___0_oldValue, String_t* ___1_newValue, const RuntimeMethod* method) ;
+// System.String LionStudios.Suite.StringUtil::ToSnakeCase(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* StringUtil_ToSnakeCase_m28D7EA07F3F32706A39615590CEC2F755A441490 (String_t* ___0_text, const RuntimeMethod* method) ;
+// System.String LionStudios.Suite.Analytics.Events.LionGameEventBase::get_eventName()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* LionGameEventBase_get_eventName_mCA6DE75C049C2382BBEC2A74C762A5489AD83CC1_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m093934F71A9B351911EE46311674ED463B180006 (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, String_t* ___3_str3, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogWarning(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+// System.String LionStudios.Suite.Core.LionCore::get_Version()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LionCore_get_Version_m9627C9321AEC597829625B506964463815F54008 (const RuntimeMethod* method) ;
+// System.String LionStudios.Suite.Analytics.LionAnalytics::get_Version()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LionAnalytics_get_Version_m030148ECB46BA900AE51DA2B97D2D2654226AD53 (const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.IDictionary`2<System.String,System.Object>>::.ctor()
+inline void List_1__ctor_mFB6D973C2F0DE12CC2CFB6DCFF650427C590CBC5 (List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.IDictionary`2<System.String,System.Object>>::Add(T)
+inline void List_1_Add_mE3DE0E9822F3B8020540EB71BCD6852180A92D7D_inline (List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395* __this, RuntimeObject* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395*, RuntimeObject*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.Collections.Generic.IDictionary`2<System.String,System.Object>>::GetEnumerator()
+inline Enumerator_tE87B1415DBD31A595989F8D52B16C0BE42BFEFC6 List_1_GetEnumerator_m0395314B4DB8328D1E82FE871C37CB62204E5601 (List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_tE87B1415DBD31A595989F8D52B16C0BE42BFEFC6 (*) (List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1/Enumerator<System.Collections.Generic.IDictionary`2<System.String,System.Object>>::Dispose()
+inline void Enumerator_Dispose_mAB55B0CC0AB348115A0344B47741E1B59C5B6A2C (Enumerator_tE87B1415DBD31A595989F8D52B16C0BE42BFEFC6* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_tE87B1415DBD31A595989F8D52B16C0BE42BFEFC6*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+// T System.Collections.Generic.List`1/Enumerator<System.Collections.Generic.IDictionary`2<System.String,System.Object>>::get_Current()
+inline RuntimeObject* Enumerator_get_Current_mC3C14AD5B61C2B549861AC3E91B0330173A0D120_inline (Enumerator_tE87B1415DBD31A595989F8D52B16C0BE42BFEFC6* __this, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (Enumerator_tE87B1415DBD31A595989F8D52B16C0BE42BFEFC6*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+// TKey System.Collections.Generic.KeyValuePair`2<System.String,System.Object>::get_Key()
+inline String_t* KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_inline (KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9*, const RuntimeMethod*))KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline)(__this, method);
+}
+// System.String System.String::Concat(System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<System.String,System.Object>::get_Value()
+inline RuntimeObject* KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_inline (KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9* __this, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// System.Boolean System.Collections.Generic.List`1/Enumerator<System.Collections.Generic.IDictionary`2<System.String,System.Object>>::MoveNext()
+inline bool Enumerator_MoveNext_m4DBC8A7F39D0DC0AFAB9A760DF7A0763723B4872 (Enumerator_tE87B1415DBD31A595989F8D52B16C0BE42BFEFC6* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_tE87B1415DBD31A595989F8D52B16C0BE42BFEFC6*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+// System.Boolean LionStudios.Suite.Analytics.LionAnalytics::IsEventEligibleToFire(LionStudios.Suite.Analytics.Events.LionGameEventBase)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LionAnalytics_IsEventEligibleToFire_m5556BBBF1FA16F81CA9003B8E696A17BCD40BAAD (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* ___0_e, const RuntimeMethod* method) ;
+// System.Int32 LionStudios.Suite.Analytics.LionAnalyticsApplication::GetTotalTimeInApp()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LionAnalyticsApplication_GetTotalTimeInApp_m299C5BD8B55EF4ED6458F5BFF475ED1AFEEFA173 (const RuntimeMethod* method) ;
+// System.DateTime System.DateTime::get_UtcNow()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA (const RuntimeMethod* method) ;
+// System.Globalization.CultureInfo System.Globalization.CultureInfo::get_InvariantCulture()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6 (const RuntimeMethod* method) ;
+// System.String System.DateTime::ToString(System.IFormatProvider)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m66457C11C42C07E2F437A9D899E6E3FB9FD77B50 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, RuntimeObject* ___0_provider, const RuntimeMethod* method) ;
+// System.Int32 Data.CoreData::get_SequenceId()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t CoreData_get_SequenceId_mC73283D3695DC2FC25CA3E76D1BEEADA4C89BB38_inline (CoreData_t0131416461D5064142B0042F97FDC5408B8B2BDD* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.IList`1<System.Object[]> Data.GlobalDataContainer`2<System.String,System.String>::GetData()
+inline RuntimeObject* GlobalDataContainer_2_GetData_m7C87CDEBB717283B553A0A774294EEDADFC9D5DA (GlobalDataContainer_2_t248016E27216826B0BACAE44865C608566B718F2* __this, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (GlobalDataContainer_2_t248016E27216826B0BACAE44865C608566B718F2*, const RuntimeMethod*))GlobalDataContainer_2_GetData_mC5FD32E7AEF86C892A8B3C914DBB3835A1A300EB_gshared)(__this, method);
+}
+// System.Collections.Generic.IList`1<System.Object[]> Data.GlobalDataContainer`2<System.Int32,System.String>::GetData()
+inline RuntimeObject* GlobalDataContainer_2_GetData_mA67FC6B5F172B738F05B5D9F3F88290E1C0967D2 (GlobalDataContainer_2_t3B95E2138826C88A59FE35A910E9B63228560BC9* __this, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (GlobalDataContainer_2_t3B95E2138826C88A59FE35A910E9B63228560BC9*, const RuntimeMethod*))GlobalDataContainer_2_GetData_mA378CFAD7DE5390B9DB2A88C2F8468FB8BA39D23_gshared)(__this, method);
+}
+// System.String Newtonsoft.Json.JsonConvert::SerializeObject(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JsonConvert_SerializeObject_m277670BD344964CB2A61751E5A3D62DB5B1321C7 (RuntimeObject* ___0_value, const RuntimeMethod* method) ;
+// System.Void Utility.Dispatcher.Dispatcher::Send(Utility.Dispatcher.EventId,System.EventArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dispatcher_Send_m7539678380705FE506AA7FD021D97ABB2549FA6D (Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6* __this, int32_t ___0_eventId, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___1_args, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.LionAnalytics/LionEventDelegate::Invoke(LionStudios.Suite.Analytics.Events.LionGameEventBase)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LionEventDelegate_Invoke_mB6CE171A3386230E04ABE2FA05528985690647E8_inline (LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* __this, LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* ___0_gameEvent, const RuntimeMethod* method) ;
+// System.Boolean System.String::IsNullOrEmpty(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478 (String_t* ___0_value, const RuntimeMethod* method) ;
+// LionStudios.Suite.Analytics.EventType LionStudios.Suite.Analytics.Events.LionGameEventBase::get_eventType()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LionGameEventBase_get_eventType_m4253A88156B483B86164CC6C16D133882943EA77_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.IDictionary`2<System.String,System.Object> LionStudios.Suite.Analytics.Events.LionGameEventBase::get_eventParams()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) ;
+// System.String System.String::Format(System.String,System.Object,System.Object,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, RuntimeObject* ___3_arg2, const RuntimeMethod* method) ;
+// System.String Newtonsoft.Json.JsonConvert::SerializeObject(System.Object,Newtonsoft.Json.Formatting)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JsonConvert_SerializeObject_m2AB5818117B98B4B91A9362D8F222763D390F414 (RuntimeObject* ___0_value, int32_t ___1_formatting, const RuntimeMethod* method) ;
+// System.Void System.Func`1<Utility.Dispatcher.Dispatcher>::.ctor(System.Object,System.IntPtr)
+inline void Func_1__ctor_m43C4430B5EF5A7551E0CC0437358BD796FE232CD (Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_1__ctor_m663374A863E492A515BE9626B6F0E444991834E8_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m7059F1F473396DD9E46AAB86A381FA0495CCB0C5 (U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,System.Object>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443 (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* __this, String_t* ___0_key, RuntimeObject* ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*, String_t*, RuntimeObject*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::set_eventParams(System.Collections.Generic.IDictionary`2<System.String,System.Object>)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LionGameEventBase_set_eventParams_m83AD224DAC5DC75F3DACF0CA084294AF24A1FCD8_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.MissionEvent::.ctor(System.Boolean,System.String,System.String,System.String,System.Nullable`1<System.Int32>,System.Boolean,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionEvent__ctor_m691D959F2963C00A3F420E613AC00464D49B6E11 (MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862* __this, bool ___0_isTutorial, String_t* ___1_missionType, String_t* ___2_missionName, String_t* ___3_missionID, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___4_missionAttempt, bool ___5_incrementCounter, RuntimeObject* ___6_additionalData, bool ___7_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Int32 LionStudios.Suite.Analytics.LionAnalyticsApplication::GetTimeSinceMissionStart(System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LionAnalyticsApplication_GetTimeSinceMissionStart_mE27E473BCB3294BAE59DDAB04799326D96AED4E9 (String_t* ___0_missionID, bool ___1_isMissionStepEvent, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.LionAnalytics::RemoveMissionTrackingDataCombination(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionAnalytics_RemoveMissionTrackingDataCombination_m3F0C001A62D83A19077156E3911D2D5E8111BF15 (String_t* ___0_missionID, String_t* ___1_missionName, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.MissionEvent::.ctor(Events.Mission.EventArgs.MissionEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionEvent__ctor_m09B167AACCCC69D68F13AF95C1A5C4F8AE3C0BC0 (MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862* __this, MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs::.ctor(System.Boolean,System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionAttemptEventArgs__ctor_m5ED029FE4335531C30D89E2869B45CFE6C4CB5F7 (MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* __this, bool ___0_incrementCounter, String_t* ___1_missionType, String_t* ___2_missionName, String_t* ___3_missionID, const RuntimeMethod* method) ;
+// TResult System.Func`2<LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs,System.Int32>::Invoke(T)
+inline int32_t Func_2_Invoke_mD250D091F7B3FA297BD53790607C05D67D563DCE_inline (Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* __this, MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* ___0_arg, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC*, MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38*, const RuntimeMethod*))Func_2_Invoke_m5216F6C7BCECCCED81384876C2968E0D4358618B_gshared_inline)(__this, ___0_arg, method);
+}
+// System.Void LionStudios.Suite.Analytics.LionAnalytics::AddMissionTrackingDataCombination(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionAnalytics_AddMissionTrackingDataCombination_m18415FF01CD96EF564CD9B468F98FB1DCE7531D9 (String_t* ___0_missionID, String_t* ___1_missionName, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoEventArgs__ctor_m41E785F7EAE5D905A812076B8E97ED14C3A2C626 (CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* __this, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.BannerEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BannerEventArgs__ctor_m384590C27849D91F85630C0E1DDADCA85233EA8C (BannerEventArgs_tC08D7467258524E54870E87CBCDCC84892C8825C* __this, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdEventArgs__ctor_m5D5965142FBD5B3382F666B0E97D73FA952FFCF8 (AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* __this, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenLoadEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenLoadEvent__ctor_mB775E103BF8798C714AA4EE111659F6FF08DAFAB (InterOpenLoadEvent_t35E71AEF2BCB18A54E1E0DA4A62E2EE1BA900D8D* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(network, level, placement, additionalData, isCalledExplicitly)
+		String_t* L_0 = ___1_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		String_t* L_2 = ___0_placement;
+		RuntimeObject* L_3 = ___3_additionalData;
+		bool L_4 = ___4_isCalledExplicitly;
+		InterOpenEvent__ctor_m8DF9AE1B4ECCEA1C57687124B3638BD020E8EC87(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		// eventName = AdEventType.Loaded.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_5(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_6;
+		L_6 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_5), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenLoadEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenLoadEvent__ctor_mEB191BA5A46466D3355908581F9510BFF28CB073 (InterOpenLoadEvent_t35E71AEF2BCB18A54E1E0DA4A62E2EE1BA900D8D* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(args, additionalData, isCalledExplicitly)
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		InterOpenEvent__ctor_m55EDB75C2DA109DD4F4B6BB0B61B8867BD572424(__this, L_0, L_1, L_2, NULL);
+		// eventName = AdEventType.Loaded.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_3(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterOpenLoadEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterOpenLoadEvent_GetAdjustPayloadEventName_mB8BD730FE16D35514204AB9473D5B2601FA5280B (InterOpenLoadEvent_t35E71AEF2BCB18A54E1E0DA4A62E2EE1BA900D8D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral18378624E2FDAF34032A8553382EF68C1D78970B);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.inter_open_show;
+		return _stringLiteral18378624E2FDAF34032A8553382EF68C1D78970B;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenLoadFailEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenLoadFailEvent__ctor_m7D2889823F70F8A197DD11583F50ACAB35A737E7 (InterOpenLoadFailEvent_t03DA1B7E2E9EDE12B718FE14221B0556D9D681BC* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(network, level, placement, additionalData, isCalledExplicitly)
+		String_t* L_0 = ___1_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		String_t* L_2 = ___0_placement;
+		RuntimeObject* L_3 = ___3_additionalData;
+		bool L_4 = ___4_isCalledExplicitly;
+		InterOpenEvent__ctor_m8DF9AE1B4ECCEA1C57687124B3638BD020E8EC87(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		// eventName = AdEventType.LoadFail.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_5(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_6;
+		L_6 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_5), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenLoadFailEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenLoadFailEvent__ctor_m0EA319A0A56D5CAD9FA1A99102F19A35044A5C77 (InterOpenLoadFailEvent_t03DA1B7E2E9EDE12B718FE14221B0556D9D681BC* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(args, additionalData, isCalledExplicitly)
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		InterOpenEvent__ctor_m55EDB75C2DA109DD4F4B6BB0B61B8867BD572424(__this, L_0, L_1, L_2, NULL);
+		// eventName = AdEventType.LoadFail.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_3(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterOpenLoadFailEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterOpenLoadFailEvent_GetAdjustPayloadEventName_m591554CB2E47E6DBC546BE7A7982FDDA162A055F (InterOpenLoadFailEvent_t03DA1B7E2E9EDE12B718FE14221B0556D9D681BC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1B03F4FA5C3D68B3DD133DD7F7F8D989E4D3705F);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.inter_open_load_fail;
+		return _stringLiteral1B03F4FA5C3D68B3DD133DD7F7F8D989E4D3705F;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenShowEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenShowEvent__ctor_mAE45162881BF589DA68222B8B6F321F4F21FDC37 (InterOpenShowEvent_tD73998E6784FDA3FB2AE58DBF06F86A1AE28EB76* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(network, level, placement, additionalData, isCalledExplicitly)
+		String_t* L_0 = ___1_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		String_t* L_2 = ___0_placement;
+		RuntimeObject* L_3 = ___3_additionalData;
+		bool L_4 = ___4_isCalledExplicitly;
+		InterOpenEvent__ctor_m8DF9AE1B4ECCEA1C57687124B3638BD020E8EC87(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		// eventName = AdEventType.Show.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_5(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_6;
+		L_6 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_5), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenShowEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenShowEvent__ctor_mDFC77CD2105C3A88D65C8D10E3B53CC96B511234 (InterOpenShowEvent_tD73998E6784FDA3FB2AE58DBF06F86A1AE28EB76* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(args, additionalData, isCalledExplicitly)
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		InterOpenEvent__ctor_m55EDB75C2DA109DD4F4B6BB0B61B8867BD572424(__this, L_0, L_1, L_2, NULL);
+		// eventName = AdEventType.Show.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_3(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterOpenShowEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterOpenShowEvent_GetAdjustPayloadEventName_m21BE64509655E00F85A068C7D70B5AE7F6426165 (InterOpenShowEvent_tD73998E6784FDA3FB2AE58DBF06F86A1AE28EB76* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral18378624E2FDAF34032A8553382EF68C1D78970B);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.inter_open_show;
+		return _stringLiteral18378624E2FDAF34032A8553382EF68C1D78970B;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenShowFailEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenShowFailEvent__ctor_mAEAD1B4EEB0EE84C611AD9F8376FC46FA4578A3E (InterOpenShowFailEvent_t46603162A0EEE2A5BF1FC642A16C2003D5F35EE0* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(network, level, placement, additionalData, isCalledExplicitly)
+		String_t* L_0 = ___1_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		String_t* L_2 = ___0_placement;
+		RuntimeObject* L_3 = ___3_additionalData;
+		bool L_4 = ___4_isCalledExplicitly;
+		InterOpenEvent__ctor_m8DF9AE1B4ECCEA1C57687124B3638BD020E8EC87(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		// eventName = AdEventType.ShowFail.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_5(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_6;
+		L_6 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_5), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenShowFailEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenShowFailEvent__ctor_m0DFDF3D2887B1978F5666F7032C8A8FE7A92758F (InterOpenShowFailEvent_t46603162A0EEE2A5BF1FC642A16C2003D5F35EE0* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(args, additionalData, isCalledExplicitly)
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		InterOpenEvent__ctor_m55EDB75C2DA109DD4F4B6BB0B61B8867BD572424(__this, L_0, L_1, L_2, NULL);
+		// eventName = AdEventType.ShowFail.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_3(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterOpenShowFailEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterOpenShowFailEvent_GetAdjustPayloadEventName_mAAD5489E5EA125BB626CEF9C40F38A3C639D1359 (InterOpenShowFailEvent_t46603162A0EEE2A5BF1FC642A16C2003D5F35EE0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF0D7B046C55396D78FD7ECF4CC8C56BAF8615A70);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.inter_open_show_fail;
+		return _stringLiteralF0D7B046C55396D78FD7ECF4CC8C56BAF8615A70;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenStartEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenStartEvent__ctor_m9005A0542563811890BC81790B16F8EB148736D1 (InterOpenStartEvent_t396E2B4CA997A7873BABE2CF60B98F8761AC3AE7* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(network, level, placement, additionalData, isCalledExplicitly)
+		String_t* L_0 = ___1_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		String_t* L_2 = ___0_placement;
+		RuntimeObject* L_3 = ___3_additionalData;
+		bool L_4 = ___4_isCalledExplicitly;
+		InterOpenEvent__ctor_m8DF9AE1B4ECCEA1C57687124B3638BD020E8EC87(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		// eventName = AdEventType.Start.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_5(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_6;
+		L_6 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_5), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterOpenStartEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterOpenStartEvent__ctor_mA49A6F6BF5D43F6AD96A32FE3A98FD52302BFA4E (InterOpenStartEvent_t396E2B4CA997A7873BABE2CF60B98F8761AC3AE7* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(args, additionalData, isCalledExplicitly)
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		InterOpenEvent__ctor_m55EDB75C2DA109DD4F4B6BB0B61B8867BD572424(__this, L_0, L_1, L_2, NULL);
+		// eventName = AdEventType.Start.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_3(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterOpenStartEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterOpenStartEvent_GetAdjustPayloadEventName_m4A5A3461D38E4A05B1D0DA911E10795B3942F749 (InterOpenStartEvent_t396E2B4CA997A7873BABE2CF60B98F8761AC3AE7* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA4BA9AF5444B452878DA458D053CE44F77B995E8);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.inter_open_start;
+		return _stringLiteralA4BA9AF5444B452878DA458D053CE44F77B995E8;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialClickEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialClickEvent__ctor_m400D311EBE35DC37D77EC37AAF518F6D73FC2F49 (InterstitialClickEvent_t7A29339214D1FAB9EB61E1E0BC949DDB54A4A8B3* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(network, level, placement, additionalData, isCalledExplicitly)
+		String_t* L_0 = ___1_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		String_t* L_2 = ___0_placement;
+		RuntimeObject* L_3 = ___3_additionalData;
+		bool L_4 = ___4_isCalledExplicitly;
+		InterstitialEvent__ctor_mDF32EE8E2CC8317DE01AF68C3648610D9153579F(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		// eventName = AdEventType.Clicked.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_5(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_6;
+		L_6 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_5), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialClickEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialClickEvent__ctor_m2215FB0B8F50F361BF9B5C698E9D251D61E6520B (InterstitialClickEvent_t7A29339214D1FAB9EB61E1E0BC949DDB54A4A8B3* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(args, additionalData, isCalledExplicitly)
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		InterstitialEvent__ctor_m0935CC1B2C7F442BEAFA3E87A60660967941A5F1(__this, L_0, L_1, L_2, NULL);
+		// eventName = AdEventType.Clicked.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_3(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterstitialClickEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterstitialClickEvent_GetAdjustPayloadEventName_m2AD2E78DFD3387743D992014D2E2920E3406361A (InterstitialClickEvent_t7A29339214D1FAB9EB61E1E0BC949DDB54A4A8B3* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC1AEFC63E4254EE6808112E3668D1AE3BA6D3E52);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.interstitial_clicked;
+		return _stringLiteralC1AEFC63E4254EE6808112E3668D1AE3BA6D3E52;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialEndEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialEndEvent__ctor_m608E3FA0BC9915903852316C32241DC31FAA7740 (InterstitialEndEvent_t52DA18B629AFC3F2DCDCAEE7D8AA81DFA3066DC5* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(network, level, placement, additionalData, isCalledExplicitly)
+		String_t* L_0 = ___1_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		String_t* L_2 = ___0_placement;
+		RuntimeObject* L_3 = ___3_additionalData;
+		bool L_4 = ___4_isCalledExplicitly;
+		InterstitialEvent__ctor_mDF32EE8E2CC8317DE01AF68C3648610D9153579F(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		// eventName = AdEventType.Hide.ToString();
+		V_0 = 7;
+		Il2CppFakeBox<int32_t> L_5(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_6;
+		L_6 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_5), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialEndEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialEndEvent__ctor_m0623F9C1EB766E5357DA4B43217A16DDB6A10868 (InterstitialEndEvent_t52DA18B629AFC3F2DCDCAEE7D8AA81DFA3066DC5* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(args, additionalData,
+		// isCalledExplicitly)
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		InterstitialEvent__ctor_m0935CC1B2C7F442BEAFA3E87A60660967941A5F1(__this, L_0, L_1, L_2, NULL);
+		// eventName = AdEventType.Hide.ToString();
+		V_0 = 7;
+		Il2CppFakeBox<int32_t> L_3(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterstitialEndEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterstitialEndEvent_GetAdjustPayloadEventName_mA325763486AB837AA2F43D3A0888374F569192F2 (InterstitialEndEvent_t52DA18B629AFC3F2DCDCAEE7D8AA81DFA3066DC5* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF5A7EAD0D3CB838AA308A871570DA8222A86656B);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.interstitial_end;
+		return _stringLiteralF5A7EAD0D3CB838AA308A871570DA8222A86656B;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialEvent::.ctor(System.String,System.Nullable`1<System.Int32>,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialEvent__ctor_mDF32EE8E2CC8317DE01AF68C3648610D9153579F (InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3* __this, String_t* ___0_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___1_level, String_t* ___2_placement, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// AddParam(EventParam.adType, AdType.Interstitial);
+		int32_t L_2 = 4;
+		RuntimeObject* L_3 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_2);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_3, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_4 = ___2_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_4, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_5 = ___1_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_6 = L_5;
+		RuntimeObject* L_7 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_6);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_7, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_8 = ___0_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_8, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialEvent__ctor_m0935CC1B2C7F442BEAFA3E87A60660967941A5F1 (InterstitialEvent_tCE8A1E4D4331192BCA26F8A16F6BEA349E60D2F3* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// AddParam(EventParam.adType, AdType.Interstitial);
+		int32_t L_2 = 4;
+		RuntimeObject* L_3 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_2);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_3, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___Placement_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_5, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_6 = ___0_args;
+		NullCheck(L_6);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = L_6->___Level_2;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_10 = ___0_args;
+		NullCheck(L_10);
+		String_t* L_11 = L_10->___Network_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_11, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialLoadEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialLoadEvent__ctor_mEFE699A9D733D52CD34D701AC1226ACEBFD165AB (InterstitialLoadEvent_tE62B4C6D2F27561AF7FB32AC4D2D0359D997E421* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(network, level, placement, additionalData, isCalledExplicitly)
+		String_t* L_0 = ___1_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		String_t* L_2 = ___0_placement;
+		RuntimeObject* L_3 = ___3_additionalData;
+		bool L_4 = ___4_isCalledExplicitly;
+		InterstitialEvent__ctor_mDF32EE8E2CC8317DE01AF68C3648610D9153579F(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		// eventName = AdEventType.Loaded.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_5(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_6;
+		L_6 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_5), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialLoadEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialLoadEvent__ctor_mBA6C03763706A51E9DAA517F3F623467376B3965 (InterstitialLoadEvent_tE62B4C6D2F27561AF7FB32AC4D2D0359D997E421* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// public InterstitialLoadEvent(AdEventArgs args, IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(args, additionalData, isCalledExplicitly)
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		InterstitialEvent__ctor_m0935CC1B2C7F442BEAFA3E87A60660967941A5F1(__this, L_0, L_1, L_2, NULL);
+		// eventName = AdEventType.Loaded.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_3(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterstitialLoadEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterstitialLoadEvent_GetAdjustPayloadEventName_m121708745A237C9886B77A4069866D9761274E09 (InterstitialLoadEvent_tE62B4C6D2F27561AF7FB32AC4D2D0359D997E421* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBF0A8C3ED906A11642A747332EB32E4F8F493469);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.interstitial_load;
+		return _stringLiteralBF0A8C3ED906A11642A747332EB32E4F8F493469;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialLoadFailEvent::.ctor(System.String,LionStudios.Suite.Analytics.Events.AdErrorType,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialLoadFailEvent__ctor_mD7FA0102325204F201073EF33F87ED47AC04368F (InterstitialLoadFailEvent_tEB0086A11E7835C3DBE3F5E9EEEEDE115232E2F1* __this, String_t* ___0_network, int32_t ___1_reason, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// int? level = null, IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(network, level, "no_placement", additionalData, isCalledExplicitly)
+		String_t* L_0 = ___0_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		RuntimeObject* L_2 = ___3_additionalData;
+		bool L_3 = ___4_isCalledExplicitly;
+		InterstitialEvent__ctor_mDF32EE8E2CC8317DE01AF68C3648610D9153579F(__this, L_0, L_1, _stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D, L_2, L_3, NULL);
+		// eventName = AdEventType.LoadFail.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_4(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_5;
+		L_5 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_4), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_5, NULL);
+		// AddParam(EventParam.adErrorType, reason);
+		int32_t L_6 = ___1_reason;
+		int32_t L_7 = L_6;
+		RuntimeObject* L_8 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_7);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_8, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialLoadFailEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdFailEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialLoadFailEvent__ctor_m4C6C9E17563AC14BAA9B9EB1A71B933D362BB0A5 (InterstitialLoadFailEvent_tEB0086A11E7835C3DBE3F5E9EEEEDE115232E2F1* __this, AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(args, additionalData, isCalledExplicitly)
+		AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		InterstitialEvent__ctor_m0935CC1B2C7F442BEAFA3E87A60660967941A5F1(__this, L_0, L_1, L_2, NULL);
+		// eventName = AdEventType.LoadFail.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_3(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// AddParam(EventParam.adErrorType, args.Reason);
+		AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* L_5 = ___0_args;
+		NullCheck(L_5);
+		int32_t L_6 = L_5->___Reason_4;
+		int32_t L_7 = L_6;
+		RuntimeObject* L_8 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_7);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_8, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterstitialLoadFailEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterstitialLoadFailEvent_GetAdjustPayloadEventName_mD5C6B9DAB015A06031C33155F46A851A97ED5EA9 (InterstitialLoadFailEvent_tEB0086A11E7835C3DBE3F5E9EEEEDE115232E2F1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2B4F395BB091D43942F806D044403DC6BB9B580F);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.interstitial_load_fail;
+		return _stringLiteral2B4F395BB091D43942F806D044403DC6BB9B580F;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialShowEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialShowEvent__ctor_mFCBA95AAF8DF3F428CB734DD947BF4A1E60205DA (InterstitialShowEvent_t1551E92A50E0C95AA7A369DCBC4733C210505893* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(network, level, placement, additionalData, isCalledExplicitly)
+		String_t* L_0 = ___1_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		String_t* L_2 = ___0_placement;
+		RuntimeObject* L_3 = ___3_additionalData;
+		bool L_4 = ___4_isCalledExplicitly;
+		InterstitialEvent__ctor_mDF32EE8E2CC8317DE01AF68C3648610D9153579F(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		// eventName = AdEventType.Show.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_5(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_6;
+		L_6 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_5), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialShowEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialShowEvent__ctor_mE3164608E2B8973803CD456A8E7CEFFE3D3B4BFB (InterstitialShowEvent_t1551E92A50E0C95AA7A369DCBC4733C210505893* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// base(args, additionalData, isCalledExplicitly)
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		InterstitialEvent__ctor_m0935CC1B2C7F442BEAFA3E87A60660967941A5F1(__this, L_0, L_1, L_2, NULL);
+		// eventName = AdEventType.Show.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_3(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterstitialShowEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterstitialShowEvent_GetAdjustPayloadEventName_m61203B3CED50ABA735EEB17FFF3CDC05F1B7022F (InterstitialShowEvent_t1551E92A50E0C95AA7A369DCBC4733C210505893* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1F65C77D018B2C07B1DE2EFA824BFED14D3CF282);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.interstitial_show;
+		return _stringLiteral1F65C77D018B2C07B1DE2EFA824BFED14D3CF282;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialShowFailEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,LionStudios.Suite.Analytics.Events.AdErrorType,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialShowFailEvent__ctor_mC7CB823719DDB0249EA89A86B7E219C31028FBD5 (InterstitialShowFailEvent_t79D8727A0DEB29D9A8BA0E00357FEAC8F956D8A6* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, int32_t ___3_reason, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(network, level, placement,
+		// additionalData, isCalledExplicitly)
+		String_t* L_0 = ___1_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		String_t* L_2 = ___0_placement;
+		RuntimeObject* L_3 = ___4_additionalData;
+		bool L_4 = ___5_isCalledExplicitly;
+		InterstitialEvent__ctor_mDF32EE8E2CC8317DE01AF68C3648610D9153579F(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		// eventName = AdEventType.ShowFail.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_5(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_6;
+		L_6 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_5), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_6, NULL);
+		// AddParam(EventParam.adErrorType, reason);
+		int32_t L_7 = ___3_reason;
+		int32_t L_8 = L_7;
+		RuntimeObject* L_9 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_9, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialShowFailEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdFailEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialShowFailEvent__ctor_m9813FBF51C2166AC0E909A06D355BB550B43EC90 (InterstitialShowFailEvent_t79D8727A0DEB29D9A8BA0E00357FEAC8F956D8A6* __this, AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D);
+		s_Il2CppMethodInitialized = true;
+	}
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	int32_t V_1 = 0;
+	{
+		// public InterstitialShowFailEvent(AdFailEventArgs args, IDictionary<string, object> additionalData = null,
+		//     bool isCalledExplicitly = true)
+		il2cpp_codegen_initobj((&V_0), sizeof(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28));
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_0 = V_0;
+		InterstitialEvent__ctor_mDF32EE8E2CC8317DE01AF68C3648610D9153579F(__this, _stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968, L_0, _stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D, (RuntimeObject*)NULL, (bool)1, NULL);
+		// eventName = AdEventType.ShowFail.ToString();
+		V_1 = 3;
+		Il2CppFakeBox<int32_t> L_1(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_1));
+		String_t* L_2;
+		L_2 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_1), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_2, NULL);
+		// AddParam(EventParam.adErrorType, args.Reason);
+		AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* L_3 = ___0_args;
+		NullCheck(L_3);
+		int32_t L_4 = L_3->___Reason_4;
+		int32_t L_5 = L_4;
+		RuntimeObject* L_6 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_5);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_6, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterstitialShowFailEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterstitialShowFailEvent_GetAdjustPayloadEventName_m397914E42B80CF1505C4F35F0699276F33B41923 (InterstitialShowFailEvent_t79D8727A0DEB29D9A8BA0E00357FEAC8F956D8A6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBE4D3D1724175067118898E58F7AF49F3B4A7E92);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.interstitial_show_fail;
+		return _stringLiteralBE4D3D1724175067118898E58F7AF49F3B4A7E92;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialStartEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialStartEvent__ctor_m76DA47C9E1287CF118CEA6DE875AC61BAACE8BEF (InterstitialStartEvent_tBA4E7F78257ED52747E03F618C6D9B048D4BCCB5* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(network, level, placement, additionalData, isCalledExplicitly)
+		String_t* L_0 = ___1_network;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___2_level;
+		String_t* L_2 = ___0_placement;
+		RuntimeObject* L_3 = ___3_additionalData;
+		bool L_4 = ___4_isCalledExplicitly;
+		InterstitialEvent__ctor_mDF32EE8E2CC8317DE01AF68C3648610D9153579F(__this, L_0, L_1, L_2, L_3, L_4, NULL);
+		// eventName = AdEventType.Start.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_5(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_6;
+		L_6 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_5), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InterstitialStartEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialStartEvent__ctor_mAFAB56523DC54336B3EEC336BCFE30799F372A30 (InterstitialStartEvent_tBA4E7F78257ED52747E03F618C6D9B048D4BCCB5* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(args, additionalData,
+		// isCalledExplicitly)
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		InterstitialEvent__ctor_m0935CC1B2C7F442BEAFA3E87A60660967941A5F1(__this, L_0, L_1, L_2, NULL);
+		// eventName = AdEventType.Start.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_3(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InterstitialStartEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InterstitialStartEvent_GetAdjustPayloadEventName_mE189FE6A42BF19F6E119657103D3CA27E4A1C8C5 (InterstitialStartEvent_tBA4E7F78257ED52747E03F618C6D9B048D4BCCB5* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral977DECB5022A510B5EB4313C178CEA161D6AED36);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.interstitial_start;
+		return _stringLiteral977DECB5022A510B5EB4313C178CEA161D6AED36;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoClickEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoClickEvent__ctor_m0BE73251455CDE0AA597DDE0CB886CAA07856B49 (RewardVideoClickEvent_t15EA050322868D22E3BC6EEF70E9364DA18394F5* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Clicked.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_7 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = ___2_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = L_8;
+		RuntimeObject* L_10 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_9);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoClickEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoClickEvent__ctor_mD70F3A55BA8F7678AC06600E4E1F047DF4F2D55D (RewardVideoClickEvent_t15EA050322868D22E3BC6EEF70E9364DA18394F5* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Clicked.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___Network_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_9, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_10 = ___0_args;
+		NullCheck(L_10);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_11 = L_10->___Level_2;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_12 = L_11;
+		RuntimeObject* L_13 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_12);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.RewardVideoClickEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RewardVideoClickEvent_GetAdjustPayloadEventName_m31E6A6876C20E4139ABFF2D45CF36203C8F41CFE (RewardVideoClickEvent_t15EA050322868D22E3BC6EEF70E9364DA18394F5* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3C902E99E3892A503088A0C6527E5C0A8AE807B0);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.reward_video_clicked;
+		return _stringLiteral3C902E99E3892A503088A0C6527E5C0A8AE807B0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoCollectEvent::.ctor(System.String,System.Object,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoCollectEvent__ctor_m12491A624DE4B4D6185C8898B723CDA141D45131 (RewardVideoCollectEvent_tD83B081540126E32C2DF6055AF5EAF0F6AE5FBEC* __this, String_t* ___0_placement, RuntimeObject* ___1_reward, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.RewardReceived.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___2_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.reward, reward);
+		RuntimeObject* L_10 = ___1_reward;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoCollectEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoCollectEvent__ctor_mB7FEE9EDAF380D3771085A6DD173989818FE8A17 (RewardVideoCollectEvent_tD83B081540126E32C2DF6055AF5EAF0F6AE5FBEC* __this, AdRewardArgs_t1A7EF7F0C6E5BCA2E9BC705084D90FBA2389E798* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.RewardReceived.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		AdRewardArgs_t1A7EF7F0C6E5BCA2E9BC705084D90FBA2389E798* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		AdRewardArgs_t1A7EF7F0C6E5BCA2E9BC705084D90FBA2389E798* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = L_8->___Level_3;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.reward, args.Reward);
+		AdRewardArgs_t1A7EF7F0C6E5BCA2E9BC705084D90FBA2389E798* L_12 = ___0_args;
+		NullCheck(L_12);
+		RuntimeObject* L_13 = L_12->___Reward_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.RewardVideoCollectEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RewardVideoCollectEvent_GetAdjustPayloadEventName_m2C886D66A4E02C18DC41FBA9F2F5BE86600BD3C9 (RewardVideoCollectEvent_tD83B081540126E32C2DF6055AF5EAF0F6AE5FBEC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3F9515E29AC041A0E382EFC495BCAF1494AC7C05);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.reward_video_collect;
+		return _stringLiteral3F9515E29AC041A0E382EFC495BCAF1494AC7C05;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoEndEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoEndEvent__ctor_mB6E7B7C2348DBD97787CB93810469F453A0B605A (RewardVideoEndEvent_t1FB6495C385B953ACF910335E29E32417765C534* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Hide.ToString();
+		V_0 = 7;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___2_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_10 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoEndEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoEndEvent__ctor_mE019D036442B730F11E787208571B2FA28AAE34F (RewardVideoEndEvent_t1FB6495C385B953ACF910335E29E32417765C534* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Hide.ToString();
+		V_0 = 7;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = L_8->___Level_2;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___Network_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.RewardVideoEndEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RewardVideoEndEvent_GetAdjustPayloadEventName_m0D3D691179A402416F68DFC51283F2757ABEB266 (RewardVideoEndEvent_t1FB6495C385B953ACF910335E29E32417765C534* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFCCFEC9F93B2E6C8FC784051CD70F40F98362E57);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.reward_video_end;
+		return _stringLiteralFCCFEC9F93B2E6C8FC784051CD70F40F98362E57;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoLoadEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoLoadEvent__ctor_mAC6CAA4C0488014E7B5AD843BB5535F3DDB41D82 (RewardVideoLoadEvent_tFC2F7BAEAB1D603E4C8A3AACC3013B2C496FD0DA* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Loaded.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___2_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_10 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoLoadEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoLoadEvent__ctor_mEBFD72C3C5DD2EB208581D8B8930EFF27FEA9A4F (RewardVideoLoadEvent_tFC2F7BAEAB1D603E4C8A3AACC3013B2C496FD0DA* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Loaded.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = L_8->___Level_2;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___Network_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.RewardVideoLoadEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RewardVideoLoadEvent_GetAdjustPayloadEventName_mCDAB3B09BD3852CA8413D916E14782E40F78F056 (RewardVideoLoadEvent_tFC2F7BAEAB1D603E4C8A3AACC3013B2C496FD0DA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5E7EF2A58ED5207397D58B9236FE1C7BF363CFBF);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.reward_video_load;
+		return _stringLiteral5E7EF2A58ED5207397D58B9236FE1C7BF363CFBF;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoLoadFailEvent::.ctor(System.String,System.Nullable`1<System.Int32>,LionStudios.Suite.Analytics.Events.AdErrorType,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoLoadFailEvent__ctor_m34D3EE79C1CB877947BF4D7EC15854080BD688A1 (RewardVideoLoadFailEvent_t6C9A1F5B230AD659036AEA4B3B8EC76C9A8FFD04* __this, String_t* ___0_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___1_level, int32_t ___2_reason, String_t* ___3_placement, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___5_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.LoadFail.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___3_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___1_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_10 = ___0_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_10, (bool)0, NULL);
+		// AddParam(EventParam.adErrorType, reason);
+		int32_t L_11 = ___2_reason;
+		int32_t L_12 = L_11;
+		RuntimeObject* L_13 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_12);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoLoadFailEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdFailEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoLoadFailEvent__ctor_mDF82434154A2BFC557D67ECE8374471AD0F16361 (RewardVideoLoadFailEvent_t6C9A1F5B230AD659036AEA4B3B8EC76C9A8FFD04* __this, AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.LoadFail.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = ((AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13*)L_6)->___Placement_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = ((AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13*)L_8)->___Level_2;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = ((AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13*)L_12)->___Network_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// AddParam(EventParam.adErrorType, args.Reason);
+		AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* L_14 = ___0_args;
+		NullCheck(L_14);
+		int32_t L_15 = L_14->___Reason_4;
+		int32_t L_16 = L_15;
+		RuntimeObject* L_17 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_16);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_17, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.RewardVideoLoadFailEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RewardVideoLoadFailEvent_GetAdjustPayloadEventName_m8E978D8535610DE7DB2CD47DAED0D9B87F52AF93 (RewardVideoLoadFailEvent_t6C9A1F5B230AD659036AEA4B3B8EC76C9A8FFD04* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1ACBFDE52298290BB54453C54FFF5AAFD9015100);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.reward_video_load_fail;
+		return _stringLiteral1ACBFDE52298290BB54453C54FFF5AAFD9015100;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoOpportunityEvent::.ctor(System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoOpportunityEvent__ctor_mC53CEB0143D0F58DB523101D78F9BBA7950AFC70 (RewardVideoOpportunityEvent_tD69B4F8DF571E66D3CCF8DBA81CB550D15E9F5CF* __this, String_t* ___0_placement, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Hide.ToString();
+		V_0 = 7;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoOpportunityEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoOpportunityEvent__ctor_mA9643D58CBEAD6EF3B7AC7F24D53D47079722537 (RewardVideoOpportunityEvent_tD69B4F8DF571E66D3CCF8DBA81CB550D15E9F5CF* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Hide.ToString();
+		V_0 = 7;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.RewardVideoOpportunityEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RewardVideoOpportunityEvent_GetAdjustPayloadEventName_mA553918A41D0FBEB12E996A04A7A3E8BC41A425B (RewardVideoOpportunityEvent_tD69B4F8DF571E66D3CCF8DBA81CB550D15E9F5CF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral72EF5E6D37836B03D1804B7F0C789CB5D3045062);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.reward_video_opportunity;
+		return _stringLiteral72EF5E6D37836B03D1804B7F0C789CB5D3045062;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoShowEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoShowEvent__ctor_mF314C7E9562F88B44E01F3B1244189825E198A6E (RewardVideoShowEvent_tAB1860899095F9444D9F19A52372935E19CF6C10* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Show.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___2_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_10 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoShowEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoShowEvent__ctor_mC646B4FD204A0FDBBDEEFCF38EEC140EF9892B9B (RewardVideoShowEvent_tAB1860899095F9444D9F19A52372935E19CF6C10* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Show.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = L_8->___Level_2;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___Network_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.RewardVideoShowEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RewardVideoShowEvent_GetAdjustPayloadEventName_m98F17E24914F56CF93504F13F71D0DA1A9CC130B (RewardVideoShowEvent_tAB1860899095F9444D9F19A52372935E19CF6C10* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD9522C0271068996E05A7F33876E053B38938AB9);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.reward_video_show;
+		return _stringLiteralD9522C0271068996E05A7F33876E053B38938AB9;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoShowFailEvent::.ctor(System.String,System.String,LionStudios.Suite.Analytics.Events.AdErrorType,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoShowFailEvent__ctor_mCF18463A8A155B23A37DB9BC0D984A5524E22497 (RewardVideoShowFailEvent_t905DE0DADEB75148A2B9341569D66CCB04F1FEFD* __this, String_t* ___0_placement, String_t* ___1_network, int32_t ___2_reason, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___3_level, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___5_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.ShowFail.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___3_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_10 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_10, (bool)0, NULL);
+		// AddParam(EventParam.adErrorType, reason);
+		int32_t L_11 = ___2_reason;
+		int32_t L_12 = L_11;
+		RuntimeObject* L_13 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_12);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoShowFailEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdFailEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoShowFailEvent__ctor_m9F8C839E1169B4B3DF78FB039C9CDB71BD9ABA0B (RewardVideoShowFailEvent_t905DE0DADEB75148A2B9341569D66CCB04F1FEFD* __this, AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.ShowFail.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = ((AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13*)L_6)->___Placement_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = ((AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13*)L_8)->___Level_2;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = ((AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13*)L_12)->___Network_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// AddParam(EventParam.adErrorType, args.Reason);
+		AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* L_14 = ___0_args;
+		NullCheck(L_14);
+		int32_t L_15 = L_14->___Reason_4;
+		int32_t L_16 = L_15;
+		RuntimeObject* L_17 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_16);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_17, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.RewardVideoShowFailEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RewardVideoShowFailEvent_GetAdjustPayloadEventName_m9A9DE8038C3CA4841B410DDCBDF2DBC121F27409 (RewardVideoShowFailEvent_t905DE0DADEB75148A2B9341569D66CCB04F1FEFD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7EE0E1BAD7CCF8B68C69068748007E32A0E2C227);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.reward_video_show_fail;
+		return _stringLiteral7EE0E1BAD7CCF8B68C69068748007E32A0E2C227;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoStartEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoStartEvent__ctor_mAC02B85C5AD33E08947D0982CD0A59C27CC98B65 (RewardVideoStartEvent_t473F2102005FF05ECBC5C582A2051B36B41DE4FF* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Start.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___2_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_10 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.RewardVideoStartEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardVideoStartEvent__ctor_m75A9347BC0AB97A3837E93EC2C401606EAC8ED23 (RewardVideoStartEvent_t473F2102005FF05ECBC5C582A2051B36B41DE4FF* __this, AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Start.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.RV);
+		int32_t L_4 = 2;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = L_8->___Level_2;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___Network_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.RewardVideoStartEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RewardVideoStartEvent_GetAdjustPayloadEventName_m7CDFF6C46F0F3336A236621021C96B34FB199A43 (RewardVideoStartEvent_t473F2102005FF05ECBC5C582A2051B36B41DE4FF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2BE0C47BE96EAB5BC6200A3CE617F30144898F38);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.reward_video_start;
+		return _stringLiteral2BE0C47BE96EAB5BC6200A3CE617F30144898F38;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.DebugEvent::.ctor(System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugEvent__ctor_mBCDE6F0AAF65BF2364E34E7D7A9C1E7B24151819 (DebugEvent_t98307C329856C6B56095059615CBB9D7A73E5A52* __this, String_t* ___0_message, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Debug;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, 5, NULL);
+		// AddParam(EventParam.message, message);
+		String_t* L_2 = ___0_message;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964, L_2, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.DebugEvent::.ctor(LionStudios.Suite.Analytics.Events.DebugEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugEvent__ctor_m6F35FA6B40B277DCC7FAC70F8B26C766C0AC0D89 (DebugEvent_t98307C329856C6B56095059615CBB9D7A73E5A52* __this, DebugEventArgs_tEE401912C87109BFEB54519FB310BFBC0D8382CB* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Debug;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, 5, NULL);
+		// AddParam(EventParam.message, args.Message);
+		DebugEventArgs_tEE401912C87109BFEB54519FB310BFBC0D8382CB* L_2 = ___0_args;
+		NullCheck(L_2);
+		String_t* L_3 = L_2->___Message_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964, L_3, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.DebugEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DebugEvent_GetAdjustPayloadEventName_m043628C952323586C61DE9DCE6A209F3A58F10D9 (DebugEvent_t98307C329856C6B56095059615CBB9D7A73E5A52* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB535D783805B75101BBBE560D97D1CF01A06DAFF);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.debug_event;
+		return _stringLiteralB535D783805B75101BBBE560D97D1CF01A06DAFF;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.DebugEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugEventArgs__ctor_m900512160F690BC6C383854FF240F51A7F2B08B1 (DebugEventArgs_tEE401912C87109BFEB54519FB310BFBC0D8382CB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EconomyEvent::.ctor(LionStudios.Suite.Analytics.Transaction,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,LionStudios.Suite.Analytics.Events.ReceiptStatus,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EconomyEvent__ctor_mD92F7E44A9EC2A6720E07C525B7BC766CAA09299 (EconomyEvent_t234779EB492CA9100BC2E589751F107242498988* __this, Transaction_t12BEC26500383F0721FC66524801C5C126142A23* ___0_transaction, String_t* ___1_productID, String_t* ___2_transactionID, String_t* ___3_purchaseLocation, RuntimeObject* ___4_additionalData, int32_t ___5_receiptStatus, bool ___6_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	{
+		// bool isCalledExplicitly = true) : base(transaction, productID,
+		// transactionID, purchaseLocation, additionalData, receiptStatus, isCalledExplicitly)
+		Transaction_t12BEC26500383F0721FC66524801C5C126142A23* L_0 = ___0_transaction;
+		String_t* L_1 = ___1_productID;
+		String_t* L_2 = ___2_transactionID;
+		String_t* L_3 = ___3_purchaseLocation;
+		RuntimeObject* L_4 = ___4_additionalData;
+		int32_t L_5 = ___5_receiptStatus;
+		bool L_6 = ___6_isCalledExplicitly;
+		InappPurchaseEvent__ctor_mA343F002F3426B6B20A6C59FFF5FBD53BDBA7DE4(__this, L_0, L_1, L_2, L_3, L_4, L_5, L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.EconomyEvent::.ctor(System.Int32,System.String,System.String,System.String,System.Single,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,LionStudios.Suite.Analytics.Events.ReceiptStatus,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EconomyEvent__ctor_mDB0E83E1A0044F30AA456DD9C48F647EEDDC0AD4 (EconomyEvent_t234779EB492CA9100BC2E589751F107242498988* __this, int32_t ___0_virtualCurrencyAmount, String_t* ___1_virtualCurrencyName, String_t* ___2_virtualCurrencyType, String_t* ___3_realCurrencyType, float ___4_realCurrencyAmount, String_t* ___5_purchaseName, String_t* ___6_productID, String_t* ___7_transactionID, String_t* ___8_purchaseLocation, RuntimeObject* ___9_additionalData, int32_t ___10_receiptStatus, bool ___11_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	{
+		// IDictionary<string, object> additionalData = null, ReceiptStatus receiptStatus = ReceiptStatus.NoValidation, bool isCalledExplicitly = true) : base(virtualCurrencyAmount, virtualCurrencyName,
+		// virtualCurrencyType, realCurrencyType, realCurrencyAmount, purchaseName, productID, transactionID,
+		// purchaseLocation, additionalData, receiptStatus, isCalledExplicitly)
+		int32_t L_0 = ___0_virtualCurrencyAmount;
+		String_t* L_1 = ___1_virtualCurrencyName;
+		String_t* L_2 = ___2_virtualCurrencyType;
+		String_t* L_3 = ___3_realCurrencyType;
+		float L_4 = ___4_realCurrencyAmount;
+		String_t* L_5 = ___5_purchaseName;
+		String_t* L_6 = ___6_productID;
+		String_t* L_7 = ___7_transactionID;
+		String_t* L_8 = ___8_purchaseLocation;
+		RuntimeObject* L_9 = ___9_additionalData;
+		int32_t L_10 = ___10_receiptStatus;
+		bool L_11 = ___11_isCalledExplicitly;
+		InappPurchaseEvent__ctor_mAD4D688FBD14960EB7DF740CA8D07CA3280F453C(__this, L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, L_9, L_10, L_11, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.EconomyEvent::.ctor(System.String,LionStudios.Suite.Analytics.Product,LionStudios.Suite.Analytics.Product,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,LionStudios.Suite.Analytics.Events.ReceiptStatus,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EconomyEvent__ctor_m202882530399F103A3489F3C77B7201614200182 (EconomyEvent_t234779EB492CA9100BC2E589751F107242498988* __this, String_t* ___0_purchaseName, Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* ___1_spentProducts, Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* ___2_receivedProducts, String_t* ___3_purchaseLocation, String_t* ___4_productID, String_t* ___5_transactionID, RuntimeObject* ___6_additionalData, int32_t ___7_receiptStatus, bool ___8_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	{
+		// IDictionary<string, object> additionalData = null, ReceiptStatus receiptStatus = ReceiptStatus.NoValidation, bool isCalledExplicitly = true) : base(purchaseName, spentProducts, receivedProducts,
+		// purchaseLocation, productID, transactionID, additionalData, receiptStatus, isCalledExplicitly)
+		String_t* L_0 = ___0_purchaseName;
+		Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* L_1 = ___1_spentProducts;
+		Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* L_2 = ___2_receivedProducts;
+		String_t* L_3 = ___3_purchaseLocation;
+		String_t* L_4 = ___4_productID;
+		String_t* L_5 = ___5_transactionID;
+		RuntimeObject* L_6 = ___6_additionalData;
+		int32_t L_7 = ___7_receiptStatus;
+		bool L_8 = ___8_isCalledExplicitly;
+		InappPurchaseEvent__ctor_m58FCFF5BE47F0F04927729FE1F5AA787F49C4D61(__this, L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.EconomyEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* EconomyEvent_GetAdjustPayloadEventName_m5C92E82048896ED00E80D38C403E2A6E20156F15 (EconomyEvent_t234779EB492CA9100BC2E589751F107242498988* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF18DF1173399C9E11281CE68C66299F68FC2C2A5);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.economy;
+		return _stringLiteralF18DF1173399C9E11281CE68C66299F68FC2C2A5;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EconomyEventWithReceipt::.ctor(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EconomyEventWithReceipt__ctor_m5635E20E9AA6A34461906D4D77782FAE8D23DAF8 (EconomyEventWithReceipt_t5A7145C808A134EF088B83A2D296881AB32DDE50* __this, RuntimeObject* ___0_additionalData, bool ___1_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	{
+		// public EconomyEventWithReceipt(IDictionary<string, object> additionalData, bool isCalledExplicitly) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___0_additionalData;
+		bool L_1 = ___1_isCalledExplicitly;
+		InappPurchaseWithReceipt__ctor_m05FB7EE1BCD3F9BEFC70C2FE6A65218891569CA9(__this, L_0, L_1, NULL);
+		// throw new NotImplementedException("Economy Receipt events not implemented, yet!");
+		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_2 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		NotImplementedException__ctor_m8339D1A685E8D77CAC9D3260C06B38B5C7CA7742(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral4E66AFFFD9EF4D4CA7828270EA8D89E97AF001FF)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&EconomyEventWithReceipt__ctor_m5635E20E9AA6A34461906D4D77782FAE8D23DAF8_RuntimeMethod_var)));
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.IAPEvent::.ctor(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IAPEvent__ctor_mBF0919398F0547F70F31845E258A5CA371C5AADE (IAPEvent_t69C94E103CC5432EECC26E82BAA0D42CB161CC5F* __this, RuntimeObject* ___0_additionalData, bool ___1_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// protected IAPEvent(IDictionary<string, object> additionalData, bool isCalledExplicitly) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___0_additionalData;
+		bool L_1 = ___1_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.IAP;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, 4, NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InappPurchaseEvent::.ctor(LionStudios.Suite.Analytics.Transaction,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,LionStudios.Suite.Analytics.Events.ReceiptStatus,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InappPurchaseEvent__ctor_mA343F002F3426B6B20A6C59FFF5FBD53BDBA7DE4 (InappPurchaseEvent_tECDD0EDC6F9DC49096D515A741E5898E6382C0AD* __this, Transaction_t12BEC26500383F0721FC66524801C5C126142A23* ___0_transaction, String_t* ___1_productID, String_t* ___2_transactionID, String_t* ___3_purchaseLocation, RuntimeObject* ___4_additionalData, int32_t ___5_receiptStatus, bool ___6_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAPEventType_t3A06756C5D419E79DC6618A715557D4A21706949_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReceiptStatus_t39B7FD27E8E95A5467AF287CD900DA5938B06361_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral70C09EB5DC1ED91119F4322651458BB5B0582547);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral840D94CDC6A5AD28D5CB4F7047FAB75458D55B82);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9C2501A8AD53E9560A348FAFB85F4353AB1C0987);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___6_isCalledExplicitly;
+		IAPEvent__ctor_mBF0919398F0547F70F31845E258A5CA371C5AADE(__this, L_0, L_1, NULL);
+		// eventName = IAPEventType.Purchase.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_2(IAPEventType_t3A06756C5D419E79DC6618A715557D4A21706949_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// if (transaction.productID == null)
+		Transaction_t12BEC26500383F0721FC66524801C5C126142A23* L_4 = ___0_transaction;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___productID_5;
+		if (L_5)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		// if (productID != null)
+		String_t* L_6 = ___1_productID;
+		if (!L_6)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		// transaction.productID = productID;
+		Transaction_t12BEC26500383F0721FC66524801C5C126142A23* L_7 = ___0_transaction;
+		String_t* L_8 = ___1_productID;
+		NullCheck(L_7);
+		L_7->___productID_5 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&L_7->___productID_5), (void*)L_8);
+		goto IL_003d;
+	}
+
+IL_0033:
+	{
+		// Debug.Log("No productID provided");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral70C09EB5DC1ED91119F4322651458BB5B0582547, NULL);
+	}
+
+IL_003d:
+	{
+		// if (transaction.transactionID == null)
+		Transaction_t12BEC26500383F0721FC66524801C5C126142A23* L_9 = ___0_transaction;
+		NullCheck(L_9);
+		String_t* L_10 = L_9->___transactionID_4;
+		if (L_10)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		// if (transactionID != null)
+		String_t* L_11 = ___2_transactionID;
+		if (!L_11)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		// transaction.transactionID = transactionID;
+		Transaction_t12BEC26500383F0721FC66524801C5C126142A23* L_12 = ___0_transaction;
+		String_t* L_13 = ___2_transactionID;
+		NullCheck(L_12);
+		L_12->___transactionID_4 = L_13;
+		Il2CppCodeGenWriteBarrier((void**)(&L_12->___transactionID_4), (void*)L_13);
+	}
+
+IL_004f:
+	{
+		// AddParam(EventParam.transaction, transaction);
+		Transaction_t12BEC26500383F0721FC66524801C5C126142A23* L_14 = ___0_transaction;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral840D94CDC6A5AD28D5CB4F7047FAB75458D55B82, L_14, (bool)0, NULL);
+		// AddParam(EventParam.placement, purchaseLocation);
+		String_t* L_15 = ___3_purchaseLocation;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_15, (bool)0, NULL);
+		// AddParam(EventParam.validatedReceipt, receiptStatus.ToString());
+		Il2CppFakeBox<int32_t> L_16(ReceiptStatus_t39B7FD27E8E95A5467AF287CD900DA5938B06361_il2cpp_TypeInfo_var, (&___5_receiptStatus));
+		String_t* L_17;
+		L_17 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_16), NULL);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral9C2501A8AD53E9560A348FAFB85F4353AB1C0987, L_17, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InappPurchaseEvent::.ctor(System.Int32,System.String,System.String,System.String,System.Single,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,LionStudios.Suite.Analytics.Events.ReceiptStatus,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InappPurchaseEvent__ctor_mAD4D688FBD14960EB7DF740CA8D07CA3280F453C (InappPurchaseEvent_tECDD0EDC6F9DC49096D515A741E5898E6382C0AD* __this, int32_t ___0_virtualCurrencyAmount, String_t* ___1_virtualCurrencyName, String_t* ___2_virtualCurrencyType, String_t* ___3_realCurrencyType, float ___4_realCurrencyAmount, String_t* ___5_purchaseName, String_t* ___6_productID, String_t* ___7_transactionID, String_t* ___8_purchaseLocation, RuntimeObject* ___9_additionalData, int32_t ___10_receiptStatus, bool ___11_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAPEventType_t3A06756C5D419E79DC6618A715557D4A21706949_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Product_tF33F3342755B680CD2835C2A548770F9149CA2D7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReceiptStatus_t39B7FD27E8E95A5467AF287CD900DA5938B06361_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Transaction_t12BEC26500383F0721FC66524801C5C126142A23_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VirtualCurrency_tA04EAD092BED69D54D0E3BB539ABDD3D77DF7D27_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1317CF02F3F3926703DF869C594244C35D400F6A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral840D94CDC6A5AD28D5CB4F7047FAB75458D55B82);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9C2501A8AD53E9560A348FAFB85F4353AB1C0987);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* V_0 = NULL;
+	Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* V_1 = NULL;
+	Transaction_t12BEC26500383F0721FC66524801C5C126142A23* V_2 = NULL;
+	int32_t V_3 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, ReceiptStatus receiptStatus = ReceiptStatus.NoValidation, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___9_additionalData;
+		bool L_1 = ___11_isCalledExplicitly;
+		IAPEvent__ctor_mBF0919398F0547F70F31845E258A5CA371C5AADE(__this, L_0, L_1, NULL);
+		// eventName = IAPEventType.Purchase.ToString();
+		V_3 = 1;
+		Il2CppFakeBox<int32_t> L_2(IAPEventType_t3A06756C5D419E79DC6618A715557D4A21706949_il2cpp_TypeInfo_var, (&V_3));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// var received = new Product();
+		Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* L_4 = (Product_tF33F3342755B680CD2835C2A548770F9149CA2D7*)il2cpp_codegen_object_new(Product_tF33F3342755B680CD2835C2A548770F9149CA2D7_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		Product__ctor_m3BB3BC10A4BEF1FEC728145C6D4E32C888BE36E0(L_4, NULL);
+		V_0 = L_4;
+		// received.AddVirtualCurrency(new VirtualCurrency(virtualCurrencyName, virtualCurrencyType,
+		//     virtualCurrencyAmount));
+		Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* L_5 = V_0;
+		String_t* L_6 = ___1_virtualCurrencyName;
+		String_t* L_7 = ___2_virtualCurrencyType;
+		int32_t L_8 = ___0_virtualCurrencyAmount;
+		VirtualCurrency_tA04EAD092BED69D54D0E3BB539ABDD3D77DF7D27* L_9 = (VirtualCurrency_tA04EAD092BED69D54D0E3BB539ABDD3D77DF7D27*)il2cpp_codegen_object_new(VirtualCurrency_tA04EAD092BED69D54D0E3BB539ABDD3D77DF7D27_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		VirtualCurrency__ctor_mFCA0F47C55E39BD89C3C75DFEE6E03BBF5BC4306(L_9, L_6, L_7, L_8, NULL);
+		NullCheck(L_5);
+		Product_AddVirtualCurrency_m472DA9D14472E94C2C83F67861016C01EE81E98C(L_5, L_9, NULL);
+		// var spent = new Product();
+		Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* L_10 = (Product_tF33F3342755B680CD2835C2A548770F9149CA2D7*)il2cpp_codegen_object_new(Product_tF33F3342755B680CD2835C2A548770F9149CA2D7_il2cpp_TypeInfo_var);
+		NullCheck(L_10);
+		Product__ctor_m3BB3BC10A4BEF1FEC728145C6D4E32C888BE36E0(L_10, NULL);
+		V_1 = L_10;
+		// spent.AddRealCurrency(new RealCurrency(realCurrencyType, realCurrencyAmount));
+		Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* L_11 = V_1;
+		String_t* L_12 = ___3_realCurrencyType;
+		float L_13 = ___4_realCurrencyAmount;
+		RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214* L_14 = (RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214*)il2cpp_codegen_object_new(RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214_il2cpp_TypeInfo_var);
+		NullCheck(L_14);
+		RealCurrency__ctor_m177D5996E515DC0EE7E301E707DC9E77C6E9E451(L_14, L_12, L_13, NULL);
+		NullCheck(L_11);
+		Product_AddRealCurrency_m81374B22CC050D73CBAF9107CB2D92F774FAC559_inline(L_11, L_14, NULL);
+		// var transaction = new Transaction(purchaseName, "Purchase", received, spent, transactionID, productID);
+		String_t* L_15 = ___5_purchaseName;
+		Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* L_16 = V_0;
+		Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* L_17 = V_1;
+		String_t* L_18 = ___7_transactionID;
+		String_t* L_19 = ___6_productID;
+		Transaction_t12BEC26500383F0721FC66524801C5C126142A23* L_20 = (Transaction_t12BEC26500383F0721FC66524801C5C126142A23*)il2cpp_codegen_object_new(Transaction_t12BEC26500383F0721FC66524801C5C126142A23_il2cpp_TypeInfo_var);
+		NullCheck(L_20);
+		Transaction__ctor_mB0BD95FC03CD216D94854D1096A5AC8B32B2464E(L_20, L_15, _stringLiteral1317CF02F3F3926703DF869C594244C35D400F6A, L_16, L_17, L_18, L_19, NULL);
+		V_2 = L_20;
+		// AddParam(EventParam.transaction, transaction);
+		Transaction_t12BEC26500383F0721FC66524801C5C126142A23* L_21 = V_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral840D94CDC6A5AD28D5CB4F7047FAB75458D55B82, L_21, (bool)0, NULL);
+		// AddParam(EventParam.placement, purchaseLocation);
+		String_t* L_22 = ___8_purchaseLocation;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_22, (bool)0, NULL);
+		// AddParam(EventParam.validatedReceipt, receiptStatus.ToString());
+		Il2CppFakeBox<int32_t> L_23(ReceiptStatus_t39B7FD27E8E95A5467AF287CD900DA5938B06361_il2cpp_TypeInfo_var, (&___10_receiptStatus));
+		String_t* L_24;
+		L_24 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_23), NULL);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral9C2501A8AD53E9560A348FAFB85F4353AB1C0987, L_24, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InappPurchaseEvent::.ctor(System.String,LionStudios.Suite.Analytics.Product,LionStudios.Suite.Analytics.Product,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,LionStudios.Suite.Analytics.Events.ReceiptStatus,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InappPurchaseEvent__ctor_m58FCFF5BE47F0F04927729FE1F5AA787F49C4D61 (InappPurchaseEvent_tECDD0EDC6F9DC49096D515A741E5898E6382C0AD* __this, String_t* ___0_purchaseName, Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* ___1_spentProducts, Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* ___2_receivedProducts, String_t* ___3_purchaseLocation, String_t* ___4_productID, String_t* ___5_transactionID, RuntimeObject* ___6_additionalData, int32_t ___7_receiptStatus, bool ___8_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAPEventType_t3A06756C5D419E79DC6618A715557D4A21706949_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReceiptStatus_t39B7FD27E8E95A5467AF287CD900DA5938B06361_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Transaction_t12BEC26500383F0721FC66524801C5C126142A23_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1317CF02F3F3926703DF869C594244C35D400F6A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral840D94CDC6A5AD28D5CB4F7047FAB75458D55B82);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9C2501A8AD53E9560A348FAFB85F4353AB1C0987);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	Transaction_t12BEC26500383F0721FC66524801C5C126142A23* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, ReceiptStatus receiptStatus = ReceiptStatus.NoValidation, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___6_additionalData;
+		bool L_1 = ___8_isCalledExplicitly;
+		IAPEvent__ctor_mBF0919398F0547F70F31845E258A5CA371C5AADE(__this, L_0, L_1, NULL);
+		// eventName = IAPEventType.Purchase.ToString();
+		V_1 = 1;
+		Il2CppFakeBox<int32_t> L_2(IAPEventType_t3A06756C5D419E79DC6618A715557D4A21706949_il2cpp_TypeInfo_var, (&V_1));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// var transaction = new Transaction(purchaseName, "Purchase", receivedProducts, spentProducts, transactionID,
+		//     productID);
+		String_t* L_4 = ___0_purchaseName;
+		Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* L_5 = ___2_receivedProducts;
+		Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* L_6 = ___1_spentProducts;
+		String_t* L_7 = ___5_transactionID;
+		String_t* L_8 = ___4_productID;
+		Transaction_t12BEC26500383F0721FC66524801C5C126142A23* L_9 = (Transaction_t12BEC26500383F0721FC66524801C5C126142A23*)il2cpp_codegen_object_new(Transaction_t12BEC26500383F0721FC66524801C5C126142A23_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		Transaction__ctor_mB0BD95FC03CD216D94854D1096A5AC8B32B2464E(L_9, L_4, _stringLiteral1317CF02F3F3926703DF869C594244C35D400F6A, L_5, L_6, L_7, L_8, NULL);
+		V_0 = L_9;
+		// AddParam(EventParam.transaction, transaction);
+		Transaction_t12BEC26500383F0721FC66524801C5C126142A23* L_10 = V_0;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral840D94CDC6A5AD28D5CB4F7047FAB75458D55B82, L_10, (bool)0, NULL);
+		// AddParam(EventParam.placement, purchaseLocation);
+		String_t* L_11 = ___3_purchaseLocation;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_11, (bool)0, NULL);
+		// AddParam(EventParam.validatedReceipt, receiptStatus.ToString());
+		Il2CppFakeBox<int32_t> L_12(ReceiptStatus_t39B7FD27E8E95A5467AF287CD900DA5938B06361_il2cpp_TypeInfo_var, (&___7_receiptStatus));
+		String_t* L_13;
+		L_13 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_12), NULL);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral9C2501A8AD53E9560A348FAFB85F4353AB1C0987, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InappPurchaseEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InappPurchaseEvent_GetAdjustPayloadEventName_m1A87190F01BAD35256565551ED90B94E311FCF4F (InappPurchaseEvent_tECDD0EDC6F9DC49096D515A741E5898E6382C0AD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0138657F026CD45F0B00A9533EC60497F3CD4EEF);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.iap_purchase;
+		return _stringLiteral0138657F026CD45F0B00A9533EC60497F3CD4EEF;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InappPurchaseWithReceipt::.ctor(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InappPurchaseWithReceipt__ctor_m05FB7EE1BCD3F9BEFC70C2FE6A65218891569CA9 (InappPurchaseWithReceipt_tD1466C9B625B71F8760AD63F1A6CA58F653587F5* __this, RuntimeObject* ___0_additionalData, bool ___1_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	{
+		// public InappPurchaseWithReceipt(IDictionary<string, object> additionalData, bool isCalledExplicitly) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___0_additionalData;
+		bool L_1 = ___1_isCalledExplicitly;
+		IAPEvent__ctor_mBF0919398F0547F70F31845E258A5CA371C5AADE(__this, L_0, L_1, NULL);
+		// throw new NotImplementedException("IAP Receipt events not implemented, yet!");
+		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_2 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		NotImplementedException__ctor_m8339D1A685E8D77CAC9D3260C06B38B5C7CA7742(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEC0FFBA8FCFACF334D9B130D25602258A46B88B8)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InappPurchaseWithReceipt__ctor_m05FB7EE1BCD3F9BEFC70C2FE6A65218891569CA9_RuntimeMethod_var)));
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.AchievementEvent::.ctor(LionStudios.Suite.Analytics.Reward,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AchievementEvent__ctor_mC9C178D45FEEC5ADCE7B069BDBB48443C113013B (AchievementEvent_t0EF334ABC77C2536C3DC2095564493F61E41A022* __this, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___0_reward, String_t* ___1_achievementID, String_t* ___2_achievementName, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6A5592D0062C9AE9F4D590C21C32B0A2C09C9003);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9490CD524EF06FB60D93E6086F59632419A82BDE);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.Achievement.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.reward, reward);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_4 = ___0_reward;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_4, (bool)0, NULL);
+		// AddParam(EventParam.achievementID, achievementID);
+		String_t* L_5 = ___1_achievementID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral6A5592D0062C9AE9F4D590C21C32B0A2C09C9003, L_5, (bool)0, NULL);
+		// AddParam(EventParam.achievementName, achievementName);
+		String_t* L_6 = ___2_achievementName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral9490CD524EF06FB60D93E6086F59632419A82BDE, L_6, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.AchievementEvent::.ctor(Events.InGame.EventArgs.AchievementEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AchievementEvent__ctor_mA1B75D576489A2F9C916C2D2B7090D3FCF16B002 (AchievementEvent_t0EF334ABC77C2536C3DC2095564493F61E41A022* __this, AchievementEventArgs_t26486A44BC52EF62604A85A0A80BCC9CD000FB51* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6A5592D0062C9AE9F4D590C21C32B0A2C09C9003);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9490CD524EF06FB60D93E6086F59632419A82BDE);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.Achievement.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.reward, args.Reward);
+		AchievementEventArgs_t26486A44BC52EF62604A85A0A80BCC9CD000FB51* L_4 = ___0_args;
+		NullCheck(L_4);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_5 = L_4->___Reward_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_5, (bool)0, NULL);
+		// AddParam(EventParam.achievementID, args.AchievementID);
+		AchievementEventArgs_t26486A44BC52EF62604A85A0A80BCC9CD000FB51* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___AchievementID_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral6A5592D0062C9AE9F4D590C21C32B0A2C09C9003, L_7, (bool)0, NULL);
+		// AddParam(EventParam.achievementName, args.AchievementName);
+		AchievementEventArgs_t26486A44BC52EF62604A85A0A80BCC9CD000FB51* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___AchievementName_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral9490CD524EF06FB60D93E6086F59632419A82BDE, L_9, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.AchievementEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AchievementEvent_GetAdjustPayloadEventName_m8D26FB2C9E60E861DCEE77053F6919E2A1EB65FF (AchievementEvent_t0EF334ABC77C2536C3DC2095564493F61E41A022* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB835F4D75292BE504618B695A0D689AE6DB75010);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.achievement;
+		return _stringLiteralB835F4D75292BE504618B695A0D689AE6DB75010;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CharacterCreatedEvent::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterCreatedEvent__ctor_m1112FE13991E9D8CA06DB22748D6CC8094FC572B (CharacterCreatedEvent_t8905F462AAED5672B04AA719BBB7C37809E13F08* __this, String_t* ___0_characterClass, String_t* ___1_characterGender, String_t* ___2_characterID, String_t* ___3_characterName, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBA72BA139540F1BC502326441FEA8171B68CACFA);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE9DA95F1606E525EAD2F3A936EBCC96928E34BB8);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// string characterName, IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___5_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.CharacterUpdated.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.characterClass, characterClass);
+		String_t* L_4 = ___0_characterClass;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF, L_4, (bool)0, NULL);
+		// AddParam(EventParam.characterGender, characterGender);
+		String_t* L_5 = ___1_characterGender;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE9DA95F1606E525EAD2F3A936EBCC96928E34BB8, L_5, (bool)0, NULL);
+		// AddParam(EventParam.characterId, characterID);
+		String_t* L_6 = ___2_characterID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralBA72BA139540F1BC502326441FEA8171B68CACFA, L_6, (bool)0, NULL);
+		// AddParam(EventParam.characterName, characterName);
+		String_t* L_7 = ___3_characterName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C, L_7, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.CharacterCreatedEvent::.ctor(Events.InGame.EventArgs.CharacterCreatedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterCreatedEvent__ctor_mBDDD02EA549C271FCCBE35AF75782A2693805C12 (CharacterCreatedEvent_t8905F462AAED5672B04AA719BBB7C37809E13F08* __this, CharacterCreatedEventArgs_tE6E3357D9B66FF8CF2E091AC970CD2AC3BB565D3* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBA72BA139540F1BC502326441FEA8171B68CACFA);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE9DA95F1606E525EAD2F3A936EBCC96928E34BB8);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.CharacterUpdated.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.characterClass, args.CharacterClass);
+		CharacterCreatedEventArgs_tE6E3357D9B66FF8CF2E091AC970CD2AC3BB565D3* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___CharacterClass_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF, L_5, (bool)0, NULL);
+		// AddParam(EventParam.characterGender, args.CharacterGender);
+		CharacterCreatedEventArgs_tE6E3357D9B66FF8CF2E091AC970CD2AC3BB565D3* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___CharacterGender_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE9DA95F1606E525EAD2F3A936EBCC96928E34BB8, L_7, (bool)0, NULL);
+		// AddParam(EventParam.characterId, args.CharacterID);
+		CharacterCreatedEventArgs_tE6E3357D9B66FF8CF2E091AC970CD2AC3BB565D3* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___CharacterID_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralBA72BA139540F1BC502326441FEA8171B68CACFA, L_9, (bool)0, NULL);
+		// AddParam(EventParam.characterName, args.CharacterName);
+		CharacterCreatedEventArgs_tE6E3357D9B66FF8CF2E091AC970CD2AC3BB565D3* L_10 = ___0_args;
+		NullCheck(L_10);
+		String_t* L_11 = L_10->___CharacterName_4;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C, L_11, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.CharacterCreatedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CharacterCreatedEvent_GetAdjustPayloadEventName_m73A1A85080F4CE3C939A72FE3B751ABF324F29B9 (CharacterCreatedEvent_t8905F462AAED5672B04AA719BBB7C37809E13F08* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBCCB4F21C80E84DF6007C8C04DBF1B2E590D4DE8);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.character_created;
+		return _stringLiteralBCCB4F21C80E84DF6007C8C04DBF1B2E590D4DE8;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CharacterDeletedEvent::.ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterDeletedEvent__ctor_m1E00A54A188D55151313195DC1F025C4DE282D6F (CharacterDeletedEvent_t6B3A153DA60A167D88C225C99CD101B61376D5BB* __this, String_t* ___0_characterClass, String_t* ___1_characterID, String_t* ___2_characterName, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBA72BA139540F1BC502326441FEA8171B68CACFA);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.CharacterUpdated.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.characterClass, characterClass);
+		String_t* L_4 = ___0_characterClass;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF, L_4, (bool)0, NULL);
+		// AddParam(EventParam.characterId, characterID);
+		String_t* L_5 = ___1_characterID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralBA72BA139540F1BC502326441FEA8171B68CACFA, L_5, (bool)0, NULL);
+		// AddParam(EventParam.characterName, characterName);
+		String_t* L_6 = ___2_characterName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C, L_6, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.CharacterDeletedEvent::.ctor(Events.InGame.EventArgs.CharacterDeletedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterDeletedEvent__ctor_m03451E4B23C1C0D58E2148792ED8D462CA3E03C6 (CharacterDeletedEvent_t6B3A153DA60A167D88C225C99CD101B61376D5BB* __this, CharacterDeletedEventArgs_tC23ECBC98C3FE7E17C623863B11528C80130DA0E* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBA72BA139540F1BC502326441FEA8171B68CACFA);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.CharacterUpdated.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.characterClass, args.CharacterClass);
+		CharacterDeletedEventArgs_tC23ECBC98C3FE7E17C623863B11528C80130DA0E* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___CharacterClass_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF, L_5, (bool)0, NULL);
+		// AddParam(EventParam.characterId, args.CharacterID);
+		CharacterDeletedEventArgs_tC23ECBC98C3FE7E17C623863B11528C80130DA0E* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___CharacterID_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralBA72BA139540F1BC502326441FEA8171B68CACFA, L_7, (bool)0, NULL);
+		// AddParam(EventParam.characterName, args.CharacterName);
+		CharacterDeletedEventArgs_tC23ECBC98C3FE7E17C623863B11528C80130DA0E* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___CharacterName_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C, L_9, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.CharacterDeletedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CharacterDeletedEvent_GetAdjustPayloadEventName_m088F20659B83A8473D2D21D7764788DCFEECC07E (CharacterDeletedEvent_t6B3A153DA60A167D88C225C99CD101B61376D5BB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEDEE40BEF459DD9C27F85D40588E78C271504D4E);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.character_deleted;
+		return _stringLiteralEDEE40BEF459DD9C27F85D40588E78C271504D4E;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CharacterUpdatedEvent::.ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterUpdatedEvent__ctor_m977568F6C3F380EE671BC7E20985E8BD43ACBEE2 (CharacterUpdatedEvent_tA1C0926B1573AAFC44D050553F562246E115130D* __this, String_t* ___0_characterClass, String_t* ___1_characterID, String_t* ___2_characterName, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA8B331B9581E8DD4BECDA23A2ED02131FA892922);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// string characterName, IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.CharacterUpdated.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.characterClass, characterClass);
+		String_t* L_4 = ___0_characterClass;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF, L_4, (bool)0, NULL);
+		// AddParam(EventParam.characterID, characterID);
+		String_t* L_5 = ___1_characterID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA8B331B9581E8DD4BECDA23A2ED02131FA892922, L_5, (bool)0, NULL);
+		// AddParam(EventParam.characterName, characterName);
+		String_t* L_6 = ___2_characterName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C, L_6, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.CharacterUpdatedEvent::.ctor(Events.InGame.EventArgs.CharacterUpdatedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterUpdatedEvent__ctor_m3624E3E080C9F52977BE6C52020547EDC7E6D81E (CharacterUpdatedEvent_tA1C0926B1573AAFC44D050553F562246E115130D* __this, CharacterUpdatedEventArgs_tB3FB54484789DD0C2FB17C919E982B8342A0F035* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA8B331B9581E8DD4BECDA23A2ED02131FA892922);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.CharacterUpdated.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.characterClass, args.CharacterClass);
+		CharacterUpdatedEventArgs_tB3FB54484789DD0C2FB17C919E982B8342A0F035* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___CharacterClass_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral67D3135EC5DE60535DDCECDE0ACE88EF1DC0A0BF, L_5, (bool)0, NULL);
+		// AddParam(EventParam.characterID, args.CharacterID);
+		CharacterUpdatedEventArgs_tB3FB54484789DD0C2FB17C919E982B8342A0F035* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___CharacterID_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA8B331B9581E8DD4BECDA23A2ED02131FA892922, L_7, (bool)0, NULL);
+		// AddParam(EventParam.characterName, args.CharacterName);
+		CharacterUpdatedEventArgs_tB3FB54484789DD0C2FB17C919E982B8342A0F035* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___CharacterName_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB8E8ED142D7689ECEAF734AD701514149FED101C, L_9, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.CharacterUpdatedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CharacterUpdatedEvent_GetAdjustPayloadEventName_mEF831BFC8D7CDB1AFE06804F5CB379E9E9DE74E4 (CharacterUpdatedEvent_tA1C0926B1573AAFC44D050553F562246E115130D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral96C0F8A931984A180E59B9D03E03D2546B9586BD);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.character_updated;
+		return _stringLiteral96C0F8A931984A180E59B9D03E03D2546B9586BD;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.FeatureUnlockedEvent::.ctor(System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeatureUnlockedEvent__ctor_m160038DCD79D8E7656958EACE27979A8FABAD1B1 (FeatureUnlockedEvent_t0519CD849D9CD9AC54C22652233FF3F4C0FC9D2E* __this, String_t* ___0_featureName, String_t* ___1_featureType, RuntimeObject* ___2_additionalData, bool ___3_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2F4C04323DBB37299F3954CAEB8A3F5AEB6EA06F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDBDABAA4DFB5B16108C5DE34D90C5FB71267B492);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___2_additionalData;
+		bool L_1 = ___3_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.FeatureUnlocked.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.featureName, featureName);
+		String_t* L_4 = ___0_featureName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral2F4C04323DBB37299F3954CAEB8A3F5AEB6EA06F, L_4, (bool)0, NULL);
+		// AddParam(EventParam.featureType, featureType);
+		String_t* L_5 = ___1_featureType;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralDBDABAA4DFB5B16108C5DE34D90C5FB71267B492, L_5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.FeatureUnlockedEvent::.ctor(Events.InGame.EventArgs.FeatureUnlockedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeatureUnlockedEvent__ctor_mFAEBB5600A95BBBCED895A0C0078F1A535E0DE57 (FeatureUnlockedEvent_t0519CD849D9CD9AC54C22652233FF3F4C0FC9D2E* __this, FeatureUnlockedEventArgs_tB68A3347EF7C79E744E312D84F842B3D056189BC* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2F4C04323DBB37299F3954CAEB8A3F5AEB6EA06F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDBDABAA4DFB5B16108C5DE34D90C5FB71267B492);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.FeatureUnlocked.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.featureName, args.FeatureName);
+		FeatureUnlockedEventArgs_tB68A3347EF7C79E744E312D84F842B3D056189BC* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___FeatureName_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral2F4C04323DBB37299F3954CAEB8A3F5AEB6EA06F, L_5, (bool)0, NULL);
+		// AddParam(EventParam.featureType, args.FeatureType);
+		FeatureUnlockedEventArgs_tB68A3347EF7C79E744E312D84F842B3D056189BC* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___FeatureType_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralDBDABAA4DFB5B16108C5DE34D90C5FB71267B492, L_7, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.FeatureUnlockedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FeatureUnlockedEvent_GetAdjustPayloadEventName_mD802064431FC5D3D5918FC489CAA6747FB4F9674 (FeatureUnlockedEvent_t0519CD849D9CD9AC54C22652233FF3F4C0FC9D2E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral11C9A673622979E6A5814D0E630E82FFD2877F39);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.feature_unlocked;
+		return _stringLiteral11C9A673622979E6A5814D0E630E82FFD2877F39;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.GiftReceivedEvent::.ctor(LionStudios.Suite.Analytics.Reward,System.String,System.Boolean,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GiftReceivedEvent__ctor_m3C5B95C1E29F043DEAB29912FF27986309E9AB3A (GiftReceivedEvent_t45DF44073BB683D8E8B26FD505D909420841E38F* __this, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___0_gift, String_t* ___1_senderID, bool ___2_giftAccepted, String_t* ___3_uniqueTracking, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral20569223F7470C016A28A73ACCC591387912540D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA6805D1A54FB63B263503FD84E9524D9F1BA798A);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___5_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.GiftReceived.ToString();
+		V_0 = ((int32_t)10);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.reward, gift);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_4 = ___0_gift;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_4, (bool)0, NULL);
+		// AddParam(EventParam.senderID, senderID);
+		String_t* L_5 = ___1_senderID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA6805D1A54FB63B263503FD84E9524D9F1BA798A, L_5, (bool)0, NULL);
+		// AddParam(EventParam.giftAccepted, giftAccepted);
+		bool L_6 = ___2_giftAccepted;
+		bool L_7 = L_6;
+		RuntimeObject* L_8 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_7);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral20569223F7470C016A28A73ACCC591387912540D, L_8, (bool)0, NULL);
+		// AddParam(EventParam.uniqueTracking, uniqueTracking);
+		String_t* L_9 = ___3_uniqueTracking;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2, L_9, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.GiftReceivedEvent::.ctor(Events.InGame.EventArgs.GiftReceivedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GiftReceivedEvent__ctor_m1334F1821098DFDD19D0537012274DDA2D53445E (GiftReceivedEvent_t45DF44073BB683D8E8B26FD505D909420841E38F* __this, GiftReceivedEventArgs_t1672CEC93E26080B2EA9D6EA7DCF697ABA6B67E1* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral20569223F7470C016A28A73ACCC591387912540D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA6805D1A54FB63B263503FD84E9524D9F1BA798A);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.GiftReceived.ToString();
+		V_0 = ((int32_t)10);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.reward, args.Gift);
+		GiftReceivedEventArgs_t1672CEC93E26080B2EA9D6EA7DCF697ABA6B67E1* L_4 = ___0_args;
+		NullCheck(L_4);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_5 = L_4->___Gift_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_5, (bool)0, NULL);
+		// AddParam(EventParam.senderID, args.SenderID);
+		GiftReceivedEventArgs_t1672CEC93E26080B2EA9D6EA7DCF697ABA6B67E1* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___SenderID_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA6805D1A54FB63B263503FD84E9524D9F1BA798A, L_7, (bool)0, NULL);
+		// AddParam(EventParam.giftAccepted, args.GiftAccepted);
+		GiftReceivedEventArgs_t1672CEC93E26080B2EA9D6EA7DCF697ABA6B67E1* L_8 = ___0_args;
+		NullCheck(L_8);
+		bool L_9 = L_8->___GiftAccepted_3;
+		bool L_10 = L_9;
+		RuntimeObject* L_11 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral20569223F7470C016A28A73ACCC591387912540D, L_11, (bool)0, NULL);
+		// AddParam(EventParam.uniqueTracking, args.UniqueTracking);
+		GiftReceivedEventArgs_t1672CEC93E26080B2EA9D6EA7DCF697ABA6B67E1* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___UniqueTracking_4;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.GiftReceivedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GiftReceivedEvent_GetAdjustPayloadEventName_mEF358EAD6287F968C81E0068B656217968521DE1 (GiftReceivedEvent_t45DF44073BB683D8E8B26FD505D909420841E38F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral35C5252656EAA7532472F1F895FEBC8038A15FB6);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.gift_received;
+		return _stringLiteral35C5252656EAA7532472F1F895FEBC8038A15FB6;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.GiftSentEvent::.ctor(LionStudios.Suite.Analytics.Reward,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GiftSentEvent__ctor_m88E899C890ECEB9F37E9243FC24B67933532A83C (GiftSentEvent_t2C5C62F0A687B4F15122A8C7EDEAC5B145F4867C* __this, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___0_gift, String_t* ___1_recipientID, String_t* ___2_uniqueTracking, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral63B25E587F89A2CBE24B0C2802A8EA23C0163E74);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.GiftSent.ToString();
+		V_0 = 7;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.reward, gift);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_4 = ___0_gift;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_4, (bool)0, NULL);
+		// AddParam(EventParam.recipientID, recipientID);
+		String_t* L_5 = ___1_recipientID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral63B25E587F89A2CBE24B0C2802A8EA23C0163E74, L_5, (bool)0, NULL);
+		// AddParam(EventParam.uniqueTracking, uniqueTracking);
+		String_t* L_6 = ___2_uniqueTracking;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2, L_6, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.GiftSentEvent::.ctor(Events.InGame.EventArgs.GiftSentEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GiftSentEvent__ctor_m0059ADFCD124ADFD4AE0A07A1B6DE812FA92A4BC (GiftSentEvent_t2C5C62F0A687B4F15122A8C7EDEAC5B145F4867C* __this, GiftSentEventArgs_tB07CC7AB04F0A4CEE6072D33E1F3E08E200AE3D2* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral63B25E587F89A2CBE24B0C2802A8EA23C0163E74);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.GiftSent.ToString();
+		V_0 = 7;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.reward, args.Gift);
+		GiftSentEventArgs_tB07CC7AB04F0A4CEE6072D33E1F3E08E200AE3D2* L_4 = ___0_args;
+		NullCheck(L_4);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_5 = L_4->___Gift_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_5, (bool)0, NULL);
+		// AddParam(EventParam.recipientID, args.RecipientID);
+		GiftSentEventArgs_tB07CC7AB04F0A4CEE6072D33E1F3E08E200AE3D2* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___RecipientID_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral63B25E587F89A2CBE24B0C2802A8EA23C0163E74, L_7, (bool)0, NULL);
+		// AddParam(EventParam.uniqueTracking, args.UniqueTracking);
+		GiftSentEventArgs_tB07CC7AB04F0A4CEE6072D33E1F3E08E200AE3D2* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___UniqueTracking_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2, L_9, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.GiftSentEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GiftSentEvent_GetAdjustPayloadEventName_m15E3FF2222378CB0795AD4FF078741566B2F60F4 (GiftSentEvent_t2C5C62F0A687B4F15122A8C7EDEAC5B145F4867C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0C9040C4DC413BA80EE9819FE084DE07D6B8ED46);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.gift_sent;
+		return _stringLiteral0C9040C4DC413BA80EE9819FE084DE07D6B8ED46;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.HandActionEvent::.ctor(System.Int32,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandActionEvent__ctor_mB2566F61702902B8576BBA96682125E2CE0C24A8 (HandActionEvent_t93A6A6A7EEC282605503B04F1AA22BD5BAB6C1C2* __this, int32_t ___0_amount, String_t* ___1_gameID, String_t* ___2_handID, String_t* ___3_roundAction, String_t* ___4_roundName, RuntimeObject* ___5_additionalData, bool ___6_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1284A85AD0C164E5D47B34FC51268F1BCEB46BBC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral34629DCDEF990D3A0518799AA5049DCF7615D75D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4175865BA8E8EC7BF1D511F76A9EE34DD8AA2EDE);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5228BBE52D5AD80482153B7432A6DEC5B76C473A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___5_additionalData;
+		bool L_1 = ___6_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.PokerMove.ToString();
+		V_0 = ((int32_t)12);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.amount, amount);
+		int32_t L_4 = ___0_amount;
+		int32_t L_5 = L_4;
+		RuntimeObject* L_6 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_5);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1, L_6, (bool)0, NULL);
+		// AddParam(EventParam.gameId, gameID);
+		String_t* L_7 = ___1_gameID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral34629DCDEF990D3A0518799AA5049DCF7615D75D, L_7, (bool)0, NULL);
+		// AddParam(EventParam.handId, handID);
+		String_t* L_8 = ___2_handID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral1284A85AD0C164E5D47B34FC51268F1BCEB46BBC, L_8, (bool)0, NULL);
+		// AddParam(EventParam.roundAction, roundAction);
+		String_t* L_9 = ___3_roundAction;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral4175865BA8E8EC7BF1D511F76A9EE34DD8AA2EDE, L_9, (bool)0, NULL);
+		// AddParam(EventParam.roundName, roundName);
+		String_t* L_10 = ___4_roundName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral5228BBE52D5AD80482153B7432A6DEC5B76C473A, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.HandActionEvent::.ctor(Events.InGame.EventArgs.HandActionEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandActionEvent__ctor_m9200D0384EA01BFE725EC790517383BCCB65D360 (HandActionEvent_t93A6A6A7EEC282605503B04F1AA22BD5BAB6C1C2* __this, HandActionEventArgs_t9FF58B739760F248D7A0D135A2988B9F2046A7BB* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1284A85AD0C164E5D47B34FC51268F1BCEB46BBC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral34629DCDEF990D3A0518799AA5049DCF7615D75D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4175865BA8E8EC7BF1D511F76A9EE34DD8AA2EDE);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5228BBE52D5AD80482153B7432A6DEC5B76C473A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.PokerMove.ToString();
+		V_0 = ((int32_t)12);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.amount, args.Amount);
+		HandActionEventArgs_t9FF58B739760F248D7A0D135A2988B9F2046A7BB* L_4 = ___0_args;
+		NullCheck(L_4);
+		int32_t L_5 = L_4->___Amount_1;
+		int32_t L_6 = L_5;
+		RuntimeObject* L_7 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_6);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1, L_7, (bool)0, NULL);
+		// AddParam(EventParam.gameId, args.GameID);
+		HandActionEventArgs_t9FF58B739760F248D7A0D135A2988B9F2046A7BB* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___GameID_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral34629DCDEF990D3A0518799AA5049DCF7615D75D, L_9, (bool)0, NULL);
+		// AddParam(EventParam.handId, args.HandID);
+		HandActionEventArgs_t9FF58B739760F248D7A0D135A2988B9F2046A7BB* L_10 = ___0_args;
+		NullCheck(L_10);
+		String_t* L_11 = L_10->___HandID_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral1284A85AD0C164E5D47B34FC51268F1BCEB46BBC, L_11, (bool)0, NULL);
+		// AddParam(EventParam.roundAction, args.RoundAction);
+		HandActionEventArgs_t9FF58B739760F248D7A0D135A2988B9F2046A7BB* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___RoundAction_4;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral4175865BA8E8EC7BF1D511F76A9EE34DD8AA2EDE, L_13, (bool)0, NULL);
+		// AddParam(EventParam.roundName, args.RoundName);
+		HandActionEventArgs_t9FF58B739760F248D7A0D135A2988B9F2046A7BB* L_14 = ___0_args;
+		NullCheck(L_14);
+		String_t* L_15 = L_14->___RoundName_5;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral5228BBE52D5AD80482153B7432A6DEC5B76C473A, L_15, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.HandActionEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HandActionEvent_GetAdjustPayloadEventName_m12B928F77C5391B08B5E38A549486300EF52037E (HandActionEvent_t93A6A6A7EEC282605503B04F1AA22BD5BAB6C1C2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD03EC2C7B5D10E32285F19A5E6C3B41F7B9D11E8);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.hand_action;
+		return _stringLiteralD03EC2C7B5D10E32285F19A5E6C3B41F7B9D11E8;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.ItemActionedEvent::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean,LionStudios.Suite.Analytics.Reward)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemActionedEvent__ctor_mEE98B33C3BE3E844FDF55275380E4D70583CF3A3 (ItemActionedEvent_t82740FBF14D9B3C638FE5A92688AC5CFC367A4D2* __this, String_t* ___0_action, String_t* ___1_itemID, String_t* ___2_itemName, String_t* ___3_itemType, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___6_reward, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral364215BDCE011F1DB4D055B09425F77B0BEF997C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralABBA2DB6F733A544053CFC86E422C65E2E5FAD05);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0228745E227EA8D7812EA85DF6FB01E66F3535A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___5_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.ItemInteraction.ToString();
+		V_0 = ((int32_t)11);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.action, action);
+		String_t* L_4 = ___0_action;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267, L_4, (bool)0, NULL);
+		// AddParam(EventParam.itemId, itemID);
+		String_t* L_5 = ___1_itemID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral364215BDCE011F1DB4D055B09425F77B0BEF997C, L_5, (bool)0, NULL);
+		// AddParam(EventParam.itemName, itemName);
+		String_t* L_6 = ___2_itemName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralABBA2DB6F733A544053CFC86E422C65E2E5FAD05, L_6, (bool)0, NULL);
+		// AddParam(EventParam.itemType, itemType);
+		String_t* L_7 = ___3_itemType;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0228745E227EA8D7812EA85DF6FB01E66F3535A, L_7, (bool)0, NULL);
+		// AddParam(EventParam.reward, reward);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_8 = ___6_reward;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_8, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.ItemActionedEvent::.ctor(Events.InGame.EventArgs.ItemActionedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemActionedEvent__ctor_m889478D03399376EC7A610AFBDD5ABC586FCC641 (ItemActionedEvent_t82740FBF14D9B3C638FE5A92688AC5CFC367A4D2* __this, ItemActionedEventArgs_t71CB2C48AA0401E3CE532AB91BED60751C2A15A1* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral364215BDCE011F1DB4D055B09425F77B0BEF997C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralABBA2DB6F733A544053CFC86E422C65E2E5FAD05);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0228745E227EA8D7812EA85DF6FB01E66F3535A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.ItemInteraction.ToString();
+		V_0 = ((int32_t)11);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.action, args.Action);
+		ItemActionedEventArgs_t71CB2C48AA0401E3CE532AB91BED60751C2A15A1* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___Action_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267, L_5, (bool)0, NULL);
+		// AddParam(EventParam.itemId, args.ItemId);
+		ItemActionedEventArgs_t71CB2C48AA0401E3CE532AB91BED60751C2A15A1* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___ItemId_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral364215BDCE011F1DB4D055B09425F77B0BEF997C, L_7, (bool)0, NULL);
+		// AddParam(EventParam.itemName, args.ItemName);
+		ItemActionedEventArgs_t71CB2C48AA0401E3CE532AB91BED60751C2A15A1* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___ItemName_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralABBA2DB6F733A544053CFC86E422C65E2E5FAD05, L_9, (bool)0, NULL);
+		// AddParam(EventParam.itemType, args.ItemType);
+		ItemActionedEventArgs_t71CB2C48AA0401E3CE532AB91BED60751C2A15A1* L_10 = ___0_args;
+		NullCheck(L_10);
+		String_t* L_11 = L_10->___ItemType_4;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0228745E227EA8D7812EA85DF6FB01E66F3535A, L_11, (bool)0, NULL);
+		// AddParam(EventParam.reward, args.Reward);
+		ItemActionedEventArgs_t71CB2C48AA0401E3CE532AB91BED60751C2A15A1* L_12 = ___0_args;
+		NullCheck(L_12);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_13 = L_12->___Reward_5;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.ItemActionedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ItemActionedEvent_GetAdjustPayloadEventName_m098381111E8362FC581FD3BE6ABB90011804F885 (ItemActionedEvent_t82740FBF14D9B3C638FE5A92688AC5CFC367A4D2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5D4017B95AB42E66F45ACDB89EECCA2D3C4F526F);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.item_actioned;
+		return _stringLiteral5D4017B95AB42E66F45ACDB89EECCA2D3C4F526F;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.ItemCollectedEvent::.ctor(LionStudios.Suite.Analytics.Reward,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemCollectedEvent__ctor_m3119AEC5AEC05337875CC441EEE055A863D10C5E (ItemCollectedEvent_t4939F153ECF45D86A24C8EBC1F79BF562C585E2E* __this, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___0_reward, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// public ItemCollectedEvent(Reward reward, IDictionary<string, object> additionalData, bool isCalledExplicitly) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.ItemCollected.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.reward, reward);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_4 = ___0_reward;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_4, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.ItemCollectedEvent::.ctor(Events.InGame.EventArgs.ItemCollectedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemCollectedEvent__ctor_m7541C066FAB9C3821621EAD948459FB0F54D1B14 (ItemCollectedEvent_t4939F153ECF45D86A24C8EBC1F79BF562C585E2E* __this, ItemCollectedEventArgs_t1A785B05235A04BDF22A600C16B447681EA93AE0* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// public ItemCollectedEvent(ItemCollectedEventArgs args, IDictionary<string, object> additionalData, bool isCalledExplicitly) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.ItemCollected.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.reward, args.Reward);
+		ItemCollectedEventArgs_t1A785B05235A04BDF22A600C16B447681EA93AE0* L_4 = ___0_args;
+		NullCheck(L_4);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_5 = L_4->___Reward_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.ItemCollectedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ItemCollectedEvent_GetAdjustPayloadEventName_m5BC45931CD93F191F53D85EC171E6AD3A6EA60ED (ItemCollectedEvent_t4939F153ECF45D86A24C8EBC1F79BF562C585E2E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral97521173B2ACE3F53F484A9ED9D4DEBB573F5998);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.item_collected;
+		return _stringLiteral97521173B2ACE3F53F484A9ED9D4DEBB573F5998;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.NotificationOpenedEvent::.ctor(System.Int32,System.String,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotificationOpenedEvent__ctor_m16D0B56F3EA2EB2E09EEBCAB4056143A4ED4F446 (NotificationOpenedEvent_t44AAD5BD986EF9097074BE1FA5FD2661ABFAD616* __this, int32_t ___0_campaignID, String_t* ___1_campaignName, String_t* ___2_cohortGroup, int32_t ___3_cohortID, String_t* ___4_cohortName, String_t* ___5_communicationSender, String_t* ___6_communicationState, int32_t ___7_notificationID, String_t* ___8_notificationLaunch, String_t* ___9_notificationName, RuntimeObject* ___10_additionalData, bool ___11_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral189EE3A3E565D46B3514A166D75CD9A28F261944);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4546C3AF85E54C67C49E60DB80F4872109DF5BA5);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral45781C19CB30F4812DBE50F3B90E55E5E6458411);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7BA4811D9B4DD1C83525D6D519B43A954269123C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral83120395E2A0A67DBEB3A232D34C51462E2FF675);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB3E36369A14EE279CCABE60446F3EEE3E1852A4A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCDC0DD269BFBB2BFE69E4C5F7A4D9C3A66A3FAB0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD47778A389B7F2930821A5B0A86CE1866E8A3D23);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE170ABB9A7ACC8521EBF25722B9712F924D3BBBC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF2E72A7F37FB91711FBE127645AED660BCB9E433);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___10_additionalData;
+		bool L_1 = ___11_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.Notification.ToString();
+		V_0 = ((int32_t)13);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.campaignID, campaignID);
+		int32_t L_4 = ___0_campaignID;
+		int32_t L_5 = L_4;
+		RuntimeObject* L_6 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_5);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral4546C3AF85E54C67C49E60DB80F4872109DF5BA5, L_6, (bool)0, NULL);
+		// AddParam(EventParam.campaignName, campaignName);
+		String_t* L_7 = ___1_campaignName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF2E72A7F37FB91711FBE127645AED660BCB9E433, L_7, (bool)0, NULL);
+		// AddParam(EventParam.cohortGroup, cohortGroup);
+		String_t* L_8 = ___2_cohortGroup;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralCDC0DD269BFBB2BFE69E4C5F7A4D9C3A66A3FAB0, L_8, (bool)0, NULL);
+		// AddParam(EventParam.cohortID, cohortID);
+		int32_t L_9 = ___3_cohortID;
+		int32_t L_10 = L_9;
+		RuntimeObject* L_11 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral83120395E2A0A67DBEB3A232D34C51462E2FF675, L_11, (bool)0, NULL);
+		// AddParam(EventParam.cohortName, cohortName);
+		String_t* L_12 = ___4_cohortName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB3E36369A14EE279CCABE60446F3EEE3E1852A4A, L_12, (bool)0, NULL);
+		// AddParam(EventParam.communicationSender, communicationSender);
+		String_t* L_13 = ___5_communicationSender;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral189EE3A3E565D46B3514A166D75CD9A28F261944, L_13, (bool)0, NULL);
+		// AddParam(EventParam.communicationState, communicationState);
+		String_t* L_14 = ___6_communicationState;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE170ABB9A7ACC8521EBF25722B9712F924D3BBBC, L_14, (bool)0, NULL);
+		// AddParam(EventParam.notificationID, notificationID);
+		int32_t L_15 = ___7_notificationID;
+		int32_t L_16 = L_15;
+		RuntimeObject* L_17 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_16);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7BA4811D9B4DD1C83525D6D519B43A954269123C, L_17, (bool)0, NULL);
+		// AddParam(EventParam.notificationLaunch, notificationLaunch);
+		String_t* L_18 = ___8_notificationLaunch;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral45781C19CB30F4812DBE50F3B90E55E5E6458411, L_18, (bool)0, NULL);
+		// AddParam(EventParam.notificationName, notificationName);
+		String_t* L_19 = ___9_notificationName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD47778A389B7F2930821A5B0A86CE1866E8A3D23, L_19, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.NotificationOpenedEvent::.ctor(Events.InGame.EventArgs.NotificationOpenedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotificationOpenedEvent__ctor_m3573A2AFD9D12B956D519BD63702879808A9CFEF (NotificationOpenedEvent_t44AAD5BD986EF9097074BE1FA5FD2661ABFAD616* __this, NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral189EE3A3E565D46B3514A166D75CD9A28F261944);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4546C3AF85E54C67C49E60DB80F4872109DF5BA5);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral45781C19CB30F4812DBE50F3B90E55E5E6458411);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7BA4811D9B4DD1C83525D6D519B43A954269123C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral83120395E2A0A67DBEB3A232D34C51462E2FF675);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB3E36369A14EE279CCABE60446F3EEE3E1852A4A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCDC0DD269BFBB2BFE69E4C5F7A4D9C3A66A3FAB0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD47778A389B7F2930821A5B0A86CE1866E8A3D23);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE170ABB9A7ACC8521EBF25722B9712F924D3BBBC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF2E72A7F37FB91711FBE127645AED660BCB9E433);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.Notification.ToString();
+		V_0 = ((int32_t)13);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.campaignID, args.CampaignID);
+		NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246* L_4 = ___0_args;
+		NullCheck(L_4);
+		int32_t L_5 = L_4->___CampaignID_1;
+		int32_t L_6 = L_5;
+		RuntimeObject* L_7 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_6);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral4546C3AF85E54C67C49E60DB80F4872109DF5BA5, L_7, (bool)0, NULL);
+		// AddParam(EventParam.campaignName, args.CampaignName);
+		NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___CampaignName_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF2E72A7F37FB91711FBE127645AED660BCB9E433, L_9, (bool)0, NULL);
+		// AddParam(EventParam.cohortGroup, args.CohortGroup);
+		NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246* L_10 = ___0_args;
+		NullCheck(L_10);
+		String_t* L_11 = L_10->___CohortGroup_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralCDC0DD269BFBB2BFE69E4C5F7A4D9C3A66A3FAB0, L_11, (bool)0, NULL);
+		// AddParam(EventParam.cohortID, args.CohortID);
+		NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246* L_12 = ___0_args;
+		NullCheck(L_12);
+		int32_t L_13 = L_12->___CohortID_4;
+		int32_t L_14 = L_13;
+		RuntimeObject* L_15 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_14);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral83120395E2A0A67DBEB3A232D34C51462E2FF675, L_15, (bool)0, NULL);
+		// AddParam(EventParam.cohortName, args.CohortName);
+		NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246* L_16 = ___0_args;
+		NullCheck(L_16);
+		String_t* L_17 = L_16->___CohortName_5;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB3E36369A14EE279CCABE60446F3EEE3E1852A4A, L_17, (bool)0, NULL);
+		// AddParam(EventParam.communicationSender, args.CommunicationSender);
+		NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246* L_18 = ___0_args;
+		NullCheck(L_18);
+		String_t* L_19 = L_18->___CommunicationSender_6;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral189EE3A3E565D46B3514A166D75CD9A28F261944, L_19, (bool)0, NULL);
+		// AddParam(EventParam.communicationState, args.CommunicationState);
+		NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246* L_20 = ___0_args;
+		NullCheck(L_20);
+		String_t* L_21 = L_20->___CommunicationState_7;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE170ABB9A7ACC8521EBF25722B9712F924D3BBBC, L_21, (bool)0, NULL);
+		// AddParam(EventParam.notificationID, args.NotificationID);
+		NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246* L_22 = ___0_args;
+		NullCheck(L_22);
+		int32_t L_23 = L_22->___NotificationID_8;
+		int32_t L_24 = L_23;
+		RuntimeObject* L_25 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_24);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7BA4811D9B4DD1C83525D6D519B43A954269123C, L_25, (bool)0, NULL);
+		// AddParam(EventParam.notificationLaunch, args.NotificationLaunch);
+		NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246* L_26 = ___0_args;
+		NullCheck(L_26);
+		String_t* L_27 = L_26->___NotificationLaunch_9;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral45781C19CB30F4812DBE50F3B90E55E5E6458411, L_27, (bool)0, NULL);
+		// AddParam(EventParam.notificationName, args.NotificationName);
+		NotificationOpenedEventArgs_t9CF5581184AD762A981F5701E915516A580E8246* L_28 = ___0_args;
+		NullCheck(L_28);
+		String_t* L_29 = L_28->___NotificationName_10;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD47778A389B7F2930821A5B0A86CE1866E8A3D23, L_29, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.NotificationOpenedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NotificationOpenedEvent_GetAdjustPayloadEventName_m2CEDBE72DDE704B98A7EEC584D36D02FE636F523 (NotificationOpenedEvent_t44AAD5BD986EF9097074BE1FA5FD2661ABFAD616* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3828858EDDADFB2AEC895F54A3E3F0586C7AC85C);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.notification;
+		return _stringLiteral3828858EDDADFB2AEC895F54A3E3F0586C7AC85C;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.OptionsEvent::.ctor(System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OptionsEvent__ctor_m49AD8D2311B52EC5A7A75EDD37831D6A4FC60C46 (OptionsEvent_t9A7738D507FF1FA7B3018692C1E4C6D7F21E8884* __this, String_t* ___0_action, String_t* ___1_option, RuntimeObject* ___2_additionalData, bool ___3_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral41FDC774843900151F6C14D21FB4BAF0A6F1266E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___2_additionalData;
+		bool L_1 = ___3_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.UIInteraction.ToString();
+		V_0 = ((int32_t)9);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.action, action);
+		String_t* L_4 = ___0_action;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267, L_4, (bool)0, NULL);
+		// AddParam(EventParam.option, option);
+		String_t* L_5 = ___1_option;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral41FDC774843900151F6C14D21FB4BAF0A6F1266E, L_5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.OptionsEvent::.ctor(Events.InGame.EventArgs.OptionsEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OptionsEvent__ctor_m1120B5E9F87E6D6D7DA402FE832B7F070CAB118D (OptionsEvent_t9A7738D507FF1FA7B3018692C1E4C6D7F21E8884* __this, OptionsEventArgs_t22341BD03512C1E6E646DCF85622DF9C01C21A61* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral41FDC774843900151F6C14D21FB4BAF0A6F1266E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.UIInteraction.ToString();
+		V_0 = ((int32_t)9);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.action, args.Action);
+		OptionsEventArgs_t22341BD03512C1E6E646DCF85622DF9C01C21A61* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___Action_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267, L_5, (bool)0, NULL);
+		// AddParam(EventParam.option, args.Option);
+		OptionsEventArgs_t22341BD03512C1E6E646DCF85622DF9C01C21A61* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Option_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral41FDC774843900151F6C14D21FB4BAF0A6F1266E, L_7, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.OptionsEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OptionsEvent_GetAdjustPayloadEventName_m0FF10975897F02BBFD5A19F7F0CADDA7E44A344D (OptionsEvent_t9A7738D507FF1FA7B3018692C1E4C6D7F21E8884* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCF7DF948FC4905FED1A56776B9DFCCB86C46912A);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.options;
+		return _stringLiteralCF7DF948FC4905FED1A56776B9DFCCB86C46912A;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.PowerUpUsedEvent::.ctor(System.String,System.String,System.Int32,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PowerUpUsedEvent__ctor_m9A4B6C9D79669CFF987D4F346A94A5994F57233C (PowerUpUsedEvent_tE083427C6584A4D437D378194C400D158F3A6A9A* __this, String_t* ___0_missionID, String_t* ___1_missionType, int32_t ___2_missionAttempt, String_t* ___3_powerUpName, String_t* ___4_missionName, RuntimeObject* ___5_additionalData, bool ___6_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5D5BBC97D4881113EB4174C2365252C8BCC000FC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9BC1C82E2DB1C701DDA65153FF8E48FD0B966DA9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA39F26E1A96A85480E1DF45DA4FB0C20431FE762);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___5_additionalData;
+		bool L_1 = ___6_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.PowerUp.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.missionID, missionID);
+		String_t* L_4 = ___0_missionID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral5D5BBC97D4881113EB4174C2365252C8BCC000FC, L_4, (bool)0, NULL);
+		// AddParam(EventParam.missionType, missionType);
+		String_t* L_5 = ___1_missionType;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809, L_5, (bool)0, NULL);
+		// AddParam(EventParam.missionAttempt, missionAttempt);
+		int32_t L_6 = ___2_missionAttempt;
+		int32_t L_7 = L_6;
+		RuntimeObject* L_8 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_7);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral9BC1C82E2DB1C701DDA65153FF8E48FD0B966DA9, L_8, (bool)0, NULL);
+		// AddParam(EventParam.powerUpName, powerUpName);
+		String_t* L_9 = ___3_powerUpName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA39F26E1A96A85480E1DF45DA4FB0C20431FE762, L_9, (bool)0, NULL);
+		// AddParam(EventParam.missionName, missionName);
+		String_t* L_10 = ___4_missionName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.PowerUpUsedEvent::.ctor(System.String,System.String,System.Int32,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PowerUpUsedEvent__ctor_m9B743C417B611B599D32F3358CB34E92BB9351EC (PowerUpUsedEvent_tE083427C6584A4D437D378194C400D158F3A6A9A* __this, String_t* ___0_missionID, String_t* ___1_missionType, int32_t ___2_missionAttempt, String_t* ___3_powerUpName, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : this(missionID, missionType, missionAttempt, powerUpName, "", additionalData, isCalledExplicitly)
+		String_t* L_0 = ___0_missionID;
+		String_t* L_1 = ___1_missionType;
+		int32_t L_2 = ___2_missionAttempt;
+		String_t* L_3 = ___3_powerUpName;
+		RuntimeObject* L_4 = ___4_additionalData;
+		bool L_5 = ___5_isCalledExplicitly;
+		PowerUpUsedEvent__ctor_m9A4B6C9D79669CFF987D4F346A94A5994F57233C(__this, L_0, L_1, L_2, L_3, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, L_4, L_5, NULL);
+		// { }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.PowerUpUsedEvent::.ctor(Events.InGame.EventArgs.PowerUpUsedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PowerUpUsedEvent__ctor_mFAA4DB457EF923E6A52FF45A7089A8D72BE0976E (PowerUpUsedEvent_tE083427C6584A4D437D378194C400D158F3A6A9A* __this, PowerUpUsedEventArgs_t02C937594D8BD1A93597D45658BEE410E591F289* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5D5BBC97D4881113EB4174C2365252C8BCC000FC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9BC1C82E2DB1C701DDA65153FF8E48FD0B966DA9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA39F26E1A96A85480E1DF45DA4FB0C20431FE762);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.PowerUp.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.missionID, args.MissionID);
+		PowerUpUsedEventArgs_t02C937594D8BD1A93597D45658BEE410E591F289* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___MissionID_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral5D5BBC97D4881113EB4174C2365252C8BCC000FC, L_5, (bool)0, NULL);
+		// AddParam(EventParam.missionType, args.MissionType);
+		PowerUpUsedEventArgs_t02C937594D8BD1A93597D45658BEE410E591F289* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___MissionType_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809, L_7, (bool)0, NULL);
+		// AddParam(EventParam.missionAttempt, args.MissionAttempt);
+		PowerUpUsedEventArgs_t02C937594D8BD1A93597D45658BEE410E591F289* L_8 = ___0_args;
+		NullCheck(L_8);
+		int32_t L_9 = L_8->___MissionAttempt_3;
+		int32_t L_10 = L_9;
+		RuntimeObject* L_11 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral9BC1C82E2DB1C701DDA65153FF8E48FD0B966DA9, L_11, (bool)0, NULL);
+		// AddParam(EventParam.powerUpName, args.PowerUpName);
+		PowerUpUsedEventArgs_t02C937594D8BD1A93597D45658BEE410E591F289* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___PowerUpName_4;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA39F26E1A96A85480E1DF45DA4FB0C20431FE762, L_13, (bool)0, NULL);
+		// AddParam(EventParam.missionName, args.MissionName);
+		PowerUpUsedEventArgs_t02C937594D8BD1A93597D45658BEE410E591F289* L_14 = ___0_args;
+		NullCheck(L_14);
+		String_t* L_15 = L_14->___MissionName_5;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1, L_15, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.PowerUpUsedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PowerUpUsedEvent_GetAdjustPayloadEventName_mF48B20498E9B5902E7926269D37D39D824B918EB (PowerUpUsedEvent_tE083427C6584A4D437D378194C400D158F3A6A9A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9FD4341A8AF88AFA55D8CB191AEA2C9BAC9BA186);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.powerup_used;
+		return _stringLiteral9FD4341A8AF88AFA55D8CB191AEA2C9BAC9BA186;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.ProductViewedEvent::.ctor(System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProductViewedEvent__ctor_m6785066DE035B4A3A2C0A5BD3DD33690CF764829 (ProductViewedEvent_t31DF8C1759C9B4775545551B2C30D77FAD78F93C* __this, String_t* ___0_viewedProductID, String_t* ___1_viewedProductName, RuntimeObject* ___2_additionalData, bool ___3_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1BDC6FCDE87738D8A1B9914AAA135DD976BB837C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE7DEAF0EF6792BEC84DBA15AD00C8661FDDED53C);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___2_additionalData;
+		bool L_1 = ___3_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.ShopEntered.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.viewedProductID, viewedProductID);
+		String_t* L_4 = ___0_viewedProductID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE7DEAF0EF6792BEC84DBA15AD00C8661FDDED53C, L_4, (bool)0, NULL);
+		// AddParam(EventParam.viewedProductName, viewedProductName);
+		String_t* L_5 = ___1_viewedProductName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral1BDC6FCDE87738D8A1B9914AAA135DD976BB837C, L_5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.ProductViewedEvent::.ctor(Events.InGame.EventArgs.ProductViewedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProductViewedEvent__ctor_m8CF35DD5AC1C7E5E9B14977C733BE6696AC51BA8 (ProductViewedEvent_t31DF8C1759C9B4775545551B2C30D77FAD78F93C* __this, ProductViewedEventArgs_t3E8FE2F10F6C229E1DBB57AA2B78180E0631ABF8* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1BDC6FCDE87738D8A1B9914AAA135DD976BB837C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE7DEAF0EF6792BEC84DBA15AD00C8661FDDED53C);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.ShopEntered.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.viewedProductID, args.ViewedProductID);
+		ProductViewedEventArgs_t3E8FE2F10F6C229E1DBB57AA2B78180E0631ABF8* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___ViewedProductID_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE7DEAF0EF6792BEC84DBA15AD00C8661FDDED53C, L_5, (bool)0, NULL);
+		// AddParam(EventParam.viewedProductName, args.ViewedProductName);
+		ProductViewedEventArgs_t3E8FE2F10F6C229E1DBB57AA2B78180E0631ABF8* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___ViewedProductName_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral1BDC6FCDE87738D8A1B9914AAA135DD976BB837C, L_7, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.ProductViewedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ProductViewedEvent_GetAdjustPayloadEventName_m6D85C89F7AA13D732262CAA7516050798BDD52F5 (ProductViewedEvent_t31DF8C1759C9B4775545551B2C30D77FAD78F93C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5D8D0DBD41CE017CE7706C1D5463E08058EE9F5D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.product_viewed_event;
+		return _stringLiteral5D8D0DBD41CE017CE7706C1D5463E08058EE9F5D;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.ShopEnteredEvent::.ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShopEnteredEvent__ctor_m4CD583901FA9A02446510B8E25DD1AD9AC2AD431 (ShopEnteredEvent_t91D071D9A659ECA89A3A70E8C7374B0E9B693F3E* __this, String_t* ___0_shopName, String_t* ___1_shopID, String_t* ___2_shopType, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1CC0E5250DCE5955BD32F5A8AD583F7E3C7CEB02);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral933B6DF8FB07C5B401999ADDA8A9463D38B69E49);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC513D98AA129E5C82CFFBC0A3726201B9F97FAC7);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.ShopEntered.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.shopName, shopName);
+		String_t* L_4 = ___0_shopName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral1CC0E5250DCE5955BD32F5A8AD583F7E3C7CEB02, L_4, (bool)0, NULL);
+		// AddParam(EventParam.shopID, shopID);
+		String_t* L_5 = ___1_shopID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral933B6DF8FB07C5B401999ADDA8A9463D38B69E49, L_5, (bool)0, NULL);
+		// AddParam(EventParam.shopType, shopType);
+		String_t* L_6 = ___2_shopType;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralC513D98AA129E5C82CFFBC0A3726201B9F97FAC7, L_6, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.ShopEnteredEvent::.ctor(Events.InGame.EventArgs.ShopEnteredEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShopEnteredEvent__ctor_m038752B9826C596F26FFAC53D0F3FD4B6EC158FB (ShopEnteredEvent_t91D071D9A659ECA89A3A70E8C7374B0E9B693F3E* __this, ShopEnteredEventArgs_t3990D32341CA1BCB59C608B09A8676CBDB2715E0* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1CC0E5250DCE5955BD32F5A8AD583F7E3C7CEB02);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral933B6DF8FB07C5B401999ADDA8A9463D38B69E49);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC513D98AA129E5C82CFFBC0A3726201B9F97FAC7);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.ShopEntered.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.shopName, args.ShopName);
+		ShopEnteredEventArgs_t3990D32341CA1BCB59C608B09A8676CBDB2715E0* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___ShopName_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral1CC0E5250DCE5955BD32F5A8AD583F7E3C7CEB02, L_5, (bool)0, NULL);
+		// AddParam(EventParam.shopID, args.ShopID);
+		ShopEnteredEventArgs_t3990D32341CA1BCB59C608B09A8676CBDB2715E0* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___ShopID_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral933B6DF8FB07C5B401999ADDA8A9463D38B69E49, L_7, (bool)0, NULL);
+		// AddParam(EventParam.shopType, args.ShopType);
+		ShopEnteredEventArgs_t3990D32341CA1BCB59C608B09A8676CBDB2715E0* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___ShopType_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralC513D98AA129E5C82CFFBC0A3726201B9F97FAC7, L_9, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.ShopEnteredEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ShopEnteredEvent_GetAdjustPayloadEventName_mAAFEF7D158E3A13953174E282CBE1142F3EF9AF8 (ShopEnteredEvent_t91D071D9A659ECA89A3A70E8C7374B0E9B693F3E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAD8D9AC56D8F533F4EC71C3E1EE98F84EE26FFB6);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.shop_entered;
+		return _stringLiteralAD8D9AC56D8F533F4EC71C3E1EE98F84EE26FFB6;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.SkillUpgradedEvent::.ctor(System.Int32,System.Int32,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkillUpgradedEvent__ctor_m692B8AFAEC0EE34CEA1C0F3BD81CE79DF0A588DC (SkillUpgradedEvent_tE2B3914B6406455710F9F0E901704C85B72C4F6D* __this, int32_t ___0_currentSkillLevel, int32_t ___1_newSkillLevel, String_t* ___2_skillId, String_t* ___3_skillName, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8881FF8E6F60F89F7833A485E9E35B467A0D308B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA17B189D16DA98E82DA27D22D5CAAE15A575EAC4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA78969364BD554BF87182FABCADA3B9006ED78B7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB533CE2423F0C94244872A1A23981600D074BD29);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___5_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.SkillUpgraded.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.currentSkillLevel, currentSkillLevel);
+		int32_t L_4 = ___0_currentSkillLevel;
+		int32_t L_5 = L_4;
+		RuntimeObject* L_6 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_5);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA17B189D16DA98E82DA27D22D5CAAE15A575EAC4, L_6, (bool)0, NULL);
+		// AddParam(EventParam.newSkillLevel, newSkillLevel);
+		int32_t L_7 = ___1_newSkillLevel;
+		int32_t L_8 = L_7;
+		RuntimeObject* L_9 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral8881FF8E6F60F89F7833A485E9E35B467A0D308B, L_9, (bool)0, NULL);
+		// AddParam(EventParam.skillId, skillId);
+		String_t* L_10 = ___2_skillId;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA78969364BD554BF87182FABCADA3B9006ED78B7, L_10, (bool)0, NULL);
+		// AddParam(EventParam.skillName, skillName);
+		String_t* L_11 = ___3_skillName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB533CE2423F0C94244872A1A23981600D074BD29, L_11, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.SkillUpgradedEvent::.ctor(Events.InGame.EventArgs.SkillUpgradedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkillUpgradedEvent__ctor_m3BF2791C93D8A6EBC36D73CAE5CBF59FB57978D5 (SkillUpgradedEvent_tE2B3914B6406455710F9F0E901704C85B72C4F6D* __this, SkillUpgradedEventArgs_t9C077E9497D9C9C2CD02BF55123589B0B3D606AB* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8881FF8E6F60F89F7833A485E9E35B467A0D308B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA17B189D16DA98E82DA27D22D5CAAE15A575EAC4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA78969364BD554BF87182FABCADA3B9006ED78B7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB533CE2423F0C94244872A1A23981600D074BD29);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.SkillUpgraded.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.currentSkillLevel, args.CurrentSkillLevel);
+		SkillUpgradedEventArgs_t9C077E9497D9C9C2CD02BF55123589B0B3D606AB* L_4 = ___0_args;
+		NullCheck(L_4);
+		int32_t L_5 = L_4->___CurrentSkillLevel_1;
+		int32_t L_6 = L_5;
+		RuntimeObject* L_7 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_6);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA17B189D16DA98E82DA27D22D5CAAE15A575EAC4, L_7, (bool)0, NULL);
+		// AddParam(EventParam.newSkillLevel, args.NewSkillLevel);
+		SkillUpgradedEventArgs_t9C077E9497D9C9C2CD02BF55123589B0B3D606AB* L_8 = ___0_args;
+		NullCheck(L_8);
+		int32_t L_9 = L_8->___NewSkillLevel_2;
+		int32_t L_10 = L_9;
+		RuntimeObject* L_11 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral8881FF8E6F60F89F7833A485E9E35B467A0D308B, L_11, (bool)0, NULL);
+		// AddParam(EventParam.skillId, args.SkillId);
+		SkillUpgradedEventArgs_t9C077E9497D9C9C2CD02BF55123589B0B3D606AB* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___SkillId_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA78969364BD554BF87182FABCADA3B9006ED78B7, L_13, (bool)0, NULL);
+		// AddParam(EventParam.skillName, args.SkillName);
+		SkillUpgradedEventArgs_t9C077E9497D9C9C2CD02BF55123589B0B3D606AB* L_14 = ___0_args;
+		NullCheck(L_14);
+		String_t* L_15 = L_14->___SkillName_4;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB533CE2423F0C94244872A1A23981600D074BD29, L_15, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.SkillUpgradedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SkillUpgradedEvent_GetAdjustPayloadEventName_m6E4CCD2654556A6CF62C826A6273242A74C16993 (SkillUpgradedEvent_tE2B3914B6406455710F9F0E901704C85B72C4F6D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDEA922D56FC1DCE2D2E04F2CB6355A8761A1A64C);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.skill_upgraded;
+		return _stringLiteralDEA922D56FC1DCE2D2E04F2CB6355A8761A1A64C;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.SkillUsedEvent::.ctor(System.String,System.String,System.Boolean,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkillUsedEvent__ctor_m7A7F113FEAA43469A777336BF25E210848083DE4 (SkillUsedEvent_t5A6942F8F26980E152282490F96811B77E34F63D* __this, String_t* ___0_skillID, String_t* ___1_skillName, bool ___2_success, String_t* ___3_reasonForFailure, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0B988E2022EA115D1F3BC600C1497808CDAECDA7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA78969364BD554BF87182FABCADA3B9006ED78B7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB533CE2423F0C94244872A1A23981600D074BD29);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___5_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.PowerUp.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.skillId, skillID);
+		String_t* L_4 = ___0_skillID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA78969364BD554BF87182FABCADA3B9006ED78B7, L_4, (bool)0, NULL);
+		// AddParam(EventParam.skillName, skillName);
+		String_t* L_5 = ___1_skillName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB533CE2423F0C94244872A1A23981600D074BD29, L_5, (bool)0, NULL);
+		// AddParam(EventParam.isSuccess, success);
+		bool L_6 = ___2_success;
+		bool L_7 = L_6;
+		RuntimeObject* L_8 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_7);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral0B988E2022EA115D1F3BC600C1497808CDAECDA7, L_8, (bool)0, NULL);
+		// AddParam(EventParam.message, reasonForFailure);
+		String_t* L_9 = ___3_reasonForFailure;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964, L_9, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.SkillUsedEvent::.ctor(Events.InGame.EventArgs.SkillUsedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkillUsedEvent__ctor_m2D49E345E124A958FA3BB8A9E9A5DED33D6643E5 (SkillUsedEvent_t5A6942F8F26980E152282490F96811B77E34F63D* __this, SkillUsedEventArgs_t2AC3468D7FA16FE0CE5768F2C666DA02E12A5E51* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0B988E2022EA115D1F3BC600C1497808CDAECDA7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA78969364BD554BF87182FABCADA3B9006ED78B7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB533CE2423F0C94244872A1A23981600D074BD29);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.PowerUp.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.skillId, args.SkillID);
+		SkillUsedEventArgs_t2AC3468D7FA16FE0CE5768F2C666DA02E12A5E51* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___SkillID_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA78969364BD554BF87182FABCADA3B9006ED78B7, L_5, (bool)0, NULL);
+		// AddParam(EventParam.skillName, args.SkillName);
+		SkillUsedEventArgs_t2AC3468D7FA16FE0CE5768F2C666DA02E12A5E51* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___SkillName_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB533CE2423F0C94244872A1A23981600D074BD29, L_7, (bool)0, NULL);
+		// AddParam(EventParam.isSuccess, args.Success);
+		SkillUsedEventArgs_t2AC3468D7FA16FE0CE5768F2C666DA02E12A5E51* L_8 = ___0_args;
+		NullCheck(L_8);
+		bool L_9 = L_8->___Success_3;
+		bool L_10 = L_9;
+		RuntimeObject* L_11 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral0B988E2022EA115D1F3BC600C1497808CDAECDA7, L_11, (bool)0, NULL);
+		// AddParam(EventParam.message, args.ReasonForFailure);
+		SkillUsedEventArgs_t2AC3468D7FA16FE0CE5768F2C666DA02E12A5E51* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___ReasonForFailure_4;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.SkillUsedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SkillUsedEvent_GetAdjustPayloadEventName_mDA3FC0EF452B5D23DE8A0D228605805A34B1EE49 (SkillUsedEvent_t5A6942F8F26980E152282490F96811B77E34F63D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE009AE33CE6DAFD8CFC5EF32937BD7B9D0421CD1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.skill_used;
+		return _stringLiteralE009AE33CE6DAFD8CFC5EF32937BD7B9D0421CD1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.UiInteractionEvent::.ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiInteractionEvent__ctor_mD11629BFE7CA57644B81684DDA1392C8B2B22918 (UiInteractionEvent_t1D726F4398978B2EECE591960F1BCE2D63C4CFA1* __this, String_t* ___0_uiAction, String_t* ___1_uiName, String_t* ___2_uiLocation, String_t* ___3_uiType, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral545ADE15A3EEFE31A2DC92E9C4D39A17EE1CC37E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralABE8503EB3EE4C0E25C512A420C6106BD32842B5);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralADD18B13E5D6E09273E22A1EF0064899B7C2274F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAF559BEEEDC4A3DA7C3E4A7642A932EA7C00491E);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___5_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.UIInteraction.ToString();
+		V_0 = ((int32_t)9);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.uiAction, uiAction);
+		String_t* L_4 = ___0_uiAction;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralABE8503EB3EE4C0E25C512A420C6106BD32842B5, L_4, (bool)0, NULL);
+		// AddParam(EventParam.uiLocation, uiLocation);
+		String_t* L_5 = ___2_uiLocation;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralAF559BEEEDC4A3DA7C3E4A7642A932EA7C00491E, L_5, (bool)0, NULL);
+		// AddParam(EventParam.uiName, uiName);
+		String_t* L_6 = ___1_uiName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralADD18B13E5D6E09273E22A1EF0064899B7C2274F, L_6, (bool)0, NULL);
+		// AddParam(EventParam.uiType, uiType);
+		String_t* L_7 = ___3_uiType;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral545ADE15A3EEFE31A2DC92E9C4D39A17EE1CC37E, L_7, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.UiInteractionEvent::.ctor(Events.InGame.EventArgs.UiInteractionEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UiInteractionEvent__ctor_m24C2303939CE42A6F47FD7D84D7A151416400815 (UiInteractionEvent_t1D726F4398978B2EECE591960F1BCE2D63C4CFA1* __this, UiInteractionEventArgs_t5D4127421F485B9767BDE07C8F531CAE03927E5B* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral545ADE15A3EEFE31A2DC92E9C4D39A17EE1CC37E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralABE8503EB3EE4C0E25C512A420C6106BD32842B5);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralADD18B13E5D6E09273E22A1EF0064899B7C2274F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAF559BEEEDC4A3DA7C3E4A7642A932EA7C00491E);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.UIInteraction.ToString();
+		V_0 = ((int32_t)9);
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.uiAction, args.UiAction);
+		UiInteractionEventArgs_t5D4127421F485B9767BDE07C8F531CAE03927E5B* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___UiAction_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralABE8503EB3EE4C0E25C512A420C6106BD32842B5, L_5, (bool)0, NULL);
+		// AddParam(EventParam.uiLocation, args.UiLocation);
+		UiInteractionEventArgs_t5D4127421F485B9767BDE07C8F531CAE03927E5B* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___UiLocation_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralAF559BEEEDC4A3DA7C3E4A7642A932EA7C00491E, L_7, (bool)0, NULL);
+		// AddParam(EventParam.uiName, args.UiName);
+		UiInteractionEventArgs_t5D4127421F485B9767BDE07C8F531CAE03927E5B* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___UiName_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralADD18B13E5D6E09273E22A1EF0064899B7C2274F, L_9, (bool)0, NULL);
+		// AddParam(EventParam.uiType, args.UiType);
+		UiInteractionEventArgs_t5D4127421F485B9767BDE07C8F531CAE03927E5B* L_10 = ___0_args;
+		NullCheck(L_10);
+		String_t* L_11 = L_10->___UiType_4;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral545ADE15A3EEFE31A2DC92E9C4D39A17EE1CC37E, L_11, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.UiInteractionEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UiInteractionEvent_GetAdjustPayloadEventName_m76A6DAD987C4A6C015012B4967CAE349645E26B4 (UiInteractionEvent_t1D726F4398978B2EECE591960F1BCE2D63C4CFA1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral78850661D84F871021A87294A510D90D963AD7F4);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.ui_interaction;
+		return _stringLiteral78850661D84F871021A87294A510D90D963AD7F4;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.LevelAbandonedEvent::.ctor(System.Int32,System.Nullable`1<System.Int32>,System.Nullable`1<System.Int32>,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelAbandonedEvent__ctor_m3BF8922FCD8E719B45FD01439CD8C93D9E83C5E9 (LevelAbandonedEvent_tA07955FECECE7DCBA3D9AC691A595F943C076A77* __this, int32_t ___0_level, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___1_attemptNum, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_score, String_t* ___3_levelCollection1, String_t* ___4_levelCollection2, String_t* ___5_missionType, String_t* ___6_missionName, RuntimeObject* ___7_additionalData, bool ___8_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// base(level, attemptNum, incrementCounter: false, score, levelCollection1, levelCollection2, missionType,
+		//     missionName, additionalData, isCalledExplicitly)
+		int32_t L_0 = ___0_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___1_attemptNum;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_2 = ___2_score;
+		String_t* L_3 = ___3_levelCollection1;
+		String_t* L_4 = ___4_levelCollection2;
+		String_t* L_5 = ___5_missionType;
+		String_t* L_6 = ___6_missionName;
+		RuntimeObject* L_7 = ___7_additionalData;
+		bool L_8 = ___8_isCalledExplicitly;
+		LevelEvent__ctor_mF316C2575EA31CC21AF2CF7060369C3ABA0342CE(__this, L_0, L_1, (bool)0, L_2, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
+		// eventName = LevelEventType.Abandon.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_9(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_10;
+		L_10 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_9), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_10, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceLevelStart(level, false));
+		int32_t L_11 = ___0_level;
+		int32_t L_12;
+		L_12 = LionAnalyticsApplication_GetTimeSinceLevelStart_m3E62D3892AF53B6FC7192A1B689D6C9DBCEEBFC5(L_11, (bool)0, NULL);
+		int32_t L_13 = L_12;
+		RuntimeObject* L_14 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_13);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_14, (bool)0, NULL);
+		// LionAnalytics.RemoveLevelTrackingDataCombination(level, missionName);
+		int32_t L_15 = ___0_level;
+		String_t* L_16 = ___6_missionName;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_RemoveLevelTrackingDataCombination_mF7E3715C7A89DA04DA7C463AD65186BB36FF939E(L_15, L_16, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelAbandonedEvent::.ctor(Events.Level.EventArgs.LevelEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelAbandonedEvent__ctor_mAE1A83E6C42C71FCC6B94A230016C51C84E6E8BD (LevelAbandonedEvent_tA07955FECECE7DCBA3D9AC691A595F943C076A77* __this, LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// base(args, additionalData, isCalledExplicitly)
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		LevelEvent__ctor_m2C3A97FF79288DA676310FBC22810C3637B3C94F(__this, L_0, L_1, L_2, NULL);
+		// eventName = LevelEventType.Abandon.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_3(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceLevelStart(args.LevelNum, false));
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_5 = ___0_args;
+		NullCheck(L_5);
+		int32_t L_6 = L_5->___LevelNum_2;
+		int32_t L_7;
+		L_7 = LionAnalyticsApplication_GetTimeSinceLevelStart_m3E62D3892AF53B6FC7192A1B689D6C9DBCEEBFC5(L_6, (bool)0, NULL);
+		int32_t L_8 = L_7;
+		RuntimeObject* L_9 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_9, (bool)0, NULL);
+		// LionAnalytics.RemoveLevelTrackingDataCombination(args.LevelNum, args.MissionName);
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_10 = ___0_args;
+		NullCheck(L_10);
+		int32_t L_11 = L_10->___LevelNum_2;
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___MissionName_8;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_RemoveLevelTrackingDataCombination_mF7E3715C7A89DA04DA7C463AD65186BB36FF939E(L_11, L_13, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LevelAbandonedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LevelAbandonedEvent_GetAdjustPayloadEventName_mC9A6E8E1861B15D94E7B87B1384118370FAED0D4 (LevelAbandonedEvent_tA07955FECECE7DCBA3D9AC691A595F943C076A77* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFC51D5E56AD109C29C8FD03D96141DD94AB29458);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.level_abandoned;
+		return _stringLiteralFC51D5E56AD109C29C8FD03D96141DD94AB29458;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.LevelCompleteEvent::.ctor(System.Int32,System.Int32,System.Nullable`1<System.Int32>,LionStudios.Suite.Analytics.Reward,System.String,System.String,System.String,System.String,System.Nullable`1<System.Boolean>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelCompleteEvent__ctor_mFA19E269C68D825F8EFFF51D4C9DA96420AAE3A7 (LevelCompleteEvent_t1477CF07D00D2EDB8A5A9266519D9B078505E9F0* __this, int32_t ___0_level, int32_t ___1_attemptNum, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_score, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___3_reward, String_t* ___4_levelCollection1, String_t* ___5_levelCollection2, String_t* ___6_missionType, String_t* ___7_missionName, Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___8_isTutorial, RuntimeObject* ___9_additionalData, bool ___10_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1671D86E8DE91CE35C3BB103B871E12D71870E41);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	bool V_2 = false;
+	{
+		// base(level, attemptNum, incrementCounter: false, score, levelCollection1, levelCollection2, missionType,
+		//     missionName, additionalData, isCalledExplicitly)
+		int32_t L_0 = ___0_level;
+		int32_t L_1 = ___1_attemptNum;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_2;
+		memset((&L_2), 0, sizeof(L_2));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_2), L_1, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_3 = ___2_score;
+		String_t* L_4 = ___4_levelCollection1;
+		String_t* L_5 = ___5_levelCollection2;
+		String_t* L_6 = ___6_missionType;
+		String_t* L_7 = ___7_missionName;
+		RuntimeObject* L_8 = ___9_additionalData;
+		bool L_9 = ___10_isCalledExplicitly;
+		LevelEvent__ctor_mF316C2575EA31CC21AF2CF7060369C3ABA0342CE(__this, L_0, L_2, (bool)0, L_3, L_4, L_5, L_6, L_7, L_8, L_9, NULL);
+		// eventName = LevelEventType.Complete.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_10(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_11;
+		L_11 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_10), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_11, NULL);
+		// AddParam(EventParam.reward, reward);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_12 = ___3_reward;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_12, (bool)0, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceLevelStart(level, false));
+		int32_t L_13 = ___0_level;
+		int32_t L_14;
+		L_14 = LionAnalyticsApplication_GetTimeSinceLevelStart_m3E62D3892AF53B6FC7192A1B689D6C9DBCEEBFC5(L_13, (bool)0, NULL);
+		int32_t L_15 = L_14;
+		RuntimeObject* L_16 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_15);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_16, (bool)0, NULL);
+		// LionAnalytics.RemoveLevelTrackingDataCombination(level, missionName);
+		int32_t L_17 = ___0_level;
+		String_t* L_18 = ___7_missionName;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_RemoveLevelTrackingDataCombination_mF7E3715C7A89DA04DA7C463AD65186BB36FF939E(L_17, L_18, NULL);
+		// if (isTutorial == true &&
+		//     missionName.Equals(LionAnalytics._globalParams[EventParam.tutorialMission]))
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_19 = ___8_isTutorial;
+		V_1 = L_19;
+		V_2 = (bool)1;
+		bool L_20;
+		L_20 = Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_inline((&V_1), Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var);
+		bool L_21 = V_2;
+		bool L_22;
+		L_22 = Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_inline((&V_1), Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var);
+		if (!((int32_t)(((((int32_t)L_20) == ((int32_t)L_21))? 1 : 0)&(int32_t)L_22)))
+		{
+			goto IL_0097;
+		}
+	}
+	{
+		String_t* L_23 = ___7_missionName;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		RuntimeObject* L_24 = ((LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields*)il2cpp_codegen_static_fields_for(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var))->____globalParams_19;
+		NullCheck(L_24);
+		RuntimeObject* L_25;
+		L_25 = InterfaceFuncInvoker1< RuntimeObject*, String_t* >::Invoke(0 /* TValue System.Collections.Generic.IDictionary`2<System.String,System.Object>::get_Item(TKey) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_24, _stringLiteral1671D86E8DE91CE35C3BB103B871E12D71870E41);
+		NullCheck(L_23);
+		bool L_26;
+		L_26 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, L_23, L_25);
+		if (!L_26)
+		{
+			goto IL_0097;
+		}
+	}
+	{
+		// LionAnalytics.SetTutorial(false, missionName);
+		String_t* L_27 = ___7_missionName;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetTutorial_mBFE5D8438D26C05CFFC2A02ADD27348CBCF76DAE((bool)0, L_27, NULL);
+	}
+
+IL_0097:
+	{
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelCompleteEvent::.ctor(Events.Level.EventArgs.LevelCompleteEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelCompleteEvent__ctor_m8F9FE7BF1A2D32785EEBF388E7A82A1D8BA97B7A (LevelCompleteEvent_t1477CF07D00D2EDB8A5A9266519D9B078505E9F0* __this, LevelCompleteEventArgs_t2D0117E51ED14206337B6644DBE82FC9A6C25356* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1671D86E8DE91CE35C3BB103B871E12D71870E41);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	bool V_2 = false;
+	{
+		// base(args, additionalData, isCalledExplicitly)
+		LevelCompleteEventArgs_t2D0117E51ED14206337B6644DBE82FC9A6C25356* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		LevelEvent__ctor_m2C3A97FF79288DA676310FBC22810C3637B3C94F(__this, L_0, L_1, L_2, NULL);
+		// eventName = LevelEventType.Complete.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_3(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// AddParam(EventParam.reward, args.Reward);
+		LevelCompleteEventArgs_t2D0117E51ED14206337B6644DBE82FC9A6C25356* L_5 = ___0_args;
+		NullCheck(L_5);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_6 = L_5->___Reward_11;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_6, (bool)0, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceLevelStart(args.LevelNum, false));
+		LevelCompleteEventArgs_t2D0117E51ED14206337B6644DBE82FC9A6C25356* L_7 = ___0_args;
+		NullCheck(L_7);
+		int32_t L_8 = ((LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94*)L_7)->___LevelNum_2;
+		int32_t L_9;
+		L_9 = LionAnalyticsApplication_GetTimeSinceLevelStart_m3E62D3892AF53B6FC7192A1B689D6C9DBCEEBFC5(L_8, (bool)0, NULL);
+		int32_t L_10 = L_9;
+		RuntimeObject* L_11 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_11, (bool)0, NULL);
+		// LionAnalytics.RemoveLevelTrackingDataCombination(args.LevelNum, args.MissionName);
+		LevelCompleteEventArgs_t2D0117E51ED14206337B6644DBE82FC9A6C25356* L_12 = ___0_args;
+		NullCheck(L_12);
+		int32_t L_13 = ((LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94*)L_12)->___LevelNum_2;
+		LevelCompleteEventArgs_t2D0117E51ED14206337B6644DBE82FC9A6C25356* L_14 = ___0_args;
+		NullCheck(L_14);
+		String_t* L_15 = ((LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94*)L_14)->___MissionName_8;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_RemoveLevelTrackingDataCombination_mF7E3715C7A89DA04DA7C463AD65186BB36FF939E(L_13, L_15, NULL);
+		// if (args.IsTutorial == true &&
+		//     args.MissionName.Equals(LionAnalytics._globalParams[EventParam.tutorialMission])) //todo: this is bad practice
+		LevelCompleteEventArgs_t2D0117E51ED14206337B6644DBE82FC9A6C25356* L_16 = ___0_args;
+		NullCheck(L_16);
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_17 = ((LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94*)L_16)->___IsTutorial_9;
+		V_1 = L_17;
+		V_2 = (bool)1;
+		bool L_18;
+		L_18 = Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_inline((&V_1), Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var);
+		bool L_19 = V_2;
+		bool L_20;
+		L_20 = Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_inline((&V_1), Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var);
+		if (!((int32_t)(((((int32_t)L_18) == ((int32_t)L_19))? 1 : 0)&(int32_t)L_20)))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		LevelCompleteEventArgs_t2D0117E51ED14206337B6644DBE82FC9A6C25356* L_21 = ___0_args;
+		NullCheck(L_21);
+		String_t* L_22 = ((LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94*)L_21)->___MissionName_8;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		RuntimeObject* L_23 = ((LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields*)il2cpp_codegen_static_fields_for(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var))->____globalParams_19;
+		NullCheck(L_23);
+		RuntimeObject* L_24;
+		L_24 = InterfaceFuncInvoker1< RuntimeObject*, String_t* >::Invoke(0 /* TValue System.Collections.Generic.IDictionary`2<System.String,System.Object>::get_Item(TKey) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_23, _stringLiteral1671D86E8DE91CE35C3BB103B871E12D71870E41);
+		NullCheck(L_22);
+		bool L_25;
+		L_25 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, L_22, L_24);
+		if (!L_25)
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		// LionAnalytics.SetTutorial(false, args.MissionName);
+		LevelCompleteEventArgs_t2D0117E51ED14206337B6644DBE82FC9A6C25356* L_26 = ___0_args;
+		NullCheck(L_26);
+		String_t* L_27 = ((LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94*)L_26)->___MissionName_8;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetTutorial_mBFE5D8438D26C05CFFC2A02ADD27348CBCF76DAE((bool)0, L_27, NULL);
+	}
+
+IL_00a3:
+	{
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LevelCompleteEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LevelCompleteEvent_GetAdjustPayloadEventName_m0F8342D0C73D4AD4299A347EAD3AF4176423A1D9 (LevelCompleteEvent_t1477CF07D00D2EDB8A5A9266519D9B078505E9F0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEB5940BF5425A934C058C5D5C104621EF7EB774B);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.level_complete;
+		return _stringLiteralEB5940BF5425A934C058C5D5C104621EF7EB774B;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.LevelEvent::add_LevelAttemptInfoRequired(System.Func`2<LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs,System.Int32>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelEvent_add_LevelAttemptInfoRequired_m87E0FD1291C652545F4E174E2435AD28DCCF4AE6 (Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* V_0 = NULL;
+	Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* V_1 = NULL;
+	Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* V_2 = NULL;
+	{
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_0 = ((LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_StaticFields*)il2cpp_codegen_static_fields_for(LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var))->___LevelAttemptInfoRequired_11;
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_1 = V_0;
+		V_1 = L_1;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_2 = V_1;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445*)Castclass((RuntimeObject*)L_4, Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445_il2cpp_TypeInfo_var));
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_5 = V_2;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_6 = V_1;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_7;
+		L_7 = InterlockedCompareExchangeImpl<Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445*>((&((LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_StaticFields*)il2cpp_codegen_static_fields_for(LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var))->___LevelAttemptInfoRequired_11), L_5, L_6);
+		V_0 = L_7;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_8 = V_0;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_9 = V_1;
+		if ((!(((RuntimeObject*)(Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445*)L_8) == ((RuntimeObject*)(Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445*)L_9))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelEvent::remove_LevelAttemptInfoRequired(System.Func`2<LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs,System.Int32>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelEvent_remove_LevelAttemptInfoRequired_m0D25F62288A667094B87DEE11902DE64F0FA4B4D (Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* V_0 = NULL;
+	Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* V_1 = NULL;
+	Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* V_2 = NULL;
+	{
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_0 = ((LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_StaticFields*)il2cpp_codegen_static_fields_for(LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var))->___LevelAttemptInfoRequired_11;
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_1 = V_0;
+		V_1 = L_1;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_2 = V_1;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445*)Castclass((RuntimeObject*)L_4, Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445_il2cpp_TypeInfo_var));
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_5 = V_2;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_6 = V_1;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_7;
+		L_7 = InterlockedCompareExchangeImpl<Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445*>((&((LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_StaticFields*)il2cpp_codegen_static_fields_for(LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var))->___LevelAttemptInfoRequired_11), L_5, L_6);
+		V_0 = L_7;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_8 = V_0;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_9 = V_1;
+		if ((!(((RuntimeObject*)(Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445*)L_8) == ((RuntimeObject*)(Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445*)L_9))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelEvent::.ctor(System.Int32,System.Nullable`1<System.Int32>,System.Boolean,System.Nullable`1<System.Int32>,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelEvent__ctor_mF316C2575EA31CC21AF2CF7060369C3ABA0342CE (LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA* __this, int32_t ___0_level, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___1_attemptNum, bool ___2_incrementCounter, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___3_score, String_t* ___4_levelCollection1, String_t* ___5_levelCollection2, String_t* ___6_missionType, String_t* ___7_missionName, RuntimeObject* ___8_additionalData, bool ___9_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral45BF2FF718D14446E4FA055DB5A6B2344B8C7693);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6DE5A3ACE04D7E373C4AA3EABD29D32D728DE5E7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral800A43C54AA43351D63B2BFCABCBBC885EADBF9B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809);
+		s_Il2CppMethodInitialized = true;
+	}
+	LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* V_0 = NULL;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* G_B3_0 = NULL;
+	Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* G_B2_0 = NULL;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 G_B4_0;
+	memset((&G_B4_0), 0, sizeof(G_B4_0));
+	{
+		// bool isCalledExplicitly) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___8_additionalData;
+		bool L_1 = ___9_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// if (!attemptNum.HasValue)
+		bool L_2;
+		L_2 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&___1_attemptNum), Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		// var levelAttemptEventArgs = new LevelAttemptEventArgs(incrementCounter, level, levelCollection1,
+		//     levelCollection2, missionType, missionName);
+		bool L_3 = ___2_incrementCounter;
+		int32_t L_4 = ___0_level;
+		String_t* L_5 = ___4_levelCollection1;
+		String_t* L_6 = ___5_levelCollection2;
+		String_t* L_7 = ___6_missionType;
+		String_t* L_8 = ___7_missionName;
+		LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* L_9 = (LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0*)il2cpp_codegen_object_new(LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		LevelAttemptEventArgs__ctor_mF88FCFF343C5B788ED1C53AD503513AF578E7F17(L_9, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
+		V_0 = L_9;
+		// attemptNum = LevelAttemptInfoRequired?.Invoke(levelAttemptEventArgs);
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_10 = ((LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_StaticFields*)il2cpp_codegen_static_fields_for(LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var))->___LevelAttemptInfoRequired_11;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_11 = L_10;
+		G_B2_0 = L_11;
+		if (L_11)
+		{
+			G_B3_0 = L_11;
+			goto IL_0037;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_1), sizeof(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28));
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_12 = V_1;
+		G_B4_0 = L_12;
+		goto IL_0042;
+	}
+
+IL_0037:
+	{
+		LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* L_13 = V_0;
+		NullCheck(G_B3_0);
+		int32_t L_14;
+		L_14 = Func_2_Invoke_m4981F3B4B1D38D3CED7E434A3223DC893E0639B5_inline(G_B3_0, L_13, NULL);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_15;
+		memset((&L_15), 0, sizeof(L_15));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_15), L_14, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		G_B4_0 = L_15;
+	}
+
+IL_0042:
+	{
+		___1_attemptNum = G_B4_0;
+	}
+
+IL_0044:
+	{
+		// eventType = EventType.Level;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, 3, NULL);
+		// AddParam(EventParam.levelNum, level.ToString());
+		String_t* L_16;
+		L_16 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___0_level), NULL);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_16, (bool)0, NULL);
+		// AddParam(EventParam.levelAttempt, attemptNum);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_17 = ___1_attemptNum;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_18 = L_17;
+		RuntimeObject* L_19 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_18);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral800A43C54AA43351D63B2BFCABCBBC885EADBF9B, L_19, (bool)0, NULL);
+		// LionAnalytics.SetPlayerScore(score);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_20 = ___3_score;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetPlayerScore_m9F4AD82AAE100147EC67C91DAAA7562E62F2D260(L_20, NULL);
+		// AddParam(EventParam.levelCollection1, levelCollection1);
+		String_t* L_21 = ___4_levelCollection1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral6DE5A3ACE04D7E373C4AA3EABD29D32D728DE5E7, L_21, (bool)0, NULL);
+		// AddParam(EventParam.levelCollection2, levelCollection2);
+		String_t* L_22 = ___5_levelCollection2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral45BF2FF718D14446E4FA055DB5A6B2344B8C7693, L_22, (bool)0, NULL);
+		// AddParam(EventParam.missionType, missionType);
+		String_t* L_23 = ___6_missionType;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809, L_23, (bool)0, NULL);
+		// AddParam(EventParam.missionName, missionName);
+		String_t* L_24 = ___7_missionName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1, L_24, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelEvent::.ctor(Events.Level.EventArgs.LevelEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelEvent__ctor_m2C3A97FF79288DA676310FBC22810C3637B3C94F (LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA* __this, LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral45BF2FF718D14446E4FA055DB5A6B2344B8C7693);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6DE5A3ACE04D7E373C4AA3EABD29D32D728DE5E7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral800A43C54AA43351D63B2BFCABCBBC885EADBF9B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809);
+		s_Il2CppMethodInitialized = true;
+	}
+	LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* V_0 = NULL;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* G_B3_0 = NULL;
+	LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* G_B3_1 = NULL;
+	Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* G_B2_0 = NULL;
+	LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* G_B2_1 = NULL;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 G_B4_0;
+	memset((&G_B4_0), 0, sizeof(G_B4_0));
+	LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* G_B4_1 = NULL;
+	{
+		// bool isCalledExplicitly) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// if (!args.AttemptNum.HasValue)
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_2 = ___0_args;
+		NullCheck(L_2);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28* L_3 = (&L_2->___AttemptNum_3);
+		bool L_4;
+		L_4 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline(L_3, Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var);
+		if (L_4)
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		// var levelAttemptEventArgs = new LevelAttemptEventArgs(args.IncrementCounter, args.LevelNum, args.LevelCollection1,
+		//     args.LevelCollection2, args.MissionType, args.MissionName);
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_5 = ___0_args;
+		NullCheck(L_5);
+		bool L_6 = L_5->___IncrementCounter_10;
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_7 = ___0_args;
+		NullCheck(L_7);
+		int32_t L_8 = L_7->___LevelNum_2;
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_9 = ___0_args;
+		NullCheck(L_9);
+		String_t* L_10 = L_9->___LevelCollection1_5;
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_11 = ___0_args;
+		NullCheck(L_11);
+		String_t* L_12 = L_11->___LevelCollection2_6;
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_13 = ___0_args;
+		NullCheck(L_13);
+		String_t* L_14 = L_13->___MissionType_7;
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_15 = ___0_args;
+		NullCheck(L_15);
+		String_t* L_16 = L_15->___MissionName_8;
+		LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* L_17 = (LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0*)il2cpp_codegen_object_new(LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0_il2cpp_TypeInfo_var);
+		NullCheck(L_17);
+		LevelAttemptEventArgs__ctor_mF88FCFF343C5B788ED1C53AD503513AF578E7F17(L_17, L_6, L_8, L_10, L_12, L_14, L_16, NULL);
+		V_0 = L_17;
+		// args.AttemptNum = LevelAttemptInfoRequired?.Invoke(levelAttemptEventArgs);
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_18 = ___0_args;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_19 = ((LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_StaticFields*)il2cpp_codegen_static_fields_for(LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var))->___LevelAttemptInfoRequired_11;
+		Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445* L_20 = L_19;
+		G_B2_0 = L_20;
+		G_B2_1 = L_18;
+		if (L_20)
+		{
+			G_B3_0 = L_20;
+			G_B3_1 = L_18;
+			goto IL_0054;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_1), sizeof(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28));
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_21 = V_1;
+		G_B4_0 = L_21;
+		G_B4_1 = G_B2_1;
+		goto IL_005f;
+	}
+
+IL_0054:
+	{
+		LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* L_22 = V_0;
+		NullCheck(G_B3_0);
+		int32_t L_23;
+		L_23 = Func_2_Invoke_m4981F3B4B1D38D3CED7E434A3223DC893E0639B5_inline(G_B3_0, L_22, NULL);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_24;
+		memset((&L_24), 0, sizeof(L_24));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_24), L_23, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		G_B4_0 = L_24;
+		G_B4_1 = G_B3_1;
+	}
+
+IL_005f:
+	{
+		NullCheck(G_B4_1);
+		G_B4_1->___AttemptNum_3 = G_B4_0;
+	}
+
+IL_0064:
+	{
+		// eventType = EventType.Level;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, 3, NULL);
+		// AddParam(EventParam.levelNum, args.LevelNum.ToString());
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_25 = ___0_args;
+		NullCheck(L_25);
+		int32_t* L_26 = (&L_25->___LevelNum_2);
+		String_t* L_27;
+		L_27 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_26, NULL);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_27, (bool)0, NULL);
+		// AddParam(EventParam.levelAttempt, args.AttemptNum);
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_28 = ___0_args;
+		NullCheck(L_28);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_29 = L_28->___AttemptNum_3;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_30 = L_29;
+		RuntimeObject* L_31 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_30);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral800A43C54AA43351D63B2BFCABCBBC885EADBF9B, L_31, (bool)0, NULL);
+		// LionAnalytics.SetPlayerScore(args.Score);
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_32 = ___0_args;
+		NullCheck(L_32);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_33 = L_32->___Score_4;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetPlayerScore_m9F4AD82AAE100147EC67C91DAAA7562E62F2D260(L_33, NULL);
+		// AddParam(EventParam.levelCollection1, args.LevelCollection1);
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_34 = ___0_args;
+		NullCheck(L_34);
+		String_t* L_35 = L_34->___LevelCollection1_5;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral6DE5A3ACE04D7E373C4AA3EABD29D32D728DE5E7, L_35, (bool)0, NULL);
+		// AddParam(EventParam.levelCollection2, args.LevelCollection2);
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_36 = ___0_args;
+		NullCheck(L_36);
+		String_t* L_37 = L_36->___LevelCollection2_6;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral45BF2FF718D14446E4FA055DB5A6B2344B8C7693, L_37, (bool)0, NULL);
+		// AddParam(EventParam.missionType, args.MissionType);
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_38 = ___0_args;
+		NullCheck(L_38);
+		String_t* L_39 = L_38->___MissionType_7;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809, L_39, (bool)0, NULL);
+		// AddParam(EventParam.missionName, args.MissionName);
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_40 = ___0_args;
+		NullCheck(L_40);
+		String_t* L_41 = L_40->___MissionName_8;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1, L_41, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Boolean LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::get_IncrementCounter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LevelAttemptEventArgs_get_IncrementCounter_m2B39247674197C869114A66D0188C1FB273D84AC (LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public bool IncrementCounter { get; }
+		bool L_0 = __this->___U3CIncrementCounterU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Int32 LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::get_Level()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LevelAttemptEventArgs_get_Level_mB30E183A3D984AF77603EF93AA1EDC60D45FE7FA (LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int Level { get; }
+		int32_t L_0 = __this->___U3CLevelU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::get_LevelCollection1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LevelAttemptEventArgs_get_LevelCollection1_m90B07BF8C0BD3E89CDDC37CEDC4F7F6AF669A825 (LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string LevelCollection1 { get; }
+		String_t* L_0 = __this->___U3CLevelCollection1U3Ek__BackingField_3;
+		return L_0;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::get_LevelCollection2()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LevelAttemptEventArgs_get_LevelCollection2_mC1B708469505C7B76815C1A691B90617346DFC67 (LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string LevelCollection2 { get; }
+		String_t* L_0 = __this->___U3CLevelCollection2U3Ek__BackingField_4;
+		return L_0;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::get_MissionName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LevelAttemptEventArgs_get_MissionName_m456A8741B058E5403E5A1073EDF403895C02A7C2 (LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string MissionName { get; }
+		String_t* L_0 = __this->___U3CMissionNameU3Ek__BackingField_5;
+		return L_0;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::get_MissionType()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LevelAttemptEventArgs_get_MissionType_m70191ED4A6A58067EC61B8E4443CBC0A82D5BFBF (LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string MissionType { get; }
+		String_t* L_0 = __this->___U3CMissionTypeU3Ek__BackingField_6;
+		return L_0;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelEvent/LevelAttemptEventArgs::.ctor(System.Boolean,System.Int32,System.String,System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelAttemptEventArgs__ctor_mF88FCFF343C5B788ED1C53AD503513AF578E7F17 (LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* __this, bool ___0_incrementCounter, int32_t ___1_level, String_t* ___2_levelCollection1, String_t* ___3_levelCollection2, String_t* ___4_missionName, String_t* ___5_missionType, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* G_B2_0 = NULL;
+	LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* G_B2_1 = NULL;
+	String_t* G_B1_0 = NULL;
+	LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* G_B1_1 = NULL;
+	String_t* G_B4_0 = NULL;
+	LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* G_B4_1 = NULL;
+	String_t* G_B3_0 = NULL;
+	LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0* G_B3_1 = NULL;
+	{
+		// public LevelAttemptEventArgs(bool incrementCounter, int level, string levelCollection1,
+		//     string levelCollection2, string missionName, string missionType)
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		// IncrementCounter = incrementCounter;
+		bool L_0 = ___0_incrementCounter;
+		__this->___U3CIncrementCounterU3Ek__BackingField_1 = L_0;
+		// Level = level;
+		int32_t L_1 = ___1_level;
+		__this->___U3CLevelU3Ek__BackingField_2 = L_1;
+		// LevelCollection1 = levelCollection1 ?? string.Empty;
+		String_t* L_2 = ___2_levelCollection1;
+		String_t* L_3 = L_2;
+		G_B1_0 = L_3;
+		G_B1_1 = __this;
+		if (L_3)
+		{
+			G_B2_0 = L_3;
+			G_B2_1 = __this;
+			goto IL_001f;
+		}
+	}
+	{
+		String_t* L_4 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		G_B2_0 = L_4;
+		G_B2_1 = G_B1_1;
+	}
+
+IL_001f:
+	{
+		NullCheck(G_B2_1);
+		G_B2_1->___U3CLevelCollection1U3Ek__BackingField_3 = G_B2_0;
+		Il2CppCodeGenWriteBarrier((void**)(&G_B2_1->___U3CLevelCollection1U3Ek__BackingField_3), (void*)G_B2_0);
+		// LevelCollection2 = levelCollection2 ?? string.Empty;
+		String_t* L_5 = ___3_levelCollection2;
+		String_t* L_6 = L_5;
+		G_B3_0 = L_6;
+		G_B3_1 = __this;
+		if (L_6)
+		{
+			G_B4_0 = L_6;
+			G_B4_1 = __this;
+			goto IL_0030;
+		}
+	}
+	{
+		String_t* L_7 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		G_B4_0 = L_7;
+		G_B4_1 = G_B3_1;
+	}
+
+IL_0030:
+	{
+		NullCheck(G_B4_1);
+		G_B4_1->___U3CLevelCollection2U3Ek__BackingField_4 = G_B4_0;
+		Il2CppCodeGenWriteBarrier((void**)(&G_B4_1->___U3CLevelCollection2U3Ek__BackingField_4), (void*)G_B4_0);
+		// MissionName = missionName;
+		String_t* L_8 = ___4_missionName;
+		__this->___U3CMissionNameU3Ek__BackingField_5 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CMissionNameU3Ek__BackingField_5), (void*)L_8);
+		// MissionType = missionType;
+		String_t* L_9 = ___5_missionType;
+		__this->___U3CMissionTypeU3Ek__BackingField_6 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CMissionTypeU3Ek__BackingField_6), (void*)L_9);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.LevelFailEvent::.ctor(System.Int32,System.Nullable`1<System.Int32>,System.Nullable`1<System.Int32>,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelFailEvent__ctor_m953C20EEB3EAD8B3509756B945672C1192A9834F (LevelFailEvent_tCA4C0CA75BA150B0231C8EBC11387B0F588A1BDA* __this, int32_t ___0_level, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___1_attemptNum, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_score, String_t* ___3_levelCollection1, String_t* ___4_levelCollection2, String_t* ___5_missionType, String_t* ___6_missionName, RuntimeObject* ___7_additionalData, bool ___8_isCalledExplicitly, String_t* ___9_failReason, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFB6240E9D3745CE34CBFF18B8598413C559D391D);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// base(level, attemptNum, incrementCounter: false, score,
+		//     levelCollection1, levelCollection2, missionType, missionName, additionalData, isCalledExplicitly)
+		int32_t L_0 = ___0_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___1_attemptNum;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_2 = ___2_score;
+		String_t* L_3 = ___3_levelCollection1;
+		String_t* L_4 = ___4_levelCollection2;
+		String_t* L_5 = ___5_missionType;
+		String_t* L_6 = ___6_missionName;
+		RuntimeObject* L_7 = ___7_additionalData;
+		bool L_8 = ___8_isCalledExplicitly;
+		LevelEvent__ctor_mF316C2575EA31CC21AF2CF7060369C3ABA0342CE(__this, L_0, L_1, (bool)0, L_2, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
+		// eventName = LevelEventType.Fail.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_9(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_10;
+		L_10 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_9), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_10, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceLevelStart(level, false));
+		int32_t L_11 = ___0_level;
+		int32_t L_12;
+		L_12 = LionAnalyticsApplication_GetTimeSinceLevelStart_m3E62D3892AF53B6FC7192A1B689D6C9DBCEEBFC5(L_11, (bool)0, NULL);
+		int32_t L_13 = L_12;
+		RuntimeObject* L_14 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_13);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_14, (bool)0, NULL);
+		// AddParam(EventParam.failReason, failReason);
+		String_t* L_15 = ___9_failReason;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralFB6240E9D3745CE34CBFF18B8598413C559D391D, L_15, (bool)0, NULL);
+		// LionAnalytics.RemoveLevelTrackingDataCombination(level, missionName);
+		int32_t L_16 = ___0_level;
+		String_t* L_17 = ___6_missionName;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_RemoveLevelTrackingDataCombination_mF7E3715C7A89DA04DA7C463AD65186BB36FF939E(L_16, L_17, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelFailEvent::.ctor(Events.Level.EventArgs.LevelFailEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelFailEvent__ctor_mFA0ED709466B39D3B87CA5A9AA4815696F5E7218 (LevelFailEvent_tCA4C0CA75BA150B0231C8EBC11387B0F588A1BDA* __this, LevelFailEventArgs_t0D7FAD938FE3F0D0FAE00E1716619A3072F62539* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFB6240E9D3745CE34CBFF18B8598413C559D391D);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// base(args, additionalData, isCalledExplicitly)
+		LevelFailEventArgs_t0D7FAD938FE3F0D0FAE00E1716619A3072F62539* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		LevelEvent__ctor_m2C3A97FF79288DA676310FBC22810C3637B3C94F(__this, L_0, L_1, L_2, NULL);
+		// eventName = LevelEventType.Fail.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_3(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceLevelStart(args.LevelNum, false));
+		LevelFailEventArgs_t0D7FAD938FE3F0D0FAE00E1716619A3072F62539* L_5 = ___0_args;
+		NullCheck(L_5);
+		int32_t L_6 = ((LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94*)L_5)->___LevelNum_2;
+		int32_t L_7;
+		L_7 = LionAnalyticsApplication_GetTimeSinceLevelStart_m3E62D3892AF53B6FC7192A1B689D6C9DBCEEBFC5(L_6, (bool)0, NULL);
+		int32_t L_8 = L_7;
+		RuntimeObject* L_9 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_9, (bool)0, NULL);
+		// AddParam(EventParam.failReason, args.FailReason);
+		LevelFailEventArgs_t0D7FAD938FE3F0D0FAE00E1716619A3072F62539* L_10 = ___0_args;
+		NullCheck(L_10);
+		String_t* L_11 = L_10->___FailReason_11;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralFB6240E9D3745CE34CBFF18B8598413C559D391D, L_11, (bool)0, NULL);
+		// LionAnalytics.RemoveLevelTrackingDataCombination(args.LevelNum, args.MissionName);
+		LevelFailEventArgs_t0D7FAD938FE3F0D0FAE00E1716619A3072F62539* L_12 = ___0_args;
+		NullCheck(L_12);
+		int32_t L_13 = ((LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94*)L_12)->___LevelNum_2;
+		LevelFailEventArgs_t0D7FAD938FE3F0D0FAE00E1716619A3072F62539* L_14 = ___0_args;
+		NullCheck(L_14);
+		String_t* L_15 = ((LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94*)L_14)->___MissionName_8;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_RemoveLevelTrackingDataCombination_mF7E3715C7A89DA04DA7C463AD65186BB36FF939E(L_13, L_15, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LevelFailEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LevelFailEvent_GetAdjustPayloadEventName_mF46C5A72BC021EC3A5658F43C866B46E19C85D91 (LevelFailEvent_tCA4C0CA75BA150B0231C8EBC11387B0F588A1BDA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6E005336CF197D8FE945DCDAF5F189F9B55FBF8E);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.level_fail;
+		return _stringLiteral6E005336CF197D8FE945DCDAF5F189F9B55FBF8E;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.LevelRestartEvent::.ctor(System.Int32,System.Int32,System.Nullable`1<System.Int32>,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelRestartEvent__ctor_m35E50DD043EC935DF0B874170985710B650706E2 (LevelRestartEvent_t405FD4057FDF12943FCDBB106783FFC02B702749* __this, int32_t ___0_level, int32_t ___1_attemptNum, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_score, String_t* ___3_levelCollection1, String_t* ___4_levelCollection2, String_t* ___5_missionType, String_t* ___6_missionName, RuntimeObject* ___7_additionalData, bool ___8_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// base(level, attemptNum, incrementCounter: false, score,
+		// levelCollection1, levelCollection2, missionType, missionName, additionalData, isCalledExplicitly)
+		int32_t L_0 = ___0_level;
+		int32_t L_1 = ___1_attemptNum;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_2;
+		memset((&L_2), 0, sizeof(L_2));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_2), L_1, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_3 = ___2_score;
+		String_t* L_4 = ___3_levelCollection1;
+		String_t* L_5 = ___4_levelCollection2;
+		String_t* L_6 = ___5_missionType;
+		String_t* L_7 = ___6_missionName;
+		RuntimeObject* L_8 = ___7_additionalData;
+		bool L_9 = ___8_isCalledExplicitly;
+		LevelEvent__ctor_mF316C2575EA31CC21AF2CF7060369C3ABA0342CE(__this, L_0, L_2, (bool)0, L_3, L_4, L_5, L_6, L_7, L_8, L_9, NULL);
+		// eventName = LevelEventType.Restart.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_10(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_11;
+		L_11 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_10), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_11, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelRestartEvent::.ctor(Events.Level.EventArgs.LevelEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelRestartEvent__ctor_m634C36DD00DFAC1C945834E1F9FDBB32FC935711 (LevelRestartEvent_t405FD4057FDF12943FCDBB106783FFC02B702749* __this, LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// base(args, additionalData, isCalledExplicitly)
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		LevelEvent__ctor_m2C3A97FF79288DA676310FBC22810C3637B3C94F(__this, L_0, L_1, L_2, NULL);
+		// eventName = LevelEventType.Restart.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_3(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LevelRestartEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LevelRestartEvent_GetAdjustPayloadEventName_mA9B6320636487689C9AAD2F62894FDB306FE8B94 (LevelRestartEvent_t405FD4057FDF12943FCDBB106783FFC02B702749* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5C45296559F7CA6929E01412FE0C8BFD8304B3F4);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.level_restart;
+		return _stringLiteral5C45296559F7CA6929E01412FE0C8BFD8304B3F4;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.LevelStartEvent::.ctor(System.Int32,System.Nullable`1<System.Int32>,System.Nullable`1<System.Int32>,System.String,System.String,System.String,System.String,System.Nullable`1<System.Boolean>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelStartEvent__ctor_m6C84B75529F51B3D2FB8965B709ABF5CFF10E16E (LevelStartEvent_t92B8C43DCDABF2215B0A9BAFA2CCF1632C7F9A1A* __this, int32_t ___0_level, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___1_attemptNum, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_score, String_t* ___3_levelCollection1, String_t* ___4_levelCollection2, String_t* ___5_missionType, String_t* ___6_missionName, Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___7_isTutorial, RuntimeObject* ___8_additionalData, bool ___9_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	bool V_2 = false;
+	{
+		// : base(level, attemptNum, incrementCounter: true, score, levelCollection1, levelCollection2, missionType,
+		//     missionName, additionalData, isCalledExplicitly)
+		int32_t L_0 = ___0_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___1_attemptNum;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_2 = ___2_score;
+		String_t* L_3 = ___3_levelCollection1;
+		String_t* L_4 = ___4_levelCollection2;
+		String_t* L_5 = ___5_missionType;
+		String_t* L_6 = ___6_missionName;
+		RuntimeObject* L_7 = ___8_additionalData;
+		bool L_8 = ___9_isCalledExplicitly;
+		LevelEvent__ctor_mF316C2575EA31CC21AF2CF7060369C3ABA0342CE(__this, L_0, L_1, (bool)1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
+		// eventName = LevelEventType.Start.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_9(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_10;
+		L_10 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_9), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_10, NULL);
+		// LionAnalytics.AddLevelTrackingDataCombination(level, missionName);
+		int32_t L_11 = ___0_level;
+		String_t* L_12 = ___6_missionName;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_AddLevelTrackingDataCombination_m311FA1DA21F620D9CA3ED8ED0F32A20EAA9C8FAB(L_11, L_12, NULL);
+		// if (isTutorial == true)
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_13 = ___7_isTutorial;
+		V_1 = L_13;
+		V_2 = (bool)1;
+		bool L_14;
+		L_14 = Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_inline((&V_1), Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var);
+		bool L_15 = V_2;
+		bool L_16;
+		L_16 = Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_inline((&V_1), Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var);
+		if (!((int32_t)(((((int32_t)L_14) == ((int32_t)L_15))? 1 : 0)&(int32_t)L_16)))
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		// LionAnalytics.SetTutorial(true, missionName);
+		String_t* L_17 = ___6_missionName;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetTutorial_mBFE5D8438D26C05CFFC2A02ADD27348CBCF76DAE((bool)1, L_17, NULL);
+	}
+
+IL_0054:
+	{
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelStartEvent::.ctor(Events.Level.EventArgs.LevelEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelStartEvent__ctor_m537C8E7A081DCCDEFECC46F3BA48B86FF589422A (LevelStartEvent_t92B8C43DCDABF2215B0A9BAFA2CCF1632C7F9A1A* __this, LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	bool V_2 = false;
+	{
+		// : base(args, additionalData, isCalledExplicitly)
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		LevelEvent__ctor_m2C3A97FF79288DA676310FBC22810C3637B3C94F(__this, L_0, L_1, L_2, NULL);
+		// args.IncrementCounter = true;
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_3 = ___0_args;
+		NullCheck(L_3);
+		L_3->___IncrementCounter_10 = (bool)1;
+		// eventName = LevelEventType.Start.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_4(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_5;
+		L_5 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_4), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_5, NULL);
+		// LionAnalytics.AddLevelTrackingDataCombination(args.LevelNum, args.MissionName);
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_6 = ___0_args;
+		NullCheck(L_6);
+		int32_t L_7 = L_6->___LevelNum_2;
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___MissionName_8;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_AddLevelTrackingDataCombination_m311FA1DA21F620D9CA3ED8ED0F32A20EAA9C8FAB(L_7, L_9, NULL);
+		// if (args.IsTutorial == true)
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_10 = ___0_args;
+		NullCheck(L_10);
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_11 = L_10->___IsTutorial_9;
+		V_1 = L_11;
+		V_2 = (bool)1;
+		bool L_12;
+		L_12 = Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_inline((&V_1), Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_RuntimeMethod_var);
+		bool L_13 = V_2;
+		bool L_14;
+		L_14 = Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_inline((&V_1), Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var);
+		if (!((int32_t)(((((int32_t)L_12) == ((int32_t)L_13))? 1 : 0)&(int32_t)L_14)))
+		{
+			goto IL_005f;
+		}
+	}
+	{
+		// LionAnalytics.SetTutorial(true, args.MissionName);
+		LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94* L_15 = ___0_args;
+		NullCheck(L_15);
+		String_t* L_16 = L_15->___MissionName_8;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetTutorial_mBFE5D8438D26C05CFFC2A02ADD27348CBCF76DAE((bool)1, L_16, NULL);
+	}
+
+IL_005f:
+	{
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LevelStartEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LevelStartEvent_GetAdjustPayloadEventName_mABF8894C4B49B370161F5541BB85BD290BCECA81 (LevelStartEvent_t92B8C43DCDABF2215B0A9BAFA2CCF1632C7F9A1A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAF5814DABD4CD7584AC407E0D72A87CAB2B45A7D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.level_start;
+		return _stringLiteralAF5814DABD4CD7584AC407E0D72A87CAB2B45A7D;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.LevelStepEvent::.ctor(System.Int32,System.Nullable`1<System.Int32>,System.Int32,System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean,LionStudios.Suite.Analytics.Reward)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelStepEvent__ctor_m55A52570DF87255D430E475098C429C4332CDEA4 (LevelStepEvent_t47638460AD38FDAFC6D0D9AC41D51DC089EA65CA* __this, int32_t ___0_level, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___1_attemptNum, int32_t ___2_score, String_t* ___3_levelCollection1, String_t* ___4_levelCollection2, String_t* ___5_missionType, String_t* ___6_missionName, RuntimeObject* ___7_additionalData, bool ___8_isCalledExplicitly, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___9_reward, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// base(level, attemptNum, incrementCounter: false, score, levelCollection1, levelCollection2, missionType,
+		//     missionName, additionalData, isCalledExplicitly)
+		int32_t L_0 = ___0_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___1_attemptNum;
+		int32_t L_2 = ___2_score;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_3;
+		memset((&L_3), 0, sizeof(L_3));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_3), L_2, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		String_t* L_4 = ___3_levelCollection1;
+		String_t* L_5 = ___4_levelCollection2;
+		String_t* L_6 = ___5_missionType;
+		String_t* L_7 = ___6_missionName;
+		RuntimeObject* L_8 = ___7_additionalData;
+		bool L_9 = ___8_isCalledExplicitly;
+		LevelEvent__ctor_mF316C2575EA31CC21AF2CF7060369C3ABA0342CE(__this, L_0, L_1, (bool)0, L_3, L_4, L_5, L_6, L_7, L_8, L_9, NULL);
+		// eventName = LevelEventType.Step.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_10(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_11;
+		L_11 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_10), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_11, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceLevelStart(level, true));
+		int32_t L_12 = ___0_level;
+		int32_t L_13;
+		L_13 = LionAnalyticsApplication_GetTimeSinceLevelStart_m3E62D3892AF53B6FC7192A1B689D6C9DBCEEBFC5(L_12, (bool)1, NULL);
+		int32_t L_14 = L_13;
+		RuntimeObject* L_15 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_14);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_15, (bool)0, NULL);
+		// AddParam(EventParam.reward, reward);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_16 = ___9_reward;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_16, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelStepEvent::.ctor(Events.Level.EventArgs.LevelStepEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelStepEvent__ctor_m4FFFE5D99B4D01D05646C4B6DFB4569F7558B1DE (LevelStepEvent_t47638460AD38FDAFC6D0D9AC41D51DC089EA65CA* __this, LevelStepEventArgs_t9EFFAD397A46654E661B250CB24DE64B8D54E7E2* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// base(args, additionalData, isCalledExplicitly)
+		LevelStepEventArgs_t9EFFAD397A46654E661B250CB24DE64B8D54E7E2* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		LevelEvent__ctor_m2C3A97FF79288DA676310FBC22810C3637B3C94F(__this, L_0, L_1, L_2, NULL);
+		// eventName = LevelEventType.Step.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_3(LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceLevelStart(args.LevelNum, true));
+		LevelStepEventArgs_t9EFFAD397A46654E661B250CB24DE64B8D54E7E2* L_5 = ___0_args;
+		NullCheck(L_5);
+		int32_t L_6 = ((LevelEventArgs_tD3F4D980872533449F812320DED4F24E756B8E94*)L_5)->___LevelNum_2;
+		int32_t L_7;
+		L_7 = LionAnalyticsApplication_GetTimeSinceLevelStart_m3E62D3892AF53B6FC7192A1B689D6C9DBCEEBFC5(L_6, (bool)1, NULL);
+		int32_t L_8 = L_7;
+		RuntimeObject* L_9 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_9, (bool)0, NULL);
+		// AddParam(EventParam.reward, args.Reward);
+		LevelStepEventArgs_t9EFFAD397A46654E661B250CB24DE64B8D54E7E2* L_10 = ___0_args;
+		NullCheck(L_10);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_11 = L_10->___Reward_12;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_11, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LevelStepEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LevelStepEvent_GetAdjustPayloadEventName_m046839800705F3B919C0B2830000C2738654D4DF (LevelStepEvent_t47638460AD38FDAFC6D0D9AC41D51DC089EA65CA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral47E8F1BB17382BB01CE272E0E5F0A6DD55331C97);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.level_step;
+		return _stringLiteral47E8F1BB17382BB01CE272E0E5F0A6DD55331C97;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.LevelUpEvent::.ctor(System.String,LionStudios.Suite.Analytics.Reward,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelUpEvent__ctor_m0633C80F2608551952753C67D0EBB6D92BFDC341 (LevelUpEvent_t6B004C2F5565FCAC65E53453BED0CEBFEF83E9A3* __this, String_t* ___0_levelUpName, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___1_reward, RuntimeObject* ___2_additionalData, bool ___3_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral875FEDCB0C2F99400D7F33363907C81EF6B85260);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___2_additionalData;
+		bool L_1 = ___3_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.Achievement.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.levelUpName, levelUpName);
+		String_t* L_4 = ___0_levelUpName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral875FEDCB0C2F99400D7F33363907C81EF6B85260, L_4, (bool)0, NULL);
+		// AddParam(EventParam.reward, reward);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_5 = ___1_reward;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LevelUpEvent::.ctor(Events.Level.EventArgs.LevelUpEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelUpEvent__ctor_m728C696F47CADA5CFC40205CCC4D503F8C7BACD3 (LevelUpEvent_t6B004C2F5565FCAC65E53453BED0CEBFEF83E9A3* __this, LevelUpEventArgs_t145E17C6FC0867308B87C6D7D966045613743654* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral875FEDCB0C2F99400D7F33363907C81EF6B85260);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.InGame;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)15), NULL);
+		// eventName = InGameEventType.Achievement.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_2(InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.levelUpName, args.LevelUpName);
+		LevelUpEventArgs_t145E17C6FC0867308B87C6D7D966045613743654* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___LevelUpName_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral875FEDCB0C2F99400D7F33363907C81EF6B85260, L_5, (bool)0, NULL);
+		// AddParam(EventParam.reward, args.Reward);
+		LevelUpEventArgs_t145E17C6FC0867308B87C6D7D966045613743654* L_6 = ___0_args;
+		NullCheck(L_6);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_7 = L_6->___Reward_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_7, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LevelUpEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LevelUpEvent_GetAdjustPayloadEventName_mAE1988902CC0CC2EE7FDEC9513DA90868C5F7D9F (LevelUpEvent_t6B004C2F5565FCAC65E53453BED0CEBFEF83E9A3* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral468D1A36553E0D806ED6D3DF59E9459B1B5B7671);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.level_up;
+		return _stringLiteral468D1A36553E0D806ED6D3DF59E9459B1B5B7671;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// LionStudios.Suite.Analytics.EventType LionStudios.Suite.Analytics.Events.LionGameEventBase::get_eventType()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LionGameEventBase_get_eventType_m4253A88156B483B86164CC6C16D133882943EA77 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	{
+		// public EventType eventType { get; set; }
+		int32_t L_0 = __this->___U3CeventTypeU3Ek__BackingField_5;
+		return L_0;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::set_eventType(LionStudios.Suite.Analytics.EventType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public EventType eventType { get; set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CeventTypeU3Ek__BackingField_5 = L_0;
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LionGameEventBase::get_eventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LionGameEventBase_get_eventName_mCA6DE75C049C2382BBEC2A74C762A5489AD83CC1 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string eventName { get; set; }
+		String_t* L_0 = __this->___U3CeventNameU3Ek__BackingField_6;
+		return L_0;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::set_eventName(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public string eventName { get; set; }
+		String_t* L_0 = ___0_value;
+		__this->___U3CeventNameU3Ek__BackingField_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CeventNameU3Ek__BackingField_6), (void*)L_0);
+		return;
+	}
+}
+// System.Boolean LionStudios.Suite.Analytics.Events.LionGameEventBase::get_IsCalledExplicitly()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LionGameEventBase_get_IsCalledExplicitly_mDBB6C61CEC0CDF073BB678A91C0A14A4B4EFA6B7 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	{
+		// public bool IsCalledExplicitly { get; }
+		bool L_0 = __this->___U3CIsCalledExplicitlyU3Ek__BackingField_7;
+		return L_0;
+	}
+}
+// System.Collections.Generic.IDictionary`2<System.String,System.Object> LionStudios.Suite.Analytics.Events.LionGameEventBase::get_eventParams()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	{
+		// public IDictionary<string, object> eventParams { get; protected set; } = new Dictionary<string, object>();
+		RuntimeObject* L_0 = __this->___U3CeventParamsU3Ek__BackingField_8;
+		return L_0;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::set_eventParams(System.Collections.Generic.IDictionary`2<System.String,System.Object>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_set_eventParams_m83AD224DAC5DC75F3DACF0CA084294AF24A1FCD8 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public IDictionary<string, object> eventParams { get; protected set; } = new Dictionary<string, object>();
+		RuntimeObject* L_0 = ___0_value;
+		__this->___U3CeventParamsU3Ek__BackingField_8 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CeventParamsU3Ek__BackingField_8), (void*)L_0);
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::add_DispatcherRequired(System.Func`1<Utility.Dispatcher.Dispatcher>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_add_DispatcherRequired_m930068C56626B5777802B6EEA995C882556E1FDA (Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* V_0 = NULL;
+	Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* V_1 = NULL;
+	Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* V_2 = NULL;
+	{
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_0 = ((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___DispatcherRequired_9;
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_1 = V_0;
+		V_1 = L_1;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_2 = V_1;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4*)Castclass((RuntimeObject*)L_4, Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4_il2cpp_TypeInfo_var));
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_5 = V_2;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_6 = V_1;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_7;
+		L_7 = InterlockedCompareExchangeImpl<Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4*>((&((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___DispatcherRequired_9), L_5, L_6);
+		V_0 = L_7;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_8 = V_0;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_9 = V_1;
+		if ((!(((RuntimeObject*)(Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4*)L_8) == ((RuntimeObject*)(Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4*)L_9))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::remove_DispatcherRequired(System.Func`1<Utility.Dispatcher.Dispatcher>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_remove_DispatcherRequired_m57E85DCE658ACCDD95132CFB68FD1C8D0B757F99 (Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* V_0 = NULL;
+	Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* V_1 = NULL;
+	Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* V_2 = NULL;
+	{
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_0 = ((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___DispatcherRequired_9;
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_1 = V_0;
+		V_1 = L_1;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_2 = V_1;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4*)Castclass((RuntimeObject*)L_4, Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4_il2cpp_TypeInfo_var));
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_5 = V_2;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_6 = V_1;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_7;
+		L_7 = InterlockedCompareExchangeImpl<Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4*>((&((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___DispatcherRequired_9), L_5, L_6);
+		V_0 = L_7;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_8 = V_0;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_9 = V_1;
+		if ((!(((RuntimeObject*)(Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4*)L_8) == ((RuntimeObject*)(Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4*)L_9))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::add_OnLogEvent(LionStudios.Suite.Analytics.LionAnalytics/LionEventDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_add_OnLogEvent_m90B42F85422323CE4578DDC1B1F1E70412CAB129 (LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* V_0 = NULL;
+	LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* V_1 = NULL;
+	LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* V_2 = NULL;
+	{
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_0 = ((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___OnLogEvent_10;
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_1 = V_0;
+		V_1 = L_1;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_2 = V_1;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE*)CastclassSealed((RuntimeObject*)L_4, LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE_il2cpp_TypeInfo_var));
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_5 = V_2;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_6 = V_1;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_7;
+		L_7 = InterlockedCompareExchangeImpl<LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE*>((&((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___OnLogEvent_10), L_5, L_6);
+		V_0 = L_7;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_8 = V_0;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_9 = V_1;
+		if ((!(((RuntimeObject*)(LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE*)L_8) == ((RuntimeObject*)(LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE*)L_9))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::remove_OnLogEvent(LionStudios.Suite.Analytics.LionAnalytics/LionEventDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_remove_OnLogEvent_m9A11912455C630B83EBBAFC838556031F67DE87F (LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* V_0 = NULL;
+	LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* V_1 = NULL;
+	LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* V_2 = NULL;
+	{
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_0 = ((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___OnLogEvent_10;
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_1 = V_0;
+		V_1 = L_1;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_2 = V_1;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE*)CastclassSealed((RuntimeObject*)L_4, LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE_il2cpp_TypeInfo_var));
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_5 = V_2;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_6 = V_1;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_7;
+		L_7 = InterlockedCompareExchangeImpl<LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE*>((&((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___OnLogEvent_10), L_5, L_6);
+		V_0 = L_7;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_8 = V_0;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_9 = V_1;
+		if ((!(((RuntimeObject*)(LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE*)L_8) == ((RuntimeObject*)(LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE*)L_9))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::.ctor(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, RuntimeObject* ___0_additionalData, bool ___1_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private readonly StringEnumConverter _strEnumConverter = new StringEnumConverter();
+		StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184* L_0 = (StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184*)il2cpp_codegen_object_new(StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		StringEnumConverter__ctor_m36B6009E735666675AEB30CD83B385291E98CC73(L_0, NULL);
+		__this->____strEnumConverter_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____strEnumConverter_4), (void*)L_0);
+		// public IDictionary<string, object> eventParams { get; protected set; } = new Dictionary<string, object>();
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_1 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_1, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
+		__this->___U3CeventParamsU3Ek__BackingField_8 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CeventParamsU3Ek__BackingField_8), (void*)L_1);
+		// public LionGameEventBase(IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// IsCalledExplicitly = isCalledExplicitly;
+		bool L_2 = ___1_isCalledExplicitly;
+		__this->___U3CIsCalledExplicitlyU3Ek__BackingField_7 = L_2;
+		// SetAdditionalData(additionalData);
+		RuntimeObject* L_3 = ___0_additionalData;
+		LionGameEventBase_SetAdditionalData_m68AAFEA4839CF35DDFD880D53D433D1D03265EC1(__this, L_3, NULL);
+		// _dispatcher = DispatcherRequired.Invoke();
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_4 = ((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___DispatcherRequired_9;
+		NullCheck(L_4);
+		Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6* L_5;
+		L_5 = Func_1_Invoke_m9DC6C81DAC8318EA07CB6657B19122E8DF324D80_inline(L_4, NULL);
+		__this->____dispatcher_2 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____dispatcher_2), (void*)L_5);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LionGameEventBase::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LionGameEventBase_GetAdjustPayloadEventName_mA6927614B1CD918D6C2932ECA9EA7CF5BEE79FCC (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral99A9CAAB454612DB5E8D8EBE22477B5395A2545B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA66F0B14E046945D8C8AC14EA7F583EF031A7367);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBF5122DC4AFD41D43C493F0AD2C0129FEF7748A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		// string res = GetType().Name.Replace("Event", "").ToSnakeCase();
+		Type_t* L_0;
+		L_0 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
+		NullCheck(L_0);
+		String_t* L_1;
+		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_0);
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_1, _stringLiteral99A9CAAB454612DB5E8D8EBE22477B5395A2545B, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
+		String_t* L_3;
+		L_3 = StringUtil_ToSnakeCase_m28D7EA07F3F32706A39615590CEC2F755A441490(L_2, NULL);
+		V_0 = L_3;
+		// Debug.LogWarning($"no hardcoded value found for event: {eventName}, using procedurally generated name {res}");
+		String_t* L_4;
+		L_4 = LionGameEventBase_get_eventName_mCA6DE75C049C2382BBEC2A74C762A5489AD83CC1_inline(__this, NULL);
+		String_t* L_5 = V_0;
+		String_t* L_6;
+		L_6 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteralBF5122DC4AFD41D43C493F0AD2C0129FEF7748A6, L_4, _stringLiteralA66F0B14E046945D8C8AC14EA7F583EF031A7367, L_5, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_6, NULL);
+		// return res;
+		String_t* L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::SetAdditionalData(System.Collections.Generic.IDictionary`2<System.String,System.Object>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_SetAdditionalData_m68AAFEA4839CF35DDFD880D53D433D1D03265EC1 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, RuntimeObject* ___0_additionalData, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mAB55B0CC0AB348115A0344B47741E1B59C5B6A2C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m4DBC8A7F39D0DC0AFAB9A760DF7A0763723B4872_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mC3C14AD5B61C2B549861AC3E91B0330173A0D120_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_t1F32F711C91AEBCFA4770668CA067447D2A4F665_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_t913F242211877D391217C9D75152235266FDAF10_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionCore_t64FA1D4AACD36060EA085AA7376F96EDA486ACF4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mE3DE0E9822F3B8020540EB71BCD6852180A92D7D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m0395314B4DB8328D1E82FE871C37CB62204E5601_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mFB6D973C2F0DE12CC2CFB6DCFF650427C590CBC5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1E59D4BB4C3292F60AB0064894B1C2CF7C81CA3E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA5FD35728A36B9EC9515929B05D64409AE8F1727);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB2A1FEE7D68E23AD52765D17E0714B789BDEC7E4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEFF2F2EC520BBD2C5279D038C129016916386B8F);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tE87B1415DBD31A595989F8D52B16C0BE42BFEFC6 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	RuntimeObject* V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	{
+		// _additionalData = new Dictionary<string, object>();
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_0 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_0, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
+		__this->____additionalData_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____additionalData_3), (void*)L_0);
+		// _additionalData.Add(LionCoreVerKey, LionCore.Version);
+		RuntimeObject* L_1 = __this->____additionalData_3;
+		il2cpp_codegen_runtime_class_init_inline(LionCore_t64FA1D4AACD36060EA085AA7376F96EDA486ACF4_il2cpp_TypeInfo_var);
+		String_t* L_2;
+		L_2 = LionCore_get_Version_m9627C9321AEC597829625B506964463815F54008(NULL);
+		NullCheck(L_1);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(5 /* System.Void System.Collections.Generic.IDictionary`2<System.String,System.Object>::Add(TKey,TValue) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_1, _stringLiteralA5FD35728A36B9EC9515929B05D64409AE8F1727, L_2);
+		// _additionalData.Add(LionAnalyticsVerKey, LionAnalytics.Version);
+		RuntimeObject* L_3 = __this->____additionalData_3;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		String_t* L_4;
+		L_4 = LionAnalytics_get_Version_m030148ECB46BA900AE51DA2B97D2D2654226AD53(NULL);
+		NullCheck(L_3);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(5 /* System.Void System.Collections.Generic.IDictionary`2<System.String,System.Object>::Add(TKey,TValue) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_3, _stringLiteralEFF2F2EC520BBD2C5279D038C129016916386B8F, L_4);
+		// var additionalDataDictionaries = new List<IDictionary<string, object>>
+		// {
+		//     LionAnalytics._devProvidedAdditionalData,
+		//     additionalData
+		// };
+		List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395* L_5 = (List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395*)il2cpp_codegen_object_new(List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		List_1__ctor_mFB6D973C2F0DE12CC2CFB6DCFF650427C590CBC5(L_5, List_1__ctor_mFB6D973C2F0DE12CC2CFB6DCFF650427C590CBC5_RuntimeMethod_var);
+		List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395* L_6 = L_5;
+		RuntimeObject* L_7 = ((LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields*)il2cpp_codegen_static_fields_for(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var))->____devProvidedAdditionalData_20;
+		NullCheck(L_6);
+		List_1_Add_mE3DE0E9822F3B8020540EB71BCD6852180A92D7D_inline(L_6, L_7, List_1_Add_mE3DE0E9822F3B8020540EB71BCD6852180A92D7D_RuntimeMethod_var);
+		List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395* L_8 = L_6;
+		RuntimeObject* L_9 = ___0_additionalData;
+		NullCheck(L_8);
+		List_1_Add_mE3DE0E9822F3B8020540EB71BCD6852180A92D7D_inline(L_8, L_9, List_1_Add_mE3DE0E9822F3B8020540EB71BCD6852180A92D7D_RuntimeMethod_var);
+		// foreach (var dictionary in additionalDataDictionaries)
+		NullCheck(L_8);
+		Enumerator_tE87B1415DBD31A595989F8D52B16C0BE42BFEFC6 L_10;
+		L_10 = List_1_GetEnumerator_m0395314B4DB8328D1E82FE871C37CB62204E5601(L_8, List_1_GetEnumerator_m0395314B4DB8328D1E82FE871C37CB62204E5601_RuntimeMethod_var);
+		V_0 = L_10;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_00db:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_mAB55B0CC0AB348115A0344B47741E1B59C5B6A2C((&V_0), Enumerator_Dispose_mAB55B0CC0AB348115A0344B47741E1B59C5B6A2C_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_00cd_1;
+			}
+
+IL_0054_1:
+			{
+				// foreach (var dictionary in additionalDataDictionaries)
+				RuntimeObject* L_11;
+				L_11 = Enumerator_get_Current_mC3C14AD5B61C2B549861AC3E91B0330173A0D120_inline((&V_0), Enumerator_get_Current_mC3C14AD5B61C2B549861AC3E91B0330173A0D120_RuntimeMethod_var);
+				V_1 = L_11;
+				// if (dictionary != null)
+				RuntimeObject* L_12 = V_1;
+				if (!L_12)
+				{
+					goto IL_00cd_1;
+				}
+			}
+			{
+				// foreach (KeyValuePair<string, object> kvp in dictionary)
+				RuntimeObject* L_13 = V_1;
+				NullCheck(L_13);
+				RuntimeObject* L_14;
+				L_14 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::GetEnumerator() */, IEnumerable_1_t1F32F711C91AEBCFA4770668CA067447D2A4F665_il2cpp_TypeInfo_var, L_13);
+				V_2 = L_14;
+			}
+			{
+				auto __finallyBlock = il2cpp::utils::Finally([&]
+				{
+
+FINALLY_00c3_1:
+					{// begin finally (depth: 2)
+						{
+							RuntimeObject* L_15 = V_2;
+							if (!L_15)
+							{
+								goto IL_00cc_1;
+							}
+						}
+						{
+							RuntimeObject* L_16 = V_2;
+							NullCheck(L_16);
+							InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_16);
+						}
+
+IL_00cc_1:
+						{
+							return;
+						}
+					}// end finally (depth: 2)
+				});
+				try
+				{// begin try (depth: 2)
+					{
+						goto IL_00b9_2;
+					}
+
+IL_0068_2:
+					{
+						// foreach (KeyValuePair<string, object> kvp in dictionary)
+						RuntimeObject* L_17 = V_2;
+						NullCheck(L_17);
+						KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 L_18;
+						L_18 = InterfaceFuncInvoker0< KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::get_Current() */, IEnumerator_1_t913F242211877D391217C9D75152235266FDAF10_il2cpp_TypeInfo_var, L_17);
+						V_3 = L_18;
+						// if (_additionalData.ContainsKey(kvp.Key))
+						RuntimeObject* L_19 = __this->____additionalData_3;
+						String_t* L_20;
+						L_20 = KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_inline((&V_3), KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
+						NullCheck(L_19);
+						bool L_21;
+						L_21 = InterfaceFuncInvoker1< bool, String_t* >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<System.String,System.Object>::ContainsKey(TKey) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_19, L_20);
+						if (!L_21)
+						{
+							goto IL_00a0_2;
+						}
+					}
+					{
+						// Debug.LogWarning($"Duplicate key in additional data: {kvp.Key}. First value will be used.");
+						String_t* L_22;
+						L_22 = KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_inline((&V_3), KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
+						String_t* L_23;
+						L_23 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralB2A1FEE7D68E23AD52765D17E0714B789BDEC7E4, L_22, _stringLiteral1E59D4BB4C3292F60AB0064894B1C2CF7C81CA3E, NULL);
+						il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+						Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_23, NULL);
+						goto IL_00b9_2;
+					}
+
+IL_00a0_2:
+					{
+						// _additionalData.Add(kvp.Key, kvp.Value);
+						RuntimeObject* L_24 = __this->____additionalData_3;
+						String_t* L_25;
+						L_25 = KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_inline((&V_3), KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
+						RuntimeObject* L_26;
+						L_26 = KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_inline((&V_3), KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
+						NullCheck(L_24);
+						InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(5 /* System.Void System.Collections.Generic.IDictionary`2<System.String,System.Object>::Add(TKey,TValue) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_24, L_25, L_26);
+					}
+
+IL_00b9_2:
+					{
+						// foreach (KeyValuePair<string, object> kvp in dictionary)
+						RuntimeObject* L_27 = V_2;
+						NullCheck(L_27);
+						bool L_28;
+						L_28 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_27);
+						if (L_28)
+						{
+							goto IL_0068_2;
+						}
+					}
+					{
+						goto IL_00cd_1;
+					}
+				}// end try (depth: 2)
+				catch(Il2CppExceptionWrapper& e)
+				{
+					__finallyBlock.StoreException(e.ex);
+				}
+			}
+
+IL_00cd_1:
+			{
+				// foreach (var dictionary in additionalDataDictionaries)
+				bool L_29;
+				L_29 = Enumerator_MoveNext_m4DBC8A7F39D0DC0AFAB9A760DF7A0763723B4872((&V_0), Enumerator_MoveNext_m4DBC8A7F39D0DC0AFAB9A760DF7A0763723B4872_RuntimeMethod_var);
+				if (L_29)
+				{
+					goto IL_0054_1;
+				}
+			}
+			{
+				goto IL_00e9;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_00e9:
+	{
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::Fire()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_Fire_m284305B44663312E723C1814C6177AEA7AECAF81 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDataContainer_2_GetData_m7C87CDEBB717283B553A0A774294EEDADFC9D5DA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDataContainer_2_GetData_mA67FC6B5F172B738F05B5D9F3F88290E1C0967D2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICollection_1_t7FAFDB77857BA6F1396E710E9F065944B2183233_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_t1F32F711C91AEBCFA4770668CA067447D2A4F665_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_t913F242211877D391217C9D75152235266FDAF10_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral49358F1C1A159D63E0A1540F41203FDED62ABF43);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4D3AB98A53D05A27B5E0409A8837B83C853CC83F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral737770B3F764157DABB4CE6100DDE5F3A7607BE8);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8C2D3D4D35B67C1B740496D7A1A97A732F01C4FB);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCCE359C6B0ABE9D58CB588667F9A93BA52A1C294);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE14FF21A9FC32D558F62881D9B2FF02DEB6BA164);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE4A489E89816C517A3BF78A907EBCEBD70679683);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFD9EF1E00F6BC0384B0AB8EF109230935B177387);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFFF7CC8327ABE8A6FB36C4010B59A46F2ADA910D);
+		s_Il2CppMethodInitialized = true;
+	}
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	RuntimeObject* V_1 = NULL;
+	KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	String_t* G_B4_0 = NULL;
+	LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* G_B4_1 = NULL;
+	String_t* G_B3_0 = NULL;
+	LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* G_B3_1 = NULL;
+	String_t* G_B5_0 = NULL;
+	String_t* G_B5_1 = NULL;
+	LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* G_B5_2 = NULL;
+	{
+		// if (!LionAnalytics.IsEventEligibleToFire(this))
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = LionAnalytics_IsEventEligibleToFire_m5556BBBF1FA16F81CA9003B8E696A17BCD40BAAD(__this, NULL);
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0009:
+	{
+		// AddParam(EventParam.timeInApp, LionAnalyticsApplication.GetTotalTimeInApp());
+		int32_t L_1;
+		L_1 = LionAnalyticsApplication_GetTotalTimeInApp_m299C5BD8B55EF4ED6458F5BFF475ED1AFEEFA173(NULL);
+		int32_t L_2 = L_1;
+		RuntimeObject* L_3 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_2);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralFD9EF1E00F6BC0384B0AB8EF109230935B177387, L_3, (bool)0, NULL);
+		// AddParam(EventParam.timestamp, DateTime.UtcNow.ToString(CultureInfo.InvariantCulture));
+		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_4;
+		L_4 = DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA(NULL);
+		V_0 = L_4;
+		il2cpp_codegen_runtime_class_init_inline(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
+		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_5;
+		L_5 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
+		String_t* L_6;
+		L_6 = DateTime_ToString_m66457C11C42C07E2F437A9D899E6E3FB9FD77B50((&V_0), L_5, NULL);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralCCE359C6B0ABE9D58CB588667F9A93BA52A1C294, L_6, (bool)0, NULL);
+		// AddParam(EventParam.sequenceId, LionAnalytics._coreData.SequenceId);
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		CoreData_t0131416461D5064142B0042F97FDC5408B8B2BDD* L_7 = ((LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields*)il2cpp_codegen_static_fields_for(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var))->____coreData_1;
+		NullCheck(L_7);
+		int32_t L_8;
+		L_8 = CoreData_get_SequenceId_mC73283D3695DC2FC25CA3E76D1BEEADA4C89BB38_inline(L_7, NULL);
+		int32_t L_9 = L_8;
+		RuntimeObject* L_10 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_9);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral49358F1C1A159D63E0A1540F41203FDED62ABF43, L_10, (bool)0, NULL);
+		// AddParam(EventParam.user_global_mission, LionAnalytics._missionTrackingInfo.GetData());
+		GlobalDataContainer_2_t248016E27216826B0BACAE44865C608566B718F2* L_11 = ((LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields*)il2cpp_codegen_static_fields_for(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var))->____missionTrackingInfo_7;
+		NullCheck(L_11);
+		RuntimeObject* L_12;
+		L_12 = GlobalDataContainer_2_GetData_m7C87CDEBB717283B553A0A774294EEDADFC9D5DA(L_11, GlobalDataContainer_2_GetData_m7C87CDEBB717283B553A0A774294EEDADFC9D5DA_RuntimeMethod_var);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE4A489E89816C517A3BF78A907EBCEBD70679683, L_12, (bool)0, NULL);
+		// AddParam(EventParam.user_global_level, LionAnalytics._levelTrackingInfo.GetData());
+		GlobalDataContainer_2_t3B95E2138826C88A59FE35A910E9B63228560BC9* L_13 = ((LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields*)il2cpp_codegen_static_fields_for(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var))->____levelTrackingInfo_8;
+		NullCheck(L_13);
+		RuntimeObject* L_14;
+		L_14 = GlobalDataContainer_2_GetData_mA67FC6B5F172B738F05B5D9F3F88290E1C0967D2(L_13, GlobalDataContainer_2_GetData_mA67FC6B5F172B738F05B5D9F3F88290E1C0967D2_RuntimeMethod_var);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral4D3AB98A53D05A27B5E0409A8837B83C853CC83F, L_14, (bool)0, NULL);
+		// AddParam(EventParam.abCohort, LionAnalytics._abCohort.Count != 0 ? JsonConvert.SerializeObject(LionAnalytics._abCohort) : null);
+		RuntimeObject* L_15 = ((LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields*)il2cpp_codegen_static_fields_for(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var))->____abCohort_21;
+		NullCheck(L_15);
+		int32_t L_16;
+		L_16 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::get_Count() */, ICollection_1_t7FAFDB77857BA6F1396E710E9F065944B2183233_il2cpp_TypeInfo_var, L_15);
+		G_B3_0 = _stringLiteral8C2D3D4D35B67C1B740496D7A1A97A732F01C4FB;
+		G_B3_1 = __this;
+		if (L_16)
+		{
+			G_B4_0 = _stringLiteral8C2D3D4D35B67C1B740496D7A1A97A732F01C4FB;
+			G_B4_1 = __this;
+			goto IL_0099;
+		}
+	}
+	{
+		G_B5_0 = ((String_t*)(NULL));
+		G_B5_1 = G_B3_0;
+		G_B5_2 = G_B3_1;
+		goto IL_00a3;
+	}
+
+IL_0099:
+	{
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		RuntimeObject* L_17 = ((LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields*)il2cpp_codegen_static_fields_for(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var))->____abCohort_21;
+		il2cpp_codegen_runtime_class_init_inline(JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var);
+		String_t* L_18;
+		L_18 = JsonConvert_SerializeObject_m277670BD344964CB2A61751E5A3D62DB5B1321C7(L_17, NULL);
+		G_B5_0 = L_18;
+		G_B5_1 = G_B4_0;
+		G_B5_2 = G_B4_1;
+	}
+
+IL_00a3:
+	{
+		NullCheck(G_B5_2);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(G_B5_2, G_B5_1, G_B5_0, (bool)0, NULL);
+		// foreach (var kvp in LionAnalytics._globalParams)
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		RuntimeObject* L_19 = ((LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields*)il2cpp_codegen_static_fields_for(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var))->____globalParams_19;
+		NullCheck(L_19);
+		RuntimeObject* L_20;
+		L_20 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::GetEnumerator() */, IEnumerable_1_t1F32F711C91AEBCFA4770668CA067447D2A4F665_il2cpp_TypeInfo_var, L_19);
+		V_1 = L_20;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_00dc:
+			{// begin finally (depth: 1)
+				{
+					RuntimeObject* L_21 = V_1;
+					if (!L_21)
+					{
+						goto IL_00e5;
+					}
+				}
+				{
+					RuntimeObject* L_22 = V_1;
+					NullCheck(L_22);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_22);
+				}
+
+IL_00e5:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_00d2_1;
+			}
+
+IL_00b6_1:
+			{
+				// foreach (var kvp in LionAnalytics._globalParams)
+				RuntimeObject* L_23 = V_1;
+				NullCheck(L_23);
+				KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 L_24;
+				L_24 = InterfaceFuncInvoker0< KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::get_Current() */, IEnumerator_1_t913F242211877D391217C9D75152235266FDAF10_il2cpp_TypeInfo_var, L_23);
+				V_2 = L_24;
+				// AddParam(kvp.Key, kvp.Value);
+				String_t* L_25;
+				L_25 = KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_inline((&V_2), KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
+				RuntimeObject* L_26;
+				L_26 = KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_inline((&V_2), KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
+				LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, L_25, L_26, (bool)0, NULL);
+			}
+
+IL_00d2_1:
+			{
+				// foreach (var kvp in LionAnalytics._globalParams)
+				RuntimeObject* L_27 = V_1;
+				NullCheck(L_27);
+				bool L_28;
+				L_28 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_27);
+				if (L_28)
+				{
+					goto IL_00b6_1;
+				}
+			}
+			{
+				goto IL_00e6;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_00e6:
+	{
+		// AddParam(EventParam.additionalData, _additionalData);
+		RuntimeObject* L_29 = __this->____additionalData_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral737770B3F764157DABB4CE6100DDE5F3A7607BE8, L_29, (bool)0, NULL);
+		// Debug.Log($"Couldn't fire event: {GetAdjustPayloadEventName()} because Adjust SDK is not installed");
+		String_t* L_30;
+		L_30 = VirtualFuncInvoker0< String_t* >::Invoke(4 /* System.String LionStudios.Suite.Analytics.Events.LionGameEventBase::GetAdjustPayloadEventName() */, __this);
+		String_t* L_31;
+		L_31 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralE14FF21A9FC32D558F62881D9B2FF02DEB6BA164, L_30, _stringLiteralFFF7CC8327ABE8A6FB36C4010B59A46F2ADA910D, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_31, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::OnEventFired()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_OnEventFired_m2470700F13B12B1599EF64543071E6095AE4E3A7 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventType_t429FA7DC7D1CB8045AC7F315B8307A2FFE8F87AF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICollection_1_t7FAFDB77857BA6F1396E710E9F065944B2183233_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCB963BA6B3467DA024278D64836E9A8D373DD1A5);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	int32_t V_1 = 0;
+	LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* G_B2_0 = NULL;
+	LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* G_B1_0 = NULL;
+	String_t* G_B6_0 = NULL;
+	{
+		// _dispatcher.Send(EventId.AnalyticsEventFired, System.EventArgs.Empty);
+		Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6* L_0 = __this->____dispatcher_2;
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* L_1 = ((EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields*)il2cpp_codegen_static_fields_for(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var))->___Empty_0;
+		NullCheck(L_0);
+		Dispatcher_Send_m7539678380705FE506AA7FD021D97ABB2549FA6D(L_0, 0, L_1, NULL);
+		// OnLogEvent?.Invoke(this);
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_2 = ((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___OnLogEvent_10;
+		LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* L_3 = L_2;
+		G_B1_0 = L_3;
+		if (L_3)
+		{
+			G_B2_0 = L_3;
+			goto IL_001c;
+		}
+	}
+	{
+		goto IL_0022;
+	}
+
+IL_001c:
+	{
+		NullCheck(G_B2_0);
+		LionEventDelegate_Invoke_mB6CE171A3386230E04ABE2FA05528985690647E8_inline(G_B2_0, __this, NULL);
+	}
+
+IL_0022:
+	{
+		// var eventNameToLog = string.IsNullOrEmpty(eventName) ? eventType.ToString() : eventName;
+		String_t* L_4;
+		L_4 = LionGameEventBase_get_eventName_mCA6DE75C049C2382BBEC2A74C762A5489AD83CC1_inline(__this, NULL);
+		bool L_5;
+		L_5 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_4, NULL);
+		if (L_5)
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		String_t* L_6;
+		L_6 = LionGameEventBase_get_eventName_mCA6DE75C049C2382BBEC2A74C762A5489AD83CC1_inline(__this, NULL);
+		G_B6_0 = L_6;
+		goto IL_004b;
+	}
+
+IL_0037:
+	{
+		int32_t L_7;
+		L_7 = LionGameEventBase_get_eventType_m4253A88156B483B86164CC6C16D133882943EA77_inline(__this, NULL);
+		V_1 = L_7;
+		Il2CppFakeBox<int32_t> L_8(EventType_t429FA7DC7D1CB8045AC7F315B8307A2FFE8F87AF_il2cpp_TypeInfo_var, (&V_1));
+		String_t* L_9;
+		L_9 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_8), NULL);
+		G_B6_0 = L_9;
+	}
+
+IL_004b:
+	{
+		V_0 = G_B6_0;
+		// var eventData = $"Sending '{eventNameToLog}' event - EventParams ({eventParams.Count})\n{this}";
+		String_t* L_10 = V_0;
+		RuntimeObject* L_11;
+		L_11 = LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline(__this, NULL);
+		NullCheck(L_11);
+		int32_t L_12;
+		L_12 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::get_Count() */, ICollection_1_t7FAFDB77857BA6F1396E710E9F065944B2183233_il2cpp_TypeInfo_var, L_11);
+		int32_t L_13 = L_12;
+		RuntimeObject* L_14 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_13);
+		String_t* L_15;
+		L_15 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(_stringLiteralCB963BA6B3467DA024278D64836E9A8D373DD1A5, L_10, L_14, __this, NULL);
+		// Debug.Log(eventData);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_15, NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean LionStudios.Suite.Analytics.Events.LionGameEventBase::HasParam(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LionGameEventBase_HasParam_mB187891A73A0E82E65822B23A1D513A15DD66389 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, String_t* ___0_p, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return eventParams.ContainsKey(p);
+		RuntimeObject* L_0;
+		L_0 = LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline(__this, NULL);
+		String_t* L_1 = ___0_p;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = InterfaceFuncInvoker1< bool, String_t* >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<System.String,System.Object>::ContainsKey(TKey) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_0, L_1);
+		return L_2;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::AddParam(System.String,System.Object,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, String_t* ___0_name, RuntimeObject* ___1_value, bool ___2_overrideExisting, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (value == null)
+		RuntimeObject* L_0 = ___1_value;
+		if (L_0)
+		{
+			goto IL_0004;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0004:
+	{
+		// if (eventParams.ContainsKey(name))
+		RuntimeObject* L_1;
+		L_1 = LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline(__this, NULL);
+		String_t* L_2 = ___0_name;
+		NullCheck(L_1);
+		bool L_3;
+		L_3 = InterfaceFuncInvoker1< bool, String_t* >::Invoke(4 /* System.Boolean System.Collections.Generic.IDictionary`2<System.String,System.Object>::ContainsKey(TKey) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_1, L_2);
+		if (!L_3)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		// if (overrideExisting)
+		bool L_4 = ___2_overrideExisting;
+		if (!L_4)
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		// eventParams[name] = value;
+		RuntimeObject* L_5;
+		L_5 = LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline(__this, NULL);
+		String_t* L_6 = ___0_name;
+		RuntimeObject* L_7 = ___1_value;
+		NullCheck(L_5);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(1 /* System.Void System.Collections.Generic.IDictionary`2<System.String,System.Object>::set_Item(TKey,TValue) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_5, L_6, L_7);
+		return;
+	}
+
+IL_0023:
+	{
+		// eventParams.Add(name, value);
+		RuntimeObject* L_8;
+		L_8 = LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline(__this, NULL);
+		String_t* L_9 = ___0_name;
+		RuntimeObject* L_10 = ___1_value;
+		NullCheck(L_8);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(5 /* System.Void System.Collections.Generic.IDictionary`2<System.String,System.Object>::Add(TKey,TValue) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_8, L_9, L_10);
+	}
+
+IL_0030:
+	{
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::AddParams(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_AddParams_m786D193DFB87C9F28520C91DF5E7045622DBEAFD (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, RuntimeObject* ___0_parameters, bool ___1_overrideExisting, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_t1F32F711C91AEBCFA4770668CA067447D2A4F665_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_t913F242211877D391217C9D75152235266FDAF10_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// if (parameters == null)
+		RuntimeObject* L_0 = ___0_parameters;
+		if (L_0)
+		{
+			goto IL_0004;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0004:
+	{
+		// foreach (var kvp in parameters)
+		RuntimeObject* L_1 = ___0_parameters;
+		NullCheck(L_1);
+		RuntimeObject* L_2;
+		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::GetEnumerator() */, IEnumerable_1_t1F32F711C91AEBCFA4770668CA067447D2A4F665_il2cpp_TypeInfo_var, L_1);
+		V_0 = L_2;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0033:
+			{// begin finally (depth: 1)
+				{
+					RuntimeObject* L_3 = V_0;
+					if (!L_3)
+					{
+						goto IL_003c;
+					}
+				}
+				{
+					RuntimeObject* L_4 = V_0;
+					NullCheck(L_4);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_4);
+				}
+
+IL_003c:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0029_1;
+			}
+
+IL_000d_1:
+			{
+				// foreach (var kvp in parameters)
+				RuntimeObject* L_5 = V_0;
+				NullCheck(L_5);
+				KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 L_6;
+				L_6 = InterfaceFuncInvoker0< KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::get_Current() */, IEnumerator_1_t913F242211877D391217C9D75152235266FDAF10_il2cpp_TypeInfo_var, L_5);
+				V_1 = L_6;
+				// AddParam(kvp.Key, kvp.Value, overrideExisting);
+				String_t* L_7;
+				L_7 = KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_inline((&V_1), KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
+				RuntimeObject* L_8;
+				L_8 = KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_inline((&V_1), KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
+				bool L_9 = ___1_overrideExisting;
+				LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, L_7, L_8, L_9, NULL);
+			}
+
+IL_0029_1:
+			{
+				// foreach (var kvp in parameters)
+				RuntimeObject* L_10 = V_0;
+				NullCheck(L_10);
+				bool L_11;
+				L_11 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_10);
+				if (L_11)
+				{
+					goto IL_000d_1;
+				}
+			}
+			{
+				goto IL_003d;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_003d:
+	{
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.LionGameEventBase::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LionGameEventBase_ToString_mF7AD2E673FFF4718EA689C19BD6AF0F8C63CFAFD (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return $"{GetAdjustPayloadEventName()}\n{JsonConvert.SerializeObject(eventParams, Formatting.Indented)}";
+		String_t* L_0;
+		L_0 = VirtualFuncInvoker0< String_t* >::Invoke(4 /* System.String LionStudios.Suite.Analytics.Events.LionGameEventBase::GetAdjustPayloadEventName() */, __this);
+		RuntimeObject* L_1;
+		L_1 = LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var);
+		String_t* L_2;
+		L_2 = JsonConvert_SerializeObject_m2AB5818117B98B4B91A9362D8F222763D390F414(L_1, 1, NULL);
+		String_t* L_3;
+		L_3 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_0, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD, L_2, NULL);
+		return L_3;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase__cctor_mFF89789159B2D8C6443A39C88CA4A2B1C7DD6CC0 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3C_cctorU3Eb__37_0_m6C38E7F52558C21A1092420C2EE82527EB3B27F1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static event Func<Dispatcher> DispatcherRequired = () => null;
+		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_il2cpp_TypeInfo_var);
+		U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B* L_0 = ((U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_il2cpp_TypeInfo_var))->___U3CU3E9_0;
+		Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4* L_1 = (Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4*)il2cpp_codegen_object_new(Func_1_t2873C52C1B290B61A8FB014ACE348FC5DDA63BB4_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Func_1__ctor_m43C4430B5EF5A7551E0CC0437358BD796FE232CD(L_1, L_0, (intptr_t)((void*)U3CU3Ec_U3C_cctorU3Eb__37_0_m6C38E7F52558C21A1092420C2EE82527EB3B27F1_RuntimeMethod_var), NULL);
+		((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___DispatcherRequired_9 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&((LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_StaticFields*)il2cpp_codegen_static_fields_for(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var))->___DispatcherRequired_9), (void*)L_1);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase/<>c::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m8F989B3600916F1873BBF494B3B122AE0D389C9F (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B* L_0 = (U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B*)il2cpp_codegen_object_new(U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__ctor_m7059F1F473396DD9E46AAB86A381FA0495CCB0C5(L_0, NULL);
+		((U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_il2cpp_TypeInfo_var))->___U3CU3E9_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_il2cpp_TypeInfo_var))->___U3CU3E9_0), (void*)L_0);
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m7059F1F473396DD9E46AAB86A381FA0495CCB0C5 (U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// Utility.Dispatcher.Dispatcher LionStudios.Suite.Analytics.Events.LionGameEventBase/<>c::<.cctor>b__37_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6* U3CU3Ec_U3C_cctorU3Eb__37_0_m6C38E7F52558C21A1092420C2EE82527EB3B27F1 (U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B* __this, const RuntimeMethod* method) 
+{
+	{
+		// public static event Func<Dispatcher> DispatcherRequired = () => null;
+		return (Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6*)NULL;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.MachineLearningEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MachineLearningEventArgs__ctor_m3E61681CDC78E25308BBE3F39BC4BB0FD3B5DF51 (MachineLearningEventArgs_t897E0FB81E806CD136FBF38285B8670FE102A161* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.PredictionResultEvent::.ctor(System.String,System.String,System.Object,System.Object,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PredictionResultEvent__ctor_m8426C9D4CA548C301D6CED44AD7142A6D63CF516 (PredictionResultEvent_tA078B8C498600D03798813438B8E88CD2DBA8E99* __this, String_t* ___0_modelName, String_t* ___1_modelVersion, RuntimeObject* ___2_modelInput, RuntimeObject* ___3_modelOutput, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4C58449193C8F05F4999001E64A0509DAFB0C89F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7CB9FD26BFD0E7B5C94645BEA61C366F39E3E946);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD9141234F35784C0D878CFAD97E9A401CDC537CF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDDBE0ABE849E3FF68EF0AC5E9C15ADABBB385BE9);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// object modelOutput, IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___5_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.ML;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, 6, NULL);
+		// AddParam(EventParam.modelName, modelName);
+		String_t* L_2 = ___0_modelName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7CB9FD26BFD0E7B5C94645BEA61C366F39E3E946, L_2, (bool)0, NULL);
+		// eventParams = new Dictionary<string, object>
+		// {
+		//     {"modelName", modelName},
+		//     {"modelVersion", modelVersion},
+		//     {"modelInput", modelInput},
+		//     {"modelOutput", modelOutput}
+		// };
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_3 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_3, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_4 = L_3;
+		String_t* L_5 = ___0_modelName;
+		NullCheck(L_4);
+		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_4, _stringLiteral7CB9FD26BFD0E7B5C94645BEA61C366F39E3E946, L_5, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_6 = L_4;
+		String_t* L_7 = ___1_modelVersion;
+		NullCheck(L_6);
+		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_6, _stringLiteralD9141234F35784C0D878CFAD97E9A401CDC537CF, L_7, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_8 = L_6;
+		RuntimeObject* L_9 = ___2_modelInput;
+		NullCheck(L_8);
+		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_8, _stringLiteral4C58449193C8F05F4999001E64A0509DAFB0C89F, L_9, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_10 = L_8;
+		RuntimeObject* L_11 = ___3_modelOutput;
+		NullCheck(L_10);
+		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_10, _stringLiteralDDBE0ABE849E3FF68EF0AC5E9C15ADABBB385BE9, L_11, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		LionGameEventBase_set_eventParams_m83AD224DAC5DC75F3DACF0CA084294AF24A1FCD8_inline(__this, L_10, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.PredictionResultEvent::.ctor(LionStudios.Suite.Analytics.Events.MachineLearningEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PredictionResultEvent__ctor_mA393957E97D7018FBCE0827A51D00BFC956702EB (PredictionResultEvent_tA078B8C498600D03798813438B8E88CD2DBA8E99* __this, MachineLearningEventArgs_t897E0FB81E806CD136FBF38285B8670FE102A161* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4C58449193C8F05F4999001E64A0509DAFB0C89F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7CB9FD26BFD0E7B5C94645BEA61C366F39E3E946);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD9141234F35784C0D878CFAD97E9A401CDC537CF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDDBE0ABE849E3FF68EF0AC5E9C15ADABBB385BE9);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.ML;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, 6, NULL);
+		// AddParam(EventParam.modelName, args.ModelName);
+		MachineLearningEventArgs_t897E0FB81E806CD136FBF38285B8670FE102A161* L_2 = ___0_args;
+		NullCheck(L_2);
+		String_t* L_3 = L_2->___ModelName_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7CB9FD26BFD0E7B5C94645BEA61C366F39E3E946, L_3, (bool)0, NULL);
+		// eventParams = new Dictionary<string, object>
+		// {
+		//     {"modelName", args.ModelName},
+		//     {"modelVersion", args.ModelVersion},
+		//     {"modelInput", args.ModelInput},
+		//     {"modelOutput", args.ModelOutput}
+		// };
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_4 = (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)il2cpp_codegen_object_new(Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9(L_4, Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var);
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_5 = L_4;
+		MachineLearningEventArgs_t897E0FB81E806CD136FBF38285B8670FE102A161* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___ModelName_1;
+		NullCheck(L_5);
+		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_5, _stringLiteral7CB9FD26BFD0E7B5C94645BEA61C366F39E3E946, L_7, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_8 = L_5;
+		MachineLearningEventArgs_t897E0FB81E806CD136FBF38285B8670FE102A161* L_9 = ___0_args;
+		NullCheck(L_9);
+		String_t* L_10 = L_9->___ModelVersion_2;
+		NullCheck(L_8);
+		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_8, _stringLiteralD9141234F35784C0D878CFAD97E9A401CDC537CF, L_10, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_11 = L_8;
+		MachineLearningEventArgs_t897E0FB81E806CD136FBF38285B8670FE102A161* L_12 = ___0_args;
+		NullCheck(L_12);
+		RuntimeObject* L_13 = L_12->___ModelInput_3;
+		NullCheck(L_11);
+		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_11, _stringLiteral4C58449193C8F05F4999001E64A0509DAFB0C89F, L_13, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_14 = L_11;
+		MachineLearningEventArgs_t897E0FB81E806CD136FBF38285B8670FE102A161* L_15 = ___0_args;
+		NullCheck(L_15);
+		RuntimeObject* L_16 = L_15->___ModelOutput_4;
+		NullCheck(L_14);
+		Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443(L_14, _stringLiteralDDBE0ABE849E3FF68EF0AC5E9C15ADABBB385BE9, L_16, Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var);
+		LionGameEventBase_set_eventParams_m83AD224DAC5DC75F3DACF0CA084294AF24A1FCD8_inline(__this, L_14, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.PredictionResultEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PredictionResultEvent_GetAdjustPayloadEventName_m2DCC7287AC3924346011DA100D043F141C685EFF (PredictionResultEvent_tA078B8C498600D03798813438B8E88CD2DBA8E99* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral75EAF09B87D67E0FEBA609C4C5794CA8524FE155);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.prediction;
+		return _stringLiteral75EAF09B87D67E0FEBA609C4C5794CA8524FE155;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.MissionAbandonedEvent::.ctor(System.Boolean,System.String,System.String,System.String,System.Nullable`1<System.Int32>,System.Int32,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionAbandonedEvent__ctor_mE02634ED2A733CC0B2324ACD2F6837B27DF33F63 (MissionAbandonedEvent_t3821916F1E31FB14546375A96FF02DCF81C5644D* __this, bool ___0_isTutorial, String_t* ___1_missionType, String_t* ___2_missionName, String_t* ___3_missionID, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___4_missionAttempt, int32_t ___5_userScore, RuntimeObject* ___6_additionalData, bool ___7_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral795D9B13BB321AEEEC9768F4D6DD8CEE852A5D23);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(isTutorial, missionType,
+		// missionName, missionID, missionAttempt, incrementCounter: false, additionalData, isCalledExplicitly)
+		bool L_0 = ___0_isTutorial;
+		String_t* L_1 = ___1_missionType;
+		String_t* L_2 = ___2_missionName;
+		String_t* L_3 = ___3_missionID;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_4 = ___4_missionAttempt;
+		RuntimeObject* L_5 = ___6_additionalData;
+		bool L_6 = ___7_isCalledExplicitly;
+		MissionEvent__ctor_m691D959F2963C00A3F420E613AC00464D49B6E11(__this, L_0, L_1, L_2, L_3, L_4, (bool)0, L_5, L_6, NULL);
+		// eventName = MissionEventType.Abandoned.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_7(MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_8;
+		L_8 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_7), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_8, NULL);
+		// LionAnalytics.SetPlayerScore(userScore);
+		int32_t L_9 = ___5_userScore;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10;
+		memset((&L_10), 0, sizeof(L_10));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_10), L_9, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetPlayerScore_m9F4AD82AAE100147EC67C91DAAA7562E62F2D260(L_10, NULL);
+		// AddParam(EventParam.userScore, userScore);
+		int32_t L_11 = ___5_userScore;
+		int32_t L_12 = L_11;
+		RuntimeObject* L_13 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_12);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral795D9B13BB321AEEEC9768F4D6DD8CEE852A5D23, L_13, (bool)0, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceMissionStart(missionID, false));
+		String_t* L_14 = ___3_missionID;
+		int32_t L_15;
+		L_15 = LionAnalyticsApplication_GetTimeSinceMissionStart_mE27E473BCB3294BAE59DDAB04799326D96AED4E9(L_14, (bool)0, NULL);
+		int32_t L_16 = L_15;
+		RuntimeObject* L_17 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_16);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_17, (bool)0, NULL);
+		// LionAnalytics.RemoveMissionTrackingDataCombination(missionID, missionName);
+		String_t* L_18 = ___3_missionID;
+		String_t* L_19 = ___2_missionName;
+		LionAnalytics_RemoveMissionTrackingDataCombination_m3F0C001A62D83A19077156E3911D2D5E8111BF15(L_18, L_19, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.MissionAbandonedEvent::.ctor(Events.Mission.EventArgs.MissionEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionAbandonedEvent__ctor_mB4848CE64BF5A8646584D6A7348FE70A3459E87C (MissionAbandonedEvent_t3821916F1E31FB14546375A96FF02DCF81C5644D* __this, MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral795D9B13BB321AEEEC9768F4D6DD8CEE852A5D23);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(args, additionalData, isCalledExplicitly)
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		MissionEvent__ctor_m09B167AACCCC69D68F13AF95C1A5C4F8AE3C0BC0(__this, L_0, L_1, L_2, NULL);
+		// eventName = MissionEventType.Abandoned.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_3(MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// LionAnalytics.SetPlayerScore(args.UserScore);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_5 = ___0_args;
+		NullCheck(L_5);
+		int32_t L_6 = L_5->___UserScore_6;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7;
+		memset((&L_7), 0, sizeof(L_7));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_7), L_6, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetPlayerScore_m9F4AD82AAE100147EC67C91DAAA7562E62F2D260(L_7, NULL);
+		// AddParam(EventParam.userScore, args.UserScore);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_8 = ___0_args;
+		NullCheck(L_8);
+		int32_t L_9 = L_8->___UserScore_6;
+		int32_t L_10 = L_9;
+		RuntimeObject* L_11 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral795D9B13BB321AEEEC9768F4D6DD8CEE852A5D23, L_11, (bool)0, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceMissionStart(args.MissionID, false));
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___MissionID_4;
+		int32_t L_14;
+		L_14 = LionAnalyticsApplication_GetTimeSinceMissionStart_mE27E473BCB3294BAE59DDAB04799326D96AED4E9(L_13, (bool)0, NULL);
+		int32_t L_15 = L_14;
+		RuntimeObject* L_16 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_15);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_16, (bool)0, NULL);
+		// LionAnalytics.RemoveMissionTrackingDataCombination(args.MissionID, args.MissionName);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_17 = ___0_args;
+		NullCheck(L_17);
+		String_t* L_18 = L_17->___MissionID_4;
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_19 = ___0_args;
+		NullCheck(L_19);
+		String_t* L_20 = L_19->___MissionName_3;
+		LionAnalytics_RemoveMissionTrackingDataCombination_m3F0C001A62D83A19077156E3911D2D5E8111BF15(L_18, L_20, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.MissionAbandonedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MissionAbandonedEvent_GetAdjustPayloadEventName_m199C5FE717057A4667E71EDFFF48B07385F1F3D0 (MissionAbandonedEvent_t3821916F1E31FB14546375A96FF02DCF81C5644D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4F4C10BB8B4A0AA75EAF24C3FEEE5043F6E42B07);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.mission_abandoned;
+		return _stringLiteral4F4C10BB8B4A0AA75EAF24C3FEEE5043F6E42B07;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.MissionCompletedEvent::.ctor(System.Boolean,System.String,System.String,System.String,System.Nullable`1<System.Int32>,System.Int32,LionStudios.Suite.Analytics.Reward,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionCompletedEvent__ctor_m96D81DA2C5B52CCC4833FF7A0CD06361654D8DC2 (MissionCompletedEvent_tE3C88FB7154AD97182D1EAB109D7DA32CBF6D76D* __this, bool ___0_isTutorial, String_t* ___1_missionType, String_t* ___2_missionName, String_t* ___3_missionID, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___4_missionAttempt, int32_t ___5_userScore, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___6_reward, RuntimeObject* ___7_additionalData, bool ___8_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1671D86E8DE91CE35C3BB103B871E12D71870E41);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(isTutorial, missionType,
+		// missionName, missionID, missionAttempt, incrementCounter: false, additionalData, isCalledExplicitly)
+		bool L_0 = ___0_isTutorial;
+		String_t* L_1 = ___1_missionType;
+		String_t* L_2 = ___2_missionName;
+		String_t* L_3 = ___3_missionID;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_4 = ___4_missionAttempt;
+		RuntimeObject* L_5 = ___7_additionalData;
+		bool L_6 = ___8_isCalledExplicitly;
+		MissionEvent__ctor_m691D959F2963C00A3F420E613AC00464D49B6E11(__this, L_0, L_1, L_2, L_3, L_4, (bool)0, L_5, L_6, NULL);
+		// eventName = MissionEventType.Completed.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_7(MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_8;
+		L_8 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_7), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_8, NULL);
+		// LionAnalytics.SetPlayerScore(userScore);
+		int32_t L_9 = ___5_userScore;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10;
+		memset((&L_10), 0, sizeof(L_10));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_10), L_9, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetPlayerScore_m9F4AD82AAE100147EC67C91DAAA7562E62F2D260(L_10, NULL);
+		// AddParam(EventParam.reward, reward);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_11 = ___6_reward;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_11, (bool)0, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceMissionStart(missionID, false));
+		String_t* L_12 = ___3_missionID;
+		int32_t L_13;
+		L_13 = LionAnalyticsApplication_GetTimeSinceMissionStart_mE27E473BCB3294BAE59DDAB04799326D96AED4E9(L_12, (bool)0, NULL);
+		int32_t L_14 = L_13;
+		RuntimeObject* L_15 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_14);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_15, (bool)0, NULL);
+		// LionAnalytics.RemoveMissionTrackingDataCombination(missionID, missionName);
+		String_t* L_16 = ___3_missionID;
+		String_t* L_17 = ___2_missionName;
+		LionAnalytics_RemoveMissionTrackingDataCombination_m3F0C001A62D83A19077156E3911D2D5E8111BF15(L_16, L_17, NULL);
+		// if (isTutorial && missionName.Equals(LionAnalytics._globalParams[EventParam.tutorialMission]))
+		bool L_18 = ___0_isTutorial;
+		if (!L_18)
+		{
+			goto IL_0083;
+		}
+	}
+	{
+		String_t* L_19 = ___2_missionName;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		RuntimeObject* L_20 = ((LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields*)il2cpp_codegen_static_fields_for(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var))->____globalParams_19;
+		NullCheck(L_20);
+		RuntimeObject* L_21;
+		L_21 = InterfaceFuncInvoker1< RuntimeObject*, String_t* >::Invoke(0 /* TValue System.Collections.Generic.IDictionary`2<System.String,System.Object>::get_Item(TKey) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_20, _stringLiteral1671D86E8DE91CE35C3BB103B871E12D71870E41);
+		NullCheck(L_19);
+		bool L_22;
+		L_22 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, L_19, L_21);
+		if (!L_22)
+		{
+			goto IL_0083;
+		}
+	}
+	{
+		// LionAnalytics.SetTutorial(false, missionName);
+		String_t* L_23 = ___2_missionName;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetTutorial_mBFE5D8438D26C05CFFC2A02ADD27348CBCF76DAE((bool)0, L_23, NULL);
+	}
+
+IL_0083:
+	{
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.MissionCompletedEvent::.ctor(Events.Mission.EventArgs.MissionCompletedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionCompletedEvent__ctor_mC60EB14126F454B48DCFDD6A5B7FE91847A4D2EE (MissionCompletedEvent_tE3C88FB7154AD97182D1EAB109D7DA32CBF6D76D* __this, MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1671D86E8DE91CE35C3BB103B871E12D71870E41);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(args, additionalData, isCalledExplicitly)
+		MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		MissionEvent__ctor_m09B167AACCCC69D68F13AF95C1A5C4F8AE3C0BC0(__this, L_0, L_1, L_2, NULL);
+		// eventName = MissionEventType.Completed.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_3(MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// LionAnalytics.SetPlayerScore(args.UserScore);
+		MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775* L_5 = ___0_args;
+		NullCheck(L_5);
+		int32_t L_6 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_5)->___UserScore_6;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7;
+		memset((&L_7), 0, sizeof(L_7));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_7), L_6, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetPlayerScore_m9F4AD82AAE100147EC67C91DAAA7562E62F2D260(L_7, NULL);
+		// AddParam(EventParam.reward, args.Reward);
+		MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775* L_8 = ___0_args;
+		NullCheck(L_8);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_9 = L_8->___Reward_8;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_9, (bool)0, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceMissionStart(args.MissionID, false));
+		MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775* L_10 = ___0_args;
+		NullCheck(L_10);
+		String_t* L_11 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_10)->___MissionID_4;
+		int32_t L_12;
+		L_12 = LionAnalyticsApplication_GetTimeSinceMissionStart_mE27E473BCB3294BAE59DDAB04799326D96AED4E9(L_11, (bool)0, NULL);
+		int32_t L_13 = L_12;
+		RuntimeObject* L_14 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_13);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_14, (bool)0, NULL);
+		// LionAnalytics.RemoveMissionTrackingDataCombination(args.MissionID, args.MissionName);
+		MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775* L_15 = ___0_args;
+		NullCheck(L_15);
+		String_t* L_16 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_15)->___MissionID_4;
+		MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775* L_17 = ___0_args;
+		NullCheck(L_17);
+		String_t* L_18 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_17)->___MissionName_3;
+		LionAnalytics_RemoveMissionTrackingDataCombination_m3F0C001A62D83A19077156E3911D2D5E8111BF15(L_16, L_18, NULL);
+		// if (args.IsTutorial && args.MissionName.Equals(LionAnalytics._globalParams[EventParam.tutorialMission]))
+		MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775* L_19 = ___0_args;
+		NullCheck(L_19);
+		bool L_20 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_19)->___IsTutorial_1;
+		if (!L_20)
+		{
+			goto IL_009e;
+		}
+	}
+	{
+		MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775* L_21 = ___0_args;
+		NullCheck(L_21);
+		String_t* L_22 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_21)->___MissionName_3;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		RuntimeObject* L_23 = ((LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_StaticFields*)il2cpp_codegen_static_fields_for(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var))->____globalParams_19;
+		NullCheck(L_23);
+		RuntimeObject* L_24;
+		L_24 = InterfaceFuncInvoker1< RuntimeObject*, String_t* >::Invoke(0 /* TValue System.Collections.Generic.IDictionary`2<System.String,System.Object>::get_Item(TKey) */, IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var, L_23, _stringLiteral1671D86E8DE91CE35C3BB103B871E12D71870E41);
+		NullCheck(L_22);
+		bool L_25;
+		L_25 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, L_22, L_24);
+		if (!L_25)
+		{
+			goto IL_009e;
+		}
+	}
+	{
+		// LionAnalytics.SetTutorial(false, args.MissionName);
+		MissionCompletedEventArgs_t8768AC4230FF1EF8E0686F1F5B9B8A36B7B11775* L_26 = ___0_args;
+		NullCheck(L_26);
+		String_t* L_27 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_26)->___MissionName_3;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetTutorial_mBFE5D8438D26C05CFFC2A02ADD27348CBCF76DAE((bool)0, L_27, NULL);
+	}
+
+IL_009e:
+	{
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.MissionCompletedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MissionCompletedEvent_GetAdjustPayloadEventName_m4EE9CA0CECBD2D01A748615C6E836AF3F885A0A0 (MissionCompletedEvent_tE3C88FB7154AD97182D1EAB109D7DA32CBF6D76D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6BC89B240588F94903015A1BBAE29ACB584D9AA1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.mission_complete;
+		return _stringLiteral6BC89B240588F94903015A1BBAE29ACB584D9AA1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.MissionEvent::add_MissionAttemptInfoRequired(System.Func`2<LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs,System.Int32>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionEvent_add_MissionAttemptInfoRequired_m90C3C163030BD288E7E552E972CD5BBC8A4A4849 (Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* V_0 = NULL;
+	Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* V_1 = NULL;
+	Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* V_2 = NULL;
+	{
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_0 = ((MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_StaticFields*)il2cpp_codegen_static_fields_for(MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_il2cpp_TypeInfo_var))->___MissionAttemptInfoRequired_11;
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_1 = V_0;
+		V_1 = L_1;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_2 = V_1;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC*)Castclass((RuntimeObject*)L_4, Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC_il2cpp_TypeInfo_var));
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_5 = V_2;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_6 = V_1;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_7;
+		L_7 = InterlockedCompareExchangeImpl<Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC*>((&((MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_StaticFields*)il2cpp_codegen_static_fields_for(MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_il2cpp_TypeInfo_var))->___MissionAttemptInfoRequired_11), L_5, L_6);
+		V_0 = L_7;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_8 = V_0;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_9 = V_1;
+		if ((!(((RuntimeObject*)(Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC*)L_8) == ((RuntimeObject*)(Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC*)L_9))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.MissionEvent::remove_MissionAttemptInfoRequired(System.Func`2<LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs,System.Int32>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionEvent_remove_MissionAttemptInfoRequired_m9D65E891A957648749CBA020D79B871838C4152C (Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* V_0 = NULL;
+	Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* V_1 = NULL;
+	Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* V_2 = NULL;
+	{
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_0 = ((MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_StaticFields*)il2cpp_codegen_static_fields_for(MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_il2cpp_TypeInfo_var))->___MissionAttemptInfoRequired_11;
+		V_0 = L_0;
+	}
+
+IL_0006:
+	{
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_1 = V_0;
+		V_1 = L_1;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_2 = V_1;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC*)Castclass((RuntimeObject*)L_4, Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC_il2cpp_TypeInfo_var));
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_5 = V_2;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_6 = V_1;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_7;
+		L_7 = InterlockedCompareExchangeImpl<Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC*>((&((MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_StaticFields*)il2cpp_codegen_static_fields_for(MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_il2cpp_TypeInfo_var))->___MissionAttemptInfoRequired_11), L_5, L_6);
+		V_0 = L_7;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_8 = V_0;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_9 = V_1;
+		if ((!(((RuntimeObject*)(Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC*)L_8) == ((RuntimeObject*)(Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC*)L_9))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.MissionEvent::.ctor(System.Boolean,System.String,System.String,System.String,System.Nullable`1<System.Int32>,System.Boolean,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionEvent__ctor_m691D959F2963C00A3F420E613AC00464D49B6E11 (MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862* __this, bool ___0_isTutorial, String_t* ___1_missionType, String_t* ___2_missionName, String_t* ___3_missionID, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___4_missionAttempt, bool ___5_incrementCounter, RuntimeObject* ___6_additionalData, bool ___7_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral14BBC620E8E75411EAE7D5F909B52070704C37FA);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5D5BBC97D4881113EB4174C2365252C8BCC000FC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9BC1C82E2DB1C701DDA65153FF8E48FD0B966DA9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809);
+		s_Il2CppMethodInitialized = true;
+	}
+	MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* V_0 = NULL;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* G_B3_0 = NULL;
+	Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* G_B2_0 = NULL;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 G_B4_0;
+	memset((&G_B4_0), 0, sizeof(G_B4_0));
+	{
+		// bool isCalledExplicitly) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___6_additionalData;
+		bool L_1 = ___7_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// if (!missionAttempt.HasValue)
+		bool L_2;
+		L_2 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&___4_missionAttempt), Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		// var missionAttemptArgs = new MissionAttemptEventArgs(incrementCounter, missionType, missionName, missionID);
+		bool L_3 = ___5_incrementCounter;
+		String_t* L_4 = ___1_missionType;
+		String_t* L_5 = ___2_missionName;
+		String_t* L_6 = ___3_missionID;
+		MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* L_7 = (MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38*)il2cpp_codegen_object_new(MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		MissionAttemptEventArgs__ctor_m5ED029FE4335531C30D89E2869B45CFE6C4CB5F7(L_7, L_3, L_4, L_5, L_6, NULL);
+		V_0 = L_7;
+		// missionAttempt = MissionAttemptInfoRequired?.Invoke(missionAttemptArgs);
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_8 = ((MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_StaticFields*)il2cpp_codegen_static_fields_for(MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_il2cpp_TypeInfo_var))->___MissionAttemptInfoRequired_11;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_9 = L_8;
+		G_B2_0 = L_9;
+		if (L_9)
+		{
+			G_B3_0 = L_9;
+			goto IL_0033;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_1), sizeof(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28));
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = V_1;
+		G_B4_0 = L_10;
+		goto IL_003e;
+	}
+
+IL_0033:
+	{
+		MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* L_11 = V_0;
+		NullCheck(G_B3_0);
+		int32_t L_12;
+		L_12 = Func_2_Invoke_mD250D091F7B3FA297BD53790607C05D67D563DCE_inline(G_B3_0, L_11, NULL);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_13;
+		memset((&L_13), 0, sizeof(L_13));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_13), L_12, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		G_B4_0 = L_13;
+	}
+
+IL_003e:
+	{
+		___4_missionAttempt = G_B4_0;
+	}
+
+IL_0040:
+	{
+		// eventType = EventType.Mission;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)16), NULL);
+		// AddParam(EventParam.isTutorial, isTutorial);
+		bool L_14 = ___0_isTutorial;
+		bool L_15 = L_14;
+		RuntimeObject* L_16 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_15);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral14BBC620E8E75411EAE7D5F909B52070704C37FA, L_16, (bool)0, NULL);
+		// AddParam(EventParam.missionType, missionType);
+		String_t* L_17 = ___1_missionType;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809, L_17, (bool)0, NULL);
+		// AddParam(EventParam.missionName, missionName);
+		String_t* L_18 = ___2_missionName;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1, L_18, (bool)0, NULL);
+		// AddParam(EventParam.missionID, missionID);
+		String_t* L_19 = ___3_missionID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral5D5BBC97D4881113EB4174C2365252C8BCC000FC, L_19, (bool)0, NULL);
+		// AddParam(EventParam.missionAttempt, missionAttempt);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_20 = ___4_missionAttempt;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_21 = L_20;
+		RuntimeObject* L_22 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_21);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral9BC1C82E2DB1C701DDA65153FF8E48FD0B966DA9, L_22, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.MissionEvent::.ctor(Events.Mission.EventArgs.MissionEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionEvent__ctor_m09B167AACCCC69D68F13AF95C1A5C4F8AE3C0BC0 (MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862* __this, MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral14BBC620E8E75411EAE7D5F909B52070704C37FA);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5D5BBC97D4881113EB4174C2365252C8BCC000FC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9BC1C82E2DB1C701DDA65153FF8E48FD0B966DA9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809);
+		s_Il2CppMethodInitialized = true;
+	}
+	MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* V_0 = NULL;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* G_B3_0 = NULL;
+	MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* G_B3_1 = NULL;
+	Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* G_B2_0 = NULL;
+	MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* G_B2_1 = NULL;
+	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 G_B4_0;
+	memset((&G_B4_0), 0, sizeof(G_B4_0));
+	MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* G_B4_1 = NULL;
+	{
+		// bool isCalledExplicitly) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// if (!args.MissionAttempt.HasValue)
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_2 = ___0_args;
+		NullCheck(L_2);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28* L_3 = (&L_2->___MissionAttempt_5);
+		bool L_4;
+		L_4 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline(L_3, Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var);
+		if (L_4)
+		{
+			goto IL_0058;
+		}
+	}
+	{
+		// var missionAttemptArgs = new MissionAttemptEventArgs(args.IncrementCounter, args.MissionType,
+		//     args.MissionName, args.MissionID);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_5 = ___0_args;
+		NullCheck(L_5);
+		bool L_6 = L_5->___IncrementCounter_7;
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_7 = ___0_args;
+		NullCheck(L_7);
+		String_t* L_8 = L_7->___MissionType_2;
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_9 = ___0_args;
+		NullCheck(L_9);
+		String_t* L_10 = L_9->___MissionName_3;
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_11 = ___0_args;
+		NullCheck(L_11);
+		String_t* L_12 = L_11->___MissionID_4;
+		MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* L_13 = (MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38*)il2cpp_codegen_object_new(MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38_il2cpp_TypeInfo_var);
+		NullCheck(L_13);
+		MissionAttemptEventArgs__ctor_m5ED029FE4335531C30D89E2869B45CFE6C4CB5F7(L_13, L_6, L_8, L_10, L_12, NULL);
+		V_0 = L_13;
+		// args.MissionAttempt = MissionAttemptInfoRequired?.Invoke(missionAttemptArgs);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_14 = ___0_args;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_15 = ((MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_StaticFields*)il2cpp_codegen_static_fields_for(MissionEvent_t99704BAE03F8E710292545B5F3A5D766126A1862_il2cpp_TypeInfo_var))->___MissionAttemptInfoRequired_11;
+		Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC* L_16 = L_15;
+		G_B2_0 = L_16;
+		G_B2_1 = L_14;
+		if (L_16)
+		{
+			G_B3_0 = L_16;
+			G_B3_1 = L_14;
+			goto IL_0048;
+		}
+	}
+	{
+		il2cpp_codegen_initobj((&V_1), sizeof(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28));
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_17 = V_1;
+		G_B4_0 = L_17;
+		G_B4_1 = G_B2_1;
+		goto IL_0053;
+	}
+
+IL_0048:
+	{
+		MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* L_18 = V_0;
+		NullCheck(G_B3_0);
+		int32_t L_19;
+		L_19 = Func_2_Invoke_mD250D091F7B3FA297BD53790607C05D67D563DCE_inline(G_B3_0, L_18, NULL);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_20;
+		memset((&L_20), 0, sizeof(L_20));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_20), L_19, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		G_B4_0 = L_20;
+		G_B4_1 = G_B3_1;
+	}
+
+IL_0053:
+	{
+		NullCheck(G_B4_1);
+		G_B4_1->___MissionAttempt_5 = G_B4_0;
+	}
+
+IL_0058:
+	{
+		// eventType = EventType.Mission;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)16), NULL);
+		// AddParam(EventParam.isTutorial, args.IsTutorial);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_21 = ___0_args;
+		NullCheck(L_21);
+		bool L_22 = L_21->___IsTutorial_1;
+		bool L_23 = L_22;
+		RuntimeObject* L_24 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_23);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral14BBC620E8E75411EAE7D5F909B52070704C37FA, L_24, (bool)0, NULL);
+		// AddParam(EventParam.missionType, args.MissionType);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_25 = ___0_args;
+		NullCheck(L_25);
+		String_t* L_26 = L_25->___MissionType_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralD371C6FA48ED13AAF308170972061DD320E9A809, L_26, (bool)0, NULL);
+		// AddParam(EventParam.missionName, args.MissionName);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_27 = ___0_args;
+		NullCheck(L_27);
+		String_t* L_28 = L_27->___MissionName_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral8F8A72EB22A8D01D63CCEE959855EBC0E0387FE1, L_28, (bool)0, NULL);
+		// AddParam(EventParam.missionID, args.MissionID);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_29 = ___0_args;
+		NullCheck(L_29);
+		String_t* L_30 = L_29->___MissionID_4;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral5D5BBC97D4881113EB4174C2365252C8BCC000FC, L_30, (bool)0, NULL);
+		// AddParam(EventParam.missionAttempt, args.MissionAttempt);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_31 = ___0_args;
+		NullCheck(L_31);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_32 = L_31->___MissionAttempt_5;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_33 = L_32;
+		RuntimeObject* L_34 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_33);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral9BC1C82E2DB1C701DDA65153FF8E48FD0B966DA9, L_34, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Boolean LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs::get_IncrementCounter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MissionAttemptEventArgs_get_IncrementCounter_mAE6076F6C4601F8765DF47B5530C342B11B11817 (MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* __this, const RuntimeMethod* method) 
+{
+	{
+		// public bool IncrementCounter { get; }
+		bool L_0 = __this->___U3CIncrementCounterU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs::get_MissionName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MissionAttemptEventArgs_get_MissionName_m1FB229BB1E8A69DDF8140A641FCA2D3724359F35 (MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string MissionName { get; }
+		String_t* L_0 = __this->___U3CMissionNameU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs::get_MissionID()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MissionAttemptEventArgs_get_MissionID_m00534E8061422C511CA9EA7C062EA2A8C0D7171B (MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string MissionID { get; }
+		String_t* L_0 = __this->___U3CMissionIDU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs::get_MissionType()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MissionAttemptEventArgs_get_MissionType_m364E37B9D5F9191D3C48ED29F77A6A24E7FB5C6F (MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string MissionType { get; }
+		String_t* L_0 = __this->___U3CMissionTypeU3Ek__BackingField_4;
+		return L_0;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.MissionEvent/MissionAttemptEventArgs::.ctor(System.Boolean,System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionAttemptEventArgs__ctor_m5ED029FE4335531C30D89E2869B45CFE6C4CB5F7 (MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38* __this, bool ___0_incrementCounter, String_t* ___1_missionType, String_t* ___2_missionName, String_t* ___3_missionID, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public MissionAttemptEventArgs(bool incrementCounter, string missionType, string missionName, string missionID)
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		// IncrementCounter = incrementCounter;
+		bool L_0 = ___0_incrementCounter;
+		__this->___U3CIncrementCounterU3Ek__BackingField_1 = L_0;
+		// MissionID = missionID;
+		String_t* L_1 = ___3_missionID;
+		__this->___U3CMissionIDU3Ek__BackingField_3 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CMissionIDU3Ek__BackingField_3), (void*)L_1);
+		// MissionName = missionName;
+		String_t* L_2 = ___2_missionName;
+		__this->___U3CMissionNameU3Ek__BackingField_2 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CMissionNameU3Ek__BackingField_2), (void*)L_2);
+		// MissionType = missionType;
+		String_t* L_3 = ___1_missionType;
+		__this->___U3CMissionTypeU3Ek__BackingField_4 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CMissionTypeU3Ek__BackingField_4), (void*)L_3);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.MissionFailedEvent::.ctor(System.Boolean,System.String,System.String,System.String,System.Nullable`1<System.Int32>,System.Int32,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionFailedEvent__ctor_mAB42587E08710D94456AD74AAFD8BFEB5C779E3D (MissionFailedEvent_tC303528B367BE7C51D1DB260D549084DB30C81A6* __this, bool ___0_isTutorial, String_t* ___1_missionType, String_t* ___2_missionName, String_t* ___3_missionID, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___4_missionAttempt, int32_t ___5_userScore, String_t* ___6_failReason, RuntimeObject* ___7_additionalData, bool ___8_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFB6240E9D3745CE34CBFF18B8598413C559D391D);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(isTutorial, missionType, missionName, missionID, missionAttempt,
+		// incrementCounter: false, additionalData, isCalledExplicitly)
+		bool L_0 = ___0_isTutorial;
+		String_t* L_1 = ___1_missionType;
+		String_t* L_2 = ___2_missionName;
+		String_t* L_3 = ___3_missionID;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_4 = ___4_missionAttempt;
+		RuntimeObject* L_5 = ___7_additionalData;
+		bool L_6 = ___8_isCalledExplicitly;
+		MissionEvent__ctor_m691D959F2963C00A3F420E613AC00464D49B6E11(__this, L_0, L_1, L_2, L_3, L_4, (bool)0, L_5, L_6, NULL);
+		// eventName = MissionEventType.Failed.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_7(MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_8;
+		L_8 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_7), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_8, NULL);
+		// LionAnalytics.SetPlayerScore(userScore);
+		int32_t L_9 = ___5_userScore;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10;
+		memset((&L_10), 0, sizeof(L_10));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_10), L_9, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetPlayerScore_m9F4AD82AAE100147EC67C91DAAA7562E62F2D260(L_10, NULL);
+		// AddParam(EventParam.failReason, failReason);
+		String_t* L_11 = ___6_failReason;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralFB6240E9D3745CE34CBFF18B8598413C559D391D, L_11, (bool)0, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceMissionStart(missionID, false));
+		String_t* L_12 = ___3_missionID;
+		int32_t L_13;
+		L_13 = LionAnalyticsApplication_GetTimeSinceMissionStart_mE27E473BCB3294BAE59DDAB04799326D96AED4E9(L_12, (bool)0, NULL);
+		int32_t L_14 = L_13;
+		RuntimeObject* L_15 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_14);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_15, (bool)0, NULL);
+		// LionAnalytics.RemoveMissionTrackingDataCombination(missionID, missionName);
+		String_t* L_16 = ___3_missionID;
+		String_t* L_17 = ___2_missionName;
+		LionAnalytics_RemoveMissionTrackingDataCombination_m3F0C001A62D83A19077156E3911D2D5E8111BF15(L_16, L_17, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.MissionFailedEvent::.ctor(Events.Mission.EventArgs.MissionFailedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionFailedEvent__ctor_m9874134D25EC71CD93D2476B2E53D273A40889DA (MissionFailedEvent_tC303528B367BE7C51D1DB260D549084DB30C81A6* __this, MissionFailedEventArgs_t54F3264EEF3E19AB58F57F6616C368289E4F34F0* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFB6240E9D3745CE34CBFF18B8598413C559D391D);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(args, additionalData,
+		// isCalledExplicitly)
+		MissionFailedEventArgs_t54F3264EEF3E19AB58F57F6616C368289E4F34F0* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		MissionEvent__ctor_m09B167AACCCC69D68F13AF95C1A5C4F8AE3C0BC0(__this, L_0, L_1, L_2, NULL);
+		// eventName = MissionEventType.Failed.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_3(MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// LionAnalytics.SetPlayerScore(args.UserScore);
+		MissionFailedEventArgs_t54F3264EEF3E19AB58F57F6616C368289E4F34F0* L_5 = ___0_args;
+		NullCheck(L_5);
+		int32_t L_6 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_5)->___UserScore_6;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7;
+		memset((&L_7), 0, sizeof(L_7));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_7), L_6, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetPlayerScore_m9F4AD82AAE100147EC67C91DAAA7562E62F2D260(L_7, NULL);
+		// AddParam(EventParam.failReason, args.FailReason);
+		MissionFailedEventArgs_t54F3264EEF3E19AB58F57F6616C368289E4F34F0* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___FailReason_8;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralFB6240E9D3745CE34CBFF18B8598413C559D391D, L_9, (bool)0, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceMissionStart(args.MissionID, false));
+		MissionFailedEventArgs_t54F3264EEF3E19AB58F57F6616C368289E4F34F0* L_10 = ___0_args;
+		NullCheck(L_10);
+		String_t* L_11 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_10)->___MissionID_4;
+		int32_t L_12;
+		L_12 = LionAnalyticsApplication_GetTimeSinceMissionStart_mE27E473BCB3294BAE59DDAB04799326D96AED4E9(L_11, (bool)0, NULL);
+		int32_t L_13 = L_12;
+		RuntimeObject* L_14 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_13);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_14, (bool)0, NULL);
+		// LionAnalytics.RemoveMissionTrackingDataCombination(args.MissionID, args.MissionName);
+		MissionFailedEventArgs_t54F3264EEF3E19AB58F57F6616C368289E4F34F0* L_15 = ___0_args;
+		NullCheck(L_15);
+		String_t* L_16 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_15)->___MissionID_4;
+		MissionFailedEventArgs_t54F3264EEF3E19AB58F57F6616C368289E4F34F0* L_17 = ___0_args;
+		NullCheck(L_17);
+		String_t* L_18 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_17)->___MissionName_3;
+		LionAnalytics_RemoveMissionTrackingDataCombination_m3F0C001A62D83A19077156E3911D2D5E8111BF15(L_16, L_18, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.MissionFailedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MissionFailedEvent_GetAdjustPayloadEventName_m02C8C0FE9ADCCD7419A75F28B9855FBE8D501344 (MissionFailedEvent_tC303528B367BE7C51D1DB260D549084DB30C81A6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2A36F6FA5E54880BFB0DBE4C60D70291E0D03EBD);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.mission_fail;
+		return _stringLiteral2A36F6FA5E54880BFB0DBE4C60D70291E0D03EBD;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.MissionStartedEvent::.ctor(System.Boolean,System.String,System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionStartedEvent__ctor_m436910D5CB68C84543235B51DEDBBEBEA085F8F6 (MissionStartedEvent_tAC26CEC3D3FCE63C78DEFA358ACDF8F819032283* __this, bool ___0_isTutorial, String_t* ___1_missionType, String_t* ___2_missionName, String_t* ___3_missionID, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___4_missionAttempt, RuntimeObject* ___5_additionalData, bool ___6_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(isTutorial, missionType,
+		// missionName, missionID, missionAttempt, incrementCounter: false, additionalData, isCalledExplicitly)
+		bool L_0 = ___0_isTutorial;
+		String_t* L_1 = ___1_missionType;
+		String_t* L_2 = ___2_missionName;
+		String_t* L_3 = ___3_missionID;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_4 = ___4_missionAttempt;
+		RuntimeObject* L_5 = ___5_additionalData;
+		bool L_6 = ___6_isCalledExplicitly;
+		MissionEvent__ctor_m691D959F2963C00A3F420E613AC00464D49B6E11(__this, L_0, L_1, L_2, L_3, L_4, (bool)0, L_5, L_6, NULL);
+		// eventName = MissionEventType.Start.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_7(MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_8;
+		L_8 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_7), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_8, NULL);
+		// LionAnalytics.AddMissionTrackingDataCombination(missionID, missionName);
+		String_t* L_9 = ___3_missionID;
+		String_t* L_10 = ___2_missionName;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_AddMissionTrackingDataCombination_m18415FF01CD96EF564CD9B468F98FB1DCE7531D9(L_9, L_10, NULL);
+		// if (isTutorial)
+		bool L_11 = ___0_isTutorial;
+		if (!L_11)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		// LionAnalytics.SetTutorial(true, missionName);
+		String_t* L_12 = ___2_missionName;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetTutorial_mBFE5D8438D26C05CFFC2A02ADD27348CBCF76DAE((bool)1, L_12, NULL);
+	}
+
+IL_0039:
+	{
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.MissionStartedEvent::.ctor(Events.Mission.EventArgs.MissionEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionStartedEvent__ctor_mFCBFDA44B4CA5CA99A6A13ACE93F73FDC92D4117 (MissionStartedEvent_tAC26CEC3D3FCE63C78DEFA358ACDF8F819032283* __this, MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(args, additionalData,
+		// isCalledExplicitly)
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		MissionEvent__ctor_m09B167AACCCC69D68F13AF95C1A5C4F8AE3C0BC0(__this, L_0, L_1, L_2, NULL);
+		// args.IncrementCounter = true;
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_3 = ___0_args;
+		NullCheck(L_3);
+		L_3->___IncrementCounter_7 = (bool)1;
+		// eventName = MissionEventType.Start.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_4(MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_5;
+		L_5 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_4), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_5, NULL);
+		// LionAnalytics.AddMissionTrackingDataCombination(args.MissionID, args.MissionName);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___MissionID_4;
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___MissionName_3;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_AddMissionTrackingDataCombination_m18415FF01CD96EF564CD9B468F98FB1DCE7531D9(L_7, L_9, NULL);
+		// if (args.IsTutorial)
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_10 = ___0_args;
+		NullCheck(L_10);
+		bool L_11 = L_10->___IsTutorial_1;
+		if (!L_11)
+		{
+			goto IL_004a;
+		}
+	}
+	{
+		// LionAnalytics.SetTutorial(true, args.MissionName);
+		MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___MissionName_3;
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetTutorial_mBFE5D8438D26C05CFFC2A02ADD27348CBCF76DAE((bool)1, L_13, NULL);
+	}
+
+IL_004a:
+	{
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.MissionStartedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MissionStartedEvent_GetAdjustPayloadEventName_m8B19EB2FD2826BDCD88AA3C465BC38B48B0C2C56 (MissionStartedEvent_tAC26CEC3D3FCE63C78DEFA358ACDF8F819032283* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0E828A82C7DAB1840AD232BFF71A40EA2AA611CC);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.mission_started;
+		return _stringLiteral0E828A82C7DAB1840AD232BFF71A40EA2AA611CC;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.MissionStepEvent::.ctor(System.Boolean,System.String,System.String,System.String,System.Nullable`1<System.Int32>,System.Int32,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean,LionStudios.Suite.Analytics.Reward)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionStepEvent__ctor_m2409E245A27ADEB29D78527BA7E3FE19D2FE32BB (MissionStepEvent_tCFF7E7BF2488E449CE672F329CB2C1A1645932BB* __this, bool ___0_isTutorial, String_t* ___1_missionType, String_t* ___2_missionName, String_t* ___3_missionID, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___4_missionAttempt, int32_t ___5_userScore, RuntimeObject* ___6_additionalData, bool ___7_isCalledExplicitly, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___8_reward, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true, Reward reward = null) : base(isTutorial, missionType,
+		// missionName,
+		// missionID, missionAttempt, false, additionalData, isCalledExplicitly)
+		bool L_0 = ___0_isTutorial;
+		String_t* L_1 = ___1_missionType;
+		String_t* L_2 = ___2_missionName;
+		String_t* L_3 = ___3_missionID;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_4 = ___4_missionAttempt;
+		RuntimeObject* L_5 = ___6_additionalData;
+		bool L_6 = ___7_isCalledExplicitly;
+		MissionEvent__ctor_m691D959F2963C00A3F420E613AC00464D49B6E11(__this, L_0, L_1, L_2, L_3, L_4, (bool)0, L_5, L_6, NULL);
+		// eventName = MissionEventType.Step.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_7(MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_8;
+		L_8 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_7), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_8, NULL);
+		// LionAnalytics.SetPlayerScore(userScore);
+		int32_t L_9 = ___5_userScore;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10;
+		memset((&L_10), 0, sizeof(L_10));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_10), L_9, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetPlayerScore_m9F4AD82AAE100147EC67C91DAAA7562E62F2D260(L_10, NULL);
+		// AddParam(EventParam.reward, reward);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_11 = ___8_reward;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_11, (bool)0, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceMissionStart(missionID, true));
+		String_t* L_12 = ___3_missionID;
+		int32_t L_13;
+		L_13 = LionAnalyticsApplication_GetTimeSinceMissionStart_mE27E473BCB3294BAE59DDAB04799326D96AED4E9(L_12, (bool)1, NULL);
+		int32_t L_14 = L_13;
+		RuntimeObject* L_15 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_14);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_15, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.MissionStepEvent::.ctor(Events.Mission.EventArgs.MissionStepEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MissionStepEvent__ctor_mBA01DABD7D8FA8B15741516099088CCA0A3C74D9 (MissionStepEvent_tCFF7E7BF2488E449CE672F329CB2C1A1645932BB* __this, MissionStepEventArgs_tFD9EA9C9B41143C3A66320CA4A07EB75B358D2CE* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0105010ED710A65053D492B3441DC58D914C147);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(args, additionalData,
+		// isCalledExplicitly)
+		MissionStepEventArgs_tFD9EA9C9B41143C3A66320CA4A07EB75B358D2CE* L_0 = ___0_args;
+		RuntimeObject* L_1 = ___1_additionalData;
+		bool L_2 = ___2_isCalledExplicitly;
+		MissionEvent__ctor_m09B167AACCCC69D68F13AF95C1A5C4F8AE3C0BC0(__this, L_0, L_1, L_2, NULL);
+		// eventName = MissionEventType.Step.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_3(MissionEventType_t70E68DBE1F20F7C324BD12B9A1F7CBD6C8F10AF5_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_4;
+		L_4 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_3), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_4, NULL);
+		// LionAnalytics.SetPlayerScore(args.UserScore);
+		MissionStepEventArgs_tFD9EA9C9B41143C3A66320CA4A07EB75B358D2CE* L_5 = ___0_args;
+		NullCheck(L_5);
+		int32_t L_6 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_5)->___UserScore_6;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7;
+		memset((&L_7), 0, sizeof(L_7));
+		Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703((&L_7), L_6, /*hidden argument*/Nullable_1__ctor_m141FA88563AC0B5179132FB929EABD02C47FF703_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		LionAnalytics_SetPlayerScore_m9F4AD82AAE100147EC67C91DAAA7562E62F2D260(L_7, NULL);
+		// AddParam(EventParam.reward, args.Reward);
+		MissionStepEventArgs_tFD9EA9C9B41143C3A66320CA4A07EB75B358D2CE* L_8 = ___0_args;
+		NullCheck(L_8);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_9 = L_8->___Reward_8;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_9, (bool)0, NULL);
+		// AddParam(EventParam.timeInLevel, LionAnalyticsApplication.GetTimeSinceMissionStart(args.MissionID, true));
+		MissionStepEventArgs_tFD9EA9C9B41143C3A66320CA4A07EB75B358D2CE* L_10 = ___0_args;
+		NullCheck(L_10);
+		String_t* L_11 = ((MissionEventArgs_t003F1334E7C2E5082F328946F707E1F681F6412C*)L_10)->___MissionID_4;
+		int32_t L_12;
+		L_12 = LionAnalyticsApplication_GetTimeSinceMissionStart_mE27E473BCB3294BAE59DDAB04799326D96AED4E9(L_11, (bool)1, NULL);
+		int32_t L_13 = L_12;
+		RuntimeObject* L_14 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_13);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralE0105010ED710A65053D492B3441DC58D914C147, L_14, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.MissionStepEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MissionStepEvent_GetAdjustPayloadEventName_mE7E86D69F972905CD1D95CBCCB2827BA99B05811 (MissionStepEvent_tCFF7E7BF2488E449CE672F329CB2C1A1645932BB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCD3F5FD7D806A83A6A3E2726770CA44ECCF7FB2D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.mission_step;
+		return _stringLiteralCD3F5FD7D806A83A6A3E2726770CA44ECCF7FB2D;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InviteReceivedEvent::.ctor(System.String,System.String,System.String,System.Nullable`1<System.Boolean>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InviteReceivedEvent__ctor_m8D08810ABE7532912CFA9B083B4571A7C94EECD3 (InviteReceivedEvent_tB599B397F5A1A75984665561875527B96E2DB797* __this, String_t* ___0_senderID, String_t* ___1_uniqueTracking, String_t* ___2_inviteType, Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___3_isInviteAccepted, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4702301DC141AEF4221635583D36092DAC2C67AB);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral821E8A2D8EB7B22DBA42A462970A22E7A2DD3342);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA6805D1A54FB63B263503FD84E9524D9F1BA798A);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___5_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.InviteReceived.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.senderID, senderID);
+		String_t* L_4 = ___0_senderID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA6805D1A54FB63B263503FD84E9524D9F1BA798A, L_4, (bool)0, NULL);
+		// AddParam(EventParam.uniqueTracking, uniqueTracking);
+		String_t* L_5 = ___1_uniqueTracking;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2, L_5, (bool)0, NULL);
+		// AddParam(EventParam.inviteType, inviteType);
+		String_t* L_6 = ___2_inviteType;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral821E8A2D8EB7B22DBA42A462970A22E7A2DD3342, L_6, (bool)0, NULL);
+		// AddParam(EventParam.isInviteAccepted, isInviteAccepted);
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_7 = ___3_isInviteAccepted;
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral4702301DC141AEF4221635583D36092DAC2C67AB, L_9, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InviteReceivedEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.InviteReceivedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InviteReceivedEvent__ctor_mB1B878F37C68E8B90D5DB186E0D745D4D3002170 (InviteReceivedEvent_tB599B397F5A1A75984665561875527B96E2DB797* __this, InviteReceivedEventArgs_t636949BC7DDF26D009B63898AE45745A123C309E* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4702301DC141AEF4221635583D36092DAC2C67AB);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral821E8A2D8EB7B22DBA42A462970A22E7A2DD3342);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA6805D1A54FB63B263503FD84E9524D9F1BA798A);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.InviteReceived.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.senderID, args.SenderID);
+		InviteReceivedEventArgs_t636949BC7DDF26D009B63898AE45745A123C309E* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___SenderID_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralA6805D1A54FB63B263503FD84E9524D9F1BA798A, L_5, (bool)0, NULL);
+		// AddParam(EventParam.uniqueTracking, args.UniqueTracking);
+		InviteReceivedEventArgs_t636949BC7DDF26D009B63898AE45745A123C309E* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___UniqueTracking_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2, L_7, (bool)0, NULL);
+		// AddParam(EventParam.inviteType, args.InviteType);
+		InviteReceivedEventArgs_t636949BC7DDF26D009B63898AE45745A123C309E* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___InviteType_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral821E8A2D8EB7B22DBA42A462970A22E7A2DD3342, L_9, (bool)0, NULL);
+		// AddParam(EventParam.isInviteAccepted, args.IsInviteAccepted);
+		InviteReceivedEventArgs_t636949BC7DDF26D009B63898AE45745A123C309E* L_10 = ___0_args;
+		NullCheck(L_10);
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_11 = L_10->___IsInviteAccepted_4;
+		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_12 = L_11;
+		RuntimeObject* L_13 = Box(Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01_il2cpp_TypeInfo_var, &L_12);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral4702301DC141AEF4221635583D36092DAC2C67AB, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InviteReceivedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InviteReceivedEvent_GetAdjustPayloadEventName_mDA1B70A71AD1DBD9624E4EE82470F886C74489DB (InviteReceivedEvent_tB599B397F5A1A75984665561875527B96E2DB797* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF27AC7D8AC0DC92F5C779D46168F30EA1B89F32B);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.invite_received;
+		return _stringLiteralF27AC7D8AC0DC92F5C779D46168F30EA1B89F32B;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InviteRewardedEvent::.ctor(System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InviteRewardedEvent__ctor_m75FF7BD9006079559D489C8E163A6E0707185033 (InviteRewardedEvent_tAFC0F5C84F7669770815B7C03441701C55822902* __this, String_t* ___0_inviterId, String_t* ___1_inviteeId, RuntimeObject* ___2_additionalData, bool ___3_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3DC05FEBC8D528958F92F5E1C84430689E0AAFC7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB90FF710A0CBA324DC518986A7B4AF047D001E24);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___2_additionalData;
+		bool L_1 = ___3_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.InviteRewarded.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.inviterId, inviterId);
+		String_t* L_4 = ___0_inviterId;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB90FF710A0CBA324DC518986A7B4AF047D001E24, L_4, (bool)0, NULL);
+		// AddParam(EventParam.inviteeId, inviteeId);
+		String_t* L_5 = ___1_inviteeId;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral3DC05FEBC8D528958F92F5E1C84430689E0AAFC7, L_5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InviteRewardedEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.InviteRewardedEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InviteRewardedEvent__ctor_m94A30421EED351A445F7CABC170852EB69266BC3 (InviteRewardedEvent_tAFC0F5C84F7669770815B7C03441701C55822902* __this, InviteRewardedEventArgs_tC69B703FAAFE69591D75C447BA609854A4F66CC6* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3DC05FEBC8D528958F92F5E1C84430689E0AAFC7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB90FF710A0CBA324DC518986A7B4AF047D001E24);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.InviteRewarded.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.inviterId, args.InviterId);
+		InviteRewardedEventArgs_tC69B703FAAFE69591D75C447BA609854A4F66CC6* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___InviterId_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralB90FF710A0CBA324DC518986A7B4AF047D001E24, L_5, (bool)0, NULL);
+		// AddParam(EventParam.inviteeId, args.InviteeId);
+		InviteRewardedEventArgs_tC69B703FAAFE69591D75C447BA609854A4F66CC6* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___InviteeId_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral3DC05FEBC8D528958F92F5E1C84430689E0AAFC7, L_7, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InviteRewardedEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InviteRewardedEvent_GetAdjustPayloadEventName_m8675B113E05B9809DBEEBCC7E5342661EA151061 (InviteRewardedEvent_tAFC0F5C84F7669770815B7C03441701C55822902* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE56E7D1788FC888035CB712FC6843A1BB0A20DCD);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.invite_rewarded;
+		return _stringLiteralE56E7D1788FC888035CB712FC6843A1BB0A20DCD;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.InviteSentEvent::.ctor(System.String,System.String,System.String[],System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InviteSentEvent__ctor_mCFE2C1F4DE5D2BE1EE874ED842A8DA278E53EB0B (InviteSentEvent_t6444EA0DB99146B8281B8A9A244EB116838C5766* __this, String_t* ___0_uniqueTracking, String_t* ___1_inviteType, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___2_recipients, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral821E8A2D8EB7B22DBA42A462970A22E7A2DD3342);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBCC74ADACE086BE0051550BCC7212909CF0DF4F2);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.InviteSent.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.uniqueTracking, uniqueTracking);
+		String_t* L_4 = ___0_uniqueTracking;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2, L_4, (bool)0, NULL);
+		// AddParam(EventParam.inviteType, inviteType);
+		String_t* L_5 = ___1_inviteType;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral821E8A2D8EB7B22DBA42A462970A22E7A2DD3342, L_5, (bool)0, NULL);
+		// AddParam(EventParam.recipients, recipients);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = ___2_recipients;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralBCC74ADACE086BE0051550BCC7212909CF0DF4F2, (RuntimeObject*)L_6, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.InviteSentEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.InviteSentEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InviteSentEvent__ctor_mB9240E6A82E62328E3BDD34EF2343CEE638820B1 (InviteSentEvent_t6444EA0DB99146B8281B8A9A244EB116838C5766* __this, InviteSentEventArgs_tF325FA40D4A401CCEF4DC98C34F365EF96D56BC9* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral821E8A2D8EB7B22DBA42A462970A22E7A2DD3342);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBCC74ADACE086BE0051550BCC7212909CF0DF4F2);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.InviteSent.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.uniqueTracking, args.UniqueTracking);
+		InviteSentEventArgs_tF325FA40D4A401CCEF4DC98C34F365EF96D56BC9* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___UniqueTracking_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral73103D1CE99E286712DA03A6AB66D54B1689F6A2, L_5, (bool)0, NULL);
+		// AddParam(EventParam.inviteType, args.InviteType);
+		InviteSentEventArgs_tF325FA40D4A401CCEF4DC98C34F365EF96D56BC9* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___InviteType_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral821E8A2D8EB7B22DBA42A462970A22E7A2DD3342, L_7, (bool)0, NULL);
+		// AddParam(EventParam.recipients, args.Recipients);
+		InviteSentEventArgs_tF325FA40D4A401CCEF4DC98C34F365EF96D56BC9* L_8 = ___0_args;
+		NullCheck(L_8);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = L_8->___Recipients_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralBCC74ADACE086BE0051550BCC7212909CF0DF4F2, (RuntimeObject*)L_9, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.InviteSentEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InviteSentEvent_GetAdjustPayloadEventName_m529ED84BA60925A38C83A83C114EF6AF672D8518 (InviteSentEvent_t6444EA0DB99146B8281B8A9A244EB116838C5766* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralECA9373707C32EE39D5917C06C12D23BADC9BFE9);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.invite_sent;
+		return _stringLiteralECA9373707C32EE39D5917C06C12D23BADC9BFE9;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.SocialConnectEvent::.ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean,LionStudios.Suite.Analytics.Reward)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SocialConnectEvent__ctor_mFD3ACBAF79C5DF31DA1D966556FA9B98FF645136 (SocialConnectEvent_tDEEA8E6E9A5E344F5896DDE841F2FFB75FBE6A4F* __this, String_t* ___0_connectedUserId, String_t* ___1_socialAlias, String_t* ___2_socialPlatform, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___5_reward, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3176E9F79739FDCA80215B879066D7F29CE0CC91);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6421D48A4E68239A9B33429440F908A9679C2D91);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDB347720ACADB3AA506FE23BBE9D82F18731732D);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.Connection.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.connectedUserId, connectedUserId);
+		String_t* L_4 = ___0_connectedUserId;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral6421D48A4E68239A9B33429440F908A9679C2D91, L_4, (bool)0, NULL);
+		// AddParam(EventParam.socialAlias, socialAlias);
+		String_t* L_5 = ___1_socialAlias;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral3176E9F79739FDCA80215B879066D7F29CE0CC91, L_5, (bool)0, NULL);
+		// AddParam(EventParam.socialPlatform, socialPlatform);
+		String_t* L_6 = ___2_socialPlatform;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralDB347720ACADB3AA506FE23BBE9D82F18731732D, L_6, (bool)0, NULL);
+		// AddParam(EventParam.reward, reward);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_7 = ___5_reward;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_7, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.SocialConnectEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.SocialConnectEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SocialConnectEvent__ctor_m521854FC284E20BAE3C208E094E48B39798B0493 (SocialConnectEvent_tDEEA8E6E9A5E344F5896DDE841F2FFB75FBE6A4F* __this, SocialConnectEventArgs_tA3D0E95B54D448D797FEF9C022FC315621C0C4BE* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3176E9F79739FDCA80215B879066D7F29CE0CC91);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6421D48A4E68239A9B33429440F908A9679C2D91);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDB347720ACADB3AA506FE23BBE9D82F18731732D);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.Connection.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.connectedUserId, args.ConnectedUserId);
+		SocialConnectEventArgs_tA3D0E95B54D448D797FEF9C022FC315621C0C4BE* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___ConnectedUserId_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral6421D48A4E68239A9B33429440F908A9679C2D91, L_5, (bool)0, NULL);
+		// AddParam(EventParam.socialAlias, args.SocialAlias);
+		SocialConnectEventArgs_tA3D0E95B54D448D797FEF9C022FC315621C0C4BE* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___SocialAlias_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral3176E9F79739FDCA80215B879066D7F29CE0CC91, L_7, (bool)0, NULL);
+		// AddParam(EventParam.socialPlatform, args.SocialPlatform);
+		SocialConnectEventArgs_tA3D0E95B54D448D797FEF9C022FC315621C0C4BE* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___SocialPlatform_3;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralDB347720ACADB3AA506FE23BBE9D82F18731732D, L_9, (bool)0, NULL);
+		// AddParam(EventParam.reward, args.Reward);
+		SocialConnectEventArgs_tA3D0E95B54D448D797FEF9C022FC315621C0C4BE* L_10 = ___0_args;
+		NullCheck(L_10);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_11 = L_10->___Reward_4;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_11, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.SocialConnectEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SocialConnectEvent_GetAdjustPayloadEventName_mE9B18CD3C815795AA0A281DAFFC678012A2EFCE4 (SocialConnectEvent_tDEEA8E6E9A5E344F5896DDE841F2FFB75FBE6A4F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral603848C23E58A824DE887DDA23F73B88030181D8);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.social_connect;
+		return _stringLiteral603848C23E58A824DE887DDA23F73B88030181D8;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.SocialEvent::.ctor(System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean,LionStudios.Suite.Analytics.Reward)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SocialEvent__ctor_mC3F1DA4B19ACD2B33D180C6454BB67C33D9AA9A0 (SocialEvent_tAB02B35ED8F05CC51DD59605A98B5572D8646EBD* __this, String_t* ___0_socialType, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* ___3_reward, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3BBECC64A7E20484234F26AF7EC9F752A79657D0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.Connection.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.socialType, socialType);
+		String_t* L_4 = ___0_socialType;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral3BBECC64A7E20484234F26AF7EC9F752A79657D0, L_4, (bool)0, NULL);
+		// AddParam(EventParam.reward, reward);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_5 = ___3_reward;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.SocialEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.SocialEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SocialEvent__ctor_m3E91757C7A8F88A81C08EC102113A4795303C803 (SocialEvent_tAB02B35ED8F05CC51DD59605A98B5572D8646EBD* __this, SocialEventArgs_t05A06736EF7CBB940AE098FB30F39FD063F3259F* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3BBECC64A7E20484234F26AF7EC9F752A79657D0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.Connection.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.socialType, args.SocialType);
+		SocialEventArgs_t05A06736EF7CBB940AE098FB30F39FD063F3259F* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___SocialType_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral3BBECC64A7E20484234F26AF7EC9F752A79657D0, L_5, (bool)0, NULL);
+		// AddParam(EventParam.reward, args.Reward);
+		SocialEventArgs_t05A06736EF7CBB940AE098FB30F39FD063F3259F* L_6 = ___0_args;
+		NullCheck(L_6);
+		Reward_t6C34BB6BEAFF0BFC08A593BDA52D5C412B839575* L_7 = L_6->___Reward_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral57E396CDCF304086A725617FE4C5829AE0A0D821, L_7, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.SocialEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SocialEvent_GetAdjustPayloadEventName_mDE2959BE2E79924FEFB89435CB8ABF6B090930E8 (SocialEvent_tAB02B35ED8F05CC51DD59605A98B5572D8646EBD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral386D46E8E03D5EAD3DEAD8B7F9DF16793B2CB9B8);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.social;
+		return _stringLiteral386D46E8E03D5EAD3DEAD8B7F9DF16793B2CB9B8;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.SupportEvent::.ctor(System.String,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SupportEvent__ctor_m5614B28493422AD0AFF3D93F075C00F794A87D51 (SupportEvent_t3761B773BBFB9BE73FB6598374EC47F9779F6774* __this, String_t* ___0_ticketID, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFD3B5EAFB846340E4413C2D6FDC05D708DED244D);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// public SupportEvent(string ticketID, IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.Support.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.ticketId, ticketID);
+		String_t* L_4 = ___0_ticketID;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralFD3B5EAFB846340E4413C2D6FDC05D708DED244D, L_4, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.SupportEvent::.ctor(LionStudios.Suite.Analytics.Events.EventArgs.SupportEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SupportEvent__ctor_mAE01E03DB148D3342410C33F7411A141D4AC690C (SupportEvent_t3761B773BBFB9BE73FB6598374EC47F9779F6774* __this, SupportEventArgs_tCE9BE8371F94B757DF517AFA5B7310986E01A8AA* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFD3B5EAFB846340E4413C2D6FDC05D708DED244D);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// public SupportEvent(SupportEventArgs args, IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Social;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, ((int32_t)12), NULL);
+		// eventName = SocialEventType.Support.ToString();
+		V_0 = 4;
+		Il2CppFakeBox<int32_t> L_2(SocialEventType_t78F36D045DB3B35805FCB46F4640E83A6E7E9F2F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.ticketId, args.TicketID);
+		SupportEventArgs_tCE9BE8371F94B757DF517AFA5B7310986E01A8AA* L_4 = ___0_args;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___TicketID_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralFD3B5EAFB846340E4413C2D6FDC05D708DED244D, L_5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.SupportEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SupportEvent_GetAdjustPayloadEventName_m2E284EC63CDB06B84477DA2B8B312989FBCB9BDF (SupportEvent_t3761B773BBFB9BE73FB6598374EC47F9779F6774* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC20F4101FAEED126882D0D5F1B517E34E17DCC88);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.support;
+		return _stringLiteralC20F4101FAEED126882D0D5F1B517E34E17DCC88;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.Game.GameEvent::.ctor(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameEvent__ctor_m203542EFA9FDDF65287C06DA8E665C4BB60BEAC1 (GameEvent_t76F761CAA37C7D6F009F5149FE0E3A211CA80692* __this, RuntimeObject* ___0_additionalData, bool ___1_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public GameEvent(IDictionary<string, object> additionalData, bool isCalledExplicitly) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___0_additionalData;
+		bool L_1 = ___1_isCalledExplicitly;
+		il2cpp_codegen_runtime_class_init_inline(LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A_il2cpp_TypeInfo_var);
+		LionGameEventBase__ctor_m23A0164FA2F9600C3F3FE6D8515EFA5728E305CD(__this, L_0, L_1, NULL);
+		// eventType = EventType.Game;
+		LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline(__this, 1, NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoClickEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoClickEvent__ctor_m76EF595BD390CD8C9844C5D0A5C84AED749BDDAF (CrossPromoClickEvent_t1147033BEF5370FC1F315F3DC94999405A4C409C* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Clicked.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_7 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = ___2_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = L_8;
+		RuntimeObject* L_10 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_9);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoClickEvent::.ctor(LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoClickEvent__ctor_mAB951527F78F314126C33CBE07615A45C23DF4D0 (CrossPromoClickEvent_t1147033BEF5370FC1F315F3DC94999405A4C409C* __this, CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Clicked.ToString();
+		V_0 = 1;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_8 = ___0_args;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___Network_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_9, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_10 = ___0_args;
+		NullCheck(L_10);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_11 = L_10->___Level_3;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_12 = L_11;
+		RuntimeObject* L_13 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_12);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoClickEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CrossPromoClickEvent_GetAdjustPayloadEventName_mBBF075DA1365B007E1F8F59CB36D18A90E575BC9 (CrossPromoClickEvent_t1147033BEF5370FC1F315F3DC94999405A4C409C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC26B1D98F1DA53DB51AC763D66E0E79A4143386D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.cross_promo_clicked;
+		return _stringLiteralC26B1D98F1DA53DB51AC763D66E0E79A4143386D;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoEndEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoEndEvent__ctor_mB03CB1F042B29B5D802E081395CD704030229516 (CrossPromoEndEvent_tDF07A6DDCB1D032EA9136F937EAEFC06A3509DEB* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Hide.ToString();
+		V_0 = 7;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___2_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_10 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoEndEvent::.ctor(LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoEndEvent__ctor_mE88250D44C915F64FE8092717B8B59C4FD29AA79 (CrossPromoEndEvent_tDF07A6DDCB1D032EA9136F937EAEFC06A3509DEB* __this, CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Hide.ToString();
+		V_0 = 7;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = L_8->___Level_3;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___Network_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoEndEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CrossPromoEndEvent_GetAdjustPayloadEventName_mD7618572463A4FDFE148BD51BE73E1CA7B9B0D0E (CrossPromoEndEvent_tDF07A6DDCB1D032EA9136F937EAEFC06A3509DEB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral60EBBABC9966C710E1E4647D18DA99BFFFD533E3);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.cross_promo_end;
+		return _stringLiteral60EBBABC9966C710E1E4647D18DA99BFFFD533E3;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoLoadEvent__ctor_m327FF3759071B3FFD78154AC04DB40D3252BD04E (CrossPromoLoadEvent_t143B1961BD4AA3BEA39EC9E9DEA841741DD1FC12* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Loaded.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___2_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_10 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadEvent::.ctor(LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoLoadEvent__ctor_m840512CFDF17197E0275A03B25066D74B6752746 (CrossPromoLoadEvent_t143B1961BD4AA3BEA39EC9E9DEA841741DD1FC12* __this, CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Loaded.ToString();
+		V_0 = 5;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = L_8->___Level_3;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___Network_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CrossPromoLoadEvent_GetAdjustPayloadEventName_m770D794DAD7FC6F5BD430B0005794649C2B3F5BC (CrossPromoLoadEvent_t143B1961BD4AA3BEA39EC9E9DEA841741DD1FC12* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1CCB7A5F9209C416D30F8D4F39C404A9BE09849D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.cross_promo_load;
+		return _stringLiteral1CCB7A5F9209C416D30F8D4F39C404A9BE09849D;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadFailEvent::.ctor(System.String,System.Nullable`1<System.Int32>,LionStudios.Suite.Analytics.Events.AdErrorType,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoLoadFailEvent__ctor_mC803AD7DB0CCB21A6EB97E17CC9FB9DCE0D1CE18 (CrossPromoLoadFailEvent_t3824081A8BDCB178327F856B5C5FBAE5A84CDF7C* __this, String_t* ___0_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___1_level, int32_t ___2_reason, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.LoadFail.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, "no_placement");
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, _stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_6 = ___1_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = L_6;
+		RuntimeObject* L_8 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_7);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_8, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_9 = ___0_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adErrorType, reason);
+		int32_t L_10 = ___2_reason;
+		int32_t L_11 = L_10;
+		RuntimeObject* L_12 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_11);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_12, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadFailEvent::.ctor(LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoFailEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoLoadFailEvent__ctor_m43524EAD7F1D726E3E07B0A368F3890EA4A8AB2A (CrossPromoLoadFailEvent_t3824081A8BDCB178327F856B5C5FBAE5A84CDF7C* __this, CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.LoadFail.ToString();
+		V_0 = 6;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = ((CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC*)L_6)->___Placement_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = ((CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC*)L_8)->___Level_3;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = ((CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC*)L_12)->___Network_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// AddParam(EventParam.adErrorType, args.Reason);
+		CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10* L_14 = ___0_args;
+		NullCheck(L_14);
+		int32_t L_15 = L_14->___Reason_4;
+		int32_t L_16 = L_15;
+		RuntimeObject* L_17 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_16);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_17, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoLoadFailEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CrossPromoLoadFailEvent_GetAdjustPayloadEventName_m676FF515C6ED21900A99DDE8585302386E8796CA (CrossPromoLoadFailEvent_t3824081A8BDCB178327F856B5C5FBAE5A84CDF7C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral27BBD127FDFD39CCC74FFF25A220E5E57BDF5078);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.cross_promo_load_fail;
+		return _stringLiteral27BBD127FDFD39CCC74FFF25A220E5E57BDF5078;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoShowEvent__ctor_m3F87B56DED9E37B68B8595C17AA032578CDFCE28 (CrossPromoShowEvent_tACF84C46677BA35C2C26AC84B67C04573E6B7C03* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Show.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___2_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_10 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowEvent::.ctor(LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoShowEvent__ctor_m1E5F7761601BA139AE62DC0EB33C78A38C9144BC (CrossPromoShowEvent_tACF84C46677BA35C2C26AC84B67C04573E6B7C03* __this, CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Show.ToString();
+		V_0 = 2;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = L_8->___Level_3;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___Network_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CrossPromoShowEvent_GetAdjustPayloadEventName_mACD283184C2034FFBD67D73CD5F8C3F6303E2E4A (CrossPromoShowEvent_tACF84C46677BA35C2C26AC84B67C04573E6B7C03* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3A2F21217E1EA4F545008A202FB9E52469A8BE29);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.cross_promo_show;
+		return _stringLiteral3A2F21217E1EA4F545008A202FB9E52469A8BE29;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowFailEvent::.ctor(System.String,System.String,LionStudios.Suite.Analytics.Events.AdErrorType,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoShowFailEvent__ctor_mDC6C3853FE2D3840F6B256110C53B72E18EA2A46 (CrossPromoShowFailEvent_t9B03FA6E28066D86F8157F9DE058FC56DB1C50C7* __this, String_t* ___0_placement, String_t* ___1_network, int32_t ___2_reason, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___3_level, RuntimeObject* ___4_additionalData, bool ___5_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___4_additionalData;
+		bool L_1 = ___5_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.ShowFail.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___3_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_10 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_10, (bool)0, NULL);
+		// AddParam(EventParam.adErrorType, reason);
+		int32_t L_11 = ___2_reason;
+		int32_t L_12 = L_11;
+		RuntimeObject* L_13 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_12);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowFailEvent::.ctor(LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoFailEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoShowFailEvent__ctor_m135994EBD2A7E1120C7538AACF3BA187229371DC (CrossPromoShowFailEvent_t9B03FA6E28066D86F8157F9DE058FC56DB1C50C7* __this, CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.ShowFail.ToString();
+		V_0 = 3;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = ((CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC*)L_6)->___Placement_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = ((CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC*)L_8)->___Level_3;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = ((CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC*)L_12)->___Network_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// AddParam(EventParam.adErrorType, args.Reason);
+		CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10* L_14 = ___0_args;
+		NullCheck(L_14);
+		int32_t L_15 = L_14->___Reason_4;
+		int32_t L_16 = L_15;
+		RuntimeObject* L_17 = Box(AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var, &L_16);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F, L_17, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoShowFailEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CrossPromoShowFailEvent_GetAdjustPayloadEventName_m151BCB51A679ADB71FDF09E53BDED0093C30E3D8 (CrossPromoShowFailEvent_t9B03FA6E28066D86F8157F9DE058FC56DB1C50C7* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4D14D9A60A32951C0B499FAB674CBE49BB71F4E3);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.cross_promo_show_fail;
+		return _stringLiteral4D14D9A60A32951C0B499FAB674CBE49BB71F4E3;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoStartEvent::.ctor(System.String,System.String,System.Nullable`1<System.Int32>,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoStartEvent__ctor_mA81E4A375234D04BB8AB2D510014500B40BDC89B (CrossPromoStartEvent_tA3A0E57339CD99A694FA2D2CF04B99E63E770F5D* __this, String_t* ___0_placement, String_t* ___1_network, Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___2_level, RuntimeObject* ___3_additionalData, bool ___4_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// IDictionary<string, object> additionalData = null, bool isCalledExplicitly = true) : base(additionalData, isCalledExplicitly)
+		RuntimeObject* L_0 = ___3_additionalData;
+		bool L_1 = ___4_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Start.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, placement);
+		String_t* L_6 = ___0_placement;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_6, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, level);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_7 = ___2_level;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_8 = L_7;
+		RuntimeObject* L_9 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_8);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_9, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, network);
+		String_t* L_10 = ___1_network;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_10, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoStartEvent::.ctor(LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs,System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoStartEvent__ctor_m83D577CCD6F2D45D86D2ECFD37A416EBF716DBA5 (CrossPromoStartEvent_tA3A0E57339CD99A694FA2D2CF04B99E63E770F5D* __this, CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* ___0_args, RuntimeObject* ___1_additionalData, bool ___2_isCalledExplicitly, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// bool isCalledExplicitly = true) : base(additionalData,
+		// isCalledExplicitly)
+		RuntimeObject* L_0 = ___1_additionalData;
+		bool L_1 = ___2_isCalledExplicitly;
+		AdEvent__ctor_mB0EEAB26E4A3985B9D8180C8F1418CDC8C86557B(__this, L_0, L_1, NULL);
+		// eventName = AdEventType.Start.ToString();
+		V_0 = 8;
+		Il2CppFakeBox<int32_t> L_2(AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var, (&V_0));
+		String_t* L_3;
+		L_3 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_2), NULL);
+		LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline(__this, L_3, NULL);
+		// AddParam(EventParam.adType, AdType.CrossPromo);
+		int32_t L_4 = 7;
+		RuntimeObject* L_5 = Box(AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var, &L_4);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral110AEB578696C409BEB3FB32E8A318A5207931A4, L_5, (bool)0, NULL);
+		// AddParam(EventParam.placement, args.Placement);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_6 = ___0_args;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___Placement_1;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralF47F46DDFF228D02B80B9BD91EC146AFB25EB1BC, L_7, (bool)0, NULL);
+		// AddParam(EventParam.levelNum, args.Level);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_8 = ___0_args;
+		NullCheck(L_8);
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_9 = L_8->___Level_3;
+		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_10 = L_9;
+		RuntimeObject* L_11 = Box(Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28_il2cpp_TypeInfo_var, &L_10);
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral7F4A54A8DC8AF646216C4AF0370E15AB1FA287A6, L_11, (bool)0, NULL);
+		// AddParam(EventParam.adProvider, args.Network);
+		CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* L_12 = ___0_args;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___Network_2;
+		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralEA1E864DD08902CBB5909FD1D71ADAA935661E6E, L_13, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.String LionStudios.Suite.Analytics.Events.CrossPromo.CrossPromoStartEvent::GetAdjustPayloadEventName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CrossPromoStartEvent_GetAdjustPayloadEventName_m98D60E029ED2EE2FBD1FF424D539128D3AFE62F7 (CrossPromoStartEvent_tA3A0E57339CD99A694FA2D2CF04B99E63E770F5D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral142BF3CD167698FA3328C355D56EEF712AFED0A8);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return AdjustEventNames.cross_promo_start;
+		return _stringLiteral142BF3CD167698FA3328C355D56EEF712AFED0A8;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoEventArgs__ctor_m41E785F7EAE5D905A812076B8E97ED14C3A2C626 (CrossPromoEventArgs_t3797BF861B6647BAFDAD13CD2CC20BCC18A116EC* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public string Placement = "no_placement";
+		__this->___Placement_1 = _stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Placement_1), (void*)_stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D);
+		// public string Network = "unknown";
+		__this->___Network_2 = _stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Network_2), (void*)_stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968);
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.CrossPromo.EventArgs.CrossPromoFailEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CrossPromoFailEventArgs__ctor_m1E5FF91A72E746EDC49F2ECEC86805017C6F0793 (CrossPromoFailEventArgs_t293A080E52B5C226D86C98EC08261E8B6D015D10* __this, const RuntimeMethod* method) 
+{
+	{
+		CrossPromoEventArgs__ctor_m41E785F7EAE5D905A812076B8E97ED14C3A2C626(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.BannerEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BannerEventArgs__ctor_m384590C27849D91F85630C0E1DDADCA85233EA8C (BannerEventArgs_tC08D7467258524E54870E87CBCDCC84892C8825C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public string Placement = "no_placement";
+		__this->___Placement_1 = _stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Placement_1), (void*)_stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D);
+		// public string Network = "unknown";
+		__this->___Network_2 = _stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Network_2), (void*)_stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968);
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.BannerFailEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BannerFailEventArgs__ctor_mD5B4DA471FBBEFBF4E8A5CE27D4F965E4D074F6B (BannerFailEventArgs_t7343B3EBF9FB87146FC79A41852F4BE377F81ABF* __this, const RuntimeMethod* method) 
+{
+	{
+		BannerEventArgs__ctor_m384590C27849D91F85630C0E1DDADCA85233EA8C(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.AdEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdEventArgs__ctor_m5D5965142FBD5B3382F666B0E97D73FA952FFCF8 (AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public string Network = "unknown";
+		__this->___Network_1 = _stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Network_1), (void*)_stringLiteral2C3323E6A37819D4C4AC310608DA4CF7FB13A968);
+		// public string Placement = "no_placement";
+		__this->___Placement_3 = _stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Placement_3), (void*)_stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D);
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.AdFailEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdFailEventArgs__ctor_mD96500933547124E9884EDE6E89E0538A896C794 (AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A* __this, const RuntimeMethod* method) 
+{
+	{
+		AdEventArgs__ctor_m5D5965142FBD5B3382F666B0E97D73FA952FFCF8(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdRewardArgs__ctor_m61BB361EB023020B07C5781E3335747509A6D128 (AdRewardArgs_t1A7EF7F0C6E5BCA2E9BC705084D90FBA2389E798* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public string Placement = "no_placement";
+		__this->___Placement_1 = _stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Placement_1), (void*)_stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D);
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.InviteReceivedEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InviteReceivedEventArgs__ctor_mBD9B809690CC88515F713F18C26273204CCC1B07 (InviteReceivedEventArgs_t636949BC7DDF26D009B63898AE45745A123C309E* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.InviteRewardedEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InviteRewardedEventArgs__ctor_m542E7976A1C8E88FA8A6CC6079FE7049258B07F4 (InviteRewardedEventArgs_tC69B703FAAFE69591D75C447BA609854A4F66CC6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.InviteSentEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InviteSentEventArgs__ctor_mF2CE7FB321D796EFF91325ACFA7F8B1A0F0F7890 (InviteSentEventArgs_tF325FA40D4A401CCEF4DC98C34F365EF96D56BC9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.SocialConnectEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SocialConnectEventArgs__ctor_m47536A45E0C629A759462AF827DA30E7F76C12BE (SocialConnectEventArgs_tA3D0E95B54D448D797FEF9C022FC315621C0C4BE* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.SocialEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SocialEventArgs__ctor_m53A4081F1318CE60E1DE3A6A39A289296A6BC86C (SocialEventArgs_t05A06736EF7CBB940AE098FB30F39FD063F3259F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void LionStudios.Suite.Analytics.Events.EventArgs.SupportEventArgs::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SupportEventArgs__ctor_m6E288855D0D50F77BE24B1D8387012FB281D77A8 (SupportEventArgs_tCE9BE8371F94B757DF517AFA5B7310986E01A8AA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var);
+		EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LionGameEventBase_set_eventName_m935B0E5A3B3E46D88C279277A44CF578CA3029BC_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public string eventName { get; set; }
+		String_t* L_0 = ___0_value;
+		__this->___U3CeventNameU3Ek__BackingField_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CeventNameU3Ek__BackingField_6), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LionGameEventBase_set_eventType_m99DC8DAB6706241F550EE2BC8674509E21BB1072_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public EventType eventType { get; set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CeventTypeU3Ek__BackingField_5 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Product_AddRealCurrency_m81374B22CC050D73CBAF9107CB2D92F774FAC559_inline (Product_tF33F3342755B680CD2835C2A548770F9149CA2D7* __this, RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214* ___0_currency, const RuntimeMethod* method) 
+{
+	{
+		// realCurrency = currency;
+		RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214* L_0 = ___0_currency;
+		__this->___realCurrency_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___realCurrency_1), (void*)L_0);
+		// }
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* LionGameEventBase_get_eventName_mCA6DE75C049C2382BBEC2A74C762A5489AD83CC1_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string eventName { get; set; }
+		String_t* L_0 = __this->___U3CeventNameU3Ek__BackingField_6;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t CoreData_get_SequenceId_mC73283D3695DC2FC25CA3E76D1BEEADA4C89BB38_inline (CoreData_t0131416461D5064142B0042F97FDC5408B8B2BDD* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int SequenceId { get; private set; }
+		int32_t L_0 = __this->___U3CSequenceIdU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LionEventDelegate_Invoke_mB6CE171A3386230E04ABE2FA05528985690647E8_inline (LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* __this, LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* ___0_gameEvent, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_gameEvent, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LionGameEventBase_get_eventType_m4253A88156B483B86164CC6C16D133882943EA77_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	{
+		// public EventType eventType { get; set; }
+		int32_t L_0 = __this->___U3CeventTypeU3Ek__BackingField_5;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	{
+		// public IDictionary<string, object> eventParams { get; protected set; } = new Dictionary<string, object>();
+		RuntimeObject* L_0 = __this->___U3CeventParamsU3Ek__BackingField_8;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LionGameEventBase_set_eventParams_m83AD224DAC5DC75F3DACF0CA084294AF24A1FCD8_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public IDictionary<string, object> eventParams { get; protected set; } = new Dictionary<string, object>();
+		RuntimeObject* L_0 = ___0_value;
+		__this->___U3CeventParamsU3Ek__BackingField_8 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CeventParamsU3Ek__BackingField_8), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_GetValueOrDefault_m86E1210429A6EA0082CC7806DD638E8B4555F148_gshared_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = (bool)__this->___value_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_gshared_inline (Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = (bool)__this->___hasValue_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_gshared_inline (Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = (bool)__this->___hasValue_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Func_2_Invoke_m5216F6C7BCECCCED81384876C2968E0D4358618B_gshared_inline (Func_2_t9A0D493A82DCC47C9C819A3B045E02D9B5DDCE1B* __this, RuntimeObject* ___0_arg, const RuntimeMethod* method) 
+{
+	typedef int32_t (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
+	return ((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_arg, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Func_1_Invoke_m1412272198DFA4066C83206E5B43353AF10A2EEE_gshared_inline (Func_1_tD5C081AE11746B200C711DD48DBEB00E3A9276D4* __this, const RuntimeMethod* method) 
+{
+	typedef RuntimeObject* (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	return ((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = (int32_t)__this->____version_3;
+		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)__this->____items_1;
+		V_0 = L_1;
+		int32_t L_2 = (int32_t)__this->____size_2;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
+		int32_t L_7 = V_1;
+		RuntimeObject* L_8 = ___0_item;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		RuntimeObject* L_9 = ___0_item;
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->____current_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___key_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___value_1;
+		return L_0;
+	}
+}
