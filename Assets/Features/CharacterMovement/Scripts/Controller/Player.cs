@@ -104,6 +104,7 @@ namespace Sablo.Gameplay.Movement
         private IEnumerator FollowPath(List<Tile> path)
         {
             _playerAnimator.WalkAnimation(true);
+            
             transform.position = new Vector3(transform.position.x, 1, transform.position.z);
             for (int i = 1; i < path.Count; i++)
             {

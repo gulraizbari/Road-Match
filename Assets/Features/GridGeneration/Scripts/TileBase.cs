@@ -447,6 +447,10 @@ namespace Features.GridGeneration.Scripts
             if (TileTouch)
             {
                 if (!GameController.IsState(GameStates.Play)) return;
+                if (_tileStates == TileStates.Gate)
+                {
+                    print("Gate");
+                }
                 if (_tileStates == TileStates.FlipAble)
                 {
                     if (!_canTouch)

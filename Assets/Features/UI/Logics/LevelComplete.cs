@@ -30,7 +30,7 @@ public class LevelComplete : PanelBase
         base.OpenPanel(delay);
         OnStart();
         SoundManager.Instance.LevelComplete(1);
-        StartCoroutine(ShowStars(delay));
+        //StartCoroutine(ShowStars(delay));
         //LionAnalyticEvents.OnLevelComplete(UIController.instance.levelManager.Level+1);
     }
 
