@@ -16,12 +16,45 @@ MonoBehaviour:
   deleteDllAfterBuilds: 1
   AutomateForAllAOTPlatforms: 1
   automateForPlatforms: 0900000014000000
-  lastScan: 638101683238036980
+  lastScan: 638530516283730450
   supportSerializedTypes:
-  - TypeName: System.Boolean, mscorlib
+  - TypeName: Animals, Assembly-CSharp
     IsCustom: 0
     Emit: 1
-  - TypeName: Cell, Assembly-CSharp
+  - TypeName: BoosterType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: CollectableItems, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Fruits, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ItemType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: PowerUpTypes, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: RandomObjects, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.String, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: TilePlacements, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: TileType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: TypesOfHurdle, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Vegetables, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Boolean, mscorlib
     IsCustom: 0
     Emit: 1
   - TypeName: CellData, Assembly-CSharp
@@ -30,21 +63,6 @@ MonoBehaviour:
   - TypeName: CellData[,], Assembly-CSharp
     IsCustom: 0
     Emit: 1
-  - TypeName: ChestData, Assembly-CSharp
-    IsCustom: 0
-    Emit: 1
-  - TypeName: Currency, Assembly-CSharp
-    IsCustom: 0
-    Emit: 1
-  - TypeName: System.Double, mscorlib
-    IsCustom: 0
-    Emit: 1
   - TypeName: System.Int32, mscorlib
-    IsCustom: 0
-    Emit: 1
-  - TypeName: MineType, Assembly-CSharp
-    IsCustom: 0
-    Emit: 1
-  - TypeName: ShaftType, Assembly-CSharp
     IsCustom: 0
     Emit: 1

@@ -45,6 +45,11 @@ public class LevelManager : MonoBehaviour
    {
       SceneManager.LoadScene(currentScene);
    }
+   public void Next()
+   {
+      NextLevel();
+      SceneManager.LoadScene(currentScene);
+   }
 
    public void ResetLevel()
    {

@@ -132,6 +132,8 @@ Library: /Volumes/data/RoadMapPrototype/Temp/StagingArea/tempburstlibs/arm64-v8a
 --compilation-defines=USING_PHYSICS2D_MODULE
 --compilation-defines=UNIVERSAL_1_0_0_OR_NEWER
 --compilation-defines=TIMELINE_FRAMEACCURATE
+--compilation-defines=UNITY_MATHEMATICS
+--compilation-defines=UNITY_BURST
 --compilation-defines=UNIVERSAL_RENDERER
 --compilation-defines=UNIVERSAL_731
 --generate-link-xml=Temp/burst.link.xml

@@ -22,7 +22,7 @@ public class LevelComplete : PanelBase
     public override void Start()
     {
         base.Start();
-        _nextButton.onClick.AddListener(UpdateCash);
+        _nextButton.onClick.AddListener(MoveToNextScene);
     }
 
     public override void OpenPanel(float delay)
@@ -52,18 +52,21 @@ public class LevelComplete : PanelBase
     {
 
         LionAnalyticEvents.OnLevelComplete(UIController.instance.levelManager.Level+1 , "" , null , 0); // Level event should be sent before increasing the level counter.
-      
-UIController.instance.levelManager.NextLevel();
-        _cashToGiveText.UpdateText(_cashToGive.ToInt().ToString());
         _winCashText.UpdateText(GameController.GameCash.ToString());
+        _cashToGiveText.UpdateText(_cashToGive.ToInt().ToString());
+        UIController.instance.AddCash(_cashToGive);
+        UIController.instance.levelManager.NextLevel();
     }
     [Button]
-    private void UpdateCash()
+    private void MoveToNextScene()
     {
-         _cashToGiveText.UpdateText(_cashToGive.ToInt().ToString());
         SoundManager.Instance.PlayClick(1);
-        UIController.instance.AddCash(_cashToGive);
         UIController.instance.levelManager.NextScene();
+    }
+
+    public void UpdateMyCash()
+    {
+        _winCashText.UpdateText(GameController.GameCash.ToString());
     }
 
     private void GetX2Reward()

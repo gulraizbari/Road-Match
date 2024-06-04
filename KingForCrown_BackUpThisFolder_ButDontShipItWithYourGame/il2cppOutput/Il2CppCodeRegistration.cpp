@@ -47,6 +47,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_MoreMountains_Tools_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_NakamaRuntime_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Nakama_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Newtonsoft_Json_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_ParticleImage_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Satori_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Sirenix_OdinInspector_Attributes_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Sirenix_OdinInspector_CompatibilityLayer_CodeGenModule;
@@ -108,7 +109,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_com_lionstudios_local_splash_runtime
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_com_lionstudios_options_runtime_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[89] = 
+const Il2CppCodeGenModule* g_CodeGenModules[90] = 
 {
 	(&g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule),
 	(&g_AssemblyU2DCSharp_CodeGenModule),
@@ -139,6 +140,7 @@ const Il2CppCodeGenModule* g_CodeGenModules[89] =
 	(&g_NakamaRuntime_CodeGenModule),
 	(&g_Nakama_CodeGenModule),
 	(&g_Newtonsoft_Json_CodeGenModule),
+	(&g_ParticleImage_CodeGenModule),
 	(&g_Satori_CodeGenModule),
 	(&g_Sirenix_OdinInspector_Attributes_CodeGenModule),
 	(&g_Sirenix_OdinInspector_CompatibilityLayer_CodeGenModule),
@@ -205,18 +207,18 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	10,
 	g_ReversePInvokeWrapperPointers,
-	55547,
+	55770,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	14081,
+	14154,
 	g_Il2CppInvokerPointers,
 	2082,
 	g_UnresolvedVirtualMethodPointers,
-	614,
+	616,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	89,
+	90,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

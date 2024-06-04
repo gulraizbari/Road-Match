@@ -37,34 +37,50 @@ struct VirtualFuncInvoker1
 struct ComplexTypeSerializer_1_t96E14CF5934939A2DD6FF66853C4D2B1649EB502;
 // Sirenix.Serialization.ComplexTypeSerializer`1<CellData>
 struct ComplexTypeSerializer_1_t45DFFF2A3D3067B50403257A02EA072269814D29;
-// Sirenix.Serialization.ComplexTypeSerializer`1<ChestData>
-struct ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B;
 // Sirenix.Serialization.ComplexTypeSerializer`1<System.Object>
 struct ComplexTypeSerializer_1_tCFADED5CEF4AAA38D0FB34727CB6436B605B38A8;
+// Sirenix.Serialization.ComplexTypeSerializer`1<System.String>
+struct ComplexTypeSerializer_1_t17C1BEBA4D19A69B433AE527B454984508603CD8;
 // System.Collections.Generic.Dictionary`2<Sirenix.Serialization.ISerializationPolicy,Sirenix.Serialization.IFormatter`1<CellData[,]>>
 struct Dictionary_2_t574AA8107B5975A17206CCA73170950F2472CA9E;
 // System.Collections.Generic.Dictionary`2<Sirenix.Serialization.ISerializationPolicy,Sirenix.Serialization.IFormatter`1<CellData>>
 struct Dictionary_2_t0B3E69994D0A3E4A0F4FC28BE1C7F22A7F41AD7D;
-// System.Collections.Generic.Dictionary`2<Sirenix.Serialization.ISerializationPolicy,Sirenix.Serialization.IFormatter`1<ChestData>>
-struct Dictionary_2_t9776DA3ABBB725666FB82482260516F85F74330F;
+// System.Collections.Generic.Dictionary`2<Sirenix.Serialization.ISerializationPolicy,Sirenix.Serialization.IFormatter`1<System.String>>
+struct Dictionary_2_t94F48EFE328BC7301E1B5F2EBEF635A1A12D6695;
 // System.Collections.Generic.Dictionary`2<System.Type,Sirenix.Serialization.Serializer>
 struct Dictionary_2_tFC542F52AF721FEF237136A160FE0EBB15A771CA;
 // System.Collections.Generic.Dictionary`2<System.Type,System.Type>
 struct Dictionary_2_t8BF76F08F2E28AE3B97CD39EBC7A0FE57398B1B0;
-// Sirenix.Serialization.EnumSerializer`1<Cell>
-struct EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED;
-// Sirenix.Serialization.EnumSerializer`1<Currency>
-struct EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0;
-// Sirenix.Serialization.EnumSerializer`1<MineType>
-struct EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7;
-// Sirenix.Serialization.EnumSerializer`1<ShaftType>
-struct EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096;
+// Sirenix.Serialization.EnumSerializer`1<Animals>
+struct EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02;
+// Sirenix.Serialization.EnumSerializer`1<BoosterType>
+struct EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5;
+// Sirenix.Serialization.EnumSerializer`1<CollectableItems>
+struct EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D;
+// Sirenix.Serialization.EnumSerializer`1<Fruits>
+struct EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409;
+// Sirenix.Serialization.EnumSerializer`1<System.Int32Enum>
+struct EnumSerializer_1_t06FE69B3F19EE7862025B6F9D1E3847F425D0733;
+// Sirenix.Serialization.EnumSerializer`1<ItemType>
+struct EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545;
+// Sirenix.Serialization.EnumSerializer`1<PowerUpTypes>
+struct EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC;
+// Sirenix.Serialization.EnumSerializer`1<RandomObjects>
+struct EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD;
+// Sirenix.Serialization.EnumSerializer`1<TilePlacements>
+struct EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79;
+// Sirenix.Serialization.EnumSerializer`1<TileType>
+struct EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87;
+// Sirenix.Serialization.EnumSerializer`1<TypesOfHurdle>
+struct EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C;
+// Sirenix.Serialization.EnumSerializer`1<Vegetables>
+struct EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214;
 // Sirenix.Serialization.IFormatter`1<CellData[,]>
 struct IFormatter_1_t7A7ECB87892E8E5C52054F5A63CC4D3697296B49;
 // Sirenix.Serialization.IFormatter`1<CellData>
 struct IFormatter_1_tF3008F62DCEE7A2CF2B17B75F5473C359582592E;
-// Sirenix.Serialization.IFormatter`1<ChestData>
-struct IFormatter_1_t77404C7A21D3BA11CBCFCF36BF37DFE8B3129F1E;
+// Sirenix.Serialization.IFormatter`1<System.String>
+struct IFormatter_1_t0DD7B13C6F431C73CF0E1F3E5BD29A7EC96C4AB9;
 // Sirenix.Serialization.MultiDimensionalArrayFormatter`2<CellData[,],CellData>
 struct MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012;
 // Sirenix.Serialization.MultiDimensionalArrayFormatter`2<System.Object,System.Object>
@@ -85,10 +101,6 @@ struct SerializationCallbackU5BU5D_tCA44B67F3FA8449C4DAE326BA15245B4F2AE3BEB;
 struct BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7;
 // CellData
 struct CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F;
-// ChestData
-struct ChestData_tB7D26CC2219E5602EC73760AA942E994E7DB475D;
-// Sirenix.Serialization.DoubleSerializer
-struct DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D;
 // Sirenix.Serialization.ISerializationPolicy
 struct ISerializationPolicy_t0C47BF78FD9B96AE6371585EAE63593988C2FA43;
 // Sirenix.Serialization.Int32Serializer
@@ -100,26 +112,38 @@ struct Type_t;
 
 IL2CPP_EXTERN_C RuntimeClass* BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* ChestData_tB7D26CC2219E5602EC73760AA942E994E7DB475D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ComplexTypeSerializer_1_t17C1BEBA4D19A69B433AE527B454984508603CD8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ComplexTypeSerializer_1_t45DFFF2A3D3067B50403257A02EA072269814D29_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ComplexTypeSerializer_1_t96E14CF5934939A2DD6FF66853C4D2B1649EB502_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ReflectionFormatter_1_t75291047683CF7F792EA849363E5EFBF64963DEB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ReflectionFormatter_1_tA3E7E6D80C6E646175459E06736B8AE0C9CF63D8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ComplexTypeSerializer_1__ctor_m33FA7E3D45B09DB4A83396329EEF3382F208BD46_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ComplexTypeSerializer_1__ctor_m97087A53982403D4B41A788858BDEFA1B619D621_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ComplexTypeSerializer_1__ctor_m36A7F11181D62C3A99BDC8FD80E06382462316C0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ComplexTypeSerializer_1__ctor_mA7E5B0B24309BFE20A1155BB67A6F5DF0339D8EC_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_m0B2FE83AAAD41FB2D6815311619C8455CEF47833_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_mC55F71F323A7411FC7CEE7961ABC42F5BA9AEEEE_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_mE85E9EC7EC37C61EE9B1330BFA305A65E2BEF270_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_mF6866775A607693B23C928E140BFEB1F0F6E759B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_m153F5928F0E6DA459EA5A0C207229221E756DDEB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_m5D527EA932D3809F531B83621E29BF5390302CE1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_m7387133D5499495A1DEB804BB913911B1B78A4F7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_m771A21638AA42485B5BB6C2899EA87A27D4ADC73_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_m806AADF911BE1AA971EAC202A8CCF9A48F5B6A52_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_m822CC7A531748960623E6FBCC6D7E5964419F1BB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_m8C0FD65EABB7E6395048CB2BA9CEA8E501DE5738_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_mA5F42C34DA67A470299439EBB45B9EEB3D9976E6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_mBFED44DDE89189B8FDF15E7BBB5958FF3A9B7133_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_mD570EC3D56EDC4DD8028E05AD3B05FD8488751F8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumSerializer_1__ctor_mF1E485F57C19B0CABDF37D02630667AB1DA16560_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MultiDimensionalArrayFormatter_2__ctor_m4F3D4016535412994195C11A984B1E3B6A413A3D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReflectionFormatter_1__ctor_m1C60BB8482FA8292579BCA021C38A4EC7CA5DEA0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReflectionFormatter_1__ctor_m367E05F1A7DAC7798595E41F666FD0E65357E1B8_RuntimeMethod_var;
@@ -190,11 +214,6 @@ struct CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F  : public RuntimeObjec
 	int32_t ___powerUPLVL_17;
 };
 
-// ChestData
-struct ChestData_tB7D26CC2219E5602EC73760AA942E994E7DB475D  : public RuntimeObject
-{
-};
-
 // Sirenix.Serialization.AOTGenerated.PreventCodeStrippingViaReferences
 struct PreventCodeStrippingViaReferences_t73A6D17CC562E67E2D540453D45099F37AB84BCD  : public RuntimeObject
 {
@@ -251,13 +270,18 @@ struct Serializer_1_t162F0D3C49220ABB94AE43A8893A9AB33C4F83AB  : public Serializ
 {
 };
 
+// Sirenix.Serialization.Serializer`1<Animals>
+struct Serializer_1_tCBFD5CA69B74C3B21FB72C8A9BD3A502C6B22EF3  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+{
+};
+
 // Sirenix.Serialization.Serializer`1<System.Boolean>
 struct Serializer_1_tE9BCFFCE3749D415B953BEC8196DE5DD105114F6  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
 {
 };
 
-// Sirenix.Serialization.Serializer`1<Cell>
-struct Serializer_1_tDBA935FD60A7650E9606548BC38F0BCA5874BA71  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+// Sirenix.Serialization.Serializer`1<BoosterType>
+struct Serializer_1_tB60CD4AE2A4A3A8BDC28BF08894969A30CDBBFB1  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
 {
 };
 
@@ -266,18 +290,13 @@ struct Serializer_1_t0648E2596A41B728BDE4CE5C8F95C8CC5B66A288  : public Serializ
 {
 };
 
-// Sirenix.Serialization.Serializer`1<ChestData>
-struct Serializer_1_tD231007422355773F4B799923E17A12ECB885FDE  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+// Sirenix.Serialization.Serializer`1<CollectableItems>
+struct Serializer_1_t1609F288AD35B856903D5D557EB5B35E5895B533  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
 {
 };
 
-// Sirenix.Serialization.Serializer`1<Currency>
-struct Serializer_1_t3796C759BDDF81B0D83E3B784AAC828654E33189  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
-{
-};
-
-// Sirenix.Serialization.Serializer`1<System.Double>
-struct Serializer_1_tAA8260B22A5C6F67ADC9263F84778C286F6ABF47  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+// Sirenix.Serialization.Serializer`1<Fruits>
+struct Serializer_1_t75C819E05C086FB6B9DBE68AA3E265A583DC1609  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
 {
 };
 
@@ -286,13 +305,43 @@ struct Serializer_1_tB9533CFC0D3480AB1A3646A517BFB1110081BF07  : public Serializ
 {
 };
 
-// Sirenix.Serialization.Serializer`1<MineType>
-struct Serializer_1_tFA409AE9B0E4A7442602ECF05454BB960DC630B2  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+// Sirenix.Serialization.Serializer`1<ItemType>
+struct Serializer_1_t1C9CE6A025005899DAAE74296661AFAEB2ECE605  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
 {
 };
 
-// Sirenix.Serialization.Serializer`1<ShaftType>
-struct Serializer_1_tEAA20432EF806533AE4567CC2977ADFD36DE65B7  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+// Sirenix.Serialization.Serializer`1<PowerUpTypes>
+struct Serializer_1_t84860E54D2742FD9A5B87EEDDBB391179F26A90A  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+{
+};
+
+// Sirenix.Serialization.Serializer`1<RandomObjects>
+struct Serializer_1_t152D46B3486A80C5BE9982FBF03D23626254554D  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+{
+};
+
+// Sirenix.Serialization.Serializer`1<System.String>
+struct Serializer_1_t9854C0179F50900A646768F185F6E029A9121EE0  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+{
+};
+
+// Sirenix.Serialization.Serializer`1<TilePlacements>
+struct Serializer_1_t040F0228A15896CA91F8D8B2A5C710D5AEB7646B  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+{
+};
+
+// Sirenix.Serialization.Serializer`1<TileType>
+struct Serializer_1_t54DDD976681EC31A9EC98CFAD36C407D67367273  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+{
+};
+
+// Sirenix.Serialization.Serializer`1<TypesOfHurdle>
+struct Serializer_1_t0844B3013894BFF0AEB791F0B0569E22F31583C2  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
+{
+};
+
+// Sirenix.Serialization.Serializer`1<Vegetables>
+struct Serializer_1_tAD3D889623F90A706677E77FD9F2BAEC716E944F  : public Serializer_t6C6FF0C071058921A25F0197AEBE808891C78EDA
 {
 };
 
@@ -303,66 +352,11 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22
 	bool ___m_value_0;
 };
 
-// Cell
-struct Cell_t88832599049D1ADACE41CE1CF9C147304CF76D5A 
-{
-	union
-	{
-		struct
-		{
-		};
-		uint8_t Cell_t88832599049D1ADACE41CE1CF9C147304CF76D5A__padding[1];
-	};
-};
-
-// Currency
-struct Currency_t1280D343A7BB30C73CA2D0C51225F94CFF067BC5 
-{
-	union
-	{
-		struct
-		{
-		};
-		uint8_t Currency_t1280D343A7BB30C73CA2D0C51225F94CFF067BC5__padding[1];
-	};
-};
-
-// System.Double
-struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F 
-{
-	// System.Double System.Double::m_value
-	double ___m_value_0;
-};
-
 // System.Int32
 struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
 {
 	// System.Int32 System.Int32::m_value
 	int32_t ___m_value_0;
-};
-
-// MineType
-struct MineType_t9BB2AEF3E6BDE22949C94F1C5D494C44F9383990 
-{
-	union
-	{
-		struct
-		{
-		};
-		uint8_t MineType_t9BB2AEF3E6BDE22949C94F1C5D494C44F9383990__padding[1];
-	};
-};
-
-// ShaftType
-struct ShaftType_t248D87AA71B953822864D29DAE784E9BA081AA19 
-{
-	union
-	{
-		struct
-		{
-		};
-		uint8_t ShaftType_t248D87AA71B953822864D29DAE784E9BA081AA19__padding[1];
-	};
 };
 
 // System.Void
@@ -387,38 +381,68 @@ struct ComplexTypeSerializer_1_t45DFFF2A3D3067B50403257A02EA072269814D29  : publ
 {
 };
 
-// Sirenix.Serialization.ComplexTypeSerializer`1<ChestData>
-struct ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B  : public Serializer_1_tD231007422355773F4B799923E17A12ECB885FDE
+// Sirenix.Serialization.ComplexTypeSerializer`1<System.String>
+struct ComplexTypeSerializer_1_t17C1BEBA4D19A69B433AE527B454984508603CD8  : public Serializer_1_t9854C0179F50900A646768F185F6E029A9121EE0
 {
 };
 
-// Sirenix.Serialization.EnumSerializer`1<Cell>
-struct EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED  : public Serializer_1_tDBA935FD60A7650E9606548BC38F0BCA5874BA71
+// Sirenix.Serialization.EnumSerializer`1<Animals>
+struct EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02  : public Serializer_1_tCBFD5CA69B74C3B21FB72C8A9BD3A502C6B22EF3
 {
 };
 
-// Sirenix.Serialization.EnumSerializer`1<Currency>
-struct EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0  : public Serializer_1_t3796C759BDDF81B0D83E3B784AAC828654E33189
+// Sirenix.Serialization.EnumSerializer`1<BoosterType>
+struct EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5  : public Serializer_1_tB60CD4AE2A4A3A8BDC28BF08894969A30CDBBFB1
 {
 };
 
-// Sirenix.Serialization.EnumSerializer`1<MineType>
-struct EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7  : public Serializer_1_tFA409AE9B0E4A7442602ECF05454BB960DC630B2
+// Sirenix.Serialization.EnumSerializer`1<CollectableItems>
+struct EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D  : public Serializer_1_t1609F288AD35B856903D5D557EB5B35E5895B533
 {
 };
 
-// Sirenix.Serialization.EnumSerializer`1<ShaftType>
-struct EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096  : public Serializer_1_tEAA20432EF806533AE4567CC2977ADFD36DE65B7
+// Sirenix.Serialization.EnumSerializer`1<Fruits>
+struct EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409  : public Serializer_1_t75C819E05C086FB6B9DBE68AA3E265A583DC1609
+{
+};
+
+// Sirenix.Serialization.EnumSerializer`1<ItemType>
+struct EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545  : public Serializer_1_t1C9CE6A025005899DAAE74296661AFAEB2ECE605
+{
+};
+
+// Sirenix.Serialization.EnumSerializer`1<PowerUpTypes>
+struct EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC  : public Serializer_1_t84860E54D2742FD9A5B87EEDDBB391179F26A90A
+{
+};
+
+// Sirenix.Serialization.EnumSerializer`1<RandomObjects>
+struct EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD  : public Serializer_1_t152D46B3486A80C5BE9982FBF03D23626254554D
+{
+};
+
+// Sirenix.Serialization.EnumSerializer`1<TilePlacements>
+struct EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79  : public Serializer_1_t040F0228A15896CA91F8D8B2A5C710D5AEB7646B
+{
+};
+
+// Sirenix.Serialization.EnumSerializer`1<TileType>
+struct EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87  : public Serializer_1_t54DDD976681EC31A9EC98CFAD36C407D67367273
+{
+};
+
+// Sirenix.Serialization.EnumSerializer`1<TypesOfHurdle>
+struct EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C  : public Serializer_1_t0844B3013894BFF0AEB791F0B0569E22F31583C2
+{
+};
+
+// Sirenix.Serialization.EnumSerializer`1<Vegetables>
+struct EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214  : public Serializer_1_tAD3D889623F90A706677E77FD9F2BAEC716E944F
 {
 };
 
 // Sirenix.Serialization.BooleanSerializer
 struct BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7  : public Serializer_1_tE9BCFFCE3749D415B953BEC8196DE5DD105114F6
-{
-};
-
-// Sirenix.Serialization.DoubleSerializer
-struct DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D  : public Serializer_1_tAA8260B22A5C6F67ADC9263F84778C286F6ABF47
 {
 };
 
@@ -481,10 +505,6 @@ struct BaseFormatter_1_t86EBCDB87DC33F523DB0BF6CBD124A5283E33DEB_StaticFields
 
 // CellData
 
-// ChestData
-
-// ChestData
-
 // Sirenix.Serialization.AOTGenerated.PreventCodeStrippingViaReferences
 
 // Sirenix.Serialization.AOTGenerated.PreventCodeStrippingViaReferences
@@ -538,41 +558,65 @@ struct MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA701
 
 // Sirenix.Serialization.Serializer`1<CellData[,]>
 
-// Sirenix.Serialization.Serializer`1<System.Boolean>
+// Sirenix.Serialization.Serializer`1<Animals>
+
+// Sirenix.Serialization.Serializer`1<Animals>
 
 // Sirenix.Serialization.Serializer`1<System.Boolean>
 
-// Sirenix.Serialization.Serializer`1<Cell>
+// Sirenix.Serialization.Serializer`1<System.Boolean>
 
-// Sirenix.Serialization.Serializer`1<Cell>
+// Sirenix.Serialization.Serializer`1<BoosterType>
+
+// Sirenix.Serialization.Serializer`1<BoosterType>
 
 // Sirenix.Serialization.Serializer`1<CellData>
 
 // Sirenix.Serialization.Serializer`1<CellData>
 
-// Sirenix.Serialization.Serializer`1<ChestData>
+// Sirenix.Serialization.Serializer`1<CollectableItems>
 
-// Sirenix.Serialization.Serializer`1<ChestData>
+// Sirenix.Serialization.Serializer`1<CollectableItems>
 
-// Sirenix.Serialization.Serializer`1<Currency>
+// Sirenix.Serialization.Serializer`1<Fruits>
 
-// Sirenix.Serialization.Serializer`1<Currency>
-
-// Sirenix.Serialization.Serializer`1<System.Double>
-
-// Sirenix.Serialization.Serializer`1<System.Double>
+// Sirenix.Serialization.Serializer`1<Fruits>
 
 // Sirenix.Serialization.Serializer`1<System.Int32>
 
 // Sirenix.Serialization.Serializer`1<System.Int32>
 
-// Sirenix.Serialization.Serializer`1<MineType>
+// Sirenix.Serialization.Serializer`1<ItemType>
 
-// Sirenix.Serialization.Serializer`1<MineType>
+// Sirenix.Serialization.Serializer`1<ItemType>
 
-// Sirenix.Serialization.Serializer`1<ShaftType>
+// Sirenix.Serialization.Serializer`1<PowerUpTypes>
 
-// Sirenix.Serialization.Serializer`1<ShaftType>
+// Sirenix.Serialization.Serializer`1<PowerUpTypes>
+
+// Sirenix.Serialization.Serializer`1<RandomObjects>
+
+// Sirenix.Serialization.Serializer`1<RandomObjects>
+
+// Sirenix.Serialization.Serializer`1<System.String>
+
+// Sirenix.Serialization.Serializer`1<System.String>
+
+// Sirenix.Serialization.Serializer`1<TilePlacements>
+
+// Sirenix.Serialization.Serializer`1<TilePlacements>
+
+// Sirenix.Serialization.Serializer`1<TileType>
+
+// Sirenix.Serialization.Serializer`1<TileType>
+
+// Sirenix.Serialization.Serializer`1<TypesOfHurdle>
+
+// Sirenix.Serialization.Serializer`1<TypesOfHurdle>
+
+// Sirenix.Serialization.Serializer`1<Vegetables>
+
+// Sirenix.Serialization.Serializer`1<Vegetables>
 
 // System.Boolean
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
@@ -585,29 +629,9 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 
 // System.Boolean
 
-// Cell
-
-// Cell
-
-// Currency
-
-// Currency
-
-// System.Double
-
-// System.Double
-
 // System.Int32
 
 // System.Int32
-
-// MineType
-
-// MineType
-
-// ShaftType
-
-// ShaftType
 
 // System.Void
 
@@ -683,8 +707,8 @@ struct ComplexTypeSerializer_1_t45DFFF2A3D3067B50403257A02EA072269814D29_StaticF
 
 // Sirenix.Serialization.ComplexTypeSerializer`1<CellData>
 
-// Sirenix.Serialization.ComplexTypeSerializer`1<ChestData>
-struct ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B_StaticFields
+// Sirenix.Serialization.ComplexTypeSerializer`1<System.String>
+struct ComplexTypeSerializer_1_t17C1BEBA4D19A69B433AE527B454984508603CD8_StaticFields
 {
 	// System.Boolean Sirenix.Serialization.ComplexTypeSerializer`1::ComplexTypeMayBeBoxedValueType
 	bool ___ComplexTypeMayBeBoxedValueType_3;
@@ -699,7 +723,7 @@ struct ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B_StaticF
 	// System.Boolean Sirenix.Serialization.ComplexTypeSerializer`1::AllowDeserializeInvalidDataForT
 	bool ___AllowDeserializeInvalidDataForT_8;
 	// System.Collections.Generic.Dictionary`2<Sirenix.Serialization.ISerializationPolicy,Sirenix.Serialization.IFormatter`1<T>> Sirenix.Serialization.ComplexTypeSerializer`1::FormattersByPolicy
-	Dictionary_2_t9776DA3ABBB725666FB82482260516F85F74330F* ___FormattersByPolicy_9;
+	Dictionary_2_t94F48EFE328BC7301E1B5F2EBEF635A1A12D6695* ___FormattersByPolicy_9;
 	// System.Object Sirenix.Serialization.ComplexTypeSerializer`1::FormattersByPolicy_LOCK
 	RuntimeObject* ___FormattersByPolicy_LOCK_10;
 	// Sirenix.Serialization.ISerializationPolicy Sirenix.Serialization.ComplexTypeSerializer`1::UnityPolicy
@@ -716,31 +740,55 @@ struct ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B_StaticF
 	RuntimeObject* ___EverythingPolicyFormatter_16;
 };
 
-// Sirenix.Serialization.ComplexTypeSerializer`1<ChestData>
+// Sirenix.Serialization.ComplexTypeSerializer`1<System.String>
 
-// Sirenix.Serialization.EnumSerializer`1<Cell>
+// Sirenix.Serialization.EnumSerializer`1<Animals>
 
-// Sirenix.Serialization.EnumSerializer`1<Cell>
+// Sirenix.Serialization.EnumSerializer`1<Animals>
 
-// Sirenix.Serialization.EnumSerializer`1<Currency>
+// Sirenix.Serialization.EnumSerializer`1<BoosterType>
 
-// Sirenix.Serialization.EnumSerializer`1<Currency>
+// Sirenix.Serialization.EnumSerializer`1<BoosterType>
 
-// Sirenix.Serialization.EnumSerializer`1<MineType>
+// Sirenix.Serialization.EnumSerializer`1<CollectableItems>
 
-// Sirenix.Serialization.EnumSerializer`1<MineType>
+// Sirenix.Serialization.EnumSerializer`1<CollectableItems>
 
-// Sirenix.Serialization.EnumSerializer`1<ShaftType>
+// Sirenix.Serialization.EnumSerializer`1<Fruits>
 
-// Sirenix.Serialization.EnumSerializer`1<ShaftType>
+// Sirenix.Serialization.EnumSerializer`1<Fruits>
+
+// Sirenix.Serialization.EnumSerializer`1<ItemType>
+
+// Sirenix.Serialization.EnumSerializer`1<ItemType>
+
+// Sirenix.Serialization.EnumSerializer`1<PowerUpTypes>
+
+// Sirenix.Serialization.EnumSerializer`1<PowerUpTypes>
+
+// Sirenix.Serialization.EnumSerializer`1<RandomObjects>
+
+// Sirenix.Serialization.EnumSerializer`1<RandomObjects>
+
+// Sirenix.Serialization.EnumSerializer`1<TilePlacements>
+
+// Sirenix.Serialization.EnumSerializer`1<TilePlacements>
+
+// Sirenix.Serialization.EnumSerializer`1<TileType>
+
+// Sirenix.Serialization.EnumSerializer`1<TileType>
+
+// Sirenix.Serialization.EnumSerializer`1<TypesOfHurdle>
+
+// Sirenix.Serialization.EnumSerializer`1<TypesOfHurdle>
+
+// Sirenix.Serialization.EnumSerializer`1<Vegetables>
+
+// Sirenix.Serialization.EnumSerializer`1<Vegetables>
 
 // Sirenix.Serialization.BooleanSerializer
 
 // Sirenix.Serialization.BooleanSerializer
-
-// Sirenix.Serialization.DoubleSerializer
-
-// Sirenix.Serialization.DoubleSerializer
 
 // Sirenix.Serialization.Int32Serializer
 
@@ -750,28 +798,77 @@ struct ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B_StaticF
 #endif
 
 
-// System.Void Sirenix.Serialization.EnumSerializer`1<Cell>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumSerializer_1__ctor_mF6866775A607693B23C928E140BFEB1F0F6E759B_gshared (EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED* __this, const RuntimeMethod* method) ;
-// System.Void Sirenix.Serialization.ReflectionFormatter`1<System.Object>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReflectionFormatter_1__ctor_mBEB4F353923A667045D79ACE70460FF2968B5EDE_gshared (ReflectionFormatter_1_tB6DAF53F6F410C9664F5960209ABDD85E507E2D8* __this, const RuntimeMethod* method) ;
+// System.Void Sirenix.Serialization.EnumSerializer`1<System.Int32Enum>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared (EnumSerializer_1_t06FE69B3F19EE7862025B6F9D1E3847F425D0733* __this, const RuntimeMethod* method) ;
 // System.Void Sirenix.Serialization.ComplexTypeSerializer`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComplexTypeSerializer_1__ctor_mAA16309B355AE0A4CA59971202DA063826030EBA_gshared (ComplexTypeSerializer_1_tCFADED5CEF4AAA38D0FB34727CB6436B605B38A8* __this, const RuntimeMethod* method) ;
+// System.Void Sirenix.Serialization.ReflectionFormatter`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReflectionFormatter_1__ctor_mBEB4F353923A667045D79ACE70460FF2968B5EDE_gshared (ReflectionFormatter_1_tB6DAF53F6F410C9664F5960209ABDD85E507E2D8* __this, const RuntimeMethod* method) ;
 // System.Void Sirenix.Serialization.MultiDimensionalArrayFormatter`2<System.Object,System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiDimensionalArrayFormatter_2__ctor_mD833E61358B3C40EEED9E8967B19F84C894F8F0F_gshared (MultiDimensionalArrayFormatter_2_t38BF2BEBFF8D70E832A7AFAA4F7E371B4922709C* __this, const RuntimeMethod* method) ;
-// System.Void Sirenix.Serialization.EnumSerializer`1<Currency>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumSerializer_1__ctor_mE85E9EC7EC37C61EE9B1330BFA305A65E2BEF270_gshared (EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0* __this, const RuntimeMethod* method) ;
-// System.Void Sirenix.Serialization.EnumSerializer`1<MineType>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumSerializer_1__ctor_mC55F71F323A7411FC7CEE7961ABC42F5BA9AEEEE_gshared (EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7* __this, const RuntimeMethod* method) ;
-// System.Void Sirenix.Serialization.EnumSerializer`1<ShaftType>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumSerializer_1__ctor_m0B2FE83AAAD41FB2D6815311619C8455CEF47833_gshared (EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096* __this, const RuntimeMethod* method) ;
 
+// System.Void Sirenix.Serialization.EnumSerializer`1<Animals>::.ctor()
+inline void EnumSerializer_1__ctor_m153F5928F0E6DA459EA5A0C207229221E756DDEB (EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02*, const RuntimeMethod*))EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared)(__this, method);
+}
+// System.Void Sirenix.Serialization.EnumSerializer`1<BoosterType>::.ctor()
+inline void EnumSerializer_1__ctor_mF1E485F57C19B0CABDF37D02630667AB1DA16560 (EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5*, const RuntimeMethod*))EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared)(__this, method);
+}
+// System.Void Sirenix.Serialization.EnumSerializer`1<CollectableItems>::.ctor()
+inline void EnumSerializer_1__ctor_m822CC7A531748960623E6FBCC6D7E5964419F1BB (EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D*, const RuntimeMethod*))EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared)(__this, method);
+}
+// System.Void Sirenix.Serialization.EnumSerializer`1<Fruits>::.ctor()
+inline void EnumSerializer_1__ctor_m7387133D5499495A1DEB804BB913911B1B78A4F7 (EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409*, const RuntimeMethod*))EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared)(__this, method);
+}
+// System.Void Sirenix.Serialization.EnumSerializer`1<ItemType>::.ctor()
+inline void EnumSerializer_1__ctor_m8C0FD65EABB7E6395048CB2BA9CEA8E501DE5738 (EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545*, const RuntimeMethod*))EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared)(__this, method);
+}
+// System.Void Sirenix.Serialization.EnumSerializer`1<PowerUpTypes>::.ctor()
+inline void EnumSerializer_1__ctor_mBFED44DDE89189B8FDF15E7BBB5958FF3A9B7133 (EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC*, const RuntimeMethod*))EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared)(__this, method);
+}
+// System.Void Sirenix.Serialization.EnumSerializer`1<RandomObjects>::.ctor()
+inline void EnumSerializer_1__ctor_mD570EC3D56EDC4DD8028E05AD3B05FD8488751F8 (EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD*, const RuntimeMethod*))EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared)(__this, method);
+}
+// System.Void Sirenix.Serialization.ComplexTypeSerializer`1<System.String>::.ctor()
+inline void ComplexTypeSerializer_1__ctor_m36A7F11181D62C3A99BDC8FD80E06382462316C0 (ComplexTypeSerializer_1_t17C1BEBA4D19A69B433AE527B454984508603CD8* __this, const RuntimeMethod* method)
+{
+	((  void (*) (ComplexTypeSerializer_1_t17C1BEBA4D19A69B433AE527B454984508603CD8*, const RuntimeMethod*))ComplexTypeSerializer_1__ctor_mAA16309B355AE0A4CA59971202DA063826030EBA_gshared)(__this, method);
+}
+// System.Void Sirenix.Serialization.EnumSerializer`1<TilePlacements>::.ctor()
+inline void EnumSerializer_1__ctor_m806AADF911BE1AA971EAC202A8CCF9A48F5B6A52 (EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79*, const RuntimeMethod*))EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared)(__this, method);
+}
+// System.Void Sirenix.Serialization.EnumSerializer`1<TileType>::.ctor()
+inline void EnumSerializer_1__ctor_m771A21638AA42485B5BB6C2899EA87A27D4ADC73 (EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87*, const RuntimeMethod*))EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared)(__this, method);
+}
+// System.Void Sirenix.Serialization.EnumSerializer`1<TypesOfHurdle>::.ctor()
+inline void EnumSerializer_1__ctor_m5D527EA932D3809F531B83621E29BF5390302CE1 (EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C*, const RuntimeMethod*))EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared)(__this, method);
+}
+// System.Void Sirenix.Serialization.EnumSerializer`1<Vegetables>::.ctor()
+inline void EnumSerializer_1__ctor_mA5F42C34DA67A470299439EBB45B9EEB3D9976E6 (EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214* __this, const RuntimeMethod* method)
+{
+	((  void (*) (EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214*, const RuntimeMethod*))EnumSerializer_1__ctor_mAC694703E716197B0BBD5CC3AD6CE13599A0CEBD_gshared)(__this, method);
+}
 // System.Void Sirenix.Serialization.BooleanSerializer::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BooleanSerializer__ctor_m88A837E4C477BB0AF23DA82F4609AD8868F8556D (BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7* __this, const RuntimeMethod* method) ;
-// System.Void Sirenix.Serialization.EnumSerializer`1<Cell>::.ctor()
-inline void EnumSerializer_1__ctor_mF6866775A607693B23C928E140BFEB1F0F6E759B (EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED* __this, const RuntimeMethod* method)
-{
-	((  void (*) (EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED*, const RuntimeMethod*))EnumSerializer_1__ctor_mF6866775A607693B23C928E140BFEB1F0F6E759B_gshared)(__this, method);
-}
 // System.Void CellData::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CellData__ctor_m96A52AEA79C7AEBD19464949AEA58DC17D22A834 (CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* __this, const RuntimeMethod* method) ;
 // System.Void Sirenix.Serialization.ReflectionFormatter`1<CellData>::.ctor()
@@ -799,32 +896,8 @@ inline void ComplexTypeSerializer_1__ctor_mA7E5B0B24309BFE20A1155BB67A6F5DF0339D
 {
 	((  void (*) (ComplexTypeSerializer_1_t96E14CF5934939A2DD6FF66853C4D2B1649EB502*, const RuntimeMethod*))ComplexTypeSerializer_1__ctor_mAA16309B355AE0A4CA59971202DA063826030EBA_gshared)(__this, method);
 }
-// System.Void ChestData::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChestData__ctor_mA3C9238D3C9D877C6485A834F43249538A77A2F9 (ChestData_tB7D26CC2219E5602EC73760AA942E994E7DB475D* __this, const RuntimeMethod* method) ;
-// System.Void Sirenix.Serialization.ComplexTypeSerializer`1<ChestData>::.ctor()
-inline void ComplexTypeSerializer_1__ctor_m97087A53982403D4B41A788858BDEFA1B619D621 (ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B* __this, const RuntimeMethod* method)
-{
-	((  void (*) (ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B*, const RuntimeMethod*))ComplexTypeSerializer_1__ctor_mAA16309B355AE0A4CA59971202DA063826030EBA_gshared)(__this, method);
-}
-// System.Void Sirenix.Serialization.EnumSerializer`1<Currency>::.ctor()
-inline void EnumSerializer_1__ctor_mE85E9EC7EC37C61EE9B1330BFA305A65E2BEF270 (EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0* __this, const RuntimeMethod* method)
-{
-	((  void (*) (EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0*, const RuntimeMethod*))EnumSerializer_1__ctor_mE85E9EC7EC37C61EE9B1330BFA305A65E2BEF270_gshared)(__this, method);
-}
-// System.Void Sirenix.Serialization.DoubleSerializer::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DoubleSerializer__ctor_m2674C1856F9EDFC0EC978464ECABC84758A38927 (DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D* __this, const RuntimeMethod* method) ;
 // System.Void Sirenix.Serialization.Int32Serializer::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Int32Serializer__ctor_m4597E47DF915AB38A814DDD497B71E3DBC4AF02C (Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2* __this, const RuntimeMethod* method) ;
-// System.Void Sirenix.Serialization.EnumSerializer`1<MineType>::.ctor()
-inline void EnumSerializer_1__ctor_mC55F71F323A7411FC7CEE7961ABC42F5BA9AEEEE (EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7* __this, const RuntimeMethod* method)
-{
-	((  void (*) (EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7*, const RuntimeMethod*))EnumSerializer_1__ctor_mC55F71F323A7411FC7CEE7961ABC42F5BA9AEEEE_gshared)(__this, method);
-}
-// System.Void Sirenix.Serialization.EnumSerializer`1<ShaftType>::.ctor()
-inline void EnumSerializer_1__ctor_m0B2FE83AAAD41FB2D6815311619C8455CEF47833 (EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096* __this, const RuntimeMethod* method)
-{
-	((  void (*) (EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096*, const RuntimeMethod*))EnumSerializer_1__ctor_m0B2FE83AAAD41FB2D6815311619C8455CEF47833_gshared)(__this, method);
-}
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -846,22 +919,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PreventCodeStrippingViaReferences__cctor
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ChestData_tB7D26CC2219E5602EC73760AA942E994E7DB475D_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComplexTypeSerializer_1__ctor_m33FA7E3D45B09DB4A83396329EEF3382F208BD46_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComplexTypeSerializer_1__ctor_m97087A53982403D4B41A788858BDEFA1B619D621_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComplexTypeSerializer_1__ctor_m36A7F11181D62C3A99BDC8FD80E06382462316C0_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComplexTypeSerializer_1__ctor_mA7E5B0B24309BFE20A1155BB67A6F5DF0339D8EC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComplexTypeSerializer_1_t17C1BEBA4D19A69B433AE527B454984508603CD8_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComplexTypeSerializer_1_t45DFFF2A3D3067B50403257A02EA072269814D29_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComplexTypeSerializer_1_t96E14CF5934939A2DD6FF66853C4D2B1649EB502_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_m0B2FE83AAAD41FB2D6815311619C8455CEF47833_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_mC55F71F323A7411FC7CEE7961ABC42F5BA9AEEEE_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_mE85E9EC7EC37C61EE9B1330BFA305A65E2BEF270_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_mF6866775A607693B23C928E140BFEB1F0F6E759B_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_m153F5928F0E6DA459EA5A0C207229221E756DDEB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_m5D527EA932D3809F531B83621E29BF5390302CE1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_m7387133D5499495A1DEB804BB913911B1B78A4F7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_m771A21638AA42485B5BB6C2899EA87A27D4ADC73_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_m806AADF911BE1AA971EAC202A8CCF9A48F5B6A52_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_m822CC7A531748960623E6FBCC6D7E5964419F1BB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_m8C0FD65EABB7E6395048CB2BA9CEA8E501DE5738_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_mA5F42C34DA67A470299439EBB45B9EEB3D9976E6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_mBFED44DDE89189B8FDF15E7BBB5958FF3A9B7133_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_mD570EC3D56EDC4DD8028E05AD3B05FD8488751F8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1__ctor_mF1E485F57C19B0CABDF37D02630667AB1DA16560_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MultiDimensionalArrayFormatter_2__ctor_m4F3D4016535412994195C11A984B1E3B6A413A3D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012_il2cpp_TypeInfo_var);
@@ -872,37 +957,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PreventCodeStrippingViaReferences__cctor
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
-	bool V_1 = false;
-	Cell_t88832599049D1ADACE41CE1CF9C147304CF76D5A V_2;
-	memset((&V_2), 0, sizeof(V_2));
-	Currency_t1280D343A7BB30C73CA2D0C51225F94CFF067BC5 V_3;
-	memset((&V_3), 0, sizeof(V_3));
-	double V_4 = 0.0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	int32_t V_4 = 0;
 	int32_t V_5 = 0;
-	MineType_t9BB2AEF3E6BDE22949C94F1C5D494C44F9383990 V_6;
-	memset((&V_6), 0, sizeof(V_6));
-	ShaftType_t248D87AA71B953822864D29DAE784E9BA081AA19 V_7;
-	memset((&V_7), 0, sizeof(V_7));
-	BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7* G_B2_0 = NULL;
-	BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7* G_B1_0 = NULL;
-	EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED* G_B4_0 = NULL;
-	EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED* G_B3_0 = NULL;
-	EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0* G_B6_0 = NULL;
-	EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0* G_B5_0 = NULL;
-	DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D* G_B8_0 = NULL;
-	DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D* G_B7_0 = NULL;
-	Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2* G_B10_0 = NULL;
-	Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2* G_B9_0 = NULL;
-	EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7* G_B12_0 = NULL;
-	EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7* G_B11_0 = NULL;
-	EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096* G_B14_0 = NULL;
-	EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096* G_B13_0 = NULL;
+	int32_t V_6 = 0;
+	int32_t V_7 = 0;
+	int32_t V_8 = 0;
+	int32_t V_9 = 0;
+	int32_t V_10 = 0;
+	int32_t V_11 = 0;
+	bool V_12 = false;
+	int32_t V_13 = 0;
+	EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02* G_B2_0 = NULL;
+	EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02* G_B1_0 = NULL;
+	EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5* G_B4_0 = NULL;
+	EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5* G_B3_0 = NULL;
+	EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D* G_B6_0 = NULL;
+	EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D* G_B5_0 = NULL;
+	EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409* G_B8_0 = NULL;
+	EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409* G_B7_0 = NULL;
+	EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545* G_B10_0 = NULL;
+	EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545* G_B9_0 = NULL;
+	EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC* G_B12_0 = NULL;
+	EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC* G_B11_0 = NULL;
+	EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD* G_B14_0 = NULL;
+	EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD* G_B13_0 = NULL;
+	EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79* G_B16_0 = NULL;
+	EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79* G_B15_0 = NULL;
+	EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87* G_B18_0 = NULL;
+	EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87* G_B17_0 = NULL;
+	EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C* G_B20_0 = NULL;
+	EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C* G_B19_0 = NULL;
+	EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214* G_B22_0 = NULL;
+	EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214* G_B21_0 = NULL;
+	BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7* G_B24_0 = NULL;
+	BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7* G_B23_0 = NULL;
+	Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2* G_B26_0 = NULL;
+	Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2* G_B25_0 = NULL;
 	{
 		V_0 = (bool)0;
-		il2cpp_codegen_initobj((&V_1), sizeof(bool));
-		BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7* L_0 = (BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7*)il2cpp_codegen_object_new(BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initobj((&V_1), sizeof(int32_t));
+		EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02* L_0 = (EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02*)il2cpp_codegen_object_new(EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
-		BooleanSerializer__ctor_m88A837E4C477BB0AF23DA82F4609AD8868F8556D(L_0, NULL);
+		EnumSerializer_1__ctor_m153F5928F0E6DA459EA5A0C207229221E756DDEB(L_0, EnumSerializer_1__ctor_m153F5928F0E6DA459EA5A0C207229221E756DDEB_RuntimeMethod_var);
 		bool L_1 = V_0;
 		G_B1_0 = L_0;
 		if (!L_1)
@@ -912,22 +1011,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PreventCodeStrippingViaReferences__cctor
 		}
 	}
 	{
-		BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7* L_2 = G_B1_0;
+		EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02* L_2 = G_B1_0;
 		NullCheck(L_2);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<System.Boolean>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_2, (RuntimeObject*)NULL);
-		BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7* L_4 = L_2;
+		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<Animals>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_2, (RuntimeObject*)NULL);
+		EnumSerializer_1_t7C4BC2D37E8BB33195C275EB4F5428A27E17CF02* L_4 = L_2;
 		NullCheck(L_4);
-		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<System.Boolean>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_4, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<Animals>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_4, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
 		G_B2_0 = L_4;
 	}
 
 IL_0026:
 	{
-		il2cpp_codegen_initobj((&V_2), sizeof(Cell_t88832599049D1ADACE41CE1CF9C147304CF76D5A));
-		EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED* L_5 = (EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED*)il2cpp_codegen_object_new(EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initobj((&V_2), sizeof(int32_t));
+		EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5* L_5 = (EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5*)il2cpp_codegen_object_new(EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5_il2cpp_TypeInfo_var);
 		NullCheck(L_5);
-		EnumSerializer_1__ctor_mF6866775A607693B23C928E140BFEB1F0F6E759B(L_5, EnumSerializer_1__ctor_mF6866775A607693B23C928E140BFEB1F0F6E759B_RuntimeMethod_var);
+		EnumSerializer_1__ctor_mF1E485F57C19B0CABDF37D02630667AB1DA16560(L_5, EnumSerializer_1__ctor_mF1E485F57C19B0CABDF37D02630667AB1DA16560_RuntimeMethod_var);
 		bool L_6 = V_0;
 		G_B3_0 = L_5;
 		if (!L_6)
@@ -937,169 +1036,316 @@ IL_0026:
 		}
 	}
 	{
-		EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED* L_7 = G_B3_0;
+		EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5* L_7 = G_B3_0;
 		NullCheck(L_7);
 		RuntimeObject* L_8;
-		L_8 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<Cell>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_7, (RuntimeObject*)NULL);
-		EnumSerializer_1_tC245930842D580BB46C3782A9DB4C9B9998191ED* L_9 = L_7;
+		L_8 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<BoosterType>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_7, (RuntimeObject*)NULL);
+		EnumSerializer_1_t51BA89D43B1191C96BA9AF70260BA6F2F74ED8C5* L_9 = L_7;
 		NullCheck(L_9);
-		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<Cell>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_9, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<BoosterType>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_9, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
 		G_B4_0 = L_9;
 	}
 
 IL_004b:
 	{
-		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_10 = (CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F*)il2cpp_codegen_object_new(CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initobj((&V_3), sizeof(int32_t));
+		EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D* L_10 = (EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D*)il2cpp_codegen_object_new(EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D_il2cpp_TypeInfo_var);
 		NullCheck(L_10);
-		CellData__ctor_m96A52AEA79C7AEBD19464949AEA58DC17D22A834(L_10, NULL);
-		ReflectionFormatter_1_t75291047683CF7F792EA849363E5EFBF64963DEB* L_11 = (ReflectionFormatter_1_t75291047683CF7F792EA849363E5EFBF64963DEB*)il2cpp_codegen_object_new(ReflectionFormatter_1_t75291047683CF7F792EA849363E5EFBF64963DEB_il2cpp_TypeInfo_var);
-		NullCheck(L_11);
-		ReflectionFormatter_1__ctor_m367E05F1A7DAC7798595E41F666FD0E65357E1B8(L_11, ReflectionFormatter_1__ctor_m367E05F1A7DAC7798595E41F666FD0E65357E1B8_RuntimeMethod_var);
-		ComplexTypeSerializer_1_t45DFFF2A3D3067B50403257A02EA072269814D29* L_12 = (ComplexTypeSerializer_1_t45DFFF2A3D3067B50403257A02EA072269814D29*)il2cpp_codegen_object_new(ComplexTypeSerializer_1_t45DFFF2A3D3067B50403257A02EA072269814D29_il2cpp_TypeInfo_var);
+		EnumSerializer_1__ctor_m822CC7A531748960623E6FBCC6D7E5964419F1BB(L_10, EnumSerializer_1__ctor_m822CC7A531748960623E6FBCC6D7E5964419F1BB_RuntimeMethod_var);
+		bool L_11 = V_0;
+		G_B5_0 = L_10;
+		if (!L_11)
+		{
+			G_B6_0 = L_10;
+			goto IL_0070;
+		}
+	}
+	{
+		EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D* L_12 = G_B5_0;
 		NullCheck(L_12);
-		ComplexTypeSerializer_1__ctor_m33FA7E3D45B09DB4A83396329EEF3382F208BD46(L_12, ComplexTypeSerializer_1__ctor_m33FA7E3D45B09DB4A83396329EEF3382F208BD46_RuntimeMethod_var);
-		MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012* L_13 = (MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012*)il2cpp_codegen_object_new(MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012_il2cpp_TypeInfo_var);
-		NullCheck(L_13);
-		MultiDimensionalArrayFormatter_2__ctor_m4F3D4016535412994195C11A984B1E3B6A413A3D(L_13, MultiDimensionalArrayFormatter_2__ctor_m4F3D4016535412994195C11A984B1E3B6A413A3D_RuntimeMethod_var);
-		MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012* L_14 = (MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012*)il2cpp_codegen_object_new(MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012_il2cpp_TypeInfo_var);
+		RuntimeObject* L_13;
+		L_13 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<CollectableItems>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_12, (RuntimeObject*)NULL);
+		EnumSerializer_1_tFF4A159576D7FEDDFC570C2771B5CABE7B7D6C4D* L_14 = L_12;
 		NullCheck(L_14);
-		MultiDimensionalArrayFormatter_2__ctor_m4F3D4016535412994195C11A984B1E3B6A413A3D(L_14, MultiDimensionalArrayFormatter_2__ctor_m4F3D4016535412994195C11A984B1E3B6A413A3D_RuntimeMethod_var);
-		ReflectionFormatter_1_tA3E7E6D80C6E646175459E06736B8AE0C9CF63D8* L_15 = (ReflectionFormatter_1_tA3E7E6D80C6E646175459E06736B8AE0C9CF63D8*)il2cpp_codegen_object_new(ReflectionFormatter_1_tA3E7E6D80C6E646175459E06736B8AE0C9CF63D8_il2cpp_TypeInfo_var);
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<CollectableItems>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_14, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		G_B6_0 = L_14;
+	}
+
+IL_0070:
+	{
+		il2cpp_codegen_initobj((&V_4), sizeof(int32_t));
+		EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409* L_15 = (EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409*)il2cpp_codegen_object_new(EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409_il2cpp_TypeInfo_var);
 		NullCheck(L_15);
-		ReflectionFormatter_1__ctor_m1C60BB8482FA8292579BCA021C38A4EC7CA5DEA0(L_15, ReflectionFormatter_1__ctor_m1C60BB8482FA8292579BCA021C38A4EC7CA5DEA0_RuntimeMethod_var);
-		ComplexTypeSerializer_1_t96E14CF5934939A2DD6FF66853C4D2B1649EB502* L_16 = (ComplexTypeSerializer_1_t96E14CF5934939A2DD6FF66853C4D2B1649EB502*)il2cpp_codegen_object_new(ComplexTypeSerializer_1_t96E14CF5934939A2DD6FF66853C4D2B1649EB502_il2cpp_TypeInfo_var);
-		NullCheck(L_16);
-		ComplexTypeSerializer_1__ctor_mA7E5B0B24309BFE20A1155BB67A6F5DF0339D8EC(L_16, ComplexTypeSerializer_1__ctor_mA7E5B0B24309BFE20A1155BB67A6F5DF0339D8EC_RuntimeMethod_var);
-		ChestData_tB7D26CC2219E5602EC73760AA942E994E7DB475D* L_17 = (ChestData_tB7D26CC2219E5602EC73760AA942E994E7DB475D*)il2cpp_codegen_object_new(ChestData_tB7D26CC2219E5602EC73760AA942E994E7DB475D_il2cpp_TypeInfo_var);
+		EnumSerializer_1__ctor_m7387133D5499495A1DEB804BB913911B1B78A4F7(L_15, EnumSerializer_1__ctor_m7387133D5499495A1DEB804BB913911B1B78A4F7_RuntimeMethod_var);
+		bool L_16 = V_0;
+		G_B7_0 = L_15;
+		if (!L_16)
+		{
+			G_B8_0 = L_15;
+			goto IL_0095;
+		}
+	}
+	{
+		EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409* L_17 = G_B7_0;
 		NullCheck(L_17);
-		ChestData__ctor_mA3C9238D3C9D877C6485A834F43249538A77A2F9(L_17, NULL);
-		ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B* L_18 = (ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B*)il2cpp_codegen_object_new(ComplexTypeSerializer_1_tCAFCFE2BB7B9DB60C5FD13E8F92FBAFB43FA981B_il2cpp_TypeInfo_var);
-		NullCheck(L_18);
-		ComplexTypeSerializer_1__ctor_m97087A53982403D4B41A788858BDEFA1B619D621(L_18, ComplexTypeSerializer_1__ctor_m97087A53982403D4B41A788858BDEFA1B619D621_RuntimeMethod_var);
-		il2cpp_codegen_initobj((&V_3), sizeof(Currency_t1280D343A7BB30C73CA2D0C51225F94CFF067BC5));
-		EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0* L_19 = (EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0*)il2cpp_codegen_object_new(EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0_il2cpp_TypeInfo_var);
+		RuntimeObject* L_18;
+		L_18 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<Fruits>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_17, (RuntimeObject*)NULL);
+		EnumSerializer_1_t74CEAB1AD231F6529E7129F188784A59174F1409* L_19 = L_17;
 		NullCheck(L_19);
-		EnumSerializer_1__ctor_mE85E9EC7EC37C61EE9B1330BFA305A65E2BEF270(L_19, EnumSerializer_1__ctor_mE85E9EC7EC37C61EE9B1330BFA305A65E2BEF270_RuntimeMethod_var);
-		bool L_20 = V_0;
-		G_B5_0 = L_19;
-		if (!L_20)
-		{
-			G_B6_0 = L_19;
-			goto IL_00a6;
-		}
-	}
-	{
-		EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0* L_21 = G_B5_0;
-		NullCheck(L_21);
-		RuntimeObject* L_22;
-		L_22 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<Currency>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_21, (RuntimeObject*)NULL);
-		EnumSerializer_1_t41C0D07C6E7CE42FFCE0F0A303E9247FCA577EA0* L_23 = L_21;
-		NullCheck(L_23);
-		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<Currency>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_23, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
-		G_B6_0 = L_23;
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<Fruits>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_19, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		G_B8_0 = L_19;
 	}
 
-IL_00a6:
-	{
-		il2cpp_codegen_initobj((&V_4), sizeof(double));
-		DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D* L_24 = (DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D*)il2cpp_codegen_object_new(DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D_il2cpp_TypeInfo_var);
-		NullCheck(L_24);
-		DoubleSerializer__ctor_m2674C1856F9EDFC0EC978464ECABC84758A38927(L_24, NULL);
-		bool L_25 = V_0;
-		G_B7_0 = L_24;
-		if (!L_25)
-		{
-			G_B8_0 = L_24;
-			goto IL_00cb;
-		}
-	}
-	{
-		DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D* L_26 = G_B7_0;
-		NullCheck(L_26);
-		RuntimeObject* L_27;
-		L_27 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<System.Double>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_26, (RuntimeObject*)NULL);
-		DoubleSerializer_tD3464237049E852C7C1A27DBFC65AC4CD2D3EF0D* L_28 = L_26;
-		NullCheck(L_28);
-		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<System.Double>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_28, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
-		G_B8_0 = L_28;
-	}
-
-IL_00cb:
+IL_0095:
 	{
 		il2cpp_codegen_initobj((&V_5), sizeof(int32_t));
-		Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2* L_29 = (Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2*)il2cpp_codegen_object_new(Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2_il2cpp_TypeInfo_var);
+		EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545* L_20 = (EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545*)il2cpp_codegen_object_new(EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545_il2cpp_TypeInfo_var);
+		NullCheck(L_20);
+		EnumSerializer_1__ctor_m8C0FD65EABB7E6395048CB2BA9CEA8E501DE5738(L_20, EnumSerializer_1__ctor_m8C0FD65EABB7E6395048CB2BA9CEA8E501DE5738_RuntimeMethod_var);
+		bool L_21 = V_0;
+		G_B9_0 = L_20;
+		if (!L_21)
+		{
+			G_B10_0 = L_20;
+			goto IL_00ba;
+		}
+	}
+	{
+		EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545* L_22 = G_B9_0;
+		NullCheck(L_22);
+		RuntimeObject* L_23;
+		L_23 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<ItemType>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_22, (RuntimeObject*)NULL);
+		EnumSerializer_1_tD40D14C4E168CF5B2BDE315C0451A461CEEFD545* L_24 = L_22;
+		NullCheck(L_24);
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<ItemType>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_24, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		G_B10_0 = L_24;
+	}
+
+IL_00ba:
+	{
+		il2cpp_codegen_initobj((&V_6), sizeof(int32_t));
+		EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC* L_25 = (EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC*)il2cpp_codegen_object_new(EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC_il2cpp_TypeInfo_var);
+		NullCheck(L_25);
+		EnumSerializer_1__ctor_mBFED44DDE89189B8FDF15E7BBB5958FF3A9B7133(L_25, EnumSerializer_1__ctor_mBFED44DDE89189B8FDF15E7BBB5958FF3A9B7133_RuntimeMethod_var);
+		bool L_26 = V_0;
+		G_B11_0 = L_25;
+		if (!L_26)
+		{
+			G_B12_0 = L_25;
+			goto IL_00df;
+		}
+	}
+	{
+		EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC* L_27 = G_B11_0;
+		NullCheck(L_27);
+		RuntimeObject* L_28;
+		L_28 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<PowerUpTypes>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_27, (RuntimeObject*)NULL);
+		EnumSerializer_1_t810C8DF4CFED42DEEC84CED731BFD1B3AFA555FC* L_29 = L_27;
 		NullCheck(L_29);
-		Int32Serializer__ctor_m4597E47DF915AB38A814DDD497B71E3DBC4AF02C(L_29, NULL);
-		bool L_30 = V_0;
-		G_B9_0 = L_29;
-		if (!L_30)
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<PowerUpTypes>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_29, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		G_B12_0 = L_29;
+	}
+
+IL_00df:
+	{
+		il2cpp_codegen_initobj((&V_7), sizeof(int32_t));
+		EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD* L_30 = (EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD*)il2cpp_codegen_object_new(EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD_il2cpp_TypeInfo_var);
+		NullCheck(L_30);
+		EnumSerializer_1__ctor_mD570EC3D56EDC4DD8028E05AD3B05FD8488751F8(L_30, EnumSerializer_1__ctor_mD570EC3D56EDC4DD8028E05AD3B05FD8488751F8_RuntimeMethod_var);
+		bool L_31 = V_0;
+		G_B13_0 = L_30;
+		if (!L_31)
 		{
-			G_B10_0 = L_29;
-			goto IL_00f0;
+			G_B14_0 = L_30;
+			goto IL_0104;
 		}
 	}
 	{
-		Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2* L_31 = G_B9_0;
-		NullCheck(L_31);
-		RuntimeObject* L_32;
-		L_32 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<System.Int32>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_31, (RuntimeObject*)NULL);
-		Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2* L_33 = L_31;
-		NullCheck(L_33);
-		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<System.Int32>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_33, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
-		G_B10_0 = L_33;
-	}
-
-IL_00f0:
-	{
-		il2cpp_codegen_initobj((&V_6), sizeof(MineType_t9BB2AEF3E6BDE22949C94F1C5D494C44F9383990));
-		EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7* L_34 = (EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7*)il2cpp_codegen_object_new(EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7_il2cpp_TypeInfo_var);
+		EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD* L_32 = G_B13_0;
+		NullCheck(L_32);
+		RuntimeObject* L_33;
+		L_33 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<RandomObjects>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_32, (RuntimeObject*)NULL);
+		EnumSerializer_1_t84B0A838325C94F77AD55B55419D03CC275A9ECD* L_34 = L_32;
 		NullCheck(L_34);
-		EnumSerializer_1__ctor_mC55F71F323A7411FC7CEE7961ABC42F5BA9AEEEE(L_34, EnumSerializer_1__ctor_mC55F71F323A7411FC7CEE7961ABC42F5BA9AEEEE_RuntimeMethod_var);
-		bool L_35 = V_0;
-		G_B11_0 = L_34;
-		if (!L_35)
-		{
-			G_B12_0 = L_34;
-			goto IL_0115;
-		}
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<RandomObjects>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_34, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		G_B14_0 = L_34;
 	}
+
+IL_0104:
 	{
-		EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7* L_36 = G_B11_0;
+		ComplexTypeSerializer_1_t17C1BEBA4D19A69B433AE527B454984508603CD8* L_35 = (ComplexTypeSerializer_1_t17C1BEBA4D19A69B433AE527B454984508603CD8*)il2cpp_codegen_object_new(ComplexTypeSerializer_1_t17C1BEBA4D19A69B433AE527B454984508603CD8_il2cpp_TypeInfo_var);
+		NullCheck(L_35);
+		ComplexTypeSerializer_1__ctor_m36A7F11181D62C3A99BDC8FD80E06382462316C0(L_35, ComplexTypeSerializer_1__ctor_m36A7F11181D62C3A99BDC8FD80E06382462316C0_RuntimeMethod_var);
+		il2cpp_codegen_initobj((&V_8), sizeof(int32_t));
+		EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79* L_36 = (EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79*)il2cpp_codegen_object_new(EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79_il2cpp_TypeInfo_var);
 		NullCheck(L_36);
-		RuntimeObject* L_37;
-		L_37 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<MineType>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_36, (RuntimeObject*)NULL);
-		EnumSerializer_1_tAB4DDE1A69F8F1EF504A92A3FC216CA504CBAED7* L_38 = L_36;
-		NullCheck(L_38);
-		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<MineType>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_38, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
-		G_B12_0 = L_38;
-	}
-
-IL_0115:
-	{
-		il2cpp_codegen_initobj((&V_7), sizeof(ShaftType_t248D87AA71B953822864D29DAE784E9BA081AA19));
-		EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096* L_39 = (EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096*)il2cpp_codegen_object_new(EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096_il2cpp_TypeInfo_var);
-		NullCheck(L_39);
-		EnumSerializer_1__ctor_m0B2FE83AAAD41FB2D6815311619C8455CEF47833(L_39, EnumSerializer_1__ctor_m0B2FE83AAAD41FB2D6815311619C8455CEF47833_RuntimeMethod_var);
-		bool L_40 = V_0;
-		G_B13_0 = L_39;
-		if (!L_40)
+		EnumSerializer_1__ctor_m806AADF911BE1AA971EAC202A8CCF9A48F5B6A52(L_36, EnumSerializer_1__ctor_m806AADF911BE1AA971EAC202A8CCF9A48F5B6A52_RuntimeMethod_var);
+		bool L_37 = V_0;
+		G_B15_0 = L_36;
+		if (!L_37)
 		{
-			G_B14_0 = L_39;
-			goto IL_013a;
+			G_B16_0 = L_36;
+			goto IL_012f;
 		}
 	}
 	{
-		EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096* L_41 = G_B13_0;
-		NullCheck(L_41);
-		RuntimeObject* L_42;
-		L_42 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<ShaftType>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_41, (RuntimeObject*)NULL);
-		EnumSerializer_1_t22A7A3499D9072C1F5F5C84D10BA5AD3C6C5D096* L_43 = L_41;
-		NullCheck(L_43);
-		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<ShaftType>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_43, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
-		G_B14_0 = L_43;
+		EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79* L_38 = G_B15_0;
+		NullCheck(L_38);
+		RuntimeObject* L_39;
+		L_39 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<TilePlacements>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_38, (RuntimeObject*)NULL);
+		EnumSerializer_1_t8FED9019F053AEBF3CCF7E10D8ABD048396C8A79* L_40 = L_38;
+		NullCheck(L_40);
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<TilePlacements>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_40, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		G_B16_0 = L_40;
 	}
 
-IL_013a:
+IL_012f:
+	{
+		il2cpp_codegen_initobj((&V_9), sizeof(int32_t));
+		EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87* L_41 = (EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87*)il2cpp_codegen_object_new(EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87_il2cpp_TypeInfo_var);
+		NullCheck(L_41);
+		EnumSerializer_1__ctor_m771A21638AA42485B5BB6C2899EA87A27D4ADC73(L_41, EnumSerializer_1__ctor_m771A21638AA42485B5BB6C2899EA87A27D4ADC73_RuntimeMethod_var);
+		bool L_42 = V_0;
+		G_B17_0 = L_41;
+		if (!L_42)
+		{
+			G_B18_0 = L_41;
+			goto IL_0154;
+		}
+	}
+	{
+		EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87* L_43 = G_B17_0;
+		NullCheck(L_43);
+		RuntimeObject* L_44;
+		L_44 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<TileType>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_43, (RuntimeObject*)NULL);
+		EnumSerializer_1_tB678DF8A99B717233671F1D53A54298BCEE7BC87* L_45 = L_43;
+		NullCheck(L_45);
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<TileType>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_45, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		G_B18_0 = L_45;
+	}
+
+IL_0154:
+	{
+		il2cpp_codegen_initobj((&V_10), sizeof(int32_t));
+		EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C* L_46 = (EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C*)il2cpp_codegen_object_new(EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C_il2cpp_TypeInfo_var);
+		NullCheck(L_46);
+		EnumSerializer_1__ctor_m5D527EA932D3809F531B83621E29BF5390302CE1(L_46, EnumSerializer_1__ctor_m5D527EA932D3809F531B83621E29BF5390302CE1_RuntimeMethod_var);
+		bool L_47 = V_0;
+		G_B19_0 = L_46;
+		if (!L_47)
+		{
+			G_B20_0 = L_46;
+			goto IL_0179;
+		}
+	}
+	{
+		EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C* L_48 = G_B19_0;
+		NullCheck(L_48);
+		RuntimeObject* L_49;
+		L_49 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<TypesOfHurdle>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_48, (RuntimeObject*)NULL);
+		EnumSerializer_1_tA9F7A7A5DBA44441B8E4FF74174AF3176204E26C* L_50 = L_48;
+		NullCheck(L_50);
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<TypesOfHurdle>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_50, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		G_B20_0 = L_50;
+	}
+
+IL_0179:
+	{
+		il2cpp_codegen_initobj((&V_11), sizeof(int32_t));
+		EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214* L_51 = (EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214*)il2cpp_codegen_object_new(EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214_il2cpp_TypeInfo_var);
+		NullCheck(L_51);
+		EnumSerializer_1__ctor_mA5F42C34DA67A470299439EBB45B9EEB3D9976E6(L_51, EnumSerializer_1__ctor_mA5F42C34DA67A470299439EBB45B9EEB3D9976E6_RuntimeMethod_var);
+		bool L_52 = V_0;
+		G_B21_0 = L_51;
+		if (!L_52)
+		{
+			G_B22_0 = L_51;
+			goto IL_019e;
+		}
+	}
+	{
+		EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214* L_53 = G_B21_0;
+		NullCheck(L_53);
+		RuntimeObject* L_54;
+		L_54 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<Vegetables>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_53, (RuntimeObject*)NULL);
+		EnumSerializer_1_t42FB56B3F2069E8F523FD676D9B327010AE43214* L_55 = L_53;
+		NullCheck(L_55);
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<Vegetables>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_55, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		G_B22_0 = L_55;
+	}
+
+IL_019e:
+	{
+		il2cpp_codegen_initobj((&V_12), sizeof(bool));
+		BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7* L_56 = (BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7*)il2cpp_codegen_object_new(BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7_il2cpp_TypeInfo_var);
+		NullCheck(L_56);
+		BooleanSerializer__ctor_m88A837E4C477BB0AF23DA82F4609AD8868F8556D(L_56, NULL);
+		bool L_57 = V_0;
+		G_B23_0 = L_56;
+		if (!L_57)
+		{
+			G_B24_0 = L_56;
+			goto IL_01c3;
+		}
+	}
+	{
+		BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7* L_58 = G_B23_0;
+		NullCheck(L_58);
+		RuntimeObject* L_59;
+		L_59 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<System.Boolean>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_58, (RuntimeObject*)NULL);
+		BooleanSerializer_t61B89D25049F9415FACD9B5B528D0609B1FC49B7* L_60 = L_58;
+		NullCheck(L_60);
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<System.Boolean>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_60, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		G_B24_0 = L_60;
+	}
+
+IL_01c3:
+	{
+		CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F* L_61 = (CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F*)il2cpp_codegen_object_new(CellData_tD53F977F3CB8C8590BBCD43A3ED6DB743D49D09F_il2cpp_TypeInfo_var);
+		NullCheck(L_61);
+		CellData__ctor_m96A52AEA79C7AEBD19464949AEA58DC17D22A834(L_61, NULL);
+		ReflectionFormatter_1_t75291047683CF7F792EA849363E5EFBF64963DEB* L_62 = (ReflectionFormatter_1_t75291047683CF7F792EA849363E5EFBF64963DEB*)il2cpp_codegen_object_new(ReflectionFormatter_1_t75291047683CF7F792EA849363E5EFBF64963DEB_il2cpp_TypeInfo_var);
+		NullCheck(L_62);
+		ReflectionFormatter_1__ctor_m367E05F1A7DAC7798595E41F666FD0E65357E1B8(L_62, ReflectionFormatter_1__ctor_m367E05F1A7DAC7798595E41F666FD0E65357E1B8_RuntimeMethod_var);
+		ComplexTypeSerializer_1_t45DFFF2A3D3067B50403257A02EA072269814D29* L_63 = (ComplexTypeSerializer_1_t45DFFF2A3D3067B50403257A02EA072269814D29*)il2cpp_codegen_object_new(ComplexTypeSerializer_1_t45DFFF2A3D3067B50403257A02EA072269814D29_il2cpp_TypeInfo_var);
+		NullCheck(L_63);
+		ComplexTypeSerializer_1__ctor_m33FA7E3D45B09DB4A83396329EEF3382F208BD46(L_63, ComplexTypeSerializer_1__ctor_m33FA7E3D45B09DB4A83396329EEF3382F208BD46_RuntimeMethod_var);
+		MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012* L_64 = (MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012*)il2cpp_codegen_object_new(MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012_il2cpp_TypeInfo_var);
+		NullCheck(L_64);
+		MultiDimensionalArrayFormatter_2__ctor_m4F3D4016535412994195C11A984B1E3B6A413A3D(L_64, MultiDimensionalArrayFormatter_2__ctor_m4F3D4016535412994195C11A984B1E3B6A413A3D_RuntimeMethod_var);
+		MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012* L_65 = (MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012*)il2cpp_codegen_object_new(MultiDimensionalArrayFormatter_2_t65EBCEF412D4D3CDCF9835E2436F872DB0FA7012_il2cpp_TypeInfo_var);
+		NullCheck(L_65);
+		MultiDimensionalArrayFormatter_2__ctor_m4F3D4016535412994195C11A984B1E3B6A413A3D(L_65, MultiDimensionalArrayFormatter_2__ctor_m4F3D4016535412994195C11A984B1E3B6A413A3D_RuntimeMethod_var);
+		ReflectionFormatter_1_tA3E7E6D80C6E646175459E06736B8AE0C9CF63D8* L_66 = (ReflectionFormatter_1_tA3E7E6D80C6E646175459E06736B8AE0C9CF63D8*)il2cpp_codegen_object_new(ReflectionFormatter_1_tA3E7E6D80C6E646175459E06736B8AE0C9CF63D8_il2cpp_TypeInfo_var);
+		NullCheck(L_66);
+		ReflectionFormatter_1__ctor_m1C60BB8482FA8292579BCA021C38A4EC7CA5DEA0(L_66, ReflectionFormatter_1__ctor_m1C60BB8482FA8292579BCA021C38A4EC7CA5DEA0_RuntimeMethod_var);
+		ComplexTypeSerializer_1_t96E14CF5934939A2DD6FF66853C4D2B1649EB502* L_67 = (ComplexTypeSerializer_1_t96E14CF5934939A2DD6FF66853C4D2B1649EB502*)il2cpp_codegen_object_new(ComplexTypeSerializer_1_t96E14CF5934939A2DD6FF66853C4D2B1649EB502_il2cpp_TypeInfo_var);
+		NullCheck(L_67);
+		ComplexTypeSerializer_1__ctor_mA7E5B0B24309BFE20A1155BB67A6F5DF0339D8EC(L_67, ComplexTypeSerializer_1__ctor_mA7E5B0B24309BFE20A1155BB67A6F5DF0339D8EC_RuntimeMethod_var);
+		il2cpp_codegen_initobj((&V_13), sizeof(int32_t));
+		Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2* L_68 = (Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2*)il2cpp_codegen_object_new(Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2_il2cpp_TypeInfo_var);
+		NullCheck(L_68);
+		Int32Serializer__ctor_m4597E47DF915AB38A814DDD497B71E3DBC4AF02C(L_68, NULL);
+		bool L_69 = V_0;
+		G_B25_0 = L_68;
+		if (!L_69)
+		{
+			G_B26_0 = L_68;
+			goto IL_0212;
+		}
+	}
+	{
+		Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2* L_70 = G_B25_0;
+		NullCheck(L_70);
+		RuntimeObject* L_71;
+		L_71 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(4 /* System.Object Sirenix.Serialization.Serializer`1<System.Int32>::ReadValueWeak(Sirenix.Serialization.IDataReader) */, L_70, (RuntimeObject*)NULL);
+		Int32Serializer_t4DA95590D0E6D580831B388948749EFE8D4F3BA2* L_72 = L_70;
+		NullCheck(L_72);
+		VirtualActionInvoker3< String_t*, RuntimeObject*, RuntimeObject* >::Invoke(5 /* System.Void Sirenix.Serialization.Serializer`1<System.Int32>::WriteValueWeak(System.String,System.Object,Sirenix.Serialization.IDataWriter) */, L_72, (String_t*)NULL, NULL, (RuntimeObject*)NULL);
+		G_B26_0 = L_72;
+	}
+
+IL_0212:
 	{
 		return;
 	}

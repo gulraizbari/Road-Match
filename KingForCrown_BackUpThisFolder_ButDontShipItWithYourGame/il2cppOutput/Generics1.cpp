@@ -1376,6 +1376,8 @@ struct Action_1_tF5227E8BE708A8FD8AE4D59AEDE8037ADC204813;
 struct Action_1_t94D9E48AC225DD5F63C8234FF868BEB1C27ADEB4;
 // System.Action`1<MoreMountains.Tools.MMTilemapGeneratorLayer/MMTilemapGeneratorLayerSafeSpot>
 struct Action_1_tAEEFD3192F1F550A0898A7A00B4F59594D7ABAEC;
+// System.Action`1<AssetKits.ParticleImage.Particle/TrailPoint>
+struct Action_1_t0A3A847B8417D118E761BBD2DA7A3BD8F094F91E;
 // System.Action`1<UnityEngine.Experimental.Rendering.ProbeBrickIndex/Brick>
 struct Action_1_t0876BBC80A3DFF1245A243069F40CDDB608A153B;
 // System.Action`1<UnityEngine.Experimental.Rendering.ProbeBrickIndex/ReservedBrick>
@@ -5816,6 +5818,15 @@ struct AlignOfHelper_1_t3F15C977CB75F6273144B3EB4A070152979E3542
 	DrawBufferRange_t684F255F5C954760B12F6689F84E78811040C7A4 ___data_1;
 };
 
+// Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<System.IntPtr>
+struct AlignOfHelper_1_tA1D9D36CBE8FF25BF6FFF35C56E697C87CBC2432 
+{
+	// System.Byte Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1::dummy
+	uint8_t ___dummy_0;
+	// T Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1::data
+	intptr_t ___data_1;
+};
+
 // Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<UnityEngine.Rendering.Universal.LightMinMaxZ>
 struct AlignOfHelper_1_t8295C6DBE1642230998493EEDAB31A70A2A647EB 
 {
@@ -7054,6 +7065,15 @@ struct ScriptableRenderContext_t5AB09B3602BEB456E0DC3D53926D3A3BDAF08E36
 	intptr_t ___m_Ptr_1;
 };
 
+// AssetKits.ParticleImage.SpriteSheet
+struct SpriteSheet_tE64B879BEB1F5AE38C48926D4217034CE788D208 
+{
+	// UnityEngine.Vector2 AssetKits.ParticleImage.SpriteSheet::size
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___size_0;
+	// UnityEngine.Vector2 AssetKits.ParticleImage.SpriteSheet::pos
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___pos_1;
+};
+
 // MoreMountains.Feel.StrikePin
 struct StrikePin_tE6859B1D28D416961C82FCADD43C929147D97997 
 {
@@ -7392,6 +7412,15 @@ struct MMTilemapGeneratorLayerSafeSpot_tAB7C0D7812A9D25BE7E37770A103C7EFE724D206
 	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___Start_0;
 	// UnityEngine.Vector2Int MoreMountains.Tools.MMTilemapGeneratorLayer/MMTilemapGeneratorLayerSafeSpot::End
 	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___End_1;
+};
+
+// AssetKits.ParticleImage.Particle/TrailPoint
+struct TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55 
+{
+	// UnityEngine.Vector2 AssetKits.ParticleImage.Particle/TrailPoint::point
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___point_0;
+	// System.Single AssetKits.ParticleImage.Particle/TrailPoint::time
+	float ___time_1;
 };
 
 // UnityEngine.Experimental.Rendering.ProbeBrickIndex/Brick
@@ -7878,6 +7907,15 @@ struct AlignOfHelper_1_tAAB923987E252FFF867F3B8E21C23497D75E5945
 	uint8_t ___dummy_0;
 	// T Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1::data
 	PreTile_tC36F9BE4B86094E64EF591A02D06185EF5ECBDDD ___data_1;
+};
+
+// Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<AssetKits.ParticleImage.SpriteSheet>
+struct AlignOfHelper_1_t32C9FF670B540D4CFD23A01330C6B201D291F065 
+{
+	// System.Byte Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1::dummy
+	uint8_t ___dummy_0;
+	// T Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1::data
+	SpriteSheet_tE64B879BEB1F5AE38C48926D4217034CE788D208 ___data_1;
 };
 
 // Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<UnityEngine.UIElements.TextVertex>
@@ -8857,6 +8895,11 @@ struct Action_1_t94D9E48AC225DD5F63C8234FF868BEB1C27ADEB4  : public MulticastDel
 
 // System.Action`1<MoreMountains.Tools.MMTilemapGeneratorLayer/MMTilemapGeneratorLayerSafeSpot>
 struct Action_1_tAEEFD3192F1F550A0898A7A00B4F59594D7ABAEC  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<AssetKits.ParticleImage.Particle/TrailPoint>
+struct Action_1_t0A3A847B8417D118E761BBD2DA7A3BD8F094F91E  : public MulticastDelegate_t
 {
 };
 
@@ -10968,6 +11011,10 @@ struct UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484_StaticFields
 
 // Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<UnityEngine.UIElements.UIR.DrawBufferRange>
 
+// Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<System.IntPtr>
+
+// Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<System.IntPtr>
+
 // Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<UnityEngine.Rendering.Universal.LightMinMaxZ>
 
 // Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<UnityEngine.Rendering.Universal.LightMinMaxZ>
@@ -11269,6 +11316,10 @@ struct ScriptableRenderContext_t5AB09B3602BEB456E0DC3D53926D3A3BDAF08E36_StaticF
 
 // UnityEngine.Rendering.ScriptableRenderContext
 
+// AssetKits.ParticleImage.SpriteSheet
+
+// AssetKits.ParticleImage.SpriteSheet
+
 // MoreMountains.Feel.StrikePin
 
 // MoreMountains.Feel.StrikePin
@@ -11385,6 +11436,10 @@ struct LightMeshVertex_t5E886C7928458EB522BEB49D43C67ACC09EC7DCB_StaticFields
 
 // MoreMountains.Tools.MMTilemapGeneratorLayer/MMTilemapGeneratorLayerSafeSpot
 
+// AssetKits.ParticleImage.Particle/TrailPoint
+
+// AssetKits.ParticleImage.Particle/TrailPoint
+
 // UnityEngine.Experimental.Rendering.ProbeBrickIndex/Brick
 
 // UnityEngine.Experimental.Rendering.ProbeBrickIndex/Brick
@@ -11472,6 +11527,10 @@ struct LightMeshVertex_t5E886C7928458EB522BEB49D43C67ACC09EC7DCB_StaticFields
 // Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<UnityEngine.Rendering.Universal.PreTile>
 
 // Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<UnityEngine.Rendering.Universal.PreTile>
+
+// Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<AssetKits.ParticleImage.SpriteSheet>
+
+// Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<AssetKits.ParticleImage.SpriteSheet>
 
 // Unity.Collections.LowLevel.Unsafe.UnsafeUtility/AlignOfHelper`1<UnityEngine.UIElements.TextVertex>
 
@@ -12030,6 +12089,10 @@ struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_StaticFields
 // System.Action`1<MoreMountains.Tools.MMTilemapGeneratorLayer/MMTilemapGeneratorLayerSafeSpot>
 
 // System.Action`1<MoreMountains.Tools.MMTilemapGeneratorLayer/MMTilemapGeneratorLayerSafeSpot>
+
+// System.Action`1<AssetKits.ParticleImage.Particle/TrailPoint>
+
+// System.Action`1<AssetKits.ParticleImage.Particle/TrailPoint>
 
 // System.Action`1<UnityEngine.Experimental.Rendering.ProbeBrickIndex/Brick>
 
@@ -28326,6 +28389,84 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mD03D3EB1E2666C8E3A8176A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+void Action_1_Invoke_m2BDE0E3B2707B80A5B1433AF834A135F1774B972_Multicast(Action_1_t0A3A847B8417D118E761BBD2DA7A3BD8F094F91E* __this, TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55 ___0_obj, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Action_1_t0A3A847B8417D118E761BBD2DA7A3BD8F094F91E* currentDelegate = reinterpret_cast<Action_1_t0A3A847B8417D118E761BBD2DA7A3BD8F094F91E*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___0_obj, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void Action_1_Invoke_m2BDE0E3B2707B80A5B1433AF834A135F1774B972_OpenInst(Action_1_t0A3A847B8417D118E761BBD2DA7A3BD8F094F91E* __this, TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55 ___0_obj, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___0_obj, method);
+}
+void Action_1_Invoke_m2BDE0E3B2707B80A5B1433AF834A135F1774B972_OpenStatic(Action_1_t0A3A847B8417D118E761BBD2DA7A3BD8F094F91E* __this, TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55 ___0_obj, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___0_obj, method);
+}
+void Action_1_Invoke_m2BDE0E3B2707B80A5B1433AF834A135F1774B972_OpenStaticInvoker(Action_1_t0A3A847B8417D118E761BBD2DA7A3BD8F094F91E* __this, TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55 ___0_obj, const RuntimeMethod* method)
+{
+	InvokerActionInvoker1< TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55 >::Invoke(__this->___method_ptr_0, method, NULL, ___0_obj);
+}
+void Action_1_Invoke_m2BDE0E3B2707B80A5B1433AF834A135F1774B972_ClosedStaticInvoker(Action_1_t0A3A847B8417D118E761BBD2DA7A3BD8F094F91E* __this, TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55 ___0_obj, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< RuntimeObject*, TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___0_obj);
+}
+// System.Void System.Action`1<AssetKits.ParticleImage.Particle/TrailPoint>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mBFEB6253D7D4E99A17FB839D2A3F9D44F54BB5D2_gshared (Action_1_t0A3A847B8417D118E761BBD2DA7A3BD8F094F91E* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___1_method);
+	__this->___method_3 = ___1_method;
+	__this->___m_target_2 = ___0_object;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___0_object);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___1_method);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___1_method))
+	{
+		bool isOpen = parameterCount == 1;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___1_method))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2BDE0E3B2707B80A5B1433AF834A135F1774B972_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2BDE0E3B2707B80A5B1433AF834A135F1774B972_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2BDE0E3B2707B80A5B1433AF834A135F1774B972_OpenStatic;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		if (___0_object == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+	}
+	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m2BDE0E3B2707B80A5B1433AF834A135F1774B972_Multicast;
+}
+// System.Void System.Action`1<AssetKits.ParticleImage.Particle/TrailPoint>::Invoke(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m2BDE0E3B2707B80A5B1433AF834A135F1774B972_gshared (Action_1_t0A3A847B8417D118E761BBD2DA7A3BD8F094F91E* __this, TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55 ___0_obj, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, TrailPoint_tA60C6271E631D9202ED193179769E18DE063BB55, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_obj, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 void Action_1_Invoke_mC3E4F59F8444EA8C9ABBDE9F392907EB6E31BFF4_Multicast(Action_1_t0876BBC80A3DFF1245A243069F40CDDB608A153B* __this, Brick_tCF697F8098B1E364826A55C583A11A9BD61FEE06 ___0_obj, const RuntimeMethod* method)
 {
 	il2cpp_array_size_t length = __this->___delegates_13->max_length;
@@ -38470,6 +38611,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_9_Invoke_m2C6537E1E8DA4F3AC2F589E
 	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, RuntimeObject*, RuntimeObject*, RuntimeObject*, RuntimeObject*, RuntimeObject*, RuntimeObject*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_arg1, ___1_arg2, ___2_arg3, ___3_arg4, ___4_arg5, ___5_arg6, ___6_arg7, ___7_arg8, ___8_arg9, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

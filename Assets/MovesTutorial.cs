@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MovesTutorial : MonoBehaviour
 {
     public GameObject moveTutorial;
-    public Image bgImage;
+   // public Image bgImage;
 
     public void ShowTutorial()
     {

@@ -4254,5 +4254,5 @@ MonoBehaviour:
   showGoalFirst: 0
   setZOnly: 1
   customPadding: 1
-  customPaddingValue: 4
+  customPaddingValue: 5.2
   IsEnemy: 0
