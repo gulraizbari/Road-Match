@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/LionStudios/AnimatedLionLogoScene.unity
-    guid: 5d76cbd19518e4fa08a3b5c81376fe82
-  - enabled: 1
     path: Assets/Features/Scenes/LoadingScene.unity
     guid: 3d2f31b85ff7d49c9b67c581b41ac601
   - enabled: 1

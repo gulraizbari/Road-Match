@@ -58,8 +58,8 @@ namespace Features.GridGeneration.Scripts
                 Adjuster.padding = _levelData.customPaddingValue;
             }
             Adjuster.AdjustCamera(grid);
-            UIController.instance.Text(TextType.Level).UpdateText($"{_levelManager.Level+1}");
-            LionAnalyticEvents.OnLevelStart(_levelManager.Level+1);
+            UIController.instance.Text(TextType.Level).UpdateText($"{_levelManager.LevelCounter+1}");
+            LionAnalyticEvents.OnLevelStart(_levelManager.LevelCounter+1);
             if (_levelManager.Level == 3&& PlayerPrefs.GetInt("T")==0)
             {
                 PlayerPrefs.SetInt("T", 1);

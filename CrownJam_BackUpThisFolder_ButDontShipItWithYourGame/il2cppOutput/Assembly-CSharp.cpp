@@ -1018,6 +1018,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral88927C48839B45F6917B2FE6AD9F0C3F22E1ABB7
 IL2CPP_EXTERN_C String_t* _stringLiteral88BEE283254D7094E258B3A88730F4CC4F1E4AC7;
 IL2CPP_EXTERN_C String_t* _stringLiteral8964425D5AFA567D9602F7E19CD9E3B473DEBE0C;
 IL2CPP_EXTERN_C String_t* _stringLiteral89938688B6240C339B31D3D4BE8D576684CB094F;
+IL2CPP_EXTERN_C String_t* _stringLiteral8DDFEBF5986137EC02A764FDD0AE6944AA90E26D;
 IL2CPP_EXTERN_C String_t* _stringLiteral8DE70C7D89D9B45F6226242D7F7847216565D339;
 IL2CPP_EXTERN_C String_t* _stringLiteral921E89896A83EEAD71759D0E569160913410C0AC;
 IL2CPP_EXTERN_C String_t* _stringLiteral92E9796AF13FEEF7EE0A3D7079F97259971BBF9B;
@@ -10024,10 +10025,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIController_DetectMoney_mDEB1038866389E8942FD68C3CF55CD4E65A1448A (UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2* __this, Money_t3906FFA73259317609B3ECB61A6433FE31CC4368* ___0_money, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent::Invoke()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, const RuntimeMethod* method) ;
-// System.Int32 LevelManager::get_Level()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LevelManager_get_Level_m1B5C0FA0A834B62DFEA97B72B8622B7A2FB9FFC6 (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, const RuntimeMethod* method) ;
+// System.Int32 LevelManager::get_LevelCounter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LevelManager_get_LevelCounter_m4EB0C743ADA5BBF1B29373D72228B8BC39947559 (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, const RuntimeMethod* method) ;
 // System.Void Sablo.Analytics.LionAnalyticEvents::PowerUpUsed(System.String,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionAnalyticEvents_PowerUpUsed_mFFE4D99A8092F2BC3F14E8C5F9945C13E0EF10BC (String_t* ___0_powerUpName, int32_t ___1_lvlNumber, const RuntimeMethod* method) ;
+// System.Int32 LevelManager::get_Level()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LevelManager_get_Level_m1B5C0FA0A834B62DFEA97B72B8622B7A2FB9FFC6 (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, const RuntimeMethod* method) ;
 // System.Void Booster::OnStart(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Booster_OnStart_m6409249D73F04B61896DB53F286DBF9DCC9FB8AE (Booster_tF8D58ABA824AEE155680A093E3702B0078FE16B2* __this, int32_t ___0_currentLevel, const RuntimeMethod* method) ;
 // System.Void UnityEngine.ScriptableObject::.ctor()
@@ -10493,6 +10496,8 @@ inline LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* List_1_get_Item_mA0F
 }
 // System.Void LevelManager::set_Level(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_set_Level_m827A4A49E4F1516224A9AE899C6BDC1FE4B526AA (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// System.Void LevelManager::set_LevelCounter(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_set_LevelCounter_m7DD2A1A70A0300BE9CE96EA3663DEAF7285C3B3E (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.List`1<LevelData>::get_Count()
 inline int32_t List_1_get_Count_m18577333F7379D8529FE97E6565703CE816DB25F_inline (List_1_t5D51C2F548F7E4364A14BB81D41C0CAE0A900E0A* __this, const RuntimeMethod* method)
 {
@@ -12466,13 +12471,13 @@ IL_003b:
 	{
 		// EnableBoosterButton(false);
 		Booster_EnableBoosterButton_m9B4B7D7D018F8FC7DCC89C69E4D75FF1AA656380(__this, (bool)0, NULL);
-		// LionAnalyticEvents.PowerUpUsed("hint_booster",UIController.instance.levelManager.Level+1);
+		// LionAnalyticEvents.PowerUpUsed("hint_booster",UIController.instance.levelManager.LevelCounter+1);
 		UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2* L_8 = ((UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_StaticFields*)il2cpp_codegen_static_fields_for(UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_il2cpp_TypeInfo_var))->___instance_13;
 		NullCheck(L_8);
 		LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* L_9 = L_8->___levelManager_14;
 		NullCheck(L_9);
 		int32_t L_10;
-		L_10 = LevelManager_get_Level_m1B5C0FA0A834B62DFEA97B72B8622B7A2FB9FFC6(L_9, NULL);
+		L_10 = LevelManager_get_LevelCounter_m4EB0C743ADA5BBF1B29373D72228B8BC39947559(L_9, NULL);
 		il2cpp_codegen_runtime_class_init_inline(LionAnalyticEvents_tC4138D53C51947A668C89AE6D6ADEDE8BC58DB59_il2cpp_TypeInfo_var);
 		LionAnalyticEvents_PowerUpUsed_mFFE4D99A8092F2BC3F14E8C5F9945C13E0EF10BC(_stringLiteral5E1E06F031A9761D5A8DB5D37B82577C25602919, ((int32_t)il2cpp_codegen_add(L_10, 1)), NULL);
 		return;
@@ -17222,30 +17227,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_NextLevel_mBDEA86713AAC757F
 		V_0 = L_0;
 		int32_t L_1 = V_0;
 		LevelManager_set_Level_m827A4A49E4F1516224A9AE899C6BDC1FE4B526AA(__this, ((int32_t)il2cpp_codegen_add(L_1, 1)), NULL);
-		// if (Level >= levels.Count)
+		// LevelCounter ++;
 		int32_t L_2;
-		L_2 = LevelManager_get_Level_m1B5C0FA0A834B62DFEA97B72B8622B7A2FB9FFC6(__this, NULL);
-		List_1_t5D51C2F548F7E4364A14BB81D41C0CAE0A900E0A* L_3 = __this->___levels_4;
-		NullCheck(L_3);
+		L_2 = LevelManager_get_LevelCounter_m4EB0C743ADA5BBF1B29373D72228B8BC39947559(__this, NULL);
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		LevelManager_set_LevelCounter_m7DD2A1A70A0300BE9CE96EA3663DEAF7285C3B3E(__this, ((int32_t)il2cpp_codegen_add(L_3, 1)), NULL);
+		// if (Level >= levels.Count)
 		int32_t L_4;
-		L_4 = List_1_get_Count_m18577333F7379D8529FE97E6565703CE816DB25F_inline(L_3, List_1_get_Count_m18577333F7379D8529FE97E6565703CE816DB25F_RuntimeMethod_var);
-		if ((((int32_t)L_2) < ((int32_t)L_4)))
-		{
-			goto IL_003a;
-		}
-	}
-	{
-		// Level = Random.Range(1,levels.Count);
+		L_4 = LevelManager_get_Level_m1B5C0FA0A834B62DFEA97B72B8622B7A2FB9FFC6(__this, NULL);
 		List_1_t5D51C2F548F7E4364A14BB81D41C0CAE0A900E0A* L_5 = __this->___levels_4;
 		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = List_1_get_Count_m18577333F7379D8529FE97E6565703CE816DB25F_inline(L_5, List_1_get_Count_m18577333F7379D8529FE97E6565703CE816DB25F_RuntimeMethod_var);
-		int32_t L_7;
-		L_7 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(1, L_6, NULL);
-		LevelManager_set_Level_m827A4A49E4F1516224A9AE899C6BDC1FE4B526AA(__this, L_7, NULL);
+		if ((((int32_t)L_4) < ((int32_t)L_6)))
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		// Level = Random.Range(20,levels.Count);
+		List_1_t5D51C2F548F7E4364A14BB81D41C0CAE0A900E0A* L_7 = __this->___levels_4;
+		NullCheck(L_7);
+		int32_t L_8;
+		L_8 = List_1_get_Count_m18577333F7379D8529FE97E6565703CE816DB25F_inline(L_7, List_1_get_Count_m18577333F7379D8529FE97E6565703CE816DB25F_RuntimeMethod_var);
+		int32_t L_9;
+		L_9 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(((int32_t)20), L_8, NULL);
+		LevelManager_set_Level_m827A4A49E4F1516224A9AE899C6BDC1FE4B526AA(__this, L_9, NULL);
 	}
 
-IL_003a:
+IL_004b:
 	{
 		// }
 		return;
@@ -17336,6 +17347,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_set_Level_m827A4A49E4F15162
 		// public  int Level { get=>PlayerPrefs.GetInt("Lvl"); set=>PlayerPrefs.SetInt("Lvl",value); }
 		int32_t L_0 = ___0_value;
 		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteralD6584E13D144B9C1AFD7419FEB70CEBD93B30240, L_0, NULL);
+		return;
+	}
+}
+// System.Int32 LevelManager::get_LevelCounter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LevelManager_get_LevelCounter_m4EB0C743ADA5BBF1B29373D72228B8BC39947559 (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8DDFEBF5986137EC02A764FDD0AE6944AA90E26D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public  int LevelCounter { get=>PlayerPrefs.GetInt("LvlCounter"); set=>PlayerPrefs.SetInt("LvlCounter",value); }
+		int32_t L_0;
+		L_0 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral8DDFEBF5986137EC02A764FDD0AE6944AA90E26D, NULL);
+		return L_0;
+	}
+}
+// System.Void LevelManager::set_LevelCounter(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_set_LevelCounter_m7DD2A1A70A0300BE9CE96EA3663DEAF7285C3B3E (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8DDFEBF5986137EC02A764FDD0AE6944AA90E26D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public  int LevelCounter { get=>PlayerPrefs.GetInt("LvlCounter"); set=>PlayerPrefs.SetInt("LvlCounter",value); }
+		int32_t L_0 = ___0_value;
+		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral8DDFEBF5986137EC02A764FDD0AE6944AA90E26D, L_0, NULL);
 		return;
 	}
 }
@@ -19329,13 +19372,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelComplete_OnStart_m3F9497C7D65881FB7
 	}
 	int32_t V_0 = 0;
 	{
-		// LionAnalyticEvents.OnLevelComplete(UIController.instance.levelManager.Level+1 , "" , null , 0); // Level event should be sent before increasing the level counter.
+		// LionAnalyticEvents.OnLevelComplete(UIController.instance.levelManager.LevelCounter+1 , "" , null , 0); // Level event should be sent before increasing the level counter.
 		UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2* L_0 = ((UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_StaticFields*)il2cpp_codegen_static_fields_for(UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_il2cpp_TypeInfo_var))->___instance_13;
 		NullCheck(L_0);
 		LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* L_1 = L_0->___levelManager_14;
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = LevelManager_get_Level_m1B5C0FA0A834B62DFEA97B72B8622B7A2FB9FFC6(L_1, NULL);
+		L_2 = LevelManager_get_LevelCounter_m4EB0C743ADA5BBF1B29373D72228B8BC39947559(L_1, NULL);
 		il2cpp_codegen_runtime_class_init_inline(LionAnalyticEvents_tC4138D53C51947A668C89AE6D6ADEDE8BC58DB59_il2cpp_TypeInfo_var);
 		LionAnalyticEvents_OnLevelComplete_mC71BA66168B6E2E2955741C93D0F204294A2FD23(((int32_t)il2cpp_codegen_add(L_2, 1)), _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, (String_t*)NULL, 0, (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)NULL, NULL);
 		// _winCashText.UpdateText(GameController.GameCash.ToString());
@@ -22778,9 +22821,9 @@ IL_00cb:
 IL_0112:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// SceneManager.LoadScene(2);
+		// SceneManager.LoadScene(1);
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(2, NULL);
+		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(1, NULL);
 		// }
 		return (bool)0;
 	}

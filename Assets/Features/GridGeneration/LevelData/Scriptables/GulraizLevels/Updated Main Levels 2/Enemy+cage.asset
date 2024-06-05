@@ -5505,7 +5505,7 @@ MonoBehaviour:
   movesMultiplier: 2
   moveCamera: 1
   maxZ: -35
-  minZ: -50
+  minZ: -52
   minX: -1.5
   maxX: 1.5
   xPos: 0

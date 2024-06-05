@@ -1940,7 +1940,7 @@ MonoBehaviour:
       Data: false
     - Name: walkableGate
       Entry: 5
-      Data: false
+      Data: true
     - Name: enemyHealth
       Entry: 3
       Data: 0

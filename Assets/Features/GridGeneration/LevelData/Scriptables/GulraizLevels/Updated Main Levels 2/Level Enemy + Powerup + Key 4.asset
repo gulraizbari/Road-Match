@@ -3323,7 +3323,7 @@ MonoBehaviour:
       Data: false
     - Name: enemyHealth
       Entry: 3
-      Data: 2
+      Data: 8
     - Name: powerUPLVL
       Entry: 3
       Data: 1
@@ -3563,7 +3563,7 @@ MonoBehaviour:
       Data: false
     - Name: enemyHealth
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: powerUPLVL
       Entry: 3
       Data: 1
@@ -6695,7 +6695,7 @@ MonoBehaviour:
       Data: 112|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 5
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -6746,7 +6746,7 @@ MonoBehaviour:
       Data: 1
     - Name: powerUPLVL
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 8
       Data: 

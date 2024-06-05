@@ -51,7 +51,7 @@ public class LevelComplete : PanelBase
     private void OnStart()
     {
 
-        LionAnalyticEvents.OnLevelComplete(UIController.instance.levelManager.Level+1 , "" , null , 0); // Level event should be sent before increasing the level counter.
+        LionAnalyticEvents.OnLevelComplete(UIController.instance.levelManager.LevelCounter+1 , "" , null , 0); // Level event should be sent before increasing the level counter.
         _winCashText.UpdateText(GameController.GameCash.ToString());
         _cashToGiveText.UpdateText(_cashToGive.ToInt().ToString());
         UIController.instance.AddCash(_cashToGive);

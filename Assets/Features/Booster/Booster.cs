@@ -72,7 +72,7 @@ public class Booster : MonoBehaviour
                 UIController.instance.DetectMoney(price);
                 Action?.Invoke();
                 EnableBoosterButton(false);
-                LionAnalyticEvents.PowerUpUsed("hint_booster",UIController.instance.levelManager.Level+1);
+                LionAnalyticEvents.PowerUpUsed("hint_booster",UIController.instance.levelManager.LevelCounter+1);
             }
             else
             {

@@ -10009,8 +10009,8 @@ inline int32_t List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_inline
 {
 	return ((  int32_t (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, const RuntimeMethod*))List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_gshared_inline)(__this, method);
 }
-// System.Int32 LevelManager::get_Level()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LevelManager_get_Level_m1B5C0FA0A834B62DFEA97B72B8622B7A2FB9FFC6 (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, const RuntimeMethod* method) ;
+// System.Int32 LevelManager::get_LevelCounter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LevelManager_get_LevelCounter_m4EB0C743ADA5BBF1B29373D72228B8BC39947559 (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, const RuntimeMethod* method) ;
 // System.String System.Enum::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void Sablo.Analytics.LionAnalyticEvents::OnLevelFail(System.Int32,System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>)
@@ -10047,6 +10047,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraAdjuster_AdjustCamera_mC270A08D52D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MultiText_tFD1E30DB81099DC8150991234FFBBDA9C58059E1* UIController_Text_m49CFB4FFDB2A7CD54D06C1E6636146C018E1A627 (UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2* __this, int32_t ___0_type, const RuntimeMethod* method) ;
 // System.Void Sablo.Analytics.LionAnalyticEvents::OnLevelStart(System.Int32,System.Collections.Generic.Dictionary`2<System.String,System.Object>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionAnalyticEvents_OnLevelStart_m6DBA27B7F44B4432A8265468F7F8406D743612D8 (int32_t ___0_levelNumber, Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___1_additionalData, const RuntimeMethod* method) ;
+// System.Int32 LevelManager::get_Level()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LevelManager_get_Level_m1B5C0FA0A834B62DFEA97B72B8622B7A2FB9FFC6 (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987 (String_t* ___0_key, const RuntimeMethod* method) ;
 // System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)
@@ -21210,13 +21212,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelFail_TryAgain_mBF04451F428170DE8E71
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// LionAnalyticEvents.OnLevelFail(UIController.instance.levelManager.Level+1,reasonOfFail.ToString());
+		// LionAnalyticEvents.OnLevelFail(UIController.instance.levelManager.LevelCounter+1,reasonOfFail.ToString());
 		UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2* L_0 = ((UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_StaticFields*)il2cpp_codegen_static_fields_for(UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_il2cpp_TypeInfo_var))->___instance_13;
 		NullCheck(L_0);
 		LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* L_1 = L_0->___levelManager_14;
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = LevelManager_get_Level_m1B5C0FA0A834B62DFEA97B72B8622B7A2FB9FFC6(L_1, NULL);
+		L_2 = LevelManager_get_LevelCounter_m4EB0C743ADA5BBF1B29373D72228B8BC39947559(L_1, NULL);
 		int32_t* L_3 = (&__this->___reasonOfFail_18);
 		Il2CppFakeBox<int32_t> L_4(Reason_t75D083A68FE29FE759194B4411E9F31DD16D97BA_il2cpp_TypeInfo_var, L_3);
 		String_t* L_5;
@@ -21715,7 +21717,7 @@ IL_00b4:
 		CellU5BU2CU5D_tCF2E7B44A4CFBBDE3BF931505A1FD9C47CC3164B* L_24 = __this->___grid_7;
 		NullCheck(L_23);
 		CameraAdjuster_AdjustCamera_mC270A08D52DBDCBDEAC1085FF9130B058060DC58(L_23, L_24, NULL);
-		// UIController.instance.Text(TextType.Level).UpdateText($"{_levelManager.Level+1}");
+		// UIController.instance.Text(TextType.Level).UpdateText($"{_levelManager.LevelCounter+1}");
 		UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2* L_25 = ((UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_StaticFields*)il2cpp_codegen_static_fields_for(UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_il2cpp_TypeInfo_var))->___instance_13;
 		NullCheck(L_25);
 		MultiText_tFD1E30DB81099DC8150991234FFBBDA9C58059E1* L_26;
@@ -21723,18 +21725,18 @@ IL_00b4:
 		LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* L_27 = __this->____levelManager_4;
 		NullCheck(L_27);
 		int32_t L_28;
-		L_28 = LevelManager_get_Level_m1B5C0FA0A834B62DFEA97B72B8622B7A2FB9FFC6(L_27, NULL);
+		L_28 = LevelManager_get_LevelCounter_m4EB0C743ADA5BBF1B29373D72228B8BC39947559(L_27, NULL);
 		int32_t L_29 = ((int32_t)il2cpp_codegen_add(L_28, 1));
 		RuntimeObject* L_30 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_29);
 		String_t* L_31;
 		L_31 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral23114468D04FA2B7A2DA455B545DB914D0A3ED94, L_30, NULL);
 		NullCheck(L_26);
 		MultiText_UpdateText_m378D5F5702A54D6048F402C3FC62E6FE25911AAE(L_26, L_31, NULL);
-		// LionAnalyticEvents.OnLevelStart(_levelManager.Level+1);
+		// LionAnalyticEvents.OnLevelStart(_levelManager.LevelCounter+1);
 		LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* L_32 = __this->____levelManager_4;
 		NullCheck(L_32);
 		int32_t L_33;
-		L_33 = LevelManager_get_Level_m1B5C0FA0A834B62DFEA97B72B8622B7A2FB9FFC6(L_32, NULL);
+		L_33 = LevelManager_get_LevelCounter_m4EB0C743ADA5BBF1B29373D72228B8BC39947559(L_32, NULL);
 		il2cpp_codegen_runtime_class_init_inline(LionAnalyticEvents_tC4138D53C51947A668C89AE6D6ADEDE8BC58DB59_il2cpp_TypeInfo_var);
 		LionAnalyticEvents_OnLevelStart_m6DBA27B7F44B4432A8265468F7F8406D743612D8(((int32_t)il2cpp_codegen_add(L_33, 1)), (Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710*)NULL, NULL);
 		// if (_levelManager.Level == 3&& PlayerPrefs.GetInt("T")==0)

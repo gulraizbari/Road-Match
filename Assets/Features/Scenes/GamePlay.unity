@@ -19500,8 +19500,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c5137a2baf25348a7993158da9ab1188, type: 2}
   - {fileID: 11400000, guid: 8286f432e41714ef6b422092abfd3689, type: 2}
   isTesting: 0
-  currentScene: 2
-  testingLvlNumber: 10
+  currentScene: 1
+  testingLvlNumber: 38
 --- !u!4 &1639253927
 Transform:
   m_ObjectHideFlags: 0
@@ -26921,6 +26921,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3606185951670063908, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 63c7bf550cc5f4cae8c2cd51df9183a5,
+        type: 3}
     - target: {fileID: 3630523204392359279, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -27877,6 +27883,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6825590768331338941, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825590768331338941, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 41
+      objectReference: {fileID: 0}
     - target: {fileID: 7225019648823084876, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -28017,7 +28033,7 @@ PrefabInstance:
     - target: {fileID: 8985472781578095737, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9096113803646538531, guid: 9e18e06df0fea43c386d1ff8b7244f7d,
         type: 3}

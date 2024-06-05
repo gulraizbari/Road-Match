@@ -117,7 +117,7 @@ namespace Features.UI.Logics
 
         public  void TryAgain()
         {
-            LionAnalyticEvents.OnLevelFail(UIController.instance.levelManager.Level+1,reasonOfFail.ToString());
+            LionAnalyticEvents.OnLevelFail(UIController.instance.levelManager.LevelCounter+1,reasonOfFail.ToString());
             UIController.instance.levelManager.ResetLevel();
         }
     }

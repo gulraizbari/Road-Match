@@ -42,7 +42,7 @@ public class Splash : MonoBehaviour
       loadingText.text = "100%";
 
       yield return new WaitForSeconds(.5f);
-      SceneManager.LoadScene(2);
+      SceneManager.LoadScene(1);
    }
    
 }

@@ -35,9 +35,10 @@ public class LevelManager : MonoBehaviour
    public void NextLevel()
    {
       Level++;
+      LevelCounter ++;
       if (Level >= levels.Count)
       {
-         Level = Random.Range(1,levels.Count);
+         Level = Random.Range(20,levels.Count);
       }      
    } 
 
@@ -57,5 +58,6 @@ public class LevelManager : MonoBehaviour
    }
 
    public  int Level { get=>PlayerPrefs.GetInt("Lvl"); set=>PlayerPrefs.SetInt("Lvl",value); }
+   public  int LevelCounter { get=>PlayerPrefs.GetInt("LvlCounter"); set=>PlayerPrefs.SetInt("LvlCounter",value); }
 
 }

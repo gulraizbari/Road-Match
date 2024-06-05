@@ -218,10 +218,10 @@ MonoBehaviour:
       Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: typeOfHurdle
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: typeOfItem
       Entry: 3
       Data: 4
@@ -263,7 +263,7 @@ MonoBehaviour:
       Data: false
     - Name: enemyHealth
       Entry: 3
-      Data: 1
+      Data: 7
     - Name: powerUPLVL
       Entry: 3
       Data: 1
@@ -278,7 +278,7 @@ MonoBehaviour:
       Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 2
@@ -296,7 +296,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 21
+      Data: 6
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -4415,7 +4415,7 @@ MonoBehaviour:
       Data: 74|CellData, Assembly-CSharp
     - Name: tileType
       Entry: 3
-      Data: 1
+      Data: 5
     - Name: tilePlacement
       Entry: 3
       Data: 2
@@ -4439,10 +4439,10 @@ MonoBehaviour:
       Data: 3
     - Name: typeOfCollectableItems
       Entry: 3
-      Data: 6
+      Data: 1
     - Name: typeOfBooster
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: typeOfPowerUps
       Entry: 3
       Data: 0
@@ -4457,7 +4457,7 @@ MonoBehaviour:
       Data: false
     - Name: notLink
       Entry: 5
-      Data: false
+      Data: true
     - Name: walkableGate
       Entry: 5
       Data: false
