@@ -263,17 +263,33 @@ namespace Features.GridGeneration.Scripts
         }
         public void CheckAdjacents(bool canFlip)
         {
-            // foreach (var VARIABLE in iGridView.PathData)
-            // {
-            //     VARIABLE.Value.Lift(false);
-            // }
             foreach (var cellID in iGridView.GridHandler.FindAdjacentCells(CellBase))
             {
                 var id = $"{cellID.Row}{cellID.Col}";
                 adjacentIDs.Add(id);
             }
-
             FetchFromDictionary(canFlip);
+        } 
+        public List<Tile> CheckAdjacentForEnemy()
+        {
+            foreach (var cellID in iGridView.GridHandler.FindAdjacentCells(CellBase))
+            {
+                var id = $"{cellID.Row}{cellID.Col}";
+                adjacentIDs.Add(id);
+            }
+            foreach (var id in adjacentIDs)
+            {
+                var adjacentsCell = iGridView.GetFoundTile(id);
+                if (adjacentsCell)
+                {
+                    if (adjacentsCell._id == id)
+                    {
+                        _adjacents.Add(adjacentsCell);
+                    }
+                }
+            }
+            var foundadjacent= _adjacents.ToList();
+            return foundadjacent;
         }
         private async void FetchFromDictionary(bool canFlip)
         {

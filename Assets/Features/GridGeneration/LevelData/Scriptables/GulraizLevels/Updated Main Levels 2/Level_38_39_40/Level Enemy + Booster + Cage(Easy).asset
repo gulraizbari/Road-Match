@@ -7605,7 +7605,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4230d39f4bdc641a98f6162d1f1b0be1, type: 2}
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}
-  movesMultiplier: 3
+  movesMultiplier: 2
   moveCamera: 1
   maxZ: -30
   minZ: -55

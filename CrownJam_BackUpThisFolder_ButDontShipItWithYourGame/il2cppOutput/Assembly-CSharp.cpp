@@ -18277,6 +18277,60 @@ IL_007f:
 		return;
 	}
 }
+// System.Void MergeController::UnSelectTile()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MergeController_UnSelectTile_mD159AD6A4692E0300BFB010CE1CE18DD41769A85 (MergeController_tE1EFE2DBC25818A63CBB8948F1C2ACD9A9644011* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ITile_t866B1E229B483627B9744BD29A7E3B089EEEFB22_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	{
+		// if (selectedTile1!=null)
+		RuntimeObject* L_0 = __this->___selectedTile1_4;
+		if (!L_0)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		// selectedTile1.UnSelect(false, 0, 0, null);
+		RuntimeObject* L_1 = __this->___selectedTile1_4;
+		NullCheck(L_1);
+		InterfaceActionInvoker4< bool, float, float, UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* >::Invoke(4 /* System.Void GridGeneration.Scripts.interfaces.ITile::UnSelect(System.Boolean,System.Single,System.Single,UnityEngine.Events.UnityEvent) */, ITile_t866B1E229B483627B9744BD29A7E3B089EEEFB22_il2cpp_TypeInfo_var, L_1, (bool)0, (0.0f), (0.0f), (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977*)NULL);
+	}
+
+IL_001f:
+	{
+		// if (selectedTile2!=null)
+		RuntimeObject* L_2 = __this->___selectedTile2_5;
+		if (!L_2)
+		{
+			goto IL_003e;
+		}
+	}
+	{
+		// selectedTile2.UnSelect(false, 0, 0, null);
+		RuntimeObject* L_3 = __this->___selectedTile2_5;
+		NullCheck(L_3);
+		InterfaceActionInvoker4< bool, float, float, UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* >::Invoke(4 /* System.Void GridGeneration.Scripts.interfaces.ITile::UnSelect(System.Boolean,System.Single,System.Single,UnityEngine.Events.UnityEvent) */, ITile_t866B1E229B483627B9744BD29A7E3B089EEEFB22_il2cpp_TypeInfo_var, L_3, (bool)0, (0.0f), (0.0f), (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977*)NULL);
+	}
+
+IL_003e:
+	{
+		// selectedTile2 = selectedTile1 = null;
+		V_0 = (RuntimeObject*)NULL;
+		__this->___selectedTile1_4 = (RuntimeObject*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedTile1_4), (void*)(RuntimeObject*)NULL);
+		RuntimeObject* L_4 = V_0;
+		__this->___selectedTile2_5 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedTile2_5), (void*)L_4);
+		// }
+		return;
+	}
+}
 // System.Void MergeController::CheckCompletion()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MergeController_CheckCompletion_m20B4DF8062D52D7AB191B44437FE5E8DAB98FBEB (MergeController_tE1EFE2DBC25818A63CBB8948F1C2ACD9A9644011* __this, const RuntimeMethod* method) 
 {

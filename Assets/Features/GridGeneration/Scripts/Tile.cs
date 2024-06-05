@@ -114,6 +114,14 @@ namespace Features.GridGeneration.Scripts
             // }
         }
 
+        private void TileClickEffect()
+        {
+            transform.DOScale(1.1f, .15f).SetEase(Ease.Linear).OnComplete((() =>
+            {
+                transform.DOScale(1f, .1f).SetEase(Ease.Linear);
+            }));
+            SoundManager.Instance.PlayTileSelect(1f);
+        }
         public override void OnPointerUp(PointerEventData eventData)
         {
             base.OnPointerUp(eventData);
@@ -124,27 +132,30 @@ namespace Features.GridGeneration.Scripts
             if (cantSelectPlayer)return;
             if (_player is null)
             {
-                if(TileState != TileStates.Walkable )return;
-                SoundManager.Instance.PlayTileSelect(1f);
-                foreach (var data in iGridView.PathData)
+                if (TileState == TileStates.Enemy)
                 {
-                    if (data.Value.TileState == TileStates.Walkable)
+                    TileClickEffect();
+                    _playerController.CheckEnemyPath(CheckAdjacentForEnemy());
+                }
+                else if (TileState == TileStates.Walkable)
+                {
+                    iGridView.MergeController.UnSelectTile();
+                    foreach (var data in iGridView.PathData)
                     {
-                        data.Value.ChangeColor(Configs.GameConfig.TileOrignalColor); 
-                        // data.Value.SetMeshMaterialColorProperty(Configs.GameConfig.TileOrignalColor);
+                        if (data.Value.TileState == TileStates.Walkable)
+                        {
+                            data.Value.ChangeColor(Configs.GameConfig.TileOrignalColor); 
+                        }
+                        data.Value.transform.DOLocalMoveY(0, .01f).SetEase(Ease.Linear);
                     }
-                   
-                    data.Value.transform.DOLocalMoveY(0, .01f).SetEase(Ease.Linear);
+                    _playerController.AssignPath(this);
+                    TileClickEffect();
+                    if (istutorial)
+                    {
+                        TutorialManager.OnTutorialAction();
+                    }
                 }
-                _playerController.AssignPath(this);
-                transform.DOScale(1.1f, .15f).SetEase(Ease.Linear).OnComplete((() =>
-                {
-                    transform.DOScale(1f, .1f).SetEase(Ease.Linear);
-                }));
-                if (istutorial)
-                {
-                    TutorialManager.OnTutorialAction();
-                }
+               
             }
         }
     }

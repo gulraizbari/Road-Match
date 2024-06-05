@@ -138,7 +138,7 @@ namespace Features.GridGeneration.Scripts
                                 }
                                 else if (cellData.typeOfHurdle == TypesOfHurdle.Enemys)
                                 {
-                                    _tile.TileState = TileStates.Walkable;
+                                    _tile.TileState = TileStates.Enemy;
                                     var enemy = Instantiate(_gridViewReferences.enemy);
                                     enemy.gridView = this;
                                     enemy.MyTile = _tile;
@@ -147,7 +147,7 @@ namespace Features.GridGeneration.Scripts
                                     _tile._Enemy = enemy;
                                     enemy.Init(_gridViewReferences.player.transform,cellData.enemyHealth,levelData.IsEnemy);
                                     enemy._playerController = _gridViewReferences.playerController;
-                                    _tile.Init(_gridViewReferences.enableWithOutRotation, grid[row, col], this, null,
+                                    _tile.Init(_gridViewReferences.disable, grid[row, col], this, null,
                                         _gridViewReferences.playerController);
                                 }
                             }

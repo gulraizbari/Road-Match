@@ -7,6 +7,7 @@ namespace Sablo.Gameplay.Movement
     {
         public IPlayer SelectedPlayer { get; set; }
         public void AssignPath(Tile target);
+        public void CheckEnemyPath(List<Tile> target);
         public bool CantRun { get; set; }
     }
 }

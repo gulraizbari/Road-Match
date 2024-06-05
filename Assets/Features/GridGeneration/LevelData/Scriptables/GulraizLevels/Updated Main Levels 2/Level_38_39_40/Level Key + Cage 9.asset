@@ -4118,13 +4118,13 @@ MonoBehaviour:
       Data: 1
     - Name: tilePlacement
       Entry: 3
-      Data: 1
+      Data: 2
     - Name: typeOfHurdle
       Entry: 3
       Data: 0
     - Name: typeOfItem
       Entry: 3
-      Data: 0
+      Data: 4
     - Name: typeOfFruit
       Entry: 3
       Data: 0
@@ -4136,7 +4136,7 @@ MonoBehaviour:
       Data: 0
     - Name: typeOfRandomObjects
       Entry: 3
-      Data: 0
+      Data: 32
     - Name: typeOfCollectableItems
       Entry: 3
       Data: 1
@@ -4243,7 +4243,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5c6e82b5008f14a4ea54efc820841572, type: 2}
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}
-  movesMultiplier: 3
+  movesMultiplier: 2
   moveCamera: 0
   maxZ: 0
   minZ: 0

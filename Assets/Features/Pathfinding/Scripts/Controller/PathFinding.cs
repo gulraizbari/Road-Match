@@ -35,6 +35,21 @@ namespace Sablo.Gameplay.PathFinding
             }
         }
 
+        public void FindEnemy(Tile start, List<Tile> target)
+        {
+            _foundPaths.Clear();
+            foreach (var adjacent in target)
+            {
+                if (FindPath(start, adjacent) != null)
+                {
+                    _foundPaths = FindPath(start, adjacent);
+                    player.PlayerHandler.CantRun = true;
+                    player.MoveOnPath(_foundPaths); break;
+                }
+            }
+            
+        }
+
         public List<Tile> foundPath => foundPath;
 
         private List<Tile> FindPath(Tile startCell, Tile targetCell)

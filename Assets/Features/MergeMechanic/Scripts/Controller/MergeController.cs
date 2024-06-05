@@ -141,6 +141,19 @@ public class MergeController : MonoBehaviour, IMergeController
         oldData.Add(selectedTile2);
         selectedTile2 = selectedTile1 = null;
     }
+ public void UnSelectTile()
+    {
+
+        if (selectedTile1!=null)
+        {
+            selectedTile1.UnSelect(false, 0, 0, null);
+        }
+        if (selectedTile2!=null)
+        {
+            selectedTile2.UnSelect(false, 0, 0, null);
+        }
+        selectedTile2 = selectedTile1 = null;
+    }
 
     public void CheckCompletion()
     {

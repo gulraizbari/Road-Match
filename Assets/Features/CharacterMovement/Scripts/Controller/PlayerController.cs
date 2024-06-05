@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Features.GridGeneration.Scripts;
 using Sablo.Gameplay.PathFinding;
 using Sirenix.OdinInspector;
@@ -19,11 +20,19 @@ namespace Sablo.Gameplay.Movement
            
             if (SelectedPlayer != null)
             {
-                
                 PathFinding.Find(SelectedPlayer.CurrentTile, target);
-               // _gridTraversal.StopBlinkingOnTraversableTiles();
             }
             
+        }
+
+        public void CheckEnemyPath(List<Tile> target)
+        {
+            if (CantRun)return;
+           
+            if (SelectedPlayer != null)
+            {
+                PathFinding.FindEnemy(SelectedPlayer.CurrentTile, target);
+            }
         }
 
         public bool CantRun { get; set; }
