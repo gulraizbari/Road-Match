@@ -85,7 +85,7 @@ public sealed class LevelData : SerializedScriptableObject
 
        [FoldoutGroup("LevelAttributes")][Space] public List<ItemContainer> Containers;
        [FoldoutGroup("LevelAttributes")][Space] public CollectableContainer collectableContainer;
-       [FoldoutGroup("LevelAttributes/Value")][Space]  public int movesMultiplier = 1;
+       [FoldoutGroup("LevelAttributes/Value")][Space]  public int noOfMoves = 1;
        [FoldoutGroup("LevelAttributes/Value")] [Switch]
        public bool moveCamera;
        [FoldoutGroup("LevelAttributes/Value")] [ShowIf("moveCamera")]

@@ -47,8 +47,9 @@ public class GridViewReferences : MonoBehaviour
     }
     public void CalculateMoves(int movesMultiplier )
     {
-        moves *= movesMultiplier;
-        moves += extraMoves;
+        moves = movesMultiplier;
+        //moves *= movesMultiplier;
+        //moves += extraMoves;
         UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
     }
 

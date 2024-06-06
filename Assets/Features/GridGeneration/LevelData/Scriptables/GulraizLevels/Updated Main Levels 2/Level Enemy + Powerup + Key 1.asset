@@ -3825,7 +3825,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5c6e82b5008f14a4ea54efc820841572, type: 2}
   collectableContainer: {fileID: 11400000, guid: 10433c5a4ad97478b9bd883da675d7e7,
     type: 2}
-  movesMultiplier: 2
+  noOfMoves: 80
   moveCamera: 1
   maxZ: 0
   minZ: 0

@@ -4779,8 +4779,8 @@ struct LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5  : public SerializedS
 	List_1_tE0A68242B4CFFDA2BD6143B2724F7DE5F860ED38* ___Containers_7;
 	// CollectableContainer LevelData::collectableContainer
 	CollectableContainer_t0A3D9636ED72CC7A69A9EC2DD86B28DB35C0F47A* ___collectableContainer_8;
-	// System.Int32 LevelData::movesMultiplier
-	int32_t ___movesMultiplier_9;
+	// System.Int32 LevelData::noOfMoves
+	int32_t ___noOfMoves_9;
 	// System.Boolean LevelData::moveCamera
 	bool ___moveCamera_10;
 	// System.Single LevelData::maxZ
@@ -24231,11 +24231,11 @@ IL_084e:
 		}
 	}
 	{
-		// _gridViewReferences.CalculateMoves(levelData.movesMultiplier);
+		// _gridViewReferences.CalculateMoves(levelData.noOfMoves);
 		GridViewReferences_t6E377A8E092BF6E0460F4AA193E4A77EB79003B2* L_451 = __this->____gridViewReferences_6;
 		LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5* L_452 = ___1_levelData;
 		NullCheck(L_452);
-		int32_t L_453 = L_452->___movesMultiplier_9;
+		int32_t L_453 = L_452->___noOfMoves_9;
 		NullCheck(L_451);
 		GridViewReferences_CalculateMoves_m9688B067EEF057EE222F5918727DE9878ACE0238(L_451, L_453, NULL);
 		// _gridViewReferences.tutorialManager.PlayTutorial();

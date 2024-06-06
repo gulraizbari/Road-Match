@@ -277,7 +277,7 @@ namespace Features.GridGeneration.Scripts
                 }
             }
             
-            _gridViewReferences.CalculateMoves(levelData.movesMultiplier);
+            _gridViewReferences.CalculateMoves(levelData.noOfMoves);
             _gridViewReferences.tutorialManager.PlayTutorial();
             Goals.SetSlogan();
         }

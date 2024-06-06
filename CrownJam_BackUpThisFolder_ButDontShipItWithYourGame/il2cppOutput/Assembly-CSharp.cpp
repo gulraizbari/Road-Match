@@ -5066,8 +5066,8 @@ struct LevelData_tE6EAE053C277D3E4ED073363F0BF24BDBADFC4D5  : public SerializedS
 	List_1_tE0A68242B4CFFDA2BD6143B2724F7DE5F860ED38* ___Containers_7;
 	// CollectableContainer LevelData::collectableContainer
 	CollectableContainer_t0A3D9636ED72CC7A69A9EC2DD86B28DB35C0F47A* ___collectableContainer_8;
-	// System.Int32 LevelData::movesMultiplier
-	int32_t ___movesMultiplier_9;
+	// System.Int32 LevelData::noOfMoves
+	int32_t ___noOfMoves_9;
 	// System.Boolean LevelData::moveCamera
 	bool ___moveCamera_10;
 	// System.Single LevelData::maxZ
@@ -16495,8 +16495,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelData__ctor_m923000759B849E6F472A21E
 		__this->____width_5 = ((int32_t)9);
 		// int _height = 16;
 		__this->____height_6 = ((int32_t)16);
-		// [FoldoutGroup("LevelAttributes/Value")][Space]  public int movesMultiplier = 1;
-		__this->___movesMultiplier_9 = 1;
+		// [FoldoutGroup("LevelAttributes/Value")][Space]  public int noOfMoves = 1;
+		__this->___noOfMoves_9 = 1;
 		// [FoldoutGroup("LevelAttributes/Value")] public float customPaddingValue=2.6f;
 		__this->___customPaddingValue_20 = (2.5999999f);
 		// public CellData[,] Matrix = new CellData[5, 5];
@@ -16728,26 +16728,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GridViewReferences_CalculateMoves_m9688B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// moves *= movesMultiplier;
-		int32_t L_0 = __this->___moves_17;
-		int32_t L_1 = ___0_movesMultiplier;
-		__this->___moves_17 = ((int32_t)il2cpp_codegen_multiply(L_0, L_1));
-		// moves += extraMoves;
-		int32_t L_2 = __this->___moves_17;
-		int32_t L_3 = __this->___extraMoves_18;
-		__this->___moves_17 = ((int32_t)il2cpp_codegen_add(L_2, L_3));
+		// moves = movesMultiplier;
+		int32_t L_0 = ___0_movesMultiplier;
+		__this->___moves_17 = L_0;
 		// UIController.instance.Text(TextType.Moves).UpdateText($"{moves}");
-		UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2* L_4 = ((UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_StaticFields*)il2cpp_codegen_static_fields_for(UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_il2cpp_TypeInfo_var))->___instance_13;
-		NullCheck(L_4);
-		MultiText_tFD1E30DB81099DC8150991234FFBBDA9C58059E1* L_5;
-		L_5 = UIController_Text_m49CFB4FFDB2A7CD54D06C1E6636146C018E1A627(L_4, 1, NULL);
-		int32_t L_6 = __this->___moves_17;
-		int32_t L_7 = L_6;
-		RuntimeObject* L_8 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_7);
-		String_t* L_9;
-		L_9 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral23114468D04FA2B7A2DA455B545DB914D0A3ED94, L_8, NULL);
-		NullCheck(L_5);
-		MultiText_UpdateText_m378D5F5702A54D6048F402C3FC62E6FE25911AAE(L_5, L_9, NULL);
+		UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2* L_1 = ((UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_StaticFields*)il2cpp_codegen_static_fields_for(UIController_tB28317BDC5493B0C94BC719AA8B3FFC90E5AF6D2_il2cpp_TypeInfo_var))->___instance_13;
+		NullCheck(L_1);
+		MultiText_tFD1E30DB81099DC8150991234FFBBDA9C58059E1* L_2;
+		L_2 = UIController_Text_m49CFB4FFDB2A7CD54D06C1E6636146C018E1A627(L_1, 1, NULL);
+		int32_t L_3 = __this->___moves_17;
+		int32_t L_4 = L_3;
+		RuntimeObject* L_5 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_4);
+		String_t* L_6;
+		L_6 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral23114468D04FA2B7A2DA455B545DB914D0A3ED94, L_5, NULL);
+		NullCheck(L_2);
+		MultiText_UpdateText_m378D5F5702A54D6048F402C3FC62E6FE25911AAE(L_2, L_6, NULL);
 		// }
 		return;
 	}
