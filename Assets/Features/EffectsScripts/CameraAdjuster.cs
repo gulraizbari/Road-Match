@@ -28,7 +28,7 @@ public class CameraAdjuster : MonoBehaviour
         float minY = float.MaxValue;
         float maxY = float.MinValue;;
 
-        foreach (var cell in grid)
+    /*    foreach (var cell in grid)
         {
             if (cell == null || cell.Empty) continue;
             Vector3 position = cell.Position;
@@ -53,7 +53,7 @@ public class CameraAdjuster : MonoBehaviour
 
         // Optionally, center the camera on the grid
         float gridCenterX = (minX + maxX) / 2;
-        orthoCamera.transform.position = new Vector3(gridCenterX, orthoCamera.transform.position.y, orthoCamera.transform.position.z);
+        orthoCamera.transform.position = new Vector3(gridCenterX, orthoCamera.transform.position.y, orthoCamera.transform.position.z);*/
     }
 
     public void SetCamera(LevelData data)
