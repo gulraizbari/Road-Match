@@ -4182,7 +4182,7 @@ IL_0020:
 		String_t* L_19 = V_2;
 		NullCheck(L_18);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_20;
-		L_20 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_18, L_19);
+		L_20 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(19 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_18, L_19);
 		GamepadRumble_t7DE7D16E45630C3E68812B85E00E60F32D0E3240 L_21 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(HapticController_t79C84438558C558AA45E1D2CF93B5C0253131CBA_il2cpp_TypeInfo_var);
 		HapticController_Load_mB19C1D42F42F987DAF09066928F5FF3CE97440FA(L_20, L_21, NULL);
@@ -4363,7 +4363,7 @@ IL_006f:
 		String_t* L_15 = V_3;
 		NullCheck(L_14);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_16;
-		L_16 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_14, L_15);
+		L_16 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(19 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_14, L_15);
 		GamepadRumble_t7DE7D16E45630C3E68812B85E00E60F32D0E3240 L_17 = V_4;
 		il2cpp_codegen_runtime_class_init_inline(HapticController_t79C84438558C558AA45E1D2CF93B5C0253131CBA_il2cpp_TypeInfo_var);
 		HapticController_Load_mB19C1D42F42F987DAF09066928F5FF3CE97440FA(L_16, L_17, NULL);
@@ -5188,7 +5188,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Preset__ctor_m6EBDC43D2BD021F13D530424BC
 		L_6 = Pattern_ToClip_mFD7C70C9687B1FAD4AB50B7D082C0C07F5754FBD((&V_0), NULL);
 		NullCheck(L_5);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7;
-		L_7 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_5, L_6);
+		L_7 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(19 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_5, L_6);
 		__this->___jsonClip_2 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___jsonClip_2), (void*)L_7);
 		// }

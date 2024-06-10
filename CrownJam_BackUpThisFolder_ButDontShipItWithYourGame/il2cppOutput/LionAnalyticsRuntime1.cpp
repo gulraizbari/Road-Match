@@ -140,6 +140,8 @@ struct List_1_tB6AD00DBCD68F6360D49A85493179A2EBFBE7395;
 struct List_1_t16359674018645FCCC8FBA6DB6A3FDF4DE00AACD;
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+// System.Collections.Generic.List`1<System.String>
+struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD;
 // System.Collections.Generic.List`1<LionStudios.Suite.Analytics.VirtualCurrency>
 struct List_1_tCD725B32EE9F72CA7AB04A10B25A0AE9313BA30C;
 // System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.Object>
@@ -158,6 +160,8 @@ struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 // System.IntPtr[]
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+// Newtonsoft.Json.JsonConverter[]
+struct JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E;
 // System.Object[]
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 // System.Diagnostics.StackTrace[]
@@ -180,6 +184,8 @@ struct AdEventArgs_t1C49F7E214CA4C69CBAC01B49CEA8AB7F5D9BE13;
 struct AdFailEventArgs_t215D49E2BE3F6A87A72097BF0FF241533B5E7A6A;
 // LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs
 struct AdRewardArgs_t1A7EF7F0C6E5BCA2E9BC705084D90FBA2389E798;
+// com.adjust.sdk.AdjustEvent
+struct AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A;
 // Data.AnalyticsData
 struct AnalyticsData_tE4CA341BDBA72543789A49776E8AB50603116D9C;
 // LionStudios.Suite.Analytics.AnalyticsSdkBridge
@@ -334,6 +340,8 @@ struct ItemActionedEventArgs_t71CB2C48AA0401E3CE532AB91BED60751C2A15A1;
 struct ItemCollectedEvent_t4939F153ECF45D86A24C8EBC1F79BF562C585E2E;
 // Events.InGame.EventArgs.ItemCollectedEventArgs
 struct ItemCollectedEventArgs_t1A785B05235A04BDF22A600C16B447681EA93AE0;
+// Newtonsoft.Json.JsonConverter
+struct JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16;
 // LionStudios.Suite.Analytics.Events.LevelAbandonedEvent
 struct LevelAbandonedEvent_tA07955FECECE7DCBA3D9AC691A595F943C076A77;
 // LionStudios.Suite.Analytics.Events.LevelCompleteEvent
@@ -494,6 +502,7 @@ struct MissionAttemptEventArgs_t128A13AC31F16F59FBAB2073026E69EDA38D8B38;
 IL2CPP_EXTERN_C RuntimeClass* AdErrorType_t7D55AC354FDF401606DEE8B063BD3B84AA663006_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AdEventType_t02CAEF7513C8362C2AD86F39521C2D0B451DF41F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AdType_tE067DD620DD12E7B1A48AAEB98DB7C88640C632D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var;
@@ -506,6 +515,7 @@ IL2CPP_EXTERN_C RuntimeClass* Func_2_tA85BFB5C52DE4AF402F928C9B7A409D78D699445_i
 IL2CPP_EXTERN_C RuntimeClass* Func_2_tD87075E7FBCDE7CF494537FDA7D10DBA5F45FFBC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IAPEventType_t3A06756C5D419E79DC6618A715557D4A21706949_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ICollection_1_t7FAFDB77857BA6F1396E710E9F065944B2183233_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ICollection_t37E7B9DC5B4EF41D190D607F92835BF1171C0E8E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDictionary_2_t79D4ADB15B238AC117DF72982FEA3C42EF5AFA19_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IEnumerable_1_t1F32F711C91AEBCFA4770668CA067447D2A4F665_il2cpp_TypeInfo_var;
@@ -514,6 +524,7 @@ IL2CPP_EXTERN_C RuntimeClass* IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666
 IL2CPP_EXTERN_C RuntimeClass* InGameEventType_tA0C564D76A8079D9EF55FB6545805FFAE9E65B0D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LevelAttemptEventArgs_t0246D1482282F26494D53FB57D981912FC1D14C0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LevelEventType_tF9AAFD0D5F227C6A0FDDB83A77AF02D2512C7D39_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LevelEvent_tF5EFCFC9CC36539DF82BCA399B5F678A8485D3EA_il2cpp_TypeInfo_var;
@@ -552,6 +563,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral1671D86E8DE91CE35C3BB103B871E12D71870E41
 IL2CPP_EXTERN_C String_t* _stringLiteral17C3DB53D36E79321BFEA0557FF63260640B7C5F;
 IL2CPP_EXTERN_C String_t* _stringLiteral18378624E2FDAF34032A8553382EF68C1D78970B;
 IL2CPP_EXTERN_C String_t* _stringLiteral189EE3A3E565D46B3514A166D75CD9A28F261944;
+IL2CPP_EXTERN_C String_t* _stringLiteral198C2F1ECD2988B68E363BCF73E03C0FA9E4EB3F;
 IL2CPP_EXTERN_C String_t* _stringLiteral1ACBFDE52298290BB54453C54FFF5AAFD9015100;
 IL2CPP_EXTERN_C String_t* _stringLiteral1B03F4FA5C3D68B3DD133DD7F7F8D989E4D3705F;
 IL2CPP_EXTERN_C String_t* _stringLiteral1BDC6FCDE87738D8A1B9914AAA135DD976BB837C;
@@ -608,6 +620,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral6A5592D0062C9AE9F4D590C21C32B0A2C09C9003
 IL2CPP_EXTERN_C String_t* _stringLiteral6BC89B240588F94903015A1BBAE29ACB584D9AA1;
 IL2CPP_EXTERN_C String_t* _stringLiteral6DE5A3ACE04D7E373C4AA3EABD29D32D728DE5E7;
 IL2CPP_EXTERN_C String_t* _stringLiteral6E005336CF197D8FE945DCDAF5F189F9B55FBF8E;
+IL2CPP_EXTERN_C String_t* _stringLiteral6FA4BB4F976B46A1CF38EE1D73A36874973647A5;
 IL2CPP_EXTERN_C String_t* _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1;
 IL2CPP_EXTERN_C String_t* _stringLiteral70C09EB5DC1ED91119F4322651458BB5B0582547;
 IL2CPP_EXTERN_C String_t* _stringLiteral72EF5E6D37836B03D1804B7F0C789CB5D3045062;
@@ -636,6 +649,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral977DECB5022A510B5EB4313C178CEA161D6AED36
 IL2CPP_EXTERN_C String_t* _stringLiteral99A9CAAB454612DB5E8D8EBE22477B5395A2545B;
 IL2CPP_EXTERN_C String_t* _stringLiteral9BC1C82E2DB1C701DDA65153FF8E48FD0B966DA9;
 IL2CPP_EXTERN_C String_t* _stringLiteral9C2501A8AD53E9560A348FAFB85F4353AB1C0987;
+IL2CPP_EXTERN_C String_t* _stringLiteral9FBD7216FD8EC389DBC5EAE3DDBCC0228B5B1EB7;
 IL2CPP_EXTERN_C String_t* _stringLiteral9FD4341A8AF88AFA55D8CB191AEA2C9BAC9BA186;
 IL2CPP_EXTERN_C String_t* _stringLiteralA17B189D16DA98E82DA27D22D5CAAE15A575EAC4;
 IL2CPP_EXTERN_C String_t* _stringLiteralA39F26E1A96A85480E1DF45DA4FB0C20431FE762;
@@ -653,6 +667,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralAF559BEEEDC4A3DA7C3E4A7642A932EA7C00491E
 IL2CPP_EXTERN_C String_t* _stringLiteralAF5814DABD4CD7584AC407E0D72A87CAB2B45A7D;
 IL2CPP_EXTERN_C String_t* _stringLiteralB2A1FEE7D68E23AD52765D17E0714B789BDEC7E4;
 IL2CPP_EXTERN_C String_t* _stringLiteralB3E36369A14EE279CCABE60446F3EEE3E1852A4A;
+IL2CPP_EXTERN_C String_t* _stringLiteralB47B8F7F159E145C293F1820818E9F105BA98625;
 IL2CPP_EXTERN_C String_t* _stringLiteralB533CE2423F0C94244872A1A23981600D074BD29;
 IL2CPP_EXTERN_C String_t* _stringLiteralB535D783805B75101BBBE560D97D1CF01A06DAFF;
 IL2CPP_EXTERN_C String_t* _stringLiteralB835F4D75292BE504618B695A0D689AE6DB75010;
@@ -688,7 +703,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralDF620B11A47F504CD18BC4D52F1B1EF3DFFBEA6D
 IL2CPP_EXTERN_C String_t* _stringLiteralE009AE33CE6DAFD8CFC5EF32937BD7B9D0421CD1;
 IL2CPP_EXTERN_C String_t* _stringLiteralE0105010ED710A65053D492B3441DC58D914C147;
 IL2CPP_EXTERN_C String_t* _stringLiteralE0228745E227EA8D7812EA85DF6FB01E66F3535A;
-IL2CPP_EXTERN_C String_t* _stringLiteralE14FF21A9FC32D558F62881D9B2FF02DEB6BA164;
 IL2CPP_EXTERN_C String_t* _stringLiteralE170ABB9A7ACC8521EBF25722B9712F924D3BBBC;
 IL2CPP_EXTERN_C String_t* _stringLiteralE4A489E89816C517A3BF78A907EBCEBD70679683;
 IL2CPP_EXTERN_C String_t* _stringLiteralE56E7D1788FC888035CB712FC6843A1BB0A20DCD;
@@ -712,7 +726,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralFC51D5E56AD109C29C8FD03D96141DD94AB29458
 IL2CPP_EXTERN_C String_t* _stringLiteralFCCFEC9F93B2E6C8FC784051CD70F40F98362E57;
 IL2CPP_EXTERN_C String_t* _stringLiteralFD3B5EAFB846340E4413C2D6FDC05D708DED244D;
 IL2CPP_EXTERN_C String_t* _stringLiteralFD9EF1E00F6BC0384B0AB8EF109230935B177387;
-IL2CPP_EXTERN_C String_t* _stringLiteralFFF7CC8327ABE8A6FB36C4010B59A46F2ADA910D;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* EconomyEventWithReceipt__ctor_m5635E20E9AA6A34461906D4D77782FAE8D23DAF8_RuntimeMethod_var;
@@ -741,6 +754,7 @@ struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
 
+struct JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 
@@ -1110,6 +1124,15 @@ struct Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01
 	bool ___hasValue_0;
 	// T System.Nullable`1::value
 	bool ___value_1;
+};
+
+// System.Nullable`1<System.Double>
+struct Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	double ___value_1;
 };
 
 // System.Nullable`1<System.Int32>
@@ -1768,6 +1791,33 @@ struct AdRewardArgs_t1A7EF7F0C6E5BCA2E9BC705084D90FBA2389E798  : public EventArg
 	RuntimeObject* ___Reward_2;
 	// System.Nullable`1<System.Int32> LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs::Level
 	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___Level_3;
+};
+
+// com.adjust.sdk.AdjustEvent
+struct AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A  : public RuntimeObject
+{
+	// System.String com.adjust.sdk.AdjustEvent::currency
+	String_t* ___currency_0;
+	// System.String com.adjust.sdk.AdjustEvent::eventToken
+	String_t* ___eventToken_1;
+	// System.String com.adjust.sdk.AdjustEvent::callbackId
+	String_t* ___callbackId_2;
+	// System.String com.adjust.sdk.AdjustEvent::transactionId
+	String_t* ___transactionId_3;
+	// System.String com.adjust.sdk.AdjustEvent::productId
+	String_t* ___productId_4;
+	// System.Nullable`1<System.Double> com.adjust.sdk.AdjustEvent::revenue
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ___revenue_5;
+	// System.Collections.Generic.List`1<System.String> com.adjust.sdk.AdjustEvent::partnerList
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___partnerList_6;
+	// System.Collections.Generic.List`1<System.String> com.adjust.sdk.AdjustEvent::callbackList
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___callbackList_7;
+	// System.String com.adjust.sdk.AdjustEvent::receipt
+	String_t* ___receipt_8;
+	// System.Boolean com.adjust.sdk.AdjustEvent::isReceiptSet
+	bool ___isReceiptSet_9;
+	// System.String com.adjust.sdk.AdjustEvent::purchaseToken
+	String_t* ___purchaseToken_10;
 };
 
 // LionStudios.Suite.Analytics.Events.EventArgs.BannerFailEventArgs
@@ -2525,6 +2575,10 @@ struct U3CU3Ec_t229452377D04683F018AB8B5ABE5ED9B3B95066B_StaticFields
 
 // System.Nullable`1<System.Boolean>
 
+// System.Nullable`1<System.Double>
+
+// System.Nullable`1<System.Double>
+
 // System.Nullable`1<System.Int32>
 
 // System.Nullable`1<System.Int32>
@@ -2878,6 +2932,10 @@ struct RealCurrency_tEC5BBE3A32914697A507A6C1DF4845C6BA5E0214_StaticFields
 
 // LionStudios.Suite.Analytics.Events.EventArgs.AdRewardArgs
 
+// com.adjust.sdk.AdjustEvent
+
+// com.adjust.sdk.AdjustEvent
+
 // LionStudios.Suite.Analytics.Events.EventArgs.BannerFailEventArgs
 
 // LionStudios.Suite.Analytics.Events.EventArgs.BannerFailEventArgs
@@ -3186,6 +3244,41 @@ struct Type_t_StaticFields
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+// Newtonsoft.Json.JsonConverter[]
+struct JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E  : public RuntimeArray
+{
+	ALIGN_FIELD (8) JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* m_Items[1];
+
+	inline JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 // System.String[]
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
 {
@@ -3492,6 +3585,18 @@ inline RuntimeObject* GlobalDataContainer_2_GetData_mA67FC6B5F172B738F05B5D9F3F8
 }
 // System.String Newtonsoft.Json.JsonConvert::SerializeObject(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JsonConvert_SerializeObject_m277670BD344964CB2A61751E5A3D62DB5B1321C7 (RuntimeObject* ___0_value, const RuntimeMethod* method) ;
+// System.Void com.adjust.sdk.AdjustEvent::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdjustEvent__ctor_mAC0186FC6FFC06C8F2F642F2E850268210B5C950 (AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A* __this, String_t* ___0_eventToken, const RuntimeMethod* method) ;
+// System.Void com.adjust.sdk.AdjustEvent::addCallbackParameter(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdjustEvent_addCallbackParameter_m5B0AC22C33F28393FEBDF840A2D6ECBDDA62F100 (AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A* __this, String_t* ___0_key, String_t* ___1_value, const RuntimeMethod* method) ;
+// System.Collections.Generic.IDictionary`2<System.String,System.Object> LionStudios.Suite.Analytics.Events.LionGameEventBase::get_eventParams()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) ;
+// System.String Newtonsoft.Json.JsonConvert::SerializeObject(System.Object,Newtonsoft.Json.JsonConverter[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JsonConvert_SerializeObject_m266FBF130BBC12E51B84B1BE48A04F9FBFB6DD6B (RuntimeObject* ___0_value, JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E* ___1_converters, const RuntimeMethod* method) ;
+// System.Void com.adjust.sdk.Adjust::trackEvent(com.adjust.sdk.AdjustEvent)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Adjust_trackEvent_m14A0B120A99EB5DA93EB5CB027A57B57362CD14F (AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A* ___0_adjustEvent, const RuntimeMethod* method) ;
+// System.Void LionStudios.Suite.Analytics.Events.LionGameEventBase::OnEventFired()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_OnEventFired_m2470700F13B12B1599EF64543071E6095AE4E3A7 (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) ;
 // System.Void Utility.Dispatcher.Dispatcher::Send(Utility.Dispatcher.EventId,System.EventArgs)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dispatcher_Send_m7539678380705FE506AA7FD021D97ABB2549FA6D (Dispatcher_t6846D38ACEFE402421D79B4468975AE92F07A1F6* __this, int32_t ___0_eventId, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___1_args, const RuntimeMethod* method) ;
 // System.Void LionStudios.Suite.Analytics.LionAnalytics/LionEventDelegate::Invoke(LionStudios.Suite.Analytics.Events.LionGameEventBase)
@@ -3500,8 +3605,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LionEventDelegate_Invoke_mB6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478 (String_t* ___0_value, const RuntimeMethod* method) ;
 // LionStudios.Suite.Analytics.EventType LionStudios.Suite.Analytics.Events.LionGameEventBase::get_eventType()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LionGameEventBase_get_eventType_m4253A88156B483B86164CC6C16D133882943EA77_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) ;
-// System.Collections.Generic.IDictionary`2<System.String,System.Object> LionStudios.Suite.Analytics.Events.LionGameEventBase::get_eventParams()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object,System.Object,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, RuntimeObject* ___3_arg2, const RuntimeMethod* method) ;
 // System.String Newtonsoft.Json.JsonConvert::SerializeObject(System.Object,Newtonsoft.Json.Formatting)
@@ -10442,37 +10545,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_Fire_m284305B44663312E
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDataContainer_2_GetData_m7C87CDEBB717283B553A0A774294EEDADFC9D5DA_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDataContainer_2_GetData_mA67FC6B5F172B738F05B5D9F3F88290E1C0967D2_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICollection_1_t7FAFDB77857BA6F1396E710E9F065944B2183233_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ICollection_t37E7B9DC5B4EF41D190D607F92835BF1171C0E8E_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_t1F32F711C91AEBCFA4770668CA067447D2A4F665_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_t913F242211877D391217C9D75152235266FDAF10_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral198C2F1ECD2988B68E363BCF73E03C0FA9E4EB3F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral49358F1C1A159D63E0A1540F41203FDED62ABF43);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4D3AB98A53D05A27B5E0409A8837B83C853CC83F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6FA4BB4F976B46A1CF38EE1D73A36874973647A5);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral737770B3F764157DABB4CE6100DDE5F3A7607BE8);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8C2D3D4D35B67C1B740496D7A1A97A732F01C4FB);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9FBD7216FD8EC389DBC5EAE3DDBCC0228B5B1EB7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB47B8F7F159E145C293F1820818E9F105BA98625);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCCE359C6B0ABE9D58CB588667F9A93BA52A1C294);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE14FF21A9FC32D558F62881D9B2FF02DEB6BA164);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE4A489E89816C517A3BF78A907EBCEBD70679683);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFD9EF1E00F6BC0384B0AB8EF109230935B177387);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFFF7CC8327ABE8A6FB36C4010B59A46F2ADA910D);
 		s_Il2CppMethodInitialized = true;
 	}
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	RuntimeObject* V_1 = NULL;
-	KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 V_2;
-	memset((&V_2), 0, sizeof(V_2));
+	AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A* V_0 = NULL;
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	RuntimeObject* V_2 = NULL;
+	KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	String_t* V_5 = NULL;
+	String_t* V_6 = NULL;
 	String_t* G_B4_0 = NULL;
 	LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* G_B4_1 = NULL;
 	String_t* G_B3_0 = NULL;
@@ -10480,6 +10593,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LionGameEventBase_Fire_m284305B44663312E
 	String_t* G_B5_0 = NULL;
 	String_t* G_B5_1 = NULL;
 	LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* G_B5_2 = NULL;
+	String_t* G_B18_0 = NULL;
 	{
 		// if (!LionAnalytics.IsEventEligibleToFire(this))
 		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
@@ -10507,12 +10621,12 @@ IL_0009:
 		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_4;
 		L_4 = DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA(NULL);
-		V_0 = L_4;
+		V_1 = L_4;
 		il2cpp_codegen_runtime_class_init_inline(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
 		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_5;
 		L_5 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
 		String_t* L_6;
-		L_6 = DateTime_ToString_m66457C11C42C07E2F437A9D899E6E3FB9FD77B50((&V_0), L_5, NULL);
+		L_6 = DateTime_ToString_m66457C11C42C07E2F437A9D899E6E3FB9FD77B50((&V_1), L_5, NULL);
 		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteralCCE359C6B0ABE9D58CB588667F9A93BA52A1C294, L_6, (bool)0, NULL);
 		// AddParam(EventParam.sequenceId, LionAnalytics._coreData.SequenceId);
 		il2cpp_codegen_runtime_class_init_inline(LionAnalytics_tBA0EB0A3A610D9223D45982FA379A56EBD7E194C_il2cpp_TypeInfo_var);
@@ -10578,7 +10692,7 @@ IL_00a3:
 		NullCheck(L_19);
 		RuntimeObject* L_20;
 		L_20 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::GetEnumerator() */, IEnumerable_1_t1F32F711C91AEBCFA4770668CA067447D2A4F665_il2cpp_TypeInfo_var, L_19);
-		V_1 = L_20;
+		V_2 = L_20;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
@@ -10587,14 +10701,14 @@ IL_00a3:
 FINALLY_00dc:
 			{// begin finally (depth: 1)
 				{
-					RuntimeObject* L_21 = V_1;
+					RuntimeObject* L_21 = V_2;
 					if (!L_21)
 					{
 						goto IL_00e5;
 					}
 				}
 				{
-					RuntimeObject* L_22 = V_1;
+					RuntimeObject* L_22 = V_2;
 					NullCheck(L_22);
 					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_22);
 				}
@@ -10614,23 +10728,23 @@ IL_00e5:
 IL_00b6_1:
 			{
 				// foreach (var kvp in LionAnalytics._globalParams)
-				RuntimeObject* L_23 = V_1;
+				RuntimeObject* L_23 = V_2;
 				NullCheck(L_23);
 				KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 L_24;
 				L_24 = InterfaceFuncInvoker0< KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::get_Current() */, IEnumerator_1_t913F242211877D391217C9D75152235266FDAF10_il2cpp_TypeInfo_var, L_23);
-				V_2 = L_24;
+				V_3 = L_24;
 				// AddParam(kvp.Key, kvp.Value);
 				String_t* L_25;
-				L_25 = KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_inline((&V_2), KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
+				L_25 = KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_inline((&V_3), KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
 				RuntimeObject* L_26;
-				L_26 = KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_inline((&V_2), KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
+				L_26 = KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_inline((&V_3), KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
 				LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, L_25, L_26, (bool)0, NULL);
 			}
 
 IL_00d2_1:
 			{
 				// foreach (var kvp in LionAnalytics._globalParams)
-				RuntimeObject* L_27 = V_1;
+				RuntimeObject* L_27 = V_2;
 				NullCheck(L_27);
 				bool L_28;
 				L_28 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_27);
@@ -10654,13 +10768,154 @@ IL_00e6:
 		// AddParam(EventParam.additionalData, _additionalData);
 		RuntimeObject* L_29 = __this->____additionalData_3;
 		LionGameEventBase_AddParam_m0641520BB570FE8038C7A0199F49F7347441BC48(__this, _stringLiteral737770B3F764157DABB4CE6100DDE5F3A7607BE8, L_29, (bool)0, NULL);
-		// Debug.Log($"Couldn't fire event: {GetAdjustPayloadEventName()} because Adjust SDK is not installed");
-		String_t* L_30;
-		L_30 = VirtualFuncInvoker0< String_t* >::Invoke(4 /* System.String LionStudios.Suite.Analytics.Events.LionGameEventBase::GetAdjustPayloadEventName() */, __this);
-		String_t* L_31;
-		L_31 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralE14FF21A9FC32D558F62881D9B2FF02DEB6BA164, L_30, _stringLiteralFFF7CC8327ABE8A6FB36C4010B59A46F2ADA910D, NULL);
+		// AdjustEvent ev = new AdjustEvent("custom_event");
+		AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A* L_30 = (AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A*)il2cpp_codegen_object_new(AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A_il2cpp_TypeInfo_var);
+		NullCheck(L_30);
+		AdjustEvent__ctor_mAC0186FC6FFC06C8F2F642F2E850268210B5C950(L_30, _stringLiteral198C2F1ECD2988B68E363BCF73E03C0FA9E4EB3F, NULL);
+		V_0 = L_30;
+		// ev.addCallbackParameter("evName", GetAdjustPayloadEventName());
+		AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A* L_31 = V_0;
+		String_t* L_32;
+		L_32 = VirtualFuncInvoker0< String_t* >::Invoke(4 /* System.String LionStudios.Suite.Analytics.Events.LionGameEventBase::GetAdjustPayloadEventName() */, __this);
+		NullCheck(L_31);
+		AdjustEvent_addCallbackParameter_m5B0AC22C33F28393FEBDF840A2D6ECBDDA62F100(L_31, _stringLiteralB47B8F7F159E145C293F1820818E9F105BA98625, L_32, NULL);
+		// foreach (KeyValuePair<string,object> eventParam in eventParams)
+		RuntimeObject* L_33;
+		L_33 = LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline(__this, NULL);
+		NullCheck(L_33);
+		RuntimeObject* L_34;
+		L_34 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::GetEnumerator() */, IEnumerable_1_t1F32F711C91AEBCFA4770668CA067447D2A4F665_il2cpp_TypeInfo_var, L_33);
+		V_2 = L_34;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0185:
+			{// begin finally (depth: 1)
+				{
+					RuntimeObject* L_35 = V_2;
+					if (!L_35)
+					{
+						goto IL_018e;
+					}
+				}
+				{
+					RuntimeObject* L_36 = V_2;
+					NullCheck(L_36);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_36);
+				}
+
+IL_018e:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_017b_1;
+			}
+
+IL_0122_1:
+			{
+				// foreach (KeyValuePair<string,object> eventParam in eventParams)
+				RuntimeObject* L_37 = V_2;
+				NullCheck(L_37);
+				KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 L_38;
+				L_38 = InterfaceFuncInvoker0< KeyValuePair_2_tBEE55F2A4574C64393155C322376FD98C7BFC7B9 >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>>::get_Current() */, IEnumerator_1_t913F242211877D391217C9D75152235266FDAF10_il2cpp_TypeInfo_var, L_37);
+				V_4 = L_38;
+				// string adjustParamName = eventParam.Key.ToSnakeCase();
+				String_t* L_39;
+				L_39 = KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_inline((&V_4), KeyValuePair_2_get_Key_mA64FF29A08423140758B0276333D1A89C71B793A_RuntimeMethod_var);
+				String_t* L_40;
+				L_40 = StringUtil_ToSnakeCase_m28D7EA07F3F32706A39615590CEC2F755A441490(L_39, NULL);
+				V_5 = L_40;
+				// string adjustParamValue =
+				//     eventParam.Value is ICollection
+				//         ? JsonConvert.SerializeObject(eventParam.Value, _strEnumConverter)
+				//         : eventParam.Value.ToString();
+				RuntimeObject* L_41;
+				L_41 = KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_inline((&V_4), KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
+				if (((RuntimeObject*)IsInst((RuntimeObject*)L_41, ICollection_t37E7B9DC5B4EF41D190D607F92835BF1171C0E8E_il2cpp_TypeInfo_var)))
+				{
+					goto IL_0154_1;
+				}
+			}
+			{
+				RuntimeObject* L_42;
+				L_42 = KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_inline((&V_4), KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
+				NullCheck(L_42);
+				String_t* L_43;
+				L_43 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_42);
+				G_B18_0 = L_43;
+				goto IL_016f_1;
+			}
+
+IL_0154_1:
+			{
+				RuntimeObject* L_44;
+				L_44 = KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_inline((&V_4), KeyValuePair_2_get_Value_m2052BF44A3FDE623D98B0E6B6E227B2900034235_RuntimeMethod_var);
+				JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E* L_45 = (JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E*)(JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E*)SZArrayNew(JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E_il2cpp_TypeInfo_var, (uint32_t)1);
+				JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E* L_46 = L_45;
+				StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184* L_47 = __this->____strEnumConverter_4;
+				NullCheck(L_46);
+				ArrayElementTypeCheck (L_46, L_47);
+				(L_46)->SetAt(static_cast<il2cpp_array_size_t>(0), (JsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16*)L_47);
+				il2cpp_codegen_runtime_class_init_inline(JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var);
+				String_t* L_48;
+				L_48 = JsonConvert_SerializeObject_m266FBF130BBC12E51B84B1BE48A04F9FBFB6DD6B(L_44, L_46, NULL);
+				G_B18_0 = L_48;
+			}
+
+IL_016f_1:
+			{
+				V_6 = G_B18_0;
+				// ev.addCallbackParameter(adjustParamName, adjustParamValue);
+				AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A* L_49 = V_0;
+				String_t* L_50 = V_5;
+				String_t* L_51 = V_6;
+				NullCheck(L_49);
+				AdjustEvent_addCallbackParameter_m5B0AC22C33F28393FEBDF840A2D6ECBDDA62F100(L_49, L_50, L_51, NULL);
+			}
+
+IL_017b_1:
+			{
+				// foreach (KeyValuePair<string,object> eventParam in eventParams)
+				RuntimeObject* L_52 = V_2;
+				NullCheck(L_52);
+				bool L_53;
+				L_53 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_52);
+				if (L_53)
+				{
+					goto IL_0122_1;
+				}
+			}
+			{
+				goto IL_018f;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_018f:
+	{
+		// Adjust.trackEvent(ev);
+		AdjustEvent_tB8E8022AE25F95DDADDAB3AD7EE35D90838B0C8A* L_54 = V_0;
+		Adjust_trackEvent_m14A0B120A99EB5DA93EB5CB027A57B57362CD14F(L_54, NULL);
+		// Debug.Log($"Fired event {GetAdjustPayloadEventName()} to Adjust SDK");
+		String_t* L_55;
+		L_55 = VirtualFuncInvoker0< String_t* >::Invoke(4 /* System.String LionStudios.Suite.Analytics.Events.LionGameEventBase::GetAdjustPayloadEventName() */, __this);
+		String_t* L_56;
+		L_56 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral9FBD7216FD8EC389DBC5EAE3DDBCC0228B5B1EB7, L_55, _stringLiteral6FA4BB4F976B46A1CF38EE1D73A36874973647A5, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_31, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_56, NULL);
+		// OnEventFired();
+		LionGameEventBase_OnEventFired_m2470700F13B12B1599EF64543071E6095AE4E3A7(__this, NULL);
 		// }
 		return;
 	}
@@ -14349,6 +14604,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t CoreData_get_SequenceId_m
 		return L_0;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
+{
+	{
+		// public IDictionary<string, object> eventParams { get; protected set; } = new Dictionary<string, object>();
+		RuntimeObject* L_0 = __this->___U3CeventParamsU3Ek__BackingField_8;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LionEventDelegate_Invoke_mB6CE171A3386230E04ABE2FA05528985690647E8_inline (LionEventDelegate_t7F8A634E2CA3DEB0D063F008124E31C7DDFFCBDE* __this, LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* ___0_gameEvent, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A*, const RuntimeMethod*);
@@ -14359,14 +14622,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LionGameEventBase_get_eve
 	{
 		// public EventType eventType { get; set; }
 		int32_t L_0 = __this->___U3CeventTypeU3Ek__BackingField_5;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* LionGameEventBase_get_eventParams_m2AAD877C5921A4D27FF45825FEC41499C5DAD6DC_inline (LionGameEventBase_t06EFB07424DD8B83A50ACBCA943936C4BF09BB3A* __this, const RuntimeMethod* method) 
-{
-	{
-		// public IDictionary<string, object> eventParams { get; protected set; } = new Dictionary<string, object>();
-		RuntimeObject* L_0 = __this->___U3CeventParamsU3Ek__BackingField_8;
 		return L_0;
 	}
 }

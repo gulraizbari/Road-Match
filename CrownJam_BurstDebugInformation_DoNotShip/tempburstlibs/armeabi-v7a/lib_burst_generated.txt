@@ -116,6 +116,8 @@ Library: /Volumes/data/RoadMapPrototype/Temp/StagingArea/tempburstlibs/armeabi-v
 --compilation-defines=MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED
 --compilation-defines=UNITY_POST_PROCESSING_STACK_V2
 --compilation-defines=LK_HAS_LION_ANALYTICS
+--compilation-defines=ADJUST_PRESENT_AND_ASMDEF_CREATED
+--compilation-defines=FACEBOOK_PRESENT_AND_ASMDEF_CREATED
 --compilation-defines=PACKAGE_PHYSICS
 --compilation-defines=PACKAGE_PHYSICS2D
 --compilation-defines=PACKAGE_TILEMAP
@@ -125,13 +127,13 @@ Library: /Volumes/data/RoadMapPrototype/Temp/StagingArea/tempburstlibs/armeabi-v
 --compilation-defines=CSHARP_7_3_OR_NEWER
 --compilation-defines=ENABLE_VR_MODULE
 --compilation-defines=ENABLE_XR_MODULE
---compilation-defines=MM_TEXTMESHPRO
---compilation-defines=MM_URP
---compilation-defines=MM_POSTPROCESSING
 --compilation-defines=ENABLE_BURST_1_0_0_OR_NEWER
 --compilation-defines=USING_ANIMATION_MODULE
 --compilation-defines=USING_PHYSICS2D_MODULE
 --compilation-defines=UNIVERSAL_1_0_0_OR_NEWER
+--compilation-defines=MM_TEXTMESHPRO
+--compilation-defines=MM_URP
+--compilation-defines=MM_POSTPROCESSING
 --compilation-defines=TIMELINE_FRAMEACCURATE
 --compilation-defines=UNITY_MATHEMATICS
 --compilation-defines=UNITY_BURST

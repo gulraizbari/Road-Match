@@ -37,6 +37,8 @@ struct VirtualFuncInvoker0
 struct Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C;
 // System.Action`1<System.Object>
 struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
+// System.Action`1<System.String>
+struct Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A;
 // System.Action`1<TMPro.TMP_TextInfo>
 struct Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1;
 // System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>
@@ -383,6 +385,7 @@ struct U3CU3Ec_t9D7F828D15E52590D853C8E8A0BEE134FECF9907;
 struct U3CU3Ec_tC47DDE0F6CF564999C89CD342226C3441B90C00E;
 
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var;
@@ -516,6 +519,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m5875DF2ACE933D734119C088B
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mC4F3DF292BAD88F4BF193C49CD689FAEBC4570A9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_ToDictionary_TisKeyValuePair_2_t325164FFC7064723B43ED085E89C41B54C669BBE_TisString_t_TisString_t_m08F9F6F4993575B2BE304A468FB204E9D6DBA6F8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FeedbackButton_OnFeedbackButtonClick_mB761FB25E3C25B01191AA3397F3F37E3009E3F6C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* FeedbackButton_OnGoogleAdIdReceived_mECB5DEE1EF1947DBC59B617951BC1F1D7471C42F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameIdentity_OnGoogleAdIdReceived_m9B7626F94B18C197F79FF71EF6FFF0677D5CFAAF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* HelpshiftNotificationHandler_OnClick_mE6573657D0D2DB49AE35CC22BA3BBD26010B3776_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Key_mD49AE50ABD190F31528B9E26574B2B9FBAD89CBB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_m29FA081C3A22AE4A45F8FC12F7E24CAD80E9F6CF_RuntimeMethod_var;
@@ -2082,6 +2087,11 @@ struct U3CConfirmDeleteProgressButtonClickedU3Ed__2_t4DE4151FFBB57DA33B4A24DDB12
 
 // System.Action`1<System.Boolean>
 struct Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<System.String>
+struct Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A  : public MulticastDelegate_t
 {
 };
 
@@ -3914,6 +3924,10 @@ struct Type_t_StaticFields
 
 // System.Action`1<System.Boolean>
 
+// System.Action`1<System.String>
+
+// System.Action`1<System.String>
+
 // System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,LionStudios.Suite.PackageUtility/PackageInfo>,System.String>
 
 // System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,LionStudios.Suite.PackageUtility/PackageInfo>,System.String>
@@ -4278,6 +4292,8 @@ struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeA
 
 // T UnityEngine.Component::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Add(TKey,TValue)
@@ -4364,6 +4380,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m8B7DD5661308FA97
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LionOptionsMenuSettings_t39BA44ED21E433E3BAA86BA59343FF14DF2134F2* LionOptionsMenu_get_OptionsMenuSettings_mD75CAF0B7CE4E3BAAC6F7B2CDFA5EA086F02DD09 (LionOptionsMenu_t0AFE5813EF5CFB9C03F199C0CFD98367353413C5* __this, const RuntimeMethod* method) ;
 // System.Void LionStudios.Suite.OptionsMenu.FeedbackButton::AssignButtonEvent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeedbackButton_AssignButtonEvent_m21B612C40CAE0741FD647CD527EDF79742CD19AB (FeedbackButton_tBCFC47B0094A34952C029FC623F7155B5D53F5A9* __this, const RuntimeMethod* method) ;
+// System.Void System.Action`1<System.String>::.ctor(System.Object,System.IntPtr)
+inline void Action_1__ctor_m9DC2953C55C4D7D4B7BEFE03D84DA1F9362D652C (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Void com.adjust.sdk.Adjust::getGoogleAdId(System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Adjust_getGoogleAdId_m21BEBC623AD79545A4B1A593E152A700FA92DCD6 (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___0_onDeviceIdsRead, const RuntimeMethod* method) ;
 // System.Void System.Action::Invoke()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) ;
 // System.String UnityEngine.Application::get_productName()
@@ -5165,6 +5188,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeedbackButton_OnGoogleAdIdReceived_mECB
 // System.Void LionStudios.Suite.OptionsMenu.FeedbackButton::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeedbackButton_Start_m9198D997F1B72214FCEC846197E9F7B8DF5888C0 (FeedbackButton_tBCFC47B0094A34952C029FC623F7155B5D53F5A9* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FeedbackButton_OnGoogleAdIdReceived_mECB5DEE1EF1947DBC59B617951BC1F1D7471C42F_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
 	{
 		// _devEmail = LionOptionsMenu.Instance.OptionsMenuSettings.feedbackEmail;
 		LionOptionsMenu_t0AFE5813EF5CFB9C03F199C0CFD98367353413C5* L_0;
@@ -5178,6 +5208,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeedbackButton_Start_m9198D997F1B72214FC
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____devEmail_4), (void*)L_2);
 		// AssignButtonEvent();
 		FeedbackButton_AssignButtonEvent_m21B612C40CAE0741FD647CD527EDF79742CD19AB(__this, NULL);
+		// Adjust.getGoogleAdId(OnGoogleAdIdReceived);
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_3 = (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*)il2cpp_codegen_object_new(Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Action_1__ctor_m9DC2953C55C4D7D4B7BEFE03D84DA1F9362D652C(L_3, __this, (intptr_t)((void*)FeedbackButton_OnGoogleAdIdReceived_mECB5DEE1EF1947DBC59B617951BC1F1D7471C42F_RuntimeMethod_var), NULL);
+		Adjust_getGoogleAdId_m21BEBC623AD79545A4B1A593E152A700FA92DCD6(L_3, NULL);
 		// }
 		return;
 	}
@@ -9961,6 +9996,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameIdentity_Start_m3BECD723B5B80F72D821
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameIdentity_OnGoogleAdIdReceived_m9B7626F94B18C197F79FF71EF6FFF0677D5CFAAF_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4240D8B50E7D7141437263EDA1B72E145DDBD84F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9DFFC3267C5F999585E61B45BA9C8DF18D4B02CA);
 		s_Il2CppMethodInitialized = true;
@@ -9970,22 +10007,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameIdentity_Start_m3BECD723B5B80F72D821
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___googleAdIdObject_7;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
-		// applicationVersionText.text = "v" + Application.version;
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_1 = __this->___applicationVersionText_4;
-		String_t* L_2;
-		L_2 = Application_get_version_m9CC0E94F12493682C1A2CA803083F6F01BA43124(NULL);
-		String_t* L_3;
-		L_3 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral9DFFC3267C5F999585E61B45BA9C8DF18D4B02CA, L_2, NULL);
+		// Adjust.getGoogleAdId(OnGoogleAdIdReceived);
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_1 = (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*)il2cpp_codegen_object_new(Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var);
 		NullCheck(L_1);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_1, L_3);
+		Action_1__ctor_m9DC2953C55C4D7D4B7BEFE03D84DA1F9362D652C(L_1, __this, (intptr_t)((void*)GameIdentity_OnGoogleAdIdReceived_m9B7626F94B18C197F79FF71EF6FFF0677D5CFAAF_RuntimeMethod_var), NULL);
+		Adjust_getGoogleAdId_m21BEBC623AD79545A4B1A593E152A700FA92DCD6(L_1, NULL);
+		// applicationVersionText.text = "v" + Application.version;
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_2 = __this->___applicationVersionText_4;
+		String_t* L_3;
+		L_3 = Application_get_version_m9CC0E94F12493682C1A2CA803083F6F01BA43124(NULL);
+		String_t* L_4;
+		L_4 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral9DFFC3267C5F999585E61B45BA9C8DF18D4B02CA, L_3, NULL);
+		NullCheck(L_2);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_2, L_4);
 		// deviceIdentifierText.text = "UID: " + SystemInfo.deviceUniqueIdentifier;
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_4 = __this->___deviceIdentifierText_5;
-		String_t* L_5;
-		L_5 = SystemInfo_get_deviceUniqueIdentifier_m61BA4CB77ADA09730B8B575700D85027EFDB4EFC(NULL);
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_5 = __this->___deviceIdentifierText_5;
 		String_t* L_6;
-		L_6 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral4240D8B50E7D7141437263EDA1B72E145DDBD84F, L_5, NULL);
-		NullCheck(L_4);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_4, L_6);
+		L_6 = SystemInfo_get_deviceUniqueIdentifier_m61BA4CB77ADA09730B8B575700D85027EFDB4EFC(NULL);
+		String_t* L_7;
+		L_7 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral4240D8B50E7D7141437263EDA1B72E145DDBD84F, L_6, NULL);
+		NullCheck(L_5);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, L_7);
 		// }
 		return;
 	}

@@ -1208,19 +1208,19 @@ struct TypeInformation_tBAA2819DD869179F8DFB0A658547229B4C7D6E15  : public Runti
 struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E  : public RuntimeObject
 {
 	// System.String System.Uri::m_String
-	String_t* ___m_String_13;
+	String_t* ___m_String_16;
 	// System.String System.Uri::m_originalUnicodeString
-	String_t* ___m_originalUnicodeString_14;
+	String_t* ___m_originalUnicodeString_17;
 	// System.UriParser System.Uri::m_Syntax
-	UriParser_t920B0868286118827C08B08A15A9456AF6C19D81* ___m_Syntax_15;
+	UriParser_t920B0868286118827C08B08A15A9456AF6C19D81* ___m_Syntax_18;
 	// System.String System.Uri::m_DnsSafeHost
-	String_t* ___m_DnsSafeHost_16;
+	String_t* ___m_DnsSafeHost_19;
 	// System.Uri/Flags System.Uri::m_Flags
-	uint64_t ___m_Flags_17;
+	uint64_t ___m_Flags_20;
 	// System.Uri/UriInfo System.Uri::m_Info
-	UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09* ___m_Info_18;
+	UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09* ___m_Info_21;
 	// System.Boolean System.Uri::m_iriParsing
-	bool ___m_iriParsing_19;
+	bool ___m_iriParsing_22;
 };
 
 // System.ValueType
@@ -3310,23 +3310,23 @@ struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
 	// System.String System.Uri::SchemeDelimiter
 	String_t* ___SchemeDelimiter_12;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitialized
-	bool ___s_ConfigInitialized_20;
+	bool ___s_ConfigInitialized_23;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitializing
-	bool ___s_ConfigInitializing_21;
+	bool ___s_ConfigInitializing_24;
 	// System.UriIdnScope modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IdnScope
-	int32_t ___s_IdnScope_22;
+	int32_t ___s_IdnScope_25;
 	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IriParsing
-	bool ___s_IriParsing_23;
+	bool ___s_IriParsing_26;
 	// System.Boolean System.Uri::useDotNetRelativeOrAbsolute
-	bool ___useDotNetRelativeOrAbsolute_24;
+	bool ___useDotNetRelativeOrAbsolute_27;
 	// System.Boolean System.Uri::IsWindowsFileSystem
-	bool ___IsWindowsFileSystem_25;
+	bool ___IsWindowsFileSystem_29;
 	// System.Object System.Uri::s_initLock
-	RuntimeObject* ___s_initLock_26;
+	RuntimeObject* ___s_initLock_30;
 	// System.Char[] System.Uri::HexLowerChars
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___HexLowerChars_27;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___HexLowerChars_34;
 	// System.Char[] System.Uri::_WSchars
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____WSchars_28;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____WSchars_35;
 };
 
 // System.Uri
@@ -6830,7 +6830,7 @@ IL_00f3_1:
 			TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_29 = L_28->____writer_16;
 			NullCheck(L_29);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_30;
-			L_30 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_29, ((int32_t)58));
+			L_30 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_29, ((int32_t)58));
 			NullCheck(L_30);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_31;
 			L_31 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_30, (bool)0, NULL);
@@ -7120,7 +7120,7 @@ IL_011f_1:
 			Il2CppChar L_37 = L_36->____quoteChar_20;
 			NullCheck(L_35);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_38;
-			L_38 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_35, L_37);
+			L_38 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_35, L_37);
 			NullCheck(L_38);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_39;
 			L_39 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_38, (bool)0, NULL);
@@ -7230,7 +7230,7 @@ IL_0204_1:
 			Il2CppChar L_67 = L_66->____quoteChar_20;
 			NullCheck(L_65);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_68;
-			L_68 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_65, L_67);
+			L_68 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_65, L_67);
 			NullCheck(L_68);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_69;
 			L_69 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_68, (bool)0, NULL);
@@ -7280,7 +7280,7 @@ IL_0282_1:
 			TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_79 = L_78->____writer_16;
 			NullCheck(L_79);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_80;
-			L_80 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_79, ((int32_t)58));
+			L_80 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_79, ((int32_t)58));
 			NullCheck(L_80);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_81;
 			L_81 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_80, (bool)0, NULL);
@@ -7978,7 +7978,7 @@ IL_0172_1:
 			TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_43 = L_42->____writer_16;
 			NullCheck(L_43);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_44;
-			L_44 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_43, ((int32_t)40));
+			L_44 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_43, ((int32_t)40));
 			NullCheck(L_44);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_45;
 			L_45 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_44, (bool)0, NULL);
@@ -8392,7 +8392,7 @@ IL_008d_1:
 			Il2CppChar L_18 = L_17->____quoteChar_20;
 			NullCheck(L_16);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_19;
-			L_19 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_16, L_18);
+			L_19 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_16, L_18);
 			NullCheck(L_19);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_20;
 			L_20 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_19, (bool)0, NULL);
@@ -8540,7 +8540,7 @@ IL_01e9_1:
 			Il2CppChar L_60 = L_59->____quoteChar_20;
 			NullCheck(L_58);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_61;
-			L_61 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_58, L_60);
+			L_61 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_58, L_60);
 			NullCheck(L_61);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_62;
 			L_62 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_61, (bool)0, NULL);
@@ -8840,7 +8840,7 @@ IL_0146_1:
 			Il2CppChar L_44 = L_43->____quoteChar_20;
 			NullCheck(L_42);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_45;
-			L_45 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_42, L_44);
+			L_45 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_42, L_44);
 			NullCheck(L_45);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_46;
 			L_46 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_45, (bool)0, NULL);
@@ -8947,7 +8947,7 @@ IL_0234_1:
 			Il2CppChar L_77 = L_76->____quoteChar_20;
 			NullCheck(L_75);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_78;
-			L_78 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_75, L_77);
+			L_78 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_75, L_77);
 			NullCheck(L_78);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_79;
 			L_79 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_78, (bool)0, NULL);
@@ -9241,7 +9241,7 @@ IL_012f_1:
 			Il2CppChar L_40 = L_39->____quoteChar_20;
 			NullCheck(L_38);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_41;
-			L_41 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_38, L_40);
+			L_41 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_38, L_40);
 			NullCheck(L_41);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_42;
 			L_42 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_41, (bool)0, NULL);
@@ -9348,7 +9348,7 @@ IL_021d_1:
 			Il2CppChar L_73 = L_72->____quoteChar_20;
 			NullCheck(L_71);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_74;
-			L_74 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_71, L_73);
+			L_74 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_71, L_73);
 			NullCheck(L_74);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_75;
 			L_75 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_74, (bool)0, NULL);
@@ -9565,7 +9565,7 @@ IL_0089_1:
 			Il2CppChar L_18 = L_17->____quoteChar_20;
 			NullCheck(L_16);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_19;
-			L_19 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_16, L_18);
+			L_19 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_16, L_18);
 			NullCheck(L_19);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_20;
 			L_20 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_19, (bool)0, NULL);
@@ -9667,7 +9667,7 @@ IL_017c_1:
 			Il2CppChar L_48 = L_47->____quoteChar_20;
 			NullCheck(L_46);
 			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_49;
-			L_49 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(18 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_46, L_48);
+			L_49 = VirtualFuncInvoker1< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, Il2CppChar >::Invoke(19 /* System.Threading.Tasks.Task System.IO.TextWriter::WriteAsync(System.Char) */, L_46, L_48);
 			NullCheck(L_49);
 			ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_50;
 			L_50 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_49, (bool)0, NULL);

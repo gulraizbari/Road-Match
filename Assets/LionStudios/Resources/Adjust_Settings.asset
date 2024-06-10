@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8577201edbca74bc8bcdf9d1fc5306d6, type: 3}
   m_Name: Adjust_Settings
   m_EditorClassIdentifier: 
-  EnableInitialization: 0
+  EnableInitialization: 1
   iOSAdjustSdkKey: 
-  androidAdjustSdkKey: 
+  androidAdjustSdkKey: ez9vuyx8tzpc
   AdjustEnvironment: 1
   AdjustLogLevel: 3
   AllowSuppressLogLevel: 1

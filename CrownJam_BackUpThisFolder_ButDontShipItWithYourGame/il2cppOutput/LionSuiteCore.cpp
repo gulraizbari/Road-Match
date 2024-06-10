@@ -10257,6 +10257,14 @@ inline void Dictionary_2__ctor_mDAFC0246415FCD20B4DFA892990A1AAA6F27C334 (Dictio
 {
 	((  void (*) (Dictionary_2_tC7B9BD0CA755DD1E643DB18A74765E15DC3D9516*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
 }
+// System.Type LionStudios.Suite.ReflectionUtil::GetType(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* ReflectionUtil_GetType_mF9D31B51D3BE10A237DACAD8476126E2EDBD5BE1 (String_t* ___0_typeName, const RuntimeMethod* method) ;
+// System.Reflection.PropertyInfo System.Type::GetProperty(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyInfo_t* Type_GetProperty_mD183124FC8A89121E8368058B327A7750B14281D (Type_t* __this, String_t* ___0_name, const RuntimeMethod* method) ;
+// System.Boolean System.Reflection.PropertyInfo::op_Inequality(System.Reflection.PropertyInfo,System.Reflection.PropertyInfo)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PropertyInfo_op_Inequality_mE75A4F14CC678D8A670730FBD4338C718CACB51B (PropertyInfo_t* ___0_left, PropertyInfo_t* ___1_right, const RuntimeMethod* method) ;
+// System.Object System.Reflection.PropertyInfo::GetValue(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PropertyInfo_GetValue_m89576462107E2A4DF5B7775216AEC29D74FF6088 (PropertyInfo_t* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 // T[] LionStudios.Suite.NamespaceUtil::GetObjectsOfType<LionStudios.Suite.Core.ILionSdk>(System.Boolean)
 inline ILionSdkU5BU5D_t25CDDA7B29E72F24E0859D414442F5E05587B2C7* NamespaceUtil_GetObjectsOfType_TisILionSdk_t71D0651810A8B53AA3575CE427FFDB4566991EFD_m50ED60214E56942F8390F8E109BFCBEB71E72459 (bool ___0_ignoreTransparent, const RuntimeMethod* method)
 {
@@ -10611,10 +10619,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* FacebookVersionProvider
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReflectionVersionTypeGetter__ctor_m1CA95B0C7083B7B3804E4ACE817A1B892AF4307F (ReflectionVersionTypeGetter_t7773C695C8B3DA3D0D160E61DD05242EE24D1ABB* __this, String_t* ___0_assemblyName, String_t* ___1_typeName, const RuntimeMethod* method) ;
 // System.Type LionSDK.Core.ReflectionVersionTypeGetter::GetTypeWithVersion()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* ReflectionVersionTypeGetter_GetTypeWithVersion_m2C443DAA498F8F794E54559BF0E90C1F0D993889 (ReflectionVersionTypeGetter_t7773C695C8B3DA3D0D160E61DD05242EE24D1ABB* __this, const RuntimeMethod* method) ;
-// System.Reflection.PropertyInfo System.Type::GetProperty(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyInfo_t* Type_GetProperty_mD183124FC8A89121E8368058B327A7750B14281D (Type_t* __this, String_t* ___0_name, const RuntimeMethod* method) ;
-// System.Object System.Reflection.PropertyInfo::GetValue(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PropertyInfo_GetValue_m89576462107E2A4DF5B7775216AEC29D74FF6088 (PropertyInfo_t* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 // System.String System.IO.Directory::GetCurrentDirectory()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Directory_GetCurrentDirectory_m576783BDF2FDF97303C15E51713790415BF57CC1 (const RuntimeMethod* method) ;
 // System.String[] System.IO.Directory::GetDirectories(System.String,System.String,System.IO.SearchOption)
@@ -25433,9 +25437,83 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LionSdkManifest_get_FacebookVersion
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1F01E248684074EB337CBF3698DF67FEA8DAA26D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3048FDD885D6F2305ED548A7A354B5E759C5FEAF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral45045578780FD0B9DC1862175DE1C8476691896A);
 		s_Il2CppMethodInitialized = true;
 	}
+	Type_t* V_0 = NULL;
+	PropertyInfo_t* V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	{
+		// Type facebookSdkType = ReflectionUtil.GetType("Facebook.Unity.FacebookSdkVersion");
+		Type_t* L_0;
+		L_0 = ReflectionUtil_GetType_mF9D31B51D3BE10A237DACAD8476126E2EDBD5BE1(_stringLiteral1F01E248684074EB337CBF3698DF67FEA8DAA26D, NULL);
+		V_0 = L_0;
+		// if (facebookSdkType != null)
+		Type_t* L_1 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Type_op_Inequality_m83209C7BB3C05DFBEA3B6199B0BEFE8037301172(L_1, (Type_t*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		// PropertyInfo facebookBuildProperty = facebookSdkType.GetProperty("Build");
+		Type_t* L_3 = V_0;
+		NullCheck(L_3);
+		PropertyInfo_t* L_4;
+		L_4 = Type_GetProperty_mD183124FC8A89121E8368058B327A7750B14281D(L_3, _stringLiteral45045578780FD0B9DC1862175DE1C8476691896A, NULL);
+		V_1 = L_4;
+		// if (facebookBuildProperty != null)
+		PropertyInfo_t* L_5 = V_1;
+		bool L_6;
+		L_6 = PropertyInfo_op_Inequality_mE75A4F14CC678D8A670730FBD4338C718CACB51B(L_5, (PropertyInfo_t*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		// object buildProperty = facebookBuildProperty.GetValue(facebookBuildProperty);
+		PropertyInfo_t* L_7 = V_1;
+		PropertyInfo_t* L_8 = V_1;
+		NullCheck(L_7);
+		RuntimeObject* L_9;
+		L_9 = PropertyInfo_GetValue_m89576462107E2A4DF5B7775216AEC29D74FF6088(L_7, L_8, NULL);
+		V_2 = L_9;
+		// if (buildProperty != null && !string.IsNullOrEmpty(buildProperty.ToString()))
+		RuntimeObject* L_10 = V_2;
+		if (!L_10)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		RuntimeObject* L_11 = V_2;
+		NullCheck(L_11);
+		String_t* L_12;
+		L_12 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_11);
+		bool L_13;
+		L_13 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_12, NULL);
+		if (L_13)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		// return buildProperty.ToString();
+		RuntimeObject* L_14 = V_2;
+		NullCheck(L_14);
+		String_t* L_15;
+		L_15 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_14);
+		return L_15;
+	}
+
+IL_0048:
 	{
 		// return "- - -";
 		return _stringLiteral3048FDD885D6F2305ED548A7A354B5E759C5FEAF;
